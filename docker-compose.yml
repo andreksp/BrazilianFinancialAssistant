@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  # Backend FastAPI service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: bfa-backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://bfa_user:bfa_password@db:5432/bfa_db
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      FRONTEND_URL: http://localhost
+      CHROMA_DB_PATH: /app/chroma_data
+      LOG_LEVEL: INFO
+      DEBUG: "False"
+    volumes:
+      - chroma_data:/app/chroma_data
+    depends_on:
+      - db
+    networks:
+      - bfa-network
+    restart: unless-stopped
+
+  # Frontend Nginx service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: bfa-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - bfa-network
+    restart: unless-stopped
+
+  # PostgreSQL database
+  db:
+    image: postgres:15-alpine
+    container_name: bfa-db
+    environment:
+      POSTGRES_USER: bfa_user
+      POSTGRES_PASSWORD: bfa_password
+      POSTGRES_DB: bfa_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - bfa-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bfa_user -d bfa_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+    driver: local
+  chroma_data:
+    driver: local
+
+networks:
+  bfa-network:
+    driver: bridge

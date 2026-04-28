@@ -1,0 +1,42 @@
+<div *ngIf="result" class="results-container">
+  <h3>Resultado da Operacao</h3>
+
+  <div class="result-grid">
+    <div class="result-card">
+      <div class="card-label">Valor da Operacao</div>
+      <div class="card-value">{{ formatCurrency(result.valor_financeiro) }}</div>
+    </div>
+
+    <div class="result-card" [ngClass]="getGainLossClass()">
+      <div class="card-label">Ganho/Prejuizo</div>
+      <div class="card-value">{{ formatCurrency(result.ganho_prejuizo_bruto) }}</div>
+    </div>
+
+    <div class="result-card">
+      <div class="card-label">Corretagem</div>
+      <div class="card-value">{{ formatCurrency(result.taxas_totais.corretagem) }}</div>
+    </div>
+
+    <div class="result-card" [ngClass]="getTaxClass()">
+      <div class="card-label">IR Devido (Imposto de Renda)</div>
+      <div class="card-value">{{ formatCurrency(result.ir_devido) }}</div>
+    </div>
+
+    <div class="result-card">
+      <div class="card-label">Valor Liquido</div>
+      <div class="card-value primary">{{ formatCurrency(result.valor_liquido) }}</div>
+    </div>
+  </div>
+
+  <div class="detalhes-section">
+    <h4>Detalhes</h4>
+    <div class="detalhes-content">
+      <p><strong>Ativo:</strong> {{ result.ativo }}</p>
+      <p><strong>Quantidade:</strong> {{ result.quantidade }}</p>
+      <p><strong>Preco Unitario:</strong> {{ formatCurrency(result.preco_unitario) }}</p>
+      <p><strong>Aliquota IR:</strong> {{ formatPercent(result.aliquota_aplicada) }}</p>
+      <p><strong>Tipo:</strong> {{ result.tipo_operacao_classificacao }}</p>
+      <p *ngIf="result['isenção_aplicada']"><strong>✓ Isencao aplicada</strong></p>
+    </div>
+  </div>
+</div>

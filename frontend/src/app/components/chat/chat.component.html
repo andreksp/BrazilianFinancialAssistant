@@ -1,0 +1,32 @@
+<div class="chat-container">
+  <div class="chat-header">
+    <h1>Brazilian Financial Assistant</h1>
+  </div>
+
+  <div class="chat-messages">
+    <div *ngFor="let msg of messages" [ngClass]="'message message-' + msg.role">
+      <div class="message-content">{{ msg.content }}</div>
+    </div>
+  </div>
+
+  <div class="chat-input-area">
+    <div class="test-button-area">
+      <button (click)="testHello()" [disabled]="loading" class="test-button">
+        {{ loading ? 'Testando...' : '🧪 Testar Backend' }}
+      </button>
+    </div>
+
+    <div class="input-group">
+      <input
+        [(ngModel)]="inputMessage"
+        (keyup.enter)="sendMessage()"
+        [disabled]="loading"
+        placeholder="Descreva sua operação financeira..."
+        class="message-input"
+      />
+      <button (click)="sendMessage()" [disabled]="loading" class="send-button">
+        {{ loading ? 'Enviando...' : 'Enviar' }}
+      </button>
+    </div>
+  </div>
+</div>

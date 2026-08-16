@@ -55,6 +55,7 @@ dist/
 build/
 npm-debug.log
 yarn-error.log
+.angular/
 
 # OS
 .DS_Store

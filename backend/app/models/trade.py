@@ -231,3 +231,4 @@ class ChatResponse(BaseModel):
     trade_extracted: Optional[TradeInput] = None
     calculation_result: Optional[TaxCalculationResult] = None
     confidence: float = Field(default=0.0, ge=0, le=1, description="Confidence in extraction")
+    agent_name: Optional[str] = Field(default=None, description="Name of the specialist agent that handled this request")

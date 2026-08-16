@@ -1,3 +1,13 @@
+.buy-confirmation {
+  margin-top: 20px;
+  padding: 14px 16px;
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  border-radius: 8px;
+  color: #166534;
+  font-weight: 500;
+}
+
 .trade-input-container {
   padding: 20px;
   background: white;

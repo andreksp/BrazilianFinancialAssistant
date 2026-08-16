@@ -1,7 +1,8 @@
 version: '3.8'
 
-# Development compose file with hot-reload
-# Usage: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+# Development stack — SQLite + hot reload (no database container needed)
+# Usage: docker-compose -f docker-compose.dev.yml up --build
+# Requires: ANTHROPIC_API_KEY in .env or environment
 
 services:
   backend:
@@ -12,21 +13,21 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      # Mount source code for hot-reload
       - ./backend/app:/app/app
+      - ./backend/data:/app/data
       - ./backend/tests:/app/tests
-      # Exclude venv
-      - /app/.venv
+      - backend_db:/app
     environment:
       DATABASE_URL: sqlite:///./app.db
-      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
       FRONTEND_URL: http://localhost:4200
+      CORS_ORIGINS: '["http://localhost:4200","http://localhost:8501","http://localhost:3000"]'
       CHROMA_DB_PATH: ./chroma_data
       LOG_LEVEL: DEBUG
-      DEBUG: "True"
+      DEBUG: "true"
     command: uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
     networks:
-      - bfa-network
+      - bfa-dev-network
     restart: unless-stopped
 
   frontend:
@@ -35,21 +36,16 @@ services:
       dockerfile: Dockerfile
     container_name: bfa-frontend-dev
     ports:
-      - "4200:4200"
-    volumes:
-      # Mount source code for Angular dev server
-      - ./frontend/src:/app/src
-      - ./frontend/angular.json:/app/angular.json
-      - ./frontend/tsconfig.json:/app/tsconfig.json
-      # Exclude node_modules
-      - /app/node_modules
-    environment:
-      - NG_CLI_ANALYTICS=false
-    command: ng serve --host 0.0.0.0 --poll 2000
+      - "4200:80"
+    depends_on:
+      - backend
     networks:
-      - bfa-network
+      - bfa-dev-network
     restart: unless-stopped
 
+volumes:
+  backend_db:
+
 networks:
-  bfa-network:
+  bfa-dev-network:
     driver: bridge

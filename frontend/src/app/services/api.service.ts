@@ -46,9 +46,16 @@ export class ApiService {
    */
   sendChat(request: ChatRequest): Observable<ChatResponse> {
     return this.http.post<ChatResponse>(
-      `${this.apiUrl}/chat/message`,
+      `${this.apiUrl}/chat/`,
       request
     );
+  }
+
+  getTradeHistory(month?: number, year?: number): Observable<any[]> {
+    let params = new HttpParams();
+    if (month) params = params.set('month', month.toString());
+    if (year) params = params.set('year', year.toString());
+    return this.http.get<any[]>(`${this.apiUrl}/trades/history`, { params });
   }
 
   /**

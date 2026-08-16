@@ -9,6 +9,7 @@ Business Logic Reference: Documentation/research.md sections 1-5
 - Average price: Weighted moving average for each asset
 """
 
+import calendar
 from datetime import date
 from typing import Dict, List, Optional
 from decimal import Decimal
@@ -150,16 +151,15 @@ class TaxEngine:
 
     def _calculate_darf_deadline(self, mes: int, ano: int) -> date:
         """
-        Calculate DARF due date: last business day of following month.
+        Calculate DARF due date: last day of the following month.
 
-        Reference: research.md - DARF vencimento
-        Note: For MVP, using last day of month. In production, check actual business days.
+        Reference: research.md - DARF vencimento (último dia útil do mês seguinte)
+        MVP: uses last calendar day. Production should check actual business days.
         """
-        # Simplified: last day of following month
-        if mes == 12:
-            return date(ano + 1, 2, 1)  # Actually next month to get last day
-        else:
-            return date(ano, mes + 2, 1)  # Get first of month after next
+        next_month = (mes % 12) + 1
+        next_year = ano + 1 if mes == 12 else ano
+        last_day = calendar.monthrange(next_year, next_month)[1]
+        return date(next_year, next_month, last_day)
 
     def get_total_ir_due(self) -> float:
         """Calculate total IR due across all months."""

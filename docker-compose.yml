@@ -1,7 +1,10 @@
 version: '3.8'
 
+# Production stack — PostgreSQL + nginx
+# Usage: docker-compose up --build
+# Requires: ANTHROPIC_API_KEY in .env or environment
+
 services:
-  # Backend FastAPI service
   backend:
     build:
       context: ./backend
@@ -11,20 +14,21 @@ services:
       - "8000:8000"
     environment:
       DATABASE_URL: postgresql://bfa_user:bfa_password@db:5432/bfa_db
-      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
       FRONTEND_URL: http://localhost
+      CORS_ORIGINS: '["http://localhost","http://localhost:80"]'
       CHROMA_DB_PATH: /app/chroma_data
       LOG_LEVEL: INFO
-      DEBUG: "False"
+      DEBUG: "false"
     volumes:
       - chroma_data:/app/chroma_data
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     networks:
       - bfa-network
     restart: unless-stopped
 
-  # Frontend Nginx service
   frontend:
     build:
       context: ./frontend
@@ -38,7 +42,6 @@ services:
       - bfa-network
     restart: unless-stopped
 
-  # PostgreSQL database
   db:
     image: postgres:15-alpine
     container_name: bfa-db
@@ -59,9 +62,7 @@ services:
 
 volumes:
   postgres_data:
-    driver: local
   chroma_data:
-    driver: local
 
 networks:
   bfa-network:

@@ -18,7 +18,7 @@ class Settings(BaseSettings):
 
     # CORS
     FRONTEND_URL: str = "http://localhost:4200"
-    CORS_ORIGINS: List[str] = ["http://localhost:4200", "http://localhost:3000"]
+    CORS_ORIGINS: List[str] = ["http://localhost:4200", "http://localhost:3000", "http://localhost:8501"]
 
     # Database
     DATABASE_URL: str = "sqlite:///./app.db"
@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     # LLM Configuration
     ANTHROPIC_API_KEY: str = ""
     LLM_MODEL_PARSER: str = "claude-haiku-4-5-20251001"
-    LLM_MODEL_EXPLAINER: str = "claude-sonnet-4-6-20250514"
+    LLM_MODEL_EXPLAINER: str = "claude-sonnet-4-6"
 
     # ChromaDB
     CHROMA_DB_PATH: str = "./chroma_data"

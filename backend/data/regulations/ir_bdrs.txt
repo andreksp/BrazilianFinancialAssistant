@@ -1,0 +1,33 @@
+REGRAS DE IMPOSTO DE RENDA — BDRs (Brazilian Depositary Receipts)
+
+O QUE É BDR:
+- BDR é um certificado de depósito que representa ações de empresas estrangeiras negociadas na B3
+- Exemplos: AMZO34 (Amazon), GOGL34 (Google), MSFT34 (Microsoft), AAPL34 (Apple)
+- São lastreados em ações estrangeiras mantidas por uma instituição depositária
+
+ALÍQUOTAS (idênticas às ações):
+- Swing Trade: 15% sobre o ganho líquido
+- Day Trade: 20% sobre o ganho líquido
+
+ISENÇÃO:
+- A isenção de R$ 20.000,00 mensais em vendas SE APLICA a BDRs da mesma forma que para ações
+- BDRs Nível I (acesso restrito até 2021) não tinham isenção, mas após democratização em 2021 passaram a ter
+- Total de vendas do mês (ações + BDRs somados) deve ser verificado para o limite de isenção
+
+IRRF:
+- Swing Trade: 0,005% sobre o valor da venda
+- Day Trade: 1% sobre o ganho auferido
+
+CÁLCULO DO GANHO:
+- Mesmo método de preço médio ponderado que as ações
+- O ganho já considera a variação cambial implícita (BDR cotado em BRL)
+
+RENDIMENTOS (Dividendos de BDR):
+- Dividendos de BDR sofrem retenção na fonte no exterior (geralmente 30% para EUA)
+- A empresa depositária repassa o valor líquido após retenção
+- O investidor brasileiro declara o dividendo e pode usar o imposto retido no exterior como crédito
+
+BASE LEGAL:
+- Resolução CVM 3/2020 — democratização dos BDRs
+- Instrução Normativa RFB 1.585/2015
+- Mesmas regras gerais de tributação de renda variável

@@ -114,10 +114,9 @@ class AcoesCalculator(BaseCalculator):
         aliquota = self.get_tax_rate(is_day_trade)
         isenção_aplicada = False
 
-        # Apply exemption if applicable (swing trade only, must be < R$20,000)
-        if not is_day_trade and valor_financeiro < self.EXEMPTION_LIMIT:
-            aliquota = 0.0
-            isenção_aplicada = True
+        # TODO: Exemption R$20,000 applies to TOTAL monthly sales (swing only).
+        # This requires monthly context at a higher level. For now, always apply tax.
+        # Exemption logic will be implemented in a portfolio/monthly summary calculator.
 
         # Calculate IR
         ir_devido = max(0, ganho_bruto) * aliquota

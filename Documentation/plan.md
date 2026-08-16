@@ -17,13 +17,14 @@ O projeto será implementado em **7 fases**, começando pela infraestrutura base
 | 0 | Infraestrutura Base | 1-2 dias | Estrutura de pastas, dependências, setup inicial |
 | 1 | Engine de Cálculo (Equities) | 5-7 dias | Todos os módulos de cálculo para ações, BDRs, FIIs, opções |
 | 2 | Backend API | 3-4 dias | FastAPI endpoints, banco de dados, persistência |
+| 2.5 | Streamlit Prototype | 1-2 dias | Demo UI para validação e apresentações intermediárias |
 | 3 | LLM + ChromaDB | 4-5 dias | Integração Claude, parser de linguagem natural, regulamentações |
 | 4 | Frontend Angular | 5-7 dias | Interface chat, formulário, exibição de resultados |
 | 5 | Docker & Deploy | 2-3 dias | Containerização, docker-compose, testes E2E |
 | 6 | MCP Server (Dev Tool) | 2-3 dias | Ferramentas internas para validação e pesquisa |
 | 7 | Multi-Agent (Fase 2 TCC) | 4-6 dias | Orquestrador + agentes especializados |
 
-**Total Estimado**: 26-39 dias (5-8 semanas com desenvolvimento 5x/semana)
+**Total Estimado**: 27-41 dias (5-8 semanas com desenvolvimento 5x/semana)
 
 ---
 
@@ -438,6 +439,103 @@ poetry install
 - [ ] Database persiste trades
 - [ ] Testes de integração passando
 - [ ] CORS configurado
+
+---
+
+## Fase 2.5: Streamlit Prototype (Demo UI)
+
+**Objetivo**: Interface de demonstração rápida para validar o fluxo completo de cálculo visualmente, antes de construir o Angular.  
+**Duração**: 1-2 dias  
+**Entrada**: Backend API Phase 2 funcional, saída: app Streamlit rodando em localhost:8501  
+**Nota**: Demo e prototipagem apenas — não vai para produção. Ideal para TCC apresentações intermediárias e validação rápida.
+
+### 2.5.1 — Setup Streamlit
+
+- [ ] Adicionar `streamlit` ao `requirements.txt` (ou `pyproject.toml`)
+- [ ] Criar `/streamlit_app/` diretório
+- [ ] Criar `/streamlit_app/app.py` — entry point
+
+### 2.5.2 — Páginas do App
+
+- [ ] Criar `/streamlit_app/pages/1_Calcular_Trade.py`
+  ```python
+  # Formulário estruturado: ativo, tipo, qtd, preço, data, corretora
+  # Chama POST /api/trades/process
+  # Exibe resultado: ganho/prejuízo, IR devido, taxas detalhadas, valor líquido
+  ```
+
+- [ ] Criar `/streamlit_app/pages/2_Chat.py`
+  ```python
+  # Input de linguagem natural (para ser integrado quando Phase 3 estiver pronto)
+  # Chama POST /api/chat
+  # Exibe conversa + resultado de cálculo formatado
+  ```
+
+- [ ] Criar `/streamlit_app/pages/3_Historico.py`
+  ```python
+  # Chama GET /api/calculations/summary
+  # Exibe tabela de trades e resumo mensal
+  ```
+
+### 2.5.3 — Componentes Reutilizáveis
+
+- [ ] Criar `/streamlit_app/components/result_card.py`
+  ```python
+  def render_result(result: dict):
+      # Exibe card com:
+      # - Ganho/Prejuízo em destaque (verde/vermelho)
+      # - IR Devido, IRRF, Taxas B3
+      # - Valor Líquido final
+      # Formatos PT-BR: R$ com vírgula, datas DD/MM/YYYY
+  ```
+
+- [ ] Criar `/streamlit_app/utils/api_client.py`
+  ```python
+  # Funções helper para chamar o backend FastAPI
+  # Reutilizável entre todas as páginas
+  ```
+
+### 2.5.4 — Configuração
+
+- [ ] Criar `/streamlit_app/.streamlit/config.toml`
+  ```toml
+  [server]
+  port = 8501
+
+  [theme]
+  primaryColor = "#1a73e8"
+  backgroundColor = "#ffffff"
+  secondaryBackgroundColor = "#f0f2f6"
+  ```
+
+### 2.5.5 — Docker (Opcional)
+
+- [ ] Adicionar serviço `streamlit` ao `docker-compose.dev.yml`
+  ```yaml
+  streamlit:
+    build:
+      context: ./streamlit_app
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    command: streamlit run app.py
+  ```
+
+### 2.5.6 — Testes Manuais
+
+- [ ] Teste: formulário de trade → cálculo exibido corretamente (PT-BR)
+- [ ] Teste: resultado com isenção R$20.000 exibido corretamente
+- [ ] Teste: resultado negativo (prejuízo) exibido em vermelho
+- [ ] Teste: página de chat conecta ao backend (placeholder até Phase 3)
+
+### Checklist Fase 2.5
+- [ ] Streamlit rodando em localhost:8501
+- [ ] Formulário de trade → cálculo funcional
+- [ ] Resultados formatados em PT-BR (R$, datas)
+- [ ] Página de chat conecta ao `/api/chat`
+- [ ] Histórico de cálculos visível
+- [ ] Dockerizado (opcional)
 
 ---
 

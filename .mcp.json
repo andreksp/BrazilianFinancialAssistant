@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "brazilian-financial": {
+      "command": "python",
+      "args": ["D:\\Projects\\BrazilianFinancialAssistant\\mcp_server\\server.py"],
+      "description": "Brazilian Financial Assistant — tax rules, B3 fees, worked examples, regulation search, calculation validation. Development-only tool."
+    }
+  }
+}

@@ -7,21 +7,23 @@ import { AppComponent } from './app.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { TradeInputComponent } from './components/trade-input/trade-input.component';
 import { ResultsComponent } from './components/results/results.component';
+import { HistoricoComponent } from './components/historico/historico.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChatComponent,
     TradeInputComponent,
-    ResultsComponent
+    ResultsComponent,
+    HistoricoComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

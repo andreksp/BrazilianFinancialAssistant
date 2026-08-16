@@ -1,0 +1,43 @@
+REGRAS DE IMPOSTO DE RENDA — OPÇÕES DE AÇÕES
+
+O QUE SÃO OPÇÕES:
+- Contratos que dão ao comprador o direito (não obrigação) de comprar (call) ou vender (put) um ativo a um preço determinado (strike) até uma data de vencimento
+- Negociadas na B3 sobre ações, índices e moedas
+
+NOMENCLATURA (código B3):
+- PETRH250: PETR = ativo base, H = call para agosto, 250 = strike R$25,00
+- Letras A-L = calls (janeiro a dezembro), M-X = puts (janeiro a dezembro)
+
+ALÍQUOTAS:
+- Swing Trade: 15% sobre o ganho líquido
+- Day Trade: 20% sobre o ganho líquido
+- As mesmas alíquotas das ações subjacentes
+
+ISENÇÃO:
+- Opções NÃO têm isenção de R$ 20.000,00
+- TODA operação com opções está sujeita ao IR, independente do valor negociado
+
+CÁLCULO DO GANHO:
+Caso 1 — VENDA da opção (lançador ou comprador que revende):
+- Ganho = (Preço de Venda - Prêmio Pago na Compra) × Quantidade
+
+Caso 2 — EXERCÍCIO da opção (call):
+- Ganho = (Preço da Ação no Exercício - Preço de Exercício/Strike - Prêmio Pago) × Quantidade
+
+Caso 3 — OPÇÃO VIRA PÓ (expira sem valor):
+- O prêmio pago na compra é considerado prejuízo integral na data de vencimento
+
+Caso 4 — LANÇADOR de opção exercido:
+- Para o lançador (vendedor de call): Ganho na venda da ação = (Strike - PM da ação) + Prêmio recebido
+
+IRRF:
+- Swing Trade: 0,005% sobre o valor da venda do contrato de opção
+- Day Trade: 1% sobre o ganho
+
+COMPENSAÇÃO DE PREJUÍZOS:
+- Prejuízos em opções podem compensar ganhos futuros em opções ou ações (mesma categoria)
+- Opções são tratadas como renda variável para fins de compensação
+
+BASE LEGAL:
+- Instrução Normativa RFB 1.585/2015 — tributação de opções
+- Lei 11.033/2004 e Lei 11.196/2005

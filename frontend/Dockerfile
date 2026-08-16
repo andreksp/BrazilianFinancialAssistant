@@ -1,37 +1,23 @@
-# Multi-stage build for Angular frontend
-
-# Build stage
-FROM node:18-alpine as builder
+# Multi-stage build — Brazilian Financial Assistant Frontend
+# Stage 1: build Angular app
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Copy package files
 COPY package*.json ./
+RUN npm ci --prefer-offline
 
-# Install dependencies
-RUN npm ci
-
-# Copy source code
 COPY . .
+RUN npm run build -- --configuration production
 
-# Build Angular app
-RUN npm run build
-
-# Production stage
+# Stage 2: serve with nginx
 FROM nginx:alpine
 
-# Copy built app from builder
-COPY --from=builder /app/dist/brazilian-financial-assistant /usr/share/nginx/html
-
-# Copy nginx configuration
+COPY --from=builder /app/dist/browser /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose port
+HEALTHCHECK --interval=30s --timeout=10s --start-period=15s --retries=3 \
+    CMD wget -qO- http://localhost/health || exit 1
+
 EXPOSE 80
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-    CMD wget --quiet --tries=1 --spider http://localhost/health || exit 1
-
-# Start nginx
 CMD ["nginx", "-g", "daemon off;"]

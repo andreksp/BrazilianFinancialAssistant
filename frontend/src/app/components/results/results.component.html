@@ -1,42 +1,64 @@
 <div *ngIf="result" class="results-container">
-  <h3>Resultado da Operacao</h3>
+  <h3>Resultado — {{ result.ativo }}</h3>
+
+  <div *ngIf="result['isenção_aplicada']" class="isencao-badge">
+    ✅ Isenção R$20.000 aplicada — operação isenta de IR neste mês
+  </div>
 
   <div class="result-grid">
-    <div class="result-card">
-      <div class="card-label">Valor da Operacao</div>
-      <div class="card-value">{{ formatCurrency(result.valor_financeiro) }}</div>
-    </div>
-
     <div class="result-card" [ngClass]="getGainLossClass()">
-      <div class="card-label">Ganho/Prejuizo</div>
+      <div class="card-label">{{ result.ganho_prejuizo_bruto >= 0 ? 'Ganho Bruto' : 'Prejuízo Bruto' }}</div>
       <div class="card-value">{{ formatCurrency(result.ganho_prejuizo_bruto) }}</div>
     </div>
 
-    <div class="result-card">
-      <div class="card-label">Corretagem</div>
-      <div class="card-value">{{ formatCurrency(result.taxas_totais.corretagem) }}</div>
-    </div>
-
     <div class="result-card" [ngClass]="getTaxClass()">
-      <div class="card-label">IR Devido (Imposto de Renda)</div>
+      <div class="card-label">IR Devido</div>
       <div class="card-value">{{ formatCurrency(result.ir_devido) }}</div>
+      <div class="card-sub">{{ formatPercent(result.aliquota_aplicada) }} · {{ result.tipo_operacao_classificacao }}</div>
     </div>
 
     <div class="result-card">
-      <div class="card-label">Valor Liquido</div>
+      <div class="card-label">IRRF Retido</div>
+      <div class="card-value">{{ formatCurrency(result.irrf_retido) }}</div>
+      <div class="card-sub">Dedutível do IR</div>
+    </div>
+
+    <div class="result-card primary-card">
+      <div class="card-label">Valor Líquido</div>
       <div class="card-value primary">{{ formatCurrency(result.valor_liquido) }}</div>
+      <div class="card-sub">Valor financeiro: {{ formatCurrency(result.valor_financeiro) }}</div>
     </div>
   </div>
 
-  <div class="detalhes-section">
-    <h4>Detalhes</h4>
-    <div class="detalhes-content">
-      <p><strong>Ativo:</strong> {{ result.ativo }}</p>
-      <p><strong>Quantidade:</strong> {{ result.quantidade }}</p>
-      <p><strong>Preco Unitario:</strong> {{ formatCurrency(result.preco_unitario) }}</p>
-      <p><strong>Aliquota IR:</strong> {{ formatPercent(result.aliquota_aplicada) }}</p>
-      <p><strong>Tipo:</strong> {{ result.tipo_operacao_classificacao }}</p>
-      <p *ngIf="result['isenção_aplicada']"><strong>✓ Isencao aplicada</strong></p>
+  <details class="detalhes-section">
+    <summary>Detalhamento de taxas B3</summary>
+    <div class="fees-table">
+      <div class="fee-row">
+        <span>Taxa de Liquidação</span>
+        <span>{{ formatCurrency(result.taxas_totais.taxa_liquidacao) }}</span>
+      </div>
+      <div class="fee-row">
+        <span>Taxa de Registro</span>
+        <span>{{ formatCurrency(result.taxas_totais.taxa_registro) }}</span>
+      </div>
+      <div class="fee-row">
+        <span>Emolumentos</span>
+        <span>{{ formatCurrency(result.taxas_totais.emolumentos) }}</span>
+      </div>
+      <div class="fee-row">
+        <span>Corretagem</span>
+        <span>{{ formatCurrency(result.taxas_totais.corretagem) }}</span>
+      </div>
+      <div class="fee-row">
+        <span>ISS s/ Corretagem</span>
+        <span>{{ formatCurrency(result.taxas_totais.iss_sobre_corretagem) }}</span>
+      </div>
+      <div class="fee-row total-row">
+        <span>Total Taxas</span>
+        <span>{{ formatCurrency(getTotalFees()) }}</span>
+      </div>
     </div>
-  </div>
+  </details>
+
+  <p *ngIf="result.mensagem" class="result-message">{{ result.mensagem }}</p>
 </div>

@@ -27,6 +27,7 @@ export class TradeInputComponent implements OnInit {
   tradeForm: FormGroup;
   loading: boolean = false;
   calculationResult: TaxCalculationResult | null = null;
+  buyConfirmation: string | null = null;
   error: string | null = null;
 
   // Dropdown options
@@ -77,8 +78,9 @@ export class TradeInputComponent implements OnInit {
 
     this.loading = true;
     this.error = null;
+    this.calculationResult = null;
+    this.buyConfirmation = null;
 
-    // Build trade object
     const formValue = this.tradeForm.value;
     const trade: TradeInput = {
       ativo: formValue.ativo.toUpperCase(),
@@ -93,13 +95,16 @@ export class TradeInputComponent implements OnInit {
       nota: formValue.nota || undefined,
     };
 
-    // Call API
     this.apiService.processTrade(trade).subscribe({
-      next: (result: TaxCalculationResult) => {
-        this.calculationResult = result;
+      next: (result: any) => {
+        if (result.tipo_operacao === 'compra') {
+          this.buyConfirmation = result.mensagem || `Compra de ${result.ativo} registrada com sucesso.`;
+        } else {
+          this.calculationResult = result as TaxCalculationResult;
+        }
         this.loading = false;
       },
-      error: (error) => {
+      error: (error: any) => {
         console.error('Error processing trade:', error);
         this.error = error.error?.detail || 'Erro ao processar a operação.';
         this.loading = false;
@@ -113,6 +118,7 @@ export class TradeInputComponent implements OnInit {
   resetForm(): void {
     this.tradeForm.reset();
     this.calculationResult = null;
+    this.buyConfirmation = null;
     this.error = null;
     const today = new Date().toISOString().split('T')[0];
     this.tradeForm.patchValue({

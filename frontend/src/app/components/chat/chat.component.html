@@ -1,32 +1,53 @@
 <div class="chat-container">
   <div class="chat-header">
-    <h1>Brazilian Financial Assistant</h1>
+    <h1>Assistente Financeiro</h1>
+    <p class="chat-subtitle">Digite sua operação em linguagem natural ou faça perguntas sobre IR e taxas</p>
   </div>
 
-  <div class="chat-messages">
-    <div *ngFor="let msg of messages" [ngClass]="'message message-' + msg.role">
-      <div class="message-content">{{ msg.content }}</div>
+  <div class="chat-messages" #messagesContainer>
+    <div *ngIf="messages.length === 0" class="chat-empty">
+      <p>💡 Exemplos de mensagens:</p>
+      <ul>
+        <li>"Vendi 100 ações da PETR4 por R$25,50 cada em 15/03/2025"</li>
+        <li>"Comprei 50 cotas do HGLG11 a R$162,00 hoje"</li>
+        <li>"Qual o IR para day trade em FII?"</li>
+      </ul>
+    </div>
+
+    <div *ngFor="let msg of messages" [class]="'message message-' + msg.role">
+      <div class="message-bubble">
+        <div class="message-text" [style.white-space]="'pre-line'">{{ msg.content }}</div>
+        <app-results
+          *ngIf="msg.calculation_result"
+          [result]="msg.calculation_result"
+        ></app-results>
+      </div>
+    </div>
+
+    <div *ngIf="loading" class="message message-assistant">
+      <div class="message-bubble">
+        <div class="typing-indicator">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="chat-input-area">
-    <div class="test-button-area">
-      <button (click)="testHello()" [disabled]="loading" class="test-button">
-        {{ loading ? 'Testando...' : '🧪 Testar Backend' }}
-      </button>
-    </div>
-
     <div class="input-group">
       <input
         [(ngModel)]="inputMessage"
         (keyup.enter)="sendMessage()"
         [disabled]="loading"
-        placeholder="Descreva sua operação financeira..."
+        placeholder="Descreva sua operação ou faça uma pergunta..."
         class="message-input"
       />
-      <button (click)="sendMessage()" [disabled]="loading" class="send-button">
-        {{ loading ? 'Enviando...' : 'Enviar' }}
+      <button (click)="sendMessage()" [disabled]="loading || !inputMessage.trim()" class="send-button">
+        Enviar
       </button>
+    </div>
+    <div class="input-hint">
+      <button (click)="testHello()" class="link-btn">Testar conexão com backend</button>
     </div>
   </div>
 </div>

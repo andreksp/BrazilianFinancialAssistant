@@ -1,1 +1,49 @@
-<app-chat></app-chat>
+<div class="app-shell">
+  <header class="app-header">
+    <div class="header-content">
+      <div class="header-brand">
+        <span class="header-icon">📊</span>
+        <div>
+          <h1>Assistente Financeiro Brasileiro</h1>
+          <span class="header-subtitle">Cálculo de IR e taxas para o mercado brasileiro</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button
+      class="tab-btn"
+      [class.active]="activeTab === 'chat'"
+      (click)="setTab('chat')"
+    >
+      💬 Chat
+    </button>
+    <button
+      class="tab-btn"
+      [class.active]="activeTab === 'formulario'"
+      (click)="setTab('formulario')"
+    >
+      📋 Formulário
+    </button>
+    <button
+      class="tab-btn"
+      [class.active]="activeTab === 'historico'"
+      (click)="setTab('historico')"
+    >
+      📊 Histórico
+    </button>
+  </nav>
+
+  <main class="app-main">
+    <div [hidden]="activeTab !== 'chat'">
+      <app-chat></app-chat>
+    </div>
+    <div [hidden]="activeTab !== 'formulario'" class="tab-panel">
+      <app-trade-input></app-trade-input>
+    </div>
+    <div [hidden]="activeTab !== 'historico'" class="tab-panel">
+      <app-historico></app-historico>
+    </div>
+  </main>
+</div>

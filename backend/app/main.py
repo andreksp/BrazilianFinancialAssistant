@@ -7,6 +7,7 @@ import logging
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
+
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api import trades, chat, calculations
@@ -25,7 +26,17 @@ async def lifespan(app: FastAPI):
     """
     # Startup
     logger.info("Starting Brazilian Financial Assistant backend...")
-    # TODO: Initialize ChromaDB, database connections here
+    from app.storage.database import create_tables
+    create_tables()
+    logger.info("Database tables ready.")
+
+    from app.vector_db.chroma_client import get_chroma_client
+    chroma = get_chroma_client()
+    if chroma:
+        chroma.load_initial_regulations()
+    else:
+        logger.warning("ChromaDB unavailable — RAG context will not be used.")
+
     yield
     # Shutdown
     logger.info("Shutting down Brazilian Financial Assistant backend...")

@@ -1,0 +1,120 @@
+<div class="historico-container">
+  <h2>Histórico e Resumo Mensal</h2>
+
+  <div class="filter-row">
+    <div class="filter-group">
+      <label>Mês</label>
+      <select [(ngModel)]="mes" class="filter-select">
+        <option *ngFor="let m of meses; let i = index" [value]="i + 1">{{ m }}</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Ano</label>
+      <select [(ngModel)]="ano" class="filter-select">
+        <option *ngFor="let a of anos" [value]="a">{{ a }}</option>
+      </select>
+    </div>
+    <button (click)="load()" [disabled]="loading" class="btn-load">
+      {{ loading ? 'Carregando...' : 'Carregar' }}
+    </button>
+  </div>
+
+  <div *ngIf="error" class="error-message">{{ error }}</div>
+
+  <!-- Monthly Summary -->
+  <div *ngIf="summary" class="section">
+    <h3>Resumo — {{ meses[mes - 1] }} {{ ano }}</h3>
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="card-label">Ganho Swing</div>
+        <div class="card-value">{{ formatCurrency(summary.ganho_swing_trade) }}</div>
+      </div>
+      <div class="summary-card loss">
+        <div class="card-label">Prejuízo Swing</div>
+        <div class="card-value">{{ formatCurrency(summary.prejuizo_swing_trade) }}</div>
+      </div>
+      <div class="summary-card">
+        <div class="card-label">Ganho Day Trade</div>
+        <div class="card-value">{{ formatCurrency(summary.ganho_day_trade) }}</div>
+      </div>
+      <div class="summary-card loss">
+        <div class="card-label">Prejuízo Day Trade</div>
+        <div class="card-value">{{ formatCurrency(summary.prejuizo_day_trade) }}</div>
+      </div>
+      <div class="summary-card tax">
+        <div class="card-label">IR Total Devido</div>
+        <div class="card-value">{{ formatCurrency(summary.ir_total_devido) }}</div>
+      </div>
+      <div class="summary-card">
+        <div class="card-label">IRRF Retido</div>
+        <div class="card-value">{{ formatCurrency(summary.irrf_retido_total) }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!summary && !loading" class="no-data">
+    Nenhuma operação de venda encontrada em {{ mes }}/{{ ano }}. Carregue um período com operações.
+  </div>
+
+  <!-- DARF -->
+  <div *ngIf="darf" class="section">
+    <h3>DARF — Código {{ darf.codigo_darf }}</h3>
+    <div class="darf-grid">
+      <div class="darf-card" [class.payable]="darf.deve_pagar">
+        <div class="card-label">Valor a Pagar</div>
+        <div class="card-value">{{ formatCurrency(darf.valor_a_pagar) }}</div>
+      </div>
+      <div class="darf-card">
+        <div class="card-label">Vencimento</div>
+        <div class="card-value">{{ formatDate(darf.vencimento) }}</div>
+      </div>
+      <div class="darf-card">
+        <div class="card-label">Mínimo para Pagar</div>
+        <div class="card-value">{{ formatCurrency(darf.minimo_para_pagar) }}</div>
+      </div>
+    </div>
+    <div *ngIf="darf.deve_pagar" class="alert alert-warning">
+      ⚠️ DARF a recolher até <strong>{{ formatDate(darf.vencimento) }}</strong>.
+      Valor: <strong>{{ formatCurrency(darf.valor_a_pagar) }}</strong>
+    </div>
+    <div *ngIf="!darf.deve_pagar && darf.ir_devido > 0" class="alert alert-ok">
+      ✅ IR ({{ formatCurrency(darf.ir_devido) }}) abaixo de R$10,00 — sem DARF a recolher.
+    </div>
+    <div *ngIf="darf.ir_devido === 0" class="alert alert-ok">
+      ✅ Sem IR a recolher neste mês.
+    </div>
+  </div>
+
+  <!-- Trade Table -->
+  <div *ngIf="trades.length > 0" class="section">
+    <h3>Operações de Venda ({{ trades.length }})</h3>
+    <div class="table-wrapper">
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Ativo</th>
+            <th>Qtd</th>
+            <th>Preço</th>
+            <th>G/P Bruto</th>
+            <th>IR</th>
+            <th>V. Líquido</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let t of trades" [class.row-loss]="t.ganho_prejuizo_bruto < 0">
+            <td>{{ formatDate(t.data_operacao) }}</td>
+            <td><strong>{{ t.ativo }}</strong></td>
+            <td>{{ t.quantidade }}</td>
+            <td>{{ formatCurrency(t.preco_unitario) }}</td>
+            <td [class.text-gain]="t.ganho_prejuizo_bruto >= 0" [class.text-loss]="t.ganho_prejuizo_bruto < 0">
+              {{ formatCurrency(t.ganho_prejuizo_bruto) }}
+            </td>
+            <td>{{ formatCurrency(t.ir_devido) }}</td>
+            <td>{{ formatCurrency(t.valor_liquido) }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,24 +1,28 @@
 .chat-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  max-width: 900px;
-  margin: 0 auto;
+  height: calc(100vh - 112px);
   background: #f5f5f5;
 }
 
 .chat-header {
-  background: linear-gradient(135deg, #1e3a8a 0%, #2d5a2d 100%);
-  color: white;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
 }
 
 .chat-header h1 {
-  margin: 0;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+}
+
+.chat-subtitle {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
 }
 
 .chat-messages {
@@ -30,20 +34,44 @@
   gap: 12px;
 }
 
+.chat-empty {
+  color: #9ca3af;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.chat-empty p {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.chat-empty ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-empty li {
+  background: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  font-style: italic;
+}
+
 .message {
   display: flex;
-  animation: slideIn 0.3s ease-out;
+  animation: slideIn 0.2s ease-out;
 }
 
 @keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .message-user {
@@ -54,70 +82,84 @@
   justify-content: flex-start;
 }
 
-.message-content {
-  max-width: 70%;
-  padding: 12px 16px;
+.message-bubble {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.message-user .message-bubble {
+  align-items: flex-end;
+}
+
+.message-text {
+  padding: 10px 14px;
   border-radius: 12px;
   word-wrap: break-word;
   line-height: 1.5;
+  font-size: 14px;
 }
 
-.message-user .message-content {
+.message-user .message-text {
   background: #1e3a8a;
   color: white;
   border-bottom-right-radius: 4px;
 }
 
-.message-assistant .message-content {
+.message-assistant .message-text {
   background: white;
-  color: #333;
-  border: 1px solid #e0e0e0;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
   border-bottom-left-radius: 4px;
 }
 
-.chat-input-area {
-  padding: 20px;
+.typing-indicator {
+  display: flex;
+  gap: 4px;
+  padding: 12px 16px;
   background: white;
-  border-top: 1px solid #e0e0e0;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  width: fit-content;
 }
 
-.test-button-area {
-  margin-bottom: 12px;
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  background: #9ca3af;
+  border-radius: 50%;
+  animation: bounce 1.2s infinite;
 }
 
-.test-button {
-  width: 100%;
-  padding: 10px;
-  background: #f59e0b;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background 0.2s;
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30%            { transform: translateY(-6px); }
 }
 
-.test-button:hover:not(:disabled) {
-  background: #d97706;
-}
-
-.test-button:disabled {
-  background: #ccc;
-  cursor: not-allowed;
+.chat-input-area {
+  padding: 16px 20px;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  flex-shrink: 0;
 }
 
 .input-group {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .message-input {
   flex: 1;
-  padding: 12px;
-  border: 1px solid #e0e0e0;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
   border-radius: 8px;
   font-size: 14px;
   font-family: inherit;
+  transition: border-color 0.15s;
 }
 
 .message-input:focus {
@@ -127,19 +169,19 @@
 }
 
 .message-input:disabled {
-  background: #f5f5f5;
-  cursor: not-allowed;
+  background: #f9fafb;
 }
 
 .send-button {
-  padding: 12px 24px;
+  padding: 10px 20px;
   background: #1e3a8a;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
-  transition: background 0.2s;
+  font-size: 14px;
+  transition: background 0.15s;
   white-space: nowrap;
 }
 
@@ -148,6 +190,24 @@
 }
 
 .send-button:disabled {
-  background: #ccc;
+  background: #9ca3af;
   cursor: not-allowed;
+}
+
+.input-hint {
+  margin-top: 8px;
+  text-align: right;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #6b7280;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link-btn:hover {
+  color: #1e3a8a;
 }

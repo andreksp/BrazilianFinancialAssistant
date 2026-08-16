@@ -1,0 +1,52 @@
+GUIA DO DARF — IMPOSTO DE RENDA EM RENDA VARIÁVEL
+
+O QUE É DARF:
+- DARF = Documento de Arrecadação de Receitas Federais
+- É o formulário usado para recolher impostos devidos à Receita Federal
+- Para renda variável (bolsa de valores), o DARF deve ser pago mensalmente
+
+CÓDIGO DARF:
+- Código 6015: "Ganhos Líquidos em Operações em Bolsa — Pessoa Física"
+- Este é o código usado para ações, BDRs, FIIs e opções (renda variável geral)
+
+QUANDO PAGAR:
+- O DARF deve ser pago até o ÚLTIMO DIA ÚTIL do mês seguinte às operações
+- Exemplo: operações em março/2025 → DARF vence em 30/04/2025
+- Exemplo: operações em dezembro/2025 → DARF vence em 31/01/2026
+
+VALOR MÍNIMO:
+- Não há obrigação de pagamento se o valor do IR for INFERIOR a R$ 10,00
+- Valores abaixo de R$ 10,00 devem ser ACUMULADOS até atingir o mínimo
+- Exemplo: IR de R$ 8,00 em março + R$ 6,00 em abril = R$ 14,00 a pagar em abril
+
+CÁLCULO DO VALOR A PAGAR:
+- IR Bruto = Ganho Líquido × Alíquota (15% ou 20%)
+- IRRF = Imposto Retido na Fonte (creditado ao contribuinte)
+- Valor do DARF = IR Bruto - IRRF retido
+- Se IRRF > IR Bruto: não há DARF a pagar (crédito para o próximo mês)
+
+EXEMPLO PRÁTICO:
+- Venda de 100 PETR4 a R$25,50, compradas a R$20,00 (swing trade, venda total mês > R$20.000)
+- Ganho bruto: (25,50 - 20,00) × 100 = R$550,00
+- IR bruto: R$550,00 × 15% = R$82,50
+- IRRF retido: R$2.550,00 × 0,005% = R$0,13
+- Valor do DARF: R$82,50 - R$0,13 = R$82,37
+
+COMO PAGAR:
+- Via banco (internet banking, caixa eletrônico)
+- Via Sicalc Web (sistema da Receita Federal)
+- App do banco com código de barras gerado pelo Sicalc
+- Acesso: https://www.sicalc.receita.fazenda.gov.br/
+
+DECLARAÇÃO ANUAL:
+- Além do DARF mensal, os ganhos devem ser declarados na DIRPF (declaração anual)
+- O IRRF pago mensalmente é dedutível na declaração anual
+- Manter todos os comprovantes de operações (notas de corretagem)
+
+PENALIDADES POR ATRASO:
+- Multa de 0,33% ao dia, limitada a 20% do valor
+- Juros SELIC sobre o valor atualizado
+
+BASE LEGAL:
+- Lei 11.033/2004 — estabelece as regras de tributação de renda variável
+- Instrução Normativa RFB 1.585/2015 — disciplina o recolhimento

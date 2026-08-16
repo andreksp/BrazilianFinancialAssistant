@@ -1,46 +1,38 @@
-# Multi-stage build for Brazilian Financial Assistant backend
-
-# Build stage
-FROM python:3.11-slim as builder
+# Multi-stage build — Brazilian Financial Assistant Backend
+# Stage 1: install dependencies
+FROM python:3.11-slim AS builder
 
 WORKDIR /app
 
-# Install Poetry
-RUN pip install --no-cache-dir poetry
+RUN pip install --no-cache-dir --upgrade pip
 
-# Copy dependency files
-COPY pyproject.toml poetry.lock* ./
+COPY requirements.txt .
+RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
-# Install dependencies
-RUN poetry config virtualenvs.in-project true && \
-    poetry install --no-interaction --no-ansi
-
-# Runtime stage
+# Stage 2: runtime image
 FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install runtime dependencies only
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
+RUN apt-get update && apt-get install -y --no-install-recommends curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy Poetry installation from builder
-COPY --from=builder /app/.venv /app/.venv
+# Copy installed packages from builder
+COPY --from=builder /install /usr/local
 
-# Copy application code
-COPY . .
+# Copy application code and data
+COPY app/ ./app/
+COPY data/ ./data/
 
-# Set environment
-ENV PATH="/app/.venv/bin:$PATH"
 ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
 
-# Health check
+# Pre-create directories so volumes mount cleanly
+RUN mkdir -p /app/chroma_data
+
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
     CMD curl -f http://localhost:8000/health || exit 1
 
-# Expose port
 EXPOSE 8000
 
-# Run FastAPI
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

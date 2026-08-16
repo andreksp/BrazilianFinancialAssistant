@@ -1,0 +1,45 @@
+TAXAS E EMOLUMENTOS — B3 (Brasil, Bolsa, Balcão)
+
+TAXAS PADRÃO PARA AÇÕES (mercado à vista):
+
+1. TAXA DE LIQUIDAÇÃO: 0,0275% sobre o valor financeiro da operação
+   - Cobrada tanto na compra quanto na venda
+   - Paga à B3 pelo serviço de liquidação (D+2 para ações)
+
+2. TAXA DE REGISTRO: 0,0034% sobre o valor financeiro
+   - Paga à B3 para registro da operação
+   - Aplicável em compra e venda
+
+3. EMOLUMENTOS: 0,003% sobre o valor financeiro
+   - Taxa cobrada pela B3 (reduzida por ter alto volume)
+   - Incide em todas as operações de bolsa
+
+4. ISS sobre CORRETAGEM: 5% sobre o valor da corretagem (imposto municipal)
+   - Cobrado sobre o valor da corretagem paga à corretora
+   - Alíquota pode variar por município
+
+CORRETAGEM (cobrada pela corretora, não pela B3):
+- Varia por corretora e tipo de conta
+- Pode ser taxa fixa por operação (ex: R$5,00) ou percentual do valor (ex: 0,1%)
+- Muitas corretoras oferecem corretagem zero para ações (Clear, XP, Rico, BTG Pactual Digital)
+- Day traders geralmente pagam corretagem mesmo em corretoras com zero para swing
+
+TAXAS PARA BDRs:
+- Mesmas taxas que ações (liquidação, registro, emolumentos)
+
+TAXAS PARA FIIs:
+- Mesmas taxas que ações no mercado à vista
+
+TAXAS PARA OPÇÕES:
+- Taxa de registro: 0,0050% (levemente diferente das ações)
+- Liquidação e emolumentos: valores específicos para derivativos
+
+EXEMPLO DE CUSTO TOTAL (ação PETR4, R$2.500,00 em valor de venda):
+- Taxa liquidação: R$2.500,00 × 0,000275 = R$0,69
+- Taxa registro: R$2.500,00 × 0,000034 = R$0,09
+- Emolumentos: R$2.500,00 × 0,00003 = R$0,08
+- Total taxas B3: aproximadamente R$0,86
+- Corretagem: depende da corretora (pode ser R$0,00)
+
+FONTE: Tabela de emolumentos e contribuições da B3 (atualizada periodicamente)
+Verificar: www.b3.com.br/pt_br/produtos-e-servicos/tarifas/

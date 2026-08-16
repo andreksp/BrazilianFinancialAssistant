@@ -2,15 +2,16 @@
 # For production use: pip install -r requirements.txt
 # For development: poetry install (from pyproject.toml)
 
-fastapi==0.104.1
+fastapi>=0.111.0
 uvicorn[standard]==0.24.0
 pydantic>=2.5.0
 pydantic-settings>=2.1.0
 sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
 chromadb==0.5.3
 anthropic>=0.7.1
 python-dotenv==1.0.0
-httpx>=0.25.2
+httpx>=0.27.0
 alembic==1.12.1
 
 # Testing
@@ -22,3 +23,7 @@ black==23.11.0
 flake8==6.1.0
 isort==5.12.0
 hypothesis==6.88.1
+
+# Streamlit prototype (Phase 2.5)
+streamlit>=1.28.0
+requests>=2.31.0

@@ -1,0 +1,35 @@
+REGRAS DE IMPOSTO DE RENDA — AÇÕES (Receita Federal do Brasil)
+
+ALÍQUOTAS:
+- Swing Trade (operações com prazo superior a 1 dia): 15% sobre o ganho líquido
+- Day Trade (compra e venda no mesmo dia): 20% sobre o ganho líquido
+
+ISENÇÃO — SWING TRADE:
+- Vendas de ações no mercado à vista ficam ISENTAS de IR se o total vendido no mês for igual ou inferior a R$ 20.000,00.
+- Atenção: o limite de R$ 20.000,00 refere-se ao valor total das vendas do mês, não ao ganho.
+- Se o total vendido no mês ultrapassar R$ 20.000,00, TODA a operação do mês fica sujeita ao IR (não apenas o excedente).
+- A isenção NÃO se aplica a Day Trade.
+
+IRRF (Imposto de Renda Retido na Fonte):
+- Swing Trade: 0,005% sobre o valor financeiro da venda (dedutível do IR devido)
+- Day Trade: 1% sobre o ganho auferido (dedutível do IR devido)
+
+CÁLCULO DO GANHO:
+- Ganho = (Preço de Venda - Preço Médio de Compra) × Quantidade
+- Preço Médio = média ponderada de todas as compras do ativo
+
+PREÇO MÉDIO (Custo Médio Ponderado):
+- PM = (Qtd_anterior × PM_anterior + Qtd_nova × Preço_novo) / (Qtd_anterior + Qtd_nova)
+- O preço médio inclui corretagem e taxas de compra
+- Em cada venda, o custo é calculado com base no PM vigente na data da venda
+
+COMPENSAÇÃO DE PREJUÍZOS:
+- Prejuízos de swing trade compensam ganhos futuros de swing trade do mesmo tipo (ações)
+- Prejuízos de day trade compensam ganhos futuros de day trade
+- Não é permitida compensação cruzada (swing com day trade)
+- Prejuízos não compensados podem ser carregados para meses futuros
+
+BASE LEGAL:
+- Lei 11.033/2004 — isenção R$ 20.000
+- Lei 11.196/2005 — IRRF 0,005%
+- Instrução Normativa RFB 1.585/2015 — regulamentação geral

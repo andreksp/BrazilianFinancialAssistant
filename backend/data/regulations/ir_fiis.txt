@@ -1,0 +1,36 @@
+REGRAS DE IMPOSTO DE RENDA — FUNDOS DE INVESTIMENTO IMOBILIÁRIO (FII)
+
+ALÍQUOTA:
+- Ganho de capital na venda de cotas: 20% sobre o ganho líquido (taxa única)
+- Não há distinção entre swing trade e day trade para efeito de alíquota
+- A alíquota de 20% é sempre aplicada, independente do tipo de operação
+
+ISENÇÃO:
+- NÃO HÁ ISENÇÃO para FIIs. A regra dos R$ 20.000,00 mensais NÃO se aplica a FIIs.
+- Qualquer ganho na venda de cotas de FII está sujeito ao IR de 20%
+
+IRRF (Imposto de Renda Retido na Fonte):
+- Swing Trade: 0,005% sobre o valor da venda
+- Day Trade: 1% sobre o ganho auferido
+
+GANHOS DE FII:
+- Rendimentos mensais distribuídos pelo FII (dividendos): ISENTOS de IR para pessoa física
+  (desde que o FII seja negociado em bolsa, tenha pelo menos 50 cotistas e o investidor possua menos de 10% das cotas)
+- Ganho de capital na venda de cotas: 20% SEMPRE (não isento)
+
+DIFERENÇA IMPORTANTE:
+- Rendimentos (aluguéis distribuídos mensalmente) = ISENTOS
+- Ganho na venda das cotas = 20% SEMPRE
+
+CÁLCULO DO GANHO:
+- Ganho = (Preço de Venda - Preço Médio de Compra) × Quantidade de Cotas
+- Mesmo cálculo de preço médio ponderado que as ações
+
+COMPENSAÇÃO DE PREJUÍZOS:
+- Prejuízos de FII compensam apenas ganhos futuros de FII
+- Não compensam ganhos em ações ou outros ativos
+
+BASE LEGAL:
+- Lei 11.033/2004 — regime de tributação de FIIs
+- Lei 9.779/1999 — isenção de rendimentos de FII para PF
+- Instrução Normativa RFB 1.585/2015

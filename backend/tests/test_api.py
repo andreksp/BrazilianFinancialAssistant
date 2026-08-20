@@ -175,8 +175,8 @@ class TestProcessTrade:
     def test_unsupported_asset_type_returns_400(self, client):
         """Invalid asset type returns 422 (Pydantic validation)."""
         payload = {
-            "ativo": "WINFUT",
-            "tipo_ativo": "futuro_indice",  # Not a valid AssetType
+            "ativo": "BTCFUT",
+            "tipo_ativo": "futuro_cripto",  # Not a valid AssetType (out of scope)
             "tipo_operacao": "venda",
             "quantidade": 1,
             "preco_unitario": 130000.0,

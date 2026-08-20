@@ -1,0 +1,40 @@
+REGRAS DE IMPOSTO DE RENDA — EMPRÉSTIMO DE AÇÕES (BTC/CBLC)
+
+O QUE É:
+- Contrato em que o DOADOR (dono das ações) empresta seus papéis a um TOMADOR
+  (geralmente para venda a descoberto), recebendo uma remuneração (taxa de aluguel)
+- Intermediado pela B3 através do BTC (Banco de Títulos CBLC)
+
+TRATAMENTO TRIBUTÁRIO — DIFERENTE DE AÇÕES:
+- A remuneração recebida pelo DOADOR NÃO segue as regras de ganho de capital
+  em renda variável (15%/20% + isenção de R$20.000)
+- É tributada como se fosse uma aplicação financeira de RENDA FIXA, pela
+  TABELA REGRESSIVA por prazo do contrato
+
+TABELA REGRESSIVA (sobre a remuneração bruta):
+- Até 180 dias .......... 22,5%
+- De 181 a 360 dias ..... 20,0%
+- De 361 a 720 dias ..... 17,5%
+- Acima de 720 dias ..... 15,0%
+
+RETENÇÃO NA FONTE:
+- O IR é retido diretamente pela B3/CBLC no momento do pagamento da remuneração
+- Tributação EXCLUSIVA/DEFINITIVA na fonte — não compõe a apuração mensal de
+  renda variável do investidor e não gera DARF adicional
+- Na declaração de ajuste anual, entra em "Rendimentos Sujeitos a Tributação
+  Exclusiva/Definitiva", com base no informe de rendimentos da B3 (Área do
+  Investidor → Relatórios → Informes – Empréstimos)
+
+TOMADOR (quem pega as ações emprestadas):
+- Se vender as ações a descoberto e depois recomprar para devolver, a
+  operação de venda/recompra segue as regras normais de ações (15%/20%,
+  isenção de R$20.000 se aplicável) — tratamento separado do aluguel em si
+
+BASE LEGAL:
+- Lei 13.043/2014
+- Instrução Normativa RFB 1.585/2015
+
+LIMITAÇÃO DESTE SISTEMA (MVP):
+- Cobre apenas a remuneração do DOADOR. Sem prazo do contrato informado,
+  assume-se a faixa mais conservadora (até 180 dias, 22,5%) e o usuário é
+  avisado para confirmar o prazo real no informe da B3.

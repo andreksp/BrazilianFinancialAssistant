@@ -22,6 +22,8 @@ _ASSET_TYPE_MAP = {
     "ir_opcoes": "acoes",
     "b3_fees": "geral",
     "darf_guide": "geral",
+    "ir_futuros": "geral",
+    "ir_emprestimo_acoes": "geral",
 }
 
 

@@ -66,6 +66,7 @@ class ClaudeClient:
                 preco_unitario=float(data["preco_unitario"]),
                 data_operacao=date.fromisoformat(data["data_operacao"]),
                 corretora=data.get("corretora"),
+                prazo_dias=data.get("prazo_dias"),
             )
 
         except (json.JSONDecodeError, KeyError, ValueError) as e:

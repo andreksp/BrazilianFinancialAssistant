@@ -4,7 +4,14 @@
  * Reference: backend/app/models/trade.py for Pydantic models
  */
 
-export type AssetType = 'acao' | 'bdr' | 'fii' | 'opcao' | 'futuro_dolar' | 'futuro_indice';
+export type AssetType =
+  | 'acao'
+  | 'bdr'
+  | 'fii'
+  | 'opcao'
+  | 'futuro_dolar'
+  | 'futuro_indice'
+  | 'emprestimo_acoes';
 export type OperationType = 'compra' | 'venda';
 export type TradeOperationType = 'swing' | 'day_trade';
 
@@ -27,6 +34,7 @@ export interface TradeInput {
   corretagem_percentual?: number;
   corretagem_fixa?: number;
   nota?: string;
+  prazo_dias?: number;
 }
 
 /**

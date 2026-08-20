@@ -31,7 +31,7 @@ export class TradeInputComponent implements OnInit {
   error: string | null = null;
 
   // Dropdown options
-  assetTypes = ['acao', 'bdr', 'fii', 'opcao'];
+  assetTypes = ['acao', 'bdr', 'fii', 'opcao', 'futuro_dolar', 'futuro_indice', 'emprestimo_acoes'];
   operationTypes = ['compra', 'venda'];
   brokers = ['C6', 'XP', 'Clear', 'Nubank', 'Bradesco', 'Outro'];
 
@@ -56,7 +56,13 @@ export class TradeInputComponent implements OnInit {
       corretagem_percentual: [0.001, [Validators.min(0), Validators.max(1)]],
       corretagem_fixa: [0, [Validators.min(0)]],
       nota: [''],
+      prazo_dias: [''],
     });
+  }
+
+  /** Empréstimo de ações is a single income event: always "venda", needs prazo_dias. */
+  get isEmprestimo(): boolean {
+    return this.tradeForm.get('tipo_ativo')?.value === 'emprestimo_acoes';
   }
 
   ngOnInit(): void {
@@ -64,6 +70,13 @@ export class TradeInputComponent implements OnInit {
     const today = new Date().toISOString().split('T')[0];
     this.tradeForm.patchValue({
       data_operacao: today,
+    });
+
+    // Empréstimo de ações is always a "venda" (remuneração recebida pelo doador)
+    this.tradeForm.get('tipo_ativo')?.valueChanges.subscribe((tipo) => {
+      if (tipo === 'emprestimo_acoes') {
+        this.tradeForm.patchValue({ tipo_operacao: 'venda' });
+      }
     });
   }
 
@@ -93,6 +106,7 @@ export class TradeInputComponent implements OnInit {
       corretagem_percentual: parseFloat(formValue.corretagem_percentual),
       corretagem_fixa: parseFloat(formValue.corretagem_fixa),
       nota: formValue.nota || undefined,
+      prazo_dias: formValue.prazo_dias ? parseInt(formValue.prazo_dias, 10) : undefined,
     };
 
     this.apiService.processTrade(trade).subscribe({

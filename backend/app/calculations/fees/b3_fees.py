@@ -63,6 +63,11 @@ def calculate_b3_fees(
         # FII has same fees as stocks
         taxa_registro = valor_financeiro * B3_TAXA_REGISTRO_ACAO
         emolumentos = valor_financeiro * B3_EMOLUMENTOS_ACAO
+    elif asset_type in (AssetType.FUTURO_DOLAR, AssetType.FUTURO_INDICE):
+        # B3 (BM&F) has its own fee table per contract/vencimento; using the
+        # bolsa baseline as an approximation, same simplification already used for OPCAO.
+        taxa_registro = valor_financeiro * B3_TAXA_REGISTRO_OPCAO
+        emolumentos = valor_financeiro * B3_EMOLUMENTOS_OPCAO
     else:
         taxa_registro = 0
         emolumentos = 0
@@ -99,5 +104,7 @@ def calculate_minimum_broker_fee(asset_type: AssetType) -> float:
         AssetType.BDR: 0.50,
         AssetType.OPCAO: 1.00,
         AssetType.FII: 0.50,
+        AssetType.FUTURO_DOLAR: 1.00,
+        AssetType.FUTURO_INDICE: 1.00,
     }
     return minimums.get(asset_type, 0.50)

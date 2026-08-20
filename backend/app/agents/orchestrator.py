@@ -24,6 +24,8 @@ from app.llm.prompts import ANSWER_QUESTION_SYSTEM
 from app.agents.acoes_agent import AcoesAgent
 from app.agents.fii_agent import FIIAgent
 from app.agents.opcoes_agent import OpcoesAgent
+from app.agents.derivativos_agent import DerivativosAgent
+from app.agents.emprestimo_agent import EmprestimoAgent
 from app.vector_db.chroma_client import get_chroma_client
 from app.storage.repository import save_chat
 
@@ -36,6 +38,9 @@ _AGENTS = {
     "bdr": AcoesAgent(),
     "fii": FIIAgent(),
     "opcao": OpcoesAgent(),
+    "futuro_dolar": DerivativosAgent(),
+    "futuro_indice": DerivativosAgent(),
+    "emprestimo_acoes": EmprestimoAgent(),
 }
 
 _NO_LLM_RESPONSE = (

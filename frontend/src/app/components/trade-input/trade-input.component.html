@@ -21,15 +21,32 @@
           <option value="bdr">BDR</option>
           <option value="fii">Fundo Imobiliário (FII)</option>
           <option value="opcao">Opção</option>
+          <option value="futuro_dolar">Futuro de Dólar (WDO)</option>
+          <option value="futuro_indice">Futuro de Índice (WIN)</option>
+          <option value="emprestimo_acoes">Empréstimo de Ações (aluguel)</option>
         </select>
       </div>
 
       <div class="form-group">
         <label>Operação *</label>
-        <select formControlName="tipo_operacao" class="form-input">
+        <select formControlName="tipo_operacao" class="form-input" [attr.disabled]="isEmprestimo ? true : null">
           <option value="compra">🟢 Compra</option>
           <option value="venda">🔴 Venda</option>
         </select>
+      </div>
+    </div>
+
+    <div class="form-row" *ngIf="isEmprestimo">
+      <div class="form-group">
+        <label>Prazo do Contrato (dias)</label>
+        <input
+          type="number"
+          formControlName="prazo_dias"
+          placeholder="ex: 90"
+          step="1"
+          min="1"
+          class="form-input"
+        />
       </div>
     </div>
 

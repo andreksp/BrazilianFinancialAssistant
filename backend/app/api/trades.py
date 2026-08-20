@@ -18,6 +18,8 @@ from app.calculations.equity.acoes import AcoesCalculator
 from app.calculations.equity.bdrs import BDRCalculator
 from app.calculations.equity.fiis import FIICalculator
 from app.calculations.equity.opcoes import OpcoesCalculator
+from app.calculations.derivatives.futuros import FuturosCalculator
+from app.calculations.lending.emprestimo import EmprestimoCalculator
 from app.storage.database import get_db
 from app.storage.repository import save_trade, get_trades, get_average_price, record_to_result
 
@@ -29,6 +31,9 @@ _CALCULATORS = {
     AssetType.BDR: BDRCalculator,
     AssetType.FII: FIICalculator,
     AssetType.OPCAO: OpcoesCalculator,
+    AssetType.FUTURO_DOLAR: FuturosCalculator,
+    AssetType.FUTURO_INDICE: FuturosCalculator,
+    AssetType.EMPRESTIMO_ACOES: EmprestimoCalculator,
 }
 
 

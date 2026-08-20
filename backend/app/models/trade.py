@@ -13,13 +13,16 @@ from pydantic import BaseModel, Field
 
 
 class AssetType(str, Enum):
-    """Enum for supported asset types (Phase 1)."""
+    """Enum for supported asset types."""
 
     ACAO = "acao"  # Stocks
     BDR = "bdr"  # Brazilian Depositary Receipts
     FII = "fii"  # Real Estate Investment Funds
     OPCAO = "opcao"  # Stock Options
-    # Phase 2: FUTURO_DOLAR, FUTURO_INDICE, FUTURO_CRIPTO
+    FUTURO_DOLAR = "futuro_dolar"  # Dollar futures (WDO)
+    FUTURO_INDICE = "futuro_indice"  # Ibovespa index futures (WIN)
+    EMPRESTIMO_ACOES = "emprestimo_acoes"  # Securities lending (BTC/CBLC)
+    # Phase 2 (remaining): FUTURO_CRIPTO
 
 
 class OperationType(str, Enum):
@@ -71,6 +74,11 @@ class TradeInput(BaseModel):
 
     # Optional metadata
     nota: Optional[str] = Field(None, description="User notes about the trade")
+
+    # Empréstimo de Ações only: contract duration, drives the regressive-rate bracket
+    prazo_dias: Optional[int] = Field(
+        None, gt=0, description="Lending contract duration in days (Empréstimo de Ações only)"
+    )
 
 
 class FeesBreakdown(BaseModel):

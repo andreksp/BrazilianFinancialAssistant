@@ -1,0 +1,44 @@
+REGRAS DE IMPOSTO DE RENDA — MERCADO FUTURO (Futuro de Dólar/WDO, Futuro de Índice/WIN)
+
+O QUE SÃO:
+- Contratos futuros negociados na B3 com liquidação por ajuste diário (marcação a mercado)
+- Futuro de Dólar (WDO): referência à cotação do dólar comercial
+- Futuro de Índice (WIN): referência ao Ibovespa
+
+ALÍQUOTAS:
+- Operação normal (posição mantida por mais de 1 dia): 15% sobre o ganho líquido
+- Day Trade (abertura e fechamento da posição no mesmo dia): 20% sobre o ganho líquido
+- Mesma estrutura de alíquotas das ações (15%/20%)
+
+ISENÇÃO — NÃO SE APLICA:
+- A isenção de R$ 20.000,00/mês vale APENAS para venda de ações no mercado à vista
+- TODA operação no mercado futuro é tributada, independente do valor negociado
+
+IRRF (Imposto de Renda Retido na Fonte / "dedo-duro"):
+- Operação normal: 0,005% sobre o valor de ajuste/liquidação
+- Day Trade: 1% sobre o ganho líquido apurado no dia
+- Dedutível do IR devido no mês; se não totalmente utilizado, pode ser compensado
+  com o IR de meses seguintes até dezembro do mesmo ano-calendário
+
+CÁLCULO DO GANHO:
+- Ganho = soma dos ajustes diários (ou, na simplificação usada neste sistema,
+  preço de fechamento - preço de abertura da posição) × quantidade de contratos
+- Apuração mensal, somando todos os ajustes/operações do mês
+
+COMPENSAÇÃO DE PREJUÍZOS:
+- Prejuízos no mercado futuro compensam ganhos futuros dentro da mesma categoria
+  de renda variável (bolsa, mercadoria, futuros e assemelhados)
+- Sem prazo de prescrição, desde que declarado corretamente
+
+DARF:
+- Código 6015, vencimento no último dia útil do mês seguinte ao da apuração
+- Valor mínimo de R$ 10,00 (valores menores acumulam para o mês seguinte)
+
+BASE LEGAL:
+- Lei 11.033/2004, art. 2º
+- Instrução Normativa RFB 1.585/2015
+
+LIMITAÇÃO DESTE SISTEMA (MVP):
+- O motor de cálculo não modela o ajuste diário real (D+1) do mercado futuro.
+  O usuário informa preço de abertura e de fechamento da posição, e o sistema
+  trata o resultado como o ganho agregado dessa operação.

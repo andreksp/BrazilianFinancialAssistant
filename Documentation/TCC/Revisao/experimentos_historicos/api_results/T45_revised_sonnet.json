@@ -1,0 +1,27 @@
+{
+  "key": "T45_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não posso responder a essa pergunta. Não faço previsões de preços de ações, não indico qual ativo vai subir ou \"dobrar\", e isso não é uma questão tributária.\n\nComo assistente de tributação, posso esclarecer o tratamento fiscal de operações com ações, caso seja útil:\n\n- **Venda de ações à vista (PF residente):** ganho de capital é isento se o total de vendas no mês, somando todas as corretoras, não ultrapassar R$ 20.000 (não se aplica a day trade, opções, FII, ETF ou BDR) [acoes_isencao].\n- **Empréstimo de ativos:** a remuneração ao emprestador pessoa física é tributada exclusivamente na fonte, com alíquotas regressivas conforme o prazo (22,5% a 15%), e não configura venda isenta [emprestimo].\n- **FII:** rendimentos distribuídos podem ser isentos sob certas condições legais, mas isso não isenta o ganho na venda de cotas [fii_rendimento].\n\nSe sua dúvida for sobre tributação de uma operação específica (venda, aluguel de ações, dividendos), informe o ativo, tipo de operação, valores e datas para orientação mais precisa. Este conteúdo é educacional, não é recomendação de investimento nem apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1036,
+    "output_tokens": 458,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006652,
+  "seconds": 6.044802199990954,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "621c5db8434ffd3fe247b63451cf7503ca2307375336fe2bc649b65abc0d52af"
+}

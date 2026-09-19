@@ -1,0 +1,24 @@
+{
+  "key": "T37_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise: Criptoativos Nacionais vs. Limite de R$ 20 mil\n\n## Resposta direta\n**Não.** O limite de R$ 20 mil **não se aplica** a criptoativos nacionais.\n\n---\n\n## Distinção de regimes\n\n| Ativo | Limite mensal | Fonte |\n|-------|---------------|-------|\n| **Ações à vista** | R$ 20.000 | acoes_isencao |\n| **Criptoativos nacionais** | R$ 35.000 | cripto_isencao |\n\n---\n\n## Seu caso (conforme evidência)\n\n- **Ativo:** criptoativos nacionais  \n- **Vendas mensais:** R$ 30 mil (com lucro)  \n- **Regra aplicável:** somar todas as alienações no mês até R$ 35.000  \n- **Resultado:** dentro do limite de isenção em ganho de capital\n\n**Observações:**\n- O limite incide sobre **valor total de vendas**, não apenas lucro (como em ações)\n- Permutas entre criptos também contam como alienação\n- Sem dados sobre qual criptoativo específico, mantém-se análise sob regime nacional\n\n---\n\n## Limitações\nFaltam: tipo específico de cripto, se há day trade, se houve operações no exterior. Solicite esclarecimentos para apuração precisa.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 820,
+    "output_tokens": 363,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002635,
+  "seconds": 4.318494600011036,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "d831c616bc12619121f3adf4f8fc9f845b01e999638314859143bc68fb70030d"
+}

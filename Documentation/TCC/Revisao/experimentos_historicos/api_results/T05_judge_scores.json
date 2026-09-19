@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 2,
+      "motivo": "Afirma diretamente que prejuízos de day trade compensam ganhos futuros de day trade"
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 1,
+      "motivo": "Trata de opções; compensação genérica, não responde ao núcleo"
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "BDRs, não trata de compensação de prejuízo day trade"
+    },
+    {
+      "id": "perdas",
+      "relevancia": 2,
+      "motivo": "Responde exatamente: compensação de day trade com day trade em períodos posteriores"
+    },
+    {
+      "id": "acoes_taxa",
+      "relevancia": 1,
+      "motivo": "Dá alíquota de day trade, sem tratar de compensação"
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 0,
+      "motivo": "Opções, irrelevante para a pergunta"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta: compensa dentro da mesma modalidade; IRRF 1% como dedução condiz com contexto",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e ancorada no trecho 'perdas' e alíquota de 20%",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta, destaca obrigações declaratórias e ausência de restituição automática",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T05",
+  "repeat": false
+}

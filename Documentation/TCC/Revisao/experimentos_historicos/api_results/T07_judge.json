@@ -1,0 +1,27 @@
+{
+  "key": "T07_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"4e69fb3f132e9ec3\",\"relevancia\":1,\"motivo\":\"Trata isenção de R$20 mil para ações, não esclarece BDR\"},{\"id\":\"e64833ee00978eec\",\"relevancia\":0,\"motivo\":\"Afirma que a isenção se aplica a BDR, contradiz o fato esperado\"},{\"id\":\"290b3fbba3faa9f8\",\"relevancia\":0,\"motivo\":\"Opções; não trata de BDR\"},{\"id\":\"bdr\",\"relevancia\":2,\"motivo\":\"Responde diretamente: BDR sem isenção, 15% em operação comum\"},{\"id\":\"futuros\",\"relevancia\":0,\"motivo\":\"Futuros; fora do escopo da pergunta\"},{\"id\":\"opcoes\",\"relevancia\":0,\"motivo\":\"Opções; fora do escopo da pergunta\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":0,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Conclui isenção para BDR, contrariando a regra correta; apoia-se em trecho contraditório\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Nega isenção, indica 15% e apuração/DARF, coerente com a fonte específica de BDR\"},{\"id\":\"C\",\"correcao\":1,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Núcleo correto (sem isenção, 15%), mas chama 15% de IRRF, confundindo retenção com imposto devido\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5586,
+    "output_tokens": 1446,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 868
+    }
+  },
+  "usd": 0.06408,
+  "seconds": 19.710269499977585,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "3b1af9a29622c682756b73afddfd322840c4652973473d62eaee77d286296ac2"
+}

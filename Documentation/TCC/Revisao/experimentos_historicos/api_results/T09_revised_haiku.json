@@ -1,0 +1,24 @@
+{
+  "key": "T09_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Alíquota de Day Trade em BDR\n\n**Resposta:** 20% sobre ganhos líquidos.\n\n## Detalhes\n\n| Aspecto | Informação |\n|--------|-----------|\n| **Alíquota** | 20% (ID: `bdr`, `acoes_taxa`) |\n| **Incidência** | Ganho líquido em operações day trade |\n| **Regime** | Day trade (compra e venda no mesmo dia) |\n| **Particularidade BDR** | Não se aplica a isenção de R$ 20 mil das ações à vista |\n\n## Limitações\n\n- A evidência não detalha se há diferenças entre BDR de ações e outros tipos\n- Não especifica tratamento de custos operacionais na apuração do ganho líquido\n- Compensação de prejuízos em day trade segue regras próprias (ID: `perdas`)\n\n**Peça esclarecimento se:** qual BDR específico (país de origem)?; se há custos de corretagem a compensar?\n\n**Fonte:** Legislação e guia B3 (12/09/2026).",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 768,
+    "output_tokens": 292,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002228,
+  "seconds": 3.930666900007054,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "38e6a053f99065064518d857aa47a743c9bd36d5bf749a4feb556d27518f5e49"
+}

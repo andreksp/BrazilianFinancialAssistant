@@ -1,0 +1,24 @@
+{
+  "key": "D09_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta\n\nNão há informação sobre \"quem é o doador\" nas evidências fornecidas.\n\n## Limitação identificada\n\nO contexto apresenta:\n- Regras de compensação de perdas em FII\n- Isenção de ganhos em ações à vista\n- Especificações técnicas do contrato WDO (futuro de dólar)\n\n**Nenhuma dessas evidências trata de doações, doadores ou transferências gratuitas.**\n\n## Esclarecimento necessário\n\nPara orientar sobre tributação de doações (PF residente, setembro/2026), preciso que você esclareça:\n\n1. **Há doação em análise?** (transferência gratuita de bens)\n2. **De quem para quem?** (relação entre doador e donatário)\n3. **Qual tipo de bem?** (imóvel, ações, dinheiro, etc.)\n4. **Qual estado?** (imposto de transmissão é estadual)\n\nSem essas informações e com evidências não relacionadas ao tema, não posso responder adequadamente sobre identidade ou obrigações fiscais do doador.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 765,
+    "output_tokens": 285,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.00219,
+  "seconds": 3.832021500042174,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "dff0c3b6458d1b40f46c259233ca715e730add323edb687467ced9ed8d28318d"
+}

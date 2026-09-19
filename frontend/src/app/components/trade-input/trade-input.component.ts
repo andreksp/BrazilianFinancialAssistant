@@ -31,7 +31,7 @@ export class TradeInputComponent implements OnInit {
   error: string | null = null;
 
   // Dropdown options
-  assetTypes = ['acao', 'bdr', 'fii', 'opcao', 'futuro_dolar', 'futuro_indice', 'emprestimo_acoes'];
+  assetTypes = ['acao', 'bdr', 'fii', 'opcao', 'futuro_dolar', 'futuro_indice', 'emprestimo_acoes', 'cripto'];
   operationTypes = ['compra', 'venda'];
   brokers = ['C6', 'XP', 'Clear', 'Nubank', 'Bradesco', 'Outro'];
 
@@ -57,12 +57,18 @@ export class TradeInputComponent implements OnInit {
       corretagem_fixa: [0, [Validators.min(0)]],
       nota: [''],
       prazo_dias: [''],
+      exchange_estrangeira: [false],
     });
   }
 
   /** Empréstimo de ações is a single income event: always "venda", needs prazo_dias. */
   get isEmprestimo(): boolean {
     return this.tradeForm.get('tipo_ativo')?.value === 'emprestimo_acoes';
+  }
+
+  /** Cripto has a different tax regime for national vs. foreign exchanges. */
+  get isCripto(): boolean {
+    return this.tradeForm.get('tipo_ativo')?.value === 'cripto';
   }
 
   ngOnInit(): void {
@@ -107,6 +113,7 @@ export class TradeInputComponent implements OnInit {
       corretagem_fixa: parseFloat(formValue.corretagem_fixa),
       nota: formValue.nota || undefined,
       prazo_dias: formValue.prazo_dias ? parseInt(formValue.prazo_dias, 10) : undefined,
+      exchange_estrangeira: formValue.tipo_ativo === 'cripto' ? !!formValue.exchange_estrangeira : undefined,
     };
 
     this.apiService.processTrade(trade).subscribe({

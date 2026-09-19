@@ -1,0 +1,24 @@
+{
+  "key": "D11_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Transferência entre carteiras próprias é sempre venda?\n\n**Não necessariamente.**\n\nA evidência fornecida não trata diretamente de transferências intracarteiras. Porém, conceitos relevantes emergen do material:\n\n## Distinções importantes\n\n1. **Venda vs. Transferência de titularidade**  \n   O material sobre empréstimo (ID: emprestimo_proventos) distingue *transferência de titularidade* (que ocorre no empréstimo) de *venda*. Transferências entre suas próprias carteiras podem não constituir operação de venda em sentido tributário.\n\n2. **O que é considerado \"venda\" para isento**  \n   A regra de isenção de ações (R$ 20 mil/mês) incide especificamente sobre **vendas** (ID: acoes_isencao), não sobre meras reorganizações de portfólio.\n\n## Limite da resposta\n\n**Faltam evidências** sobre:\n- Tratamento específico de transferências entre contas da mesma PF\n- Se há regime diferenciado (operação comum vs. day trade)\n- Período e tipo de ativo (ações, ETF, etc.)\n\n**Peço esclarecimento:** Qual é o tipo de ativo, o regime (comum ou day trade) e se há liquidação financeira ou apenas realocação contábil?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 769,
+    "output_tokens": 341,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002474,
+  "seconds": 4.37230659998022,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "4aa892d6ad795739a11fb6c6bf4749b7dba1b0aec8c4e46f69ac5916714e9c72"
+}

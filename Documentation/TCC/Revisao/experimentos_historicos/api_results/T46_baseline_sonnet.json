@@ -1,0 +1,27 @@
+{
+  "key": "T46_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não tenho informações suficientes para calcular seu imposto devido — sua pergunta não indica qual operação, valores, datas ou tipo de ativo (ações, futuros, empréstimo de ações etc.). Cada caso segue regras diferentes:\n\n- **Ações (mercado à vista, swing trade):** isenção de R$ 20.000/mês em vendas; alíquota 15% (ou 20% em day trade) sobre o ganho líquido, com IRRF já retido dedutível [c4a28d9b57b540e1].\n- **Mercado futuro (WDO/WIN):** sem isenção de R$ 20.000; 15%/20% sobre ganho, com IRRF de 0,005% (normal) ou 1% (day trade) [975ab3cfe6fdb742].\n- **Empréstimo de ações (BTC):** remuneração do doador é tributada como renda fixa, na tabela regressiva (22,5% a 15% conforme prazo), com retenção exclusiva na fonte [06a4e857780aec7b].\n\nPara calcular preciso saber: tipo de ativo/operação, se é day trade ou operação normal, valores de compra/venda ou ajuste, total de vendas no mês (para checar isenção) e, no caso de aluguel de ações, o prazo do contrato.\n\n**Importante:** qualquer cálculo aqui é educacional/simulado, não substitui apuração fiscal oficial nem orientação de contador. Não posso indicar formas de reduzir tributos indevidamente.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3501,
+    "output_tokens": 514,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.012142,
+  "seconds": 7.343229899997823,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "7557c4e0a64ac90889c2236e1b93c42aac28e51181178ce75a99aec89f841fe8"
+}

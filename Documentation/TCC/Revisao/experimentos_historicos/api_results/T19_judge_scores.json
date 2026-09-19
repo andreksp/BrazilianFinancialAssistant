@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 1,
+      "motivo": "Regras de ações; trata do limite de R$20 mil mas não da questão sobre opções"
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 2,
+      "motivo": "Afirma diretamente que opções não têm isenção de R$20 mil"
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "Trata de BDRs; não responde e ainda conflita com a regra de isenção restrita a ações"
+    },
+    {
+      "id": "futuros",
+      "relevancia": 1,
+      "motivo": "Tema análogo (sem isenção), mas sobre futuros, não opções"
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 2,
+      "motivo": "Responde ao núcleo: não há isenção de R$20 mil em opções"
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 2,
+      "motivo": "Delimita a isenção a ações e exclui expressamente opções"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Núcleo correto e ancorado nos trechos, mas rotula 15%/20% como 'IRRF', confundindo alíquota do ganho com retenção na fonte",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Acerta a ausência de isenção para opções, porém afirma que BDRs teriam a isenção, contrariando a fonte de referência",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Resposta correta, distingue venda de ganho e sustenta-se nos trechos citados sem dados inventados",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T19",
+  "repeat": false
+}

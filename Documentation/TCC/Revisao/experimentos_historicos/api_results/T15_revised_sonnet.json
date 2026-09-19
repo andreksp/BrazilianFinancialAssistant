@@ -1,0 +1,27 @@
+{
+  "key": "T15_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, são regimes distintos:\n\n**Rendimento mensal distribuído** pelo FII: pode ser **isento**, desde que cumpridas as condições do art. 3º da Lei 11.033/2004 — negociação em bolsa/balcão organizado, mínimo de 100 cotistas e restrições de concentração por cotista. Não se presume isenção automática para todo fundo ou todo cotista [fii_rendimento].\n\n**Ganho na venda de cotas**: sujeito a **20%** de imposto sobre o ganho líquido, apurado mensalmente, com recolhimento via DARF. Não existe isenção por valor de venda abaixo de determinado limite (diferente da regra de ações comuns até R$ 20 mil/mês) [fii_venda].\n\nOu seja: a isenção do art. 3º da Lei 11.033 alcança apenas o **rendimento distribuído periodicamente**, não o **lucro na alienação da cota** — são fatos geradores diferentes.\n\n**Limites desta resposta**: não tenho evidência sobre sua situação concreta (tipo de FII, se atende aos requisitos de isenção, valores de venda, apuração de custo médio). Para confirmar isenção do rendimento específico, é preciso verificar se o fundo/cotista cumprem todas as condições legais. Recomendo conferir informe de rendimentos do fundo e, se necessário, orientação de contador para apuração definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1025,
+    "output_tokens": 490,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.00695,
+  "seconds": 6.367586600012146,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ab3335297252bd3779d9c57eeed8504a504175d00c15d0ce81be7ced7a52d356"
+}

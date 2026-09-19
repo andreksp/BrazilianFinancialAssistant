@@ -1,0 +1,27 @@
+{
+  "key": "T21_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base no evidence \"acoes_taxa\": day trade em ações/opções tributa a **20%** sobre o ganho líquido, e a isenção de R$ 20.000 em vendas (evidence \"acoes_isencao\") **não se aplica** a day trade nem a opções.\n\nPortanto, para R$ 1.000 de ganho líquido em day trade de opções, sem perdas a compensar:\n\n**IR devido = R$ 1.000 × 20% = R$ 200,00**\n\nPontos importantes:\n- Isso é apuração mensal por regime de day trade, não confundir com IRRF (retenção na fonte, geralmente 1% para day trade), que é apenas antecipação e não substitui o cálculo dos 20%.\n- O recolhimento (DARF) deve ocorrer até o último dia útil do mês seguinte ao da operação.\n- Compensação com perdas anteriores de day trade, se houver, reduziria a base — mas você indicou \"sem perdas\".\n\n**Limites desta resposta**: não tenho evidência sobre valor de IRRF retido, código de DARF, ou eventuais perdas em meses anteriores. Se precisar apurar o imposto real a pagar (líquido do IRRF já retido) ou tratar compensações, informe esses dados adicionais. Esta é uma simulação educacional, não apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 997,
+    "output_tokens": 460,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006594,
+  "seconds": 5.952478099963628,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "a533d1576c8b3444dfba1ff626f671e3e146e8809757b17560491425db6f2987"
+}

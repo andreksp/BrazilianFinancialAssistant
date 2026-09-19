@@ -1,0 +1,24 @@
+{
+  "key": "T44_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Orientação sobre Imposto na Venda de Moedas\n\n## O que preciso saber:\n\nPara calcular corretamente o imposto, **preciso de informações essenciais** que você não forneceu:\n\n1. **Tipo de moeda**: criptoativos (Bitcoin, Ethereum) ou moedas físicas de coleção/numismática?\n2. **Ganho ou perda**: qual foi o valor de compra e venda?\n3. **Período de posse**: quantos dias entre compra e venda?\n4. **Tipo de operação**: foi day trade (compra e venda no mesmo dia) ou operação comum?\n\n## Limitação das evidências:\n\nAs fontes fornecidas tratam de **empréstimo de ativos** (Lei 15.265/2025) e **compensação de perdas** em day trade e FII — não cobrem diretamente a tributação de vendas de moedas.\n\n## Próximos passos:\n\n- Especifique o ativo (cripto ou numismática)\n- Informe ganho/perda e período\n- Indique se foi operação isolada ou frequente\n\n**Sem esses dados, não posso simular sua apuração fiscal com responsabilidade.** A tributação de criptoativos segue regras específicas distintas de ações e FII.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 770,
+    "output_tokens": 333,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002435,
+  "seconds": 3.9448705000104383,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "fa492507dc441fad685f5776f68bb9d366815a4d0bb3af9333c912a65b984907"
+}

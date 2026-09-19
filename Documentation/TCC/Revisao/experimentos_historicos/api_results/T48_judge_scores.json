@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 0,
+      "motivo": "BTC aqui é Banco de Títulos CBLC, não bitcoin; não trata de custódia ou exterior"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "FII, sem relação com criptoativos"
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 0,
+      "motivo": "Mercado futuro, irrelevante"
+    },
+    {
+      "id": "fii_rendimento",
+      "relevancia": 0,
+      "motivo": "Isenção de FII, irrelevante"
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ativos, irrelevante"
+    },
+    {
+      "id": "acoes_taxa",
+      "relevancia": 0,
+      "motivo": "Alíquotas de ações, irrelevante"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Sinaliza ausência de base e ainda entrega o núcleo correto: autocustódia não define localização por si só",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 1,
+      "fundamentacao": 1,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Abstenção adequada, mas evita concluir o ponto essencial (não, não prova)",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Responde corretamente e delimita falta de base; critérios listados são genéricos e sem suporte no contexto",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T48",
+  "repeat": false
+}

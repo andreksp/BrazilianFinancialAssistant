@@ -1,0 +1,27 @@
+{
+  "key": "T01_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base no evidence \"acoes_isencao\": para ações à vista, PF residente, operações comuns (não day trade), há isenção de imposto sobre o ganho quando o total das **vendas** no mês (somando todas as corretoras) não ultrapassa R$ 20.000.\n\nNo seu caso: vendas totais de R$ 19.500 no mês, em operação comum à vista → **está dentro do limite de isenção**, pois R$ 19.500 < R$ 20.000.\n\nPontos importantes:\n- O limite incide sobre o valor das **vendas**, não sobre o lucro (rendimento).\n- Essa isenção vale apenas para ações à vista em operações comuns; não se aplica a day trade, opções, FII, ETF ou BDR.\n- Isenção não dispensa de informar a operação na Declaração de Ajuste Anual (obrigação acessória), apenas exclui o imposto sobre o ganho.\n\nLimitação: não tenho evidência sobre se há outras vendas de renda variável no mesmo mês (ex.: FIIs, day trade) que possam alterar o enquadramento. Se houver, isso pode mudar a análise — por favor confirme se essa foi a única operação em ações à vista no mês.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1036,
+    "output_tokens": 417,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006242,
+  "seconds": 5.336794500006363,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b011fb78c1cad4a67d79beec7c44b3492f3f5505f57b08d45c168485deb48474"
+}

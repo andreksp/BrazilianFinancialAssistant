@@ -1,0 +1,24 @@
+{
+  "key": "T18_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Venda de Cota de FII – Regime Aplicável\n\n## Resposta Direta\n**Não**: venda de cota de FII **não segue** a regra de imóvel residencial. Cotifundos imobiliários são **valores mobiliários**, não imóveis diretos.\n\n## Regime Aplicável\n\n**Ganho de capital** na venda de cota de FII segue as normas gerais de renda variável (PJ ou PF):\n- Alíquota de **15%** sobre o ganho líquido  \n- Apuração por operação (diferença entre preço de venda e custo de aquisição)\n\n**Rendimentos distribuídos** pelo FII podem ter tratamento diferenciado: conforme art. 3º da Lei 11.033/2004 (ID: fii_rendimento), quando cumprem critérios (negociação em bolsa, 100+ cotistas, limites de concentração), há possibilidade de isenção. **Porém, essa isenção não cobre o lucro na venda da cota em si**.\n\n## Importante\n- Não confunda rendimento distribuído com ganho na alienação  \n- Verifique se seu FII atende aos critérios da Lei 11.033 para isenção de rendimentos  \n- Ganho na venda é tributado independentemente\n\n**Preciso**: quando exatamente vendeu? Qual o valor? Para apuração, também importa se houve reinvestimento de dividendos.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 815,
+    "output_tokens": 376,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002695,
+  "seconds": 4.63451800000621,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b91faf78fc552eb84cf98c508e0a58f667dcc9e5f6a3f22bc93deb1c08cf1df1"
+}

@@ -1,0 +1,327 @@
+[
+  {
+    "page": 1,
+    "text_start": " \n  \n \n \nAndre Khenaifes \nTrabalho de Conclusão de Curso  \nMBA em Inteligência Artificial e Big Data \nAssistente inteligente para apoio em tributação e \nregulaç",
+    "text_length": 197
+  },
+  {
+    "page": 2,
+    "text_start": "UNIVERSIDADE DE SÃO PAULO \nInstituto de Ciências Matemáticas e de Computação \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n",
+    "text_length": 323
+  },
+  {
+    "page": 3,
+    "text_start": "ANDRE KHENAIFES \n \n \n \n \n \nASSISTENTE INTELIGENTE PARA APOIO EM TRIBUTAÇÃO E REGULAÇÃO NO \nMERCADO FINANCEIRO BRASILEIRO \n \n \n \n \nTrabalho de conclusão de curso",
+    "text_length": 486
+  },
+  {
+    "page": 4,
+    "text_start": "RESUMO \nKHENAIFES, Andre. Assistente inteligente para apoio em tributação e regulação no mercado financeiro \nbrasileiro. 2026. Monografia (Especialização em Int",
+    "text_length": 2072
+  },
+  {
+    "page": 5,
+    "text_start": "ABSTRACT \nKHENAIFES, Andre. Intelligent assistant to support taxation and regulation in the Brazilian financial market. \n2026. Monografia (Especialização em Int",
+    "text_length": 1978
+  },
+  {
+    "page": 6,
+    "text_start": "SUMÁRIO \n1 INTRODUÇÃO ........................................................................................................... 8 \n1.1 Problema de pesquisa ..",
+    "text_length": 2979
+  },
+  {
+    "page": 7,
+    "text_start": "5.4 Orquestração e modelos de linguagem ............................................................... 25 \n5.5 Base vetorial e recuperação documental .........",
+    "text_length": 2683
+  },
+  {
+    "page": 8,
+    "text_start": "8 \n \n1 INTRODUÇÃO \nO mercado financeiro brasileiro apresenta um ambiente informacionalmente exigente. \nA interpretação de operações de renda variável envolve re",
+    "text_length": 2526
+  },
+  {
+    "page": 9,
+    "text_start": "9 \n \nativo. Essas particularidades são reunidas no capítulo dedicado ao domínio financeiro e \ntributário brasileiro, incluindo derivativos e aspectos dos cripto",
+    "text_length": 2188
+  },
+  {
+    "page": 10,
+    "text_start": "10 \n \n1.2 Objetivos \nO objetivo geral é desenvolver e avaliar um assistente inteligente baseado em RAG para \napoiar a interpretação de regras tributárias e regu",
+    "text_length": 1891
+  },
+  {
+    "page": 11,
+    "text_start": "11 \n \n1.4 Organização do trabalho \nNo Capítulo 2 são apresentados os fundamentos de modelos de linguagem, \nrepresentações vetoriais, RAG, MCP e avaliação assist",
+    "text_length": 697
+  },
+  {
+    "page": 12,
+    "text_start": "12 \n \n2 FUNDAMENTAÇÃO TEÓRICA \nNeste capítulo é apresentado o referencial teórico sobre os conceitos utilizados para o \ndesenvolvimento deste trabalho de conclu",
+    "text_length": 2378
+  },
+  {
+    "page": 13,
+    "text_start": "13 \n \nGemma, Llama 3, Mistral 7B e DeepSeek-V3 (GEMMA TEAM, 2024; GRATTAFIORI et al., \n2024; JIANG et al., 2023; DEEPSEEK-AI, 2024). Esses exemplos contextualiz",
+    "text_length": 2451
+  },
+  {
+    "page": 14,
+    "text_start": "14 \n \numa consulta sobre remuneração de quem empresta ações pode necessitar de um trecho que \nemprega a expressão doador de ativos, mesmo sem repetir todos os t",
+    "text_length": 2444
+  },
+  {
+    "page": 15,
+    "text_start": "15 \n \nFigura 1 – Fluxo conceitual de indexação e consulta em RAG \n \nFonte: elaboração própria com base em Lewis et al. (2020). Fluxo conceitual; a configuração ",
+    "text_length": 1532
+  },
+  {
+    "page": 16,
+    "text_start": "16 \n \nO protocolo distingue ferramentas, recursos e prompts. Ferramentas são operações \ninvocáveis, descritas por nome e esquema de entrada; recursos disponibil",
+    "text_length": 1891
+  },
+  {
+    "page": 17,
+    "text_start": "17 \n \n3 DOMÍNIO FINANCEIRO E TRIBUTÁRIO BRASILEIRO \nNeste capítulo são apresentadas as particularidades do domínio financeiro e tributário \nbrasileiro, com dest",
+    "text_length": 2298
+  },
+  {
+    "page": 18,
+    "text_start": "18 \n \npropriedade geral dos dados de entrada: um campo numericamente válido pode ser \nsemanticamente insuficiente. \nBDRs não se beneficiam da isenção de R$ 20 m",
+    "text_length": 2212
+  },
+  {
+    "page": 19,
+    "text_start": "19 \n \nNos futuros, a especificação do contrato é indispensável para converter variação de \ncotação em reais. No minicontrato WIN, cada ponto corresponde a R$ 0,",
+    "text_length": 2347
+  },
+  {
+    "page": 20,
+    "text_start": "20 \n \nQuando tributável, a progressividade deve ser aplicada às parcelas de ganho das \nrespectivas faixas. A Lei nº 13.259/2016 não autoriza aplicar a maior alí",
+    "text_length": 907
+  },
+  {
+    "page": 21,
+    "text_start": "21 \n \n4 TRABALHOS RELACIONADOS \nAs referências a seguir são discutidas segundo sua contribuição para recuperação, \nrepresentação e avaliação. A revisão é dirigi",
+    "text_length": 2451
+  },
+  {
+    "page": 22,
+    "text_start": "22 \n \n4.2 Avaliação automática \nZheng et al. (2023) fundamentam a discussão sobre modelos avaliadores e seus vieses. \nA presente pesquisa emprega rubrica curta ",
+    "text_length": 998
+  },
+  {
+    "page": 23,
+    "text_start": "23 \n \n5 ARQUITETURA E IMPLEMENTAÇÃO \nNeste capítulo são consolidados os módulos e seus fluxos, as interfaces HTTP, a \nrecuperação documental e as alterações loc",
+    "text_length": 1858
+  },
+  {
+    "page": 24,
+    "text_start": "24 \n \nFigura 2 – Arquitetura com execução de cálculos via MCP \n \nFonte: elaboração própria a partir do código e dos registros experimentais (2026). \n5.2 Interfa",
+    "text_length": 1421
+  },
+  {
+    "page": 25,
+    "text_start": "25 \n \n5.3 Backend e interfaces HTTP \nAs rotas de chat recebem mensagens e devolvem resposta, identificação do agente e, \nquando existentes, operação extraída e ",
+    "text_length": 2459
+  },
+  {
+    "page": 26,
+    "text_start": "26 \n \nao gateway MCP; após o retorno, o resultado numérico e o contexto documental são enviados \nao modelo para explicação. \nNa configuração do backend, claude-",
+    "text_length": 2490
+  },
+  {
+    "page": 27,
+    "text_start": "27 \n \nexperimental permite comparar duas configurações completas de recuperação e contexto; não \npermite separar o efeito de remover uma regra errada do efeito ",
+    "text_length": 2568
+  },
+  {
+    "page": 28,
+    "text_start": "28 \n \nterceiros. Fontes internacionais são reservadas principalmente aos métodos de inteligência \nartificial. Essa escolha procura aproximar a referência da aut",
+    "text_length": 2417
+  },
+  {
+    "page": 29,
+    "text_start": "29 \n \nchaves de API não foram copiadas para a documentação ou para o corpus, e somente perguntas \nsintéticas e informações públicas foram encaminhadas aos model",
+    "text_length": 2439
+  },
+  {
+    "page": 30,
+    "text_start": "30 \n \n5.8 Servidor MCP e instruções de geração \nDois servidores têm papéis distintos. O arquivo mcp_server/server.py preserva as \nferramentas legadas get_tax_ru",
+    "text_length": 2203
+  },
+  {
+    "page": 31,
+    "text_start": "31 \n \n6 CRITÉRIOS DE AVALIAÇÃO \nSão descritos a composição do benchmark, as configurações comparadas, as rubricas, \nas métricas e as condições de reprodução. A ",
+    "text_length": 2462
+  },
+  {
+    "page": 32,
+    "text_start": "32 \n \nnatural. Ela compara geração com recuperação real sob condições controladas. Os testes das \ncalculadoras constituem uma etapa distinta, que recebe entrada",
+    "text_length": 2501
+  },
+  {
+    "page": 33,
+    "text_start": "33 \n \n6.4 Julgamento das respostas e repetição \nO modelo claude-opus-5 atuou como avaliador automático, recebendo respostas \nanonimizadas e ordem embaralhada co",
+    "text_length": 2546
+  },
+  {
+    "page": 34,
+    "text_start": "34 \n \nbaseline_retrieval.json, revised_retrieval.json, api_results e results_per_case.csv permitem \nrastrear a avaliação textual. Os comandos de reprodução e o ",
+    "text_length": 2056
+  },
+  {
+    "page": 35,
+    "text_start": "35 \n \n7 RESULTADOS E DISCUSSÃO \nOs resultados são organizados em avaliação quantitativa e demonstração documentada. \nPrimeiro são examinadas respostas, recupera",
+    "text_length": 1423
+  },
+  {
+    "page": 36,
+    "text_start": "36 \n \nNo conjunto factual, o Sonnet com corpus revisado obteve 37 respostas corretas em 42, \ncontra 29 com corpus inicial. A diferença observada é de oito respo",
+    "text_length": 1758
+  },
+  {
+    "page": 37,
+    "text_start": "37 \n \ncorreção em toda a resposta: uma orientação prudente pode coexistir com incompletude em \noutros aspectos da rubrica. Por isso, o documento não apresenta e",
+    "text_length": 1989
+  },
+  {
+    "page": 38,
+    "text_start": "38 \n \nCenário \nInicial \nRevisado \ndoador_721 \nAtendeu \nAtendeu \nFonte: elaboração própria a partir dos registros dos experimentos (2026). \nFigura 5 – Verificaçã",
+    "text_length": 1809
+  },
+  {
+    "page": 39,
+    "text_start": "39 \n \nOs \nregistros \npytest_corrigido.txt, \ncalculadoras_12_reexecutadas.json \ne \nbdr_regressao_corrigida.json documentam a verificação posterior. A aprovação d",
+    "text_length": 3070
+  },
+  {
+    "page": 40,
+    "text_start": "40 \n \nExemplo T01 – acoes \nPergunta: Vendi R$ 19.500 em ações à vista em todo o mês, com lucro, operação \ncomum. PF residente. Há isenção? \nCom base no evidence",
+    "text_length": 3020
+  },
+  {
+    "page": 41,
+    "text_start": "41 \n \nImportante — isso é apenas o cálculo do resultado bruto da operação, não a apuração fiscal: - Isso é resultado de \nrenda variável (day trade ou swing trad",
+    "text_length": 3542
+  },
+  {
+    "page": 42,
+    "text_start": "42 \n \nAlém das saídas registradas pelo executor, esta revisão inclui capturas de tela da \ninterface Angular operando de fato, com dados sintéticos e sem reaprov",
+    "text_length": 641
+  },
+  {
+    "page": 43,
+    "text_start": "43 \n \nFigura 7 – Remuneração do doador pela interface — sucesso \n \nFonte: Interface Angular conectada ao backend revisado, dados sintéticos, sessão de 2026-09-1",
+    "text_length": 516
+  },
+  {
+    "page": 44,
+    "text_start": "44 \n \nFigura 8 – Chat em linguagem natural sobre FII — resposta real \n \nFonte: captura da interface Angular conectada ao backend, sessão de 13 set. 2026. Respos",
+    "text_length": 889
+  },
+  {
+    "page": 45,
+    "text_start": "45 \n \nFigura 9 – Venda de ações pela interface — recusa observada por ausência de custo médio \n \nFonte: captura da interface Angular, sessão de 13 set. 2026. Me",
+    "text_length": 1018
+  },
+  {
+    "page": 46,
+    "text_start": "46 \n \nA inspeção do formulário indica uma possível lacuna entre os dados expostos na \ninterface e os campos aceitos pelo backend. Entretanto, diagnosticar a cau",
+    "text_length": 2598
+  },
+  {
+    "page": 47,
+    "text_start": "47 \n \nanterior havia utilizado um ambiente já existente. Nenhuma correção de código é atribuída a \nesta rodada. \nO arquivo protocol_evidence.json registra inici",
+    "text_length": 2865
+  },
+  {
+    "page": 48,
+    "text_start": "48 \n \nhá novas capturas de tela: chamadas HTTP não validam a interação ou a apresentação no \nnavegador. \nA inspeção de chat_real/03_venda_fii.json, entretanto, ",
+    "text_length": 1654
+  },
+  {
+    "page": 49,
+    "text_start": "49 \n \n8 CONCLUSÃO \n8.1 Síntese das contribuições \nA dispersão e a complexidade das informações tributárias motivaram o \ndesenvolvimento de um assistente em port",
+    "text_length": 2282
+  },
+  {
+    "page": 50,
+    "text_start": "50 \n \nfoi usada como substituta da correção: ela poderia premiar uma frase lexicalmente próxima com \npercentual ou negação incorretos. \nA cobertura operacional ",
+    "text_length": 2509
+  },
+  {
+    "page": 51,
+    "text_start": "51 \n \nde linguagem pela API, mas não substitui testes com navegador, avaliações de usuários ou \nestudo de carga. Permanecem necessários o teste do timeout inter",
+    "text_length": 363
+  },
+  {
+    "page": 52,
+    "text_start": "52 \n \nREFERÊNCIAS \nANTHROPIC. Introducing the next generation of Claude. 2024. Disponível em: \nhttps://www.anthropic.com/news/claude-3-family. Acesso em: 13 set",
+    "text_length": 2481
+  },
+  {
+    "page": 53,
+    "text_start": "53 \n \nBRASIL. Lei nº 15.265, de 21 de novembro de 2025. Disponível em: \nhttps://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm. Acesso em: 12 s",
+    "text_length": 2530
+  },
+  {
+    "page": 54,
+    "text_start": "54 \n \nMODEL CONTEXT PROTOCOL. 2025a. Tools. Specification 2025-06-18. Disponível em: \nhttps://modelcontextprotocol.io/specification/2025-06-18/server/tools. Ace",
+    "text_length": 2449
+  },
+  {
+    "page": 55,
+    "text_start": "55 \n \nAPÊNDICE A – BENCHMARK E FATOS ESPERADOS \nAs perguntas seguintes são sintéticas. Os gabaritos são fatos esperados preparados com \nassistência de IA, não p",
+    "text_length": 1412
+  },
+  {
+    "page": 56,
+    "text_start": "56 \n \nT05 | acoes | Teste \nPerdi em day trade em agosto. Posso compensar com lucro de day trade em setembro? \nFatos esperados: Sim, observadas condições declara",
+    "text_length": 1783
+  },
+  {
+    "page": 57,
+    "text_start": "57 \n \nT11 | bdr | Teste \nRendimento distribuído por BDR é o mesmo fato tributário da venda do certificado? \nFatos esperados: Não; separar eventos. \nReferência: ",
+    "text_length": 1688
+  },
+  {
+    "page": 58,
+    "text_start": "58 \n \nT17 | fii | Teste \nPosso abater prejuízo em cotas de FII do lucro em ações? \nFatos esperados: Não; FII mesma espécie. \nReferência: https://normas.receita.",
+    "text_length": 1356
+  },
+  {
+    "page": 59,
+    "text_start": "59 \n \nT23 | opcoes | Teste \nSou titular de opção que expirou. Basta ticker para calcular imposto? \nFatos esperados: Não, faltam prêmio quantidade evento históri",
+    "text_length": 1488
+  },
+  {
+    "page": 60,
+    "text_start": "60 \n \nT29 | futuros | Teste \nNocional de contrato futuro é o dinheiro recebido no encerramento? \nFatos esperados: Não; distinguir nocional, ganho e ajustes. \nRe",
+    "text_length": 1313
+  },
+  {
+    "page": 61,
+    "text_start": "61 \n \nT35 | emprestimo | Teste \nRemuneração do doador PF já retida exige outro DARF mensal? \nFatos esperados: Não sobre essa remuneração, retenção definitiva. \n",
+    "text_length": 1474
+  },
+  {
+    "page": 62,
+    "text_start": "62 \n \nT41 | cripto | Teste \nCripto enquadrada como aplicação financeira exterior Lei14.754 mantém isenção \nmensal35mil? \nFatos esperados: Não; anual15%, verific",
+    "text_length": 1096
+  },
+  {
+    "page": 63,
+    "text_start": "63 \n \nT48 | abstencao | Teste \nTer carteira própria de bitcoin prova que a aplicação está no exterior? \nFatos esperados: Não, autocustódia não determina regime ",
+    "text_length": 1167
+  },
+  {
+    "page": 64,
+    "text_start": "64 \n \nD07 | desenvolvimento | Desenvolvimento \nO que é margem de garantia? \nFatos esperados: Inspeção exploratória de cobertura, fora dos escores finais. \nD08 |",
+    "text_length": 943
+  },
+  {
+    "page": 65,
+    "text_start": "65 \n \nAPÊNDICE B – REPRODUÇÃO E USO DE IA \nO código inicial foi desenvolvido com assistência do Claude, conforme informação do \nautor. A revisão documental, a p",
+    "text_length": 1970
+  }
+]

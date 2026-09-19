@@ -1,0 +1,27 @@
+{
+  "key": "T39_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. A troca de um criptoativo por outro (BTC por ETH), mesmo sem converter em reais, configura **alienação** para fins de apuração de ganho de capital, conforme as regras de tributação de criptoativos vigentes em 2026 (evidência 183017f281e698ea). O conceito de \"venda\" nesse regime abrange qualquer forma de disposição do ativo — incluindo permuta entre criptomoedas —, não se restringindo ao saque em moeda fiduciária.\n\nIsso significa que:\n- Se a operação for em exchange nacional, o ganho apurado na troca entra no cômputo do limite de isenção de R$35.000/mês (somando todas as operações do mês).\n- Se envolver exchange estrangeira ou autocustódia fora do Brasil, aplica-se a alíquota fixa de 15% sobre o ganho líquido anual, apurada na Declaração de Ajuste Anual, sem a isenção de R$35.000.\n\nEm ambos os casos, é necessário apurar o ganho de capital (diferença entre valor de mercado do ETH recebido e custo de aquisição do BTC entregue).\n\nNão tenho evidência sobre datas, valores ou plataforma específicos da sua operação — para uma orientação mais precisa, informe esses dados.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 4730,
+    "output_tokens": 439,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.01385,
+  "seconds": 6.665357700025197,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "01b7c06a0ab784d6f42017d71dd3a47b4a9a0b05edaafb2888bcfdabe102ff11"
+}

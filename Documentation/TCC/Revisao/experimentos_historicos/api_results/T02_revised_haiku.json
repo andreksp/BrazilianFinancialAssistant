@@ -1,0 +1,24 @@
+{
+  "key": "T02_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise de Isenção – Vendas de Ações\n\n**Sua situação:**\n- Venda de R$ 12 mil em ações (corretora 1) + R$ 12 mil em ações (corretora 2)\n- **Total: R$ 24 mil** no mês\n\n**Resultado: NÃO ESTÁ ISENTO**\n\nConforme evidência `acoes_isencao` (fonte: gov.br/receitafederal), a isenção aplica-se quando **o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000**. O limite incide sobre o **volume de vendas**, independentemente de lucro.\n\nComo seu total (R$ 24 mil) **excede R$ 20 mil**, toda a operação sai do regime de isenção.\n\n---\n\n## ⚠️ Limitações e próximos passos\n\nPreciso esclarecer:\n1. Houve **ganho ou prejuízo** nessas vendas?\n2. As operações foram **operações comuns** ou **day trade**?\n3. Qual o **preço de compra** original?\n\nEssas informações determinam o **imposto devido** (15% ou 20%) e a necessidade de apresentar **DARF** ou declaração via **SICALC**.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 816,
+    "output_tokens": 343,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002531,
+  "seconds": 4.172061900026165,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c001723b89005791069238a14c1ac2e31fd7d527e135a8c86aaf7c065cc138db"
+}

@@ -24,6 +24,7 @@ _ASSET_TYPE_MAP = {
     "darf_guide": "geral",
     "ir_futuros": "geral",
     "ir_emprestimo_acoes": "geral",
+    "ir_cripto": "cripto",
 }
 
 
@@ -34,13 +35,21 @@ class ChromaDBClient:
             name="regulacoes_geral",
             metadata={"description": "General regulations (IR, DARF, fees)"},
         )
-        self.collection_acoes = self.client.get_or_create_collection(
-            name="regulacoes_acoes",
-            metadata={"description": "Regulations for stocks, BDRs, and options"},
-        )
+        # Asset types with dedicated collections for more precise semantic search.
+        # Anything not listed here falls back to collection_geral.
+        self.collections = {
+            "acoes": self.client.get_or_create_collection(
+                name="regulacoes_acoes",
+                metadata={"description": "Regulations for stocks, BDRs, and options"},
+            ),
+            "cripto": self.client.get_or_create_collection(
+                name="regulacoes_cripto",
+                metadata={"description": "Regulations for cryptocurrencies"},
+            ),
+        }
 
     def _collection_for(self, asset_type: str):
-        return self.collection_acoes if asset_type == "acoes" else self.collection_geral
+        return self.collections.get(asset_type, self.collection_geral)
 
     def add_regulation(
         self,
@@ -69,18 +78,19 @@ class ChromaDBClient:
         """
         results: List[str] = []
 
-        if asset_type == "acoes":
+        specific_collection = self.collections.get(asset_type)
+        if specific_collection is not None:
             try:
-                count = self.collection_acoes.count()
+                count = specific_collection.count()
                 if count > 0:
-                    r = self.collection_acoes.query(
+                    r = specific_collection.query(
                         query_texts=[query],
                         n_results=min(top_k, count),
                     )
                     if r and r["documents"]:
                         results.extend(r["documents"][0])
             except Exception as e:
-                logger.warning(f"ChromaDB acoes query failed: {e}")
+                logger.warning(f"ChromaDB {asset_type} query failed: {e}")
 
         try:
             count = self.collection_geral.count()
@@ -129,7 +139,7 @@ class ChromaDBClient:
 _client: Optional[ChromaDBClient] = None
 
 
-def get_chroma_client() -> Optional[ChromaDBClient]:
+def get_legacy_chroma_client() -> Optional[ChromaDBClient]:
     """Return shared ChromaDB client, or None if initialization fails."""
     global _client
     if _client is None:
@@ -139,3 +149,6 @@ def get_chroma_client() -> Optional[ChromaDBClient]:
             logger.error(f"Failed to initialize ChromaDB: {e}")
             return None
     return _client
+
+# Preserve legacy implementation for inspection; public API uses revised corpus.
+from app.vector_db.revised_client import get_chroma_client

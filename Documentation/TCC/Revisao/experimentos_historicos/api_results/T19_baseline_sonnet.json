@@ -1,0 +1,27 @@
+{
+  "key": "T19_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, não é isento.\n\nSegundo a evidência 290b3fbba3faa9f8, **opções de ações NÃO têm isenção de R$ 20.000,00** — essa isenção existe apenas para vendas de ações no mercado à vista (e BDRs, conforme e64833ee00978eec), até esse limite mensal (Lei 11.033/2004).\n\nPara operações com opções, toda a operação está sujeita ao IR, independentemente do valor negociado no mês:\n\n- **Swing trade** (opções mantidas por mais de 1 dia): 15% sobre o ganho líquido\n- **Day trade**: 20% sobre o ganho líquido\n\nO ganho, no caso de venda de opção, é calculado como (Preço de Venda − Prêmio Pago na Compra) × Quantidade. Há também IRRF de 0,005% (swing) ou 1% (day trade), dedutível do imposto devido.\n\nIsso é uma explicação normativa geral, não uma apuração fiscal do seu caso. Se puder informar o tipo de operação (swing ou day trade), valores de prêmios pagos/recebidos e datas, posso ajudar a entender melhor como o cálculo se aplicaria — mas a apuração definitiva depende da sua situação completa e, se necessário, de orientação de um contador.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2879,
+    "output_tokens": 444,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010198,
+  "seconds": 5.963769500027411,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "7a0de6bfec4941b6fdbbcbf9a724eb79ba3870252996652d0d7d2eb6a9882970"
+}

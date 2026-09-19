@@ -1,0 +1,27 @@
+{
+  "key": "T44_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "A pergunta menciona \"moedas\" — preciso de mais detalhes para responder com precisão, pois o tratamento tributário é bem diferente conforme o ativo:\n\n1. **Criptomoedas** (Bitcoin, Ethereum etc.): não há evidência sobre isso no material fornecido. Não posso afirmar regras aqui sem confirmação.\n2. **Moeda estrangeira física/em espécie (câmbio manual)**: também não há evidência fornecida sobre esse regime.\n3. **Contratos futuros de dólar (WDO)** na B3: aqui sim tenho evidência (ID 975ab3cfe6fdb742) — alíquota de 15% (operação normal) ou 20% (day trade) sobre o ganho líquido, sem isenção de R$ 20.000/mês, com IRRF de 0,005% (normal) ou 1% (day trade), DARF código 6015.\n\nPoderia esclarecer:\n- Que tipo de \"moeda\" foi vendida (cripto, dólar físico, contrato futuro)?\n- Qual foi o valor de compra e venda, e a data das operações?\n\nSem essa informação, não posso calcular o imposto devido nem confirmar o regime aplicável. Isso é uma simulação educacional, não uma apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3385,
+    "output_tokens": 445,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.01122,
+  "seconds": 5.873075099952985,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "a57767b04603eb617e43563a00ab64ea46fa2c50cee8deeb174dba5fa31f3bcf"
+}

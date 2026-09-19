@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 2,
+      "motivo": "Tabela regressiva de empréstimo de ações responde ao núcleo (17,5% de 361 a 720 dias)"
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 0,
+      "motivo": "Mercado futuro, sem relação com empréstimo de ativos"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "FII, irrelevante"
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 0,
+      "motivo": "Isenção de venda de ações não se aplica"
+    },
+    {
+      "id": "cripto_exterior",
+      "relevancia": 0,
+      "motivo": "Aplicações no exterior, irrelevante"
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 2,
+      "motivo": "Regra exata: 17,5% de 361 a 720 dias, fonte na Lei 15.265/2025"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "17,5% e R$175 corretos com base legal certa; observação final sugerindo faixa 181-360 gera ruído, mas não altera o resultado",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Cálculo correto (R$175), porém base legal citada (Lei 13.043/2014) diverge da norma vigente indicada (Lei 15.265/2025)",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Valor, alíquota e fundamento legal corretos; ressalvas pertinentes sobre limites do contexto",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T33",
+  "repeat": false
+}

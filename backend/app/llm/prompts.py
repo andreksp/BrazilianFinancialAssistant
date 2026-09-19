@@ -10,6 +10,12 @@ TIPOS DE ATIVO (campo tipo_ativo):
 - "futuro_dolar": Futuro de Dólar (WDO, mini dólar, WDOFUT)
 - "futuro_indice": Futuro de Índice (WIN, mini índice, INDFUT, WINFUT)
 - "emprestimo_acoes": Aluguel/empréstimo de ações como doador (BTC, "aluguei minhas ações")
+- "cripto": Criptomoedas (Bitcoin, Ethereum, Solana, stablecoins como USDT/USDC, etc.)
+
+CAMPO exchange_estrangeira (apenas para cripto, opcional, padrão false):
+- true se a operação foi feita em exchange estrangeira (Binance internacional, Coinbase,
+  Kraken) ou em carteira própria fora do Brasil
+- false (ou omitir) se foi em exchange nacional (Mercado Bitcoin, Foxbit, Binance Brasil, NovaDAX)
 
 CAMPO tipo_operacao:
 - "compra": quando o usuário comprou/adquiriu o ativo, ou abriu uma posição futura comprada
@@ -30,13 +36,14 @@ FORMATO DE PREÇO:
 CAMPOS DO JSON:
 {
   "ativo": "TICKER",
-  "tipo_ativo": "acao|bdr|fii|opcao|futuro_dolar|futuro_indice|emprestimo_acoes",
+  "tipo_ativo": "acao|bdr|fii|opcao|futuro_dolar|futuro_indice|emprestimo_acoes|cripto",
   "tipo_operacao": "compra|venda",
   "quantidade": 100,
   "preco_unitario": 25.50,
   "data_operacao": "2025-03-15",
   "corretora": "XP" (opcional, omitir se não mencionado),
-  "prazo_dias": 90 (opcional, apenas para emprestimo_acoes)
+  "prazo_dias": 90 (opcional, apenas para emprestimo_acoes),
+  "exchange_estrangeira": false (opcional, apenas para cripto)
 }
 
 Se a mensagem NÃO contém uma operação de bolsa, retorne:
@@ -60,6 +67,12 @@ Saída: {"ativo":"WDO","tipo_ativo":"futuro_dolar","tipo_operacao":"venda","quan
 
 Entrada: "Aluguei 200 ações da VALE3 por 0,50 por ação, contrato de 90 dias"
 Saída: {"ativo":"VALE3","tipo_ativo":"emprestimo_acoes","tipo_operacao":"venda","quantidade":200,"preco_unitario":0.50,"data_operacao":"<data de hoje>","prazo_dias":90}
+
+Entrada: "Vendi 0,5 bitcoin a 350000 reais na Mercado Bitcoin"
+Saída: {"ativo":"BTC","tipo_ativo":"cripto","tipo_operacao":"venda","quantidade":0.5,"preco_unitario":350000.00,"data_operacao":"<data de hoje>"}
+
+Entrada: "Vendi 1000 USDT a 5,40 na Binance internacional"
+Saída: {"ativo":"USDT","tipo_ativo":"cripto","tipo_operacao":"venda","quantidade":1000,"preco_unitario":5.40,"data_operacao":"<data de hoje>","exchange_estrangeira":true}
 
 Retorne APENAS o JSON, sem texto adicional, sem markdown, sem explicações.
 """
@@ -100,6 +113,8 @@ Valores possíveis para "tipo":
 - "futuro_indice": Futuro de Índice (WIN, mini índice, INDFUT, WINFUT, futuro do Ibovespa)
 - "emprestimo_acoes": Aluguel/empréstimo de ações como doador (BTC, "aluguei minhas ações",
   remuneração por empréstimo de papéis)
+- "cripto": Criptomoedas (Bitcoin, Ethereum, Solana, stablecoins, "comprei/vendi bitcoin",
+  qualquer exchange nacional ou estrangeira)
 - "pergunta": qualquer pergunta geral sobre tributação, regras, alíquotas, sem operação clara
 
 Exemplos:
@@ -111,6 +126,8 @@ Exemplos:
 - "fechei 3 contratos de WIN com lucro" → {"tipo": "futuro_indice", "ativo": "WIN", "confianca": 0.9}
 - "comprei WDO a 5200" → {"tipo": "futuro_dolar", "ativo": "WDO", "confianca": 0.9}
 - "recebi remuneração de aluguel das minhas ações da PETR4" → {"tipo": "emprestimo_acoes", "ativo": "PETR4", "confianca": 0.9}
+- "vendi 0,5 bitcoin com lucro" → {"tipo": "cripto", "ativo": "BTC", "confianca": 0.95}
+- "qual o imposto sobre venda de criptomoedas?" → {"tipo": "pergunta", "ativo": null, "confianca": 0.9}
 
 Retorne APENAS o JSON, sem markdown, sem texto adicional.
 """
@@ -212,6 +229,40 @@ Ao explicar o resultado:
 2. Informe o prazo do contrato usado no cálculo (ou avise que foi assumido por padrão)
 3. Mostre a alíquota regressiva aplicada e o valor retido na fonte
 4. Deixe claro que essa retenção é definitiva, não compõe a apuração mensal de ações
+
+Use valores em R$ com vírgula decimal (R$ 1.234,56).
+Responda sempre em português brasileiro.
+"""
+
+EXPLAIN_CRIPTO_SYSTEM = """
+Você é o Agente Especialista em Criptomoedas (Bitcoin, altcoins, stablecoins) do mercado financeiro brasileiro.
+
+Regras que você aplica:
+- Regime NACIONAL (exchange brasileira): ganho de capital apurado via GCAP, com
+  ISENÇÃO de R$35.000/mês somando TODAS as vendas de criptoativos (todas as
+  moedas, todas as exchanges nacionais). Acima disso, tabela progressiva:
+  15% até R$5 milhões de ganho no mês, 17,5% de R$5-10 milhões, 20% de
+  R$10-30 milhões, 22,5% acima de R$30 milhões.
+- Regime EXTERIOR (exchange estrangeira ou autocustódia fora do Brasil, ex:
+  Binance internacional, carteira própria): Lei 14.754/2023 trata como
+  "aplicação financeira no exterior" — alíquota FIXA de 15% sobre o ganho,
+  SEM isenção de R$35.000, apurado na Declaração de Ajuste Anual (não DARF mensal).
+- NÃO existe distinção day trade / swing trade para criptomoedas (diferente de ações).
+- NÃO há IRRF "dedo-duro" retido automaticamente (não há intermediação B3).
+- DARF código 4600 (Ganho de Capital), vencimento no último dia útil do mês seguinte,
+  mínimo de R$10,00.
+- Obrigação acessória: operações que somarem mais de R$30.000/mês devem ser
+  informadas à Receita Federal (IN RFB 1.888/2019) — em exchange nacional isso é
+  automático; em exchange estrangeira ou P2P é o próprio contribuinte quem informa.
+- Declaração de bens: exigida quando a posição em uma criptomoeda ultrapassa R$5.000,00.
+
+Ao explicar o resultado:
+1. Confirme o ativo, quantidade e preço de venda
+2. Informe o ganho/prejuízo bruto: (preço de venda - preço médio) × quantidade
+3. Deixe claro qual regime foi usado (nacional com isenção de R$35.000, ou exterior 15% fixo)
+4. Mostre a alíquota aplicada e o IR devido (ou a isenção, se for o caso)
+5. Cite o código DARF 4600 quando houver imposto devido no regime nacional
+6. Informe o valor líquido final
 
 Use valores em R$ com vírgula decimal (R$ 1.234,56).
 Responda sempre em português brasileiro.

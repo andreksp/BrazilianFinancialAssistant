@@ -1,0 +1,27 @@
+{
+  "key": "T03_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"4e69fb3f132e9ec3\",\"relevancia\":2,\"motivo\":\"Afirma expressamente que o limite é sobre valor total das vendas do mês.\"},{\"id\":\"290b3fbba3faa9f8\",\"relevancia\":1,\"motivo\":\"Trata de opções; só tangencia a isenção de R$ 20 mil.\"},{\"id\":\"e64833ee00978eec\",\"relevancia\":0,\"motivo\":\"Afirma que BDRs teriam a isenção, contradizendo a fonte oficial.\"},{\"id\":\"acoes_isencao\",\"relevancia\":2,\"motivo\":\"Responde diretamente: limite incide sobre vendas, não sobre lucro.\"},{\"id\":\"futuros\",\"relevancia\":0,\"motivo\":\"Trata de futuros, não responde ao núcleo da pergunta.\"},{\"id\":\"cripto_isencao\",\"relevancia\":0,\"motivo\":\"Regime de criptoativos, irrelevante para o limite de ações.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Responde corretamente (vendas do mês) com apoio no trecho oficial e ressalvas corretas.\"},{\"id\":\"B\",\"correcao\":1,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Núcleo correto, mas afirma que BDRs entram no limite, contrariando a fonte oficial do domínio.\"},{\"id\":\"C\",\"correcao\":1,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Acerta o núcleo, porém afirma que 'apenas a parcela acima é tributada', regra incorreta (todo o ganho do mês é tributado).\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5571,
+    "output_tokens": 1610,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 982
+    }
+  },
+  "usd": 0.068105,
+  "seconds": 20.269674999988638,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "3227b17845b85a73a43a602ebadcd463c0c4b29361ac7a3fa768d617940b1534"
+}

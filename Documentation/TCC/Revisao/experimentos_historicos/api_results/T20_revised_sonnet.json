@@ -1,0 +1,27 @@
+{
+  "key": "T20_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "A evidência fornecida trata de ações comuns (com isenção até R$ 20.000 em vendas mensais), FII e BDR — nenhuma trata especificamente de **opções**. A própria evidência \"acoes_isencao\" afirma explicitamente que a isenção de R$ 20.000 **não se aplica a opções**.\n\nPortanto, não tenho evidência normativa que estabeleça a alíquota aplicável ao ganho líquido de R$ 1.000 no encerramento de opções comuns. Não posso confirmar se seria 15% (padrão de operações comuns em renda variável) ou outra alíquota, pois isso exigiria uma fonte específica sobre tributação de operações com opções, que não foi fornecida.\n\n**Limites desta resposta:**\n- Não invento a alíquota aplicável a opções sem base documental.\n- Preciso de evidência específica sobre o regime de tributação de opções (mercado de opções) para responder com segurança.\n\n**Pergunta de esclarecimento:** você pode fornecer a fonte/documento que trata da tributação de ganhos em operações com opções (comum vs. day trade), para eu apurar corretamente o IR antes do IRRF?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1030,
+    "output_tokens": 404,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.0061,
+  "seconds": 5.499875700043049,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "3ece375da1897c2068842bb0cfdbfd044e4840598d04b3bfb320a81725ad0731"
+}

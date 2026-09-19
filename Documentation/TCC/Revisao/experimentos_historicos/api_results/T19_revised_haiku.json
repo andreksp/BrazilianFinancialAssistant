@@ -1,0 +1,24 @@
+{
+  "key": "T19_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Opções comuns abaixo de R$ 20 mil\n\n**Resposta: Não há isenção.**\n\n## Distinção crítica\n\nA isenção de R$ 20 mil aplica-se **exclusivamente a ações à vista** em operações comuns (não day trade). Segundo a evidência `acoes_isencao`:\n\n> \"Não se aplica a day trade, opções, FII, ETF ou BDR.\"\n\n## Regime tributário de opções\n\nConforme `opcoes`, operações com opções em bolsa estão sujeitas a:\n- **Operações comuns: 15% de IRRF**\n- **Day trade: 20% de IRRF**\n\nNão existe isenção de R$ 20 mil para ganhos com opções, independentemente do valor.\n\n## Observação\n\nA apuração de opções requer identificar o evento (negociação, exercício ou expiração) e a posição (titular ou lançador), pois o prêmio integra o resultado conforme cada caso.\n\n---\n\n**Fonte:** Normas da Receita Federal (ID: `opcoes`, `acoes_isencao`)",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 796,
+    "output_tokens": 289,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002241,
+  "seconds": 3.26416550000431,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ecfa6c9869f018367466f4eb16159a1001fbc95c2df99f941e17960c958c9c02"
+}

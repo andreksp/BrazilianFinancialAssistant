@@ -1,0 +1,27 @@
+{
+  "key": "T22_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"4e69fb3f132e9ec3\",\"relevancia\":1,\"motivo\":\"Regras gerais de ações; não trata prêmio nem exercício de opção.\"},{\"id\":\"290b3fbba3faa9f8\",\"relevancia\":2,\"motivo\":\"Traz fórmula do exercício de call incluindo prêmio pago.\"},{\"id\":\"e64833ee00978eec\",\"relevancia\":0,\"motivo\":\"BDRs; sem relação com opções.\"},{\"id\":\"opcoes\",\"relevancia\":2,\"motivo\":\"Afirma que o prêmio integra a apuração conforme o evento.\"},{\"id\":\"emprestimo\",\"relevancia\":0,\"motivo\":\"Empréstimo de ativos; irrelevante.\"},{\"id\":\"fii_rendimento\",\"relevancia\":0,\"motivo\":\"FII; irrelevante.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Nega corretamente e sustenta no trecho sobre prêmio e evento.\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Resposta correta, distingue posição e evento, alinhada ao contexto.\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Aplica a fórmula do exercício com dedução do prêmio conforme o trecho; sem erro fiscal.\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5514,
+    "output_tokens": 1168,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 623
+    }
+  },
+  "usd": 0.05677,
+  "seconds": 15.632700600021053,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "17e68f3d9faf92a029872ed9ea050739ae7ae03bbeee941522226d12d3f1c10f"
+}

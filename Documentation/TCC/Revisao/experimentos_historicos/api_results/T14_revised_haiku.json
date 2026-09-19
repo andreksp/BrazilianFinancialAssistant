@@ -1,0 +1,24 @@
+{
+  "key": "T14_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise – Venda de FII com ganho de R$ 800\n\n## Resposta direta\n**Sim, há imposto devido.**\n\n## Justificativa\n\nConforme evidência **\"acoes_isencao\"** (fonte RFB, 2026-09-12):\n- A isenção de R$ 20.000 de vendas mensais aplica-se **exclusivamente a ações à vista**\n- A mesma fonte explicitamente **exclui FII, ETF, opções e BDR**\n\nPortanto, ganhos em FII **não** usufruem dessa isenção, independentemente do valor da venda ou do lucro.\n\n## O que falta para orientação completa\n\nPara determinar a **alíquota e o prazo de recolhimento**, necessito:\n\n1. **Regime**: operação de renda variável comum (ganho tributado) ou day trade?\n2. **Período de detenção**: quanto tempo entre compra e venda?\n3. **Houve retenção na fonte** pelo intermediário?\n\n---\n\n**Limite desta resposta**: As evidências fornecidas não cobrem tributação específica de FII. Consulte um profissional ou a RFB para confirmar alíquota aplicável e procedimento de recolhimento.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 861,
+    "output_tokens": 320,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002461,
+  "seconds": 4.723256100027356,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "6bae423c75fe482b805b28dbad92c812bd73c81b34a95ee0bd3f94f141fd7fd6"
+}

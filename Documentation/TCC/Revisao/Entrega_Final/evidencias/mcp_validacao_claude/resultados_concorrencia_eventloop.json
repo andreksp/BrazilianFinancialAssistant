@@ -1,0 +1,26 @@
+{
+  "_debug": {
+    "async_concurrent_errors": []
+  },
+  "async_concurrent": {
+    "n_requests": 8,
+    "n_ok": 8,
+    "elapsed_seconds": 0.545,
+    "avg_seconds_per_call": 0.068,
+    "results_correctly_isolated_per_call": true,
+    "orphan_pids_after_burst": []
+  },
+  "sync_wrapper_via_executor": {
+    "call_elapsed_seconds": 0.371,
+    "heartbeat_ticks": 7,
+    "max_heartbeat_gap_seconds": 0.063,
+    "note": "Este teste roda o wrapper síncrono via run_in_executor (thread separada), o que É a forma correta de não travar o loop. NÃO reproduz o bug real: base_agent.py chama calculate_via_mcp() diretamente, sem run_in_executor, de dentro do corpo síncrono de Orchestrator.process() invocado por uma rota `async def` (app/api/chat.py) sem await — ver test_sync_wrapper_blocks_real_pattern."
+  },
+  "sync_wrapper_real_pattern": {
+    "call_elapsed_seconds": 0.368,
+    "heartbeat_ticks_total": 6,
+    "max_heartbeat_gap_seconds": 0.4,
+    "event_loop_blocked": true,
+    "note": "Padrão real de base_agent.py: calculate_via_mcp() síncrono chamado direto dentro de uma coroutine, sem run_in_executor. Se max_heartbeat_gap_seconds for próximo de call_elapsed_seconds, o event loop ficou bloqueado durante toda a chamada MCP — outras requisições no mesmo worker uvicorn ficariam paradas nesse intervalo."
+  }
+}

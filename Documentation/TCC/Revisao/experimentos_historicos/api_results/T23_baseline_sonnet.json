@@ -1,0 +1,27 @@
+{
+  "key": "T23_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, o ticker sozinho não é suficiente.\n\nSegundo a evidência [290b3fbba3faa9f8], quando uma opção **expira sem valor (\"vira pó\")**, o tratamento é específico: \"O prêmio pago na compra é considerado prejuízo integral na data de vencimento\" (Caso 3).\n\nPara apurar isso você precisa, além do ticker:\n- **Data de vencimento/expiração** (confirmar que realmente expirou sem exercício);\n- **Prêmio pago na compra** (valor total desembolsado, incluindo taxas, conforme regras de PM);\n- **Quantidade de contratos**;\n- Confirmar que você era **titular (comprador)**, não lançador — o tratamento do lançador exercido é diferente (Caso 4 na mesma fonte).\n\nEsse prejuízo integra a categoria \"opções\" para fins de compensação: \"Prejuízos em opções podem compensar ganhos futuros em opções ou ações (mesma categoria)\" [290b3fbba3faa9f8].\n\nImportante: opções **não têm isenção de R$ 20.000**, e este é apenas um cálculo educacional de apuração — não constitui apuração fiscal definitiva. Recomendo confirmar valores com sua corretora/nota de corretagem e, se necessário, consultar um contador para a declaração.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2877,
+    "output_tokens": 456,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010314,
+  "seconds": 6.717386699980125,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "a83adce04a8b992216a0c15d155c33f8511af85a961aac98e5e78239f6d274fe"
+}

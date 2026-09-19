@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 2,
+      "motivo": "Explicita limite de R$20 mil sobre total de vendas do mês e efeito do excesso"
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 0,
+      "motivo": "Trata de opções, não responde"
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 1,
+      "motivo": "Menciona soma de vendas para o limite, mas foca em BDR"
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 2,
+      "motivo": "Diz expressamente que se somam as corretoras no limite de R$20 mil"
+    },
+    {
+      "id": "wdo",
+      "relevancia": 0,
+      "motivo": "Irrelevante, futuros de dólar"
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 0,
+      "motivo": "Opções, fora do núcleo da pergunta"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Soma R$24 mil e conclui não isenção; alíquota e IRRF corretos conforme contexto",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e apoiada na fonte oficial; ressalvas pertinentes",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta, soma corretoras, alíquota 15% com suporte no contexto",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T02",
+  "repeat": false
+}

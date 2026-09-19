@@ -1,0 +1,24 @@
+{
+  "key": "D10_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Sobre taxa de exchange e tarifa B3\n\n**A taxa da exchange não é tarifa B3.**\n\nConforme evidência (b3_papel), a B3 fornece infraestrutura para liquidação e cobra **tarifas de serviço próprias** — distintas de:\n- Imposto de renda (regido por legislação tributária e Receita Federal)\n- Custos da corretora intermediária\n\n**Para fins fiscais:**\n- **Taxa de exchange** é custo operacional da transação, não tributável direto, mas pode afetar a base do ganho de capital (diferença entre preço de venda e preço de aquisição)\n- **Tarifa B3** é serviço administrativo/infraestrutura, também dedutível do resultado quando aplicável\n\n**Falta esclarecimento:** Você refere-se a operação em criptoativos, ações ou derivativos? O tratamento tributário varia conforme o tipo de ativo e intermediação.\n\nSe o objetivo é apurar ganho de capital, será necessário informar:\n- Tipo de ativo\n- Data de aquisição e venda\n- Valores\n- Custos incorridos\n\nAssim poderei auxiliar corretamente no cálculo.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 780,
+    "output_tokens": 305,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002305,
+  "seconds": 3.974584700015839,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "e803ae316f636a915abbdf30310d4a02e9ae109929f8de0e901c447a71e442cc"
+}

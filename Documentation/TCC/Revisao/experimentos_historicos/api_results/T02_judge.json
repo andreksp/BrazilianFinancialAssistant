@@ -1,0 +1,27 @@
+{
+  "key": "T02_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"4e69fb3f132e9ec3\",\"relevancia\":2,\"motivo\":\"Explicita limite de R$20 mil sobre total de vendas do mês e efeito do excesso\"},{\"id\":\"290b3fbba3faa9f8\",\"relevancia\":0,\"motivo\":\"Trata de opções, não responde\"},{\"id\":\"e64833ee00978eec\",\"relevancia\":1,\"motivo\":\"Menciona soma de vendas para o limite, mas foca em BDR\"},{\"id\":\"acoes_isencao\",\"relevancia\":2,\"motivo\":\"Diz expressamente que se somam as corretoras no limite de R$20 mil\"},{\"id\":\"wdo\",\"relevancia\":0,\"motivo\":\"Irrelevante, futuros de dólar\"},{\"id\":\"opcoes\",\"relevancia\":0,\"motivo\":\"Opções, fora do núcleo da pergunta\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Soma R$24 mil e conclui não isenção; alíquota e IRRF corretos conforme contexto\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Correta e apoiada na fonte oficial; ressalvas pertinentes\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Correta, soma corretoras, alíquota 15% com suporte no contexto\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5458,
+    "output_tokens": 557,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.041215,
+  "seconds": 7.034057099954225,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "bee5dd2afdb822658e30d7227937b4adf8f87472d321b8fd19f13e65f0b19cca"
+}

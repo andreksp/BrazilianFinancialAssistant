@@ -1,0 +1,24 @@
+{
+  "key": "D06_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Diferença entre Call e Put\n\nA evidência fornecida aborda **tributação de opções em bolsa**, não a definição operacional dos instrumentos.\n\n## O que as evidências indicam sobre apuração:\n\nSegundo a fonte \"Opções em bolsa\" (ID: opcoes, Receita Federal):\n- **Call e put** integram operações com opções que requerem apuração específica\n- Tributação depende de: negociação, exercício, expiração, posição (titular ou lançador)\n- **Alíquota operação comum: 15%**; **day trade: 20%**\n- Não há isenção de R$ 20 mil para ganhos com opções\n- O prêmio integra a apuração conforme o evento\n\n## Limite da resposta:\n\nAs evidências **não explicam** a diferença conceitual (call = direito de compra; put = direito de venda). Elas apenas especificam que ambas precisam de apuração tributária diferenciada.\n\n## Esclarecimento necessário:\n\nPara orientação fiscal sobre sua operação específica, informe:\n- Tipo de posição (titular/lançador)?\n- Data de negociação/exercício/expiração?\n- Resultado (ganho/perda)?\n- É day trade?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 791,
+    "output_tokens": 325,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002416,
+  "seconds": 4.109580199990887,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "a2a7534873b9a9b7b2a495fbce43949ba60b2f9bf8f40980af2733b2207b32f7"
+}

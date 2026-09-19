@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 1,
+      "motivo": "Regras gerais de DARF; não permite calcular sem dados da operação"
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 1,
+      "motivo": "Regras de futuros; útil apenas se soubermos o ativo"
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 1,
+      "motivo": "Regras de BTC; base legal desatualizada frente aos outros trechos, não responde ao valor devido"
+    },
+    {
+      "id": "fii_perda",
+      "relevancia": 1,
+      "motivo": "Regra de compensação de FII; contexto parcial"
+    },
+    {
+      "id": "emprestimo_proventos",
+      "relevancia": 1,
+      "motivo": "Distinção de eventos em empréstimo; não responde ao cálculo"
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 1,
+      "motivo": "Alíquotas regressivas do emprestador; parcial, exige dados ausentes"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Abstém-se corretamente, pede dados e resume regras fiel aos trechos citados",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Pede dados necessários e cita corretamente FII e empréstimo (Lei 15.265/2025)",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Abstenção adequada e pedido de dados, mas grounding superficial e menção a lucro real/presumido pouco pertinente",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T46",
+  "repeat": false
+}

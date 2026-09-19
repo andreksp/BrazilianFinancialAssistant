@@ -1,0 +1,27 @@
+{
+  "key": "T32_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"06a4e857780aec7b\",\"relevancia\":2,\"motivo\":\"Tabela regressiva: 181-360 dias = 20% sobre remuneração do doador; responde ao núcleo.\"},{\"id\":\"7bb8b88a77231872\",\"relevancia\":0,\"motivo\":\"FII; nada sobre empréstimo de ativos.\"},{\"id\":\"975ab3cfe6fdb742\",\"relevancia\":0,\"motivo\":\"Mercado futuro; fora do escopo da pergunta.\"},{\"id\":\"acoes_isencao\",\"relevancia\":0,\"motivo\":\"Isenção de venda de ações não se aplica à remuneração de empréstimo.\"},{\"id\":\"emprestimo\",\"relevancia\":2,\"motivo\":\"Lei 15.265/2025: 20% de 181 a 360 dias, exclusiva na fonte; responde diretamente.\"},{\"id\":\"cripto_exterior\",\"relevancia\":0,\"motivo\":\"Ativos no exterior; irrelevante.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Chega a 20% e R$200 com base no trecho da Lei 15.265/2025; ressalvas não comprometem o núcleo.\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"20% e R$200, exclusiva na fonte, apoiado no trecho de empréstimo de ações; final truncado é falha menor.\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Cálculo correto (R$200, líquido R$800) sustentado no trecho da Lei 15.265/2025; distinção da isenção correta.\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5847,
+    "output_tokens": 1014,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 370
+    }
+  },
+  "usd": 0.054585,
+  "seconds": 12.204213299963158,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "08b6be7a7f6fc0a9d0e9f6ff4d4696dba5d0974fd9418035fbbbb5722e4a5201"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T14_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não encontrei, nas evidências fornecidas, regra específica sobre a alíquota e a apuração do ganho de capital na venda de FII (Fundo de Investimento Imobiliário).\n\nO que posso afirmar com base no que foi fornecido:\n- A isenção de R$ 20.000/mês em vendas (evidência \"acoes_isencao\") aplica-se apenas a **ações à vista**, e o próprio texto exclui explicitamente **FII** dessa regra.\n- Não há, nas evidências, dados sobre a alíquota de ganho de capital em FII, retenção na fonte (dedo-duro), forma de recolhimento via DARF, ou tratamento de perdas para esse ativo.\n\nPortanto, não posso calcular ou confirmar o imposto devido sobre seu ganho líquido de R$ 800 em FII com segurança normativa, pois isso exigiria uma fonte específica sobre tributação de rendimentos em fundos imobiliários (venda de cotas), que não está entre as evidências apresentadas.\n\n**Recomendo**: consulte a legislação específica sobre ganho de capital em FIIs (normalmente distinta da regra de ações) ou um profissional contábil, informando o histórico completo de operações no mês e no ano-calendário. Isso não constitui apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1062,
+    "output_tokens": 452,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006644,
+  "seconds": 5.8004569000331685,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "6bae423c75fe482b805b28dbad92c812bd73c81b34a95ee0bd3f94f141fd7fd6"
+}

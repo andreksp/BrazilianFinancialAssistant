@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "183017f281e698ea",
+      "relevancia": 2,
+      "motivo": "Distingue regime exterior (15% anual, sem isenção de R$35 mil) do nacional; responde ao núcleo."
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ações (BTC/CBLC), tema alheio."
+    },
+    {
+      "id": "10d60f0a6cead3e1",
+      "relevancia": 0,
+      "motivo": "Tarifas B3, sem relação com a pergunta."
+    },
+    {
+      "id": "cripto_exterior",
+      "relevancia": 2,
+      "motivo": "Afirma diretamente apuração anual a 15% sem isenção mensal, com ressalva de enquadramento."
+    },
+    {
+      "id": "cripto_isencao",
+      "relevancia": 1,
+      "motivo": "Trata da isenção no regime nacional; contextualiza mas não decide o caso exterior."
+    },
+    {
+      "id": "cripto_darf",
+      "relevancia": 0,
+      "motivo": "Trata de DARF/prazo no regime mensal, não responde à pergunta."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega a isenção, indica 15% anual e ressalva necessidade de enquadramento, alinhado ao contexto.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Núcleo correto (15% anual, sem isenção); apoia-se no chunk, mas simplifica o critério de enquadramento sem a ressalva da autocustódia.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Resposta correta e com ressalva de enquadramento; formato tabular não altera a exatidão dos fatos.",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T41",
+  "repeat": false
+}

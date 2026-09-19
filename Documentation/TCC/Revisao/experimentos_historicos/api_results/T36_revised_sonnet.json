@@ -1,0 +1,27 @@
+{
+  "key": "T36_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base na evidência (ID: emprestimo_proventos, fonte Lei 15.265/2025), a resposta é **não**.\n\nO texto é explícito: \"O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.\"\n\nIsso significa que:\n\n- **Remuneração do doador**: refere-se ao valor pago ao doador de ativos em empréstimo, calculado conforme o contrato de empréstimo.\n- **Reembolso de proventos**: evento distinto, que trata da restituição de dividendos/juros recebidos durante o período do empréstimo.\n- **Venda a descoberto do tomador**: é uma operação separada, com sua própria apuração de ganho/perda, custos e tributação, que **não está contemplada** no cálculo da remuneração ao doador.\n\nOu seja, são três regimes distintos:\n1. Remuneração contratual do empréstimo (doador recebe do tomador);\n2. Reembolso de proventos (arts. 20 e seguintes da Lei 15.265/2025);\n3. Apuração fiscal da venda a descoberto pelo tomador (ganho de capital/renda variável), calculada separadamente.\n\n**Limitação**: a evidência não detalha a metodologia específica de apuração tributária da venda a descoberto em si (alíquotas, prazos, DARF). Se precisar desse detalhamento, indique o tipo de ativo e o regime (comum ou day trade) para orientação mais precisa.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 966,
+    "output_tokens": 504,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006972,
+  "seconds": 6.073008299979847,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "17355acf6394fb2cac6636382c6826f16df265b24ef608b78822648d80b57d66"
+}

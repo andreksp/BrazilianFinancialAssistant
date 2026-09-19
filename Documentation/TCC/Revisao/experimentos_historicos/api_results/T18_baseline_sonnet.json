@@ -1,0 +1,27 @@
+{
+  "key": "T18_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. Cota de fundo imobiliário (FII) não é imóvel físico — não se aplicam as regras de ganho de capital sobre bens imóveis (que preveem, por exemplo, isenção para venda de único imóvel residencial até certo valor, ou isenção por uso do produto na compra de outro imóvel em 180 dias).\n\nFII é ativo negociado em bolsa, tratado como renda variável, com regras próprias e diferentes das ações comuns quanto à isenção mensal — mas isso foge ao escopo das evidências que tenho disponíveis aqui, que tratam apenas de empréstimo de ações (BTC), taxas B3 e mercado futuro (IDs 06a4e857780aec7b, 10d60f0a6cead3e1, 975ab3cfe6fdb742).\n\nNão tenho evidência normativa específica sobre a tributação de venda de cotas de FII para confirmar alíquota, isenções ou apuração de ganho líquido nesta base. Recomendo que você me forneça a regra específica de FII (ou eu busque) antes de qualquer conclusão definitiva — o que apresento aqui é orientação geral, não apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3321,
+    "output_tokens": 407,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010712,
+  "seconds": 6.33185020001838,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "051ed4ea7d5fceb2c5840f796b0fcfea266153d4a9adce681c455c122fa24028"
+}

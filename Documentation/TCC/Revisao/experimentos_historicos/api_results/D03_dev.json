@@ -1,0 +1,24 @@
+{
+  "key": "D03_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# O que é um BDR?\n\nCom base nas evidências fornecidas, **BDR (Brazilian Depositary Receipt)** é um certificado que representa ações de empresas estrangeiras depositadas no Brasil.\n\n## Características tributárias principais:\n\n**Regime de tributação:**\n- Ganho em operação comum: alíquota de **15%**\n- Ganho em day trade: alíquota de **20%**\n\n**Diferença crítica em relação a ações:**\n- **NÃO se beneficia** da isenção de R$ 20 mil mensais (aplicável apenas a ações à vista)\n- Todo ganho líquido é tributado, independentemente do volume de vendas\n\n**Importante distinguir:**\n- Ganhos na venda do certificado (tributados como acima)\n- Rendimentos distribuídos pelo BDR (tratamento diferente)\n\n## Limitações desta resposta:\n\nAs evidências não definem BDR de forma conceitual completa. Para esclarecer:\n- Qual é a estrutura jurídica exata do BDR?\n- Existem categorias diferentes de BDR com tributação distinta?\n\n**Fonte:** B3/Gov.br (12/09/2026)",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 816,
+    "output_tokens": 304,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002336,
+  "seconds": 4.059980700025335,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "072b7d69d537c99c8bc91587dacc0e33a66a13b3352b07f09d5887edf96970c2"
+}

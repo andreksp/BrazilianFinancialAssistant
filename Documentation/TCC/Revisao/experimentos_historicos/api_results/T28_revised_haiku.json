@@ -1,0 +1,24 @@
+{
+  "key": "T28_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta: IRRF em Futuros\n\n**Não.** Conforme evidência ID \"futuros\":\n\n> \"IRRF comum de 0,005% usa soma algébrica positiva dos **ajustes diários** no encerramento; retenção efetiva deve ser conferida no informe. **Não aplicar sobre nocional.**\"\n\n## Distinção importante\n\n- **Nocional**: valor de referência do contrato (não é lucro nem caixa recebido)\n- **Base de cálculo do IRRF 0,005%**: soma algébrica positiva dos **ajustes diários** ao encerramento da posição\n\n## O que fazer\n\n1. **Identifique os ajustes diários** efetivamente creditados/debitados\n2. **Somalize algebricamente** (ganhos + perdas do dia)\n3. **Se positiva**: aplique 0,005% sobre esse resultado, não sobre o nocional\n4. **Verifique no informe** se a retenção foi feita corretamente\n\n## Alerta\n\nIRRF é **antecipação** do imposto. Você ainda deve apurar mensalmente o resultado (operações comuns 15%, day trade 20%) e conferir se a retenção foi suficiente.\n\n**Limite**: não há isenção de R$ 20 mil para futuros.\n\nPrecisa de esclarecimento sobre cálculo específico dos seus ajustes?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 755,
+    "output_tokens": 358,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002545,
+  "seconds": 4.361175499972887,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "277f3c7718ccbb784df39c66907364c59b9672fd413653ccbc7b74c51b76b4cf"
+}

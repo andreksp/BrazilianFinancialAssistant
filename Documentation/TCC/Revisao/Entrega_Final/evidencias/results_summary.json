@@ -1,0 +1,60 @@
+{
+  "configurations": {
+    "baseline_sonnet": {
+      "n": 48,
+      "n_factual": 42,
+      "correct_factual": 29,
+      "correct_all": 34,
+      "critical_errors": 9,
+      "p1": 0.5238095238095238,
+      "p3": 0.23809523809523808,
+      "ndcg3_pooled": 0.5173663959430758,
+      "abstention_appropriate": 6,
+      "n_abstention": 6,
+      "median_seconds": 6.805373500013957,
+      "usd": 0.5624300000000001
+    },
+    "revised_haiku": {
+      "n": 48,
+      "n_factual": 42,
+      "correct_factual": 30,
+      "correct_all": 35,
+      "critical_errors": 7,
+      "p1": 0.5714285714285714,
+      "p3": 0.30158730158730157,
+      "ndcg3_pooled": 0.5595403806375987,
+      "abstention_appropriate": 6,
+      "n_abstention": 6,
+      "median_seconds": 4.214190099999541,
+      "usd": 0.12073500000000002
+    },
+    "revised_sonnet": {
+      "n": 48,
+      "n_factual": 42,
+      "correct_factual": 37,
+      "correct_all": 41,
+      "critical_errors": 0,
+      "p1": 0.5714285714285714,
+      "p3": 0.30158730158730157,
+      "ndcg3_pooled": 0.5595403806375987,
+      "abstention_appropriate": 6,
+      "n_abstention": 6,
+      "median_seconds": 6.126234150025994,
+      "usd": 0.32520999999999994
+    }
+  },
+  "judge_repeat": {
+    "n": 36,
+    "same_grade": 32,
+    "same_critical": 36
+  },
+  "total_api_usd": 4.893392999999999,
+  "caveats": [
+    "Automatic, AI-authored gold; not independent expert validation.",
+    "nDCG denominator uses judged union of retrieved chunks, not exhaustive corpus judgments.",
+    "Only 42 answerable questions enter retrieval averages; 6 clarification/out-of-scope cases separate.",
+    "Corpus curation, chunking, ranking and context length changed together; no isolated causal attribution.",
+    "Domain scope for baseline provided by benchmark; routing and extraction not measured.",
+    "Model families are all Anthropic; same-family judge may have correlated bias."
+  ]
+}

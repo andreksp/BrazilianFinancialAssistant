@@ -1,0 +1,24 @@
+{
+  "key": "T46_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta: Insuficiência de dados para cálculo\n\nNão posso calcular quanto você deve de imposto com as informações fornecidas. **Faltam dados essenciais:**\n\n## O que preciso saber:\n\n1. **Tipo de operação realizada:**\n   - Vendeu ações, cotas de FII ou outro ativo?\n   - Emprestou ativos?\n   - Obteve rendimentos de investimentos?\n\n2. **Valores:**\n   - Preço de compra (custo)?\n   - Preço de venda ou valor do ganho?\n   - Data da operação?\n\n3. **Período:**\n   - Quando vendeu/recebeu rendimento?\n   - Qual regime: lucro real, lucro presumido ou pessoa física?\n\n4. **Categoria do ativo:**\n   - Se FII: ganho/perda deve ser compensado apenas com outra venda de FII (conforme evidência fii_perda)\n   - Se empréstimo de ativos: remuneração segue alíquotas por prazo (evidência emprestimo)\n\n## Próximos passos:\n\n**Descreva com detalhes:**\n- Qual operação realizou?\n- Valores envolvidos\n- Datas\n- Regime tributário\n\nAssim poderei orientar com base na legislação aplicável.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 781,
+    "output_tokens": 336,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002461,
+  "seconds": 4.312835899996571,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "fdc3c0ea08dccc4ab7b409be054e6fbb7736fefcb5d2993d19e705b21f5c67f1"
+}

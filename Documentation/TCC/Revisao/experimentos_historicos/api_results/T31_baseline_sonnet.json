@@ -1,0 +1,27 @@
+{
+  "key": "T31_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "## Remuneração de Empréstimo de Ações (BTC/CBLC) — Doador\n\n**Classificação:** Isto é **rendimento** (remuneração/aluguel), não venda de ativo. O tratamento tributário do doador é diferenciado: segue tabela regressiva de renda fixa, e **não** as regras de ganho de capital em renda variável (15%/20% + isenção de R$20.000) [fonte: 06a4e857780aec7b].\n\n**Regime e período:** Prazo do contrato = 180 dias → enquadra-se na faixa \"até 180 dias\" = **22,5%** sobre a remuneração bruta.\n\n**Cálculo:**\n- Remuneração bruta: R$ 1.000,00\n- IRRF (22,5%): R$ 225,00\n- **Líquido (sem taxas B3/corretora): R$ 775,00**\n\n**Observações importantes:**\n- Retenção é feita pela B3/CBLC no pagamento, com tributação **exclusiva/definitiva na fonte** — não gera DARF adicional nem compõe apuração mensal de renda variável [fonte: 06a4e857780aec7b].\n- Na Declaração de Ajuste Anual, entra em \"Rendimentos Sujeitos a Tributação Exclusiva/Definitiva\", conforme informe de rendimentos da B3.\n- Não incluí taxas de operação (B3/corretora) pois não foram solicitadas nem fornecidas para este cenário específico.\n- Confirme o",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3119,
+    "output_tokens": 650,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 141
+    }
+  },
+  "usd": 0.012738,
+  "seconds": 6.482901800016407,
+  "stop_reason": "max_tokens",
+  "prompt_sha256": "2a9857355c2ba934883313ee3db690a7cda067e6f4f5e14d9df0d935fdc3b208"
+}

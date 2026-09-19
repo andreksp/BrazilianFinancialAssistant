@@ -1,0 +1,27 @@
+{
+  "key": "T10_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. Conforme a evidência (ID: bdr, fonte B3), **BDR não possui a isenção de R$ 20 mil aplicável às ações à vista negociadas em bolsa**. Essa isenção é específica para vendas de ações comuns até esse limite mensal.\n\nPara BDRs, a tributação de ganho líquido em venda é: **15% em operações comuns** e **20% em day trade**, independentemente do valor total vendido no mês. O limite de vendas não converte lucro em isento.\n\nImportante distinguir:\n- **Venda do certificado (BDR)**: ganho de capital tributado conforme regras acima, sem isenção de faixa de valor.\n- **Rendimentos distribuídos pelo BDR** (ex.: dividendos/JCP do ativo subjacente): tratamento tributário distinto, não deve ser confundido com o ganho na alienação.\n\nNão há, na evidência apresentada, indicação de criação de nova isenção de R$ 20 mil para BDRs — ao contrário, o texto é explícito ao afastar essa hipótese.\n\nSe sua pergunta se refere a alguma mudança normativa específica após 12/09/2026, preciso da fonte para verificar, pois não tenho evidência que ateste tal alteração.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1028,
+    "output_tokens": 430,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006356,
+  "seconds": 5.284216600004584,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "790fbc8acc41a224a9f8f3ceca16c72f5582d77f0d5760de2d721a0c71f564fa"
+}

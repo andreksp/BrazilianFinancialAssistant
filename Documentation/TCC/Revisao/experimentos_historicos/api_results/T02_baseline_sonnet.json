@@ -1,0 +1,27 @@
+{
+  "key": "T02_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base na evidência [4e69fb3f132e9ec3]: o limite de isenção de R$ 20.000,00 para swing trade em ações refere-se ao **total vendido no mês, somando todas as corretoras** — não é um limite por corretora.\n\nNo seu caso: R$ 12.000 + R$ 12.000 = R$ 24.000,00 vendidos no mês, o que **ultrapassa o limite de R$ 20.000,00**.\n\nConsequência importante: segundo a evidência, quando o total mensal excede R$ 20.000,00, **toda a operação do mês** fica sujeita ao IR (não apenas o valor excedente). Ou seja, o ganho líquido apurado no mês (se houver) seria tributado à alíquota de 15% (swing trade), com possível IRRF de 0,005% sobre o valor da venda a título de antecipação.\n\nLimitações desta resposta:\n- Não sei se essas operações foram swing trade ou day trade — a regra de isenção só vale para swing trade.\n- Não considero eventuais prejuízos, preço médio de compra ou outras operações do mês que afetem o ganho líquido.\n\nIsso é uma orientação geral, não uma apuração fiscal definitiva. Para seu caso concreto, recomendo consultar um contador ou a própria Receita Federal.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2890,
+    "output_tokens": 449,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.01027,
+  "seconds": 6.03185820003273,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "4125dfdcbaecb4700c434514e2a5105414c9d1788e8b00526f7c854b50286b7d"
+}

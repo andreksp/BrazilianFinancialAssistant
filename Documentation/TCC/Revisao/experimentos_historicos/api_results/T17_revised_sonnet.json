@@ -1,0 +1,27 @@
+{
+  "key": "T17_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. Segundo a evidência **fii_perda**, prejuízos na alienação de cotas de FII só podem ser compensados com ganhos de alienação de cotas de **fundos da mesma espécie** — ou seja, FII com FII. Não é permitido compensar indiscriminadamente prejuízo em FII com ganho de capital em ações, pois são categorias distintas de ativos para fins de apuração.\n\nVale distinguir também:\n- **Venda de cotas de FII com ganho**: tributada normalmente como ganho de capital (não isento), conforme indicado em **fii_rendimento**.\n- **Rendimentos distribuídos por FII** (não a venda): podem ser isentos se atendidas condições específicas (negociação em bolsa/balcão, mínimo de cotistas, limites de concentração), mas isso não se aplica a lucro na venda das cotas.\n\nCada categoria (ações, FII, day trade) tem apuração própria e não se misturam entre si (vide também **perdas**, sobre day trade).\n\nEsta é uma orientação geral e simplificada. Para seu caso concreto, recomendo verificar os detalhes específicos das operações e consultar um contador ou a legislação vigente à época dos fatos.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 923,
+    "output_tokens": 419,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006036,
+  "seconds": 5.301212500024121,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c1d51163ee4690d2b922981ec596f60b94728ee9607ef26edd2b0c3a5b65e2d5"
+}

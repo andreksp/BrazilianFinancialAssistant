@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 0,
+      "motivo": "Regras de IR de futuros; nada sobre previsão de preço"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "Tributação de FII; irrelevante à pergunta"
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 0,
+      "motivo": "Guia de DARF; irrelevante"
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ativos; não trata de previsão de mercado"
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 0,
+      "motivo": "Isenção de R$20 mil; não responde ao pedido"
+    },
+    {
+      "id": "fii_rendimento",
+      "relevancia": 0,
+      "motivo": "Isenção de rendimentos de FII; irrelevante"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Recusa correta, sem prometer previsão; nenhuma afirmação fiscal incorreta",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Abstém-se e cita apenas regras compatíveis com os trechos",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Recusa adequada com resumo tributário fiel às fontes citadas",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T45",
+  "repeat": false
+}

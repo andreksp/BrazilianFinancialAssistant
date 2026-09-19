@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     # LLM Configuration
     ANTHROPIC_API_KEY: str = ""
     LLM_MODEL_PARSER: str = "claude-haiku-4-5-20251001"
-    LLM_MODEL_EXPLAINER: str = "claude-sonnet-4-6"
+    LLM_MODEL_EXPLAINER: str = "claude-sonnet-5"
 
     # ChromaDB
     CHROMA_DB_PATH: str = "./chroma_data"

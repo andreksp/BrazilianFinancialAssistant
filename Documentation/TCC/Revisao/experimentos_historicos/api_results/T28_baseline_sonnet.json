@@ -1,0 +1,27 @@
+{
+  "key": "T28_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Depende do tipo de operação (evidência ID 975ab3cfe6fdb742 — Mercado Futuro):\n\n- **Operação normal** (posição mantida por mais de 1 dia): IRRF de **0,005% sobre o valor de ajuste/liquidação**.\n- **Day Trade** (abertura e fechamento no mesmo dia): IRRF de **1% sobre o ganho líquido apurado no dia** — não é 0,005% sobre nocional.\n\nOu seja, o percentual de 0,005% só se aplica à operação normal (não day trade), e a base é o valor de ajuste/liquidação diário, não necessariamente \"o nocional\" no sentido de valor total do contrato — depende de como esse ajuste é definido no seu sistema de apuração.\n\nEsse IRRF é antecipação, dedutível do IR devido no mês (código DARF 6015), podendo ser compensado em meses seguintes até dezembro do mesmo ano-calendário.\n\n**Limitação importante**: a evidência indica que este sistema não modela o ajuste diário real (D+1); trata o resultado como ganho agregado com base em preço de abertura/fechamento informado pelo usuário. Isso é uma simplificação de MVP, não substitui apuração fiscal real.\n\nSe puder confirmar se sua posição é day trade ou não, posso detalhar melhor. Não é orientação definitiva — consulte contador para sua situação específica.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3129,
+    "output_tokens": 487,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.011128,
+  "seconds": 6.818479800014757,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "f358c43b7c6b832d31ee46f90ae749b856d0688d3e823dfbc9a8041200eb2b95"
+}

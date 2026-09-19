@@ -1,0 +1,27 @@
+{
+  "key": "T17_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, não é possível. Segundo a evidência [7bb8b88a77231872], prejuízos apurados em FIIs **compensam apenas ganhos futuros de FII** — não podem ser usados para abater lucros obtidos em ações.\n\nIsso ocorre porque, embora ambos sejam renda variável, a legislação trata FIIs como categoria separada para fins de compensação de prejuízos: o ganho de capital na venda de cotas de FII é tributado a 20% sempre (sem isenção de R$ 20.000/mês, diferente das ações), e a compensação fica restrita à mesma categoria de ativo.\n\nResumindo as distinções importantes:\n- **Rendimentos mensais de FII** (aluguéis distribuídos) = isentos de IR para PF, sob certas condições.\n- **Ganho de capital na venda de cotas de FII** = 20% sempre, sem isenção.\n- **Prejuízo em FII** = compensa só ganhos futuros em FII, não em ações.\n- **Prejuízo em ações** = compensa ganhos futuros em ações (regime próprio de renda variável em bolsa).\n\nFonte: [7bb8b88a77231872] (Lei 11.033/2004; Lei 9.779/1999; IN RFB 1.585/2015).\n\nSe seu caso envolver valores específicos ou período de apuração, posso ajudar a organizar o cálculo — mas essa resposta é educacional, não uma apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3389,
+    "output_tokens": 505,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.011828,
+  "seconds": 6.709455300006084,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "8e306e7d8df2ec4cbcb8037d07ac4251b2888d5befdab02fb2ae33f775497197"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T28_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, não aplique o IRRF de 0,005% sobre o **valor nocional**.\n\nConforme evidência **[futuros]** (fonte: normas.receita.fazenda.gov.br, verificada em 12/09/2026), em operações com futuros:\n\n- A base do IRRF comum de 0,005% é a **soma algébrica positiva dos ajustes diários** apurados no encerramento da posição (ou vencimento) — não o valor nocional do contrato.\n- O nocional representa apenas o tamanho do contrato para fins de cálculo dos ajustes, mas **não é lucro nem caixa efetivamente movimentado**, portanto não deve compor a base de retenção.\n\nAlém disso, distinga:\n- **Regime tributário**: alíquota de 15% para operações comuns e 20% para day trade, sem a isenção de R$ 20 mil que existe para ações à vista.\n- **IRRF vs. apuração**: a retenção na fonte é apenas uma antecipação; o resultado tributável definitivo depende da apuração mensal consolidada, considerando ajustes, despesas e resultados de outras operações no mercado.\n\nRecomendo conferir a retenção efetiva no informe de rendimentos da corretora, pois pode haver particularidades operacionais não cobertas aqui.\n\n**Limite**: não tenho evidência detalhada sobre o cálculo exato passo a passo da base de ajustes nem sobre seu caso concreto — isso não constitui apuração fiscal definitiva. Para seu caso específico, consulte um contador ou a IN normativa completa.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 932,
+    "output_tokens": 536,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.007224,
+  "seconds": 7.026541900006123,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "277f3c7718ccbb784df39c66907364c59b9672fd413653ccbc7b74c51b76b4cf"
+}

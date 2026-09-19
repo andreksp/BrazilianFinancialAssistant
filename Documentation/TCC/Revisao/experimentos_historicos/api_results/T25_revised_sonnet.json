@@ -1,0 +1,27 @@
+{
+  "key": "T25_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base na evidência [win]: no WIN, cada ponto vale R$ 0,20 por contrato. Para 1 contrato comprado com variação de +500 pontos:\n\n**Ganho bruto = 500 × R$ 0,20 = R$ 100,00** (antes de custos, por contrato).\n\nSe você operou mais de um contrato, multiplique R$ 100 pela quantidade.\n\n**Importante — isso é apenas o cálculo do resultado bruto da operação, não a apuração fiscal:**\n- Isso é resultado de renda variável (day trade ou swing trade, dependendo do prazo entre abertura e encerramento), não \"rendimento\" no sentido de renda fixa nem \"venda\" de ativo à vista.\n- O regime tributário (alíquota, IRRF, compensação de perdas, DARF mensal) depende de fatores não informados aqui: foi day trade ou operação normal, houve outras operações no mês, há prejuízos a compensar, corretagem/emolumentos incidentes.\n- Não tenho evidência normativa fornecida sobre alíquotas específicas de day trade/swing trade em mercados futuros nesta base — não posso afirmar percentuais sem risco de erro.\n\nPara orientar a tributação exata, preciso saber: tipo de operação (day trade/normal), demais resultados do mês, e se há prejuízos anteriores a compensar. Isso é educativo, não é apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1036,
+    "output_tokens": 492,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006992,
+  "seconds": 6.543611000000965,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ecb09ee83b80cf3f12b54fa1a9743012206d05b08f9f15e98f949aa3de593f75"
+}

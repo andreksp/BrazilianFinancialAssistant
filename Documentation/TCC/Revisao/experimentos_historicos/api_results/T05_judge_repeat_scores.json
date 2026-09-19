@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 2,
+      "motivo": "Afirma que prejuízos de day trade compensam ganhos futuros de day trade, sem compensação cruzada; responde ao núcleo."
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 1,
+      "motivo": "Trata de opções e menciona compensação em categoria, mas não responde diretamente sobre day trade mensal."
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "Regras de BDR, sem tratar de compensação de prejuízo em day trade."
+    },
+    {
+      "id": "perdas",
+      "relevancia": 2,
+      "motivo": "Responde diretamente: prejuízo de day trade compensa ganho de day trade no mês ou períodos posteriores."
+    },
+    {
+      "id": "acoes_taxa",
+      "relevancia": 1,
+      "motivo": "Fornece alíquota de day trade, contexto útil mas não responde à compensação."
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 0,
+      "motivo": "Apuração de opções, irrelevante para a pergunta."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Confirma compensação entre day trades com condições declaratórias, alíquota 20% correta e apoio no contexto.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta quanto à compensação, vedação cruzada e IRRF 1% dedutível; consistente com o contexto.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Resposta correta e citada; ressalva sobre valores é adequada sem prejudicar o núcleo.",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T05",
+  "repeat": true
+}

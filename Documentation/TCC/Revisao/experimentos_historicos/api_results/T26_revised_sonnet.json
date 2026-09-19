@@ -1,0 +1,27 @@
+{
+  "key": "T26_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "**Cálculo (simulação educacional, não apuração fiscal):**\n\nSegundo evidência [wdo]: no WDO, 1 ponto = R$ 10 por contrato (posição comprada = diferença de cotações × 10 × contratos).\n\n- Variação: 10 pontos\n- Contratos: 2 (comprados)\n- Ganho bruto = 10 × 10 × 2 = **R$ 200**\n\n**Distinções importantes:**\n- Isso é o **resultado bruto da operação** (ajuste), antes de custos como corretagem, emolumentos e IR.\n- Day trade em futuros tem tributação específica (alíquota e recolhimento via DARF), diferente de ganho de capital em renda variável comum — não tenho evidência fornecida sobre essa alíquota específica para WDO, então não posso afirmar o valor do imposto devido.\n- Não confundir \"pontos\" com valor nocional do contrato (USD 10.000), conforme alerta da fonte [wdo].\n\n**Limite:** não há evidência aqui sobre alíquota de IR para operações com WDO, prazo de recolhimento (DARF) nem se houve outras operações no mês (compensação de perdas). Para apuração de imposto devido, seria necessário detalhar: data das operações, se é day trade ou posição, resultado mensal consolidado e alíquota aplicável a derivativos. Recomendo consultar contador para apuração definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1006,
+    "output_tokens": 486,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006872,
+  "seconds": 6.803388000000268,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "35851e08402570c079b7b41bf796e022895a458af321020866373d238699cc06"
+}

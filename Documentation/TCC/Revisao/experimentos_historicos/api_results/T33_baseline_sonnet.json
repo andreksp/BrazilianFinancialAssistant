@@ -1,0 +1,27 @@
+{
+  "key": "T33_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "**Retenção (evidência 06a4e857780aec7b):** Como se trata de remuneração do **doador** em empréstimo de ações (BTC/CBLC), NÃO se aplicam as regras de ganho de capital em renda variável (15%/20%/isenção R$20.000). O tratamento é de **renda fixa**, via tabela regressiva por prazo do contrato.\n\nPrazo informado: **361 dias** → faixa \"361 a 720 dias\" → alíquota **17,5%**.\n\nCálculo:\n- Remuneração bruta: R$ 1.000,00\n- IR retido: 17,5% × R$ 1.000,00 = **R$ 175,00**\n- Valor líquido ao doador: R$ 825,00\n\n**Como ocorre:** a B3/CBLC retém o IR na fonte no momento do pagamento. É tributação **exclusiva/definitiva** — não compõe apuração mensal de renda variável nem gera DARF adicional. Na Declaração de Ajuste Anual, entra em \"Rendimentos Sujeitos a Tributação Exclusiva/Definitiva\", conforme informe de rendimentos da B3.\n\nBase legal citada na evidência: Lei 13.043/2014; IN RFB 1.585/2015.\n\n⚠️ Confirme o prazo exato do contrato e o valor no informe de rendimentos da B3 (Área do Investidor), pois pequenas variações de dias mudam a faixa aplicável. Não considero isto apuração fiscal definit",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3132,
+    "output_tokens": 650,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 138
+    }
+  },
+  "usd": 0.012764,
+  "seconds": 8.410769000009168,
+  "stop_reason": "max_tokens",
+  "prompt_sha256": "c01e86514b24c09ac81487ca6aa64676520410ba0ebf9e9e78c00922d53bfabc"
+}

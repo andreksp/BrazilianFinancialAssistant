@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 0,
+      "motivo": "Mercado futuro, não trata de empréstimo de ações"
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 2,
+      "motivo": "Separa expressamente remuneração do doador e operação do tomador"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "FII, fora do tema"
+    },
+    {
+      "id": "emprestimo_proventos",
+      "relevancia": 2,
+      "motivo": "Afirma diretamente que o cálculo do doador não cobre venda a descoberto do tomador"
+    },
+    {
+      "id": "perdas",
+      "relevancia": 0,
+      "motivo": "Compensação de day trade, irrelevante"
+    },
+    {
+      "id": "wdo",
+      "relevancia": 0,
+      "motivo": "Contrato futuro de dólar, irrelevante"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Responde não, eventos distintos, citando evidência pertinente",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Mesma conclusão correta e ancorada; limitações declaradas",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e detalhada; regimes descritos coerentes com o contexto",
+      "configuration": "baseline_sonnet"
+    }
+  ],
+  "case_id": "T36",
+  "repeat": false
+}

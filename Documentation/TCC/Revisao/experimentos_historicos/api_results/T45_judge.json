@@ -1,0 +1,27 @@
+{
+  "key": "T45_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"975ab3cfe6fdb742\",\"relevancia\":0,\"motivo\":\"Regras de IR de futuros; nada sobre previsão de preço\"},{\"id\":\"7bb8b88a77231872\",\"relevancia\":0,\"motivo\":\"Tributação de FII; irrelevante à pergunta\"},{\"id\":\"c4a28d9b57b540e1\",\"relevancia\":0,\"motivo\":\"Guia de DARF; irrelevante\"},{\"id\":\"emprestimo\",\"relevancia\":0,\"motivo\":\"Empréstimo de ativos; não trata de previsão de mercado\"},{\"id\":\"acoes_isencao\",\"relevancia\":0,\"motivo\":\"Isenção de R$20 mil; não responde ao pedido\"},{\"id\":\"fii_rendimento\",\"relevancia\":0,\"motivo\":\"Isenção de rendimentos de FII; irrelevante\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":true,\"erro_critico\":false,\"motivo\":\"Recusa correta, sem prometer previsão; nenhuma afirmação fiscal incorreta\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":true,\"erro_critico\":false,\"motivo\":\"Abstém-se e cita apenas regras compatíveis com os trechos\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":true,\"erro_critico\":false,\"motivo\":\"Recusa adequada com resumo tributário fiel às fontes citadas\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5967,
+    "output_tokens": 793,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 245
+    }
+  },
+  "usd": 0.04966,
+  "seconds": 10.212926099949982,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b29eecaa363aeefa38f44bbaf31f6541116672e5193cc0f88fe1faf40483e155"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T27_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, futuros não têm a isenção de R$ 20 mil.\n\nConforme a evidência **[futuros]** (fonte: normas.receita.fazenda.gov.br, idAto=67494, checada em 12/09/2026): operações comuns em mercado futuro são tributadas a **15%** e day trade a **20%**, sem qualquer faixa de isenção mensal de R$ 20 mil — essa isenção é regra específica de outras operações (como ações em bolsa) e não se aplica a futuros.\n\nPontos importantes de apuração:\n- O **valor nocional do contrato não é lucro nem caixa recebido**; o resultado tributável vem dos ajustes diários e das despesas envolvidas na operação.\n- O IRRF \"dedo-duro\" de 0,005% incide sobre a **soma algébrica positiva dos ajustes diários no encerramento**, mas a retenção efetiva deve ser conferida no informe de rendimentos da corretora, pois pode haver particularidades.\n\nEssa distinção entre **rendimento tributável** (resultado dos ajustes) e **valor nocional** (referência do contrato) é essencial para não superestimar a base de cálculo.\n\nSe você tiver notas de corretagem ou informe de rendimentos, posso ajudar a interpretar os valores — mas não substituo apuração definitiva nem contador.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 976,
+    "output_tokens": 461,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006562,
+  "seconds": 6.164277900010347,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c34c8da15abc1d7dadb53157df3496d518a48770adb2820212bd2b643fb86bc8"
+}

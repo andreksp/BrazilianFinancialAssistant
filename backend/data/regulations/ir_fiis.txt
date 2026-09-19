@@ -15,7 +15,8 @@ IRRF (Imposto de Renda Retido na Fonte):
 
 GANHOS DE FII:
 - Rendimentos mensais distribuídos pelo FII (dividendos): ISENTOS de IR para pessoa física
-  (desde que o FII seja negociado em bolsa, tenha pelo menos 50 cotistas e o investidor possua menos de 10% das cotas)
+  (desde que o FII seja negociado em bolsa, tenha pelo menos 100 cotistas — patamar elevado de
+  50 para 100 pela Lei 14.754/2023 — e o investidor possua menos de 10% das cotas)
 - Ganho de capital na venda de cotas: 20% SEMPRE (não isento)
 
 DIFERENÇA IMPORTANTE:
@@ -33,4 +34,5 @@ COMPENSAÇÃO DE PREJUÍZOS:
 BASE LEGAL:
 - Lei 11.033/2004 — regime de tributação de FIIs
 - Lei 9.779/1999 — isenção de rendimentos de FII para PF
+- Lei 14.754/2023 — elevou o mínimo de cotistas de 50 para 100
 - Instrução Normativa RFB 1.585/2015

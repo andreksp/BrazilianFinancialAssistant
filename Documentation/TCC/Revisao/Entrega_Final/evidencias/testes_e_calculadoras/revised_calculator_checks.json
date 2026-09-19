@@ -1,0 +1,522 @@
+[
+  {
+    "id": "acao_limite",
+    "inputs": {
+      "ativo": "PETR4",
+      "tipo_ativo": "acao",
+      "tipo_operacao": "venda",
+      "quantidade": 100,
+      "preco_unitario": 200,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0,
+      "total_vendas_mes": 20000
+    },
+    "average_price": 100,
+    "expected": {
+      "ir_devido": 0
+    },
+    "actual": {
+      "ativo": "PETR4",
+      "tipo_ativo": "acao",
+      "quantidade": 100.0,
+      "preco_unitario": 200.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 20000.0,
+      "ganho_prejuizo_bruto": 10000.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.0,
+      "ir_devido": 0.0,
+      "irrf_retido": 0.0,
+      "isenção_aplicada": true,
+      "ganho_prejuizo_liquido": 10000.0,
+      "valor_liquido": 20000.0,
+      "tipo_operacao_classificacao": "swing",
+      "mensagem": "Operação swing trade de PETR4: R$ 10.000,00 (isenção de R$ 20.000 aplicada)"
+    },
+    "passed": true
+  },
+  {
+    "id": "acao_acima_limite",
+    "inputs": {
+      "ativo": "PETR4",
+      "tipo_ativo": "acao",
+      "tipo_operacao": "venda",
+      "quantidade": 100,
+      "preco_unitario": 200,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0,
+      "total_vendas_mes": 20001
+    },
+    "average_price": 100,
+    "expected": {
+      "ir_devido": 1500
+    },
+    "actual": {
+      "ativo": "PETR4",
+      "tipo_ativo": "acao",
+      "quantidade": 100.0,
+      "preco_unitario": 200.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 20000.0,
+      "ganho_prejuizo_bruto": 10000.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.15,
+      "ir_devido": 1500.0,
+      "irrf_retido": 0.0,
+      "isenção_aplicada": false,
+      "ganho_prejuizo_liquido": 10000.0,
+      "valor_liquido": 18500.0,
+      "tipo_operacao_classificacao": "swing",
+      "mensagem": "Operação swing trade de PETR4: R$ 10.000,00 - IR devido: R$ 1.500,00"
+    },
+    "passed": true
+  },
+  {
+    "id": "acao_daytrade",
+    "inputs": {
+      "ativo": "PETR4",
+      "tipo_ativo": "acao",
+      "tipo_operacao": "venda",
+      "quantidade": 100,
+      "preco_unitario": 200,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0,
+      "classificacao": "day_trade"
+    },
+    "average_price": 100,
+    "expected": {
+      "ir_devido": 2000
+    },
+    "actual": {
+      "ativo": "PETR4",
+      "tipo_ativo": "acao",
+      "quantidade": 100.0,
+      "preco_unitario": 200.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 20000.0,
+      "ganho_prejuizo_bruto": 10000.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.2,
+      "ir_devido": 2000.0,
+      "irrf_retido": 0.0,
+      "isenção_aplicada": false,
+      "ganho_prejuizo_liquido": 10000.0,
+      "valor_liquido": 18000.0,
+      "tipo_operacao_classificacao": "day_trade",
+      "mensagem": "Operação day trade de PETR4: R$ 10.000,00 - IR devido: R$ 2.000,00"
+    },
+    "passed": true
+  },
+  {
+    "id": "cripto_limite",
+    "inputs": {
+      "ativo": "BTC",
+      "tipo_ativo": "cripto",
+      "tipo_operacao": "venda",
+      "quantidade": 0.1,
+      "preco_unitario": 350000,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0,
+      "total_vendas_mes": 35000
+    },
+    "average_price": 300000,
+    "expected": {
+      "ir_devido": 0
+    },
+    "actual": {
+      "ativo": "BTC",
+      "tipo_ativo": "cripto",
+      "quantidade": 0.1,
+      "preco_unitario": 350000.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 35000.0,
+      "ganho_prejuizo_bruto": 5000.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.0,
+      "ir_devido": 0.0,
+      "irrf_retido": 0.0,
+      "isenção_aplicada": true,
+      "ganho_prejuizo_liquido": 5000.0,
+      "valor_liquido": 35000.0,
+      "tipo_operacao_classificacao": "swing",
+      "mensagem": "Venda de BTC (exchange nacional): R$ 5.000,00 (isenção de R$ 35.000/mês aplicada — sem IR)"
+    },
+    "passed": true
+  },
+  {
+    "id": "cripto_agregacao",
+    "inputs": {
+      "ativo": "BTC",
+      "tipo_ativo": "cripto",
+      "tipo_operacao": "venda",
+      "quantidade": 0.1,
+      "preco_unitario": 350000,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0,
+      "total_vendas_mes": 40000
+    },
+    "average_price": 300000,
+    "expected": {
+      "ir_devido": 750
+    },
+    "actual": {
+      "ativo": "BTC",
+      "tipo_ativo": "cripto",
+      "quantidade": 0.1,
+      "preco_unitario": 350000.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 35000.0,
+      "ganho_prejuizo_bruto": 5000.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.15,
+      "ir_devido": 750.0,
+      "irrf_retido": 0.0,
+      "isenção_aplicada": false,
+      "ganho_prejuizo_liquido": 5000.0,
+      "valor_liquido": 34250.0,
+      "tipo_operacao_classificacao": "swing",
+      "mensagem": "Venda de BTC (exchange nacional): R$ 5.000,00 - IR devido (15.0%): R$ 750,00"
+    },
+    "passed": true
+  },
+  {
+    "id": "cripto_progressivo",
+    "inputs": {
+      "ativo": "BTC",
+      "tipo_ativo": "cripto",
+      "tipo_operacao": "venda",
+      "quantidade": 100,
+      "preco_unitario": 70000,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0,
+      "total_vendas_mes": 7000000
+    },
+    "average_price": 10000,
+    "expected": {
+      "ir_devido": 925000
+    },
+    "actual": {
+      "ativo": "BTC",
+      "tipo_ativo": "cripto",
+      "quantidade": 100.0,
+      "preco_unitario": 70000.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 7000000.0,
+      "ganho_prejuizo_bruto": 6000000.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.15416666666666667,
+      "ir_devido": 925000.0,
+      "irrf_retido": 0.0,
+      "isenção_aplicada": false,
+      "ganho_prejuizo_liquido": 6000000.0,
+      "valor_liquido": 6075000.0,
+      "tipo_operacao_classificacao": "swing",
+      "mensagem": "Venda de BTC (exchange nacional): R$ 6.000.000,00 - IR devido (15.4%): R$ 925.000,00"
+    },
+    "passed": true
+  },
+  {
+    "id": "WIN_multiplicador",
+    "inputs": {
+      "ativo": "WINV26",
+      "tipo_ativo": "futuro_indice",
+      "tipo_operacao": "venda",
+      "quantidade": 1,
+      "preco_unitario": 130500,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0
+    },
+    "average_price": 130000,
+    "expected": {
+      "ganho_prejuizo_bruto": 100,
+      "ir_devido": 15
+    },
+    "actual": {
+      "ativo": "WINV26",
+      "tipo_ativo": "futuro_indice",
+      "quantidade": 1.0,
+      "preco_unitario": 130500.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 26100.0,
+      "ganho_prejuizo_bruto": 100.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.15,
+      "ir_devido": 15.0,
+      "irrf_retido": 0.0,
+      "isenção_aplicada": false,
+      "ganho_prejuizo_liquido": 100.0,
+      "valor_liquido": 85.0,
+      "tipo_operacao_classificacao": "swing",
+      "mensagem": "Operação operação normal de WINV26: R$ 100,00 - IR devido: R$ 15,00 (sem isenção de R$20.000, aplicável apenas a ações à vista) Simulação de posição comprada encerrada, sem ajustes diários intermediários ou compensação mensal; valor financeiro é nocional, não recebimento."
+    },
+    "passed": true
+  },
+  {
+    "id": "WDO_multiplicador",
+    "inputs": {
+      "ativo": "WDOU26",
+      "tipo_ativo": "futuro_dolar",
+      "tipo_operacao": "venda",
+      "quantidade": 2,
+      "preco_unitario": 5510,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0
+    },
+    "average_price": 5500,
+    "expected": {
+      "ganho_prejuizo_bruto": 200,
+      "ir_devido": 30
+    },
+    "actual": {
+      "ativo": "WDOU26",
+      "tipo_ativo": "futuro_dolar",
+      "quantidade": 2.0,
+      "preco_unitario": 5510.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 110200.0,
+      "ganho_prejuizo_bruto": 200.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.15,
+      "ir_devido": 30.0,
+      "irrf_retido": 0.0,
+      "isenção_aplicada": false,
+      "ganho_prejuizo_liquido": 200.0,
+      "valor_liquido": 170.0,
+      "tipo_operacao_classificacao": "swing",
+      "mensagem": "Operação operação normal de WDOU26: R$ 200,00 - IR devido: R$ 30,00 (sem isenção de R$20.000, aplicável apenas a ações à vista) Simulação de posição comprada encerrada, sem ajustes diários intermediários ou compensação mensal; valor financeiro é nocional, não recebimento."
+    },
+    "passed": true
+  },
+  {
+    "id": "doador_180",
+    "inputs": {
+      "ativo": "PETR4",
+      "tipo_ativo": "emprestimo_acoes",
+      "tipo_operacao": "venda",
+      "quantidade": 100,
+      "preco_unitario": 10,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0,
+      "prazo_dias": 180
+    },
+    "average_price": null,
+    "expected": {
+      "irrf_retido": 225,
+      "ir_devido": 0
+    },
+    "actual": {
+      "ativo": "PETR4",
+      "tipo_ativo": "emprestimo_acoes",
+      "quantidade": 100.0,
+      "preco_unitario": 10.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 1000.0,
+      "ganho_prejuizo_bruto": 1000.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.225,
+      "ir_devido": 0.0,
+      "irrf_retido": 225.0,
+      "isenção_aplicada": false,
+      "ganho_prejuizo_liquido": 775.0,
+      "valor_liquido": 775.0,
+      "tipo_operacao_classificacao": "swing",
+      "mensagem": "Aluguel de 100 PETR4: remuneração bruta R$ 1.000,00. Prazo do contrato: 180 dias. IR retido na fonte (definitivo, tabela regressiva 22.5%): R$ 225,00. Tributação exclusiva — não gera DARF mensal."
+    },
+    "passed": true
+  },
+  {
+    "id": "doador_181",
+    "inputs": {
+      "ativo": "PETR4",
+      "tipo_ativo": "emprestimo_acoes",
+      "tipo_operacao": "venda",
+      "quantidade": 100,
+      "preco_unitario": 10,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0,
+      "prazo_dias": 181
+    },
+    "average_price": null,
+    "expected": {
+      "irrf_retido": 200,
+      "ir_devido": 0
+    },
+    "actual": {
+      "ativo": "PETR4",
+      "tipo_ativo": "emprestimo_acoes",
+      "quantidade": 100.0,
+      "preco_unitario": 10.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 1000.0,
+      "ganho_prejuizo_bruto": 1000.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.2,
+      "ir_devido": 0.0,
+      "irrf_retido": 200.0,
+      "isenção_aplicada": false,
+      "ganho_prejuizo_liquido": 800.0,
+      "valor_liquido": 800.0,
+      "tipo_operacao_classificacao": "swing",
+      "mensagem": "Aluguel de 100 PETR4: remuneração bruta R$ 1.000,00. Prazo do contrato: 181 dias. IR retido na fonte (definitivo, tabela regressiva 20.0%): R$ 200,00. Tributação exclusiva — não gera DARF mensal."
+    },
+    "passed": true
+  },
+  {
+    "id": "doador_361",
+    "inputs": {
+      "ativo": "PETR4",
+      "tipo_ativo": "emprestimo_acoes",
+      "tipo_operacao": "venda",
+      "quantidade": 100,
+      "preco_unitario": 10,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0,
+      "prazo_dias": 361
+    },
+    "average_price": null,
+    "expected": {
+      "irrf_retido": 175,
+      "ir_devido": 0
+    },
+    "actual": {
+      "ativo": "PETR4",
+      "tipo_ativo": "emprestimo_acoes",
+      "quantidade": 100.0,
+      "preco_unitario": 10.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 1000.0,
+      "ganho_prejuizo_bruto": 1000.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.175,
+      "ir_devido": 0.0,
+      "irrf_retido": 175.0,
+      "isenção_aplicada": false,
+      "ganho_prejuizo_liquido": 825.0,
+      "valor_liquido": 825.0,
+      "tipo_operacao_classificacao": "swing",
+      "mensagem": "Aluguel de 100 PETR4: remuneração bruta R$ 1.000,00. Prazo do contrato: 361 dias. IR retido na fonte (definitivo, tabela regressiva 17.5%): R$ 175,00. Tributação exclusiva — não gera DARF mensal."
+    },
+    "passed": true
+  },
+  {
+    "id": "doador_721",
+    "inputs": {
+      "ativo": "PETR4",
+      "tipo_ativo": "emprestimo_acoes",
+      "tipo_operacao": "venda",
+      "quantidade": 100,
+      "preco_unitario": 10,
+      "data_operacao": "2026-09-01",
+      "custos_operacao": 0,
+      "irrf_informado": 0,
+      "prazo_dias": 721
+    },
+    "average_price": null,
+    "expected": {
+      "irrf_retido": 150,
+      "ir_devido": 0
+    },
+    "actual": {
+      "ativo": "PETR4",
+      "tipo_ativo": "emprestimo_acoes",
+      "quantidade": 100.0,
+      "preco_unitario": 10.0,
+      "data_operacao": "2026-09-01",
+      "valor_financeiro": 1000.0,
+      "ganho_prejuizo_bruto": 1000.0,
+      "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+      },
+      "aliquota_aplicada": 0.15,
+      "ir_devido": 0.0,
+      "irrf_retido": 150.0,
+      "isenção_aplicada": false,
+      "ganho_prejuizo_liquido": 850.0,
+      "valor_liquido": 850.0,
+      "tipo_operacao_classificacao": "swing",
+      "mensagem": "Aluguel de 100 PETR4: remuneração bruta R$ 1.000,00. Prazo do contrato: 721 dias. IR retido na fonte (definitivo, tabela regressiva 15.0%): R$ 150,00. Tributação exclusiva — não gera DARF mensal."
+    },
+    "passed": true
+  }
+]

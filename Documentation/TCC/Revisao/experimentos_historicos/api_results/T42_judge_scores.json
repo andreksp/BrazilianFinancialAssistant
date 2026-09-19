@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "183017f281e698ea",
+      "relevancia": 2,
+      "motivo": "Afirma explicitamente DARF 4600 para cripto e distingue do 6015."
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 1,
+      "motivo": "Explica que 6015 é de bolsa, mas não trata de cripto diretamente."
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ações, tema alheio."
+    },
+    {
+      "id": "cripto_darf",
+      "relevancia": 2,
+      "motivo": "Responde diretamente: DARF 4600, não 6015."
+    },
+    {
+      "id": "cripto_isencao",
+      "relevancia": 1,
+      "motivo": "Contexto de isenção mensal; não trata do código DARF."
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 0,
+      "motivo": "Regra de empréstimo de ativos, irrelevante."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Indica 4600 corretamente, distingue 6015 e regime exterior, apoiado nos trechos.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Resposta correta (4600), prazo e isenção coerentes com as evidências citadas.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 1,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Acerta o 4600, mas aplica o limite de R$35.000 ao ganho e afirma tributação apenas do excedente, contrariando a regra (limite de alienações e tributação integral do ganho).",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T42",
+  "repeat": false
+}

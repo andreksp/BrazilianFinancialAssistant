@@ -1,0 +1,27 @@
+{
+  "key": "T09_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "**Alíquota: 20% sobre o ganho líquido em day trade com BDR** (venda/negociação do certificado, não confundir com rendimentos distribuídos pelo ativo subjacente) [ID: bdr, fonte B3].\n\nPontos importantes:\n- **Não há isenção de R$ 20 mil** para BDR (essa isenção é exclusiva de ações à vista), então mesmo pequenos ganhos em venda comum de BDR já seriam tributáveis a 15% — mas no day trade a regra é sempre 20%, sem limite de isenção [ID: bdr, acoes_taxa].\n- O **IRRF retido é antecipação**, não substitui a apuração mensal obrigatória via GCAP/carnê-leão conforme o caso [ID: acoes_taxa].\n- **Prejuízos em day trade** só compensam ganhos de day trade (não se misturam com operações comuns), podendo ser usados no mês ou em meses seguintes, respeitando as obrigações declaratórias [ID: perdas].\n- Regime aplicável: pessoa física, apuração mensal com recolhimento do imposto (DARF) até o último dia útil do mês seguinte.\n\nIsso é orientação geral e não substitui apuração fiscal definitiva com base nos seus dados reais. Se precisar, informe valores de compra/venda e datas para simular o cálculo.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 949,
+    "output_tokens": 472,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006618,
+  "seconds": 6.514344199968036,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "38e6a053f99065064518d857aa47a743c9bd36d5bf749a4feb556d27518f5e49"
+}

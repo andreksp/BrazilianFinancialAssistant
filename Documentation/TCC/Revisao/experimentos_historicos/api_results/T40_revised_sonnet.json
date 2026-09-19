@@ -1,0 +1,27 @@
+{
+  "key": "T40_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, não é 17,5% sobre o valor total.\n\nConforme o item **cripto_faixas** (Lei 13.259/2016), a tributação de ganho de capital é **progressiva por faixas**, não uma alíquota única aplicada ao montante inteiro:\n\n- 15% sobre a parcela até R$ 5.000.000\n- 17,5% sobre a parcela entre R$ 5.000.000 e R$ 10.000.000\n\nPara um ganho de R$ 6.000.000:\n- 15% × R$ 5.000.000 = R$ 750.000\n- 17,5% × R$ 1.000.000 (excedente) = R$ 175.000\n- **Total: R$ 925.000**\n\nIsso equivale a uma alíquota efetiva de ~15,42%, não 17,5%.\n\n**Limites importantes:**\n- Isso pressupõe \"ganho de capital nacional\" já apurado corretamente (custo de aquisição, despesas dedutíveis etc.) — não tenho evidência sobre a natureza do ativo nem sobre eventuais isenções específicas (ex.: alienação de bem de pequeno valor, isenções para determinados ativos).\n- Não sei se há outras rendas ou operações no mesmo período que possam alterar a apuração.\n- Esta é uma simulação educacional, não uma apuração fiscal definitiva. Recomendo confirmar com um contador antes de declarar.\n\nPoderia informar o tipo de ativo (imóvel, ação, cripto etc.) para maior precisão?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1010,
+    "output_tokens": 517,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.00719,
+  "seconds": 6.192138499987777,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b64d768e40f3029f7503014bbc5799159d829751574d03ab9d29b15fadb12484"
+}

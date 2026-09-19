@@ -1,0 +1,27 @@
+{
+  "key": "T31_judge_repeat",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"7bb8b88a77231872\",\"relevancia\":0,\"motivo\":\"FII, não trata de remuneração de doador em empréstimo de ações\"},{\"id\":\"10d60f0a6cead3e1\",\"relevancia\":0,\"motivo\":\"Taxas B3; pergunta exclui taxas e não trata de IRRF sobre aluguel\"},{\"id\":\"06a4e857780aec7b\",\"relevancia\":2,\"motivo\":\"Traz tabela regressiva do doador BTC: até 180 dias 22,5%\"},{\"id\":\"futuros\",\"relevancia\":0,\"motivo\":\"Regras de futuros, irrelevante ao aluguel de ações\"},{\"id\":\"cripto_exterior\",\"relevancia\":0,\"motivo\":\"Lei 14.754/2023, fora do tema\"},{\"id\":\"acoes_isencao\",\"relevancia\":0,\"motivo\":\"Isenção de R$ 20 mil não se aplica à remuneração do doador\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":0,\"fundamentacao\":1,\"abstencao_adequada\":true,\"erro_critico\":false,\"motivo\":\"Não entrega o cálculo devido (225/775); abstenção coerente com contexto recuperado sem a regra do BTC\"},{\"id\":\"B\",\"correcao\":0,\"fundamentacao\":1,\"abstencao_adequada\":true,\"erro_critico\":false,\"motivo\":\"Pedido de esclarecimento sem resposta ao caso; abstenção justificável pelo contexto limitado\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Aplica 22,5% até 180 dias: IRRF 225 e líquido 775, ancorado no trecho do BTC\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5850,
+    "output_tokens": 1169,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 552
+    }
+  },
+  "usd": 0.058475,
+  "seconds": 15.131171800021548,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ba0e091a7d32dad04f56fb6df18ede3416dc33d38c4785cf1bbd226cf32e3b99"
+}

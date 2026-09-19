@@ -1,0 +1,24 @@
+{
+  "key": "T21_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise: Day Trade em Opções – IR Devido\n\n## Classificação\n- **Ativo**: Opções (derivativos)\n- **Operação**: Day trade\n- **Ganho líquido**: R$ 1.000\n- **Período**: 2026\n\n## Tributação Aplicável\n\nConforme evidência **acoes_taxa** (Planalto, 2026):\n- **Day trade**: alíquota de **20%** sobre ganhos líquidos\n- Sem limite de isenção (diferente de ações à vista)\n\nA evidência **acoes_isencao** explicita que a isenção de R$ 20 mil **não se aplica a opções**.\n\n## IR Devido\n**R$ 1.000 × 20% = R$ 200**\n\n## Observações\n1. **IRRF antecipado**: pode ter sido retido na operação (não substitui automaticamente a apuração)\n2. **Declaração**: deve constar no IRPF na ficha de Renda Variável\n3. **Limite de data**: orientação válida para 12/09/2026\n\n---\n\n⚠️ **Limite**: Evidência não aborda especificidades de **contratos de opções** versus ações. Confirme com seu corretora se há regramento específico para esse instrumento.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 806,
+    "output_tokens": 335,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002481,
+  "seconds": 4.338243299978785,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "a533d1576c8b3444dfba1ff626f671e3e146e8809757b17560491425db6f2987"
+}

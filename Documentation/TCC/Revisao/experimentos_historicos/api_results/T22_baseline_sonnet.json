@@ -1,0 +1,27 @@
+{
+  "key": "T22_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. Conforme a evidência (ID 290b3fbba3faa9f8), no exercício de opção de compra (call), o cálculo do ganho é:\n\n**Ganho = (Preço da ação no exercício − Strike − Prêmio pago) × Quantidade**\n\nO prêmio pago na compra da opção compõe o custo e deve ser deduzido — ignorá-lo superestimaria o ganho tributável e a base de cálculo do IR devido.\n\nAlém disso, se a opção expira sem exercício (\"virar pó\"), o prêmio pago é integralmente considerado prejuízo na data de vencimento.\n\nDistinções importantes:\n- **Regime**: swing trade (15%) ou day trade (20%), conforme prazo entre compra e venda/exercício.\n- **Isenção de R$ 20.000**: não se aplica a opções — toda operação está sujeita a IR, independente do valor.\n- **Compensação de prejuízos**: prejuízos em opções compensam ganhos futuros em opções ou ações, dentro da mesma categoria (renda variável).\n\nEsta é uma explicação didática das regras gerais, não uma apuração fiscal definitiva. Para seu caso concreto, informe: tipo de opção, prêmio pago, strike, preço da ação no exercício, datas e regime (day/swing), para simulação mais precisa.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2872,
+    "output_tokens": 457,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010314,
+  "seconds": 6.305022199987434,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "8f6316682c01de374849dd51782e7ec6db10e78a5780ab534016b467fabd1d64"
+}

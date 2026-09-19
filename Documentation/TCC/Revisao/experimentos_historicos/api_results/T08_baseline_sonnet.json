@@ -1,0 +1,27 @@
+{
+  "key": "T08_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base na evidência [e64833ee00978eec], para BDRs em operação comum (swing trade):\n\n- **Swing Trade: 15%** sobre o ganho líquido\n- **Day Trade: 20%** sobre o ganho líquido (caso a compra e venda ocorram no mesmo dia)\n\nEssas alíquotas são idênticas às aplicadas a ações. O IRRF (retenção antecipada, dedutível do imposto devido) é de 0,005% sobre o valor da venda no swing trade, ou 1% sobre o ganho no day trade.\n\n**Importante — venda vs. rendimento:** essa alíquota refere-se ao **ganho de capital na venda do BDR** (variação de preço, já incorporando o efeito cambial implícito). Não confundir com dividendos recebidos via BDR, que têm tratamento diferente (retenção no exterior, ex.: 30% nos EUA, com possibilidade de aproveitamento como crédito).\n\nVale observar que a evidência trata a isenção de R$ 20.000/mês em vendas como aplicável a BDRs, mas essa informação não traz base legal específica tão clara quanto a das ações — se precisar de confirmação normativa detalhada sobre esse ponto, recomendo verificação adicional.\n\nFonte: evidência e64833ee00978eec (base legal citada: IN RFB 1.585/2015; Resolução CVM 3/2020).",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2874,
+    "output_tokens": 484,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010588,
+  "seconds": 6.4840739000355825,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "2c0426ce031eb005dbae4c88e65ecec0495a80d988dca0d634a67bb1a2932d20"
+}

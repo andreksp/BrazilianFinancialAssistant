@@ -1,0 +1,27 @@
+{
+  "key": "T31_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "A pergunta menciona \"doador\" e \"remuneração por dias\", sem indicar o tipo de operação (ex.: aluguel de ações, contrato futuro, empréstimo, etc.), o ativo envolvido, ou a natureza jurídica do pagamento (rendimento de aplicação financeira, ganho de capital, doação, etc.).\n\nAs evidências fornecidas tratam apenas de: (1) ganhos em ações à vista (isenção até R$ 20.000 em vendas/mês), (2) operações com futuros (alíquotas 15%/20%, IRRF sobre ajustes diários), e (3) aplicações no exterior (Lei 14.754/2023, 15% anual). Nenhuma delas trata de \"remuneração de doador\" ou de um fluxo fixo diário de R$ 1.000 por 180 dias — isso pode se referir, por exemplo, a doação de óvulos/plasma, aluguel de bem, ou outra situação não coberta pelo material disponível.\n\n**Não posso calcular IRRF nem valor líquido sem saber**: (a) a natureza exata do rendimento, (b) o regime tributário aplicável, (c) se há alíquota/base legal específica para esse tipo de \"remuneração de doador\".\n\nPoderia esclarecer do que se trata essa remuneração (contrato, atividade, fonte pagadora)?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1019,
+    "output_tokens": 463,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006668,
+  "seconds": 6.193742499977816,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ee0dee9ba47f296091ebd51501cbdfed712cd6ae08dc2f4ea2c31aa917484eb3"
+}

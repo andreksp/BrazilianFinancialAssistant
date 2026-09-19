@@ -1,0 +1,24 @@
+{
+  "key": "T30_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta sobre Apuração de Futuros\n\n**Não. Abertura e fechamento não reproduzem todos os ajustes diários.**\n\nSegundo a evidência disponível (ID: \"futuros\"):\n\n- **Ajustes diários ocorrem durante a posição aberta**, não apenas nas pontas\n- **IRRF comum (0,005%)** incide sobre \"soma algébrica positiva dos ajustes diários **no encerramento**\", ou seja, o sistema captura o acumulado, mas não significa que apenas abertura/fechamento geram os ajustes\n- **Valor nocional não é lucro nem caixa recebido** — o ganho/perda real vem dos ajustes diários\n- **Apuração envolve ajustes e despesas** além das operações nas pontas\n\n**Clareza necessária:**\n- Você precisa detalhar se pergunta sobre: (a) quando ocorrem os ajustes economicamente? (b) quando são tributáveis? (c) como aparecem no informe?\n- A retenção efetiva depende do que seu corretora reporta — recomendo conferir o informe de rendimentos\n\n**Limite:** A evidência não detalha a sequência intradiária completa de ajustes. Para apuração definitiva, consulte seu informe de operações e a legislação sobre B3.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 795,
+    "output_tokens": 338,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002485,
+  "seconds": 4.353099200001452,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "8e13e205301e67dcfdbc872cd84a5897d955c20bcf051d6cc7fc7cc5b22e7a21"
+}

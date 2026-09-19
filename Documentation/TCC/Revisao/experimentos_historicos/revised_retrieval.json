@@ -1,0 +1,2162 @@
+[
+  {
+    "case_id": "T01",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.3130616301235528
+      },
+      {
+        "id": "cripto_isencao",
+        "text": "Regime de ganho de capital de criptoativos nacionais: somar todas as alienações de criptoativos no mês. Até R$ 35.000 pode haver isenção; não são R$ 20.000 e não é limite por moeda ou operação. Permuta entre criptomoedas também configura alienação mesmo sem conversão em reais. Não concluir sobre o exterior sem enquadramento específico.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.37441347542097003
+      },
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.4103284542654413
+      }
+    ],
+    "seconds": 0.010386000038124621
+  },
+  {
+    "case_id": "T02",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.3667848824292531
+      },
+      {
+        "id": "wdo",
+        "text": "Minicontrato futuro de dólar WDO: tamanho USD 10.000 e cotação em reais por USD 1.000. Uma variação de um ponto corresponde a R$ 10 por contrato. Para posição comprada: diferença de cotações × 10 × contratos; invertida para posição vendida. Isso não substitui os ajustes diários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/moedas/futuro-mini-de-taxa-de-cambio-de-reais-por-dolar-comercial.htm"
+        },
+        "distance": 0.4009959282128015
+      },
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.41792729112016547
+      }
+    ],
+    "seconds": 0.008967300003860146
+  },
+  {
+    "case_id": "T03",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.3407402348576487
+      },
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.408335567771148
+      },
+      {
+        "id": "cripto_isencao",
+        "text": "Regime de ganho de capital de criptoativos nacionais: somar todas as alienações de criptoativos no mês. Até R$ 35.000 pode haver isenção; não são R$ 20.000 e não é limite por moeda ou operação. Permuta entre criptomoedas também configura alienação mesmo sem conversão em reais. Não concluir sobre o exterior sem enquadramento específico.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.4367151184094359
+      }
+    ],
+    "seconds": 0.008748100022785366
+  },
+  {
+    "case_id": "T04",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.31082303675597034
+      },
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.36335492885358023
+      },
+      {
+        "id": "acoes_taxa",
+        "text": "Ações em bolsa: operações comuns tributáveis têm alíquota de 15%; day trade, 20% sobre ganhos líquidos. Não se aplica limite de isenção ao day trade. IRRF é antecipação e não substitui automaticamente a apuração mensal.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.3698420701544065
+      }
+    ],
+    "seconds": 0.008758899988606572
+  },
+  {
+    "case_id": "T05",
+    "evidence": [
+      {
+        "id": "perdas",
+        "text": "Prejuízos em day trade podem ser compensados com ganhos em day trade no mês ou em períodos posteriores, observadas as obrigações declaratórias. Não se misturam com ganhos de operações comuns. Compensação não significa restituição automática.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes"
+        },
+        "distance": 0.2738985803470677
+      },
+      {
+        "id": "acoes_taxa",
+        "text": "Ações em bolsa: operações comuns tributáveis têm alíquota de 15%; day trade, 20% sobre ganhos líquidos. Não se aplica limite de isenção ao day trade. IRRF é antecipação e não substitui automaticamente a apuração mensal.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.4005299556427776
+      },
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.47859766455386943
+      }
+    ],
+    "seconds": 0.00822890002746135
+  },
+  {
+    "case_id": "T06",
+    "evidence": [
+      {
+        "id": "perdas",
+        "text": "Prejuízos em day trade podem ser compensados com ganhos em day trade no mês ou em períodos posteriores, observadas as obrigações declaratórias. Não se misturam com ganhos de operações comuns. Compensação não significa restituição automática.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes"
+        },
+        "distance": 0.2769991651375947
+      },
+      {
+        "id": "acoes_taxa",
+        "text": "Ações em bolsa: operações comuns tributáveis têm alíquota de 15%; day trade, 20% sobre ganhos líquidos. Não se aplica limite de isenção ao day trade. IRRF é antecipação e não substitui automaticamente a apuração mensal.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.3477692419916636
+      },
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.40597090516111656
+      }
+    ],
+    "seconds": 0.007953600026667118
+  },
+  {
+    "case_id": "T07",
+    "evidence": [
+      {
+        "id": "bdr",
+        "text": "BDR não possui a isenção de vendas de R$ 20 mil das ações à vista. Ganho líquido em operação comum: 15%; day trade: 20%. O limite de vendas não transforma lucro de BDR em isento. Rendimentos distribuídos por BDR não devem ser confundidos com ganho na venda do certificado.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/"
+        },
+        "distance": 0.27289890553686613
+      },
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.3464379653101256
+      },
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.36458328989869104
+      }
+    ],
+    "seconds": 0.007867200009059161
+  },
+  {
+    "case_id": "T08",
+    "evidence": [
+      {
+        "id": "bdr",
+        "text": "BDR não possui a isenção de vendas de R$ 20 mil das ações à vista. Ganho líquido em operação comum: 15%; day trade: 20%. O limite de vendas não transforma lucro de BDR em isento. Rendimentos distribuídos por BDR não devem ser confundidos com ganho na venda do certificado.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/"
+        },
+        "distance": 0.41339335596272586
+      },
+      {
+        "id": "acoes_taxa",
+        "text": "Ações em bolsa: operações comuns tributáveis têm alíquota de 15%; day trade, 20% sobre ganhos líquidos. Não se aplica limite de isenção ao day trade. IRRF é antecipação e não substitui automaticamente a apuração mensal.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.4989562627363613
+      },
+      {
+        "id": "cripto_darf",
+        "text": "No regime de ganho de capital mensal aplicável a criptoativos, o recolhimento utiliza DARF 4600 até o último dia útil do mês seguinte. Não usar automaticamente 6015, próprio de ganhos líquidos em bolsa. Obrigação de informar operações é diferente de obrigação de pagar imposto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.5276414814085597
+      }
+    ],
+    "seconds": 0.008844900003168732
+  },
+  {
+    "case_id": "T09",
+    "evidence": [
+      {
+        "id": "acoes_taxa",
+        "text": "Ações em bolsa: operações comuns tributáveis têm alíquota de 15%; day trade, 20% sobre ganhos líquidos. Não se aplica limite de isenção ao day trade. IRRF é antecipação e não substitui automaticamente a apuração mensal.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.4848659580775784
+      },
+      {
+        "id": "bdr",
+        "text": "BDR não possui a isenção de vendas de R$ 20 mil das ações à vista. Ganho líquido em operação comum: 15%; day trade: 20%. O limite de vendas não transforma lucro de BDR em isento. Rendimentos distribuídos por BDR não devem ser confundidos com ganho na venda do certificado.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/"
+        },
+        "distance": 0.5076526345810837
+      },
+      {
+        "id": "perdas",
+        "text": "Prejuízos em day trade podem ser compensados com ganhos em day trade no mês ou em períodos posteriores, observadas as obrigações declaratórias. Não se misturam com ganhos de operações comuns. Compensação não significa restituição automática.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes"
+        },
+        "distance": 0.5173043423949817
+      }
+    ],
+    "seconds": 0.008997500000987202
+  },
+  {
+    "case_id": "T10",
+    "evidence": [
+      {
+        "id": "bdr",
+        "text": "BDR não possui a isenção de vendas de R$ 20 mil das ações à vista. Ganho líquido em operação comum: 15%; day trade: 20%. O limite de vendas não transforma lucro de BDR em isento. Rendimentos distribuídos por BDR não devem ser confundidos com ganho na venda do certificado.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/"
+        },
+        "distance": 0.28707335348902807
+      },
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.33271137380758253
+      },
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.38096760864083634
+      }
+    ],
+    "seconds": 0.008582099981140345
+  },
+  {
+    "case_id": "T11",
+    "evidence": [
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.4456448207102861
+      },
+      {
+        "id": "b3_papel",
+        "text": "A B3 fornece infraestrutura para registro e liquidação de empréstimos de ativos e atua como contraparte central. Sua tarifa de serviço não é o imposto de renda: a legislação tributária e a Receita Federal regem o tributo. Custos da corretora também são distintos.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/emprestimo-de-ativos/informacoes.htm"
+        },
+        "distance": 0.46858394717305074
+      },
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.4771206700186911
+      }
+    ],
+    "seconds": 0.009249199996702373
+  },
+  {
+    "case_id": "T12",
+    "evidence": [
+      {
+        "id": "bdr",
+        "text": "BDR não possui a isenção de vendas de R$ 20 mil das ações à vista. Ganho líquido em operação comum: 15%; day trade: 20%. O limite de vendas não transforma lucro de BDR em isento. Rendimentos distribuídos por BDR não devem ser confundidos com ganho na venda do certificado.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/"
+        },
+        "distance": 0.3546111009847561
+      },
+      {
+        "id": "fii_venda",
+        "text": "Venda de cotas de fundo imobiliário (FII): ganho líquido sujeito a 20%. Não há isenção pela venda abaixo de R$ 20 mil. Venda de cota, rendimento distribuído pelo fundo e venda direta de imóvel são fatos distintos.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil"
+        },
+        "distance": 0.3647116906447636
+      },
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.3885273752435844
+      }
+    ],
+    "seconds": 0.009047699975781143
+  },
+  {
+    "case_id": "T13",
+    "evidence": [
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.3912532457313238
+      },
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.40145737256205116
+      },
+      {
+        "id": "fii_venda",
+        "text": "Venda de cotas de fundo imobiliário (FII): ganho líquido sujeito a 20%. Não há isenção pela venda abaixo de R$ 20 mil. Venda de cota, rendimento distribuído pelo fundo e venda direta de imóvel são fatos distintos.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil"
+        },
+        "distance": 0.41727790831539335
+      }
+    ],
+    "seconds": 0.009894800023175776
+  },
+  {
+    "case_id": "T14",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.40763995939504305
+      },
+      {
+        "id": "wdo",
+        "text": "Minicontrato futuro de dólar WDO: tamanho USD 10.000 e cotação em reais por USD 1.000. Uma variação de um ponto corresponde a R$ 10 por contrato. Para posição comprada: diferença de cotações × 10 × contratos; invertida para posição vendida. Isso não substitui os ajustes diários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/moedas/futuro-mini-de-taxa-de-cambio-de-reais-por-dolar-comercial.htm"
+        },
+        "distance": 0.45259303680145735
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.4526460140940952
+      }
+    ],
+    "seconds": 0.00922750000609085
+  },
+  {
+    "case_id": "T15",
+    "evidence": [
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.41876707073135244
+      },
+      {
+        "id": "fii_venda",
+        "text": "Venda de cotas de fundo imobiliário (FII): ganho líquido sujeito a 20%. Não há isenção pela venda abaixo de R$ 20 mil. Venda de cota, rendimento distribuído pelo fundo e venda direta de imóvel são fatos distintos.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil"
+        },
+        "distance": 0.4206439161843204
+      },
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.44657641644794965
+      }
+    ],
+    "seconds": 0.009646099992096424
+  },
+  {
+    "case_id": "T16",
+    "evidence": [
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.4876345501523329
+      },
+      {
+        "id": "fii_venda",
+        "text": "Venda de cotas de fundo imobiliário (FII): ganho líquido sujeito a 20%. Não há isenção pela venda abaixo de R$ 20 mil. Venda de cota, rendimento distribuído pelo fundo e venda direta de imóvel são fatos distintos.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil"
+        },
+        "distance": 0.5257797999532263
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5271157519239451
+      }
+    ],
+    "seconds": 0.009567999979481101
+  },
+  {
+    "case_id": "T17",
+    "evidence": [
+      {
+        "id": "fii_perda",
+        "text": "Prejuízos na alienação de cotas de FII somente se compensam com ganhos de alienação de cotas de fundos da mesma espécie. Não compensar indiscriminadamente com lucro em ações. O cálculo exige custos, ganhos e perdas da categoria.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.39606359777481526
+      },
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.4240959999005095
+      },
+      {
+        "id": "perdas",
+        "text": "Prejuízos em day trade podem ser compensados com ganhos em day trade no mês ou em períodos posteriores, observadas as obrigações declaratórias. Não se misturam com ganhos de operações comuns. Compensação não significa restituição automática.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes"
+        },
+        "distance": 0.5045037043585352
+      }
+    ],
+    "seconds": 0.009368699975311756
+  },
+  {
+    "case_id": "T18",
+    "evidence": [
+      {
+        "id": "cripto_isencao",
+        "text": "Regime de ganho de capital de criptoativos nacionais: somar todas as alienações de criptoativos no mês. Até R$ 35.000 pode haver isenção; não são R$ 20.000 e não é limite por moeda ou operação. Permuta entre criptomoedas também configura alienação mesmo sem conversão em reais. Não concluir sobre o exterior sem enquadramento específico.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.4418903167726056
+      },
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.4463792638157661
+      },
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.45303777350415675
+      }
+    ],
+    "seconds": 0.010368500021286309
+  },
+  {
+    "case_id": "T19",
+    "evidence": [
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.3499412031812429
+      },
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.3499981204682916
+      },
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.35730644612021945
+      }
+    ],
+    "seconds": 0.01039489998947829
+  },
+  {
+    "case_id": "T20",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.41334439051983496
+      },
+      {
+        "id": "fii_venda",
+        "text": "Venda de cotas de fundo imobiliário (FII): ganho líquido sujeito a 20%. Não há isenção pela venda abaixo de R$ 20 mil. Venda de cota, rendimento distribuído pelo fundo e venda direta de imóvel são fatos distintos.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil"
+        },
+        "distance": 0.433894196391885
+      },
+      {
+        "id": "bdr",
+        "text": "BDR não possui a isenção de vendas de R$ 20 mil das ações à vista. Ganho líquido em operação comum: 15%; day trade: 20%. O limite de vendas não transforma lucro de BDR em isento. Rendimentos distribuídos por BDR não devem ser confundidos com ganho na venda do certificado.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/"
+        },
+        "distance": 0.4399430740418754
+      }
+    ],
+    "seconds": 0.010164999985136092
+  },
+  {
+    "case_id": "T21",
+    "evidence": [
+      {
+        "id": "acoes_taxa",
+        "text": "Ações em bolsa: operações comuns tributáveis têm alíquota de 15%; day trade, 20% sobre ganhos líquidos. Não se aplica limite de isenção ao day trade. IRRF é antecipação e não substitui automaticamente a apuração mensal.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.3243848534018813
+      },
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.35079226314755907
+      },
+      {
+        "id": "bdr",
+        "text": "BDR não possui a isenção de vendas de R$ 20 mil das ações à vista. Ganho líquido em operação comum: 15%; day trade: 20%. O limite de vendas não transforma lucro de BDR em isento. Rendimentos distribuídos por BDR não devem ser confundidos com ganho na venda do certificado.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/"
+        },
+        "distance": 0.37810259811416946
+      }
+    ],
+    "seconds": 0.009727899974677712
+  },
+  {
+    "case_id": "T22",
+    "evidence": [
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.4461342849619052
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.44829145242120794
+      },
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.4623956682902294
+      }
+    ],
+    "seconds": 0.009131900034844875
+  },
+  {
+    "case_id": "T23",
+    "evidence": [
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.4997834393911008
+      },
+      {
+        "id": "b3_papel",
+        "text": "A B3 fornece infraestrutura para registro e liquidação de empréstimos de ativos e atua como contraparte central. Sua tarifa de serviço não é o imposto de renda: a legislação tributária e a Receita Federal regem o tributo. Custos da corretora também são distintos.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/emprestimo-de-ativos/informacoes.htm"
+        },
+        "distance": 0.5460037017313665
+      },
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.5616166272279767
+      }
+    ],
+    "seconds": 0.00845410005422309
+  },
+  {
+    "case_id": "T24",
+    "evidence": [
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.4537921502386131
+      },
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.47975256440599656
+      },
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.492750500981582
+      }
+    ],
+    "seconds": 0.008307600044645369
+  },
+  {
+    "case_id": "T25",
+    "evidence": [
+      {
+        "id": "win",
+        "text": "Minicontrato futuro de Ibovespa WIN: cada ponto equivale a R$ 0,20 por contrato. Variação de 500 pontos em um contrato comprado equivale a R$ 100 antes de custos. Não confundir pontos com reais, nem nocional com ganho.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/futuro-mini-de-ibovespa.htm"
+        },
+        "distance": 0.3318129180039284
+      },
+      {
+        "id": "cripto_faixas",
+        "text": "Ganho de capital tributável: aplicar progressivamente 15% à parcela até R$ 5 milhões, 17,5% à parcela entre R$ 5 e 10 milhões, 20% de R$ 10 a 30 milhões e 22,5% ao excedente. Não aplicar a maior alíquota ao ganho inteiro. Um ganho de R$ 6 milhões, sem outras condições, corresponde a R$ 925 mil de imposto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13259.htm"
+        },
+        "distance": 0.5517896465070689
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5524830771174781
+      }
+    ],
+    "seconds": 0.008761099947150797
+  },
+  {
+    "case_id": "T26",
+    "evidence": [
+      {
+        "id": "win",
+        "text": "Minicontrato futuro de Ibovespa WIN: cada ponto equivale a R$ 0,20 por contrato. Variação de 500 pontos em um contrato comprado equivale a R$ 100 antes de custos. Não confundir pontos com reais, nem nocional com ganho.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/futuro-mini-de-ibovespa.htm"
+        },
+        "distance": 0.43829404825664253
+      },
+      {
+        "id": "cripto_faixas",
+        "text": "Ganho de capital tributável: aplicar progressivamente 15% à parcela até R$ 5 milhões, 17,5% à parcela entre R$ 5 e 10 milhões, 20% de R$ 10 a 30 milhões e 22,5% ao excedente. Não aplicar a maior alíquota ao ganho inteiro. Um ganho de R$ 6 milhões, sem outras condições, corresponde a R$ 925 mil de imposto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13259.htm"
+        },
+        "distance": 0.5027698074571987
+      },
+      {
+        "id": "wdo",
+        "text": "Minicontrato futuro de dólar WDO: tamanho USD 10.000 e cotação em reais por USD 1.000. Uma variação de um ponto corresponde a R$ 10 por contrato. Para posição comprada: diferença de cotações × 10 × contratos; invertida para posição vendida. Isso não substitui os ajustes diários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/moedas/futuro-mini-de-taxa-de-cambio-de-reais-por-dolar-comercial.htm"
+        },
+        "distance": 0.5042674904492843
+      }
+    ],
+    "seconds": 0.008981199993286282
+  },
+  {
+    "case_id": "T27",
+    "evidence": [
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.2813538660075734
+      },
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.3576217575485685
+      },
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.36195972898139406
+      }
+    ],
+    "seconds": 0.009152800019364804
+  },
+  {
+    "case_id": "T28",
+    "evidence": [
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.4110372059123616
+      },
+      {
+        "id": "acoes_taxa",
+        "text": "Ações em bolsa: operações comuns tributáveis têm alíquota de 15%; day trade, 20% sobre ganhos líquidos. Não se aplica limite de isenção ao day trade. IRRF é antecipação e não substitui automaticamente a apuração mensal.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.5440124058227924
+      },
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.5512381000757839
+      }
+    ],
+    "seconds": 0.009163499984424561
+  },
+  {
+    "case_id": "T29",
+    "evidence": [
+      {
+        "id": "wdo",
+        "text": "Minicontrato futuro de dólar WDO: tamanho USD 10.000 e cotação em reais por USD 1.000. Uma variação de um ponto corresponde a R$ 10 por contrato. Para posição comprada: diferença de cotações × 10 × contratos; invertida para posição vendida. Isso não substitui os ajustes diários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/moedas/futuro-mini-de-taxa-de-cambio-de-reais-por-dolar-comercial.htm"
+        },
+        "distance": 0.46462718486326815
+      },
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5025561950222316
+      },
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.5139855751698654
+      }
+    ],
+    "seconds": 0.008950699993874878
+  },
+  {
+    "case_id": "T30",
+    "evidence": [
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.49534787019870796
+      },
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.5065049044783625
+      },
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5071260087007995
+      }
+    ],
+    "seconds": 0.008434300019871444
+  },
+  {
+    "case_id": "T31",
+    "evidence": [
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.4026043391390045
+      },
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.41815850200150473
+      },
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.4208821726246248
+      }
+    ],
+    "seconds": 0.008290499972645193
+  },
+  {
+    "case_id": "T32",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.4070073577977966
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.40742887230687364
+      },
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.4313009366288977
+      }
+    ],
+    "seconds": 0.009004599996842444
+  },
+  {
+    "case_id": "T33",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.41451292470048173
+      },
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.427551028668793
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.4306488359760031
+      }
+    ],
+    "seconds": 0.0088732999865897
+  },
+  {
+    "case_id": "T34",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.4232861924161313
+      },
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.44263091997589854
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.44830254845210327
+      }
+    ],
+    "seconds": 0.007898800016846508
+  },
+  {
+    "case_id": "T35",
+    "evidence": [
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.45819386832977305
+      },
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5013248074909128
+      },
+      {
+        "id": "cripto_darf",
+        "text": "No regime de ganho de capital mensal aplicável a criptoativos, o recolhimento utiliza DARF 4600 até o último dia útil do mês seguinte. Não usar automaticamente 6015, próprio de ganhos líquidos em bolsa. Obrigação de informar operações é diferente de obrigação de pagar imposto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.537547882310626
+      }
+    ],
+    "seconds": 0.008480399963445961
+  },
+  {
+    "case_id": "T36",
+    "evidence": [
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.45470071090083364
+      },
+      {
+        "id": "perdas",
+        "text": "Prejuízos em day trade podem ser compensados com ganhos em day trade no mês ou em períodos posteriores, observadas as obrigações declaratórias. Não se misturam com ganhos de operações comuns. Compensação não significa restituição automática.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes"
+        },
+        "distance": 0.5110537140556669
+      },
+      {
+        "id": "wdo",
+        "text": "Minicontrato futuro de dólar WDO: tamanho USD 10.000 e cotação em reais por USD 1.000. Uma variação de um ponto corresponde a R$ 10 por contrato. Para posição comprada: diferença de cotações × 10 × contratos; invertida para posição vendida. Isso não substitui os ajustes diários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/moedas/futuro-mini-de-taxa-de-cambio-de-reais-por-dolar-comercial.htm"
+        },
+        "distance": 0.538804151885443
+      }
+    ],
+    "seconds": 0.008707000000867993
+  },
+  {
+    "case_id": "T37",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.36956342167760425
+      },
+      {
+        "id": "cripto_isencao",
+        "text": "Regime de ganho de capital de criptoativos nacionais: somar todas as alienações de criptoativos no mês. Até R$ 35.000 pode haver isenção; não são R$ 20.000 e não é limite por moeda ou operação. Permuta entre criptomoedas também configura alienação mesmo sem conversão em reais. Não concluir sobre o exterior sem enquadramento específico.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.45838367066254093
+      },
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.4693303352431758
+      }
+    ],
+    "seconds": 0.008930600015446544
+  },
+  {
+    "case_id": "T38",
+    "evidence": [
+      {
+        "id": "bdr",
+        "text": "BDR não possui a isenção de vendas de R$ 20 mil das ações à vista. Ganho líquido em operação comum: 15%; day trade: 20%. O limite de vendas não transforma lucro de BDR em isento. Rendimentos distribuídos por BDR não devem ser confundidos com ganho na venda do certificado.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/"
+        },
+        "distance": 0.5105698635810694
+      },
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.5121958381336652
+      },
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.5273124774537195
+      }
+    ],
+    "seconds": 0.007633599976543337
+  },
+  {
+    "case_id": "T39",
+    "evidence": [
+      {
+        "id": "cripto_isencao",
+        "text": "Regime de ganho de capital de criptoativos nacionais: somar todas as alienações de criptoativos no mês. Até R$ 35.000 pode haver isenção; não são R$ 20.000 e não é limite por moeda ou operação. Permuta entre criptomoedas também configura alienação mesmo sem conversão em reais. Não concluir sobre o exterior sem enquadramento específico.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.44986901915980115
+      },
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.47601372926461016
+      },
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.49301933830024025
+      }
+    ],
+    "seconds": 0.008400399994570762
+  },
+  {
+    "case_id": "T40",
+    "evidence": [
+      {
+        "id": "cripto_faixas",
+        "text": "Ganho de capital tributável: aplicar progressivamente 15% à parcela até R$ 5 milhões, 17,5% à parcela entre R$ 5 e 10 milhões, 20% de R$ 10 a 30 milhões e 22,5% ao excedente. Não aplicar a maior alíquota ao ganho inteiro. Um ganho de R$ 6 milhões, sem outras condições, corresponde a R$ 925 mil de imposto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13259.htm"
+        },
+        "distance": 0.2986274441150555
+      },
+      {
+        "id": "futuros",
+        "text": "Futuros: operações comuns 15%, day trade 20%, sem isenção de R$ 20 mil. Apuração envolve ajustes e despesas; valor nocional não é lucro nem caixa recebido. IRRF comum de 0,005% usa soma algébrica positiva dos ajustes diários no encerramento; retenção efetiva deve ser conferida no informe. Não aplicar sobre nocional.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.41838747604884674
+      },
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.43175900982536475
+      }
+    ],
+    "seconds": 0.008685700013302267
+  },
+  {
+    "case_id": "T41",
+    "evidence": [
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.23810450935477412
+      },
+      {
+        "id": "cripto_isencao",
+        "text": "Regime de ganho de capital de criptoativos nacionais: somar todas as alienações de criptoativos no mês. Até R$ 35.000 pode haver isenção; não são R$ 20.000 e não é limite por moeda ou operação. Permuta entre criptomoedas também configura alienação mesmo sem conversão em reais. Não concluir sobre o exterior sem enquadramento específico.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.40119747565137354
+      },
+      {
+        "id": "cripto_darf",
+        "text": "No regime de ganho de capital mensal aplicável a criptoativos, o recolhimento utiliza DARF 4600 até o último dia útil do mês seguinte. Não usar automaticamente 6015, próprio de ganhos líquidos em bolsa. Obrigação de informar operações é diferente de obrigação de pagar imposto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.4265455871450793
+      }
+    ],
+    "seconds": 0.008898000000044703
+  },
+  {
+    "case_id": "T42",
+    "evidence": [
+      {
+        "id": "cripto_darf",
+        "text": "No regime de ganho de capital mensal aplicável a criptoativos, o recolhimento utiliza DARF 4600 até o último dia útil do mês seguinte. Não usar automaticamente 6015, próprio de ganhos líquidos em bolsa. Obrigação de informar operações é diferente de obrigação de pagar imposto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.24278242108224812
+      },
+      {
+        "id": "cripto_isencao",
+        "text": "Regime de ganho de capital de criptoativos nacionais: somar todas as alienações de criptoativos no mês. Até R$ 35.000 pode haver isenção; não são R$ 20.000 e não é limite por moeda ou operação. Permuta entre criptomoedas também configura alienação mesmo sem conversão em reais. Não concluir sobre o exterior sem enquadramento específico.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.3952605597930381
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.4635522377492618
+      }
+    ],
+    "seconds": 0.008197799965273589
+  },
+  {
+    "case_id": "T43",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.5110213365934568
+      },
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5274775262672964
+      },
+      {
+        "id": "cripto_isencao",
+        "text": "Regime de ganho de capital de criptoativos nacionais: somar todas as alienações de criptoativos no mês. Até R$ 35.000 pode haver isenção; não são R$ 20.000 e não é limite por moeda ou operação. Permuta entre criptomoedas também configura alienação mesmo sem conversão em reais. Não concluir sobre o exterior sem enquadramento específico.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040"
+        },
+        "distance": 0.5360852374154323
+      }
+    ],
+    "seconds": 0.008884700015187263
+  },
+  {
+    "case_id": "T44",
+    "evidence": [
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.527090391810688
+      },
+      {
+        "id": "perdas",
+        "text": "Prejuízos em day trade podem ser compensados com ganhos em day trade no mês ou em períodos posteriores, observadas as obrigações declaratórias. Não se misturam com ganhos de operações comuns. Compensação não significa restituição automática.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes"
+        },
+        "distance": 0.5425751150216824
+      },
+      {
+        "id": "fii_perda",
+        "text": "Prejuízos na alienação de cotas de FII somente se compensam com ganhos de alienação de cotas de fundos da mesma espécie. Não compensar indiscriminadamente com lucro em ações. O cálculo exige custos, ganhos e perdas da categoria.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.5513172339456782
+      }
+    ],
+    "seconds": 0.009087099984753877
+  },
+  {
+    "case_id": "T45",
+    "evidence": [
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.537044897686896
+      },
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.5778382713601714
+      },
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.5937351821939334
+      }
+    ],
+    "seconds": 0.008237500034738332
+  },
+  {
+    "case_id": "T46",
+    "evidence": [
+      {
+        "id": "fii_perda",
+        "text": "Prejuízos na alienação de cotas de FII somente se compensam com ganhos de alienação de cotas de fundos da mesma espécie. Não compensar indiscriminadamente com lucro em ações. O cálculo exige custos, ganhos e perdas da categoria.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.5136315579295443
+      },
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.554615918007879
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5621662662356035
+      }
+    ],
+    "seconds": 0.009296499949414283
+  },
+  {
+    "case_id": "T47",
+    "evidence": [
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.47830520189964343
+      },
+      {
+        "id": "fii_perda",
+        "text": "Prejuízos na alienação de cotas de FII somente se compensam com ganhos de alienação de cotas de fundos da mesma espécie. Não compensar indiscriminadamente com lucro em ações. O cálculo exige custos, ganhos e perdas da categoria.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.5066183600776974
+      },
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5162505357479981
+      }
+    ],
+    "seconds": 0.010202100034803152
+  },
+  {
+    "case_id": "T48",
+    "evidence": [
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.49550795546206117
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5060996479238642
+      },
+      {
+        "id": "acoes_taxa",
+        "text": "Ações em bolsa: operações comuns tributáveis têm alíquota de 15%; day trade, 20% sobre ganhos líquidos. Não se aplica limite de isenção ao day trade. IRRF é antecipação e não substitui automaticamente a apuração mensal.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.5173342047115232
+      }
+    ],
+    "seconds": 0.00970600004075095
+  },
+  {
+    "case_id": "D01",
+    "evidence": [
+      {
+        "id": "fii_perda",
+        "text": "Prejuízos na alienação de cotas de FII somente se compensam com ganhos de alienação de cotas de fundos da mesma espécie. Não compensar indiscriminadamente com lucro em ações. O cálculo exige custos, ganhos e perdas da categoria.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.5652371129881805
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5880983587332234
+      },
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.5934359092896979
+      }
+    ],
+    "seconds": 0.008054699981585145
+  },
+  {
+    "case_id": "D02",
+    "evidence": [
+      {
+        "id": "b3_papel",
+        "text": "A B3 fornece infraestrutura para registro e liquidação de empréstimos de ativos e atua como contraparte central. Sua tarifa de serviço não é o imposto de renda: a legislação tributária e a Receita Federal regem o tributo. Custos da corretora também são distintos.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/emprestimo-de-ativos/informacoes.htm"
+        },
+        "distance": 0.5028925795860646
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5076824418718732
+      },
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.551037154938721
+      }
+    ],
+    "seconds": 0.007796799996867776
+  },
+  {
+    "case_id": "D03",
+    "evidence": [
+      {
+        "id": "bdr",
+        "text": "BDR não possui a isenção de vendas de R$ 20 mil das ações à vista. Ganho líquido em operação comum: 15%; day trade: 20%. O limite de vendas não transforma lucro de BDR em isento. Rendimentos distribuídos por BDR não devem ser confundidos com ganho na venda do certificado.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/"
+        },
+        "distance": 0.5065977616008607
+      },
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.5558210125478287
+      },
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5738569815368718
+      }
+    ],
+    "seconds": 0.00913999998010695
+  },
+  {
+    "case_id": "D04",
+    "evidence": [
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.5336927570503082
+      },
+      {
+        "id": "fii_venda",
+        "text": "Venda de cotas de fundo imobiliário (FII): ganho líquido sujeito a 20%. Não há isenção pela venda abaixo de R$ 20 mil. Venda de cota, rendimento distribuído pelo fundo e venda direta de imóvel são fatos distintos.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil"
+        },
+        "distance": 0.5662878612692949
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5720260418821279
+      }
+    ],
+    "seconds": 0.008976500015705824
+  },
+  {
+    "case_id": "D05",
+    "evidence": [
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.41516005045694526
+      },
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.43249126525459625
+      },
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.45111073461647855
+      }
+    ],
+    "seconds": 0.009414499974809587
+  },
+  {
+    "case_id": "D06",
+    "evidence": [
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.6278782810858099
+      },
+      {
+        "id": "opcoes",
+        "text": "Opções em bolsa: apuração depende de negociação, exercício ou expiração e da posição titular ou lançador. Não basta tratar toda operação como venda de ação. Operações comuns: 15%; day trade: 20%. Não existe isenção de R$ 20 mil para ganho com opções. O prêmio integra a apuração conforme o evento.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.6587810369371156
+      },
+      {
+        "id": "perdas",
+        "text": "Prejuízos em day trade podem ser compensados com ganhos em day trade no mês ou em períodos posteriores, observadas as obrigações declaratórias. Não se misturam com ganhos de operações comuns. Compensação não significa restituição automática.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes"
+        },
+        "distance": 0.6636217451511028
+      }
+    ],
+    "seconds": 0.009281900012865663
+  },
+  {
+    "case_id": "D07",
+    "evidence": [
+      {
+        "id": "b3_papel",
+        "text": "A B3 fornece infraestrutura para registro e liquidação de empréstimos de ativos e atua como contraparte central. Sua tarifa de serviço não é o imposto de renda: a legislação tributária e a Receita Federal regem o tributo. Custos da corretora também são distintos.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/emprestimo-de-ativos/informacoes.htm"
+        },
+        "distance": 0.572225772074028
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5774131056900886
+      },
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.5849757477066488
+      }
+    ],
+    "seconds": 0.008743899990804493
+  },
+  {
+    "case_id": "D08",
+    "evidence": [
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.5284416592064649
+      },
+      {
+        "id": "fii_perda",
+        "text": "Prejuízos na alienação de cotas de FII somente se compensam com ganhos de alienação de cotas de fundos da mesma espécie. Não compensar indiscriminadamente com lucro em ações. O cálculo exige custos, ganhos e perdas da categoria.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.569476006837716
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.6009258609689792
+      }
+    ],
+    "seconds": 0.008353099983651191
+  },
+  {
+    "case_id": "D09",
+    "evidence": [
+      {
+        "id": "fii_perda",
+        "text": "Prejuízos na alienação de cotas de FII somente se compensam com ganhos de alienação de cotas de fundos da mesma espécie. Não compensar indiscriminadamente com lucro em ações. O cálculo exige custos, ganhos e perdas da categoria.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494"
+        },
+        "distance": 0.5371045747888259
+      },
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.5377106160963064
+      },
+      {
+        "id": "wdo",
+        "text": "Minicontrato futuro de dólar WDO: tamanho USD 10.000 e cotação em reais por USD 1.000. Uma variação de um ponto corresponde a R$ 10 por contrato. Para posição comprada: diferença de cotações × 10 × contratos; invertida para posição vendida. Isso não substitui os ajustes diários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/moedas/futuro-mini-de-taxa-de-cambio-de-reais-por-dolar-comercial.htm"
+        },
+        "distance": 0.5674485073095261
+      }
+    ],
+    "seconds": 0.007870899979025126
+  },
+  {
+    "case_id": "D10",
+    "evidence": [
+      {
+        "id": "b3_papel",
+        "text": "A B3 fornece infraestrutura para registro e liquidação de empréstimos de ativos e atua como contraparte central. Sua tarifa de serviço não é o imposto de renda: a legislação tributária e a Receita Federal regem o tributo. Custos da corretora também são distintos.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/emprestimo-de-ativos/informacoes.htm"
+        },
+        "distance": 0.46178764498877756
+      },
+      {
+        "id": "cripto_exterior",
+        "text": "Aplicações financeiras no exterior, enquadradas na Lei 14.754/2023, possuem apuração anual a 15%, sem a isenção mensal de R$ 35 mil. Para criptoativos, verificar natureza do ativo, custódia/intermediação e regulamentação. Autocustódia não prova, por si só, localização no exterior. Não generalizar de uma exchange para toda cripto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm"
+        },
+        "distance": 0.5556353829848684
+      },
+      {
+        "id": "cripto_faixas",
+        "text": "Ganho de capital tributável: aplicar progressivamente 15% à parcela até R$ 5 milhões, 17,5% à parcela entre R$ 5 e 10 milhões, 20% de R$ 10 a 30 milhões e 22,5% ao excedente. Não aplicar a maior alíquota ao ganho inteiro. Um ganho de R$ 6 milhões, sem outras condições, corresponde a R$ 925 mil de imposto.",
+        "metadata": {
+          "asset_type": "cripto",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13259.htm"
+        },
+        "distance": 0.5861653686232247
+      }
+    ],
+    "seconds": 0.009482900029979646
+  },
+  {
+    "case_id": "D11",
+    "evidence": [
+      {
+        "id": "emprestimo_proventos",
+        "text": "Empréstimo transfere titularidade com obrigação de devolução. Remuneração contratual e reembolso de proventos são eventos diferentes. Arts. 20 e seguintes da Lei 15.265/2025 disciplinam reembolsos. O cálculo da remuneração do doador não cobre venda a descoberto, custos e tributação do tomador.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.40469217300088445
+      },
+      {
+        "id": "perdas",
+        "text": "Prejuízos em day trade podem ser compensados com ganhos em day trade no mês ou em períodos posteriores, observadas as obrigações declaratórias. Não se misturam com ganhos de operações comuns. Compensação não significa restituição automática.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes"
+        },
+        "distance": 0.5071805917048084
+      },
+      {
+        "id": "acoes_isencao",
+        "text": "Ações à vista: para pessoa física residente, ganhos em operações comuns podem ser isentos quando o total das vendas de ações no mês, somadas as corretoras, não ultrapassa R$ 20.000. O limite incide sobre vendas, não sobre lucro. Não se aplica a day trade, opções, FII, ETF ou BDR.",
+        "metadata": {
+          "asset_type": "acoes",
+          "checked_at": "2026-09-12",
+          "source": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes"
+        },
+        "distance": 0.5216196192893363
+      }
+    ],
+    "seconds": 0.009630799992009997
+  },
+  {
+    "case_id": "D12",
+    "evidence": [
+      {
+        "id": "fii_rendimento",
+        "text": "Rendimentos distribuídos por FII a pessoa física podem ser isentos quando cumpridas as condições do art. 3º da Lei 11.033, incluindo negociação admitida em bolsa ou balcão organizado, mínimo de 100 cotistas e restrições de participação e concentração. Não se presume isenção de todo fundo ou cotista. Isso não isenta lucro na venda de cotas.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+        },
+        "distance": 0.5203560758901198
+      },
+      {
+        "id": "emprestimo",
+        "text": "Empréstimo de ativos no País: Lei 15.265/2025, arts. 18 e 19. Remuneração do emprestador residente pessoa física é tributada exclusivamente na fonte pelas regras de renda fixa: 22,5% até 180 dias; 20% de 181 a 360; 17,5% de 361 a 720; 15% acima de 720. Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração. Prazo e rendimento bruto são necessários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm"
+        },
+        "distance": 0.5321527935556958
+      },
+      {
+        "id": "wdo",
+        "text": "Minicontrato futuro de dólar WDO: tamanho USD 10.000 e cotação em reais por USD 1.000. Uma variação de um ponto corresponde a R$ 10 por contrato. Para posição comprada: diferença de cotações × 10 × contratos; invertida para posição vendida. Isso não substitui os ajustes diários.",
+        "metadata": {
+          "asset_type": "geral",
+          "checked_at": "2026-09-12",
+          "source": "https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/moedas/futuro-mini-de-taxa-de-cambio-de-reais-por-dolar-comercial.htm"
+        },
+        "distance": 0.5573665227194815
+      }
+    ],
+    "seconds": 0.009242500003892928
+  }
+]

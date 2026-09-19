@@ -1,0 +1,24 @@
+{
+  "key": "T16_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta: NÃO, nem todo rendimento de FII é automaticamente isento\n\n## Requisitos para isenção (Lei 11.033, art. 3º)\n\nRendimentos distribuídos por FII a PF **podem ser isentos** apenas se o fundo cumprir simultaneamente:\n\n✓ Negociação admitida em bolsa ou balcão organizado  \n✓ Mínimo de 100 cotistas  \n✓ Restrições de participação e concentração (conforme lei)\n\n**Não há presunção de isenção** para todo fundo ou para todo cotista automaticamente.\n\n## O que NÃO é isento\n\n- **Lucro na venda de cotas**: tributado a 20% sobre ganho líquido, sem limite de R$ 20 mil (ID: fii_venda)\n- **Rendimento de fundo que não atenda condições legais**\n\n## Resumo\n\nA isenção do rendimento é **condicional** ao cumprimento de requisitos específicos do fundo, não automática. Sempre verifique:\n- Se o FII está registrado em bolsa/balcão organizado\n- Número de cotistas\n- Restrições de concentração\n\nRecomendo verificar a documentação do FII específico para confirmar elegibilidade.\n\n**Fonte**: Lei 11.033/2004, art. 3º | Planalto",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 830,
+    "output_tokens": 353,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002595,
+  "seconds": 4.467489400005434,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "2f4f4993e1633e638f53090ff8808dc0e9c7e959568f11c549cd71fabe9e1e0e"
+}

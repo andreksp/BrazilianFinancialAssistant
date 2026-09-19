@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 1,
+      "motivo": "Futuro de dólar pode ser um dos regimes possíveis, mas não responde ao caso ambíguo de 'moedas'"
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 1,
+      "motivo": "Regras gerais de DARF/prazo úteis apenas como contexto, sem tratar do ativo perguntado"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "FII, sem relação com venda de moedas"
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ativos, fato gerador distinto"
+    },
+    {
+      "id": "perdas",
+      "relevancia": 0,
+      "motivo": "Compensação de day trade, não trata do ativo nem do cálculo pedido"
+    },
+    {
+      "id": "fii_perda",
+      "relevancia": 0,
+      "motivo": "Perdas em FII, irrelevante"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Abstém-se corretamente, distingue regimes e pede dados; citação de futuro de dólar fiel ao contexto",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Pede tipo de ativo, custos e período, reconhece limite das fontes; não menciona total mensal de vendas",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Abstenção adequada e pedido completo de dados, incluindo total mensal e prejuízos; sem afirmações inventadas",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T44",
+  "repeat": false
+}

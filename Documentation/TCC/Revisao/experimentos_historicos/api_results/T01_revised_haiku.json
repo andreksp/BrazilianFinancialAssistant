@@ -1,0 +1,24 @@
+{
+  "key": "T01_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise: Isenção em Venda de Ações (R$ 19.500)\n\n## Resposta\n**Sim, há isenção.**\n\nConforme evidência **acoes_isencao** (RF, 12/09/2026):\n- Operações comuns de ações à vista são isentas quando o total de **vendas no mês** não ultrapassa **R$ 20.000**\n- Seu total (R$ 19.500) está **dentro do limite**\n- O limite incide sobre **vendas**, não sobre lucro\n- Não há IRRF nem IRPF sobre esse ganho\n\n## Condições observadas\n✓ PF residente  \n✓ Operação comum (não day trade)  \n✓ Soma mensal ≤ R$ 20.000  \n\n## Ressalva\n- Se você vender **mais ações** no mesmo mês (outras corretoras), o limite é **cumulativo**\n- Operações de day trade, opções, FII, ETF ou BDR **não se beneficiam** dessa isenção\n\n**Fonte:** [Receita Federal - Isenções Bolsa](https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes)",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 831,
+    "output_tokens": 348,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002571,
+  "seconds": 4.20896790002007,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b011fb78c1cad4a67d79beec7c44b3492f3f5505f57b08d45c168485deb48474"
+}

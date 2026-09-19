@@ -1,0 +1,24 @@
+{
+  "key": "T15_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta: Rendimento de FII vs. Lucro na Venda\n\n**Não. São tributações distintas:**\n\n## Rendimento Mensal (Distribuição)\n- **Regime:** Pode ser **isento** se o FII atender condições da Lei 11.033/2004, art. 3º (negociação em bolsa/balcão organizado, mínimo 100 cotistas, limites de participação e concentração)\n- **Condição:** A isenção não é automática — exige verificação caso a caso\n- **Fonte:** Lei 11.033/2004 (evidência ID: fii_rendimento)\n\n## Lucro na Venda de Cotas\n- **Regime:** **Tributado a 20%** sobre o ganho líquido\n- **Sem isenção:** Não há isenção mesmo com venda abaixo de R$ 20 mil\n- **Distinção:** A venda de cota, o rendimento distribuído e a venda direta de imóvel são fatos geradores separados\n- **Fonte:** RFB e Lei 11.033/2004 (evidência ID: fii_venda)\n\n## Resumo\nRendimentos podem ser isentos (condicionado); lucros na venda são sempre tributados a 20%. São operações com regimes tributários independentes.\n\n**Limite:** Confirmação de elegibilidade do seu FII específico exige análise dos critérios da Lei 11.033/2004.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 834,
+    "output_tokens": 373,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002699,
+  "seconds": 4.584443899977487,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ab3335297252bd3779d9c57eeed8504a504175d00c15d0ce81be7ced7a52d356"
+}

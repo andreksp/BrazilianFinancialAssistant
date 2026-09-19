@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 2,
+      "motivo": "Afirma diretamente que prejuízo de FII só compensa ganho de FII; pequeno deslize sobre nº de cotistas não afeta o núcleo."
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 0,
+      "motivo": "Guia de DARF, não trata de compensação entre FII e ações."
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 0,
+      "motivo": "Trata de mercado futuro, não responde à segregação FII/ações."
+    },
+    {
+      "id": "fii_perda",
+      "relevancia": 2,
+      "motivo": "Responde exatamente: compensação só com fundos da mesma espécie."
+    },
+    {
+      "id": "fii_rendimento",
+      "relevancia": 1,
+      "motivo": "Contextualiza isenção de rendimentos e tributação da venda, sem tratar da compensação."
+    },
+    {
+      "id": "perdas",
+      "relevancia": 1,
+      "motivo": "Mostra princípio de segregação de categorias (day trade), mas não FII vs ações."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega a compensação cruzada, coerente com fii_perda e fii_rendimento.",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Resposta correta e sustentada no trecho de regras de FII; detalhes de alíquota e isenção consistentes.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e bem ancorada nos trechos citados, com ressalvas adequadas.",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T17",
+  "repeat": false
+}

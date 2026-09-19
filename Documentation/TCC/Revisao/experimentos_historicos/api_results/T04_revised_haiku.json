@@ -1,0 +1,24 @@
+{
+  "key": "T04_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "## Análise\n\n**Resposta curta:** Não fica isento.\n\n---\n\n## Fundamentação\n\nA isenção de R$ 20 mil é **exclusiva para operações comuns** (compra e venda normais) de ações à vista. Conforme evidência **acoes_isencao**:\n\n> \"O limite incide sobre vendas, não sobre lucro. **Não se aplica a day trade**, opções, FII, ETF ou BDR.\"\n\n**Day trade** é operação de compra e venda **no mesmo dia** e recebe tratamento tributário específico.\n\n---\n\n## Tributação aplicável ao seu caso\n\n- **Alíquota:** 20% (sobre ganho líquido)\n- **Base de cálculo:** lucro apurado na operação, não sobre vendas brutas\n- **Isenção de R$ 20 mil:** não se aplica\n\nFonte: **acoes_taxa** (Lei nº 11.033/2004)\n\n---\n\n## Observação\n\nO IRRF (Imposto de Renda Retido na Fonte) é antecipação. Você terá de apurar o resultado no IR mensal ou anual, conforme sua corretora, para confirmar o valor definitivo devido.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 774,
+    "output_tokens": 312,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002334,
+  "seconds": 3.835482500027865,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "01ab60e33288d5ef9d459f80e214b8b5dde47b0aecb975c64f3db8e33cf28fda"
+}

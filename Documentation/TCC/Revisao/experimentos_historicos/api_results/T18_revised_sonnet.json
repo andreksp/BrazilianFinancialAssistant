@@ -1,0 +1,27 @@
+{
+  "key": "T18_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não há na evidência fornecida uma regra específica sobre alíquotas/isenção para ganho de capital na **venda de cotas de FII**. O que está disponível (item `fii_rendimento`, fonte Lei 11.033) trata apenas de **rendimentos distribuídos** por FII, que podem ser isentos se cumpridas condições (negociação em bolsa/balcão, mínimo de 100 cotistas, limites de participação) — e o próprio texto afirma explicitamente que **essa isenção não se aplica ao lucro na venda de cotas**.\n\nPortanto:\n- **Venda de cotas de FII** ≠ venda de imóvel residencial próprio. A regra de isenção para venda de imóvel residencial (ex.: uso do produto da venda para compra de outro imóvel em 180 dias) é específica para bens imóveis físicos, não para cotas de fundos.\n- **Rendimento mensal** de FII e **ganho de capital na alienação de cotas** são tributações distintas.\n\nNão tenho na base a alíquota/regra específica de ganho de capital para venda de cotas de FII. Você pode confirmar se busca informação sobre (a) rendimento mensal ou (b) ganho na venda das cotas, para eu indicar exatamente o que a evidência cobre?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1021,
+    "output_tokens": 441,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006452,
+  "seconds": 6.080419900012203,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b91faf78fc552eb84cf98c508e0a58f667dcc9e5f6a3f22bc93deb1c08cf1df1"
+}

@@ -1,0 +1,24 @@
+{
+  "key": "T10_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta sobre BDRs e Isenção de R$ 20 mil\n\n**Não.** A abertura de BDRs a pequenos investidores **não criou isenção de R$ 20 mil**.\n\n## O que a evidência mostra:\n\nSegundo a **B3** (fonte ID: `bdr`, 12/09/2026):\n\n- **BDR não possui** a isenção de vendas de R$ 20 mil que existe para ações à vista\n- Alíquotas aplicáveis:\n  - Operação comum: **15%**\n  - Day trade: **20%**\n- O limite de vendas não torna lucro de BDR isento\n- Rendimentos distribuídos ≠ ganho na venda do certificado (tributações distintas)\n\n## Distinção importante:\n\nNão confunda:\n- **Ganho na venda do BDR** → sujeito a 15%/20%, sem isenção\n- **Rendimentos recebidos** → têm tratamento próprio\n\n## Limitação:\n\nA evidência não detalha se houve alteração legislativa específica pós-12/2026 sobre BDRs. Se conhece normativa mais recente, compartilhe para verificação.\n\n**Fonte consultada:** https://borainvestir.b3.com.br (acesso 12/09/2026)",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 832,
+    "output_tokens": 344,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002552,
+  "seconds": 4.119279199978337,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "790fbc8acc41a224a9f8f3ceca16c72f5582d77f0d5760de2d721a0c71f564fa"
+}

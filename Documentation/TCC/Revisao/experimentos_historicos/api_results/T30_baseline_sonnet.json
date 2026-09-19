@@ -1,0 +1,27 @@
+{
+  "key": "T30_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não exatamente — segundo a evidência [975ab3cfe6fdb742], o regime real de mercado futuro apura o ganho pela **soma dos ajustes diários (marcação a mercado)**, ou seja, cada dia em que a posição permanece aberta gera um ajuste próprio, não apenas abertura e fechamento.\n\nPorém, há uma limitação explícita **deste sistema (MVP)**: o motor de cálculo não modela o ajuste diário real (D+1). Ele apenas usa preço de abertura e preço de fechamento informados pelo usuário e trata a diferença como o \"ganho agregado\" da operação — uma simplificação, não a mecânica tributária real da B3.\n\nPortanto:\n- **Regra normativa real**: ajustes diários sucessivos compõem o ganho, com IRRF de 0,005% sobre valor de ajuste (operação normal) ou 1% sobre ganho (day trade).\n- **Cálculo neste sistema**: apenas abertura vs. fechamento, como aproximação simplificada — não reflete todos os ajustes diários efetivos.\n\nSe você precisa de apuração fiscal definitiva com ajustes diários reais, é necessário consultar as notas de ajuste diário da corretora/B3 e, se possível, um contador. Este é um esclarecimento educacional, não uma apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3393,
+    "output_tokens": 468,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.011466,
+  "seconds": 7.352554599987343,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "cb7517b8142688a4294a1a2252ae102066c8096772a58b5da7a4f62d14b2cd6c"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T03_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "O limite de R$ 20.000 aplicado a ações refere-se ao **valor total das vendas (alienações)** no mês, e não ao lucro obtido.\n\nConforme a evidência **acoes_isencao**: para pessoa física residente, o ganho de capital em operações comuns com ações à vista pode ser isento quando o **somatório das vendas** no mês — considerando todas as corretoras — não ultrapassar R$ 20.000. O limite incide, portanto, sobre o valor alienado, não sobre o resultado (lucro) da operação.\n\nImportante destacar:\n- Essa isenção **não se aplica** a day trade, opções, FII, ETF ou BDR (mesma fonte).\n- Não confundir com o regime de criptoativos, que tem limite diferente (R$ 35.000, conforme **cripto_isencao**) e regras próprias.\n- Não confundir com futuros, que não possuem essa isenção (conforme **futuros**).\n\nFonte: gov.br/Receita Federal, verificada em 12/09/2026.\n\nSe seu caso envolver operações mistas (ex.: ações comuns + day trade + outros ativos no mesmo mês) ou dúvida sobre enquadramento específico, forneça mais detalhes para orientação mais precisa. Esta resposta é educacional e não substitui apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1009,
+    "output_tokens": 461,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006628,
+  "seconds": 5.6474389000213705,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "168bdaeeaa49f854f3ae87abc4450e4bbe05163bec07b361ad4e79773b3f6aea"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T16_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, não é automático — há condições específicas para a isenção.\n\nSegundo a evidência [7bb8b88a77231872]:\n\n**Rendimento (dividendos/aluguéis distribuídos)** — isento de IR para PF, **desde que cumulativamente**:\n- o FII seja negociado em bolsa;\n- tenha no mínimo 50 cotistas;\n- o investidor possua menos de 10% das cotas do fundo.\n\nSe algum desses requisitos não for atendido, a isenção não se aplica automaticamente (a evidência não detalha o tratamento tributário nesse caso excepcional).\n\n**Importante distinguir**:\n- **Rendimento distribuído** (aluguéis mensais) → isento, se cumpridas as condições acima.\n- **Ganho de capital na venda de cotas** → sempre tributado a 20%, sem isenção de faixa mensal (a regra dos R$ 20.000 não vale para FIIs).\n\nBase legal citada: Lei 9.779/1999 (isenção de rendimentos) e Lei 11.033/2004 (regime de tributação de FIIs).\n\nSe seu caso envolve um FII específico, seria útil informar se ele é negociado em bolsa, o número de cotistas e sua participação percentual, para confirmar o enquadramento na isenção.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3394,
+    "output_tokens": 443,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.011218,
+  "seconds": 6.04825490002986,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "2690100b09e5a5c1936a2c809a542a71fc30a1abea5bd5091dbad8ec635dfa5e"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T19_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"4e69fb3f132e9ec3\",\"relevancia\":1,\"motivo\":\"Regras de ações; trata do limite de R$20 mil mas não da questão sobre opções\"},{\"id\":\"290b3fbba3faa9f8\",\"relevancia\":2,\"motivo\":\"Afirma diretamente que opções não têm isenção de R$20 mil\"},{\"id\":\"e64833ee00978eec\",\"relevancia\":0,\"motivo\":\"Trata de BDRs; não responde e ainda conflita com a regra de isenção restrita a ações\"},{\"id\":\"futuros\",\"relevancia\":1,\"motivo\":\"Tema análogo (sem isenção), mas sobre futuros, não opções\"},{\"id\":\"opcoes\",\"relevancia\":2,\"motivo\":\"Responde ao núcleo: não há isenção de R$20 mil em opções\"},{\"id\":\"acoes_isencao\",\"relevancia\":2,\"motivo\":\"Delimita a isenção a ações e exclui expressamente opções\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Núcleo correto e ancorado nos trechos, mas rotula 15%/20% como 'IRRF', confundindo alíquota do ganho com retenção na fonte\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Acerta a ausência de isenção para opções, porém afirma que BDRs teriam a isenção, contrariando a fonte de referência\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Resposta correta, distingue venda de ganho e sustenta-se nos trechos citados sem dados inventados\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5383,
+    "output_tokens": 1787,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 1142
+    }
+  },
+  "usd": 0.07159,
+  "seconds": 23.34860040002968,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b97080b2c14ab7b93c8fb32adbdfa6f639b097bfa76d719789411c9ae42baf1d"
+}

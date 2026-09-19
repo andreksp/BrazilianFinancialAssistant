@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 2,
+      "motivo": "Traz a regra de isenção até R$20.000 em vendas mensais de ações à vista, respondendo ao núcleo."
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 1,
+      "motivo": "Trata de BDRs; menciona o limite mensal, mas não responde ao caso de ações e diverge do trecho oficial quanto a BDR."
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 0,
+      "motivo": "Opções, expressamente sem isenção; não responde à pergunta."
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 2,
+      "motivo": "Responde diretamente: PF residente, operação comum, vendas mensais até R$20.000 isentas."
+    },
+    {
+      "id": "cripto_isencao",
+      "relevancia": 0,
+      "motivo": "Regime de criptoativos, irrelevante para ações."
+    },
+    {
+      "id": "cripto_exterior",
+      "relevancia": 0,
+      "motivo": "Aplicações no exterior/Lei 14.754, fora do escopo."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Conclui corretamente pela isenção (R$19.500 < R$20.000) com base no trecho oficial; afirmação sobre ausência de IRRF é extra ao contexto, mas não altera o núcleo.",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta quanto ao limite sobre vendas e à inaplicabilidade a day trade; apoiada no trecho de regras de ações.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Resposta correta e ancorada no trecho oficial, com ressalva pertinente sobre outras vendas no mês.",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T01",
+  "repeat": false
+}

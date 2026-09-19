@@ -1,0 +1,27 @@
+{
+  "key": "T36_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"975ab3cfe6fdb742\",\"relevancia\":0,\"motivo\":\"Mercado futuro, não trata de empréstimo de ações\"},{\"id\":\"06a4e857780aec7b\",\"relevancia\":2,\"motivo\":\"Separa expressamente remuneração do doador e operação do tomador\"},{\"id\":\"7bb8b88a77231872\",\"relevancia\":0,\"motivo\":\"FII, fora do tema\"},{\"id\":\"emprestimo_proventos\",\"relevancia\":2,\"motivo\":\"Afirma diretamente que o cálculo do doador não cobre venda a descoberto do tomador\"},{\"id\":\"perdas\",\"relevancia\":0,\"motivo\":\"Compensação de day trade, irrelevante\"},{\"id\":\"wdo\",\"relevancia\":0,\"motivo\":\"Contrato futuro de dólar, irrelevante\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Responde não, eventos distintos, citando evidência pertinente\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Mesma conclusão correta e ancorada; limitações declaradas\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Correta e detalhada; regimes descritos coerentes com o contexto\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5851,
+    "output_tokens": 976,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 449
+    }
+  },
+  "usd": 0.053655,
+  "seconds": 11.50175150000723,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ce8824174fa965a019606d66f4c33cbea5974ceda2ce69fc3f61ba9af0db17ec"
+}

@@ -8,6 +8,7 @@ Endpoints:
 """
 
 import logging
+from app.mcp_gateway import calculate_via_mcp_async
 from typing import List, Optional
 
 from fastapi import APIRouter, HTTPException, Query, Depends
@@ -20,6 +21,7 @@ from app.calculations.equity.fiis import FIICalculator
 from app.calculations.equity.opcoes import OpcoesCalculator
 from app.calculations.derivatives.futuros import FuturosCalculator
 from app.calculations.lending.emprestimo import EmprestimoCalculator
+from app.calculations.crypto.criptomoedas import CriptomoedaCalculator
 from app.storage.database import get_db
 from app.storage.repository import save_trade, get_trades, get_average_price, record_to_result
 
@@ -34,6 +36,7 @@ _CALCULATORS = {
     AssetType.FUTURO_DOLAR: FuturosCalculator,
     AssetType.FUTURO_INDICE: FuturosCalculator,
     AssetType.EMPRESTIMO_ACOES: EmprestimoCalculator,
+    AssetType.CRIPTO: CriptomoedaCalculator,
 }
 
 
@@ -73,11 +76,12 @@ async def process_trade(
             )
 
         avg_price = get_average_price(db, user_id=user_id, ativo=trade.ativo)
-        if avg_price is None:
-            avg_price = trade.preco_unitario  # No prior buys; assume zero gain
+        if trade.preco_medio_informado is not None:
+            avg_price = trade.preco_medio_informado
+        if avg_price is None and trade.tipo_ativo != AssetType.EMPRESTIMO_ACOES:
+            raise ValueError("Informe o custo médio ou registre a aquisição antes da venda.")
 
-        calculator = calculator_cls()
-        result = calculator.calculate_result(trade, average_price=avg_price)
+        result = await calculate_via_mcp_async(trade, average_price=avg_price)
 
         save_trade(db, trade, result=result, user_id=user_id)
 
@@ -137,11 +141,12 @@ async def batch_process_trades(
                 continue
 
             avg_price = get_average_price(db, user_id=user_id, ativo=trade.ativo)
-            if avg_price is None:
-                avg_price = trade.preco_unitario
+            if trade.preco_medio_informado is not None:
+                avg_price = trade.preco_medio_informado
+            if avg_price is None and trade.tipo_ativo != AssetType.EMPRESTIMO_ACOES:
+                raise ValueError("Custo médio ausente; venda não processada.")
 
-            calculator = calculator_cls()
-            result = calculator.calculate_result(trade, average_price=avg_price)
+            result = await calculate_via_mcp_async(trade, average_price=avg_price)
             save_trade(db, trade, result=result, user_id=user_id)
             results.append(result)
 

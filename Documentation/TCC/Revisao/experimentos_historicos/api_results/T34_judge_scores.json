@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 2,
+      "motivo": "Tabela regressiva do empréstimo de ações; responde 15% acima de 720 dias, embora com base legal antiga."
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 0,
+      "motivo": "Mercado futuro, sem relação com remuneração de empréstimo."
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "Regras de FII, irrelevante."
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 0,
+      "motivo": "Isenção de ações à vista não se aplica ao caso."
+    },
+    {
+      "id": "cripto_exterior",
+      "relevancia": 0,
+      "motivo": "Ativos no exterior, fora do escopo."
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 2,
+      "motivo": "Lei 15.265/2025: 15% acima de 720 dias, exclusiva na fonte; responde diretamente."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "15% e R$150 corretos, apoiado no trecho da Lei 15.265/2025.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Alíquota e valor corretos; base legal citada (13.043/2014) é a do trecho recuperado, não a vigente indicada no gold.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Retenção de R$150 a 15%, com fundamento correto na Lei 15.265/2025.",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T34",
+  "repeat": false
+}

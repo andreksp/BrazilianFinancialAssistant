@@ -1,0 +1,24 @@
+{
+  "key": "T26_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Cálculo do Ganho Bruto em WDO\n\n## Dados fornecidos\n- **Ativo:** 2 contratos WDO (minicontrato futuro de dólar)\n- **Operação:** comprados e encerrados\n- **Variação:** 10 pontos acima\n\n## Fórmula (conforme evidência \"wdo\")\nPara posição comprada:  \n**Ganho = diferença de cotações × 10 × número de contratos**\n\n## Cálculo\n- Diferença de cotação: 10 pontos\n- Fator por ponto: R$ 10/contrato\n- Quantidade: 2 contratos\n\n**Ganho bruto = 10 × 10 × 2 = R$ 200,00**\n\n---\n\n## Observações importantes\n1. Este é o ganho **antes de custos** (corretagem, emolumentos, taxas B3)\n2. O valor não inclui ajustes diários já realizados durante a manutenção\n3. A tributação dependerá do regime (PF não trader vs. trader PF) e será calculada sobre o ganho líquido\n4. **Confirme:** os 10 pontos referem-se à diferença entre cotação de abertura e fechamento?\n\n**Fonte:** B3 (ID: wdo)",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 810,
+    "output_tokens": 334,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.00248,
+  "seconds": 4.053735899971798,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "35851e08402570c079b7b41bf796e022895a458af321020866373d238699cc06"
+}

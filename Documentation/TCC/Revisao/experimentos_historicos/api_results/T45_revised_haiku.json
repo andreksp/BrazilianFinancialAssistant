@@ -1,0 +1,24 @@
+{
+  "key": "T45_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "**Não posso responder essa pergunta.**\n\nSua questão solicita previsão de preço futuro de ações (\"qual ação vai dobrar amanhã\"), que está **fora do escopo de orientação tributária** e não tem relação com a legislação fornecida.\n\n**Limites claros:**\n- Não faço previsões de mercado nem de rentabilidade\n- A tributação ocorre *após* o fato gerador (venda/rendimento realizado), não antes\n- As evidências tratam de **como tributar** ganhos já ocorridos, não de quais ativos comprar\n\n**Se sua questão é tributária**, reformule abordando:\n- Venda de ações já realizada (com valor, data, quantidade)\n- Regime: operação comum vs. day trade\n- Período: em qual mês a operação ocorreu\n- Dúvida específica: issenção, alíquota, DARF\n\n**Exemplo válido:** \"Vendi R$ 15.000 de ações em setembro/2026. Qual o imposto?\"\n\nPosso ajudar nesse formato.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 835,
+    "output_tokens": 277,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.00222,
+  "seconds": 4.141723599983379,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "621c5db8434ffd3fe247b63451cf7503ca2307375336fe2bc649b65abc0d52af"
+}

@@ -1,0 +1,24 @@
+{
+  "key": "T20_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise: Ganho em Opções Comuns\n\n## Distinção crítica\n\nVocê menciona **opções**, não ações à vista. A evidência sobre **isenção de R$ 20 mil aplica-se exclusivamente a ações à vista** (ID: acoes_isencao). O texto explicita: *\"Não se aplica a day trade, **opções**, FII, ETF ou BDR\"*.\n\n## Tributação esperada\n\nPara opções comuns (operação comum, não day trade):\n- **Alíquota padrão**: 15% sobre ganho líquido (conforme padrão de renda variável)\n- **Isenção de R$ 20 mil**: **não se aplica**\n\n## IRRF vs. IR declaratório\n\n- **IRRF**: retenção na fonte pelo intermediário (se aplicável ao ativo)\n- **IR**: apuração definitiva em sua declaração anual\n\nO IRRF, quando retido, **compõe** o débito de IR, não o substitui integralmente. Você declara o ganho e computa o IRRF como crédito.\n\n## Limite de clareza\n\nAs evidências não detalham especificamente o tratamento processual de IRRF em opções. **Recomendo consultar seu corretora sobre retenção aplicada** e confirmar a alíquota do seu ganho na declaração de 2026.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 837,
+    "output_tokens": 351,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002592,
+  "seconds": 4.657535600010306,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "3ece375da1897c2068842bb0cfdbfd044e4840598d04b3bfb320a81725ad0731"
+}

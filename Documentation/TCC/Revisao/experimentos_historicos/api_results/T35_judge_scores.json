@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 1,
+      "motivo": "Regras gerais de DARF em renda variável; não trata da remuneração do doador"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "Trata de FII, irrelevante para empréstimo de ativos"
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 2,
+      "motivo": "Afirma diretamente retenção exclusiva na fonte e ausência de DARF adicional"
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 2,
+      "motivo": "Responde ao núcleo: tributação exclusiva na fonte, sem DARF mensal adicional"
+    },
+    {
+      "id": "emprestimo_proventos",
+      "relevancia": 1,
+      "motivo": "Contextualiza eventos distintos, mas não responde diretamente"
+    },
+    {
+      "id": "cripto_darf",
+      "relevancia": 0,
+      "motivo": "Regime de criptoativos, alheio à pergunta"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Núcleo correto (retenção definitiva, sem DARF adicional) e alíquotas regressivas conformes ao contexto",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e ancorada no trecho da Lei 15.265/2025, com limites explicitados",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Conclusão e alíquotas corretas; apenas chama de 'progressivas' o que é tabela regressiva, sem alterar valores",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T35",
+  "repeat": false
+}

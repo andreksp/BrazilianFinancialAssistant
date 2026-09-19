@@ -2,7 +2,7 @@
   <h3>Resultado — {{ result.ativo }}</h3>
 
   <div *ngIf="result['isenção_aplicada']" class="isencao-badge">
-    ✅ Isenção R$20.000 aplicada — operação isenta de IR neste mês
+    ✅ Isenção {{ getIsencaoLabel() }} aplicada — operação isenta de IR neste mês
   </div>
 
   <div class="result-grid">
@@ -31,7 +31,7 @@
   </div>
 
   <details class="detalhes-section">
-    <summary>Detalhamento de taxas B3</summary>
+    <summary>Detalhamento de taxas{{ result.tipo_ativo === 'cripto' ? ' da exchange' : ' B3' }}</summary>
     <div class="fees-table">
       <div class="fee-row">
         <span>Taxa de Liquidação</span>

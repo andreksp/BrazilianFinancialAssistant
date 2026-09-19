@@ -1,0 +1,27 @@
+{
+  "key": "T16_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"c4a28d9b57b540e1\",\"relevancia\":0,\"motivo\":\"Trata de DARF e renda variável geral; não aborda isenção de rendimentos de FII.\"},{\"id\":\"7bb8b88a77231872\",\"relevancia\":1,\"motivo\":\"Aborda a condicionalidade da isenção, mas cita requisito desatualizado (50 cotistas) em conflito com a referência (100 cotistas).\"},{\"id\":\"975ab3cfe6fdb742\",\"relevancia\":0,\"motivo\":\"Mercado futuro; sem relação com rendimentos de FII.\"},{\"id\":\"fii_rendimento\",\"relevancia\":2,\"motivo\":\"Responde diretamente: isenção condicionada ao art. 3º da Lei 11.033, sem presunção automática.\"},{\"id\":\"fii_venda\",\"relevancia\":1,\"motivo\":\"Distingue venda de cotas de rendimento distribuído, mas não trata das condições da isenção.\"},{\"id\":\"emprestimo\",\"relevancia\":0,\"motivo\":\"Empréstimo de ativos; fora do escopo da pergunta.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":1,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Acerta que a isenção não é automática, mas enuncia requisito incorreto/desatualizado (mínimo de 50 cotistas) divergente da regra vigente de 100 cotistas.\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Nega a automaticidade e lista corretamente as condições (bolsa/balcão, 100 cotistas, limites de participação), com apoio no contexto.\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Responde corretamente, distingue rendimento e ganho na venda (20%) e sustenta-se nos trechos citados.\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 6073,
+    "output_tokens": 1447,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 745
+    }
+  },
+  "usd": 0.06654,
+  "seconds": 19.754644399974495,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "aa2efb0a4f5e772b5e6ac32f00333a4ad822475a31874d238682d3c214825d46"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T29_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, não são a mesma coisa.\n\n**Nocional** é o valor de referência do contrato futuro (ex.: cotação do dólar ou do índice Ibovespa multiplicada pelo tamanho do contrato) — é apenas uma base de cálculo, não um valor efetivamente recebido pelo investidor.\n\n**O que é recebido/pago** no mercado futuro é o **resultado do ajuste diário** (marcação a mercado), conforme evidência [975ab3cfe6fdb742]: a diferença entre preços de referência é liquidada financeiramente todo dia (D+1), gerando débitos ou créditos na conta do investidor conforme a posição se valoriza ou desvaloriza.\n\nSegundo essa mesma fonte, para fins de IR:\n- **Ganho tributável** = soma dos ajustes diários (ou, na simplificação deste sistema, fechamento − abertura × quantidade de contratos)\n- Alíquotas: 15% (operação normal) ou 20% (day trade)\n- Não há isenção de R$ 20.000/mês (essa isenção é só para ações à vista)\n\n**Limitação do sistema**: o motor de cálculo aqui não modela o ajuste diário real (D+1); usa preço de abertura/fechamento informado pelo usuário como aproximação.\n\nSe sua dúvida envolve um caso concreto (contratos, datas, valores), posso ajudar a organizar o cálculo — mas não fiz apuração fiscal aqui, apenas explico o conceito.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3517,
+    "output_tokens": 516,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.012194,
+  "seconds": 7.201848400000017,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "44fd0bb3a882542215c1f8beeacb3feac01def0ec340d040509eea2dc6a5bd2a"
+}

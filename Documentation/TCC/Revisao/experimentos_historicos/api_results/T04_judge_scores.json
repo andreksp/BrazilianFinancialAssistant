@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 2,
+      "motivo": "Diz expressamente 20% em day trade e que isenção de R$20 mil não se aplica."
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 1,
+      "motivo": "Trata de opções; só analogamente cita alíquota de day trade."
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "Sobre BDRs e afirma isenção aplicável a BDR, contradizendo demais fontes; não responde."
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 2,
+      "motivo": "Afirma que a isenção de R$20 mil não se aplica a day trade."
+    },
+    {
+      "id": "futuros",
+      "relevancia": 1,
+      "motivo": "Regra análoga (20% day trade, sem isenção) mas para futuros."
+    },
+    {
+      "id": "acoes_taxa",
+      "relevancia": 2,
+      "motivo": "Day trade 20% e sem limite de isenção, exatamente o núcleo da pergunta."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Sem isenção, 20%; IRRF 1% correto e apoiado no contexto.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e bem ancorada em acoes_isencao e acoes_taxa.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta; leve imprecisão ao falar de apuração 'anual', mas sem erro fiscal relevante.",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T04",
+  "repeat": false
+}

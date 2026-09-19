@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "183017f281e698ea",
+      "relevancia": 2,
+      "motivo": "Traz a tabela progressiva de ganho de capital (15% até 5 mi, 17,5% de 5 a 10 mi), núcleo da pergunta"
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ações, tema alheio"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "FII, tema alheio"
+    },
+    {
+      "id": "cripto_faixas",
+      "relevancia": 2,
+      "motivo": "Explicita progressividade e o resultado de R$ 925 mil"
+    },
+    {
+      "id": "futuros",
+      "relevancia": 0,
+      "motivo": "Não trata de ganho de capital progressivo"
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 0,
+      "motivo": "Não trata de ganho de capital progressivo"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 0,
+      "fundamentacao": 0,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Resposta vazia apesar de a pergunta ser respondível com o contexto",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega alíquota única, aplica faixas e chega a R$ 925.000 com base na evidência",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Cálculo progressivo correto, R$ 925.000, ancorado no trecho citado",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T40",
+  "repeat": false
+}

@@ -1,0 +1,24 @@
+{
+  "key": "T08_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Alíquota de BDR em Operação Comum\n\n**Resposta:** 15% sobre ganho líquido.\n\n## Detalhes\n\n**Ativo:** BDR (Brazilian Depositary Receipt)  \n**Operação:** Comum (não day trade)  \n**Alíquota:** 15%  \n**Base de cálculo:** Ganho líquido na venda do certificado\n\n**Fonte:** https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/ (consultado 12/09/2026)\n\n## Pontos importantes\n\n- **Sem isenção de R$ 20 mil:** Diferentemente das ações à vista, BDR não se beneficia do limite de isenção mensal.\n- **Day trade:** Alíquota de 20% (se aplicável).\n- **Rendimentos distribuídos** (dividendos, juros sobre capital próprio) são tributados separadamente e não se confundem com ganho de capital na venda do certificado.\n\nCaso tenha operações específicas a apurar (períodos, valores, regime), forneça detalhes para análise mais precisa.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 782,
+    "output_tokens": 347,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002517,
+  "seconds": 3.312636599992402,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "540029cea98c9d4a7eab470479b8f42cf6087403f1c80038a8693a4ea9bdf339"
+}

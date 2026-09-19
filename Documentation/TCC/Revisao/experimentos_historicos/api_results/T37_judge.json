@@ -1,0 +1,27 @@
+{
+  "key": "T37_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"183017f281e698ea\",\"relevancia\":2,\"motivo\":\"Responde diretamente: isenção mensal de R$35.000 em exchange nacional\"},{\"id\":\"7bb8b88a77231872\",\"relevancia\":0,\"motivo\":\"Trata de FII, não de cripto\"},{\"id\":\"c4a28d9b57b540e1\",\"relevancia\":0,\"motivo\":\"Guia de DARF em renda variável, não trata do limite de cripto\"},{\"id\":\"acoes_isencao\",\"relevancia\":1,\"motivo\":\"Esclarece que os R$20 mil são de ações, mas não dá a regra do cripto\"},{\"id\":\"cripto_isencao\",\"relevancia\":2,\"motivo\":\"Afirma explicitamente R$35.000 e nega R$20.000 para cripto nacional\"},{\"id\":\"futuros\",\"relevancia\":0,\"motivo\":\"Regime de futuros, sem relação com a pergunta\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Nega os R$20 mil, aplica limite de R$35 mil e conclui possível isenção; ressalvas corretas (todo ganho tributado ao exceder; IN 1.888 é obrigação acessória)\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Distinção correta de regimes e conclusão de isenção; frase sobre 'não apenas lucro (como em ações)' é ambígua, pois em ações o limite também incide sobre vendas\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Correta e ancorada no contexto, com ressalva adequada sobre soma de todas as alienações e permutas\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 7529,
+    "output_tokens": 1129,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 467
+    }
+  },
+  "usd": 0.06587,
+  "seconds": 14.97085889999289,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "5abc7297f996ecf7bcef6032af6e882c479daaf97172d61c2be7d749b8d1ca18"
+}

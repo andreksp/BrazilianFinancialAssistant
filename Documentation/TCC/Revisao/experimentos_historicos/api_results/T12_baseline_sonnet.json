@@ -1,0 +1,27 @@
+{
+  "key": "T12_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base na evidência sobre BDRs (ID e64833ee):\n\n**Premissa assumida:** operação em regime de swing trade (não há indicação de day trade na pergunta).\n\n**Análise:**\n- Total vendido no mês: R$ 5.000,00\n- Limite de isenção para BDRs (equivalente a ações): R$ 20.000,00/mês em vendas\n- Como R$ 5.000,00 < R$ 20.000,00, a operação está **isenta de Imposto de Renda** sobre o ganho de capital, segundo a regra citada na evidência (Lei 11.033/2004, aplicada a BDRs conforme e64833ee).\n\n**Resultado:**\n- **IR devido sobre o ganho (antes de considerar IRRF): R$ 0,00**\n\n**Observações importantes:**\n1. A isenção considera o **total de vendas do mês** (ações + BDRs somados), não apenas esta operação. Se você teve outras vendas de ações/BDRs no mesmo mês, o total pode ultrapassar R$ 20.000 e anular a isenção.\n2. Mesmo isento de IR, pode haver retenção de IRRF (0,005% sobre o valor da venda) a título de antecipação, mas nesse caso o Fisco típico permite compensação/restituição já que o ganho",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2901,
+    "output_tokens": 650,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 207
+    }
+  },
+  "usd": 0.012302,
+  "seconds": 8.517244899994694,
+  "stop_reason": "max_tokens",
+  "prompt_sha256": "5e1a8308a73679f1dbb727250b9344082766d207440a7820b12436d1269cc126"
+}

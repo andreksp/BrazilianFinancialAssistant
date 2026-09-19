@@ -1,0 +1,24 @@
+{
+  "key": "T36_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise: Remuneração do Doador e Venda a Descoberto do Tomador\n\n## Resposta Direta\n**Não.** Conforme evidência ID \"emprestimo_proventos\" (Lei 15.265/2025, arts. 20+), a remuneração contratual do doador e o reembolso de proventos são **eventos distintos**. O cálculo da remuneração do doador **não cobre** venda a descoberto, custos e tributação do tomador.\n\n## Distinção Relevante\n\n| Elemento | Escopo |\n|----------|--------|\n| **Remuneração doador** | Contraprestação pelo empréstimo (transferência de titularidade) |\n| **Venda a descoberto tomador** | Operação posterior do tomador; responsabilidade dele |\n| **Proventos** | Reembolsos separados; disciplinados pela mesma Lei |\n\n## Limitações\n\nNão localizei na evidência:\n- Cálculo específico da remuneração conforme Lei 15.265/2025\n- Tratamento tributário PF (regime RFB)\n- Período de apuração\n\n**Esclareça:** qual é a operação concreta (emprés­timo de ação? ETF?) e sua finalidade tributária?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 779,
+    "output_tokens": 336,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002459,
+  "seconds": 4.0901786999893375,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "17355acf6394fb2cac6636382c6826f16df265b24ef608b78822648d80b57d66"
+}

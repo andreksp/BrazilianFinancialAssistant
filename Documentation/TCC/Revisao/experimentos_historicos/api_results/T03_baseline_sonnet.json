@@ -1,0 +1,27 @@
+{
+  "key": "T03_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "O limite de **R$ 20.000,00 refere-se ao valor total vendido no mês** (venda), e não ao lucro/ganho apurado [ID 4e69fb3f132e9ec3].\n\nDetalhes importantes:\n- Aplica-se apenas a **Swing Trade** de ações no mercado à vista; Day Trade não tem essa isenção.\n- Se o total vendido no mês (somando todas as vendas de ações) for **≤ R$ 20.000,00**, o ganho fica isento de IR.\n- Se ultrapassar esse valor, **todo o ganho do mês** passa a ser tributado (15%), não apenas a parte excedente.\n- Segundo a evidência [ID e64833ee00978eec], BDRs também entram nesse limite — as vendas de ações e BDRs devem ser somadas para verificar se o teto de R$ 20.000,00 foi ultrapassado.\n- Opções de ações **não têm** essa isenção, independentemente do valor negociado [ID 290b3fbba3faa9f8].\n\nBase legal citada na evidência: Lei 11.033/2004.\n\n⚠️ Isso é uma explicação geral de regras; não constitui apuração fiscal definitiva do seu caso. Se quiser simular sua situação específica, informe valores de compra/venda e datas para eu apenas ilustrar o cálculo — não como declaração oficial.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2878,
+    "output_tokens": 473,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010486,
+  "seconds": 6.513013300020248,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "766b3bd0d4305c077122ac5be5a3493fdebddc3697edef98e710340769e81278"
+}

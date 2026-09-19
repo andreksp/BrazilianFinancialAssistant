@@ -1,0 +1,27 @@
+{
+  "key": "T39_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. Segundo a evidência **cripto_isencao**, a permuta entre criptomoedas (ex.: BTC por ETH) **configura alienação** mesmo sem conversão para reais. Ou seja, a troca é fato gerador de apuração de ganho de capital, independentemente de haver saque.\n\nPontos a distinguir:\n\n- **Venda vs. permuta**: ambas contam como alienação para fins de apuração no regime de criptoativos nacionais.\n- **Limite de isenção**: soma-se o valor de todas as alienações do mês (não por moeda/operação); até R$ 35.000 pode haver isenção — não R$ 20.000 (esse valor é regra distinta, de ações).\n- **Regime nacional vs. exterior**: essa análise vale para criptoativos nacionais. Se envolver custódia/intermediação no exterior, pode se aplicar a Lei 14.754/2023 (apuração anual, 15%, sem a isenção mensal) — mas autocustódia não define isso automaticamente (evidência **cripto_exterior**).\n\nFaltam dados para enquadrar seu caso: preciso saber onde estão custodiados os ativos (exchange nacional, exterior ou wallet própria) e o valor das operações no mês para calcular eventual ganho e isenção.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1022,
+    "output_tokens": 443,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006474,
+  "seconds": 5.919925299996976,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "6616511ef764af792b6104d0922f9692e273d281f1af1065a412a35c6773e3ed"
+}

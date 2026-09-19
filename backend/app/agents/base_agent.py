@@ -1,6 +1,7 @@
 """Abstract base class for all specialist agents."""
 
 from abc import ABC, abstractmethod
+from app.mcp_gateway import calculate_via_mcp
 from typing import Optional
 
 from sqlalchemy.orm import Session
@@ -28,7 +29,18 @@ class BaseAgent(ABC):
     def get_calculator(self, asset_type: AssetType):
         """Return the calculator instance for the given asset type."""
 
-    def process(
+    def process(self, message, trade, db, user_id, claude):
+        try:
+            return self._process(message, trade, db, user_id, claude)
+        except ValueError as exc:
+            db.rollback()
+            response = f"Não foi possível calcular com segurança: {exc} Nenhuma venda foi registrada."
+            save_chat(db, user_id=user_id, message=message, response=response,
+                      trade_extracted=trade, calculation=None)
+            return dict(response=response, trade_extracted=trade,
+                        calculation_result=None, agent_name=self.name)
+
+    def _process(
         self,
         message: str,
         trade: Optional[TradeInput],
@@ -48,10 +60,9 @@ class BaseAgent(ABC):
                 save_trade(db, trade, result=None, user_id=user_id)
                 explanation = self._buy_confirmation(trade)
             else:
-                calculator = self.get_calculator(trade.tipo_ativo)
                 avg_price = get_average_price(db, user_id=user_id, ativo=trade.ativo)
-                result = calculator.calculate_result(
-                    trade, average_price=avg_price or trade.preco_unitario
+                result = calculate_via_mcp(
+                    trade, average_price=trade.preco_medio_informado if trade.preco_medio_informado is not None else avg_price
                 )
                 save_trade(db, trade, result=result, user_id=user_id)
 
@@ -97,7 +108,7 @@ class BaseAgent(ABC):
     # ── helpers ───────────────────────────────────────────────────────────────
 
     def _buy_confirmation(self, trade: TradeInput) -> str:
-        qty = int(trade.quantidade)
+        qty = f"{trade.quantidade:g}"
         price = f"R$ {trade.preco_unitario:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
         date = trade.data_operacao.strftime("%d/%m/%Y")
         return (
@@ -111,12 +122,13 @@ class BaseAgent(ABC):
             return f"R$ {v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
         tipo = result.tipo_operacao_classificacao.value.replace("_", " ").title()
-        isento = " (ISENTO — total vendido abaixo de R$ 20.000 no mês)" if result.isenção_aplicada else ""
+        limite = "35.000" if result.tipo_ativo == AssetType.CRIPTO else "20.000"
+        isento = f" (ISENÇÃO — total mensal informado até R$ {limite})" if result.isenção_aplicada else ""
 
         summary = (
             f"Ativo: {result.ativo} ({result.tipo_ativo.value.upper()})\n"
             f"Data: {result.data_operacao.strftime('%d/%m/%Y')}\n"
-            f"Quantidade: {int(result.quantidade)} unidades\n"
+            f"Quantidade: {result.quantidade:g} unidades\n"
             f"Preço de venda: {fmt(result.preco_unitario)}\n"
             f"Valor financeiro: {fmt(result.valor_financeiro)}\n"
             f"Ganho/Prejuízo bruto: {fmt(result.ganho_prejuizo_bruto)}\n"
@@ -124,7 +136,8 @@ class BaseAgent(ABC):
             f"Alíquota IR: {result.aliquota_aplicada * 100:.0f}%{isento}\n"
             f"IR devido: {fmt(result.ir_devido)}\n"
             f"IRRF retido: {fmt(result.irrf_retido)}\n"
-            f"Taxas B3: {fmt(result.taxas_totais.total)}\n"
+            f"Custos da operação: {fmt(result.taxas_totais.total)}\n"
+            f"Ressalvas do motor: {result.mensagem or ''}\n"
             f"Ganho/Prejuízo líquido: {fmt(result.ganho_prejuizo_liquido)}\n"
             f"Valor líquido a receber: {fmt(result.valor_liquido)}\n"
         )

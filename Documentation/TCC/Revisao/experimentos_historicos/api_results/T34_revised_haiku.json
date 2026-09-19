@@ -1,0 +1,24 @@
+{
+  "key": "T34_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise: Retenção em Empréstimo de Ativos\n\n## Dados fornecidos\n- **Operação:** Empréstimo de ativos (doador = emprestador)\n- **Remuneração:** R$ 1.000\n- **Prazo:** 721 dias\n- **Questão:** Há retenção?\n\n## Resposta\n\n**Sim, há retenção na fonte.**\n\nConforme **Lei 15.265/2025, arts. 18 e 19** (ID: emprestimo), a remuneração do emprestador residente (PF) em empréstimo de ativos no País é **tributada exclusivamente na fonte** sob as alíquotas de renda fixa:\n\n| Prazo | Alíquota |\n|-------|----------|\n| Até 180 dias | 22,5% |\n| 181 a 360 dias | 20% |\n| 361 a 720 dias | 17,5% |\n| **Acima de 720 dias** | **15%** |\n\n**Seu caso:** 721 dias → **alíquota de 15%**\n\n**Retenção = R$ 1.000 × 15% = R$ 150**\n\n## Observações\n- A retenção ocorre automaticamente (não gera DARF adicional)\n- Não se aplica a isenção de vendas de ações (art. 18)\n- Confirme o prazo exato (início e término) para precisão",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 851,
+    "output_tokens": 379,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002746,
+  "seconds": 3.5138824000023305,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "d3561372376241929762d62b1d314063a15ec7deaf951515c5bc5563e66ee76c"
+}

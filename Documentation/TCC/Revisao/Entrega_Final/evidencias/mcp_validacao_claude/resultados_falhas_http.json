@@ -1,0 +1,141 @@
+[
+  {
+    "case": "custo_medio_ausente",
+    "expected_status": 400,
+    "actual_status": 400,
+    "ok": true,
+    "body": {
+      "detail": "Informe o custo médio ou registre a aquisição antes da venda."
+    },
+    "note": ""
+  },
+  {
+    "case": "custo_medio_ausente_sem_gravacao",
+    "ok": true,
+    "history_returned": []
+  },
+  {
+    "case": "total_mensal_ausente",
+    "expected_status": 400,
+    "actual_status": 400,
+    "ok": true,
+    "body": {
+      "detail": "Informe o total completo das vendas de ações à vista no mês, incluindo esta operação."
+    },
+    "note": ""
+  },
+  {
+    "case": "prazo_ausente_emprestimo",
+    "expected_status": 400,
+    "actual_status": 400,
+    "ok": true,
+    "body": {
+      "detail": "Informe o prazo do contrato para determinar a faixa de IRRF."
+    },
+    "note": ""
+  },
+  {
+    "case": "tipo_ativo_invalido",
+    "expected_status": 422,
+    "actual_status": 422,
+    "ok": true,
+    "body": {
+      "detail": [
+        {
+          "type": "enum",
+          "loc": [
+            "body",
+            "tipo_ativo"
+          ],
+          "msg": "Input should be 'acao', 'bdr', 'fii', 'opcao', 'futuro_dolar', 'futuro_indice', 'emprestimo_acoes' or 'cripto'",
+          "input": "futuro_cripto",
+          "ctx": {
+            "expected": "'acao', 'bdr', 'fii', 'opcao', 'futuro_dolar', 'futuro_indice', 'emprestimo_acoes' or 'cripto'"
+          }
+        }
+      ]
+    },
+    "note": ""
+  },
+  {
+    "case": "quantidade_negativa",
+    "expected_status": 422,
+    "actual_status": 422,
+    "ok": true,
+    "body": {
+      "detail": [
+        {
+          "type": "greater_than",
+          "loc": [
+            "body",
+            "quantidade"
+          ],
+          "msg": "Input should be greater than 0",
+          "input": -10,
+          "ctx": {
+            "gt": 0.0
+          }
+        }
+      ]
+    },
+    "note": ""
+  },
+  {
+    "case": "preco_medio_nan",
+    "ok": null,
+    "exception": "ValueError: Out of range float values are not JSON compliant"
+  },
+  {
+    "case": "preco_medio_inf",
+    "expected_status": 400,
+    "actual_status": 400,
+    "ok": true,
+    "body": {
+      "detail": "Informe o custo médio positivo antes de calcular."
+    },
+    "note": "Esperado: rejeitado como custo não-finito (gateway) ou 422 se o transporte JSON já recusar NaN/Infinity"
+  },
+  {
+    "case": "batch_parcial",
+    "status": 200,
+    "n_input": 3,
+    "n_results": 1,
+    "results": [
+      {
+        "ativo": "HGLG11",
+        "tipo_ativo": "fii",
+        "quantidade": 10.0,
+        "preco_unitario": 110.0,
+        "data_operacao": "2026-09-16",
+        "valor_financeiro": 1100.0,
+        "ganho_prejuizo_bruto": 100.0,
+        "taxas_totais": {
+          "taxa_liquidacao": 0.3025,
+          "taxa_registro": 0.0374,
+          "emolumentos": 0.033,
+          "corretagem": 0.0,
+          "iss_sobre_corretagem": 0.0
+        },
+        "aliquota_aplicada": 0.2,
+        "ir_devido": 20.0,
+        "irrf_retido": 0.055,
+        "isenção_aplicada": false,
+        "ganho_prejuizo_liquido": 99.6271,
+        "valor_liquido": 1079.5720999999999,
+        "tipo_operacao_classificacao": "swing",
+        "mensagem": "FII swing trade de HGLG11: R$ 100,00 - IR devido: R$ 20,00 (sem isenção) Custos informados são preferidos. Eventuais tarifas parametrizadas são estimativas legadas, sem vigência validada; não constituem tabela atual da B3."
+      }
+    ],
+    "note": "Compra não retorna resultado; venda 2 (sem total mensal) deve falhar e ser omitida; venda 3 (FII) deve aparecer."
+  },
+  {
+    "case": "servidor_mcp_ausente",
+    "expected_status": 400,
+    "actual_status": 400,
+    "ok": true,
+    "body": {
+      "detail": "MCP indisponível ou resposta inválida; nenhum cálculo local alternativo foi executado."
+    },
+    "note": ""
+  }
+]

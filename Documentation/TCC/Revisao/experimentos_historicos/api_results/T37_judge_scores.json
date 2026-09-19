@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "183017f281e698ea",
+      "relevancia": 2,
+      "motivo": "Responde diretamente: isenção mensal de R$35.000 em exchange nacional"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "Trata de FII, não de cripto"
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 0,
+      "motivo": "Guia de DARF em renda variável, não trata do limite de cripto"
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 1,
+      "motivo": "Esclarece que os R$20 mil são de ações, mas não dá a regra do cripto"
+    },
+    {
+      "id": "cripto_isencao",
+      "relevancia": 2,
+      "motivo": "Afirma explicitamente R$35.000 e nega R$20.000 para cripto nacional"
+    },
+    {
+      "id": "futuros",
+      "relevancia": 0,
+      "motivo": "Regime de futuros, sem relação com a pergunta"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega os R$20 mil, aplica limite de R$35 mil e conclui possível isenção; ressalvas corretas (todo ganho tributado ao exceder; IN 1.888 é obrigação acessória)",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Distinção correta de regimes e conclusão de isenção; frase sobre 'não apenas lucro (como em ações)' é ambígua, pois em ações o limite também incide sobre vendas",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e ancorada no contexto, com ressalva adequada sobre soma de todas as alienações e permutas",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T37",
+  "repeat": false
+}

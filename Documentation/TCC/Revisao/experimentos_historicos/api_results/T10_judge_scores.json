@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "Afirma que a isenção de R$20 mil se aplica a BDRs, contradizendo o fato esperado"
+    },
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 1,
+      "motivo": "Explica a isenção de R$20 mil para ações; contexto útil, mas não trata de BDR"
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 0,
+      "motivo": "Trata de opções, sem relação com BDR"
+    },
+    {
+      "id": "bdr",
+      "relevancia": 2,
+      "motivo": "Responde diretamente: BDR não tem a isenção de R$20 mil"
+    },
+    {
+      "id": "cripto_exterior",
+      "relevancia": 0,
+      "motivo": "Ativos no exterior/cripto, fora do núcleo da pergunta"
+    },
+    {
+      "id": "futuros",
+      "relevancia": 0,
+      "motivo": "Regras de futuros, não responde sobre BDR"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega corretamente a isenção e cita alíquotas 15%/20% conforme o trecho sobre BDR",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 0,
+      "fundamentacao": 0,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Afirma que BDR goza da isenção de R$20 mil, contrariando a regra correta",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Resposta correta e sustentada no trecho específico de BDR, com distinção adequada entre venda e rendimentos",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T10",
+  "repeat": false
+}

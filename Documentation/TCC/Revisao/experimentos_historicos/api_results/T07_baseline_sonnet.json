@@ -1,0 +1,27 @@
+{
+  "key": "T07_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base na evidência [e64833ee00978eec], a isenção mensal de R$ 20.000,00 em vendas se aplica a BDRs da mesma forma que para ações, desde que se trate de **swing trade** (operações comuns, não day trade) no mercado à vista.\n\nComo você vendeu R$ 9.000,00 em BDR (operação comum = swing trade), e esse valor está abaixo do limite de R$ 20.000,00 mensais, o ganho estaria **isento de IR**, conforme a regra geral descrita.\n\n**Ponto de atenção importante**: a evidência indica que o limite de R$ 20.000 deve considerar o **total de vendas do mês somando ações e BDRs** [e64833ee00978eec]. Se você teve outras vendas de ações ou BDRs no mesmo mês, é necessário somar tudo. Se a soma ultrapassar R$ 20.000, **toda a operação do mês** perde a isenção (não apenas o excedente) [4e69fb3f132e9ec3].\n\nTambém não há informação nas evidências sobre se essa foi sua única operação no mês — isso é necessário para confirmar a isenção.\n\n**Limite**: esta é uma explicação educacional geral, não uma apuração fiscal definitiva. Recomendo confirmar o total de vendas do mês e, se tiver dúvidas específicas, consultar um contador.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2888,
+    "output_tokens": 471,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010486,
+  "seconds": 6.45578109996859,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "208c2a1c2af682671a46539f57ac05a2338da5320bb3576d09c839ac5fc6f842"
+}

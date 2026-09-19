@@ -1,0 +1,24 @@
+{
+  "key": "T29_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Esclarecimento sobre Nocional em Contrato Futuro\n\n## Resposta direta\n**Não.** O nocional (ou contrato nocional) não é o \"dinheiro recebido no encerramento\". \n\nConforme evidência **ID wdo** (B3, 12/09/2026):\n- O nocional é o **tamanho contratual**: USD 10.000 no miniconturo de dólar WDO\n- O que você recebe/paga ao encerrar é o **resultado financeiro** (ajuste diário acumulado)\n\n**Cálculo:**\n- Diferença de cotações × multiplicador (10) × quantidade de contratos = ganho/perda em reais\n- Isso **não substitui os ajustes diários**\n\n## Distinção importante\n| Conceito | Significado |\n|----------|-----------|\n| **Nocional** | Tamanho/volume teórico do contrato (USD 10.000) |\n| **Resultado** | Ganho/perda realizado no encerramento |\n| **Ajuste diário** | Liquidação periódica até o fechamento |\n\n## Limite\nAs evidências fornecidas tratam da **mecânica de cálculo**, não da tributação específica do resultado. Para questões sobre regime tributário (ganho de capital, compensação, apuração), solicite legislação complementar.\n\n**Precisa esclarecer: tipo de operação (comprada/vendida) ou período fiscal?**",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 807,
+    "output_tokens": 370,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002657,
+  "seconds": 4.201865200011525,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ce5796e34647d8a5c8059e933e3e6fa473793fdcfaa2c6eb8a8037df923a66c5"
+}

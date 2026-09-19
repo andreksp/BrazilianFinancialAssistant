@@ -302,4 +302,61 @@ Total IR = R$10 + R$3.75 = R$13.75
 
 ---
 
+## 9. Criptomoedas
+
+**Pesquisado em**: 2026-09-12. Situação vigente em 2026: a MP 1.303/2025, que
+propunha unificar a alíquota de cripto em 17,5% e acabar com a isenção de
+R$35.000/mês, foi rejeitada pela Câmara dos Deputados em 08/10/2025 e perdeu
+validade — as regras abaixo (anteriores à MP) seguem em vigor.
+
+### Regime 1 — Exchange nacional (Mercado Bitcoin, Foxbit, Binance Brasil, etc.)
+
+| Regra | Valor |
+|-------|-------|
+| Isenção | Vendas de todas as criptomoedas/exchanges nacionais somadas ≤ R$35.000/mês |
+| Alíquota até R$5.000.000 de ganho/mês | 15% |
+| Alíquota de R$5.000.000,01 a R$10.000.000 | 17,5% |
+| Alíquota de R$10.000.000,01 a R$30.000.000 | 20% |
+| Alíquota acima de R$30.000.000 | 22,5% |
+| IRRF | Não há (sem intermediação B3) |
+| Day trade / Swing trade | Não existe essa distinção para cripto |
+| DARF | Código 4600 ("Ganho de Capital", via programa GCAP) — diferente do 6015 usado por ações |
+| Vencimento DARF | Último dia útil do mês seguinte, mínimo R$10,00 |
+
+### Regime 2 — Exchange estrangeira / autocustódia fora do Brasil
+
+Base legal: **Lei 14.754/2023** ("Lei das Offshores e Criptoativos no Exterior"),
+vigente desde o ano-base 2024. Tratado como "aplicação financeira no exterior":
+
+- Alíquota **fixa de 15%** sobre o ganho líquido anual, **sem** a isenção de R$35.000
+- Apurado na **Declaração de Ajuste Anual (DAA)**, não por DARF mensal
+
+### Obrigação acessória (não é imposto)
+
+- **IN RFB 1.888/2019** (atualizada pela IN 2.180/2024): operações que somarem
+  mais de R$30.000/mês devem ser informadas à Receita Federal. Exchange
+  nacional informa automaticamente; exchange estrangeira/P2P é o contribuinte
+  quem informa.
+- **Declaração de bens**: obrigatória quando a posição em um mesmo criptoativo
+  ultrapassa R$5.000,00 (ficha Bens e Direitos, códigos 81/82/89).
+
+### Limitação do sistema (MVP)
+
+A isenção de R$35.000 e a tabela progressiva são aplicadas por operação
+(`valor_financeiro`/`ganho` da própria venda em `CriptomoedaCalculator`), não
+pela soma real de todas as vendas de criptoativos do usuário no mês — a mesma
+simplificação já existente para a isenção de R$20.000 de ações, que também
+depende de uma agregação mensal em nível de carteira ainda não implementada
+no `TaxEngine`.
+
+### Referências
+
+- Lei 13.259/2016 (tabela progressiva de ganho de capital)
+- Instrução Normativa SRF 84/2001, art. 3º, IX (isenção R$35.000)
+- Lei 14.754/2023 (tributação de criptoativos no exterior)
+- Instrução Normativa RFB 1.888/2019 e IN RFB 2.180/2024 (obrigação de informar)
+- MP 1.303/2025 — rejeitada pela Câmara em 08/10/2025, sem efeito em 2026
+
+---
+
 **Última atualização**: 2026-04-27

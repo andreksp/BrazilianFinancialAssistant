@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "FII, tema alheio ao WIN"
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 1,
+      "motivo": "trata de futuros e fórmula, mas não dá valor do ponto"
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 0,
+      "motivo": "DARF geral, não responde ao ganho bruto"
+    },
+    {
+      "id": "win",
+      "relevancia": 2,
+      "motivo": "dá R$0,20/ponto e o resultado de R$100"
+    },
+    {
+      "id": "cripto_faixas",
+      "relevancia": 0,
+      "motivo": "faixas de cripto, irrelevante"
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 0,
+      "motivo": "empréstimo de ativos, irrelevante"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "acerta R$100 com base no chunk win, mas acrescenta menções infundadas a 'taxa de renda fixa' e regime profissional",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 0,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "abstém-se indevidamente; o valor do ponto (R$0,20) estava disponível e a pergunta é respondível",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "R$100 correto, citando a evidência e separando cálculo bruto de apuração fiscal",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T25",
+  "repeat": false
+}

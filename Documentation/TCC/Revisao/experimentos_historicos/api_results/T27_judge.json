@@ -1,0 +1,27 @@
+{
+  "key": "T27_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"975ab3cfe6fdb742\",\"relevancia\":2,\"motivo\":\"Afirma diretamente 15%/20% e que a isenção de R$20 mil não vale para futuros\"},{\"id\":\"06a4e857780aec7b\",\"relevancia\":0,\"motivo\":\"Trata de aluguel de ações, fora do tema\"},{\"id\":\"7bb8b88a77231872\",\"relevancia\":0,\"motivo\":\"Trata de FII, não de futuros\"},{\"id\":\"futuros\",\"relevancia\":2,\"motivo\":\"Núcleo exato: comum 15%, day 20%, sem isenção\"},{\"id\":\"opcoes\",\"relevancia\":1,\"motivo\":\"Tema análogo (opções), não responde diretamente sobre futuros\"},{\"id\":\"cripto_exterior\",\"relevancia\":0,\"motivo\":\"Ativos no exterior/cripto, irrelevante\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Nega isenção e cita 15%/20% com base no trecho recuperado\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Correta e ancorada no chunk de mercado futuro, incluindo IRRF e base legal\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Núcleo correto, mas ressalvas especulativas e referência vaga inventada ('SRRF territorialista')\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5696,
+    "output_tokens": 1094,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 524
+    }
+  },
+  "usd": 0.05583,
+  "seconds": 13.65253759996267,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b965084d63b216d6cb9fd7bcde761816029f9a68fbded1d0a971fbd6d8b4c7d1"
+}

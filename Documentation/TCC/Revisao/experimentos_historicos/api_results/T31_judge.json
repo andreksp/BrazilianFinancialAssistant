@@ -1,0 +1,27 @@
+{
+  "key": "T31_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"7bb8b88a77231872\",\"relevancia\":0,\"motivo\":\"FII, sem relação com remuneração de doador em empréstimo de ações\"},{\"id\":\"10d60f0a6cead3e1\",\"relevancia\":0,\"motivo\":\"Taxas B3; pergunta exclui taxas e não trata de IRRF do aluguel\"},{\"id\":\"06a4e857780aec7b\",\"relevancia\":2,\"motivo\":\"Traz tabela regressiva: até 180 dias 22,5% sobre remuneração do doador\"},{\"id\":\"futuros\",\"relevancia\":0,\"motivo\":\"Futuros, irrelevante ao caso\"},{\"id\":\"cripto_exterior\",\"relevancia\":0,\"motivo\":\"Ativos no exterior, irrelevante\"},{\"id\":\"acoes_isencao\",\"relevancia\":0,\"motivo\":\"Isenção de ações à vista não se aplica ao aluguel BTC\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"22,5% sobre R$1.000 = R$225, líquido R$775, com base no trecho correto\"},{\"id\":\"B\",\"correcao\":0,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Pergunta é respondível (BTC, faixa até 180 dias); abstenção injustificada, embora coerente com seu contexto limitado\"},{\"id\":\"C\",\"correcao\":0,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Não responde ao cálculo possível; pede esclarecimentos sem entregar o valor devido\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5850,
+    "output_tokens": 1065,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 465
+    }
+  },
+  "usd": 0.055875,
+  "seconds": 15.11609279998811,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "76142a690978d3bd1c11c04dbee6439983c9f1844f430e543c5980f11e2b1df4"
+}

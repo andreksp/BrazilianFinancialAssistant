@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 2,
+      "motivo": "Afirma diretamente 15%/20% e que a isenção de R$20 mil não vale para futuros"
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 0,
+      "motivo": "Trata de aluguel de ações, fora do tema"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "Trata de FII, não de futuros"
+    },
+    {
+      "id": "futuros",
+      "relevancia": 2,
+      "motivo": "Núcleo exato: comum 15%, day 20%, sem isenção"
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 1,
+      "motivo": "Tema análogo (opções), não responde diretamente sobre futuros"
+    },
+    {
+      "id": "cripto_exterior",
+      "relevancia": 0,
+      "motivo": "Ativos no exterior/cripto, irrelevante"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega isenção e cita 15%/20% com base no trecho recuperado",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e ancorada no chunk de mercado futuro, incluindo IRRF e base legal",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Núcleo correto, mas ressalvas especulativas e referência vaga inventada ('SRRF territorialista')",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T27",
+  "repeat": false
+}

@@ -4,14 +4,14 @@ Unit tests for Empréstimo de Ações (securities lending, doador side) calculat
 Key rules tested:
 - Taxed as renda fixa via regressive table by contract term (NOT the 15%/20% ações rules)
 - IR is withheld at source and is definitive (ir_devido == 0, all tax is in irrf_retido)
-- Missing prazo_dias defaults to the most conservative bracket (22,5%)
+- Missing prazo_dias is rejected (ValueError) — the system no longer guesses a bracket
 """
 
 import pytest
 from datetime import date
 
 from app.models.trade import TradeInput, AssetType, OperationType
-from app.calculations.lending.emprestimo import EmprestimoCalculator, DEFAULT_PRAZO_DIAS
+from app.calculations.lending.emprestimo import EmprestimoCalculator
 
 
 class TestEmprestimoCalculator:
@@ -82,7 +82,8 @@ class TestEmprestimoCalculator:
         result = calculator.calculate_result(trade)
         assert result.aliquota_aplicada == 0.15
 
-    def test_missing_prazo_defaults_to_conservative_bracket(self, calculator):
+    def test_missing_prazo_raises(self, calculator):
+        """Sem prazo_dias, o cálculo recusa a operação em vez de presumir uma faixa."""
         trade = TradeInput(
             ativo="VALE3",
             tipo_ativo=AssetType.EMPRESTIMO_ACOES,
@@ -93,11 +94,8 @@ class TestEmprestimoCalculator:
         )
 
         assert trade.prazo_dias is None
-        result = calculator.calculate_result(trade)
-
-        assert DEFAULT_PRAZO_DIAS == 180
-        assert result.aliquota_aplicada == 0.225
-        assert "não informado" in result.mensagem
+        with pytest.raises(ValueError, match="prazo do contrato"):
+            calculator.calculate_result(trade)
 
     def test_no_fees_charged(self, calculator):
         """Empréstimo de ações doesn't go through the standard B3 trading fee schedule."""

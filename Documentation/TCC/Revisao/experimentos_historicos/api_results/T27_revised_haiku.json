@@ -1,0 +1,24 @@
+{
+  "key": "T27_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta\n\n**Não.** Futuro de índice comum **não tem isenção de R$ 20 mil**.\n\n## Síntese\n\n| Aspecto | Informação |\n|--------|-----------|\n| **Alíquota** | 15% (operação comum) ou 20% (day trade) |\n| **Isenção de R$ 20 mil** | **Não existe** para futuros |\n| **Base de cálculo** | Ajustes e despesas; não o valor nocional |\n| **IRRF** | 0,005% sobre soma algébrica positiva dos ajustes diários |\n\n## Limitações\n\n- A evidência (ID: \"futuros\", fonte: normas.receita.fazenda.gov.br) confirma a **ausência de isenção**, mas não especifica se há isenção mensal reduzida ou períodos com tratamento diferenciado.\n- Não há detalhe sobre enquadramento em regimes especiais (ex.: contratos para entrega futura com outras regras).\n\n**Recomendação:** Se a operação envolve contrato específico ou período anterior a 2026, consulte a norma completa ou SRRF territorialista para confirmar o tratamento aplicável.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 788,
+    "output_tokens": 310,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002338,
+  "seconds": 3.884864900028333,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c34c8da15abc1d7dadb53157df3496d518a48770adb2820212bd2b643fb86bc8"
+}

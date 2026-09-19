@@ -1,0 +1,27 @@
+{
+  "key": "T13_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, essa isenção **não se aplica** a FII.\n\nSegundo a evidência **fii_venda**: a venda de cotas de fundo imobiliário tem o ganho líquido tributado em **20%**, sem isenção por vendas abaixo de R$ 20 mil — essa isenção é exclusiva para ações negociadas em bolsa (regra distinta, não citada aqui como aplicável a FII).\n\nPontos importantes a distinguir:\n- **Tipo de ativo**: FII segue regra própria (20% sobre ganho, sem faixa de isenção), diferente de ações.\n- **Venda vs. rendimento**: a evidência destaca que venda de cota, rendimento distribuído pelo fundo (isento para PF em certas condições, não detalhado aqui) e venda direta de imóvel são fatos geradores distintos — não confunda o lucro na venda das cotas com os rendimentos mensais distribuídos.\n- **Apuração e recolhimento**: o imposto sobre o ganho de capital na venda de FII normalmente é apurado e recolhido via DARF pelo próprio investidor, não por retenção automática — mas não tenho evidência detalhada sobre alíquota de IRRF específica aqui, então não posso confirmar percentual de retenção.\n\nSe precisar, posso detalhar a apuração do ganho (preço de venda menos custo de aquição) com mais dados. Isso é orientação educacional, não uma apuração fiscal definitiva — confirme com contador ou informe de rendimentos.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 962,
+    "output_tokens": 520,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.007124,
+  "seconds": 6.956946499994956,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "9cdce272f2b55b7d58820fd7dfda56166d61cccf8f272b6995e9bdc486ff1c8a"
+}

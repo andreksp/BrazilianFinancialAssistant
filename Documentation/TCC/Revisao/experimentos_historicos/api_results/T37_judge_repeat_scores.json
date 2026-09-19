@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "183017f281e698ea",
+      "relevancia": 2,
+      "motivo": "Detalha isenção mensal de R$35.000 para cripto em exchange nacional, respondendo ao núcleo."
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "Trata de FII, não de criptoativos."
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 0,
+      "motivo": "Guia de DARF em renda variável; não responde ao limite de cripto."
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 1,
+      "motivo": "Explica que os R$20 mil são de ações, mas não traz a regra de cripto."
+    },
+    {
+      "id": "cripto_isencao",
+      "relevancia": 2,
+      "motivo": "Afirma soma mensal de alienações e limite de R$35.000, não R$20.000."
+    },
+    {
+      "id": "futuros",
+      "relevancia": 0,
+      "motivo": "Regime de futuros, irrelevante à pergunta."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega o limite de 20 mil, indica 35 mil e possível isenção; ressalvas coerentes com o contexto.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correto quanto a 35 mil e isenção; apoiado nos trechos, apesar do formato tabular.",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correto: 35 mil, isenção provável, tributação integral se exceder e obrigação acessória de 30 mil, tudo no contexto.",
+      "configuration": "baseline_sonnet"
+    }
+  ],
+  "case_id": "T37",
+  "repeat": true
+}

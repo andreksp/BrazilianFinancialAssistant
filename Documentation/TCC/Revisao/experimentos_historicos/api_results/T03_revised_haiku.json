@@ -1,0 +1,24 @@
+{
+  "key": "T03_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta: Limite de R$ 20 mil em Ações\n\n## **O limite incide sobre o VALOR VENDIDO, não sobre lucro.**\n\nConforme evidência ID `acoes_isencao` (Fonte: gov.br/receitafederal):\n\n> *\"O limite incide sobre vendas, não sobre lucro.\"*\n\n### Esclarecimento prático:\n- **Somatório**: todas as vendas de ações à vista no mês, agrupadas por todas as corretoras\n- **Limite**: R$ 20.000\n- **Se não ultrapassar**: ganho é **isento** de IR\n- **Se ultrapassar**: apenas a parcela acima é tributada\n\n### Exemplo:\nVendeu R$ 25.000 em ações e obteve R$ 3.000 de lucro:\n- Valor vendido (R$ 25.000) > R$ 20.000 → **não isento**\n- O IR incide sobre os R$ 3.000 de ganho (não sobre o valor total vendido)\n\n### Restrições ao limite:\nNão se aplica a: **day trade, opções, FII, ETF ou BDR**.\n\n---\n\n**Dúvida restante?** Esclareça se a situação envolve operação comum ou alguma das categorias excluídas.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 808,
+    "output_tokens": 336,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002488,
+  "seconds": 4.2194122999790125,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "168bdaeeaa49f854f3ae87abc4450e4bbe05163bec07b361ad4e79773b3f6aea"
+}

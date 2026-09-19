@@ -1,0 +1,27 @@
+{
+  "key": "T45_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não posso responder a essa pergunta.\n\nNão há como prever qual ação vai \"dobrar\" ou ter qualquer valorização específica — isso envolveria previsão de mercado, o que não faço, e poderia ser interpretado como promessa de retorno financeiro, algo que devo evitar.\n\nAlém disso, as evidências fornecidas tratam exclusivamente de **regras tributárias** (IR sobre mercado futuro, FIIs e uso do DARF) — não contêm nenhuma informação sobre desempenho, cotações ou projeções de ativos.\n\nPosso ajudar, dentro do meu escopo, com temas como:\n- Como é tributado o **ganho de capital** na venda de ações, FIIs ou operações no mercado futuro (alíquotas, isenções, DARF);\n- Diferença entre **rendimento** (ex.: dividendos de FII, isentos) e **ganho na venda** (ex.: 20% sempre para FIIs, conforme ID `7bb8b88a77231872`);\n- Regras de **IRRF**, compensação de prejuízos e prazos de recolhimento (ID `c4a28d9b57b540e1`).\n\nSe você tiver uma operação específica já realizada (compra/venda, valores, datas) e quiser entender a apuração fiscal correspondente, posso orientar com base nas regras vigentes — mas não em previsões de mercado.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3380,
+    "output_tokens": 472,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.01148,
+  "seconds": 6.992194799997378,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "7cbbe4aef93d9105a4bce47f4b6b0204b85f5419c3809d2baa7c0da939fd81fa"
+}

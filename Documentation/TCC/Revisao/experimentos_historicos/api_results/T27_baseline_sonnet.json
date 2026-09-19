@@ -1,0 +1,27 @@
+{
+  "key": "T27_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. Segundo a evidência [975ab3cfe6fdb742], a isenção de R$ 20.000,00/mês vale **apenas** para venda de ações no mercado à vista — não se aplica ao mercado futuro (WIN, WDO etc.).\n\nNo futuro de índice (WIN), toda operação é tributada, independentemente do valor negociado:\n- **Operação normal** (posição >1 dia): 15% sobre o ganho líquido\n- **Day trade**: 20% sobre o ganho líquido\n\nHá também IRRF (\"dedo-duro\"): 0,005% sobre o ajuste (operação normal) ou 1% sobre o ganho (day trade), compensável com o IR devido no mês ou em meses seguintes até dezembro do mesmo ano-calendário.\n\nBase legal citada: Lei 11.033/2004, art. 2º; IN RFB 1.585/2015.\n\nAtenção: essa é uma explicação de regra geral, não uma apuração fiscal do seu caso. Não tenho seus dados de operações (datas, ajustes, contratos), então não posso calcular imposto devido. Se quiser, informe as operações do mês para simulação — lembrando que o motor deste sistema tem limitação: usa preço de abertura/fechamento como aproximação, não o ajuste diário real (D+1).",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3130,
+    "output_tokens": 451,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.01077,
+  "seconds": 6.275064699992072,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "fe7ccb073d2daf1dde2153ca9570bcdc15a4789b71d25bb282d9aa3e036eb4fd"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T33_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "**Retenção na fonte: 17,5%**\n\nTrata-se de remuneração de doador (emprestador) pessoa física residente em operação de **empréstimo de ativos** — não é venda de ações, e sim rendimento sujeito a tributação exclusiva na fonte, conforme regras de renda fixa por prazo (fonte: evidência \"emprestimo\", Lei 15.265/2025, arts. 18 e 19).\n\nComo o prazo é de **361 dias**, enquadra-se na faixa \"de 361 a 720 dias\", com alíquota de **17,5%** sobre o rendimento bruto de R$ 1.000.\n\n**Cálculo:**\n- Rendimento bruto: R$ 1.000\n- Alíquota: 17,5%\n- IR retido: **R$ 175,00**\n\n**Observações importantes:**\n- Essa tributação é **exclusiva na fonte** — não há DARF mensal adicional a recolher pelo doador sobre essa remuneração.\n- Não se confunde com a isenção de R$ 20.000/mês em vendas de ações (evidência \"acoes_isencao\"), pois aqui não há venda, apenas remuneração pelo empréstimo do ativo.\n- Não tenho evidência sobre quem é o responsável pela retenção (tomador, corretora ou instituição intermediária) — se precisar dessa informação, recomendo consultar diretamente o texto legal ou sua instituição financeira.\n\nEste é um cálculo educacional baseado nas evidências fornecidas, não uma apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1050,
+    "output_tokens": 529,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.00739,
+  "seconds": 5.9584792999667116,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "1fe1df28d57ac1321be4b360b62c1b598f39efc291334a6669f7ab3f80db728b"
+}

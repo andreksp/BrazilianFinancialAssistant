@@ -1,0 +1,24 @@
+{
+  "key": "T07_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise: BDR com Lucro em Operação Comum\n\n## Resposta Direta\n**Não há isenção de R$ 20 mil para BDR.**\n\n## Evidência\nConforme fonte B3 (ID: \"bdr\", 12/09/2026):\n> \"BDR não possui a isenção de vendas de R$ 20 mil das ações à vista. O limite de vendas não transforma lucro de BDR em isento.\"\n\n## Sua Situação\n- **Venda**: R$ 9 mil (BDR)\n- **Regime**: Operação comum\n- **Alíquota aplicável**: 15% sobre lucro líquido\n- **Isenção**: Não se aplica\n\n## Pontos Críticos\n1. A isenção de R$ 20 mil existe apenas para **ações à vista**, não para BDR\n2. O ganho em BDR segue tributação normal (15% comum / 20% day trade)\n3. Rendimentos distribuídos por BDR são distintos do ganho na venda do certificado\n\n## Próximos Passos\nCalcule o **lucro líquido** (preço venda − preço custo − despesas) e aplique 15% de IRRF, com ajuste na declaração se houver diferença.\n\n**Limite de evidência**: Confirmação do lucro específico não fornecida.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 826,
+    "output_tokens": 357,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002611,
+  "seconds": 4.078380300023127,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "7d88196747477d41681448ec4b17c7e0dc888ebc6b91fcd1f1ba0b46c20681eb"
+}

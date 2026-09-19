@@ -1,0 +1,24 @@
+{
+  "key": "D07_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "## Margem de Garantia — Conceito\n\n**Limite da evidência fornecida:**  \nAs evidências não definem \"margem de garantia\" diretamente. Mencionam que a B3 atua como **contraparte central** em operações de empréstimo de ativos (id: b3_papel), infraestrutura necessária para garantir cumprimento de contratos, mas não detalham o mecanismo.\n\n---\n\n## O que posso orientar\n\n**Margem de garantia** é tipicamente o valor depositado pelo participante como proteção contra inadimplência em operações alavancadas ou empréstimos de ativos. Não é tributável por si — é depósito caução.\n\n**Tributação relevante:**  \n- **Empréstimo de ativos** (Lei 15.265/2025, arts. 18–19): a remuneração do emprestador residente é tributada na fonte conforme prazo (15%–22,5%)\n- **Custos operacionais** (tarifas B3, corretora) reduzem o rendimento bruto, mas não são impostos\n\n---\n\n## Esclareça\n\n1. **Contexto da margem**: é em operação de empréstimo de ativos, day trade ou outro?  \n2. **Tipo de ativo** emprestado ou negociado?  \n3. **Existe remuneração** associada?\n\nSem isso, não posso vincular tributação específica.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 805,
+    "output_tokens": 364,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002625,
+  "seconds": 4.525966099987272,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "5db3f8e8bc704cc30ccf51f19bd7b83fd8e82c861d015eb0ac25f1818d0bda65"
+}

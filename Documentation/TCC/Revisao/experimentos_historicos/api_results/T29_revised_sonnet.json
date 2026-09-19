@@ -1,0 +1,27 @@
+{
+  "key": "T29_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, o **nocional** não é o dinheiro recebido no encerramento.\n\n**Nocional** é o valor de referência do contrato — no caso do WDO citado, corresponde a USD 10.000 por contrato (o tamanho contratual usado como base de cálculo), e não um valor efetivamente movimentado ou recebido [ID: wdo].\n\nO que você **recebe (ou paga)** no encerramento — ou diariamente, via ajuste diário — é o **resultado financeiro**, calculado pela variação de cotações multiplicada pelo fator do contrato (no exemplo, diferença de pontos × R$ 10 × número de contratos, invertendo o sinal para posição vendida) [ID: wdo].\n\nOu seja:\n- **Nocional** = valor de referência/exposição do contrato (não circula financeiramente em si).\n- **Resultado do contrato** = o que efetivamente movimenta a conta (ajustes diários e/ou liquidação final).\n\nA evidência fornecida é específica ao WDO e menciona que \"isso não substitui os ajustes diários\" — ou seja, há mecânica adicional (ajuste diário) não detalhada aqui.\n\nSe sua dúvida envolver **tributação** desse resultado (ganho/perda em operações de day trade ou não, alíquotas, IRRF), preciso de mais contexto sobre o tipo de operação para orientar com base normativa específica.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1000,
+    "output_tokens": 478,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.00678,
+  "seconds": 6.621718299982604,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ce5796e34647d8a5c8059e933e3e6fa473793fdcfaa2c6eb8a8037df923a66c5"
+}

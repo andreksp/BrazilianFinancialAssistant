@@ -1,0 +1,27 @@
+{
+  "key": "T10_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"e64833ee00978eec\",\"relevancia\":0,\"motivo\":\"Afirma que a isenção de R$20 mil se aplica a BDRs, contradizendo o fato esperado\"},{\"id\":\"4e69fb3f132e9ec3\",\"relevancia\":1,\"motivo\":\"Explica a isenção de R$20 mil para ações; contexto útil, mas não trata de BDR\"},{\"id\":\"290b3fbba3faa9f8\",\"relevancia\":0,\"motivo\":\"Trata de opções, sem relação com BDR\"},{\"id\":\"bdr\",\"relevancia\":2,\"motivo\":\"Responde diretamente: BDR não tem a isenção de R$20 mil\"},{\"id\":\"cripto_exterior\",\"relevancia\":0,\"motivo\":\"Ativos no exterior/cripto, fora do núcleo da pergunta\"},{\"id\":\"futuros\",\"relevancia\":0,\"motivo\":\"Regras de futuros, não responde sobre BDR\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Nega corretamente a isenção e cita alíquotas 15%/20% conforme o trecho sobre BDR\"},{\"id\":\"B\",\"correcao\":0,\"fundamentacao\":0,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Afirma que BDR goza da isenção de R$20 mil, contrariando a regra correta\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Resposta correta e sustentada no trecho específico de BDR, com distinção adequada entre venda e rendimentos\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5525,
+    "output_tokens": 930,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 323
+    }
+  },
+  "usd": 0.050875,
+  "seconds": 12.031693700002506,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "f60941f2c142e56d247fa374bf4af633070f29d2599f9a394a72fc5fb45ef8b8"
+}

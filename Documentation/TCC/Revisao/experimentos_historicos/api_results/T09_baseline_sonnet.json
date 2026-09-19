@@ -1,0 +1,27 @@
+{
+  "key": "T09_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "A alíquota de day trade com BDRs é de **20% sobre o ganho líquido** apurado na operação (compra e venda no mesmo dia) [e64833ee00978eec].\n\nComplementos importantes:\n- Não há isenção de R$ 20.000 para day trade (essa isenção só vale para swing trade, considerando o total de vendas do mês) [e64833ee00978eec].\n- O IRRF (imposto retido na fonte, antecipação do devido) é de **1% sobre o ganho** em day trade, dedutível do IR apurado [e64833ee00978eec].\n- O cálculo do ganho usa o método de preço médio ponderado, igual ao de ações, e o valor em reais do BDR já embute a variação cambial implícita [e64833ee00978eec].\n\nDistinções relevantes:\n- Isso se refere ao **ganho de capital na venda** do BDR (regime de renda variável), não a rendimentos como dividendos — dividendos de BDR têm regras próprias, com retenção no exterior e possível crédito na declaração [e64833ee00978eec].\n- Base normativa citada na evidência: Instrução Normativa RFB 1.585/2015 e Resolução CVM 3/2020 [e64833ee00978eec].\n\nSe seu caso envolver período específico, tipo de operação (venda x rendimento) ou compensação de prejuízos, informe para uma resposta mais precisa. Esta orientação é educacional, não constitui apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2870,
+    "output_tokens": 506,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.0108,
+  "seconds": 6.902291999955196,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "9e74566b99c9f8669ee2c6780102d61665e74dc4cca591574698dc0d516937af"
+}

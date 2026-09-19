@@ -1,0 +1,38 @@
+INFO:     Started server process [23160]
+INFO:     Waiting for application startup.
+INFO:app.main:Starting Brazilian Financial Assistant backend...
+INFO:app.main:Database tables ready.
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+ERROR:chromadb.telemetry.product.posthog:Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+ERROR:chromadb.telemetry.product.posthog:Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62281 - "GET /docs HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: PETR4 venda
+INFO:app.api.trades:Trade processed: PETR4 — IR devido: R$0.00
+INFO:     127.0.0.1:62294 - "POST /api/trades/process?user_id=demo HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: PETR4 venda
+INFO:app.api.trades:Trade processed: PETR4 — IR devido: R$74.85
+INFO:     127.0.0.1:62295 - "POST /api/trades/process?user_id=demo2 HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: BTC venda
+INFO:     127.0.0.1:62306 - "POST /api/trades/process?user_id=demo3 HTTP/1.1" 400 Bad Request
+INFO:app.api.trades:Processing trade: WINV26 venda
+INFO:app.api.trades:Trade processed: WINV26 — IR devido: R$14.62
+INFO:     127.0.0.1:62307 - "POST /api/trades/process?user_id=demo4 HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: WDOU26 venda
+INFO:app.api.trades:Trade processed: WDOU26 — IR devido: R$29.54
+INFO:     127.0.0.1:62308 - "POST /api/trades/process?user_id=demo5 HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: BTC venda
+INFO:app.api.trades:Trade processed: BTC — IR devido: R$750.00
+INFO:     127.0.0.1:62325 - "POST /api/trades/process?user_id=demo3 HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: BTC venda
+INFO:     127.0.0.1:62326 - "POST /api/trades/process?user_id=demo3b HTTP/1.1" 400 Bad Request
+INFO:app.api.trades:Processing trade: BTC venda
+INFO:app.api.trades:Trade processed: BTC — IR devido: R$0.00
+INFO:     127.0.0.1:62342 - "POST /api/trades/process?user_id=demo3b HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: VALE3 venda
+INFO:app.api.trades:Trade processed: VALE3 — IR devido: R$0.00
+INFO:     127.0.0.1:62343 - "POST /api/trades/process?user_id=demo6 HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: HGLG11 venda
+INFO:app.api.trades:Trade processed: HGLG11 — IR devido: R$200.00
+INFO:     127.0.0.1:62356 - "POST /api/trades/process?user_id=demo7 HTTP/1.1" 200 OK

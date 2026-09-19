@@ -1,0 +1,27 @@
+{
+  "key": "T04_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, day trade não tem direito à isenção dos R$ 20.000 em vendas mensais.\n\nSegundo evidência **acoes_isencao**, esse limite de isenção aplica-se apenas a operações **comuns** (à vista, fora de day trade) de ações; o texto é explícito: \"Não se aplica a day trade, opções, FII, ETF ou BDR.\"\n\nPara day trade, conforme **acoes_taxa**, incide alíquota de **20% sobre o ganho líquido**, independentemente do valor das vendas. Ou seja, mesmo com vendas de R$ 8 mil (abaixo do teto de R$ 20 mil), a isenção não se aplica por se tratar de day trade — o critério de exclusão é o tipo de operação, não o volume.\n\nImportante distinguir:\n- **Venda** (R$ 8 mil) ≠ **rendimento/lucro** tributável;\n- O regime de **day trade** já afasta a isenção, tornando irrelevante o valor das vendas para esse fim;\n- Há retenção de IRRF na fonte como antecipação, mas a apuração e recolhimento mensal (DARF) do lucro líquido a 20% são devidos pelo próprio contribuinte.\n\nSe precisar, posso detalhar como calcular o ganho líquido mensal com base nas notas de corretagem.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 965,
+    "output_tokens": 457,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.0065,
+  "seconds": 6.107534599956125,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "01ab60e33288d5ef9d459f80e214b8b5dde47b0aecb975c64f3db8e33cf28fda"
+}

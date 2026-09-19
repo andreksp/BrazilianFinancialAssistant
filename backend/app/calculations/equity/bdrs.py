@@ -1,8 +1,8 @@
 """
 Calculation module for BDRs (Brazilian Depositary Receipts) - Phase 1.
 
-Tax rules are identical to Ações (stocks):
-- Swing trade: 15% IR (with R$20,000/month exemption), 0,005% IRRF
+BDRs do not qualify for the R$20,000 stock-sales exemption:
+- Swing trade: 15% IR (no monthly exemption), 0,005% IRRF
 - Day trade: 20% IR (no exemption), 1% IRRF
 - Average price: Weighted moving average
 
@@ -25,8 +25,8 @@ class BDRCalculator(AcoesCalculator):
     """
     Calculator for BDR trades.
 
-    Tax rules are identical to Ações — only the asset type differs.
-    Inherits all rate constants and helper methods from AcoesCalculator.
+    Shares rate and gain helpers with stocks, but not their exemption.
+    Calculates a single operation; monthly loss compensation is out of scope.
     """
 
     def calculate_result(
@@ -36,7 +36,9 @@ class BDRCalculator(AcoesCalculator):
         assert trade.tipo_operacao.value == "venda", "This calculator only handles sales"
 
         valor_financeiro = trade.quantidade * trade.preco_unitario
-        pm = average_price or trade.preco_unitario
+        if average_price is None:
+            raise ValueError("Informe o custo médio de aquisição; não é seguro presumir ganho zero.")
+        pm = average_price
         ganho_bruto = self.calculate_gain_loss(trade.quantidade, pm, trade.preco_unitario)
 
         is_day_trade = self.is_day_trade(trade)
@@ -45,14 +47,15 @@ class BDRCalculator(AcoesCalculator):
         fees = calculate_b3_fees(valor_financeiro, AssetType.BDR, trade)
 
         aliquota = self.get_tax_rate(is_day_trade)
+        # B3, "Como declarar BDRs no Imposto de Renda 2026": no R$20k
+        # exemption, irrespective of monthly sales. Monthly totals are not
+        # required for this isolated-operation calculation.
         isenção_aplicada = False
-
-        # Exemption R$20,000 tracked at monthly portfolio level, not per-trade
-        ir_devido = max(0, ganho_bruto) * aliquota
-        irrf_retido = valor_financeiro * self.get_irrf_rate(is_day_trade)
+        ir_devido = round(max(0, ganho_bruto - fees.total) * aliquota, 2)
+        irrf_retido = trade.irrf_informado or 0.0
 
         ganho_liquido = ganho_bruto - fees.total
-        valor_liquido = valor_financeiro - fees.total - ir_devido - irrf_retido
+        valor_liquido = valor_financeiro - fees.total - max(ir_devido, irrf_retido)
 
         return TaxCalculationResult(
             ativo=trade.ativo,

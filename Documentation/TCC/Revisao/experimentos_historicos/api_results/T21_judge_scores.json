@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 1,
+      "motivo": "Dá alíquota de 20% em day trade, mas para ações, não opções."
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 2,
+      "motivo": "Trata diretamente de opções: day trade 20% e ausência de isenção."
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "BDR, não responde à pergunta sobre opções."
+    },
+    {
+      "id": "acoes_taxa",
+      "relevancia": 1,
+      "motivo": "Confirma 20% em day trade e IRRF como antecipação, mas restrito a ações."
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 1,
+      "motivo": "Indica que isenção não alcança day trade/opções, sem fornecer a alíquota."
+    },
+    {
+      "id": "bdr",
+      "relevancia": 0,
+      "motivo": "Regras de BDR, irrelevante para opções."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "R$200 (20% de R$1.000) correto e ancorado nas evidências citadas, com ressalva explícita.",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Cálculo correto de R$200; menção ao IRRF de 1% e prazo de DARF são corretos e não contradizem o contexto.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "IR devido R$200 correto; dedução do IRRF de 1% (saldo R$190) é coerente com o trecho de opções.",
+      "configuration": "baseline_sonnet"
+    }
+  ],
+  "case_id": "T21",
+  "repeat": false
+}

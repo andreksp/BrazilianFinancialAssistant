@@ -1,0 +1,27 @@
+{
+  "key": "T02_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base na evidência (acoes_isencao), o limite de isenção considera o **total de vendas de ações comuns no mês, somando todas as corretoras**, e não cada corretora isoladamente.\n\nNo seu caso: R$ 12 mil + R$ 12 mil = **R$ 24 mil em vendas no mês**, o que **ultrapassa o limite de R$ 20.000**. Portanto, você **não estaria isento** — o ganho de capital apurado nessas operações seria tributável.\n\nPontos importantes:\n- O limite incide sobre o **valor das vendas**, não sobre o lucro (acoes_isencao).\n- Essa regra vale apenas para **operações comuns com ações** (não day trade, opções, FII, ETF ou BDR).\n- Preciso saber se houve **lucro** nessas vendas e qual o **custo de aquisição**, pois isso define o valor do imposto devido (alíquota de 15% para operações comuns, conforme evidência de opções, que também menciona esse percentual para ações comuns).\n\nIsso é orientação geral, não substitui apuração fiscal definitiva. Recomendo confirmar os valores com um contador antes de declarar.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1007,
+    "output_tokens": 402,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006034,
+  "seconds": 5.406357900006697,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c001723b89005791069238a14c1ac2e31fd7d527e135a8c86aaf7c065cc138db"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T35_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base na evidência **[emprestimo]**: não, não exige outro DARF mensal.\n\n**Distinção de regime e período:**\nA remuneração do doador (emprestador) PF residente, no empréstimo de ativos regido pela Lei 15.265/2025 (arts. 18 e 19), é **tributada exclusivamente na fonte**, seguindo alíquotas regressivas de renda fixa conforme o prazo da operação:\n- Até 180 dias: 22,5%\n- 181 a 360 dias: 20%\n- 361 a 720 dias: 17,5%\n- Acima de 720 dias: 15%\n\nPor ser tributação exclusiva na fonte, o imposto já retido **encerra a obrigação tributária sobre essa remuneração especificamente** — não há apuração mensal adicional nem DARF complementar para esse rendimento.\n\n**Distinção de evento (venda vs. rendimento):**\nSegundo **[emprestimo_proventos]**, o empréstimo de ativos não configura venda: há transferência temporária de titularidade com obrigação contratual de devolução. A remuneração paga ao doador é evento distinto do reembolso de proventos (dividendos, juros etc.) eventualmente distribuídos durante o empréstimo, que segue disciplina própria (arts. 20 e seguintes).\n\n**Limite da resposta:** As evidências não tratam da tributação do tomador do empréstimo, nem de venda a descoberto ou custos operacionais. Se sua dúvida envolver esses pontos, ou dados concretos (prazo exato, valor do rendimento), forneça-os para orientação mais precisa.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1004,
+    "output_tokens": 557,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.007578,
+  "seconds": 6.669952899974305,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "47df1544e06dc9665e3a8f70cbd7f5db3661146d454ca4274cc75a5e27fb2b21"
+}

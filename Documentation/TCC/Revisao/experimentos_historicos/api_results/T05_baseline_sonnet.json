@@ -1,0 +1,27 @@
+{
+  "key": "T05_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Sim, é possível. Segundo a evidência [4e69fb3f132e9ec3], \"prejuízos de day trade compensam ganhos futuros de day trade\" (mesma categoria/regime), sem compensação cruzada com swing trade.\n\nNa prática, para apurar setembro:\n- Ganho líquido de day trade em setembro = resultado positivo das operações day trade do mês.\n- Você abate desse ganho o prejuízo de day trade de agosto (não compensado), reduzindo a base de cálculo do IR de 20% sobre day trade.\n- O IR devido em setembro incide sobre o saldo líquido (ganho de setembro − prejuízo acumulado de agosto), e o IRRF de 1% retido no mês serve como dedução do imposto apurado.\n\nImportante:\n- Isso vale apenas para prejuízo/ganho dentro da mesma categoria (day trade com day trade), conforme a fonte.\n- Não há indicação, na evidência apresentada, de prazo de prescrição para o carregamento do prejuízo — se precisar dessa informação, cite fonte específica.\n- Esta é uma explicação normativa geral, não uma apuração fiscal definitiva do seu caso; para apuração real, confirme valores e histórico completo com a apuração mensal na plataforma/corretora ou orientação profissional.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2882,
+    "output_tokens": 454,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010304,
+  "seconds": 6.950810400012415,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "1bae246f83dcc69c10d13c61f6c83298cdb5dad0f31c0d1f23812257a5d2a7da"
+}

@@ -24,9 +24,23 @@ from app.models.trade import (
     FeesBreakdown,
 )
 from app.calculations.base import BaseCalculator
-from app.calculations.fees.b3_fees import calculate_b3_fees
 
 _SUPPORTED = (AssetType.FUTURO_DOLAR, AssetType.FUTURO_INDICE)
+
+
+def _fees_from_custos(custos_operacao: float) -> FeesBreakdown:
+    """
+    Custos reais informados pelo usuário (nota de corretagem) substituem a
+    estimativa B3 — ver TradeInput.custos_operacao. Todo o valor é registrado
+    em `corretagem` apenas para preencher o breakdown; o total é o que importa.
+    """
+    return FeesBreakdown(
+        taxa_liquidacao=0.0,
+        taxa_registro=0.0,
+        emolumentos=0.0,
+        corretagem=custos_operacao,
+        iss_sobre_corretagem=0.0,
+    )
 
 
 class FuturosCalculator(BaseCalculator):
@@ -55,7 +69,7 @@ class FuturosCalculator(BaseCalculator):
 
     def is_day_trade(self, trade: TradeInput) -> bool:
         """Same MVP limitation as AcoesCalculator: no automatic same-day detection yet."""
-        return False
+        return trade.classificacao == TradeOperationType.DAY_TRADE
 
     def calculate_result(
         self, trade: TradeInput, average_price: Optional[float] = None
@@ -63,22 +77,30 @@ class FuturosCalculator(BaseCalculator):
         assert trade.tipo_ativo in _SUPPORTED, "This calculator is for Futuros only"
         assert trade.tipo_operacao.value == "venda", "This calculator only handles position closes"
 
-        valor_financeiro = trade.quantidade * trade.preco_unitario
-        pm = average_price or trade.preco_unitario
-        ganho_bruto = self.calculate_gain_loss(trade.quantidade, pm, trade.preco_unitario)
+        prefix = 'WDO' if trade.tipo_ativo == AssetType.FUTURO_DOLAR else 'WIN'
+        if not trade.ativo.upper().startswith(prefix):
+            raise ValueError("Somente minicontratos WIN e WDO são suportados nesta simulação.")
+        if average_price is None:
+            raise ValueError("Informe a cotação de abertura da posição comprada.")
+        if trade.custos_operacao is None or trade.irrf_informado is None:
+            raise ValueError("Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.")
+        multiplier = 10.0 if prefix == 'WDO' else 0.20
+        valor_financeiro = trade.quantidade * trade.preco_unitario * multiplier
+        pm = average_price
+        ganho_bruto = self.calculate_gain_loss(trade.quantidade, pm, trade.preco_unitario) * multiplier
 
         is_day_trade = self.is_day_trade(trade)
         tipo_operacao = TradeOperationType.DAY_TRADE if is_day_trade else TradeOperationType.SWING
 
-        fees = calculate_b3_fees(valor_financeiro, trade.tipo_ativo, trade)
+        fees = _fees_from_custos(trade.custos_operacao)
 
         aliquota = self.get_tax_rate(is_day_trade)
         # Futuros não têm isenção de R$20.000 — sempre tributado
-        ir_devido = max(0, ganho_bruto) * aliquota
-        irrf_retido = valor_financeiro * self.get_irrf_rate(is_day_trade)
+        ir_devido = round(max(0, ganho_bruto - fees.total) * aliquota, 2)
+        irrf_retido = trade.irrf_informado
 
         ganho_liquido = ganho_bruto - fees.total
-        valor_liquido = valor_financeiro - fees.total - ir_devido - irrf_retido
+        valor_liquido = ganho_liquido - max(ir_devido, irrf_retido)
 
         return TaxCalculationResult(
             ativo=trade.ativo,
@@ -96,7 +118,7 @@ class FuturosCalculator(BaseCalculator):
             ganho_prejuizo_liquido=ganho_liquido,
             valor_liquido=valor_liquido,
             tipo_operacao_classificacao=tipo_operacao,
-            mensagem=self._generate_message(trade, ganho_bruto, ir_devido, is_day_trade),
+            mensagem=self._generate_message(trade, ganho_bruto, ir_devido, is_day_trade) + " Simulação de posição comprada encerrada, sem ajustes diários intermediários ou compensação mensal; valor financeiro é nocional, não recebimento.",
         )
 
     def _generate_message(

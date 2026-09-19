@@ -1,0 +1,27 @@
+{
+  "key": "T11_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não são o mesmo fato gerador — são eventos distintos:\n\n- **Rendimento distribuído** (proventos/dividendos recebidos pelo BDR): trata-se de rendimento decorrente da posse do ativo, com regras próprias de tributação que dependem do que o certificado representa (ação estrangeira, ETF, etc.) e da fonte pagadora.\n- **Venda do certificado**: é ganho de capital, apurado pela diferença entre valor de venda e custo de aquisição, sujeito a regras específicas de ganho de capital.\n\nNenhuma das evidências fornecidas trata especificamente de BDR — os documentos disponíveis abordam FII (rendimento vs. venda de cotas), infraestrutura da B3 para empréstimo de ativos, e reembolso de proventos em empréstimo de ativos. Por analogia ao caso de FII (fii_rendimento), fica claro que rendimento e venda são fatos tributários distintos, mas as regras específicas de BDR (alíquotas, retenção, ganho de capital) não constam nas evidências.\n\n**Limite**: não tenho evidência normativa específica sobre tributação de BDR. Preciso de fonte com as regras aplicáveis a rendimentos e ganho de capital em BDR para responder com precisão. Recomendo consultar a legislação vigente ou um contador antes de qualquer decisão.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 960,
+    "output_tokens": 473,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.00665,
+  "seconds": 6.353282600000966,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b83d952f7b700c79d3f7005297a384975a73b7713ddace4608c47773c9277fd7"
+}

@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "FII, sem relação com remuneração de doador em empréstimo de ações"
+    },
+    {
+      "id": "10d60f0a6cead3e1",
+      "relevancia": 0,
+      "motivo": "Taxas B3; pergunta exclui taxas e não trata de IRRF do aluguel"
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 2,
+      "motivo": "Traz tabela regressiva: até 180 dias 22,5% sobre remuneração do doador"
+    },
+    {
+      "id": "futuros",
+      "relevancia": 0,
+      "motivo": "Futuros, irrelevante ao caso"
+    },
+    {
+      "id": "cripto_exterior",
+      "relevancia": 0,
+      "motivo": "Ativos no exterior, irrelevante"
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 0,
+      "motivo": "Isenção de ações à vista não se aplica ao aluguel BTC"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "22,5% sobre R$1.000 = R$225, líquido R$775, com base no trecho correto",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 0,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Pergunta é respondível (BTC, faixa até 180 dias); abstenção injustificada, embora coerente com seu contexto limitado",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 0,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Não responde ao cálculo possível; pede esclarecimentos sem entregar o valor devido",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T31",
+  "repeat": false
+}

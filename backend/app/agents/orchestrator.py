@@ -26,6 +26,7 @@ from app.agents.fii_agent import FIIAgent
 from app.agents.opcoes_agent import OpcoesAgent
 from app.agents.derivativos_agent import DerivativosAgent
 from app.agents.emprestimo_agent import EmprestimoAgent
+from app.agents.cripto_agent import CriptoAgent
 from app.vector_db.chroma_client import get_chroma_client
 from app.storage.repository import save_chat
 
@@ -41,6 +42,7 @@ _AGENTS = {
     "futuro_dolar": DerivativosAgent(),
     "futuro_indice": DerivativosAgent(),
     "emprestimo_acoes": EmprestimoAgent(),
+    "cripto": CriptoAgent(),
 }
 
 _NO_LLM_RESPONSE = (

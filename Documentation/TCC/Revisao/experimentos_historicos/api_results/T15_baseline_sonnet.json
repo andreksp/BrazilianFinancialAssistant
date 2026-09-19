@@ -1,0 +1,27 @@
+{
+  "key": "T15_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, são regimes diferentes:\n\n**Rendimento mensal (aluguéis/dividendos distribuídos pelo FII):**\n- Isento de IR para pessoa física, desde que o FII seja negociado em bolsa, tenha ao menos 50 cotistas e o investidor detenha menos de 10% das cotas (fonte: ID 7bb8b88a77231872, base legal Lei 9.779/1999).\n\n**Ganho de capital na venda das cotas:**\n- Tributado a 20% sobre o ganho líquido, **sempre** — não há isenção de R$ 20.000/mês como ocorre em ações. Essa alíquota vale tanto para operações normais quanto day trade (mesma fonte, base legal Lei 11.033/2004).\n- IRRF na fonte: 0,005% (swing trade) ou 1% (day trade) sobre a operação, dedutível do IR devido.\n- Prejuízos em FII só compensam ganhos futuros em FII, não em outros ativos.\n\n**Resumo:** rendimento distribuído ≠ ganho na venda. O primeiro é isento (regime de distribuição periódica); o segundo é sempre tributado a 20% (regime de ganho de capital), independentemente do valor da venda no mês.\n\n⚠️ Isso é orientação educacional geral, não apuração fiscal definitiva. Para seu caso concreto, informe valores, datas e se cumpre os requisitos de isenção (nº de cotistas, % de cotas), ou consulte um contador.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3392,
+    "output_tokens": 517,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.011954,
+  "seconds": 6.940382900007535,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "965c5fab5e1f1177d593c169db72b7dfb6a9cd574ec27c21b1c492abcca03434"
+}

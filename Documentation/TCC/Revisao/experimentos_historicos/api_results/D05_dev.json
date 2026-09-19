@@ -1,0 +1,24 @@
+{
+  "key": "D05_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Prêmio de Opção\n\nCom base na evidência fornecida (ID: \"opcoes\"), **prêmio de opção é o valor pago ou recebido** na negociação do contrato de opção em bolsa, que **integra obrigatoriamente a apuração de ganho ou perda**.\n\n## Pontos essenciais:\n\n**Tratamento tributário:**\n- Não segue a isenção de R$ 20 mil válida para vendas de ações\n- Alícota: 15% (operação comum) ou 20% (day trade)\n- O prêmio não é isolado; faz parte da apuração conforme o evento (negociação, exercício ou expiração)\n\n**Relevância na apuração:**\n- Depende da posição (titular ou lançador) e do desfecho contratual\n- Não se pode tratar toda operação de opção como venda de ação comum\n\n**Limitação:** A evidência não detalha a contabilização específica do prêmio em cada cenário (ex: se perdido, exercido ou expirado). Para apuração de um caso concreto, especifique:\n- Qual posição (compra ou venda da opção)?\n- Qual desfecho (exerceu, expirou, revendeu)?\n- Data e valores?\n\n**Fonte:** Normas da Receita Federal (https://normas.receita.fazenda.gov.br/sijut2consulta/)",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 776,
+    "output_tokens": 368,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002616,
+  "seconds": 4.075703900016379,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "80280e7d9bf17bf669a7cf3a6a238a6a57404db681eaa2c650dd00dd4e089a59"
+}

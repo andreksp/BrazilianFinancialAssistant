@@ -1,0 +1,27 @@
+{
+  "key": "T12_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base na evidência \"bdr\": BDR não tem a isenção de R$ 20 mil das ações à vista, mesmo com vendas de R$ 5 mil no mês. Trata-se de ganho líquido em operação comum, tributado à alíquota de 15%.\n\n**IR devido = 15% × R$ 100 = R$ 15,00** (antes de deduzir IRRF, se houver).\n\nObservações importantes:\n- Isso é **ganho de capital em venda de ativo (renda variável)**, apurado mensalmente (DARF código 6015), não confundir com rendimento distribuído pelo BDR (dividendos/JCP), que tem tratamento tributário próprio e não está coberto por esta evidência.\n- O valor de R$ 15 é o imposto **antes do IRRF** (retenção na fonte, geralmente 0,005% sobre o valor da venda em operações comuns), que deve ser abatido do total apurado no mês, conforme informe de rendimentos da corretora.\n- Não foram informadas perdas a compensar nem outros negócios no mês — presumo que R$ 100 já é o lucro líquido final apurado.\n\nSe houver rendimentos distribuídos pelo BDR ou outras operações no período, a apuração muda e preciso de mais dados para orientar corretamente.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1028,
+    "output_tokens": 441,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006466,
+  "seconds": 6.408376400009729,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ea0c604f46458e036077cfbd94278149295eab1df353fb10715cf1fc13872897"
+}

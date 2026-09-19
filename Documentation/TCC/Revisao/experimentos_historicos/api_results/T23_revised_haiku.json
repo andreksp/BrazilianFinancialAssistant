@@ -1,0 +1,24 @@
+{
+  "key": "T23_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta sobre Opção Expirada\n\n**Não, ticker sozinho é insuficiente.**\n\nPara apurar o imposto sobre opção que expirou, você precisa de:\n\n1. **Tipo de posição:** titular (comprador) ou lançador (vendedor)\n2. **Prêmio pago/recebido:** valor da operação de abertura\n3. **Regime da operação:** normal (15%) ou day trade (20%)\n4. **Data de expiração:** confirma se houve ganho/perda\n\n**Por quê:** Segundo a evidência ID \"opcoes\", operações com opções não são tratadas como venda simples de ação. O prêmio integra a apuração conforme o evento (exercício, negociação ou expiração). Não há isenção de R$ 20 mil para ganho com opções.\n\n**Falta informar:**\n- Posição (titular ou lançador)?\n- Valor do prêmio?\n- Operação normal ou day trade?\n- Qual opção (ticker + mês/strike)?\n\nSem esses dados, não posso calcular. Consulte seu extrato na corretora para prêmio e classifique a operação conforme realizado.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 802,
+    "output_tokens": 311,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002357,
+  "seconds": 4.114275999949314,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "a1fa647415781240dff1f51cac0723ed69512c81fc11d5420d9a950a2fc67ebb"
+}

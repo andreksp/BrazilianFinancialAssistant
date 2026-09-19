@@ -1,0 +1,27 @@
+{
+  "key": "T36_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. São dois eventos e regimes distintos, conforme a evidência [06a4e857780aec7b]:\n\n**1. Remuneração do doador (taxa de aluguel/BTC)**\n- Rendimento de renda fixa por equiparação, tributado pela **tabela regressiva** (22,5% a 15%, conforme prazo do contrato)\n- IR retido na fonte pela B3/CBLC, de forma **exclusiva/definitiva**\n- Não compõe apuração mensal de renda variável, não gera DARF\n- Entra na Declaração de Ajuste Anual em \"Rendimentos Sujeitos a Tributação Exclusiva/Definitiva\"\n\n**2. Venda a descoberto do tomador**\n- Operação **separada**: quando o tomador vende as ações emprestadas e depois recompra para devolver, essa venda/recompra segue as **regras normais de ações** (15% swing trade / 20% day trade, com isenção de R$20.000/mês se aplicável no swing trade)\n- Apuração mensal própria, dentro da categoria renda variável\n\n**Resumo:** o motor de cálculo da remuneração do doador (tabela regressiva) **não** calcula nem alimenta a apuração da venda a descoberto do tomador — são bases de cálculo, alíquotas e regimes de tributação diferentes, tratados independentemente.\n\nFonte: evidência 06a4e857780aec7b (base legal: Lei 13.043/2014; IN RFB 1.585/2015). Se precisar simular valores específicos, informe prazo do contrato e dados da operação de venda/recompra.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3128,
+    "output_tokens": 549,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.011746,
+  "seconds": 7.357779700018,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "aba25bb3f2ce1f9c7a6597752c701028a2872081f428ac6d2676e5e188182b17"
+}

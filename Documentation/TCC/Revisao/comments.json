@@ -1,0 +1,931 @@
+[
+  {
+    "id": "43",
+    "comment": "Inserir um texto introdutório sobre o que será apresentado na seção.",
+    "anchors": [
+      "5 AVALIAÇÃO E DISCUSSÃO"
+    ]
+  },
+  {
+    "id": "91",
+    "comment": "Colocar de maneira mais suscinta na sessão de trabalhos futuros.",
+    "anchors": [
+      "11.23 Corpus de benchmark",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "92",
+    "comment": "Um PS aqui é que se possível seria interessante tem ao menos uma coleção, mesmo que pequena, de benchmark para poder avaliar mais objetivamente a sua proposta.",
+    "anchors": [
+      "11.23 Corpus de benchmark",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "47",
+    "comment": "Deixar as limitações para as considerações finais",
+    "anchors": [
+      "5.4 Limitações",
+      "A solução ainda é um protótipo. A classificação de day trade está sinalizada como simplificada no código, a isenção mensal exige consolidação no nível de carteira e a cobertura normativa não contempla todos os instrumentos e exceções. Taxas de negociação e interpretação de normas podem variar ao longo do tempo e conforme produto, corretora e situação do investidor. Também não foi conduzido, nesta versão, estudo com usuários ou avaliação quantitativa de precisão de recuperação em corpus anotado."
+    ]
+  },
+  {
+    "id": "37",
+    "comment": "Essa calculadora foi implementada via tool? é um rota do serviço?",
+    "anchors": [
+      "4.3 Cálculo determinístico"
+    ]
+  },
+  {
+    "id": "102",
+    "comment": "[remover]",
+    "anchors": [
+      "11.33 Interoperabilidade",
+      ""
+    ]
+  },
+  {
+    "id": "44",
+    "comment": "Se houver um repositório onde constem esses testes, colocar aqui.",
+    "anchors": [
+      "Foram definidos cenários representativos para verificar a lógica das calculadoras. Um cenário de venda de ações avalia ganho, custos e imposto; um cenário de BDR verifica o reaproveitamento das regras de renda variável; um cenário de FII verifica a alíquota específica sem o benefício de isenção; e um cenário de opção avalia o uso do prêmio como custo. Os casos são reproduzíveis porque recebem valores explícitos e retornam um detalhamento das parcelas."
+    ]
+  },
+  {
+    "id": "41",
+    "comment": "Seria legal colocar exemplos da interface aqui.",
+    "anchors": [
+      "4.6 Interface e APIs"
+    ]
+  },
+  {
+    "id": "101",
+    "comment": "[remover]",
+    "anchors": [
+      "11.32 Tratamento de incerteza",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "36",
+    "comment": "Aqui eu acho que vale também colocar mais detalhes do tipo: é uma API Rest? Quais são as rotas e para que servem?",
+    "anchors": [
+      "4.2 Backend e modelos de dados"
+    ]
+  },
+  {
+    "id": "49",
+    "comment": "Criar um único capítulo para apresentar todos os resultados, e separar os diferentes tipos de resultados por seção.",
+    "anchors": [
+      "6 SÍNTESE DOS RESULTADOS"
+    ]
+  },
+  {
+    "id": "40",
+    "comment": "Novamente, caso não sejam muitos, seria legal listar as rotas das tools e pra que servem aqui.",
+    "anchors": [
+      "O servidor MCP expõe cinco capacidades: consulta de regras tributárias por tipo de ativo; consulta à estrutura de taxas; exemplos de cálculo; busca textual de trechos regulatórios; e validação de cálculo recebido em JSON. A ferramenta de validação compara alíquota, condição de isenção, imposto devido e imposto retido com regras parametrizadas. Essa capacidade não elimina a necessidade de fonte oficial, mas produz uma trilha clara das regras aplicadas."
+    ]
+  },
+  {
+    "id": "100",
+    "comment": "Colocar de maneira sucinta na sessão de trabalhos futuros.",
+    "anchors": [
+      "11.31 Explicabilidade",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "60",
+    "comment": "Um ponto que chama a atenção ao olhar superficialmente é que não há referências bibliográficas nos trabalhos relacionados.",
+    "anchors": [
+      "9 TRABALHOS RELACIONADOS E POSICIONAMENTO"
+    ]
+  },
+  {
+    "id": "61",
+    "comment": "A ideia aqui é uma breve descrição de um parágrafo de soluções similares a sua. E por similar não precisa ser necessariamente da mesma área de atuação. Pode ser um sistema agêntico com uso de RAG para outra finalidade.  A estrutura básica para a descrição de um trabalho relacionado é:  - O que o trabalho X propõe. O que é usado: LLMs, como é feito o RAG, etc.  - Qual é o principal resultado.",
+    "anchors": [
+      "9 TRABALHOS RELACIONADOS E POSICIONAMENTO"
+    ]
+  },
+  {
+    "id": "62",
+    "comment": "Caso queira manter o capítulo de trabalhos relacionados, mover para antes da proposta.",
+    "anchors": [
+      "9 TRABALHOS RELACIONADOS E POSICIONAMENTO"
+    ]
+  },
+  {
+    "id": "45",
+    "comment": "Aqui é uma seção muito boa para o detalhamento de como foi feita a avaliação.  Por exemplo, como foi mensurado no RAG se os trechos de textos recuperados são válidos? Como foi montada essa base de avaliação para o RAG?",
+    "anchors": [
+      "5.2 Critérios de aceitação"
+    ]
+  },
+  {
+    "id": "105",
+    "comment": "Encaixar esse capítulo na Seção 2.5 (Particularidades do domínio)",
+    "anchors": [
+      "12 PESQUISA SOBRE A B3 E O MERCADO DE RENDA VARIÁVEL"
+    ]
+  },
+  {
+    "id": "106",
+    "comment": "Porém, dá pra colocar tudo na mesma seção (sem subdivisões)",
+    "anchors": [
+      "12 PESQUISA SOBRE A B3 E O MERCADO DE RENDA VARIÁVEL"
+    ]
+  },
+  {
+    "id": "97",
+    "comment": "Como a temática não é engenharia, eu removeria essa parte.",
+    "anchors": [
+      "11.28 Contêineres e implantação",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "50",
+    "comment": "[REMOVER] Esse conteúdo não agrega. Já foi apresentado anteriormente.",
+    "anchors": [
+      "Este trabalho apresentou o desenvolvimento de um assistente inteligente para apoio a consultas tributárias e regulatórias no mercado financeiro brasileiro. A arquitetura reúne RAG, calculadoras determinísticas, persistência, API web e MCP. A opção por separar recuperação, cálculo e explicação torna a solução mais transparente e extensível do que uma abordagem baseada exclusivamente em chat.",
+      "Como trabalhos futuros, propõem-se: ampliar a cobertura para derivativos e empréstimo de ativos; implementar consolidação mensal e classificação robusta de day trade; construir conjunto de testes com especialistas; medir precisão de recuperação e fidelidade das respostas; incorporar autenticação, controle de acesso e trilhas de auditoria; e disponibilizar um processo de atualização versionada das normas oficiais."
+    ]
+  },
+  {
+    "id": "46",
+    "comment": "Apresentar isso na seção de Conclusões ou Considerações finais pois lá você já terá apresentado os resultados e o leitor terá confiança sobre o que você está falando.",
+    "anchors": [
+      "5.3 Resultados observados",
+      "A estrutura implementada demonstra a viabilidade de integrar um fluxo conversacional com cálculo determinístico. A modularidade permite evoluir ativos e regras sem reescrever a camada de interface. O MCP agrega um ponto de integração para validações e consultas que podem ser registradas. A principal contribuição do protótipo é evitar que o LLM seja responsável sozinho pela aritmética e pelo armazenamento das regras."
+    ]
+  },
+  {
+    "id": "104",
+    "comment": "[remover]",
+    "anchors": [
+      "11.35 Síntese das recomendações",
+      ""
+    ]
+  },
+  {
+    "id": "96",
+    "comment": "Colocar de maneira sucinta na sessão de trabalhos futuros.",
+    "anchors": [
+      "11.27 Gestão de configuração",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "51",
+    "comment": "Mover esse conteúdo para o Capítulo 5.",
+    "anchors": [
+      "5.6 Plano de avaliação de recuperação"
+    ]
+  },
+  {
+    "id": "103",
+    "comment": "[remover]",
+    "anchors": [
+      "11.34 Sustentação do produto",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "95",
+    "comment": "Colocar de maneira sucinta na sessão de trabalhos futuros.",
+    "anchors": [
+      "11.26 Observabilidade operacional",
+      ""
+    ]
+  },
+  {
+    "id": "119",
+    "comment": "Essas figuras têm que aparecer no texto durantes as explicações da sua abordagem",
+    "anchors": [
+      "FIGURAS DO PROJETO",
+      ""
+    ]
+  },
+  {
+    "id": "94",
+    "comment": "Colocar de maneira sucinta na sessão de trabalhos futuros.",
+    "anchors": [
+      "11.25 Estratégia de fallback",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "118",
+    "comment": "Essas figuras têm que aparecer no texto durantes as explicações da sua abordagem",
+    "anchors": [
+      "FIGURAS DO PROJETO",
+      ""
+    ]
+  },
+  {
+    "id": "93",
+    "comment": "[remover] Creio que esse conteúdo é similar ao que já apareceu em outros momentos.",
+    "anchors": [
+      "11.24 Métricas de risco",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "117",
+    "comment": "Essas figuras têm que aparecer no texto durantes as explicações da sua abordagem",
+    "anchors": [
+      "FIGURAS DO PROJETO",
+      "Fonte: Elaborado pelo autor, com base em Lewis et al. (2020) e Gao et al. (2023)."
+    ]
+  },
+  {
+    "id": "58",
+    "comment": "[remover]  Deixar a parte das limitações para as considerações finais / conclusões.",
+    "anchors": [
+      "O assistente não realiza recomendação de investimento, não transmite ordens e não substitui contador, advogado ou consultor autorizado. Sua função é apresentar informações, organizar dados fornecidos pelo usuário e calcular resultados segundo regras parametrizadas. A interface deve repetir esse limite em pontos de decisão, sobretudo antes de apresentar valor de imposto ou prazo de recolhimento."
+    ]
+  },
+  {
+    "id": "42",
+    "comment": "Mudar o título para Critérios de avaliação",
+    "anchors": [
+      "5 AVALIAÇÃO E DISCUSSÃO"
+    ]
+  },
+  {
+    "id": "65",
+    "comment": "Legal. Mas encaixar isso no Capítulo 4 conforme sugerido.",
+    "anchors": [
+      "11.2 Segmentação e metadados",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "53",
+    "comment": "Dar mais detalhes de como esses critérios entraram de fato em prática na sua avaliação.",
+    "anchors": [
+      "Após recuperar o contexto, a resposta gerada pode ser julgada por quatro dimensões: correção factual, completude, clareza e aderência às fontes. A correção verifica se a resposta não contradiz o material recuperado; a completude verifica se as condições relevantes foram informadas; a clareza observa a linguagem acessível; e a aderência às fontes verifica se a resposta não adiciona uma regra sem evidência. Uma rubrica de zero a dois pontos por dimensão permite comparar versões do prompt e do pipeline."
+    ]
+  },
+  {
+    "id": "66",
+    "comment": "Encaixar no Capítulo 4.",
+    "anchors": [
+      "11.3 Engenharia de prompt",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "67",
+    "comment": "Seria legal dar alguns exemplos de techos dos seus prompts.",
+    "anchors": [
+      "11.3 Engenharia de prompt",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "68",
+    "comment": "Não acha que compensaria também deixar a parte do prompt no servidor MCP?",
+    "anchors": [
+      "11.3 Engenharia de prompt",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "55",
+    "comment": "[remover]",
+    "anchors": [
+      "5.9 Reprodutibilidade",
+      "A reprodutibilidade do estudo depende da separação entre dados, regras e código. O repositório contém os módulos de cálculo, modelos de entrada, rotas da API e servidor MCP. Para replicar uma execução, recomenda-se versionar as regras parametrizadas, congelar a versão do corpus, registrar parâmetros de segmentação e embedding e armazenar os casos de teste. Logs estruturados devem informar a versão da aplicação, a ferramenta chamada e as premissas recebidas, sem registrar dados pessoais desnecessários."
+    ]
+  },
+  {
+    "id": "54",
+    "comment": "Reptição do capítulo",
+    "anchors": [
+      "7 AVALIAÇÃO AMPLIADA E DISCUSSÃO"
+    ]
+  },
+  {
+    "id": "48",
+    "comment": "Mencionar os riscos na seção de limilatões (no último capítulo) e encaixar as propsotas nas considerações finais.",
+    "anchors": [
+      "5.5 Riscos e mitigação",
+      "Há riscos de desatualização documental, recuperação de fonte pouco pertinente, ambiguidade no relato do usuário e uso indevido como aconselhamento. As mitigações propostas incluem versionamento da base, data de vigência nos metadados, exibição de fontes, confirmação de dados extraídos, testes de regressão, logs de ferramenta e aviso explícito de que o resultado é auxiliar. Antes de uso em produção, recomenda-se revisão por especialista tributário e testes com casos oficiais e notas de corretagem reais anonimizadas."
+    ]
+  },
+  {
+    "id": "71",
+    "comment": "Mover para o Capítulo 5.",
+    "anchors": [
+      "11.6 Testes de integração",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "52",
+    "comment": "E como foi feita a rotulação de qualidade para cada par (consulta, resposta) para que então se possa aplicar o MRR. Foi manual? Foi usando um LLM as a Judge?",
+    "anchors": [
+      "A avaliação deve abranger perguntas terminológicas, procedimentais, de cálculo e de exceção. Exemplos incluem: “qual é a diferença entre swing trade e day trade?”, “quais dados preciso informar para calcular o preço médio?” e “qual regra a base apresenta para venda de cotas de FII?”. Cada questão deve possuir resposta esperada, fonte oficial, data de vigência e critério para identificar conteúdo desatualizado."
+    ]
+  },
+  {
+    "id": "73",
+    "comment": "Eu removeria.",
+    "anchors": [
+      "11.8 Desempenho e custo",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "74",
+    "comment": "Remover e mencionar essa questão da escalabilidade no momento que estiver fazendo a introdução da arquitetura que você propôs no Capítulo 4.",
+    "anchors": [
+      "11.9 Escalabilidade",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "72",
+    "comment": "Não sei se deixaria essa parte, pois exigiria um teste de iteração humano-computador. Poderia apenas entrar como requisito de interface na parte que trata sobre isso no Capítulo 4.",
+    "anchors": [
+      "11.7 Experiência do usuário",
+      ""
+    ]
+  },
+  {
+    "id": "90",
+    "comment": "Colocar de maneira suscinta nos trabalhos futuros",
+    "anchors": [
+      "11.22 Avaliação com usuários",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "17",
+    "comment": "Unir com o próximo parágrafo.",
+    "anchors": [
+      "O objetivo geral é desenvolver e documentar um assistente inteligente baseado em RAG para apoiar a interpretação de regras tributárias e regulatórias aplicáveis a operações do mercado financeiro brasileiro.",
+      "Especificamente, busca-se: a) estruturar uma arquitetura integrada de interface, API, base vetorial e ferramentas; b) implementar cálculos para classes iniciais de ativos; c) recuperar contexto normativo para enriquecer respostas; d) expor ferramentas de consulta e validação via MCP; e) definir limites, critérios de avaliação e cuidados de governança."
+    ]
+  },
+  {
+    "id": "86",
+    "comment": "Não seria mais prático no futuro se connectar com open finance / b3?",
+    "anchors": [
+      "O cálculo de resultado depende de posição e preço médio, que não podem ser reconstruídos de maneira confiável a partir de uma única venda. A persistência deve registrar compras, vendas, ajustes, eventos corporativos e o método aplicado ao preço médio. Para auditoria, é recomendável preservar a sequência de lançamentos e gerar sumários derivados, em vez de manter somente o saldo final. Assim, o usuário e o revisor podem compreender a origem de um número apresentado."
+    ]
+  },
+  {
+    "id": "89",
+    "comment": "Colocar de maneira suscinta na seção de trabalhos futuros",
+    "anchors": [
+      "11.21 Avaliação por especialistas",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "18",
+    "comment": "Colocar cada item em uma linha para ficar mais fácil a leitura.",
+    "anchors": [
+      "Especificamente, busca-se: a) estruturar uma arquitetura integrada de interface, API, base vetorial e ferramentas; b) implementar cálculos para classes iniciais de ativos; c) recuperar contexto normativo para enriquecer respostas; d) expor ferramentas de consulta e validação via MCP; e) definir limites, critérios de avaliação e cuidados de governança."
+    ]
+  },
+  {
+    "id": "85",
+    "comment": "Eu sumarizaria isso e colocaria como trabalhos futuros no último capítulo.",
+    "anchors": [
+      "11.18 Persistência de carteira",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "63",
+    "comment": "[remover da seção de trabalhos relacionados]  Caso queira manter o conteúdo, colocar esse conteúdo dentro do capítulo da sua proposta.",
+    "anchors": [
+      "7.2 Diferencial da proposta",
+      "Em comparação com uma planilha, o assistente oferece diálogo, consulta de fontes e potencial de atualização centralizada. Em comparação com um chatbot genérico, oferece regras explícitas e memória de cálculo. Em comparação com uma consulta profissional, possui menor custo e maior disponibilidade, mas não possui autoridade para substituir a avaliação de um especialista. Essas características definem o protótipo como ferramenta de apoio e educação financeira, não como sistema autônomo de decisão."
+    ]
+  },
+  {
+    "id": "84",
+    "comment": "[remover]",
+    "anchors": [
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "29",
+    "comment": "Destrinchar essa parte também. Tente fazer ao menos 3 parágrafos.  Dar exemplos de regras tributárias, exemplos de fontes, etc.",
+    "anchors": [
+      "Regras tributárias dependem de fatos da operação e do período: tipo do ativo, quantidade, preço, custos, modalidade de negociação, posição anterior e vendas acumuladas. Assim, uma calculadora deve receber entradas estruturadas e explicitar suas premissas. A solução não deve ser apresentada como consultoria tributária ou substituta de contador, advogado ou fonte oficial; seu papel é apoiar entendimento, organização e conferência preliminar."
+    ]
+  },
+  {
+    "id": "59",
+    "comment": "Colocar isso na seção do RAG da abordagem proposta, onde irá falar das fontes dos documentos.",
+    "anchors": [
+      "Documentos tributários e regulatórios sofrem alterações, consolidações e revogações. Um processo de atualização deve prever seleção de fontes oficiais, leitura de vigência, revisão humana, indexação com metadados e testes de regressão. Quando uma norma nova altera o resultado de um caso de teste, a alteração precisa ser aprovada, documentada e atribuída a uma versão. Sem esse processo, a recuperação semântica pode entregar textos corretos historicamente, mas inadequados para o período consultado."
+    ]
+  },
+  {
+    "id": "79",
+    "comment": "[remover]",
+    "anchors": [
+      "11.14 Critérios de prontidão",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "28",
+    "comment": "Sugestões para a seção:  - Colocar referências para o MCP - Destrinchar mais o MCP no sentido de funcionalidades que ele oferece (ferramentas, prompts e recursos) - Focar nas ferramentas: funções como as tradicionais da programação capazes de fazer cálculo, acessar bancos de dados externos, consultar a web, etc.  - Benefícios de se usar as ferramentas (tools) - Tirar a responsabilidade da LLM de realizar cálculos (que podem ser imprecisos) - Permitir que a LLM consiga se comunicar com bases de dados ou com a web - Permitir que a LLM execute ações no sistema do usuário",
+    "anchors": [
+      "O Model Context Protocol é um protocolo aberto para conectar aplicações de IA a fontes de dados e ferramentas por uma interface padronizada. No projeto, o MCP é empregado para separar o agente conversacional de operações de consulta e verificação. Essa separação contribui para auditoria, controle de permissões e redução de respostas numéricas não reproduzíveis. O protocolo, contudo, não substitui políticas de autenticação, registro de operações e validação dos dados de entrada."
+    ]
+  },
+  {
+    "id": "88",
+    "comment": "Encaixar só o último trecho como trabalhos futuros.",
+    "anchors": [
+      "11.20 Injeção de prompt",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "80",
+    "comment": "[remover] Já que parte do conteúdo desse capítulo será passado para outro(s)",
+    "anchors": [
+      "11.15 Síntese do capítulo",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "26",
+    "comment": "Sugestão de conteúdo:  - Falar sobre embedding (representação vetorial, representa propriedades semanânticas e sintáticas, além de geralmente ser um vetor de baixa dimensionalidade quando comparado com outros tipos de representações textuais) [referências] - Falar dos principais modelos para gerar embedding (BERT, Gemma, text-3-small-embedding da OpenAI) [REFs]. (não precisa falar do Sentence-BERT aqui ainda)  - Falar que geralmente é utilizado para buscas, principalmente quando o match exato, isso é, match entre palavras da consulta e o texto não é suficiente para atender o problema.  - Falar que normalmente se utiliza a busca de vizinhos mais próximos, isto é, compara-se a embeddings da consulta com as embeddings dos textos a serem buscados e retorna-se os textos dos k documentos mais similares.  - Falar que a depender do volume de textos / embedding, fazer uma comparação da embedding da consulta com todos os vetores pode ser inviável na prática. Aí falar que os bancos de dados vetoriais são munidos com algoritmos de busca aproximada dos vizinhos mais próximos ANN (aproximate nearest neightors).  -Falar que o ANN mais utilizado é o HNSW (Hierarchical Navigable Small World) [ref] e dar uma breve explicação do funcionamento",
+    "anchors": [
+      "Embeddings são vetores que representam propriedades semânticas de textos. Com eles, a consulta pode recuperar conteúdo semanticamente relacionado mesmo quando a redação não coincide exatamente com a fonte. Sentence-BERT é uma abordagem voltada à geração eficiente de representações de sentenças e parágrafos para comparação semântica (REIMERS; GUREVYCH, 2019). Para coleções maiores, estruturas de busca aproximada preservam desempenho com custo controlado (JOHNSON; DOUZE; JÉGOU, 2021)."
+    ]
+  },
+  {
+    "id": "87",
+    "comment": "Como o foco não é engenharia, remover esta seção.  No máximo colocar parte do último capítulo como trabalhos futuros.",
+    "anchors": [
+      "11.19 Modelo de ameaças",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "78",
+    "comment": "Como o foco não é UI aqui, eu removeria para deixar o TCC mais simples.",
+    "anchors": [
+      "11.13 Acessibilidade",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "24",
+    "comment": "Eu inverteria. Falaria de LLMs antes e de RAG depois. Vai facilitar o fluxo de informações.  E sugestão para essa seção:  - Falar que quanto mais contexto se coloca no prompt de uma LLM para esta gerar a resposta, menor é a alucinção [REF] - Falar da questão também que para dados internos de uma companhia, ou de um domínio específico, a resposta sem qualquer informação de contexto pode estar errada devido a atualização, ou devido a defasagem de tempo, pois a llm pode ter sido treinada anterior a data de uma determinada informação atualizada.  - Ficar embutindo contexto manualmente a todo podido de resposta é inviável, e para isso foi desenvolvida a técncica RAG, a qual irá buscar por contexto relevante em uma base de dados e irá embutir automaticmamente como contexto no prompt de uma LLM para esta gerar a resposta.  - Falar que essa busca pode ser feita de diferentes formas, mas em se tratando de conteúdo textual, a busca normalmente é feita utilizando uma busca vetorial para trazer conteúdo semanticamente relacionado e não necessariamente textos que tenham as exatas palavras da pergunta do usuário.  - Falar da chunkenização para o RAG Seria legal também colocar uma figura do fluxo do RAG e fazer a explicação baseada nela.  Ex de figura de fluxo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV6tuqgpXz0cagoojz9PFrwvi-0wF2JmDQ1vEeIiPsyAL-7odjN1koqPU&s=10",
+    "anchors": [
+      "2.2 Recuperação aumentada por geração"
+    ]
+  },
+  {
+    "id": "69",
+    "comment": "Mover para o Capítulo 4.",
+    "anchors": [
+      "11.4 Confirmação de dados",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "9",
+    "comment": "Eu aumentaria a minha contextualização aqui.  Por exemplo, dar o número de pessoas físicas e juridicas operando na bolsa, quando de movimentação há para cada categorias. Falar dos diferentes tipos de ativos os quais se podem fazer investimento, e as diferentes regras de imposto para cada tipo de ativo e respecitvas normas.",
+    "anchors": [
+      "O mercado financeiro brasileiro apresenta um ambiente informacionalmente exigente. A interpretação de operações de renda variável envolve regras de imposto de renda, modalidades operacionais, custos de negociação, compensação de prejuízos, documentos de suporte e prazos de recolhimento. Somam-se a isso normas e comunicados de órgãos como Receita Federal do Brasil, Comissão de Valores Mobiliários, Banco Central do Brasil e B3. A busca manual por informações em fontes dispersas aumenta o tempo de resposta e favorece erros de interpretação. A compreensão desse ambiente é apoiada pelas publicações educacionais da Comissão de Valores Mobiliários, especialmente pelos materiais da Série TOP sobre o mercado de valores mobiliários e derivativos (COMISSÃO DE VALORES MOBILIÁRIOS, 2024, 2025)."
+    ]
+  },
+  {
+    "id": "77",
+    "comment": "Como o foco não é engenharia de software, eu removeria para deixar o TCC mais simples.",
+    "anchors": [
+      "11.12 Privacidade",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "70",
+    "comment": "Mover para o Capítulo 5.",
+    "anchors": [
+      "11.5 Testes unitários",
+      ""
+    ]
+  },
+  {
+    "id": "6",
+    "comment": "Colocar os principais resultados ao final do resumo: o protótipo conseguiu atingir os objetivos adequadamente?",
+    "anchors": [
+      "O mercado financeiro brasileiro é regulado por normas tributárias e prudenciais extensas, atualizadas com frequência e distribuídas entre diferentes órgãos. Essa característica impõe custos de busca, interpretação e conferência a investidores e profissionais. Este trabalho apresenta o projeto e a implementação de um assistente inteligente para apoio à tributação e à regulação no mercado financeiro brasileiro. A solução combina Geração Aumentada por Recuperação (Retrieval-Augmented Generation - RAG), calculadoras determinísticas e ferramentas expostas por Model Context Protocol (MCP). A arquitetura proposta utiliza uma interface web em Angular, uma API em FastAPI, persistência relacional, ChromaDB como base vetorial e integração com um modelo de linguagem para interpretação e explicação em língua portuguesa. A versão implementada abrange ações, BDRs, fundos imobiliários, opções, contratos futuros de dólar e índice e a remuneração do doador em empréstimo de ações. O estudo adota pesquisa aplicada, de natureza tecnológica, com validação funcional baseada em casos de uso e verificação das respostas contra regras explicitadas. Como resultado, é entregue um protótipo modular e rastreável, cuja contribuição é integrar recuperação de fontes, cálculo reproduzível e explicação conversacional. As limitações incluem cobertura parcial dos ativos, simplificação do ajuste diário dos futuros, dependência da curadoria normativa e necessidade de validação humana para decisões com efeitos fiscais.",
+      "Palavras-chave: inteligência artificial; recuperação aumentada por geração; tributação; mercado financeiro; Model Context Protocol."
+    ]
+  },
+  {
+    "id": "75",
+    "comment": "Mover para o Capítulo 4 quando fala da sua abordagem proposta.",
+    "anchors": [
+      "11.10 Qualidade das fontes",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  },
+  {
+    "id": "8",
+    "comment": "As seções e subseções também devem aparecer no sumário",
+    "anchors": [
+      "SUMÁRIO",
+      "APÊNDICE A - CASOS DE TESTEANEXO A - DECLARAÇÃO DE USO DE FERRAMENTAS DE INTELIGÊNCIA ARTIFICIAL"
+    ]
+  },
+  {
+    "id": "76",
+    "comment": "Capítulo 4.",
+    "anchors": [
+      "11.11 Gestão de mudanças",
+      ""
+    ]
+  },
+  {
+    "id": "19",
+    "comment": "Em textos de computação escritos em português, o padrão é considerar os objetos como inanimados e usar a voz passiva para eles.  Ex: \"No Capítulo 2 são apresentados os fundamentos...\"",
+    "anchors": [
+      "O Capítulo 2 apresenta os fundamentos de LLMs, RAG, recuperação semântica e MCP. O Capítulo 3 descreve a metodologia. O Capítulo 4 detalha a solução implementada. O Capítulo 5 discute a avaliação funcional, limitações e riscos. O Capítulo 6 sintetiza as conclusões e os trabalhos futuros."
+    ]
+  },
+  {
+    "id": "21",
+    "comment": "Não deixar nada sem texto.  Uma sugestão aqui seria.  Nessa seção será apresentado o referencial teórico  sobre os conceitos utilizado para o desenvolvimento desse trabalho de conclusão de curso, a saber: LLMs, RAG, Embeddings e busca vetorial, MCP e Tools, além das particularidades do domínio de aplicação deste trabalhos.",
+    "anchors": [
+      "2 REFERENCIAL TEÓRICO",
+      "2.1 Modelos de linguagem e limitações"
+    ]
+  },
+  {
+    "id": "11",
+    "comment": "Esses modelos geralmente são treinados em bilhões de documentos, e geralmente são utilizados para gerar conteúdo novo ou responder perguntas [REFERENCIAS]. Entretanto, apesar da grande capacidade para geração de conteúdo e resposta, as LLMs podem alucinar, isto é, gerar conteúdo ou respostas inválidas, uma vez que a geração do conteúdo é puramente estatística e a aprendizado foi utilizando documentos de até um determinado período, sendo que a informação pode ter sido atualizada em períodos mais recentes [REFERÊNCIAS].",
+    "anchors": [
+      "Modelos de linguagem de grande escala ampliaram a viabilidade de interfaces conversacionais capazes de explicar conteúdos técnicos. Entretanto, a fluência da resposta não constitui evidência de correção factual. Em um domínio regulado, respostas não fundamentadas podem induzir decisões inadequadas. A arquitetura RAG responde a esse problema ao recuperar trechos de uma base de conhecimento antes da geração, permitindo que a resposta seja condicionada por evidências recuperadas (LEWIS et al., 2020)."
+    ]
+  },
+  {
+    "id": "121",
+    "comment": "Duas seções de conclusão em sequência.",
+    "anchors": [
+      "14 CONCLUSÃO"
+    ]
+  },
+  {
+    "id": "10",
+    "comment": "Faltou um link entre os parágrafos / conceitos.  Além disso, ao buscar por essas informações, pode-se: deparar com explicações advindas de diferentes fontes, ou comunicados, artigos e leis estensas e muitas vezes difíceis de interpretar.  Entretanto, com o advendo dos Grandes Modelos de Linguagem (Large Language Models) (REFERFÊNCIA. )",
+    "anchors": [
+      "O mercado financeiro brasileiro apresenta um ambiente informacionalmente exigente. A interpretação de operações de renda variável envolve regras de imposto de renda, modalidades operacionais, custos de negociação, compensação de prejuízos, documentos de suporte e prazos de recolhimento. Somam-se a isso normas e comunicados de órgãos como Receita Federal do Brasil, Comissão de Valores Mobiliários, Banco Central do Brasil e B3. A busca manual por informações em fontes dispersas aumenta o tempo de resposta e favorece erros de interpretação. A compreensão desse ambiente é apoiada pelas publicações educacionais da Comissão de Valores Mobiliários, especialmente pelos materiais da Série TOP sobre o mercado de valores mobiliários e derivativos (COMISSÃO DE VALORES MOBILIÁRIOS, 2024, 2025).",
+      "Modelos de linguagem de grande escala ampliaram a viabilidade de interfaces conversacionais capazes de explicar conteúdos técnicos. Entretanto, a fluência da resposta não constitui evidência de correção factual. Em um domínio regulado, respostas não fundamentadas podem induzir decisões inadequadas. A arquitetura RAG responde a esse problema ao recuperar trechos de uma base de conhecimento antes da geração, permitindo que a resposta seja condicionada por evidências recuperadas (LEWIS et al., 2020)."
+    ]
+  },
+  {
+    "id": "22",
+    "comment": "[remove]",
+    "anchors": [
+      "2.1 Modelos de linguagem e limitações"
+    ]
+  },
+  {
+    "id": "14",
+    "comment": "atualizada",
+    "anchors": [
+      "Modelos de linguagem de grande escala ampliaram a viabilidade de interfaces conversacionais capazes de explicar conteúdos técnicos. Entretanto, a fluência da resposta não constitui evidência de correção factual. Em um domínio regulado, respostas não fundamentadas podem induzir decisões inadequadas. A arquitetura RAG responde a esse problema ao recuperar trechos de uma base de conhecimento antes da geração, permitindo que a resposta seja condicionada por evidências recuperadas (LEWIS et al., 2020)."
+    ]
+  },
+  {
+    "id": "81",
+    "comment": "Encaixar isso no Capítulo 4.",
+    "anchors": [
+      "A separação em apresentação, serviços, domínio, dados e integrações permite atribuir responsabilidade clara a cada componente. A camada Angular coleta e apresenta informações; a camada FastAPI valida contratos HTTP; a camada de domínio concentra regras de cálculo; a persistência mantém posições e histórico; e as integrações atendem ao modelo de linguagem, à base vetorial e ao MCP. Essa organização facilita testes, reduz acoplamento e permite substituição gradual de tecnologias."
+    ]
+  },
+  {
+    "id": "25",
+    "comment": "A tradução de RAG é o contrário: Geração Aumentada por Recuperação.",
+    "anchors": [
+      "2.2 Recuperação aumentada por geração"
+    ]
+  },
+  {
+    "id": "15",
+    "comment": "Existe a necessidade desse \"sem substituir a análise profissional?\"  Na minha visão, poderia remover.",
+    "anchors": [
+      "Como conceber um assistente conversacional que apoie consultas tributárias e regulatórias do mercado financeiro brasileiro, oferecendo respostas contextualizadas, cálculos reproduzíveis e mecanismos de rastreabilidade sem substituir a análise profissional?"
+    ]
+  },
+  {
+    "id": "83",
+    "comment": "Encaixar no Capítulo 4.",
+    "anchors": [
+      "Os contratos de API são definidos por modelos Pydantic. O objeto de entrada inclui ativo, tipo de ativo, tipo de operação, quantidade, preço unitário, data e custos. O objeto de saída expõe valores financeiros, detalhamento de taxas, alíquota, imposto, retenção, mensagem e classificação da operação. Formalizar o contrato impede que campos essenciais sejam omitidos sem detecção e cria uma fronteira estável para a interface web e para clientes futuros."
+    ]
+  },
+  {
+    "id": "20",
+    "comment": "O objetivo do referencial teórico não se aprofundar tanto ao ponto de virar um livro sobre cada um dos assuntos, mas também um único parágrafo por tema acaba sendo muito superficial. Você deve discorrer, mesmo que brevemente, sobre os principais temas de cada ponto pra dar a entender para a banca que têm um mínimo de domínio para empregar cada um dos temas.",
+    "anchors": [
+      "2 REFERENCIAL TEÓRICO"
+    ]
+  },
+  {
+    "id": "12",
+    "comment": "Como é a primeira vez que o termo apareceu, escrever RAG por extenso também.",
+    "anchors": [
+      "Modelos de linguagem de grande escala ampliaram a viabilidade de interfaces conversacionais capazes de explicar conteúdos técnicos. Entretanto, a fluência da resposta não constitui evidência de correção factual. Em um domínio regulado, respostas não fundamentadas podem induzir decisões inadequadas. A arquitetura RAG responde a esse problema ao recuperar trechos de uma base de conhecimento antes da geração, permitindo que a resposta seja condicionada por evidências recuperadas (LEWIS et al., 2020)."
+    ]
+  },
+  {
+    "id": "0",
+    "comment": "Eu acho que removeria esse baseado em RAG do título.",
+    "anchors": [
+      "ASSISTENTE INTELIGENTE PARA APOIO EM TRIBUTAÇÃO E REGULAÇÃO NO MERCADO FINANCEIRO BRASILEIRO BASEADO EM RAG"
+    ]
+  },
+  {
+    "id": "13",
+    "comment": "Minimiza",
+    "anchors": [
+      "Modelos de linguagem de grande escala ampliaram a viabilidade de interfaces conversacionais capazes de explicar conteúdos técnicos. Entretanto, a fluência da resposta não constitui evidência de correção factual. Em um domínio regulado, respostas não fundamentadas podem induzir decisões inadequadas. A arquitetura RAG responde a esse problema ao recuperar trechos de uma base de conhecimento antes da geração, permitindo que a resposta seja condicionada por evidências recuperadas (LEWIS et al., 2020)."
+    ]
+  },
+  {
+    "id": "82",
+    "comment": "[remover]",
+    "anchors": [
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário.",
+      ""
+    ]
+  },
+  {
+    "id": "112",
+    "comment": "Isso ou deve aparecer no capítulo da sua proposta, ou nos trabalhos futuros (não entendi muito bem se isso já foi implementado ou não)",
+    "anchors": [
+      "12.5 Dados necessários para a apuração",
+      "A separação entre dados de entrada e regras aplicáveis permite explicar por que uma pergunta simples pode exigir esclarecimentos. Se o usuário informa somente “vendi PETR4”, o assistente pode recuperar conteúdo educativo, mas não deve retornar imposto devido sem quantidade, preço, custo, histórico e contexto. Essa distinção é uma prática de segurança e também uma forma de reduzir respostas alucinatórias."
+    ]
+  },
+  {
+    "id": "116",
+    "comment": "Essas figuras têm que aparecer no texto durantes as explicações da sua abordagem",
+    "anchors": [
+      "FIGURAS DO PROJETO",
+      ""
+    ]
+  },
+  {
+    "id": "1",
+    "comment": "Acho que essa parte fica centralizada",
+    "anchors": [
+      "São Paulo",
+      "2026"
+    ]
+  },
+  {
+    "id": "123",
+    "comment": "Não vi nenhum capítulo de fato de resultados.  Por resultados podemos dividir em 2 blocos:  - Avaliações objetivas (ex. métricas para validar a parte de recuperação de informação, e a resposta da LLM) - Uma demonstração do sistema funcionando (pode set textual mesmo apresentando alguns casos e a tela do sitema contento as respostas).",
+    "anchors": [
+      "",
+      "REFERÊNCIAS"
+    ]
+  },
+  {
+    "id": "110",
+    "comment": "Isso deve ser mencionado no capítulo da sua proposta.",
+    "anchors": [
+      "No protótipo, as taxas são representadas de modo separado para que o usuário enxergue a composição do custo. Essa decisão é relevante para auditoria: um resultado líquido sem detalhamento não permite verificar se houve corretagem, taxa de bolsa, impostos incidentes sobre serviços ou outro custo aplicável. A evolução recomendada é criar uma tabela de tarifas versionada, associada a período de vigência, ativo e tipo de operação."
+    ]
+  },
+  {
+    "id": "122",
+    "comment": "A seção de Conclusões deve ter a seguinte estrutura:  - Uma breve retomada sobre a motivação do trabalho, seus objetivos e principais resultados alcançados.  - Uma seção de Limitações - Uma seção de Trabalhos futuros",
+    "anchors": [
+      "12 CONCLUSÃO"
+    ]
+  },
+  {
+    "id": "27",
+    "comment": "Passou muito rápido de embedding para a busca vetorial aproximada.",
+    "anchors": [
+      "Embeddings são vetores que representam propriedades semânticas de textos. Com eles, a consulta pode recuperar conteúdo semanticamente relacionado mesmo quando a redação não coincide exatamente com a fonte. Sentence-BERT é uma abordagem voltada à geração eficiente de representações de sentenças e parágrafos para comparação semântica (REIMERS; GUREVYCH, 2019). Para coleções maiores, estruturas de busca aproximada preservam desempenho com custo controlado (JOHNSON; DOUZE; JÉGOU, 2021)."
+    ]
+  },
+  {
+    "id": "111",
+    "comment": "Isso deve aparecer na seção de trabalhos futuros.",
+    "anchors": [
+      "No estágio atual, a solução solicita dados estruturados e mantém um campo de observação. Uma evolução segura pode permitir o envio de documentos com extração assistida, exibindo os campos extraídos para confirmação do usuário antes de persistir ou calcular. A regra fundamental é que nenhuma leitura automática substitua a conferência: dados extraídos incorretamente podem produzir cálculo formalmente consistente, mas baseado em premissas erradas."
+    ]
+  },
+  {
+    "id": "2",
+    "comment": "Não entrar em detalhes tão técnicos, como as bibliotecas ou frameworks específicos. Explicar a idea.",
+    "anchors": [
+      "O mercado financeiro brasileiro é regulado por normas tributárias e prudenciais extensas, atualizadas com frequência e distribuídas entre diferentes órgãos. Essa característica impõe custos de busca, interpretação e conferência a investidores e profissionais. Este trabalho apresenta o projeto e a implementação de um assistente inteligente para apoio à tributação e à regulação no mercado financeiro brasileiro. A solução combina Geração Aumentada por Recuperação (Retrieval-Augmented Generation - RAG), calculadoras determinísticas e ferramentas expostas por Model Context Protocol (MCP). A arquitetura proposta utiliza uma interface web em Angular, uma API em FastAPI, persistência relacional, ChromaDB como base vetorial e integração com um modelo de linguagem para interpretação e explicação em língua portuguesa. A versão implementada abrange ações, BDRs, fundos imobiliários, opções, contratos futuros de dólar e índice e a remuneração do doador em empréstimo de ações. O estudo adota pesquisa aplicada, de natureza tecnológica, com validação funcional baseada em casos de uso e verificação das respostas contra regras explicitadas. Como resultado, é entregue um protótipo modular e rastreável, cuja contribuição é integrar recuperação de fontes, cálculo reproduzível e explicação conversacional. As limitações incluem cobertura parcial dos ativos, simplificação do ajuste diário dos futuros, dependência da curadoria normativa e necessidade de validação humana para decisões com efeitos fiscais."
+    ]
+  },
+  {
+    "id": "3",
+    "comment": "Sugestão:  Ex: \"O protótipo proposto consiste em um uma interface web, e um servidor web o que possui uma base de dados vetorial, e um agente que faz as orquestrações necessárias para atender às solicitações dos usuários\".",
+    "anchors": [
+      "O mercado financeiro brasileiro é regulado por normas tributárias e prudenciais extensas, atualizadas com frequência e distribuídas entre diferentes órgãos. Essa característica impõe custos de busca, interpretação e conferência a investidores e profissionais. Este trabalho apresenta o projeto e a implementação de um assistente inteligente para apoio à tributação e à regulação no mercado financeiro brasileiro. A solução combina Geração Aumentada por Recuperação (Retrieval-Augmented Generation - RAG), calculadoras determinísticas e ferramentas expostas por Model Context Protocol (MCP). A arquitetura proposta utiliza uma interface web em Angular, uma API em FastAPI, persistência relacional, ChromaDB como base vetorial e integração com um modelo de linguagem para interpretação e explicação em língua portuguesa. A versão implementada abrange ações, BDRs, fundos imobiliários, opções, contratos futuros de dólar e índice e a remuneração do doador em empréstimo de ações. O estudo adota pesquisa aplicada, de natureza tecnológica, com validação funcional baseada em casos de uso e verificação das respostas contra regras explicitadas. Como resultado, é entregue um protótipo modular e rastreável, cuja contribuição é integrar recuperação de fontes, cálculo reproduzível e explicação conversacional. As limitações incluem cobertura parcial dos ativos, simplificação do ajuste diário dos futuros, dependência da curadoria normativa e necessidade de validação humana para decisões com efeitos fiscais."
+    ]
+  },
+  {
+    "id": "16",
+    "comment": "[remover] A documentação é um artefato. O seu objetivo é desenvolver o assistente.",
+    "anchors": [
+      "O objetivo geral é desenvolver e documentar um assistente inteligente baseado em RAG para apoiar a interpretação de regras tributárias e regulatórias aplicáveis a operações do mercado financeiro brasileiro."
+    ]
+  },
+  {
+    "id": "120",
+    "comment": "Se já estiver implementado, mover para a seção da sua abordagem.  Se não tiver implementado, colocar de maneira sucinta nos trabalhos futuros.",
+    "anchors": [
+      "13 DERIVATIVOS E EMPRÉSTIMO DE AÇÕES"
+    ]
+  },
+  {
+    "id": "56",
+    "comment": "Pra mim isso deveria ser uma seção pós capítulo 4 por questão de fluxo de leitura. Senão fica Abordagem, Resultados, Abordagem novamente.",
+    "anchors": [
+      "8 GOVERNANÇA, SEGURANÇA E CONFORMIDADE",
+      "Um registro auditável deve permitir reconstruir o caminho de uma resposta: pergunta recebida, versão do prompt, documentos recuperados, ferramenta invocada, parâmetros validados, resultado determinístico e resposta exibida. Essa trilha favorece investigação de falhas e permite comparar versões do sistema. O registro precisa ser protegido, ter política de retenção e evitar guardar o conteúdo integral de dados sensíveis quando um identificador ou resumo for suficiente."
+    ]
+  },
+  {
+    "id": "57",
+    "comment": "Assim... eu até tiraria o que está aqui e encaixaria a questão de observabilidade e auditoria no capítulo da proposta.",
+    "anchors": [
+      "8 GOVERNANÇA, SEGURANÇA E CONFORMIDADE",
+      "Um registro auditável deve permitir reconstruir o caminho de uma resposta: pergunta recebida, versão do prompt, documentos recuperados, ferramenta invocada, parâmetros validados, resultado determinístico e resposta exibida. Essa trilha favorece investigação de falhas e permite comparar versões do sistema. O registro precisa ser protegido, ter política de retenção e evitar guardar o conteúdo integral de dados sensíveis quando um identificador ou resumo for suficiente."
+    ]
+  },
+  {
+    "id": "38",
+    "comment": "Reestruturar a seção e responder as seguintes perguntas:  - Quais foram as fontes de dados utilizadas?  - Como foi feita a chunkenização?  - Qual modelo de embeddings foi utilizado e justificativa - Qual base de dados vetorial foi utilizada?  - Foi utilizado um algoritmo de busca aproximado?  - Como foi feita a recuperação do conteúdo mais similar? Foram utilizando k-vizinhos mais próximos? Se sim, qual o valor de k? Houve também algum filtro por similaridade mínima?",
+    "anchors": [
+      "4.4 Base de conhecimento e RAG"
+    ]
+  },
+  {
+    "id": "109",
+    "comment": "[remover] Falar que cada ativo tem suas particularidas nos cálculos de impostos.",
+    "anchors": [
+      "Essas diferenças justificam a existência de calculadoras específicas no código. A solução não deve inferir que uma regra de um produto se aplica automaticamente a outro apenas por similaridade textual. A base RAG serve para recuperar o contexto; a camada determinística aplica somente regras explicitamente cadastradas e testadas para cada classe de ativo."
+    ]
+  },
+  {
+    "id": "99",
+    "comment": "[remover]",
+    "anchors": [
+      "11.30 Validação de cálculos",
+      ""
+    ]
+  },
+  {
+    "id": "23",
+    "comment": "Sugestão de estrutura para essa seção:  - Contextualização o que são os modelos de linguagem - Falar que hoje a arquitetura mais utilizada é a Transformer e citar seus benefícios - Falar brevemente como são feitos os treinamentos desses modelos.  - Ao fim, citar as famílias de modelos mais famosas atualmente de código aberto (GPT, Gemini, Claude) e os abertos (Gemma, LLama, Mistral e Deepseek) - e colocar as respectivas referências bibliográficas.  Ao final, para motivar para o RAG, falar dos problemas de alucinação que podem ocorrer o considerar o conteúdo puramente gerados por esses modelos.",
+    "anchors": [
+      "Transformers utilizam mecanismos de atenção para modelar dependências em sequências de texto, tornando-se a base de modelos de linguagem contemporâneos (VASWANI et al., 2017). Esses modelos produzem texto coerente e auxiliam em tarefas de linguagem natural, mas seu conhecimento é paramétrico e pode estar desatualizado. Além disso, a geração pode conter afirmações plausíveis sem sustentação factual, risco discutido por Bender et al. (2021). Em aplicações fiscais, esse comportamento exige controles de escopo, instruções de recusa e validação das saídas."
+    ]
+  },
+  {
+    "id": "108",
+    "comment": "[remover]",
+    "anchors": [
+      "A pesquisa sobre a B3 foi organizada em quatro dimensões: produtos de renda variável; custos de negociação e liquidação; documentos produzidos no ciclo operacional; e informações necessárias para apuração tributária. Essas dimensões se conectam diretamente ao desenho da aplicação: a classificação do ativo orienta a calculadora, os custos alimentam a memória de cálculo, os documentos apoiam a validação e os metadados fortalecem a resposta recuperada pelo RAG."
+    ]
+  },
+  {
+    "id": "4",
+    "comment": "Colocar no plural.",
+    "anchors": [
+      "O mercado financeiro brasileiro é regulado por normas tributárias e prudenciais extensas, atualizadas com frequência e distribuídas entre diferentes órgãos. Essa característica impõe custos de busca, interpretação e conferência a investidores e profissionais. Este trabalho apresenta o projeto e a implementação de um assistente inteligente para apoio à tributação e à regulação no mercado financeiro brasileiro. A solução combina Geração Aumentada por Recuperação (Retrieval-Augmented Generation - RAG), calculadoras determinísticas e ferramentas expostas por Model Context Protocol (MCP). A arquitetura proposta utiliza uma interface web em Angular, uma API em FastAPI, persistência relacional, ChromaDB como base vetorial e integração com um modelo de linguagem para interpretação e explicação em língua portuguesa. A versão implementada abrange ações, BDRs, fundos imobiliários, opções, contratos futuros de dólar e índice e a remuneração do doador em empréstimo de ações. O estudo adota pesquisa aplicada, de natureza tecnológica, com validação funcional baseada em casos de uso e verificação das respostas contra regras explicitadas. Como resultado, é entregue um protótipo modular e rastreável, cuja contribuição é integrar recuperação de fontes, cálculo reproduzível e explicação conversacional. As limitações incluem cobertura parcial dos ativos, simplificação do ajuste diário dos futuros, dependência da curadoria normativa e necessidade de validação humana para decisões com efeitos fiscais."
+    ]
+  },
+  {
+    "id": "98",
+    "comment": "Como a temática não é engenharia, eu removeria essa parte.",
+    "anchors": [
+      "11.29 Qualidade de código",
+      "No desenvolvimento deste trabalho, esse aspecto é tratado como uma diretriz de evolução. Sua incorporação progressiva reduz riscos, torna decisões de engenharia verificáveis e melhora a capacidade de o sistema operar dentro de um escopo explícito. A qualidade esperada decorre da combinação de evidência documental, validação determinística e comunicação clara com o usuário."
+    ]
+  },
+  {
+    "id": "5",
+    "comment": "Deixar a parte de limitações só para a seção de conclusão",
+    "anchors": [
+      "O mercado financeiro brasileiro é regulado por normas tributárias e prudenciais extensas, atualizadas com frequência e distribuídas entre diferentes órgãos. Essa característica impõe custos de busca, interpretação e conferência a investidores e profissionais. Este trabalho apresenta o projeto e a implementação de um assistente inteligente para apoio à tributação e à regulação no mercado financeiro brasileiro. A solução combina Geração Aumentada por Recuperação (Retrieval-Augmented Generation - RAG), calculadoras determinísticas e ferramentas expostas por Model Context Protocol (MCP). A arquitetura proposta utiliza uma interface web em Angular, uma API em FastAPI, persistência relacional, ChromaDB como base vetorial e integração com um modelo de linguagem para interpretação e explicação em língua portuguesa. A versão implementada abrange ações, BDRs, fundos imobiliários, opções, contratos futuros de dólar e índice e a remuneração do doador em empréstimo de ações. O estudo adota pesquisa aplicada, de natureza tecnológica, com validação funcional baseada em casos de uso e verificação das respostas contra regras explicitadas. Como resultado, é entregue um protótipo modular e rastreável, cuja contribuição é integrar recuperação de fontes, cálculo reproduzível e explicação conversacional. As limitações incluem cobertura parcial dos ativos, simplificação do ajuste diário dos futuros, dependência da curadoria normativa e necessidade de validação humana para decisões com efeitos fiscais."
+    ]
+  },
+  {
+    "id": "107",
+    "comment": "Colocar uma referência (pode ser a do tipo site)",
+    "anchors": [
+      "A B3 constitui a infraestrutura de mercado em que são negociados os principais ativos tratados pelo protótipo, como ações, BDRs, cotas de fundos imobiliários e opções. Para o assistente, a B3 não é apenas uma fonte de conceitos: suas regras de negociação, tarifas, documentação operacional e especificações de produtos fornecem dados indispensáveis para explicar a operação e compor o cálculo de custos. A utilização de fontes da própria B3 torna a base de conhecimento mais aderente ao ambiente em que os ativos são negociados."
+    ]
+  },
+  {
+    "id": "7",
+    "comment": "Replicar as sugestões do Resumo aqui.",
+    "anchors": [
+      "ABSTRACT"
+    ]
+  },
+  {
+    "id": "34",
+    "comment": "É interessante para mostrar a visão arquitetural é fazer uma imagem contendo o diagrama com os módulos da abordagem e as interações entre os módulos. Facilita o leitor entender o todo.",
+    "anchors": [
+      "4.1 Visão arquitetural"
+    ]
+  },
+  {
+    "id": "35",
+    "comment": "Então faça uma seção para explicar cada módulo",
+    "anchors": [
+      "4.1 Visão arquitetural"
+    ]
+  },
+  {
+    "id": "39",
+    "comment": "Não seria o caso de deixar a parte do cálculo dos impostos aqui também?",
+    "anchors": [
+      "4.5 Servidor MCP"
+    ]
+  },
+  {
+    "id": "31",
+    "comment": "Mesma observação do capítulo anterior: colocar um título introdutório no capítulo falando que será apresentado.",
+    "anchors": [
+      "4 DESENVOLVIMENTO DA SOLUÇÃO",
+      "4.1 Visão arquitetural"
+    ]
+  },
+  {
+    "id": "32",
+    "comment": "Também mesma observação anterior: basicamente um parágrafo por seção. Aqui é o ponto que o leitor deve ser capaz de ler e reproduzir, e o membro da banca conseguirá mensurar o esforço do seu trabalho. E está tudo muito simples e qual falta de detalhes. Novamente, não precisa ir no baixo nível, mas mais detalhes sobre os passos implementados.",
+    "anchors": [
+      "4 DESENVOLVIMENTO DA SOLUÇÃO",
+      "4.1 Visão arquitetural"
+    ]
+  },
+  {
+    "id": "33",
+    "comment": "Minha sugestão - Colocar o passo a passo da arquitetura. Eu imagino aqui que teria o usuário, interagindo com a aplicação front-end, que se comunica com um serviço back-end. Dentro desse serviço, seria chamado um agente e este teria uma comunicação com um outro serviço que seria o MCP, o qual também teria a comunicação com uma base de dados vetorial para fazer o RAG, sendo que essa última estaria conectadas a fontes externas para que fosse alimentada (isso tirando da minha cabeça).  Aí você faz uma seção para cada.  - Seção do front-end: detalhes gerais de com foi feito - Seção do backend: detalhes gerais sobre como responde as requisições, tecnologias, etc.  - Agente: quais biliotecas / frameworks foram utilizados e qual modelo de linguagem foi escolhido - MCP: quais foram as tool implementas, incluindo as de cálulos - RAG: qual base de dados vetorial foi usada, e qual o modelo para encodar as embeddings. Se foram usados chunks, qual foi o processo de chunkenização e quais foram as fontes de documentos utilizadas para popular a base.",
+    "anchors": [
+      "4 DESENVOLVIMENTO DA SOLUÇÃO",
+      "4.1 Visão arquitetural"
+    ]
+  },
+  {
+    "id": "113",
+    "comment": "Isso ou deve aparecer no capítulo da sua proposta, ou nos trabalhos futuros (não entendi muito bem se isso já foi implementado ou não)",
+    "anchors": [
+      "Documentos e páginas oficiais da B3 podem ser indexados com metadados como tipo de produto, categoria de tarifa, data de publicação, URL e vigência. A recuperação deve preferir fontes oficiais e recentes, mas preservar histórico quando a pergunta se referir a operação passada. Os trechos retornados devem ser apresentados como apoio à resposta e não misturados à lógica de cálculo sem revisão. Quando uma tarifa ou regra não estiver na base vigente, a aplicação deve declarar a ausência e direcionar o usuário à fonte oficial."
+    ]
+  },
+  {
+    "id": "114",
+    "comment": "Mover para o 2.5",
+    "anchors": [
+      "A pesquisa sobre a B3 reforça a necessidade de curadoria contínua. Tarifas, manuais, regras de negociação e documentos operacionais são componentes vivos do ecossistema. Consequentemente, a manutenção do corpus é parte central do produto e deve receber o mesmo rigor dado ao código. As páginas institucionais da B3 utilizadas no projeto constituem as fontes primárias para tarifas, produtos e procedimentos operacionais (B3, 2026a, 2026b)."
+    ]
+  },
+  {
+    "id": "115",
+    "comment": "remover",
+    "anchors": [
+      "12.8 Síntese da pesquisa sobre a B3",
+      "A B3 fornece uma ponte concreta entre o problema acadêmico e a implementação. Seus produtos delimitam o escopo inicial; suas tarifas e documentos ajudam a compor as entradas; e suas fontes oficiais fortalecem a rastreabilidade do RAG. A incorporação dessa pesquisa torna a monografia mais conectada ao mercado brasileiro e melhora a justificativa de uma solução que integra explicação, cálculo e documentação de evidências."
+    ]
+  },
+  {
+    "id": "30",
+    "comment": "negociadas",
+    "anchors": [
+      "O escopo da primeira versão contempla ações, BDRs, FIIs e opções negociados no ambiente brasileiro. Foram definidos requisitos funcionais para registrar operações, calcular resultado e custos, consultar regras, apresentar explicações em português e recuperar contexto regulatório. Requisitos não funcionais incluem modularidade, validação de entrada, rastreabilidade das fontes e separação entre cálculo e geração de linguagem."
+    ]
+  },
+  {
+    "id": "64",
+    "comment": "Deixar a parte da evolução, e de maneira mais sumarizada, e na seção de Conclusão.",
+    "anchors": [
+      "10 PLANO DE EVOLUÇÃO",
+      "A adoção deste procedimento fortalece a rastreabilidade da solução e cria condições para avaliação contínua. No contexto do presente trabalho, a recomendação é tratá-lo como requisito de qualidade para as próximas versões do protótipo, documentando resultados, desvios e decisões de projeto."
+    ]
+  }
+]

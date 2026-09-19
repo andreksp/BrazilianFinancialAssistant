@@ -1,0 +1,27 @@
+{
+  "key": "T34_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base no evidence **emprestimo** (Lei 15.265/2025, arts. 18-19):\n\nA remuneração do doador/emprestador PF residente em empréstimo de ativos no País é tributada **exclusivamente na fonte**, seguindo a tabela regressiva de renda fixa conforme o prazo:\n\n- Até 180 dias: 22,5%\n- 181 a 360 dias: 20%\n- 361 a 720 dias: 17,5%\n- **Acima de 720 dias: 15%**\n\nComo o prazo informado é **721 dias**, a alíquota aplicável é **15%** sobre a remuneração bruta de R$ 1.000,00.\n\n**Cálculo estimado:**\nIRRF = R$ 1.000 × 15% = **R$ 150,00**\n\n**Importante:**\n- Tributação exclusiva na fonte — não gera DARF mensal adicional sobre essa remuneração.\n- Não se trata de venda de ação isenta; é rendimento de operação de empréstimo, regime distinto.\n\n**Limites desta resposta:**\n- Não tenho confirmação se a data de início do contrato ou eventuais retenções já efetuadas pela fonte pagadora foram consideradas.\n- Presumo que os 721 dias já contemplam a contagem correta conforme a lei (a partir de 361 dias completos, incluindo o 721º).\n- Se houver dúvida sobre a data exata de contratação/liquidação ou sobre quem é o agente retentor, recomendo verificar o contrato e a nota de corretagem/custódia para confirmar o enquadramento.\n\nFonte: Lei 15.265/2025, arts. 18-19 (evidence \"emprestimo\").",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1051,
+    "output_tokens": 577,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.007872,
+  "seconds": 6.9443752999650314,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "d3561372376241929762d62b1d314063a15ec7deaf951515c5bc5563e66ee76c"
+}

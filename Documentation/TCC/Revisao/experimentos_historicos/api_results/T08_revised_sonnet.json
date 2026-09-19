@@ -1,0 +1,27 @@
+{
+  "key": "T08_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "**Alíquota: 15%** sobre o ganho líquido em operação comum de BDR (não day trade). Para day trade, a alíquota é 20% [ID: bdr].\n\nPontos importantes:\n\n- **Sem isenção de R$ 20 mil**: diferente das ações à vista, BDRs não possuem a isenção mensal de vendas até R$ 20.000. O limite não converte lucro de BDR em isento [ID: bdr].\n- **Venda vs. rendimento**: ganho na venda do certificado (tributado como acima) é distinto de rendimentos eventualmente distribuídos pelo BDR — não devem ser confundidos [ID: bdr].\n- **IRRF é antecipação**: retenção na fonte, quando houver, não substitui a apuração mensal do imposto devido pelo próprio contribuinte [ID: acoes_taxa].\n- **Regime e período**: a apuração é mensal, com compensação de perdas dentro do mesmo tipo de mercado, conforme regras gerais de renda variável em bolsa.\n\n**Limite desta resposta**: não tenho evidência sobre código de DARF específico para BDR, prazo de recolhimento, nem regras de compensação de prejuízos entre BDR e ações. Se precisar desses detalhes ou de orientação para seu caso concreto, informe valores e histórico de operações para uma análise mais precisa — isto não constitui apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 966,
+    "output_tokens": 491,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006842,
+  "seconds": 6.0427597999805585,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "540029cea98c9d4a7eab470479b8f42cf6087403f1c80038a8693a4ea9bdf339"
+}

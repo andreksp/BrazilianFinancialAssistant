@@ -71,6 +71,8 @@ class TestProcessTrade:
             "quantidade": 100,
             "preco_unitario": 30.00,
             "data_operacao": "2025-03-15",
+            "preco_medio_informado": 28.00,  # no prior buy registered; user states the real average cost
+            "total_vendas_mes": 3000.0,
         }
         resp = client.post("/api/trades/process", json=payload)
         assert resp.status_code == 200
@@ -88,6 +90,8 @@ class TestProcessTrade:
             "quantidade": 10,
             "preco_unitario": 200.00,
             "data_operacao": "2025-03-15",
+            "preco_medio_informado": 180.00,
+            "total_vendas_mes": 21000.0,
         }
         resp = client.post("/api/trades/process", json=payload)
         assert resp.status_code == 200
@@ -102,6 +106,7 @@ class TestProcessTrade:
             "quantidade": 10,
             "preco_unitario": 150.00,
             "data_operacao": "2025-03-15",
+            "preco_medio_informado": 140.00,
         }
         resp = client.post("/api/trades/process", json=payload)
         assert resp.status_code == 200
@@ -118,6 +123,7 @@ class TestProcessTrade:
             "quantidade": 100,
             "preco_unitario": 5.00,
             "data_operacao": "2025-03-15",
+            "preco_medio_informado": 4.00,
         }
         resp = client.post("/api/trades/process", json=payload)
         assert resp.status_code == 200
@@ -165,12 +171,13 @@ class TestProcessTrade:
             "quantidade": 100,
             "preco_unitario": 25.00,
             "data_operacao": "2025-03-15",
+            "total_vendas_mes": 30000.0,  # above R$20.000 so this scenario is actually taxed
         }
         resp = client.post("/api/trades/process", json=sell)
         assert resp.status_code == 200
         data = resp.json()
         assert data["ganho_prejuizo_bruto"] == pytest.approx(500.0)
-        assert data["ir_devido"] == pytest.approx(75.0)
+        assert data["ir_devido"] == pytest.approx(75.0, abs=0.5)  # 500 * 15%, minus tiny B3 fees
 
     def test_unsupported_asset_type_returns_400(self, client):
         """Invalid asset type returns 422 (Pydantic validation)."""
@@ -206,8 +213,11 @@ class TestTradeHistory:
             "quantidade": 100,
             "preco_unitario": 30.00,
             "data_operacao": "2025-03-15",
+            "preco_medio_informado": 28.00,
+            "total_vendas_mes": 3000.0,
         }
-        client.post("/api/trades/process", json=sell)
+        resp = client.post("/api/trades/process", json=sell)
+        assert resp.status_code == 200
 
         resp = client.get("/api/trades/history")
         assert resp.status_code == 200
@@ -234,14 +244,17 @@ class TestTradeHistory:
     def test_history_filtered_by_month(self, client):
         """Month filter returns only trades from that month."""
         for day, month in [("2025-03-15", "março"), ("2025-04-10", "abril")]:
-            client.post("/api/trades/process", json={
+            resp = client.post("/api/trades/process", json={
                 "ativo": "PETR4",
                 "tipo_ativo": "acao",
                 "tipo_operacao": "venda",
                 "quantidade": 10,
                 "preco_unitario": 30.00,
                 "data_operacao": day,
+                "preco_medio_informado": 28.00,
+                "total_vendas_mes": 300.0,
             })
+            assert resp.status_code == 200
 
         resp = client.get("/api/trades/history?month=3&year=2025")
         assert resp.status_code == 200
@@ -265,6 +278,8 @@ class TestBatchProcessing:
                 "quantidade": 100,
                 "preco_unitario": 25.00,
                 "data_operacao": "2025-03-15",
+                "preco_medio_informado": 23.00,
+                "total_vendas_mes": 2500.0,
             },
             {
                 "ativo": "VALE3",
@@ -273,6 +288,8 @@ class TestBatchProcessing:
                 "quantidade": 50,
                 "preco_unitario": 22.00,
                 "data_operacao": "2025-03-16",
+                "preco_medio_informado": 20.00,
+                "total_vendas_mes": 1100.0,
             },
         ]
         resp = client.post("/api/trades/batch", json=trades)
@@ -302,6 +319,7 @@ class TestBatchProcessing:
                 "quantidade": 100,
                 "preco_unitario": 25.00,
                 "data_operacao": "2025-03-15",
+                "total_vendas_mes": 25000.0,
             },
         ]
         resp = client.post("/api/trades/batch", json=trades)
@@ -324,14 +342,17 @@ class TestCalculationsSummary:
     def test_summary_aggregates_ir(self, client):
         """Monthly summary aggregates IR from multiple sell trades."""
         for ticker, price in [("PETR4", 25.0), ("VALE3", 22.0)]:
-            client.post("/api/trades/process", json={
+            resp = client.post("/api/trades/process", json={
                 "ativo": ticker,
                 "tipo_ativo": "acao",
                 "tipo_operacao": "venda",
                 "quantidade": 100,
                 "preco_unitario": price,
                 "data_operacao": "2025-03-15",
+                "preco_medio_informado": price - 2,
+                "total_vendas_mes": 25000.0,
             })
+            assert resp.status_code == 200
 
         resp = client.get("/api/calculations/summary?month=3&year=2025")
         assert resp.status_code == 200
@@ -342,14 +363,17 @@ class TestCalculationsSummary:
 
     def test_darf_vencimento_is_last_day_of_next_month(self, client):
         """DARF due date for March 2025 should be April 30, 2025."""
-        client.post("/api/trades/process", json={
+        resp = client.post("/api/trades/process", json={
             "ativo": "PETR4",
             "tipo_ativo": "acao",
             "tipo_operacao": "venda",
             "quantidade": 100,
             "preco_unitario": 25.00,
             "data_operacao": "2025-03-15",
+            "preco_medio_informado": 23.00,
+            "total_vendas_mes": 25000.0,
         })
+        assert resp.status_code == 200
 
         resp = client.get("/api/calculations/summary?month=3&year=2025")
         assert resp.status_code == 200
@@ -371,14 +395,17 @@ class TestDarfEndpoint:
 
     def test_darf_below_minimum_not_payable(self, client):
         """When IR < R$10, deve_pagar is False."""
-        client.post("/api/trades/process", json={
+        resp = client.post("/api/trades/process", json={
             "ativo": "PETR4",
             "tipo_ativo": "acao",
             "tipo_operacao": "venda",
             "quantidade": 1,
             "preco_unitario": 26.00,
             "data_operacao": "2025-03-15",
+            "preco_medio_informado": 25.00,
+            "total_vendas_mes": 26000.0,
         })
+        assert resp.status_code == 200
         resp = client.get("/api/calculations/darf?month=3&year=2025")
         assert resp.status_code == 200
         # 1 share, small gain → IR likely < R$10

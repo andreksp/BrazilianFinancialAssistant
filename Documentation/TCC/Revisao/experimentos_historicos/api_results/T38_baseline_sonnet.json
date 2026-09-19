@@ -1,0 +1,27 @@
+{
+  "key": "T38_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, cada moeda **não** tem isenção separada.\n\nSegundo o ID 183017f281e698ea, no Regime 1 (exchange nacional), a isenção de R$35.000/mês da IN SRF 84/2001, art. 3º, IX **soma todas as criptomoedas e todas as exchanges nacionais juntas** — não é por moeda nem por corretora.\n\nNo seu caso: R$20.000 (BTC) + R$20.000 (ETH) = **R$40.000 no mês**, o que ultrapassa o limite de R$35.000. Segundo a mesma evidência, ultrapassando esse valor, **todo o ganho apurado no mês é tributado** (não apenas o excedente), pela tabela progressiva de ganho de capital (Lei 13.259/2016): 15% até R$5 milhões de ganho no mês.\n\nImportante: essa evidência trata do **valor de venda**, não do lucro (rendimento). O imposto incide sobre o **ganho de capital** (venda menos custo de aquisição), apurado via GCAP, DARF código 4600, com vencimento no último dia útil do mês seguinte.\n\nO sistema aqui aplica a regra por venda individual, não a soma real do mês — confirme o total mensal antes de declarar. Precisa do custo de aquisição de cada ativo para calcular o ganho exato?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 4744,
+    "output_tokens": 460,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.014088,
+  "seconds": 6.493524499994237,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "13a0517401b32739ec8527dc0ab7d4f275a7188a5c52164b96f07b95561ef247"
+}

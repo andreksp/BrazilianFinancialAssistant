@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 1,
+      "motivo": "Regras gerais de ações; não trata prêmio nem exercício de opção."
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 2,
+      "motivo": "Traz fórmula do exercício de call incluindo prêmio pago."
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "BDRs; sem relação com opções."
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 2,
+      "motivo": "Afirma que o prêmio integra a apuração conforme o evento."
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ativos; irrelevante."
+    },
+    {
+      "id": "fii_rendimento",
+      "relevancia": 0,
+      "motivo": "FII; irrelevante."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega corretamente e sustenta no trecho sobre prêmio e evento.",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Resposta correta, distingue posição e evento, alinhada ao contexto.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Aplica a fórmula do exercício com dedução do prêmio conforme o trecho; sem erro fiscal.",
+      "configuration": "baseline_sonnet"
+    }
+  ],
+  "case_id": "T22",
+  "repeat": false
+}

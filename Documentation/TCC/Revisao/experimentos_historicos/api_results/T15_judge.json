@@ -1,0 +1,27 @@
+{
+  "key": "T15_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"975ab3cfe6fdb742\",\"relevancia\":0,\"motivo\":\"Trata de mercado futuro; não responde sobre FII.\"},{\"id\":\"7bb8b88a77231872\",\"relevancia\":1,\"motivo\":\"Aborda o núcleo (rendimento isento x venda 20%), mas traz condição desatualizada (50 cotistas) divergente da referência (100).\"},{\"id\":\"c4a28d9b57b540e1\",\"relevancia\":0,\"motivo\":\"Guia de DARF genérico; não trata da isenção de rendimentos de FII.\"},{\"id\":\"emprestimo\",\"relevancia\":0,\"motivo\":\"Empréstimo de ativos; fora do tema.\"},{\"id\":\"fii_venda\",\"relevancia\":2,\"motivo\":\"Confirma tributação de 20% na venda e distinção frente ao rendimento.\"},{\"id\":\"fii_rendimento\",\"relevancia\":2,\"motivo\":\"Responde diretamente: isenção condicionada do rendimento não alcança ganho na venda.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Distingue corretamente os regimes, cita condições do art. 3º (100 cotistas) e 20% na venda, apoiada nos trechos.\"},{\"id\":\"B\",\"correcao\":1,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Núcleo correto, mas afirma requisito de 50 cotistas, contrariando a referência (mínimo 100), condição de isenção incorreta.\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Correta e sustentada nos trechos fii_rendimento e fii_venda, com ressalva sobre condicionalidade.\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 6185,
+    "output_tokens": 1591,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 932
+    }
+  },
+  "usd": 0.0707,
+  "seconds": 20.92181480000727,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "43df53e6bc72a487d40f53de17fd99b7abe553207cabbc62310f86ec64ebb7de"
+}

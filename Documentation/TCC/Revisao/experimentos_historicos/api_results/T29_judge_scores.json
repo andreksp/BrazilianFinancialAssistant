@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 1,
+      "motivo": "Explica ajuste diário e cálculo do ganho no futuro, mas não define nocional nem responde diretamente."
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 0,
+      "motivo": "Trata de empréstimo de ações (BTC), sem relação com nocional de futuros."
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 0,
+      "motivo": "Guia de DARF; não aborda o conceito de nocional."
+    },
+    {
+      "id": "wdo",
+      "relevancia": 2,
+      "motivo": "Define tamanho contratual (nocional), fórmula do resultado e ressalva sobre ajustes diários; responde o núcleo."
+    },
+    {
+      "id": "emprestimo_proventos",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ativos e reembolso de proventos; fora do tema."
+    },
+    {
+      "id": "fii_rendimento",
+      "relevancia": 0,
+      "motivo": "Isenção de rendimentos de FII; irrelevante."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega corretamente e distingue nocional, resultado e ajuste diário, apoiado no trecho wdo.",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Distinção correta entre valor de referência e resultado financeiro, com citação fiel ao contexto.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Resposta correta e alíquotas coerentes, mas a definição de nocional não está nos trechos citados.",
+      "configuration": "baseline_sonnet"
+    }
+  ],
+  "case_id": "T29",
+  "repeat": false
+}

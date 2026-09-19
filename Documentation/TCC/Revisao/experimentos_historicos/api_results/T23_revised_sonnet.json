@@ -1,0 +1,27 @@
+{
+  "key": "T23_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, apenas o ticker não é suficiente.\n\nConforme evidência \"opcoes\" (Receita Federal), a apuração de opções depende de três fatores: (1) o evento ocorrido — negociação, exercício ou **expiração**; (2) se você é titular ou lançador; (3) se é operação comum ou day trade. Não se trata toda operação como venda de ação, e não há isenção de R$ 20 mil para ganho com opções.\n\nPara titular com opção expirada, especificamente, a evidência não detalha o tratamento do prêmio pago nesse cenário (perda integral, dedução, período de apuração). Preciso que você informe:\n\n- Prêmio pago na aquisição da opção;\n- Data da aquisição e da expiração;\n- Se houve outras operações no mês (para consolidar ganhos/perdas);\n- Se foi day trade ou operação comum.\n\n**Limites importantes:** isso é orientação educacional geral, não apuração fiscal definitiva. Não invento regra específica para expiração além do que a evidência trouxe (ela cita apenas as alíquotas de 15%/20% conforme o evento, sem detalhar o cálculo exato para prêmio perdido na expiração). Recomendo consultar a norma completa (idAto=67494) ou um contador para o cálculo final.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 977,
+    "output_tokens": 442,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006374,
+  "seconds": 6.339366099971812,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "a1fa647415781240dff1f51cac0723ed69512c81fc11d5420d9a950a2fc67ebb"
+}

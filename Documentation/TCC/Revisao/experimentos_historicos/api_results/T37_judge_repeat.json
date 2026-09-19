@@ -1,0 +1,27 @@
+{
+  "key": "T37_judge_repeat",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"183017f281e698ea\",\"relevancia\":2,\"motivo\":\"Detalha isenção mensal de R$35.000 para cripto em exchange nacional, respondendo ao núcleo.\"},{\"id\":\"7bb8b88a77231872\",\"relevancia\":0,\"motivo\":\"Trata de FII, não de criptoativos.\"},{\"id\":\"c4a28d9b57b540e1\",\"relevancia\":0,\"motivo\":\"Guia de DARF em renda variável; não responde ao limite de cripto.\"},{\"id\":\"acoes_isencao\",\"relevancia\":1,\"motivo\":\"Explica que os R$20 mil são de ações, mas não traz a regra de cripto.\"},{\"id\":\"cripto_isencao\",\"relevancia\":2,\"motivo\":\"Afirma soma mensal de alienações e limite de R$35.000, não R$20.000.\"},{\"id\":\"futuros\",\"relevancia\":0,\"motivo\":\"Regime de futuros, irrelevante à pergunta.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Nega o limite de 20 mil, indica 35 mil e possível isenção; ressalvas coerentes com o contexto.\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Correto quanto a 35 mil e isenção; apoiado nos trechos, apesar do formato tabular.\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Correto: 35 mil, isenção provável, tributação integral se exceder e obrigação acessória de 30 mil, tudo no contexto.\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 7529,
+    "output_tokens": 1137,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 514
+    }
+  },
+  "usd": 0.06607,
+  "seconds": 14.461295299988706,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "6a10f0403eddbb4393c379e17337bc28e375be881e7011d598f6160d52a6b2d8"
+}

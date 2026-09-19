@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 0,
+      "motivo": "Trata de mercado futuro; não responde sobre FII."
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 1,
+      "motivo": "Aborda o núcleo (rendimento isento x venda 20%), mas traz condição desatualizada (50 cotistas) divergente da referência (100)."
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 0,
+      "motivo": "Guia de DARF genérico; não trata da isenção de rendimentos de FII."
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ativos; fora do tema."
+    },
+    {
+      "id": "fii_venda",
+      "relevancia": 2,
+      "motivo": "Confirma tributação de 20% na venda e distinção frente ao rendimento."
+    },
+    {
+      "id": "fii_rendimento",
+      "relevancia": 2,
+      "motivo": "Responde diretamente: isenção condicionada do rendimento não alcança ganho na venda."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Distingue corretamente os regimes, cita condições do art. 3º (100 cotistas) e 20% na venda, apoiada nos trechos.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 1,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Núcleo correto, mas afirma requisito de 50 cotistas, contrariando a referência (mínimo 100), condição de isenção incorreta.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e sustentada nos trechos fii_rendimento e fii_venda, com ressalva sobre condicionalidade.",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T15",
+  "repeat": false
+}

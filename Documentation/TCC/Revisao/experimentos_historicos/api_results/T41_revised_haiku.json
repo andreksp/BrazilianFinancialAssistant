@@ -1,0 +1,24 @@
+{
+  "key": "T41_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta sobre Cripto Exterior e Isenção de R$ 35 mil\n\n**Não, a isenção mensal de R$ 35 mil não se aplica.**\n\n## Distinção crucial:\n\n| Aspecto | Cripto Nacional | Cripto Exterior (Lei 14.754/2023) |\n|--------|-----------------|-----------------------------------|\n| **Apuração** | Mensal | Anual |\n| **Alíquota** | Variável (ganho capital mensal) | 15% |\n| **Isenção R$ 35k** | Sim (mensal) | **Não** |\n\n## Limitações importantes:\n\nA evidência alerta que **autocustódia não prova, por si só, localização no exterior**. Para enquadrar cripto como \"aplicação financeira exterior\" sob a Lei 14.754/2023, você precisa de:\n\n- Verificação da natureza do ativo\n- Prova de custódia/intermediação em jurisdição estrangeira\n- Regulamentação específica aplicável\n\n**Solicito esclarecimento:**\n- Qual exchange ou intermediária? (Brasil ou exterior?)\n- Há contrato de custódia internacionais?\n- Quais criptoativos específicos?\n\nSem enquadramento definitivo como exterior, o regime mensal nacional pode ainda aplicar. Não generalize entre exchanges.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 798,
+    "output_tokens": 339,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002493,
+  "seconds": 4.124658700020518,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "794688d025deb61b3ded462a3739317f49275e4627ab19904a6500b36a8fee52"
+}

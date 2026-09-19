@@ -1,0 +1,27 @@
+{
+  "key": "T10_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base no evidence e64833ee00978eec: sim — a isenção mensal de R$ 20.000,00 em vendas se aplica a BDRs da mesma forma que a ações, no regime de swing trade (não vale para day trade). Segundo a mesma fonte, BDRs Nível I, antes restritos, passaram a contar com essa isenção após a \"democratização\" do acesso a pequenos investidores em 2021 (Resolução CVM 3/2020, citada como base legal), equiparando-se ao tratamento das ações comuns (Lei 11.033/2004, IN RFB 1.585/2015).\n\nPonto importante: o limite de R$ 20 mil é apurado sobre o **total de vendas do mês** (não sobre o ganho), e a evidência indica que esse total deve somar ações **e** BDRs juntos para verificar se o limite foi ultrapassado — não são limites independentes de R$ 20 mil cada.\n\nEssa isenção refere-se à venda de ativos (ganho de capital), regime de swing trade, período mensal — é distinta da tributação de rendimentos (dividendos de BDR), que segue regra própria com retenção no exterior e possível crédito.\n\nSe seu caso envolve valores específicos ou mistura de operações, posso ajudar com mais detalhes.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2882,
+    "output_tokens": 442,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010184,
+  "seconds": 6.434137399948668,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c21b788521cfe1d8164ec4418c1dd983c3f2f9f9eff7f6a7de0b755140c51867"
+}

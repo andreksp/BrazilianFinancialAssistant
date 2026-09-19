@@ -1,0 +1,27 @@
+{
+  "key": "T12_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"4e69fb3f132e9ec3\",\"relevancia\":1,\"motivo\":\"Regras de ações (15% swing) ajudam por analogia, mas não tratam de BDR e a isenção de R$20 mil induz erro.\"},{\"id\":\"290b3fbba3faa9f8\",\"relevancia\":0,\"motivo\":\"Opções; irrelevante para BDR.\"},{\"id\":\"e64833ee00978eec\",\"relevancia\":0,\"motivo\":\"Afirma que a isenção de R$20 mil se aplica a BDR, contradizendo o fato esperado.\"},{\"id\":\"bdr\",\"relevancia\":2,\"motivo\":\"Responde diretamente: sem isenção, 15% sobre ganho em operação comum.\"},{\"id\":\"fii_venda\",\"relevancia\":0,\"motivo\":\"Trata de FII, não de BDR.\"},{\"id\":\"futuros\",\"relevancia\":0,\"motivo\":\"Trata de futuros; não responde à pergunta.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"R$15 (15% sobre R$100) e ausência de isenção, apoiado no trecho de BDR; ressalvas sobre IRRF não comprometem.\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"R$15 antes do IRRF, sem isenção; IRRF 0,005% e DARF 6015 corretos e consistentes.\"},{\"id\":\"C\",\"correcao\":0,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Conclui isenção e IR zero, contrariando a regra de que BDR não tem isenção de R$20 mil.\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5633,
+    "output_tokens": 1223,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 592
+    }
+  },
+  "usd": 0.05874,
+  "seconds": 15.864274299994577,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "6d48c1ad8d7880d4bf13d98249970f7e5fc1e99a4e3aeb7f0c2b544c638cf74f"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T24_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, titular (comprador) e lançador (vendedor) de opções têm apurações distintas, conforme o evidence 290b3fbba3faa9f8:\n\n**Titular (comprador da opção):**\n- Se vende a opção antes do vencimento: ganho = (Preço de Venda − Prêmio Pago) × Quantidade\n- Se exerce (call): ganho = (Preço da Ação no Exercício − Strike − Prêmio Pago) × Quantidade\n- Se a opção \"vira pó\" (expira sem valor): prejuízo integral do prêmio pago na data de vencimento\n\n**Lançador (vendedor da opção), se exercido:**\n- Ganho = (Strike − Preço Médio da ação) + Prêmio recebido\n\nOu seja, o resultado de cada parte depende de decisões e preços diferentes (prêmio pago vs. recebido, PM da ação para quem lança). Além disso, distinga:\n- **Regime**: Swing Trade (15%) vs. Day Trade (20%), conforme prazo da operação\n- **Isenção**: opções NÃO têm isenção de R$ 20.000,00, diferente de ações à vista\n\nComo a pergunta não especifica se é call/put, se houve exercício, prazos ou valores, não é possível confirmar um resultado numérico. Se puder detalhar a operação (tipo, datas, preços), posso ajudar a exemplificar o cálculo — isto não substitui apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2874,
+    "output_tokens": 504,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010788,
+  "seconds": 6.792267200013157,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "d887de6509114af6e2c5f25ab6fd1933537af79119b6d63234c0fce0138e996f"
+}

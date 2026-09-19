@@ -1,0 +1,24 @@
+{
+  "key": "T42_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta: DARF para Ganho de Capital em Cripto\n\n**Resposta direta:** Use **DARF 4600**, não 6015.\n\n## Justificativa\n\nConforme evidência `cripto_darf` (ID verificado em 12/09/2026):\n- DARF **4600** é o código correto para recolhimento de ganho de capital mensal em criptoativos\n- DARF **6015** é específico de ganhos líquidos em bolsa de valores (regime diferente)\n- **Prazo:** último dia útil do mês seguinte ao da operação\n\n## Contexto importante\n\nSegundo evidência `cripto_isencao`:\n- Soma todas as alienações de criptoativos no mês\n- Isenção de até **R$ 35.000** mensais (não confundir com R$ 20.000)\n- Se ganho ≤ R$ 35.000: pode haver isenção\n- Se ganho > R$ 35.000: tributa o excedente com alíquota progressiva\n\n## Atenção\n\nNão confunda:\n- **Obrigação de informar** (IRPF/B3) ≠ obrigação de pagar (DARF)\n- Permuta entre criptos também é alienação tributável\n\n**Dados faltantes:** qual valor mensal de ganho você obtém e em que período?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 831,
+    "output_tokens": 354,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002601,
+  "seconds": 4.07395649998216,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "3804dedfda661c975c3004161218842ba94cd98f3a2cc60a75d998978d716ba2"
+}

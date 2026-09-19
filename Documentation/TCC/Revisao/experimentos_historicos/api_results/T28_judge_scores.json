@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 2,
+      "motivo": "Diz que IRRF comum de 0,005% incide sobre valor de ajuste/liquidação, não nocional"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "Trata de FII, não de futuros"
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 0,
+      "motivo": "Aluguel de ações, fora do escopo"
+    },
+    {
+      "id": "futuros",
+      "relevancia": 2,
+      "motivo": "Responde diretamente: base é soma de ajustes, não nocional"
+    },
+    {
+      "id": "acoes_taxa",
+      "relevancia": 1,
+      "motivo": "Contexto de alíquotas e IRRF como antecipação, sem tratar da base em futuros"
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 0,
+      "motivo": "Regras de opções, não responde à pergunta"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega o nocional e indica base de ajustes, com ressalva de conferir informe",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Aponta base de ajuste/liquidação mas hedge ambíguo ('não necessariamente o nocional') enfraquece a negativa clara",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta: soma algébrica positiva dos ajustes, não nocional; alerta sobre informe e apuração mensal",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T28",
+  "repeat": false
+}

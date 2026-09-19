@@ -1,0 +1,10 @@
+{
+  "source_sha256": "7a2f18b8d35c5f5d05b73a290de6abd1220d4e72632f7f62bb2547b507386fc0",
+  "output": "C:\\Users\\andre\\tcc_revisao\\Monografia_Revisada_Resultados_2026.docx",
+  "words": 10865,
+  "figures": 9,
+  "tables": 4,
+  "reference_count": 23,
+  "page_count": 54,
+  "visual_qa": "Rendered via Word COM (Word 16.0) to PDF and inspected with PyMuPDF. Introdução (Seção 1.1-1.3, pages 10-11) and Fundamentação Teórica (Seção 2.1, page 12) re-checked after adding real B3 (2025) market statistics, itemized objectives list, passive-voice fix, and BROWN (2020) / BENDER (2021) citations. No cut tables, no illegible images, no orphaned headings."
+}

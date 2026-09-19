@@ -27,3 +27,6 @@ hypothesis==6.88.1
 # Streamlit prototype (Phase 2.5)
 streamlit>=1.28.0
 requests>=2.31.0
+
+# Runtime MCP SDK (v1 API)
+mcp==1.28.0

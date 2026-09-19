@@ -1,0 +1,27 @@
+{
+  "key": "T24_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"290b3fbba3faa9f8\",\"relevancia\":2,\"motivo\":\"Detalha cálculo distinto para titular e lançador no exercício, respondendo ao núcleo.\"},{\"id\":\"4e69fb3f132e9ec3\",\"relevancia\":1,\"motivo\":\"Regras gerais de ações e preço médio; suporte indireto, não trata das posições.\"},{\"id\":\"e64833ee00978eec\",\"relevancia\":0,\"motivo\":\"BDRs; não trata de opções nem das posições.\"},{\"id\":\"emprestimo\",\"relevancia\":0,\"motivo\":\"Empréstimo de ativos; tema diverso da pergunta.\"},{\"id\":\"emprestimo_proventos\",\"relevancia\":0,\"motivo\":\"Reembolso de proventos em empréstimo; não responde.\"},{\"id\":\"fii_rendimento\",\"relevancia\":0,\"motivo\":\"Isenção de FII; irrelevante.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":1,\"fundamentacao\":1,\"abstencao_adequada\":true,\"erro_critico\":false,\"motivo\":\"Reconhece ausência da evidência sobre opções e sinaliza corretamente que cada ponta tem fato gerador próprio, mas não conclui o ponto central.\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Responde que as apurações são distintas e reproduz fielmente as fórmulas do trecho sobre opções.\"},{\"id\":\"C\",\"correcao\":1,\"fundamentacao\":0,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Conclusão genérica correta, mas define lançador como 'beneficiário econômico' (invenção) e apoia-se em trechos alheios (empréstimo/FII).\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5590,
+    "output_tokens": 1590,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 957
+    }
+  },
+  "usd": 0.0677,
+  "seconds": 21.3713649000274,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "3c4d105074b85a9ee2a0dbbe8ee8f8130fad8d675677942474c5eaa046d4f2cc"
+}

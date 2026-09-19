@@ -1,0 +1,27 @@
+{
+  "key": "T34_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"06a4e857780aec7b\",\"relevancia\":2,\"motivo\":\"Tabela regressiva do empréstimo de ações; responde 15% acima de 720 dias, embora com base legal antiga.\"},{\"id\":\"975ab3cfe6fdb742\",\"relevancia\":0,\"motivo\":\"Mercado futuro, sem relação com remuneração de empréstimo.\"},{\"id\":\"7bb8b88a77231872\",\"relevancia\":0,\"motivo\":\"Regras de FII, irrelevante.\"},{\"id\":\"acoes_isencao\",\"relevancia\":0,\"motivo\":\"Isenção de ações à vista não se aplica ao caso.\"},{\"id\":\"cripto_exterior\",\"relevancia\":0,\"motivo\":\"Ativos no exterior, fora do escopo.\"},{\"id\":\"emprestimo\",\"relevancia\":2,\"motivo\":\"Lei 15.265/2025: 15% acima de 720 dias, exclusiva na fonte; responde diretamente.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"15% e R$150 corretos, apoiado no trecho da Lei 15.265/2025.\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Alíquota e valor corretos; base legal citada (13.043/2014) é a do trecho recuperado, não a vigente indicada no gold.\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Retenção de R$150 a 15%, com fundamento correto na Lei 15.265/2025.\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 6116,
+    "output_tokens": 1157,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 548
+    }
+  },
+  "usd": 0.059505,
+  "seconds": 14.473103200027253,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "eb4c2e1b3819ed80a01783c6c18abfe2920e82a8d08debe441f76a96a1578fce"
+}

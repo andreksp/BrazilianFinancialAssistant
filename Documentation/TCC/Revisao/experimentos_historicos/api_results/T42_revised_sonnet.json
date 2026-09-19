@@ -1,0 +1,27 @@
+{
+  "key": "T42_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Para ganho de capital com criptoativos nacionais, o recolhimento é feito via **DARF 4600**, não o 6015 (este é próprio de ganhos líquidos em operações de bolsa, regime distinto) [cripto_darf].\n\nPontos importantes:\n\n- **Prazo**: recolhimento até o último dia útil do mês seguinte ao da alienação (regime de ganho de capital mensal) [cripto_darf].\n- **Apuração**: some todas as alienações de criptoativos no mês; há possibilidade de isenção até R$ 35.000/mês (não R$ 20.000, e o limite é pelo total mensal, não por moeda ou operação isolada) [cripto_isencao].\n- **Permuta conta como alienação**: troca entre criptomoedas, mesmo sem conversão em reais, configura fato gerador de ganho de capital [cripto_isencao].\n- A obrigação de **informar** operações à Receita é distinta da obrigação de **pagar** o imposto — mesmo isento, pode haver dever de declaração [cripto_darf].\n\nIsso vale para criptoativos **nacionais**; operações no exterior exigem enquadramento específico não coberto por esta evidência.\n\nSe sua dúvida envolve exterior, holding, ou permutas específicas, informe mais detalhes para orientação precisa. Isto é orientação educacional, não apuração fiscal definitiva — consulte um contador para seu caso concreto.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1029,
+    "output_tokens": 495,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.007008,
+  "seconds": 5.842052899999544,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "3804dedfda661c975c3004161218842ba94cd98f3a2cc60a75d998978d716ba2"
+}

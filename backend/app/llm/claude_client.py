@@ -3,7 +3,7 @@ Anthropic Claude API client — Phase 3 implementation.
 
 Models:
 - claude-haiku-4-5-20251001: Fast, cheap parsing of natural language trades
-- claude-sonnet-4-6: Intelligent explanations and Q&A
+- claude-sonnet-5: Intelligent explanations and Q&A
 """
 
 import json
@@ -42,7 +42,8 @@ class ClaudeClient:
         prompt = f"Data de hoje: {today}\n\nMensagem do usuário: {user_message}"
 
         try:
-            raw = self._call_model(self.model_parser, PARSE_TRADE_SYSTEM, prompt)
+            extra_schema = "\nCampos opcionais, somente quando explicitamente informados: total_vendas_mes, preco_medio_informado, custos_operacao, irrf_informado, prazo_dias, exchange_estrangeira, classificacao (swing ou day_trade). Não invente valores ausentes."
+            raw = self._call_model(self.model_parser, PARSE_TRADE_SYSTEM + extra_schema, prompt)
             raw = raw.strip()
 
             # Strip markdown fences if the model wraps the JSON
@@ -67,6 +68,12 @@ class ClaudeClient:
                 data_operacao=date.fromisoformat(data["data_operacao"]),
                 corretora=data.get("corretora"),
                 prazo_dias=data.get("prazo_dias"),
+                total_vendas_mes=data.get("total_vendas_mes"),
+                preco_medio_informado=data.get("preco_medio_informado"),
+                custos_operacao=data.get("custos_operacao"),
+                irrf_informado=data.get("irrf_informado"),
+                exchange_estrangeira=data.get("exchange_estrangeira", False),
+                classificacao=data.get("classificacao") or "swing",
             )
 
         except (json.JSONDecodeError, KeyError, ValueError) as e:
@@ -129,7 +136,11 @@ class ClaudeClient:
     def chat(self, system_prompt: str, user_message: str, use_haiku: bool = False) -> str:
         """Generic chat call — use_haiku=True for fast classification tasks."""
         model = self.model_parser if use_haiku else self.model_explainer
-        return self._call_model(model, system_prompt, user_message)
+        try:
+            return self._call_model(model, system_prompt, user_message)
+        except Exception as e:
+            logger.error(f"Chat call failed: {e}", exc_info=True)
+            return "Desculpe, não consegui gerar a explicação agora. O cálculo foi concluído normalmente."
 
     def classify_intent(self, message: str) -> dict:
         """
@@ -153,7 +164,10 @@ class ClaudeClient:
             system=system_prompt,
             messages=[{"role": "user", "content": user_message}],
         )
-        return message.content[0].text
+        for block in message.content:
+            if block.type == "text":
+                return block.text
+        raise ValueError("No text block in model response")
 
 
 _client: Optional[ClaudeClient] = None

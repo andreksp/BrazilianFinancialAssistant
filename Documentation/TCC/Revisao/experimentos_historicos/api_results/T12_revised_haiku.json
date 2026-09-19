@@ -1,0 +1,24 @@
+{
+  "key": "T12_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise – BDR Comum, Lucro R$ 100, Vendas R$ 5 mil\n\n## Dados e Enquadramento\n- **Ativo:** BDR comum\n- **Tipo de operação:** Venda (operação comum, não day trade)\n- **Ganho líquido:** R$ 100\n- **Receita bruta:** R$ 5 mil\n- **Período:** 2026 (referência 12/09/2026)\n\n## IR sobre Ganho de Capital\n\nConforme **evidência ID \"bdr\"** (B3, 2026):\n> \"BDR não possui a isenção de vendas de R$ 20 mil das ações à vista. Ganho líquido em operação comum: **15%**.\"\n\n**IR devido = R$ 100 × 15% = R$ 15,00**\n\n## IRRF Retido na Fonte\n\nA evidência não especifica alíquota ou procedimento de retenção para BDR em operação comum. Para esclarecimento:\n- Confirme se houve retenção no informe de corretagem\n- Cotas BDR podem ter tratamento diferente de ações\n\n## Limitação\n\nNão há evidência sobre **deduções de custos operacionais** que reduzam o ganho líquido tributável abaixo de R$ 100. Se houver despesas legais (corretagem, emolumentos), estas devem ser comprovadas.\n\n**Síntese:** IR mínimo R$ 15,00 sobre o ganho, sem isenção pelo limite de R$ 20 mil.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 835,
+    "output_tokens": 403,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.00285,
+  "seconds": 5.021687300002668,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ea0c604f46458e036077cfbd94278149295eab1df353fb10715cf1fc13872897"
+}

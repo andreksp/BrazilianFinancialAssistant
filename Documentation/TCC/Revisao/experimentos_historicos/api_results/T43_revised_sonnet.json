@@ -1,0 +1,27 @@
+{
+  "key": "T43_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Sua pergunta é sobre **imposto sobre bens imóveis (IPTU/ITBI) ou ganho de capital na venda de imóvel**? Não tenho evidências fornecidas sobre esse tema — todas as informações disponíveis tratam de ações, criptoativos e empréstimo de ativos, sem relação com tributação imobiliária.\n\nPara não arriscar erro, preciso que você esclareça:\n\n1. **Tipo de imposto**: IPTU (municipal, recorrente), ITBI (transferência), ou Imposto de Renda sobre ganho de capital na venda?\n2. **Contexto**: é venda de imóvel próprio, aluguel recebido, ou herança/doação?\n3. **Dados**: valor de aquisição, valor de venda, datas, se é único imóvel, uso de recursos para comprar outro imóvel (possível isenção), etc.\n\n**Limite importante**: Com as evidências que tenho agora, não posso afirmar nenhuma regra sobre tributação imobiliária sem risco de erro ou invenção de norma. Assim que você detalhar o cenário, posso buscar as regras aplicáveis (ex.: isenção por venda única até certo valor, ou reinvestimento em 180 dias) — mas isso depende de fontes específicas que ainda não constam aqui.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 990,
+    "output_tokens": 451,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.00649,
+  "seconds": 6.611661100003403,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "378e9c010d4380d8424c4c14eaab610b1651a452cec0d101ab187b5a65dae864"
+}

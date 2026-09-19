@@ -1,0 +1,27 @@
+{
+  "key": "T48_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "A evidência fornecida não trata de criptoativos, custódia própria (carteira/wallet) ou localização de aplicações financeiras no exterior — ela cobre apenas empréstimo de ações (BTC/CBLC, que é sigla de Banco de Títulos, não bitcoin), FIIs e mercado futuro. Portanto, não posso responder normativamente à sua pergunta com base nas fontes disponíveis.\n\nDe forma geral e conceitual (sem base nas evidências): ter uma carteira própria (self-custody) de bitcoin, por si só, não define automaticamente onde o ativo é considerado \"localizado\" para fins fiscais — essa é uma questão que envolve regras específicas sobre criptoativos, declaração de bens no exterior e obrigações acessórias, que não constam no material fornecido.\n\nRecomendo consultar:\n- Instrução Normativa RFB específica sobre criptoativos;\n- Orientações da Receita Federal sobre declaração de bens e direitos (ficha de criptoativos na DIRPF);\n- Um contador ou especialista tributário para seu caso concreto.\n\nSe puder fornecer evidência normativa específica sobre criptoativos e custódia, posso analisar com mais precisão.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3130,
+    "output_tokens": 421,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.01047,
+  "seconds": 6.315962499997113,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "2d059ab3a059106a5892f35499836c3337b05dc69a6ed5084aa94b2a6e3366ea"
+}

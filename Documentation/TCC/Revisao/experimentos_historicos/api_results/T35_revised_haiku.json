@@ -1,0 +1,24 @@
+{
+  "key": "T35_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Remuneração de Empréstimo de Ativos: DARF Mensal Necessário?\n\n## Resposta Direta\n**Não**, conforme Lei 15.265/2025, arts. 18-19 (ID: *emprestimo*):\n\n> \"Não é venda isenta de ação e não gera DARF mensal adicional sobre essa remuneração.\"\n\n## Regime de Tributação\nA remuneração do doador (emprestador PF residente) é **tributada exclusivamente na fonte** pelas alíquotas progressivas de renda fixa:\n- 22,5% até 180 dias\n- 20% de 181 a 360 dias  \n- 17,5% de 361 a 720 dias\n- 15% acima de 720 dias\n\nA retenção ocorre no momento do pagamento, **sem necessidade de DARF mensal** paralelo.\n\n## Limitações\n- Você precisa informar: **prazo exato do empréstimo** e **valor bruto da remuneração contratada**\n- Reembolso de proventos (art. 20 e seg.) é evento **distinto** e pode ter regras próprias\n- Obrigação de informar operações (IR/Bovespa) difere de obrigação de pagar imposto\n\n**Fonte**: Lei 15.265/2025, Planalto (verificado 12/09/2026).",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 819,
+    "output_tokens": 364,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002639,
+  "seconds": 4.301038999983575,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "47df1544e06dc9665e3a8f70cbd7f5db3661146d454ca4274cc75a5e27fb2b21"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T41_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, não mantém. Segundo a evidência **cripto_exterior**, criptoativos enquadrados como aplicação financeira no exterior pela **Lei 14.754/2023** seguem regime próprio: apuração **anual**, alíquota de **15%**, **sem** a isenção mensal de R$ 35 mil.\n\nEssa isenção mensal (R$ 35.000 em alienações no mês) é regra do regime de **ganho de capital de criptoativos nacionais** (evidência **cripto_isencao**), não se aplicando quando o ativo está enquadrado como aplicação financeira no exterior.\n\nPontos importantes de distinção (conforme evidência):\n- **Enquadramento**: depende da natureza do ativo, custódia/intermediação e regulamentação — não há regra automática.\n- **Autocustódia**, por si só, **não comprova** localização no exterior.\n- Não se deve generalizar o tratamento de uma exchange específica para todo o universo de criptoativos.\n\nFaltam dados no seu caso: qual token, onde está custodiado, se há intermediário regulado no exterior e o histórico de aquisição/alienação. Sem isso, não é possível dizer qual regime (nacional mensal ou exterior anual) se aplica.\n\nIsto é orientação geral, não apuração fiscal definitiva — recomenda-se confirmar enquadramento com profissional contábil antes de declarar.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1006,
+    "output_tokens": 481,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006822,
+  "seconds": 6.109369900019374,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "794688d025deb61b3ded462a3739317f49275e4627ab19904a6500b36a8fee52"
+}

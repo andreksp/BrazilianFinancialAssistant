@@ -1,0 +1,27 @@
+{
+  "key": "T25_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não é possível calcular o ganho bruto em reais com os dados fornecidos.\n\nFaltam informações essenciais:\n- **Quantidade de contratos** operados\n- **Valor do ponto** do WIN (mini índice) — geralmente R$ 0,20/ponto, mas isso é uma referência de mercado, não uma norma tributária, e pode variar; não tenho essa evidência nos documentos fornecidos\n- **Quantos dias** a posição ficou aberta (afeta se é operação normal ou day trade)\n\nSegundo a evidência (ID 975ab3cfe6fdb742), o cálculo do ganho em mercado futuro é:\n\n> Ganho = (preço de fechamento − preço de abertura) × quantidade de contratos\n\nIsso é o **ganho bruto em pontos convertido pelo valor do ponto**, não uma venda de ativo à vista — é resultado de operação em derivativo (ajuste), tributado como renda variável (15% operação normal / 20% day trade, conforme mesma fonte).\n\n**Para calcular**, preciso que você informe:\n1. Quantidade de contratos\n2. Valor monetário por ponto do WIN\n3. Se a posição foi aberta e fechada no mesmo dia (day trade) ou não\n\nIsso é uma simulação educacional, não uma apuração fiscal definitiva — a apuração real depende de ajustes diários efetivos (D+1), conforme limitação do sistema.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3397,
+    "output_tokens": 490,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.011694,
+  "seconds": 7.278408200014383,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "aac0f9e4eacb207e0aeef11b54d2b2f5548d8acba7c6e8b4c0c154d96c93a0db"
+}

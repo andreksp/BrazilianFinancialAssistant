@@ -1,0 +1,27 @@
+{
+  "key": "T32_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "**Rendimento** (não é venda de ações): trata-se da remuneração recebida pelo **doador** em contrato de empréstimo de ações (BTC/CBLC).\n\n**Regime**: tributação como renda fixa, pela **tabela regressiva por prazo do contrato** — não segue as regras de ganho de capital em renda variável (15%/20%/isenção R$20.000) [ID 06a4e857780aec7b].\n\n**Período**: 181 dias enquadra-se na faixa \"De 181 a 360 dias\" → alíquota **20,0%**.\n\n**Cálculo**:\n- Remuneração bruta: R$ 1.000,00\n- Alíquota: 20%\n- **IR retido: R$ 200,00**\n\n**Retenção**: feita diretamente pela B3/CBLC no pagamento da remuneração — é **tributação exclusiva/definitiva na fonte**, não compõe apuração mensal de renda variável e não gera DARF adicional [ID 06a4e857780aec7b].\n\n**Na declaração anual**: informar em \"Rendimentos Sujeitos a Tributação Exclusiva/Definitiva\", com base no informe de rendimentos da B3 (Área do Investidor → Relatórios → Informes – Empréstimos).\n\nBase legal citada na evidência: Lei ",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3132,
+    "output_tokens": 650,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 208
+    }
+  },
+  "usd": 0.012764,
+  "seconds": 7.474771999986842,
+  "stop_reason": "max_tokens",
+  "prompt_sha256": "eea950706ee770b2b930c74555b75e755b54ce55659a854f0ec13bb55694c3f5"
+}

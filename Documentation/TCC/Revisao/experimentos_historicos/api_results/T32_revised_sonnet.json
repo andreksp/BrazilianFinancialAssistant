@@ -1,0 +1,27 @@
+{
+  "key": "T32_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base em **[emprestimo]** (Lei 15.265/2025, arts. 18 e 19):\n\n**Enquadramento:** empréstimo de ativos por pessoa física residente (doador/emprestador) — não é venda de ação, é rendimento tributado exclusivamente na fonte pelas regras de renda fixa.\n\n**Alíquota aplicável (181 dias):** faixa \"181 a 360 dias\" → **20%**.\n\n**Cálculo:**\n- Remuneração bruta: R$ 1.000,00\n- IR retido na fonte (20%): R$ 200,00\n- Valor líquido ao emprestador: R$ 800,00\n\n**Observações importantes:**\n- Essa retenção é definitiva (exclusiva na fonte); não há DARF mensal adicional sobre essa remuneração, conforme a evidência.\n- Isso é diferente da isenção de R$ 20.000/mês em vendas de ações comuns (**[acoes_isencao]**), que não se aplica aqui — trata-se de rendimento de aluguel de ativos, não de alienação.\n- Não tenho evidência sobre o tipo de ativo emprestado (ação, cripto, outro) nem sobre eventuais obrigações acessórias do tomador. Se precisar tratar declaração na DIRPF ou detalhes do contrato, informe o ativo específico.\n\nIsto é uma simulação educacional, não apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1051,
+    "output_tokens": 634,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 146
+    }
+  },
+  "usd": 0.008442,
+  "seconds": 6.898622200009413,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b59624f1620c6f1f6c44bd56c451f96180fb964b79e09163a79d3d291be292ee"
+}

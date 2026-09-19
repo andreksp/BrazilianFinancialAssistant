@@ -1,0 +1,24 @@
+{
+  "key": "D08_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Documentos Essenciais por Tipo de Operação\n\n## Ações à Vista\n- **Nota de corretagem** (data, quantidade, preço unitário, total vendido)\n- **Extrato consolidado mensal** de todas as corretoras\n- **Comprovante de custódia** e data de aquisição\n- **Custo de aquisição** detalhado\n\nFundamento: Isenção condicionada a vendas ≤ R$ 20.000/mês (não sobre lucro) — ID `acoes_isencao`.\n\n## Fundos Imobiliários (FII)\n- **Documentação de compra e venda** de cotas\n- **Custos unitários** e datas\n- **Ganhos e perdas segregados por FII**\n\nFundamento: Perdas só se compensam com ganhos de FII (mesma espécie) — ID `fii_perda`.\n\n## Empréstimo de Ativos\n- **Contrato de empréstimo** (data início, prazo, remuneração bruta)\n- **Comprovante de recebimento** da remuneração\n- **Comprovante de retenção na fonte** (alíquota aplicada: 22,5%/20%/17,5%/15%)\n\nFundamento: Lei 15.265/2025, arts. 18-19 — ID `emprestimo`. Prazo determina alíquota.\n\n**Limite:** Estes documentos cobrem 2026. Legislação futura pode alterar exigências.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 795,
+    "output_tokens": 391,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.00275,
+  "seconds": 4.093091999995522,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "6efab545def325b0db75a4ee92630ecc98178cc0ff7802cd9754bdeae2e0df37"
+}

@@ -1,0 +1,121 @@
+INFO:     Started server process [22212]
+INFO:     Waiting for application startup.
+INFO:app.main:Starting Brazilian Financial Assistant backend...
+INFO:app.main:Database tables ready.
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+ERROR:chromadb.telemetry.product.posthog:Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+ERROR:chromadb.telemetry.product.posthog:Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8020 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55695 - "GET /docs HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: PETR4 venda
+D:\Projects\BrazilianFinancialAssistant\backend\venv_mcp_test\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+[09/16/26 22:06:33] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+                    INFO     Processing request of type           server.py:733
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.mcp_gateway:MCP tools=fee_policy,calculate_trade transport=stdio status=ok asset_type=acao
+INFO:app.api.trades:Trade processed: PETR4 — IR devido: R$0.00
+INFO:     127.0.0.1:55713 - "POST /api/trades/process?user_id=form_demo1 HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: PETR4 venda
+D:\Projects\BrazilianFinancialAssistant\backend\venv_mcp_test\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+[09/16/26 22:06:33] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+                    INFO     Processing request of type           server.py:733
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.mcp_gateway:MCP tools=fee_policy,calculate_trade transport=stdio status=ok asset_type=acao
+INFO:app.api.trades:Trade processed: PETR4 — IR devido: R$74.85
+INFO:     127.0.0.1:55716 - "POST /api/trades/process?user_id=form_demo2 HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: HGLG11 venda
+D:\Projects\BrazilianFinancialAssistant\backend\venv_mcp_test\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+[09/16/26 22:06:33] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+                    INFO     Processing request of type           server.py:733
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.mcp_gateway:MCP tools=fee_policy,calculate_trade transport=stdio status=ok asset_type=fii
+INFO:app.api.trades:Trade processed: HGLG11 — IR devido: R$20.00
+INFO:     127.0.0.1:55719 - "POST /api/trades/process?user_id=form_demo3 HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: BTC venda
+D:\Projects\BrazilianFinancialAssistant\backend\venv_mcp_test\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+[09/16/26 22:06:34] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+                    INFO     Processing request of type           server.py:733
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.mcp_gateway:MCP tools=fee_policy,calculate_trade transport=stdio status=ok asset_type=cripto
+INFO:app.api.trades:Trade processed: BTC — IR devido: R$750.00
+INFO:     127.0.0.1:55723 - "POST /api/trades/process?user_id=form_demo4 HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: WINV26 venda
+D:\Projects\BrazilianFinancialAssistant\backend\venv_mcp_test\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+[09/16/26 22:06:50] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+                    INFO     Processing request of type           server.py:733
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.mcp_gateway:MCP tools=fee_policy,calculate_trade transport=stdio status=ok asset_type=futuro_indice
+INFO:app.api.trades:Trade processed: WINV26 — IR devido: R$14.62
+INFO:     127.0.0.1:55742 - "POST /api/trades/process?user_id=form_demo5 HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: WDOU26 venda
+D:\Projects\BrazilianFinancialAssistant\backend\venv_mcp_test\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+[09/16/26 22:06:50] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+                    INFO     Processing request of type           server.py:733
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.mcp_gateway:MCP tools=fee_policy,calculate_trade transport=stdio status=ok asset_type=futuro_dolar
+INFO:app.api.trades:Trade processed: WDOU26 — IR devido: R$29.54
+INFO:     127.0.0.1:55745 - "POST /api/trades/process?user_id=form_demo6 HTTP/1.1" 200 OK
+INFO:app.api.trades:Processing trade: VALE3 venda
+D:\Projects\BrazilianFinancialAssistant\backend\venv_mcp_test\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+[09/16/26 22:06:51] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+                    INFO     Processing request of type           server.py:733
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.mcp_gateway:MCP tools=fee_policy,calculate_trade transport=stdio status=ok asset_type=emprestimo_acoes
+INFO:app.api.trades:Trade processed: VALE3 — IR devido: R$0.00
+INFO:     127.0.0.1:55748 - "POST /api/trades/process?user_id=form_demo7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55777 - "POST /api/chat/?user_id=chat_demo HTTP/1.1" 400 Bad Request
+INFO:app.api.chat:Chat message from 'default': Comprei 50 cotas do HGLG11 a 100 reais hoje
+INFO:httpx2:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:app.agents.orchestrator:Orchestrator: 'Comprei 50 cotas do HGLG11 a 100 reais hoje' \u2192 'fii' (confianca=0.98)
+INFO:httpx2:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:55778 - "POST /api/chat/?user_id=chat_demo HTTP/1.1" 200 OK
+INFO:app.api.chat:Chat message from 'default': Qual a diferenca de tributacao entre venda de acoes e venda de cotas de FII?
+INFO:httpx2:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:app.agents.orchestrator:Orchestrator: 'Qual a diferenca de tributacao entre venda de acoes e venda ' \u2192 'pergunta' (confianca=0.95)
+ERROR:chromadb.telemetry.product.posthog:Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+INFO:httpx2:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:55797 - "POST /api/chat/?user_id=chat_demo HTTP/1.1" 200 OK
+INFO:app.api.chat:Chat message from 'default': Vendi as 50 cotas do HGLG11 a 110 reais hoje
+INFO:httpx2:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:app.agents.orchestrator:Orchestrator: 'Vendi as 50 cotas do HGLG11 a 110 reais hoje' \u2192 'fii' (confianca=0.98)
+INFO:httpx2:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+D:\Projects\BrazilianFinancialAssistant\backend\venv_mcp_test\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+[09/16/26 22:07:54] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+                    INFO     Processing request of type           server.py:733
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.mcp_gateway:MCP tools=fee_policy,calculate_trade transport=stdio status=ok asset_type=fii
+INFO:httpx2:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:55824 - "POST /api/chat/?user_id=chat_demo HTTP/1.1" 200 OK

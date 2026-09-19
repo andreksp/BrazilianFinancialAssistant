@@ -1,0 +1,24 @@
+{
+    "ativo": "WINV26",
+    "tipo_ativo": "futuro_indice",
+    "quantidade": 1.0,
+    "preco_unitario": 130500.0,
+    "data_operacao": "2026-09-10",
+    "valor_financeiro": 26100.0,
+    "ganho_prejuizo_bruto": 100.0,
+    "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 2.5,
+        "iss_sobre_corretagem": 0.0
+    },
+    "aliquota_aplicada": 0.15,
+    "ir_devido": 14.62,
+    "irrf_retido": 0.05,
+    "isen\u00c3\u00a7\u00c3\u00a3o_aplicada": false,
+    "ganho_prejuizo_liquido": 97.5,
+    "valor_liquido": 82.88,
+    "tipo_operacao_classificacao": "swing",
+    "mensagem": "Opera\u00c3\u00a7\u00c3\u00a3o opera\u00c3\u00a7\u00c3\u00a3o normal de WINV26: R$ 100,00 - IR devido: R$ 14,62 (sem isen\u00c3\u00a7\u00c3\u00a3o de R$20.000, aplic\u00c3\u00a1vel apenas a a\u00c3\u00a7\u00c3\u00b5es \u00c3\u00a0 vista) Simula\u00c3\u00a7\u00c3\u00a3o de posi\u00c3\u00a7\u00c3\u00a3o comprada encerrada, sem ajustes di\u00c3\u00a1rios intermedi\u00c3\u00a1rios ou compensa\u00c3\u00a7\u00c3\u00a3o mensal; valor financeiro \u00c3\u00a9 nocional, n\u00c3\u00a3o recebimento."
+}

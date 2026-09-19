@@ -31,10 +31,14 @@ TOMADOR (quem pega as ações emprestadas):
   isenção de R$20.000 se aplicável) — tratamento separado do aluguel em si
 
 BASE LEGAL:
-- Lei 13.043/2014
+- Lei nº 15.265, de 21 de novembro de 2025 — dispõe especificamente sobre a
+  tributação das operações de empréstimo de títulos e valores mobiliários no
+  País, com a tabela regressiva 22,5%/20%/17,5%/15% por prazo do contrato
+- Lei 13.043/2014 (base histórica: não incidência de IR na simples devolução
+  do mesmo título ao final do contrato)
 - Instrução Normativa RFB 1.585/2015
 
 LIMITAÇÃO DESTE SISTEMA (MVP):
-- Cobre apenas a remuneração do DOADOR. Sem prazo do contrato informado,
-  assume-se a faixa mais conservadora (até 180 dias, 22,5%) e o usuário é
-  avisado para confirmar o prazo real no informe da B3.
+- Cobre apenas a remuneração do DOADOR. O prazo do contrato é OBRIGATÓRIO:
+  sem essa informação, o sistema recusa o cálculo (não presume mais a faixa
+  mais conservadora) — o usuário deve informar o prazo real do informe da B3.

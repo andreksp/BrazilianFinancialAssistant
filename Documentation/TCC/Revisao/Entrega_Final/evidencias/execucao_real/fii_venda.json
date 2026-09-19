@@ -1,0 +1,24 @@
+{
+    "ativo": "HGLG11",
+    "tipo_ativo": "fii",
+    "quantidade": 50.0,
+    "preco_unitario": 170.0,
+    "data_operacao": "2026-09-10",
+    "valor_financeiro": 8500.0,
+    "ganho_prejuizo_bruto": 1000.0,
+    "taxas_totais": {
+        "taxa_liquidacao": 2.3375000000000004,
+        "taxa_registro": 0.289,
+        "emolumentos": 0.255,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+    },
+    "aliquota_aplicada": 0.2,
+    "ir_devido": 200.0,
+    "irrf_retido": 0.42500000000000004,
+    "isen\u00c3\u00a7\u00c3\u00a3o_aplicada": false,
+    "ganho_prejuizo_liquido": 997.1185,
+    "valor_liquido": 8296.693500000001,
+    "tipo_operacao_classificacao": "swing",
+    "mensagem": "FII swing trade de HGLG11: R$ 1.000,00 - IR devido: R$ 200,00 (sem isen\u00c3\u00a7\u00c3\u00a3o)"
+}

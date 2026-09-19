@@ -1,0 +1,24 @@
+{
+  "key": "T06_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Compensação de Perdas: Day Trade vs. Operações Comuns\n\n**Resposta direta:** Não. Conforme evidência ID \"perdas\":\n\n> \"Prejuízos em day trade **não se misturam com ganhos de operações comuns**.\"\n\n## Regimes Distintos\n\n| Aspecto | Day Trade | Operações Comuns |\n|--------|-----------|------------------|\n| **Alíquota** | 20% | 15% |\n| **Isenção R$ 20 mil** | Não se aplica | Aplicável |\n| **Compensação** | Apenas com ganhos DT (mesmo mês ou períodos posteriores) | Apenas entre si |\n\n## Importante\n\n- Perdas em **day trade não compensam** ganhos em operações comuns de ações\n- Cada regime exige apuração e tributação separada\n- Compensação de perdas requer declaração apropriada; não gera restituição automática\n\n**Fonte:** Lei 11.033/2004 e Receita Federal (IDs: \"perdas\", \"acoes_taxa\")\n\nCaso tenha operações com **opções**, a apuração é mais complexa e depende do tipo de evento (negociação, exercício, expiração).",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 730,
+    "output_tokens": 313,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002295,
+  "seconds": 3.3223047999781556,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "cde46225b75a05db850e4d6221d4d56c53d12dd9b1b5bbfa441e823a483b73b0"
+}

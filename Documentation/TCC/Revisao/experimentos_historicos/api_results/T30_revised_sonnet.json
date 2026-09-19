@@ -1,0 +1,27 @@
+{
+  "key": "T30_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, não somente abertura e fechamento reproduzem os ajustes diários de futuros.\n\nPela evidência **futuros** (fonte: normas.receita.fazenda.gov.br, idAto=67494): a apuração de resultado em operações de futuro \"envolve ajustes e despesas\", e o IRRF comum de 0,005% incide sobre a \"soma algébrica positiva dos ajustes diários\" apurados **no encerramento** da posição — ou seja, o cálculo consolida todos os ajustes diários ocorridos durante a vigência do contrato, não apenas os valores de abertura e fechamento isoladamente.\n\nIsso significa que os ajustes diários intermediários (marcação a mercado diária) fazem parte da apuração do resultado tributável, sendo somados algebricamente até o encerramento — o texto não indica que somente as pontas inicial e final da operação sejam consideradas.\n\n**Limites**: a evidência não detalha a mecânica operacional completa (ex.: tratamento de rolagem de contratos, múltiplas aberturas/fechamentos parciais no período). O valor nocional não deve ser confundido com resultado. Para confirmar a retenção efetiva, é necessário conferir o informe de rendimentos da corretora. Esta resposta é educacional, não constitui apuração fiscal definitiva — recomenda-se orientação profissional para o caso concreto.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 988,
+    "output_tokens": 473,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006706,
+  "seconds": 6.240258399979211,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "8e13e205301e67dcfdbc872cd84a5897d955c20bcf051d6cc7fc7cc5b22e7a21"
+}

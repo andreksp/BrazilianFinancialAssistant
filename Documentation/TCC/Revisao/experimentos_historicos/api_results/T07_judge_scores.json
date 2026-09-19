@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 1,
+      "motivo": "Trata isenção de R$20 mil para ações, não esclarece BDR"
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "Afirma que a isenção se aplica a BDR, contradiz o fato esperado"
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 0,
+      "motivo": "Opções; não trata de BDR"
+    },
+    {
+      "id": "bdr",
+      "relevancia": 2,
+      "motivo": "Responde diretamente: BDR sem isenção, 15% em operação comum"
+    },
+    {
+      "id": "futuros",
+      "relevancia": 0,
+      "motivo": "Futuros; fora do escopo da pergunta"
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 0,
+      "motivo": "Opções; fora do escopo da pergunta"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 0,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Conclui isenção para BDR, contrariando a regra correta; apoia-se em trecho contraditório",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega isenção, indica 15% e apuração/DARF, coerente com a fonte específica de BDR",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Núcleo correto (sem isenção, 15%), mas chama 15% de IRRF, confundindo retenção com imposto devido",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T07",
+  "repeat": false
+}

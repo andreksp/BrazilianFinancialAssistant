@@ -1,0 +1,130 @@
+{
+  "timestamp_utc": "2026-09-17T00:54:34.704819+00:00",
+  "server_script": "D:\\Projects\\BrazilianFinancialAssistant\\mcp_server\\runtime_server.py",
+  "server_script_exists": true,
+  "subprocess_pids_detected": [
+    1080,
+    26100,
+    26260
+  ],
+  "subprocess_proof": "Novo(s) PID(s) filho(s) do processo Python deste script, detectado(s) via psutil enquanto a sessão MCP estava aberta. Isso é a prova de que existe um processo do sistema operacional real por trás da sessão — não uma chamada de função in-process.",
+  "subprocess_details": [
+    {
+      "pid": 1080,
+      "name": "conhost.exe",
+      "cmdline": [
+        "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+        "0x4"
+      ],
+      "status": "running"
+    },
+    {
+      "pid": 26100,
+      "name": "python.exe",
+      "cmdline": [
+        "C:\\Program Files\\Python311\\python.exe",
+        "D:\\Projects\\BrazilianFinancialAssistant\\mcp_server\\runtime_server.py"
+      ],
+      "status": "running"
+    },
+    {
+      "pid": 26260,
+      "name": "python.exe",
+      "cmdline": [
+        "D:\\Projects\\BrazilianFinancialAssistant\\backend\\venv_mcp_test\\Scripts\\python.exe",
+        "D:\\Projects\\BrazilianFinancialAssistant\\mcp_server\\runtime_server.py"
+      ],
+      "status": "running"
+    }
+  ],
+  "initialize": {
+    "protocolVersion": "2025-11-25",
+    "serverInfo": {
+      "name": "Financial calculations runtime",
+      "version": "1.28.0"
+    },
+    "capabilities_tools": true,
+    "latency_seconds": 0.0129
+  },
+  "tools_list": {
+    "latency_seconds": 0.0031,
+    "tools": [
+      {
+        "name": "fee_policy",
+        "description": "Disclose cost policy. Not a live or validated current B3 tariff quote.",
+        "input_schema": {
+          "properties": {
+            "asset_type": {
+              "title": "Asset Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "asset_type"
+          ],
+          "title": "fee_policyArguments",
+          "type": "object"
+        }
+      },
+      {
+        "name": "calculate_trade",
+        "description": "Validate inputs and execute the existing calculator; never persist a trade.",
+        "input_schema": {
+          "properties": {
+            "trade": {
+              "additionalProperties": true,
+              "title": "Trade",
+              "type": "object"
+            },
+            "average_price": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Average Price"
+            }
+          },
+          "required": [
+            "trade"
+          ],
+          "title": "calculate_tradeArguments",
+          "type": "object"
+        }
+      }
+    ]
+  },
+  "tools_call_fee_policy": {
+    "latency_seconds": 0.0013,
+    "isError": false,
+    "raw_structuredContent_present": false,
+    "payload": {
+      "asset_type": "fii",
+      "source": "existing Python calculators; user supplied transaction costs",
+      "effective_date": null,
+      "live_tariffs": false,
+      "warning": "Custos informados são preferidos. Eventuais tarifas parametrizadas são estimativas legadas, sem vigência validada; não constituem tabela atual da B3."
+    }
+  },
+  "tools_call_calculate_trade": {
+    "latency_seconds": 0.0012,
+    "isError": false,
+    "input": {
+      "ativo": "HGLG11",
+      "tipo_ativo": "fii",
+      "tipo_operacao": "venda",
+      "quantidade": 10,
+      "preco_unitario": 110,
+      "data_operacao": "2026-09-16",
+      "custos_operacao": 0
+    },
+    "payload_ok": true,
+    "ir_devido": 20.0
+  },
+  "subprocess_terminated_after_session_close": true,
+  "orphan_pids_remaining": []
+}

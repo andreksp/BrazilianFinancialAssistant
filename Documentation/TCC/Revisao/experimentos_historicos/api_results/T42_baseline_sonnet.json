@@ -1,0 +1,27 @@
+{
+  "key": "T42_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Para ganho de capital em criptoativos negociados em **exchange nacional**, o código correto é o **DARF 4600** (\"Ganho de Capital\"), não o 6015.\n\nO código 6015 é específico para \"Ganhos Líquidos em Operações em Bolsa — Pessoa Física\" (ações, BDRs, FIIs, opções — renda variável em bolsa regulada como a B3) [id c4a28d9b57b540e1]. Criptoativos não são negociados em bolsa regulada nos moldes da B3, por isso seguem tratamento próprio de ganho de capital, apurado via programa GCAP, com DARF código 4600 [id 183017f281e698ea].\n\nResumo do regime nacional (evidência id 183017f281e698ea):\n- Isenção mensal de R$35.000 somando todas as criptomoedas/exchanges nacionais;\n- Ultrapassando o limite, todo o ganho do mês é tributado (15% a 22,5%, progressivo);\n- Vencimento: último dia útil do mês seguinte;\n- Sem IRRF/\"dedo-duro\" nessas operações.\n\nAtenção: isso vale para exchange nacional. Se as operações ocorreram em exchange estrangeira/autocustódia fora do Brasil, o regime é outro (Lei 14.754/2023 — 15% fixo, sem isenção de R$35.000, apurado na DAA anual, sem DARF mensal). Informe onde ocorreu a operação para confirmar o enquadramento correto.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 4933,
+    "output_tokens": 517,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.015036,
+  "seconds": 7.743373500008602,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "34da34772f52816e3eeadf8c39bd7669e9ebdedaa3f8adf4591641b3dae1780f"
+}

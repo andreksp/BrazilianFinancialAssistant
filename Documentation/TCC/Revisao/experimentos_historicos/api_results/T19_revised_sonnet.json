@@ -1,0 +1,27 @@
+{
+  "key": "T19_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. Segundo a evidência **opcoes** (fonte Receita/normas, idAto=67494), operações com opções em bolsa não têm a isenção de R$ 20.000, mesmo em operações comuns (não day trade). A alíquota aplicável é 15% (comum) ou 20% (day trade), incidindo sobre o ganho apurado — não sobre o valor negociado.\n\nA isenção de R$ 20.000/mês em vendas é regra específica para **ações à vista comuns** (evidência **acoes_isencao**), tomando como base o total de vendas no mês, somadas as corretoras — e não se estende a opções, FIIs, ETFs ou BDRs.\n\nImportante distinguir:\n- **Venda** (valor negociado) ≠ **rendimento/ganho** (lucro apurado);\n- **Regime**: ganho de capital em renda variável, apuração mensal com DARF (código 6015 se aplicável), não confundir com IRRF retido na fonte;\n- **Período**: a isenção de ações é apurada por mês-calendário.\n\nRecomendo verificar seu informe de rendimentos e a memória de cálculo da corretora antes de declarar. Se precisar, posso detalhar o tratamento por evento (exercício/expiração/negociação) com mais dados.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 982,
+    "output_tokens": 438,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006344,
+  "seconds": 5.807217099994887,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ecfa6c9869f018367466f4eb16159a1001fbc95c2df99f941e17960c958c9c02"
+}

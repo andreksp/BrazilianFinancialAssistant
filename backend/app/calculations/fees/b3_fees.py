@@ -49,7 +49,13 @@ def calculate_b3_fees(
         Detailed breakdown of all fees
     """
 
-    # B3 settlement fee (always applies)
+    if trade.custos_operacao is not None:
+        # Shared schema has no aggregate-cost field: retained as corretagem,
+        # explicitly labeled aggregate costs by the explanation layer.
+        return FeesBreakdown(taxa_liquidacao=0, taxa_registro=0, emolumentos=0,
+                             corretagem=trade.custos_operacao, iss_sobre_corretagem=0)
+
+    # Legacy tariff estimate, not a verified current tariff schedule.
     taxa_liquidacao = valor_financeiro * B3_TAXA_LIQUIDACAO
 
     # Registration fee (varies by asset type)

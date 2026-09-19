@@ -1,0 +1,24 @@
+{
+  "key": "T25_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise — WIN: Ganho Bruto em Reais\n\n## Resposta direta\n\nConforme a **evidência \"win\"** (B3, 12/09/2026):\n- **Cada ponto = R$ 0,20 por contrato**\n- **500 pontos × R$ 0,20 = R$ 100 (antes de custos)**\n\nSeu **ganho bruto é R$ 100**, deduzidos custos operacionais (corretagem, emolumentos, taxa de bolsa etc.).\n\n---\n\n## Observações importantes\n\n1. **Distinto de tributação**: ganho bruto ≠ ganho líquido tributável (que exclui custos e será tributado pelo regime de PF em renda variável).\n\n2. **Regime não especificado**: WIN é futuro; confirme se:\n   - É operação normal (ganho de capital em renda variável), ou  \n   - Integra atividade profissional de investimento (que muda alíquotas)\n\n3. **Falta dados para IR**: preciso saber:\n   - Período de manutenção (para taxa de renda fixa, se houver) \n   - Outros ganhos acumulados em 2026\n   - Regime declarado na sua situação\n\n---\n\n**Peço esclarecimento**: qual é sua classificação fiscal (investidor comum ou profissional)?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 840,
+    "output_tokens": 348,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.00258,
+  "seconds": 4.388823100016452,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ecb09ee83b80cf3f12b54fa1a9743012206d05b08f9f15e98f949aa3de593f75"
+}

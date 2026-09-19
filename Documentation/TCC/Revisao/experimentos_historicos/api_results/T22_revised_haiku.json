@@ -1,0 +1,24 @@
+{
+  "key": "T22_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Exercício de Opção e Prêmio\n\n**Não.** Conforme evidência **ID \"opcoes\"** (RFB, Consulta 67494):\n\n> \"O prêmio integra a apuração conforme o evento.\"\n\n## O que significa:\n\n- **Titular** (comprador): o prêmio pago reduz o ganho ou aumenta a perda no exercício\n- **Lançador** (vendedor): o prêmio recebido integra a base de cálculo\n\n## Apuração correta:\n\n1. **Tipo de operação**: exercício é evento tributável (não é mera venda de ação)\n2. **Alíquota**: operação comum 15% ou day trade 20%\n3. **Base**: ganho/perda considera prêmio obrigatoriamente\n4. **Sem isenção**: não se aplica R$ 20 mil para opções\n\n## Limite da resposta:\n\nA evidência não detalha cálculo titular vs. lançador. Você precisa informar:\n- Sua posição (titular ou lançador)?\n- Prêmio pago/recebido?\n- Preço exercício?\n\n**Fonte:** https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 826,
+    "output_tokens": 337,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002511,
+  "seconds": 4.354664199985564,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b5e36fba79b43292fb1a7df9870e2608951f30bdbd5c8d443434f874b03a7373"
+}

@@ -1,0 +1,880 @@
+F.F.FFFFFF.F..F.FFF.FF.............F.....................FFFFFF.F....... [ 97%]
+..                                                                       [100%]
+================================== FAILURES ===================================
+___________ TestAcoesCalculator.test_swing_trade_without_exemption ____________
+
+self = <tests.test_acoes.TestAcoesCalculator object at 0x00000175833BC8D0>
+calculator = <app.calculations.equity.acoes.AcoesCalculator object at 0x00000175B8B87E90>
+
+    def test_swing_trade_without_exemption(self, calculator):
+        """
+        Test: Swing trade where gain is below R$20,000 exemption limit.
+    
+        Scenario from research.md:
+        - Sold R$2,500 (below R$20,000)
+        - Gain: R$500
+        - Expected IR: R$75 (15% of R$500)
+        """
+        trade = TradeInput(
+            ativo="PETR4",
+            tipo_ativo=AssetType.ACAO,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=100,
+            preco_unitario=25.50,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+>       result = calculator.calculate_result(trade, average_price=25.00)
+
+tests\test_acoes.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <app.calculations.equity.acoes.AcoesCalculator object at 0x00000175B8B87E90>
+trade = TradeInput(ativo='PETR4', tipo_ativo=<AssetType.ACAO: 'acao'>, tipo_operacao=<OperationType.VENDA: 'venda'>, quantidad...'>, preco_medio_informado=None, custos_operacao=None, irrf_informado=None, prazo_dias=None, exchange_estrangeira=False)
+average_price = 25.0
+
+    def calculate_result(
+        self, trade: TradeInput, average_price: Optional[float] = None
+    ) -> TaxCalculationResult:
+        """
+        Calculate complete tax and fee result for a stock trade.
+    
+        Args:
+            trade: The trade input
+            average_price: Weighted average price (for sells)
+    
+        Returns:
+            Complete calculation result with all taxes and fees
+        """
+        # Validate trade
+        assert trade.tipo_ativo == AssetType.ACAO, "This calculator is for Ações only"
+        assert trade.tipo_operacao.value == "venda", "This calculator only handles sales"
+    
+        # Calculate basic metrics
+        valor_financeiro = trade.quantidade * trade.preco_unitario
+        if average_price is None:
+            raise ValueError("Informe o custo médio de aquisição; não é seguro presumir ganho zero.")
+        pm = average_price
+        ganho_bruto = self.calculate_gain_loss(trade.quantidade, pm, trade.preco_unitario)
+    
+        # Classify operation type
+        is_day_trade = self.is_day_trade(trade)
+        tipo_operacao = TradeOperationType.DAY_TRADE if is_day_trade else TradeOperationType.SWING
+    
+        # Calculate fees
+        fees = calculate_b3_fees(valor_financeiro, AssetType.ACAO, trade)
+    
+        # Determine tax rate
+        aliquota = self.get_tax_rate(is_day_trade)
+        if not is_day_trade and (trade.total_vendas_mes is None or trade.total_vendas_mes < valor_financeiro):
+>           raise ValueError("Informe o total completo das vendas de ações à vista no mês, incluindo esta operação.")
+E           ValueError: Informe o total completo das vendas de ações à vista no mês, incluindo esta operação.
+
+app\calculations\equity\acoes.py:118: ValueError
+_________________ TestAcoesCalculator.test_loss_is_not_taxed __________________
+
+self = <tests.test_acoes.TestAcoesCalculator object at 0x0000017585C6AF90>
+calculator = <app.calculations.equity.acoes.AcoesCalculator object at 0x00000175B8B7F990>
+
+    def test_loss_is_not_taxed(self, calculator):
+        """
+        Test: Losses result in 0 tax (only gains are taxed).
+    
+        Scenario:
+        - Sold at loss
+        - Loss: -R$100
+        - Expected IR: R$0 (losses not taxed)
+        """
+        trade = TradeInput(
+            ativo="VALE3",
+            tipo_ativo=AssetType.ACAO,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=100,
+            preco_unitario=23.00,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+>       result = calculator.calculate_result(trade, average_price=24.00)
+
+tests\test_acoes.py:100: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <app.calculations.equity.acoes.AcoesCalculator object at 0x00000175B8B7F990>
+trade = TradeInput(ativo='VALE3', tipo_ativo=<AssetType.ACAO: 'acao'>, tipo_operacao=<OperationType.VENDA: 'venda'>, quantidad...'>, preco_medio_informado=None, custos_operacao=None, irrf_informado=None, prazo_dias=None, exchange_estrangeira=False)
+average_price = 24.0
+
+    def calculate_result(
+        self, trade: TradeInput, average_price: Optional[float] = None
+    ) -> TaxCalculationResult:
+        """
+        Calculate complete tax and fee result for a stock trade.
+    
+        Args:
+            trade: The trade input
+            average_price: Weighted average price (for sells)
+    
+        Returns:
+            Complete calculation result with all taxes and fees
+        """
+        # Validate trade
+        assert trade.tipo_ativo == AssetType.ACAO, "This calculator is for Ações only"
+        assert trade.tipo_operacao.value == "venda", "This calculator only handles sales"
+    
+        # Calculate basic metrics
+        valor_financeiro = trade.quantidade * trade.preco_unitario
+        if average_price is None:
+            raise ValueError("Informe o custo médio de aquisição; não é seguro presumir ganho zero.")
+        pm = average_price
+        ganho_bruto = self.calculate_gain_loss(trade.quantidade, pm, trade.preco_unitario)
+    
+        # Classify operation type
+        is_day_trade = self.is_day_trade(trade)
+        tipo_operacao = TradeOperationType.DAY_TRADE if is_day_trade else TradeOperationType.SWING
+    
+        # Calculate fees
+        fees = calculate_b3_fees(valor_financeiro, AssetType.ACAO, trade)
+    
+        # Determine tax rate
+        aliquota = self.get_tax_rate(is_day_trade)
+        if not is_day_trade and (trade.total_vendas_mes is None or trade.total_vendas_mes < valor_financeiro):
+>           raise ValueError("Informe o total completo das vendas de ações à vista no mês, incluindo esta operação.")
+E           ValueError: Informe o total completo das vendas de ações à vista no mês, incluindo esta operação.
+
+app\calculations\equity\acoes.py:118: ValueError
+_____________ TestAcoesCalculator.test_irrf_withheld_swing_trade ______________
+
+self = <tests.test_acoes.TestAcoesCalculator object at 0x0000017585C6BD50>
+calculator = <app.calculations.equity.acoes.AcoesCalculator object at 0x00000175B8B5C450>
+
+    def test_irrf_withheld_swing_trade(self, calculator):
+        """
+        Test: IRRF (withholding tax) for swing trade.
+    
+        Business logic: 0,005% withheld on transaction value
+        """
+        trade = TradeInput(
+            ativo="PETR4",
+            tipo_ativo=AssetType.ACAO,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=100,
+            preco_unitario=25.50,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+>       result = calculator.calculate_result(trade, average_price=25.00)
+
+tests\test_acoes.py:140: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <app.calculations.equity.acoes.AcoesCalculator object at 0x00000175B8B5C450>
+trade = TradeInput(ativo='PETR4', tipo_ativo=<AssetType.ACAO: 'acao'>, tipo_operacao=<OperationType.VENDA: 'venda'>, quantidad...'>, preco_medio_informado=None, custos_operacao=None, irrf_informado=None, prazo_dias=None, exchange_estrangeira=False)
+average_price = 25.0
+
+    def calculate_result(
+        self, trade: TradeInput, average_price: Optional[float] = None
+    ) -> TaxCalculationResult:
+        """
+        Calculate complete tax and fee result for a stock trade.
+    
+        Args:
+            trade: The trade input
+            average_price: Weighted average price (for sells)
+    
+        Returns:
+            Complete calculation result with all taxes and fees
+        """
+        # Validate trade
+        assert trade.tipo_ativo == AssetType.ACAO, "This calculator is for Ações only"
+        assert trade.tipo_operacao.value == "venda", "This calculator only handles sales"
+    
+        # Calculate basic metrics
+        valor_financeiro = trade.quantidade * trade.preco_unitario
+        if average_price is None:
+            raise ValueError("Informe o custo médio de aquisição; não é seguro presumir ganho zero.")
+        pm = average_price
+        ganho_bruto = self.calculate_gain_loss(trade.quantidade, pm, trade.preco_unitario)
+    
+        # Classify operation type
+        is_day_trade = self.is_day_trade(trade)
+        tipo_operacao = TradeOperationType.DAY_TRADE if is_day_trade else TradeOperationType.SWING
+    
+        # Calculate fees
+        fees = calculate_b3_fees(valor_financeiro, AssetType.ACAO, trade)
+    
+        # Determine tax rate
+        aliquota = self.get_tax_rate(is_day_trade)
+        if not is_day_trade and (trade.total_vendas_mes is None or trade.total_vendas_mes < valor_financeiro):
+>           raise ValueError("Informe o total completo das vendas de ações à vista no mês, incluindo esta operação.")
+E           ValueError: Informe o total completo das vendas de ações à vista no mês, incluindo esta operação.
+
+app\calculations\equity\acoes.py:118: ValueError
+______________ TestAcoesCalculator.test_irrf_withheld_day_trade _______________
+
+self = <tests.test_acoes.TestAcoesCalculator object at 0x0000017585C80450>
+calculator = <app.calculations.equity.acoes.AcoesCalculator object at 0x00000175B8BBA310>
+
+    def test_irrf_withheld_day_trade(self, calculator):
+        """
+        Test: IRRF for day trade is higher (1% vs 0.005%).
+        """
+        trade = TradeInput(
+            ativo="ITUB4",
+            tipo_ativo=AssetType.ACAO,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=100,
+            preco_unitario=29.00,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+        calculator.is_day_trade = lambda t: True
+        result = calculator.calculate_result(trade, average_price=28.50)
+    
+        # IRRF = valor_financeiro * 1%
+        expected_irrf = 2900.0 * 0.01
+>       assert result.irrf_retido == pytest.approx(expected_irrf, rel=1e-5)
+E       assert 0.0 == 29.0 ± 2.9e-04
+E         comparison failed
+E         Obtained: 0.0
+E         Expected: 29.0 ± 2.9e-04
+
+tests\test_acoes.py:164: AssertionError
+___________________ TestProcessTrade.test_process_acao_sell ___________________
+
+self = <tests.test_api.TestProcessTrade object at 0x00000175B8B0D510>
+client = <starlette.testclient.TestClient object at 0x00000175B8B87DD0>
+
+    def test_process_acao_sell(self, client):
+        """Sell of Ação returns full TaxCalculationResult."""
+        payload = {
+            "ativo": "PETR4",
+            "tipo_ativo": "acao",
+            "tipo_operacao": "venda",
+            "quantidade": 100,
+            "preco_unitario": 30.00,
+            "data_operacao": "2025-03-15",
+        }
+        resp = client.post("/api/trades/process", json=payload)
+>       assert resp.status_code == 200
+E       assert 400 == 200
+E        +  where 400 = <Response [400 Bad Request]>.status_code
+
+tests\test_api.py:76: AssertionError
+----------------------------- Captured log setup ------------------------------
+ERROR    chromadb.telemetry.product.posthog:posthog.py:59 Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+ERROR    chromadb.telemetry.product.posthog:posthog.py:59 Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+___________________ TestProcessTrade.test_process_bdr_sell ____________________
+
+self = <tests.test_api.TestProcessTrade object at 0x00000175B8B0DE10>
+client = <starlette.testclient.TestClient object at 0x00000175B8DC7190>
+
+    def test_process_bdr_sell(self, client):
+        """BDR sell uses 15% rate."""
+        payload = {
+            "ativo": "AMZO34",
+            "tipo_ativo": "bdr",
+            "tipo_operacao": "venda",
+            "quantidade": 10,
+            "preco_unitario": 200.00,
+            "data_operacao": "2025-03-15",
+        }
+        resp = client.post("/api/trades/process", json=payload)
+>       assert resp.status_code == 200
+E       assert 400 == 200
+E        +  where 400 = <Response [400 Bad Request]>.status_code
+
+tests\test_api.py:93: AssertionError
+_____________ TestProcessTrade.test_process_fii_sell_no_exemption _____________
+
+self = <tests.test_api.TestProcessTrade object at 0x00000175B8B0E4D0>
+client = <starlette.testclient.TestClient object at 0x00000175B8B87850>
+
+    def test_process_fii_sell_no_exemption(self, client):
+        """FII sell always uses 20% — no exemption."""
+        payload = {
+            "ativo": "HGLG11",
+            "tipo_ativo": "fii",
+            "tipo_operacao": "venda",
+            "quantidade": 10,
+            "preco_unitario": 150.00,
+            "data_operacao": "2025-03-15",
+        }
+        resp = client.post("/api/trades/process", json=payload)
+>       assert resp.status_code == 200
+E       assert 400 == 200
+E        +  where 400 = <Response [400 Bad Request]>.status_code
+
+tests\test_api.py:107: AssertionError
+__________________ TestProcessTrade.test_process_opcao_sell ___________________
+
+self = <tests.test_api.TestProcessTrade object at 0x00000175B8B0EBD0>
+client = <starlette.testclient.TestClient object at 0x00000175B8FCA450>
+
+    def test_process_opcao_sell(self, client):
+        """Option sell returns 15% rate (swing)."""
+        payload = {
+            "ativo": "PETRH250",
+            "tipo_ativo": "opcao",
+            "tipo_operacao": "venda",
+            "quantidade": 100,
+            "preco_unitario": 5.00,
+            "data_operacao": "2025-03-15",
+        }
+        resp = client.post("/api/trades/process", json=payload)
+>       assert resp.status_code == 200
+E       assert 400 == 200
+E        +  where 400 = <Response [400 Bad Request]>.status_code
+
+tests\test_api.py:123: AssertionError
+________ TestProcessTrade.test_sell_uses_average_price_from_prior_buy _________
+
+self = <tests.test_api.TestProcessTrade object at 0x00000175B8B0F950>
+client = <starlette.testclient.TestClient object at 0x00000175B8B0F4D0>
+
+    def test_sell_uses_average_price_from_prior_buy(self, client):
+        """
+        Sell calculates gain from the average price of prior purchases,
+        not from the sale price itself.
+    
+        Buy 100 @ R$20 → average price = R$20
+        Sell 100 @ R$25 → gain = (25 - 20) * 100 = R$500
+        IR = 500 * 15% = R$75
+        """
+        buy = {
+            "ativo": "VALE3",
+            "tipo_ativo": "acao",
+            "tipo_operacao": "compra",
+            "quantidade": 100,
+            "preco_unitario": 20.00,
+            "data_operacao": "2025-03-10",
+        }
+        client.post("/api/trades/process", json=buy)
+    
+        sell = {
+            "ativo": "VALE3",
+            "tipo_ativo": "acao",
+            "tipo_operacao": "venda",
+            "quantidade": 100,
+            "preco_unitario": 25.00,
+            "data_operacao": "2025-03-15",
+        }
+        resp = client.post("/api/trades/process", json=sell)
+>       assert resp.status_code == 200
+E       assert 400 == 200
+E        +  where 400 = <Response [400 Bad Request]>.status_code
+
+tests\test_api.py:170: AssertionError
+________________ TestTradeHistory.test_sell_appears_in_history ________________
+
+self = <tests.test_api.TestTradeHistory object at 0x00000175B8B18E50>
+client = <starlette.testclient.TestClient object at 0x00000175B8F57FD0>
+
+    def test_sell_appears_in_history(self, client):
+        """A processed sell trade is retrievable from history."""
+        sell = {
+            "ativo": "PETR4",
+            "tipo_ativo": "acao",
+            "tipo_operacao": "venda",
+            "quantidade": 100,
+            "preco_unitario": 30.00,
+            "data_operacao": "2025-03-15",
+        }
+        client.post("/api/trades/process", json=sell)
+    
+        resp = client.get("/api/trades/history")
+        assert resp.status_code == 200
+        history = resp.json()
+>       assert len(history) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+tests\test_api.py:215: AssertionError
+_______________ TestTradeHistory.test_history_filtered_by_month _______________
+
+self = <tests.test_api.TestTradeHistory object at 0x00000175B8B19C10>
+client = <starlette.testclient.TestClient object at 0x00000175B8BBAE50>
+
+    def test_history_filtered_by_month(self, client):
+        """Month filter returns only trades from that month."""
+        for day, month in [("2025-03-15", "março"), ("2025-04-10", "abril")]:
+            client.post("/api/trades/process", json={
+                "ativo": "PETR4",
+                "tipo_ativo": "acao",
+                "tipo_operacao": "venda",
+                "quantidade": 10,
+                "preco_unitario": 30.00,
+                "data_operacao": day,
+            })
+    
+        resp = client.get("/api/trades/history?month=3&year=2025")
+        assert resp.status_code == 200
+>       assert len(resp.json()) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+E        +    where [] = <bound method Response.json of <Response [200 OK]>>()
+E        +      where <bound method Response.json of <Response [200 OK]>> = <Response [200 OK]>.json
+
+tests\test_api.py:248: AssertionError
+_______________ TestBatchProcessing.test_batch_processes_sells ________________
+
+self = <tests.test_api.TestBatchProcessing object at 0x00000175B8B0E110>
+client = <starlette.testclient.TestClient object at 0x00000175BEDAD210>
+
+    def test_batch_processes_sells(self, client):
+        """Batch endpoint processes multiple sells and returns results."""
+        trades = [
+            {
+                "ativo": "PETR4",
+                "tipo_ativo": "acao",
+                "tipo_operacao": "venda",
+                "quantidade": 100,
+                "preco_unitario": 25.00,
+                "data_operacao": "2025-03-15",
+            },
+            {
+                "ativo": "VALE3",
+                "tipo_ativo": "acao",
+                "tipo_operacao": "venda",
+                "quantidade": 50,
+                "preco_unitario": 22.00,
+                "data_operacao": "2025-03-16",
+            },
+        ]
+        resp = client.post("/api/trades/batch", json=trades)
+        assert resp.status_code == 200
+        results = resp.json()
+>       assert len(results) == 2
+E       assert 0 == 2
+E        +  where 0 = len([])
+
+tests\test_api.py:281: AssertionError
+------------------------------ Captured log call ------------------------------
+WARNING  app.api.trades:trades.py:155 Failed to process PETR4: Custo médio ausente; venda não processada.
+WARNING  app.api.trades:trades.py:155 Failed to process VALE3: Custo médio ausente; venda não processada.
+_______ TestBatchProcessing.test_batch_buy_then_sell_uses_average_price _______
+
+self = <tests.test_api.TestBatchProcessing object at 0x00000175B8B18410>
+client = <starlette.testclient.TestClient object at 0x00000175B8B57E10>
+
+    def test_batch_buy_then_sell_uses_average_price(self, client):
+        """
+        Buy + sell in batch: sell should use average price from the batch buy.
+    
+        Buy 100 @ R$20, Sell 100 @ R$25 → gain = R$500
+        """
+        trades = [
+            {
+                "ativo": "VALE3",
+                "tipo_ativo": "acao",
+                "tipo_operacao": "compra",
+                "quantidade": 100,
+                "preco_unitario": 20.00,
+                "data_operacao": "2025-03-10",
+            },
+            {
+                "ativo": "VALE3",
+                "tipo_ativo": "acao",
+                "tipo_operacao": "venda",
+                "quantidade": 100,
+                "preco_unitario": 25.00,
+                "data_operacao": "2025-03-15",
+            },
+        ]
+        resp = client.post("/api/trades/batch", json=trades)
+        assert resp.status_code == 200
+        results = resp.json()
+>       assert len(results) == 1  # Only 1 sell result
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+tests\test_api.py:310: AssertionError
+------------------------------ Captured log call ------------------------------
+WARNING  app.api.trades:trades.py:155 Failed to process VALE3: Informe o total completo das vendas de ações à vista no mês, incluindo esta operação.
+_____________ TestCalculationsSummary.test_summary_aggregates_ir ______________
+
+self = <tests.test_api.TestCalculationsSummary object at 0x00000175B8B1A5D0>
+client = <starlette.testclient.TestClient object at 0x00000175BED53950>
+
+    def test_summary_aggregates_ir(self, client):
+        """Monthly summary aggregates IR from multiple sell trades."""
+        for ticker, price in [("PETR4", 25.0), ("VALE3", 22.0)]:
+            client.post("/api/trades/process", json={
+                "ativo": ticker,
+                "tipo_ativo": "acao",
+                "tipo_operacao": "venda",
+                "quantidade": 100,
+                "preco_unitario": price,
+                "data_operacao": "2025-03-15",
+            })
+    
+        resp = client.get("/api/calculations/summary?month=3&year=2025")
+>       assert resp.status_code == 200
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_api.py:337: AssertionError
+___ TestCalculationsSummary.test_darf_vencimento_is_last_day_of_next_month ____
+
+self = <tests.test_api.TestCalculationsSummary object at 0x00000175B8B1A950>
+client = <starlette.testclient.TestClient object at 0x00000175BEDB4ED0>
+
+    def test_darf_vencimento_is_last_day_of_next_month(self, client):
+        """DARF due date for March 2025 should be April 30, 2025."""
+        client.post("/api/trades/process", json={
+            "ativo": "PETR4",
+            "tipo_ativo": "acao",
+            "tipo_operacao": "venda",
+            "quantidade": 100,
+            "preco_unitario": 25.00,
+            "data_operacao": "2025-03-15",
+        })
+    
+        resp = client.get("/api/calculations/summary?month=3&year=2025")
+>       assert resp.status_code == 200
+E       assert 404 == 200
+E        +  where 404 = <Response [404 Not Found]>.status_code
+
+tests\test_api.py:355: AssertionError
+_ TestEmprestimoCalculator.test_missing_prazo_defaults_to_conservative_bracket _
+
+self = <tests.test_emprestimo.TestEmprestimoCalculator object at 0x00000175B8B6EE10>
+calculator = <app.calculations.lending.emprestimo.EmprestimoCalculator object at 0x00000175BED4E890>
+
+    def test_missing_prazo_defaults_to_conservative_bracket(self, calculator):
+        trade = TradeInput(
+            ativo="VALE3",
+            tipo_ativo=AssetType.EMPRESTIMO_ACOES,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=100,
+            preco_unitario=1.00,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+        assert trade.prazo_dias is None
+>       result = calculator.calculate_result(trade)
+
+tests\test_emprestimo.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <app.calculations.lending.emprestimo.EmprestimoCalculator object at 0x00000175BED4E890>
+trade = TradeInput(ativo='VALE3', tipo_ativo=<AssetType.EMPRESTIMO_ACOES: 'emprestimo_acoes'>, tipo_operacao=<OperationType.VE...'>, preco_medio_informado=None, custos_operacao=None, irrf_informado=None, prazo_dias=None, exchange_estrangeira=False)
+average_price = None
+
+    def calculate_result(
+        self, trade: TradeInput, average_price: Optional[float] = None
+    ) -> TaxCalculationResult:
+        assert trade.tipo_ativo == AssetType.EMPRESTIMO_ACOES, "This calculator is for Empréstimo de Ações only"
+    
+        if trade.prazo_dias is None:
+>           raise ValueError("Informe o prazo do contrato para determinar a faixa de IRRF.")
+E           ValueError: Informe o prazo do contrato para determinar a faixa de IRRF.
+
+app\calculations\lending\emprestimo.py:84: ValueError
+___________ TestFuturosCalculator.test_normal_operation_15_percent ____________
+
+self = <tests.test_futuros.TestFuturosCalculator object at 0x00000175B8B24850>
+calculator = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BEDB6390>
+
+    def test_normal_operation_15_percent(self, calculator):
+        trade = TradeInput(
+            ativo="WDO",
+            tipo_ativo=AssetType.FUTURO_DOLAR,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=2,
+            preco_unitario=5280.00,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+>       result = calculator.calculate_result(trade, average_price=5230.00)
+
+tests\test_futuros.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BEDB6390>
+trade = TradeInput(ativo='WDO', tipo_ativo=<AssetType.FUTURO_DOLAR: 'futuro_dolar'>, tipo_operacao=<OperationType.VENDA: 'vend...'>, preco_medio_informado=None, custos_operacao=None, irrf_informado=None, prazo_dias=None, exchange_estrangeira=False)
+average_price = 5230.0
+
+    def calculate_result(
+        self, trade: TradeInput, average_price: Optional[float] = None
+    ) -> TaxCalculationResult:
+        assert trade.tipo_ativo in _SUPPORTED, "This calculator is for Futuros only"
+        assert trade.tipo_operacao.value == "venda", "This calculator only handles position closes"
+    
+        prefix = 'WDO' if trade.tipo_ativo == AssetType.FUTURO_DOLAR else 'WIN'
+        if not trade.ativo.upper().startswith(prefix):
+            raise ValueError("Somente minicontratos WIN e WDO são suportados nesta simulação.")
+        if average_price is None:
+            raise ValueError("Informe a cotação de abertura da posição comprada.")
+        if trade.custos_operacao is None or trade.irrf_informado is None:
+>           raise ValueError("Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.")
+E           ValueError: Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.
+
+app\calculations\derivatives\futuros.py:72: ValueError
+_______________ TestFuturosCalculator.test_day_trade_20_percent _______________
+
+self = <tests.test_futuros.TestFuturosCalculator object at 0x00000175B8B24490>
+calculator = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BED90F90>
+
+    def test_day_trade_20_percent(self, calculator):
+        trade = TradeInput(
+            ativo="WIN",
+            tipo_ativo=AssetType.FUTURO_INDICE,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=5,
+            preco_unitario=130000.00,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+        calculator.is_day_trade = lambda t: True
+>       result = calculator.calculate_result(trade, average_price=129800.00)
+
+tests\test_futuros.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BED90F90>
+trade = TradeInput(ativo='WIN', tipo_ativo=<AssetType.FUTURO_INDICE: 'futuro_indice'>, tipo_operacao=<OperationType.VENDA: 've...'>, preco_medio_informado=None, custos_operacao=None, irrf_informado=None, prazo_dias=None, exchange_estrangeira=False)
+average_price = 129800.0
+
+    def calculate_result(
+        self, trade: TradeInput, average_price: Optional[float] = None
+    ) -> TaxCalculationResult:
+        assert trade.tipo_ativo in _SUPPORTED, "This calculator is for Futuros only"
+        assert trade.tipo_operacao.value == "venda", "This calculator only handles position closes"
+    
+        prefix = 'WDO' if trade.tipo_ativo == AssetType.FUTURO_DOLAR else 'WIN'
+        if not trade.ativo.upper().startswith(prefix):
+            raise ValueError("Somente minicontratos WIN e WDO são suportados nesta simulação.")
+        if average_price is None:
+            raise ValueError("Informe a cotação de abertura da posição comprada.")
+        if trade.custos_operacao is None or trade.irrf_informado is None:
+>           raise ValueError("Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.")
+E           ValueError: Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.
+
+app\calculations\derivatives\futuros.py:72: ValueError
+____________ TestFuturosCalculator.test_no_exemption_ever_applied _____________
+
+self = <tests.test_futuros.TestFuturosCalculator object at 0x00000175B8B27410>
+calculator = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BEDA5650>
+
+    def test_no_exemption_ever_applied(self, calculator):
+        """Futuros never receive the R$20,000 exemption, even on small gains."""
+        trade = TradeInput(
+            ativo="WDO",
+            tipo_ativo=AssetType.FUTURO_DOLAR,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=1,
+            preco_unitario=100.00,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+>       result = calculator.calculate_result(trade, average_price=90.00)
+
+tests\test_futuros.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BEDA5650>
+trade = TradeInput(ativo='WDO', tipo_ativo=<AssetType.FUTURO_DOLAR: 'futuro_dolar'>, tipo_operacao=<OperationType.VENDA: 'vend...'>, preco_medio_informado=None, custos_operacao=None, irrf_informado=None, prazo_dias=None, exchange_estrangeira=False)
+average_price = 90.0
+
+    def calculate_result(
+        self, trade: TradeInput, average_price: Optional[float] = None
+    ) -> TaxCalculationResult:
+        assert trade.tipo_ativo in _SUPPORTED, "This calculator is for Futuros only"
+        assert trade.tipo_operacao.value == "venda", "This calculator only handles position closes"
+    
+        prefix = 'WDO' if trade.tipo_ativo == AssetType.FUTURO_DOLAR else 'WIN'
+        if not trade.ativo.upper().startswith(prefix):
+            raise ValueError("Somente minicontratos WIN e WDO são suportados nesta simulação.")
+        if average_price is None:
+            raise ValueError("Informe a cotação de abertura da posição comprada.")
+        if trade.custos_operacao is None or trade.irrf_informado is None:
+>           raise ValueError("Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.")
+E           ValueError: Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.
+
+app\calculations\derivatives\futuros.py:72: ValueError
+__________________ TestFuturosCalculator.test_loss_not_taxed __________________
+
+self = <tests.test_futuros.TestFuturosCalculator object at 0x00000175B8B25B50>
+calculator = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BEE15FD0>
+
+    def test_loss_not_taxed(self, calculator):
+        trade = TradeInput(
+            ativo="WIN",
+            tipo_ativo=AssetType.FUTURO_INDICE,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=1,
+            preco_unitario=129000.00,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+>       result = calculator.calculate_result(trade, average_price=130000.00)
+
+tests\test_futuros.py:83: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BEE15FD0>
+trade = TradeInput(ativo='WIN', tipo_ativo=<AssetType.FUTURO_INDICE: 'futuro_indice'>, tipo_operacao=<OperationType.VENDA: 've...'>, preco_medio_informado=None, custos_operacao=None, irrf_informado=None, prazo_dias=None, exchange_estrangeira=False)
+average_price = 130000.0
+
+    def calculate_result(
+        self, trade: TradeInput, average_price: Optional[float] = None
+    ) -> TaxCalculationResult:
+        assert trade.tipo_ativo in _SUPPORTED, "This calculator is for Futuros only"
+        assert trade.tipo_operacao.value == "venda", "This calculator only handles position closes"
+    
+        prefix = 'WDO' if trade.tipo_ativo == AssetType.FUTURO_DOLAR else 'WIN'
+        if not trade.ativo.upper().startswith(prefix):
+            raise ValueError("Somente minicontratos WIN e WDO são suportados nesta simulação.")
+        if average_price is None:
+            raise ValueError("Informe a cotação de abertura da posição comprada.")
+        if trade.custos_operacao is None or trade.irrf_informado is None:
+>           raise ValueError("Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.")
+E           ValueError: Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.
+
+app\calculations\derivatives\futuros.py:72: ValueError
+______________ TestFuturosCalculator.test_irrf_normal_operation _______________
+
+self = <tests.test_futuros.TestFuturosCalculator object at 0x00000175B8B27050>
+calculator = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BEDD1750>
+
+    def test_irrf_normal_operation(self, calculator):
+        trade = TradeInput(
+            ativo="WDO",
+            tipo_ativo=AssetType.FUTURO_DOLAR,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=10,
+            preco_unitario=100.00,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+>       result = calculator.calculate_result(trade, average_price=90.00)
+
+tests\test_futuros.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BEDD1750>
+trade = TradeInput(ativo='WDO', tipo_ativo=<AssetType.FUTURO_DOLAR: 'futuro_dolar'>, tipo_operacao=<OperationType.VENDA: 'vend...'>, preco_medio_informado=None, custos_operacao=None, irrf_informado=None, prazo_dias=None, exchange_estrangeira=False)
+average_price = 90.0
+
+    def calculate_result(
+        self, trade: TradeInput, average_price: Optional[float] = None
+    ) -> TaxCalculationResult:
+        assert trade.tipo_ativo in _SUPPORTED, "This calculator is for Futuros only"
+        assert trade.tipo_operacao.value == "venda", "This calculator only handles position closes"
+    
+        prefix = 'WDO' if trade.tipo_ativo == AssetType.FUTURO_DOLAR else 'WIN'
+        if not trade.ativo.upper().startswith(prefix):
+            raise ValueError("Somente minicontratos WIN e WDO são suportados nesta simulação.")
+        if average_price is None:
+            raise ValueError("Informe a cotação de abertura da posição comprada.")
+        if trade.custos_operacao is None or trade.irrf_informado is None:
+>           raise ValueError("Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.")
+E           ValueError: Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.
+
+app\calculations\derivatives\futuros.py:72: ValueError
+__________________ TestFuturosCalculator.test_irrf_day_trade __________________
+
+self = <tests.test_futuros.TestFuturosCalculator object at 0x00000175B8B24290>
+calculator = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BED4E6D0>
+
+    def test_irrf_day_trade(self, calculator):
+        trade = TradeInput(
+            ativo="WDO",
+            tipo_ativo=AssetType.FUTURO_DOLAR,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=10,
+            preco_unitario=100.00,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+        calculator.is_day_trade = lambda t: True
+>       result = calculator.calculate_result(trade, average_price=90.00)
+
+tests\test_futuros.py:114: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BED4E6D0>
+trade = TradeInput(ativo='WDO', tipo_ativo=<AssetType.FUTURO_DOLAR: 'futuro_dolar'>, tipo_operacao=<OperationType.VENDA: 'vend...'>, preco_medio_informado=None, custos_operacao=None, irrf_informado=None, prazo_dias=None, exchange_estrangeira=False)
+average_price = 90.0
+
+    def calculate_result(
+        self, trade: TradeInput, average_price: Optional[float] = None
+    ) -> TaxCalculationResult:
+        assert trade.tipo_ativo in _SUPPORTED, "This calculator is for Futuros only"
+        assert trade.tipo_operacao.value == "venda", "This calculator only handles position closes"
+    
+        prefix = 'WDO' if trade.tipo_ativo == AssetType.FUTURO_DOLAR else 'WIN'
+        if not trade.ativo.upper().startswith(prefix):
+            raise ValueError("Somente minicontratos WIN e WDO são suportados nesta simulação.")
+        if average_price is None:
+            raise ValueError("Informe a cotação de abertura da posição comprada.")
+        if trade.custos_operacao is None or trade.irrf_informado is None:
+>           raise ValueError("Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.")
+E           ValueError: Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.
+
+app\calculations\derivatives\futuros.py:72: ValueError
+_________ TestFuturosCalculator.test_valor_liquido_deducts_all_costs __________
+
+self = <tests.test_futuros.TestFuturosCalculator object at 0x00000175B8B26F90>
+calculator = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BEDB7C10>
+
+    def test_valor_liquido_deducts_all_costs(self, calculator):
+        trade = TradeInput(
+            ativo="WIN",
+            tipo_ativo=AssetType.FUTURO_INDICE,
+            tipo_operacao=OperationType.VENDA,
+            quantidade=3,
+            preco_unitario=130000.00,
+            data_operacao=date(2025, 3, 15),
+        )
+    
+>       result = calculator.calculate_result(trade, average_price=129500.00)
+
+tests\test_futuros.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <app.calculations.derivatives.futuros.FuturosCalculator object at 0x00000175BEDB7C10>
+trade = TradeInput(ativo='WIN', tipo_ativo=<AssetType.FUTURO_INDICE: 'futuro_indice'>, tipo_operacao=<OperationType.VENDA: 've...'>, preco_medio_informado=None, custos_operacao=None, irrf_informado=None, prazo_dias=None, exchange_estrangeira=False)
+average_price = 129500.0
+
+    def calculate_result(
+        self, trade: TradeInput, average_price: Optional[float] = None
+    ) -> TaxCalculationResult:
+        assert trade.tipo_ativo in _SUPPORTED, "This calculator is for Futuros only"
+        assert trade.tipo_operacao.value == "venda", "This calculator only handles position closes"
+    
+        prefix = 'WDO' if trade.tipo_ativo == AssetType.FUTURO_DOLAR else 'WIN'
+        if not trade.ativo.upper().startswith(prefix):
+            raise ValueError("Somente minicontratos WIN e WDO são suportados nesta simulação.")
+        if average_price is None:
+            raise ValueError("Informe a cotação de abertura da posição comprada.")
+        if trade.custos_operacao is None or trade.irrf_informado is None:
+>           raise ValueError("Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.")
+E           ValueError: Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.
+
+app\calculations\derivatives\futuros.py:72: ValueError
+=========================== short test summary info ===========================
+FAILED tests/test_acoes.py::TestAcoesCalculator::test_swing_trade_without_exemption
+FAILED tests/test_acoes.py::TestAcoesCalculator::test_loss_is_not_taxed - Val...
+FAILED tests/test_acoes.py::TestAcoesCalculator::test_irrf_withheld_swing_trade
+FAILED tests/test_acoes.py::TestAcoesCalculator::test_irrf_withheld_day_trade
+FAILED tests/test_api.py::TestProcessTrade::test_process_acao_sell - assert 4...
+FAILED tests/test_api.py::TestProcessTrade::test_process_bdr_sell - assert 40...
+FAILED tests/test_api.py::TestProcessTrade::test_process_fii_sell_no_exemption
+FAILED tests/test_api.py::TestProcessTrade::test_process_opcao_sell - assert ...
+FAILED tests/test_api.py::TestProcessTrade::test_sell_uses_average_price_from_prior_buy
+FAILED tests/test_api.py::TestTradeHistory::test_sell_appears_in_history - as...
+FAILED tests/test_api.py::TestTradeHistory::test_history_filtered_by_month - ...
+FAILED tests/test_api.py::TestBatchProcessing::test_batch_processes_sells - a...
+FAILED tests/test_api.py::TestBatchProcessing::test_batch_buy_then_sell_uses_average_price
+FAILED tests/test_api.py::TestCalculationsSummary::test_summary_aggregates_ir
+FAILED tests/test_api.py::TestCalculationsSummary::test_darf_vencimento_is_last_day_of_next_month
+FAILED tests/test_emprestimo.py::TestEmprestimoCalculator::test_missing_prazo_defaults_to_conservative_bracket
+FAILED tests/test_futuros.py::TestFuturosCalculator::test_normal_operation_15_percent
+FAILED tests/test_futuros.py::TestFuturosCalculator::test_day_trade_20_percent
+FAILED tests/test_futuros.py::TestFuturosCalculator::test_no_exemption_ever_applied
+FAILED tests/test_futuros.py::TestFuturosCalculator::test_loss_not_taxed - Va...
+FAILED tests/test_futuros.py::TestFuturosCalculator::test_irrf_normal_operation
+FAILED tests/test_futuros.py::TestFuturosCalculator::test_irrf_day_trade - Va...
+FAILED tests/test_futuros.py::TestFuturosCalculator::test_valor_liquido_deducts_all_costs
+23 failed, 51 passed, 2 warnings in 5.20s
+

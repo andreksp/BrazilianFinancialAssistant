@@ -1,0 +1,24 @@
+{
+  "key": "T05_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Compensação de Prejuízo em Day Trade\n\n**Sim, é possível**, conforme evidência \"perdas\" (ID: perdas, fonte RFB 12/09/2026):\n\n> \"Prejuízos em day trade podem ser compensados com ganhos em day trade no mês ou em períodos posteriores\"\n\n## Condições importantes:\n\n1. **Regime**: Prejuízo de day trade (agosto) compensa com ganho de day trade (setembro) — não se misturam com operações comuns.\n\n2. **Período**: A compensação pode ocorrer no mesmo mês (setembro) ou em períodos posteriores.\n\n3. **Tributação do ganho resultante**: Alíquota de **20%** sobre o ganho líquido de day trade (evidência \"acoes_taxa\").\n\n4. **Obrigações**: Compensação não significa restituição automática — você deve declarar mensalmente e cumprir as obrigações declaratórias.\n\n## Limite importante:\nCompensação **não é** restituição imediata de imposto.\n\n**Faltam dados**: Os valores específicos (prejuízo agosto, ganho setembro) para simular a apuração. Consulte sua corretora para saldo correto de operações por regime.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 735,
+    "output_tokens": 311,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.00229,
+  "seconds": 3.7703269999474287,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "81c821627a67756f6c795c1bd9746edc5d4d8e7d2d33830074ce6ff93d8142e2"
+}

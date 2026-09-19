@@ -1,0 +1,27 @@
+{
+  "key": "T01_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Sim, há isenção nessa situação descrita.\n\nSegundo a evidência [4e69fb3f132e9ec3]: vendas de ações no mercado à vista (operação comum/swing trade) são **isentas de IR quando o total vendido no mês for igual ou inferior a R$ 20.000,00**. O limite refere-se ao valor total vendido, não ao lucro/ganho.\n\nComo seu total vendido no mês foi R$ 19.500,00 — abaixo do limite de R$ 20.000,00 —, a operação estaria isenta de Imposto de Renda sobre o ganho, conforme Lei 11.033/2004.\n\n**Importante:**\n- Essa isenção vale apenas para swing trade em ações no mercado à vista, não se aplica a day trade nem a opções.\n- Ainda assim, você deve informar a operação na sua Declaração de Ajuste Anual (ganhos isentos também são declarados).\n- Verifique se houve outras vendas de ações/BDRs no mesmo mês, pois o limite considera o total mensal somado.\n\nIsso é uma explicação geral baseada nas regras fornecidas, não uma apuração fiscal definitiva — confirme com um contador ou a Receita Federal seu caso específico, especialmente se há outras operações no período.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2896,
+    "output_tokens": 437,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010162,
+  "seconds": 6.474186299950816,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "bcd3209cba18f39e4edaccfd20ffa6c0b0b502da5e24e2f71ccd7d82bc85a754"
+}

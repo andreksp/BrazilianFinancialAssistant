@@ -1,0 +1,24 @@
+{
+  "key": "D02_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Registro de Custos da Nota\n\n**Contexto necessário:** Você está falando de **qual operação**?\n\n- **Empréstimo de ativos** (Lei 15.265/2025)?\n- **Venda de ações** à vista?\n- **Outra operação?**\n\n## Pontos-chave conforme evidências:\n\n**Empréstimo de ativos (ID: emprestimo)**\n- A remuneração é tributada **exclusivamente na fonte** (22,5% a 15%, conforme prazo)\n- Não gera DARF mensal adicional\n- Você precisa informar: **prazo total** e **rendimento bruto**\n\n**Tarifas B3 e corretora (ID: b3_papel)**\n- São custos operacionais **distintos do IR**\n- Não são automaticamente deduziveis do IR nesta operação\n\n**Ações à vista (ID: acoes_isencao)**\n- Ganhos podem ser isentos se vendas ≤ R$ 20.000/mês\n- Limite incide sobre **volume de vendas**, não sobre custos\n\n**Solicite esclarecimento:**\n1. Que tipo de operação?\n2. Qual é o custo (tarifa B3, corretagem, outro)?\n3. Qual regime: venda comum, day trade, empréstimo?\n\nSem esses dados, não posso orientar o registro correto.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 804,
+    "output_tokens": 361,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002609,
+  "seconds": 4.678789599973243,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "5705a5295d74e5e44b9658802335c44df198b3489b6d29245b1efc6569f59e4e"
+}

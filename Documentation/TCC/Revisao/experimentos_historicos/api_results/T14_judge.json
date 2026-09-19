@@ -1,0 +1,27 @@
+{
+  "key": "T14_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"975ab3cfe6fdb742\",\"relevancia\":0,\"motivo\":\"Trata de mercado futuro, não de FII\"},{\"id\":\"7bb8b88a77231872\",\"relevancia\":2,\"motivo\":\"Dá a alíquota de 20% sobre ganho na venda de cotas de FII\"},{\"id\":\"c4a28d9b57b540e1\",\"relevancia\":1,\"motivo\":\"Cobre DARF 6015 e mínimo de R$10, mas não a alíquota do FII\"},{\"id\":\"acoes_isencao\",\"relevancia\":1,\"motivo\":\"Afasta a isenção para FII, mas não informa alíquota\"},{\"id\":\"wdo\",\"relevancia\":0,\"motivo\":\"Contrato futuro de dólar, irrelevante\"},{\"id\":\"emprestimo\",\"relevancia\":0,\"motivo\":\"Empréstimo de ativos, irrelevante\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"R$160 (20% de 800) correto, com DARF 6015 e ressalvas coerentes com o contexto\"},{\"id\":\"B\",\"correcao\":1,\"fundamentacao\":2,\"abstencao_adequada\":true,\"erro_critico\":false,\"motivo\":\"Acerta que não há isenção mas não chega ao valor; abstenção compatível com seu contexto limitado\"},{\"id\":\"C\",\"correcao\":1,\"fundamentacao\":2,\"abstencao_adequada\":true,\"erro_critico\":false,\"motivo\":\"Abstém-se do cálculo; afirmações feitas estão corretas e apoiadas, porém pergunta era respondível\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 6080,
+    "output_tokens": 1361,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 769
+    }
+  },
+  "usd": 0.064425,
+  "seconds": 19.612429500033613,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ad9562da4dff9e88df52bcd974e3ea7cde1f211403a18c2c612f0826f47efd75"
+}

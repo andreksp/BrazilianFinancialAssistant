@@ -1,0 +1,27 @@
+{
+  "key": "T34_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "## Empréstimo de Ações (BTC/CBLC) — Doador PF\n\nCom base na evidência [ID 06a4e857780aec7b], sua situação:\n\n**Rendimento**: remuneração (taxa de aluguel) recebida pelo doador — não é venda de ações, portanto **não** segue as regras de ganho de capital em renda variável (15%/20% + isenção R$ 20.000).\n\n**Regime**: tributação como aplicação de renda fixa, via **tabela regressiva por prazo do contrato**, com retenção **exclusiva/definitiva na fonte** pela B3/CBLC.\n\n**Prazo**: 721 dias → enquadra-se na faixa \"acima de 720 dias\".\n\n**Alíquota aplicável**: **15%** sobre a remuneração bruta de R$ 1.000,00.\n\n**Cálculo**: IR retido = R$ 150,00 (R$ 1.000 × 15%).\n\n**Retenção**: já feita pela B3/CBLC no pagamento — sem DARF adicional, sem apuração mensal de renda variável.\n\n**Declaração anual**: informar em \"Rendimentos Sujeitos a Tributação Exclusiva/Definitiva\", com base no informe de rendimentos da B3 (Área do Investidor → Relatórios → Informes – Empréstimos).\n\n**Base legal citada na fonte**: Lei 13.043/2014; IN RFB 1.585/2015.\n\n⚠️ Confirme o prazo exato do contrato no informe da B3, pois pequenas variações de dias podem mudar a faixa. Esta é uma orientação educacional, não substitui apuração fiscal definitiva nem assessoria contábil/tributária personalizada.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3132,
+    "output_tokens": 584,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.012104,
+  "seconds": 7.292161099961959,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "a912c6193589fd26312ce7a4fe7cf40eeb5a314d04c44d62d82b430f62fb818e"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T11_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não são o mesmo fato tributário — são dois eventos distintos, com regimes e apurações separadas:\n\n**1. Venda do BDR (ganho de capital em renda variável)**\n- Fato gerador: alienação do certificado\n- Regime: Swing Trade (15%) ou Day Trade (20%) sobre o ganho líquido\n- Isenção de R$ 20.000/mês em vendas se aplica (somada às vendas de ações)\n- IRRF: 0,005% (swing) ou 1% (day trade)\n- Apurado mensalmente via DARF (código 6015)\n\n**2. Rendimento distribuído (dividendo do BDR)**\n- Fato gerador: distribuição de proveito pela empresa estrangeira, repassado pela depositária\n- Sofre retenção na fonte no exterior (ex.: ~30% nos EUA)\n- Investidor declara o valor recebido e pode usar o imposto retido no exterior como crédito compensável (sujeito a acordo/tratado, quando existente)\n- Não se confunde com apuração de ganho de capital nem entra no limite de isenção de R$ 20.000\n\nAmbos os temas estão descritos na evidência **e64833ee00978eec**, com base na IN RFB 1.585/2015 e Resolução CVM 3/2020.\n\nSe precisar de exemplo numérico específico (ex.: valor de dividendo, retenção no exterior, alíquota do país), informe os dados para eu apurar corretamente.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2882,
+    "output_tokens": 503,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010794,
+  "seconds": 7.1678088999469765,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "50c9b5758614ec85e2d0fa5ee4970132472ba972d86a39d76074bdbb354cc51b"
+}

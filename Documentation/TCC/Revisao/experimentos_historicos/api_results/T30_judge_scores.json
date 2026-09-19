@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 2,
+      "motivo": "Diz que ganho é soma dos ajustes diários e explicita que abertura/fechamento é simplificação do sistema"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "FII, sem relação com ajustes diários de futuros"
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 0,
+      "motivo": "Guia de DARF genérico, não trata da mecânica de ajustes"
+    },
+    {
+      "id": "futuros",
+      "relevancia": 2,
+      "motivo": "Afirma que apuração envolve ajustes e despesas e IRRF usa soma algébrica dos ajustes diários"
+    },
+    {
+      "id": "fii_rendimento",
+      "relevancia": 0,
+      "motivo": "Isenção de rendimentos de FII, irrelevante"
+    },
+    {
+      "id": "emprestimo_proventos",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ativos, irrelevante"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega corretamente e distingue regra real (ajustes diários) da simplificação do sistema, com apoio no contexto",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Resposta correta e ancorada no trecho sobre soma algébrica dos ajustes diários; reconhece limites",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega corretamente com base no trecho de futuros; pedido de esclarecimento é desnecessário mas não altera os fatos",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T30",
+  "repeat": false
+}

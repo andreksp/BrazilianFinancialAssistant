@@ -1,0 +1,27 @@
+{
+  "key": "T05_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Sim. Segundo a evidência \"perdas\" (fonte: Receita Federal), prejuízos apurados em day trade podem ser compensados com ganhos em day trade em meses posteriores, desde que registrados corretamente nas apurações mensais e na Declaração de Ajuste Anual — a compensação não gera restituição automática.\n\nImportante distinguir:\n- **Regime**: day trade tributa-se à alíquota de 20% sobre ganho líquido (evidência \"acoes_taxa\"), diferente das operações comuns (15%).\n- **Compensação**: só ocorre entre resultados da mesma modalidade (day trade com day trade); não se mistura com ganhos de operações comuns.\n- **Período**: a perda de agosto reduz a base tributável do lucro de setembro na apuração mensal (DARF), respeitando o histórico de prejuízos acumulados.\n\nVocê precisa ter apurado e informado corretamente o prejuízo de agosto (mesmo que não tenha havido imposto a pagar naquele mês) para poder compensá-lo depois.\n\nIsso é orientação geral, não apuração definitiva do seu caso — recomendo conferir os valores exatos com um contador ou o extrato da corretora antes de calcular o DARF de setembro.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 913,
+    "output_tokens": 430,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006126,
+  "seconds": 5.9029913999838755,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "81c821627a67756f6c795c1bd9746edc5d4d8e7d2d33830074ce6ff93d8142e2"
+}

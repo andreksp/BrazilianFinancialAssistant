@@ -1,0 +1,27 @@
+{
+  "key": "T26_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Para calcular o ganho bruto financeiro, faltam dois dados essenciais:\n\n1. **Valor do ponto do WDO** (multiplicador do contrato) — a evidência fornecida não especifica esse valor, apenas descreve a fórmula de cálculo em pontos/preço, não o valor monetário por ponto.\n2. **Se a posição foi Day Trade (aberta e fechada no mesmo dia) ou operação normal (mantida por mais de 1 dia)** — isso muda a alíquota aplicável (20% vs 15%) e o IRRF (1% vs 0,005%), conforme evidência 975ab3cfe6fdb742.\n\n**Com base na evidência [975ab3cfe6fdb742]**, a fórmula de ganho é:\n> Ganho = (preço de fechamento − preço de abertura) × quantidade de contratos\n\nOu seja, para 2 contratos WDO com 10 ",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3394,
+    "output_tokens": 650,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 338
+    }
+  },
+  "usd": 0.013288,
+  "seconds": 8.074614599987399,
+  "stop_reason": "max_tokens",
+  "prompt_sha256": "1de1aaf8bd0003818415282227a548d75446477fae243c893ea965641f8c3fdf"
+}

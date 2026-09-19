@@ -1,0 +1,27 @@
+{
+  "key": "T38_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não encontrei nas evidências fornecidas nenhuma norma específica sobre isenção mensal de R$ 35 mil para venda de criptoativos no regime nacional (a evidência \"cripto_exterior\" trata apenas de ativos no exterior, sob a Lei 14.754/2023, sem isenção mensal).\n\nPontos importantes a esclarecer antes de responder com precisão:\n- As evidências não cobrem o regime de tributação de cripto no Brasil (nacional) para pessoa física, nem confirmam se existe limite de isenção por operação, por moeda ou pelo total mensal de todas as vendas.\n- Não há dado sobre se o limite (quando existente) é aplicado por ativo individualmente ou pela soma de todas as alienações de criptoativos no mês.\n\nNão posso afirmar se R$ 20 mil em BTC e R$ 20 mil em ETH (somando R$ 40 mil) seriam isentos, tributados integralmente, ou parcialmente, pois isso depende de regra específica (normalmente created pela Instrução Normativa da RFB sobre criptoativos) que não está entre as evidências.\n\n**Recomendo**: verificar a IN RFB específica sobre criptoativos (não fornecida aqui) para saber se o limite de isenção é por ativo ou pelo total de alienações no mês, antes de apurar eventual ganho de capital.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1042,
+    "output_tokens": 474,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006824,
+  "seconds": 6.351391600037459,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c883cafedebf76a544d753e913730fdac24da71b2e53e9f54a33fa5a93e1aeac"
+}

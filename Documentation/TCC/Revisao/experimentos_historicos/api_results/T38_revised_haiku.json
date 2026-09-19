@@ -1,0 +1,24 @@
+{
+  "key": "T38_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise: Isenção de R$ 20 mil em BTC e ETH\n\n## Limite por ativo ou por mês?\n\nA evidência menciona isenção de **R$ 20 mil em ações à vista** (operações comuns), mas **não se aplica a BDR**. Porém, você pergunta sobre **criptoativos (BTC e ETH)**, não ações.\n\n## Criptoativos: enquadramento incerto\n\nA evidência sobre cripto (ID: cripto_exterior) alerta:\n- Verificar **natureza do ativo, custódia e regulamentação**\n- Autocustódia não prova localização exterior\n- Não generalizar\n\n**Falta informação crítica**: \n- Sua custódia (exchange brasileira/exterior, autocustódia)?\n- Regime aplicável (Lei 14.754/2023 ou outro)?\n- Apuração mensal ou anual?\n\n## Limites desta resposta\n\nSem evidência específica sobre isenção de criptoativos em regime nacional, não posso afirmar se cada moeda isenta R$ 20 mil ou se há limite mensal agregado. \n\n**Solicite esclarecimento**: onde custodiza BTC/ETH e consulte normativo tributário 2026 específico para criptoativos em regime nacional.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 838,
+    "output_tokens": 335,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002513,
+  "seconds": 4.370047500007786,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c883cafedebf76a544d753e913730fdac24da71b2e53e9f54a33fa5a93e1aeac"
+}

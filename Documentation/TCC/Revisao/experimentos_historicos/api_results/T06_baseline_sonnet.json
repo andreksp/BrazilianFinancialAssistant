@@ -1,0 +1,27 @@
+{
+  "key": "T06_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. Segundo a evidência fornecida (ID 4e69fb3f132e9ec3), as regras de compensação de prejuízos em ações estabelecem que:\n\n- **Prejuízos de day trade** compensam apenas **ganhos futuros de day trade**;\n- **Prejuízos de swing trade** compensam apenas **ganhos futuros de swing trade** (mesmo ativo/categoria: ações);\n- **Não é permitida compensação cruzada** entre swing trade e day trade.\n\nOu seja, se você teve prejuízo em operações de day trade e lucro em operações comuns (swing trade) de ações no mesmo período, **não pode usar o prejuízo do day trade para reduzir o ganho tributável do swing trade**. Cada regime tem apuração e compensação separadas.\n\nO prejuízo de day trade não compensado pode ser carregado para meses futuros, mas ainda assim só será compensável contra ganhos futuros de **day trade**.\n\n**Limites desta resposta:** a evidência aqui trata apenas de ações; não abrange especificamente FIIs, ETFs, criptoativos ou outras classes de ativos, cujas regras de compensação podem diferir. Isso é orientação informativa, não uma apuração fiscal definitiva — recomenda-se confirmar com a legislação vigente (IN RFB 1.585/2015) ou profissional contábil para seu caso concreto.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2872,
+    "output_tokens": 482,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010564,
+  "seconds": 6.700477200036403,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "962746f89bb1ae0e87ccca271186816d651f6d99600b6f190577a4e65d60828d"
+}

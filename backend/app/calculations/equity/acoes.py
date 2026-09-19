@@ -79,7 +79,7 @@ class AcoesCalculator(BaseCalculator):
         """
         # TODO: Implement trading day classification
         # For now, assume manually classified or based on same-day rule
-        return False  # Default to swing trade unless explicitly marked
+        return trade.classificacao == TradeOperationType.DAY_TRADE
 
     def calculate_result(
         self, trade: TradeInput, average_price: Optional[float] = None
@@ -100,7 +100,9 @@ class AcoesCalculator(BaseCalculator):
 
         # Calculate basic metrics
         valor_financeiro = trade.quantidade * trade.preco_unitario
-        pm = average_price or trade.preco_unitario  # Use average price if provided
+        if average_price is None:
+            raise ValueError("Informe o custo médio de aquisição; não é seguro presumir ganho zero.")
+        pm = average_price
         ganho_bruto = self.calculate_gain_loss(trade.quantidade, pm, trade.preco_unitario)
 
         # Classify operation type
@@ -112,19 +114,23 @@ class AcoesCalculator(BaseCalculator):
 
         # Determine tax rate
         aliquota = self.get_tax_rate(is_day_trade)
-        isenção_aplicada = False
+        if not is_day_trade and (trade.total_vendas_mes is None or trade.total_vendas_mes < valor_financeiro):
+            raise ValueError("Informe o total completo das vendas de ações à vista no mês, incluindo esta operação.")
+        isenção_aplicada = not is_day_trade and trade.total_vendas_mes <= self.EXEMPTION_LIMIT
 
         # TODO: Exemption R$20,000 applies to TOTAL monthly sales (swing only).
         # This requires monthly context at a higher level. For now, always apply tax.
         # Exemption logic will be implemented in a portfolio/monthly summary calculator.
 
         # Calculate IR
-        ir_devido = max(0, ganho_bruto) * aliquota
-        irrf_retido = valor_financeiro * self.get_irrf_rate(is_day_trade)
+        ir_devido = 0.0 if isenção_aplicada else round(max(0, ganho_bruto - fees.total) * aliquota, 2)
+        if isenção_aplicada:
+            aliquota = 0.0
+        irrf_retido = trade.irrf_informado or 0.0
 
         # Calculate net values
         ganho_liquido = ganho_bruto - fees.total
-        valor_liquido = valor_financeiro - fees.total - ir_devido - irrf_retido
+        valor_liquido = valor_financeiro - fees.total - max(ir_devido, irrf_retido)
 
         # Prepare result
         result = TaxCalculationResult(

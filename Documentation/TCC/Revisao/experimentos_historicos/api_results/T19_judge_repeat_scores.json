@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 1,
+      "motivo": "Trata da isenção de R$20 mil em ações; não aborda opções diretamente"
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 2,
+      "motivo": "Afirma explicitamente que opções não têm isenção de R$20 mil"
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "Sobre BDRs; irrelevante e afirma isenção para BDR, conflitando com fonte oficial"
+    },
+    {
+      "id": "futuros",
+      "relevancia": 0,
+      "motivo": "Trata de futuros, não de opções"
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 2,
+      "motivo": "Responde ao núcleo: não há isenção de R$20 mil em opções, 15%/20%"
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 2,
+      "motivo": "Delimita a isenção às ações e exclui expressamente opções"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Núcleo correto, mas rotula 15%/20% como IRRF, confundindo alíquota de apuração com retenção na fonte",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e ancorada nos trechos autoritativos; distingue venda de ganho sem inventar dados",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 1,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Acerta o núcleo, mas afirma que BDRs têm isenção de R$20 mil, contrariando a fonte oficial",
+      "configuration": "baseline_sonnet"
+    }
+  ],
+  "case_id": "T19",
+  "repeat": true
+}

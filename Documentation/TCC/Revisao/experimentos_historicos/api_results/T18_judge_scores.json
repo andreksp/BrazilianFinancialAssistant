@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ações (BTC); nada sobre FII ou imóvel"
+    },
+    {
+      "id": "10d60f0a6cead3e1",
+      "relevancia": 1,
+      "motivo": "Só taxas B3; menção marginal a FII, não responde ao regime"
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 0,
+      "motivo": "Mercado futuro; fora do tema"
+    },
+    {
+      "id": "cripto_isencao",
+      "relevancia": 0,
+      "motivo": "Criptoativos; irrelevante"
+    },
+    {
+      "id": "cripto_exterior",
+      "relevancia": 0,
+      "motivo": "Ativos no exterior; irrelevante"
+    },
+    {
+      "id": "fii_rendimento",
+      "relevancia": 2,
+      "motivo": "Trata cota de FII e afirma que lucro na venda de cotas não é isento, sustentando distinção frente a imóvel"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Conclui corretamente que cota de FII não usa regra de imóvel e abstém-se da alíquota ausente no contexto",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 1,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Conclusão correta, mas afirma 15% sobre ganho em cota de FII, alíquota incorreta e não suportada pelo contexto",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Núcleo correto e abstenção adequada, mas cita apenas trechos irrelevantes como base",
+      "configuration": "baseline_sonnet"
+    }
+  ],
+  "case_id": "T18",
+  "repeat": false
+}

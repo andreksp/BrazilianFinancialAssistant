@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 0,
+      "motivo": "Trata de empréstimo de ações (BTC/CBLC), não de bitcoin nem de localização no exterior"
+    },
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "FII; sem relação com criptoativos ou regime de bens no exterior"
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 0,
+      "motivo": "Mercado futuro; irrelevante à pergunta"
+    },
+    {
+      "id": "fii_rendimento",
+      "relevancia": 0,
+      "motivo": "Isenção de rendimentos de FII; não responde"
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ativos no País; irrelevante"
+    },
+    {
+      "id": "acoes_taxa",
+      "relevancia": 0,
+      "motivo": "Alíquotas de ações; irrelevante"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Afirma corretamente que autocustódia não prova aplicação no exterior e sinaliza ausência de base; acrescenta critérios não amparados no contexto",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Abstenção transparente e coerente com o contexto, mas não entrega o núcleo (que autocustódia sozinha não determina regime)",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Abstém-se quanto à base normativa, distingue corretamente BTC/CBLC de bitcoin e enuncia o ponto central de forma alinhada ao gold",
+      "configuration": "baseline_sonnet"
+    }
+  ],
+  "case_id": "T48",
+  "repeat": true
+}

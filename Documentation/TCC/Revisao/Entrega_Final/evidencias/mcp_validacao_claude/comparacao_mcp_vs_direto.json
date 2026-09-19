@@ -1,0 +1,343 @@
+[
+  {
+    "id": "acao_swing_com_isencao",
+    "base_legal": "Lei 13.259/2016 / IN RFB 1585/2015 art. isenção R$20.000/mês vendas à vista",
+    "input": {
+      "ativo": "PETR4",
+      "tipo_ativo": "acao",
+      "tipo_operacao": "venda",
+      "quantidade": 100,
+      "preco_unitario": 30.0,
+      "data_operacao": "2026-09-16",
+      "total_vendas_mes": 3000.0
+    },
+    "average_price": 25.0,
+    "direct_error": null,
+    "mcp_error": null,
+    "direct_result": {
+      "isenção_aplicada": true,
+      "ir_devido": 0.0,
+      "ganho_prejuizo_bruto": 500.0,
+      "irrf_retido": 0.0,
+      "aliquota_aplicada": 0.0
+    },
+    "mcp_result": {
+      "ganho_prejuizo_bruto": 500.0,
+      "ir_devido": 0.0,
+      "irrf_retido": 0.0,
+      "aliquota_aplicada": 0.0,
+      "isenção_aplicada": true
+    },
+    "mcp_matches_direct": true,
+    "mismatches": {},
+    "expected_ok": true,
+    "expected_mismatches": {}
+  },
+  {
+    "id": "acao_swing_tributado",
+    "base_legal": "IN RFB 1585/2015 — 15% swing trade acima de R$20.000/mês",
+    "input": {
+      "ativo": "PETR4",
+      "tipo_ativo": "acao",
+      "tipo_operacao": "venda",
+      "quantidade": 100,
+      "preco_unitario": 30.0,
+      "data_operacao": "2026-09-16",
+      "total_vendas_mes": 25000.0
+    },
+    "average_price": 25.0,
+    "direct_error": null,
+    "mcp_error": null,
+    "direct_result": {
+      "isenção_aplicada": false,
+      "aliquota_aplicada": 0.15,
+      "ganho_prejuizo_bruto": 500.0,
+      "ir_devido": 74.85,
+      "irrf_retido": 0.0
+    },
+    "mcp_result": {
+      "ganho_prejuizo_bruto": 500.0,
+      "ir_devido": 74.85,
+      "irrf_retido": 0.0,
+      "aliquota_aplicada": 0.15,
+      "isenção_aplicada": false
+    },
+    "mcp_matches_direct": true,
+    "mismatches": {},
+    "expected_ok": true,
+    "expected_mismatches": {}
+  },
+  {
+    "id": "bdr_sem_isencao",
+    "base_legal": "B3, Como declarar BDRs no IR 2026 — sem isenção de R$20.000 para BDR",
+    "input": {
+      "ativo": "AAPL34",
+      "tipo_ativo": "bdr",
+      "tipo_operacao": "venda",
+      "quantidade": 10,
+      "preco_unitario": 200.0,
+      "data_operacao": "2026-09-16",
+      "custos_operacao": 0,
+      "irrf_informado": 0
+    },
+    "average_price": 100.0,
+    "direct_error": null,
+    "mcp_error": null,
+    "direct_result": {
+      "isenção_aplicada": false,
+      "ir_devido": 150.0,
+      "aliquota_aplicada": 0.15,
+      "ganho_prejuizo_bruto": 1000.0,
+      "irrf_retido": 0.0
+    },
+    "mcp_result": {
+      "ganho_prejuizo_bruto": 1000.0,
+      "ir_devido": 150.0,
+      "irrf_retido": 0.0,
+      "aliquota_aplicada": 0.15,
+      "isenção_aplicada": false
+    },
+    "mcp_matches_direct": true,
+    "mismatches": {},
+    "expected_ok": true,
+    "expected_mismatches": {}
+  },
+  {
+    "id": "fii_venda_20pct",
+    "base_legal": "Lei 11.033/2004 — 20% flat sobre ganho de capital em cotas de FII, sem isenção",
+    "input": {
+      "ativo": "HGLG11",
+      "tipo_ativo": "fii",
+      "tipo_operacao": "venda",
+      "quantidade": 10,
+      "preco_unitario": 110.0,
+      "data_operacao": "2026-09-16"
+    },
+    "average_price": 100.0,
+    "direct_error": null,
+    "mcp_error": null,
+    "direct_result": {
+      "isenção_aplicada": false,
+      "ir_devido": 20.0,
+      "aliquota_aplicada": 0.2,
+      "ganho_prejuizo_bruto": 100.0,
+      "irrf_retido": 0.055
+    },
+    "mcp_result": {
+      "ganho_prejuizo_bruto": 100.0,
+      "ir_devido": 20.0,
+      "irrf_retido": 0.055,
+      "aliquota_aplicada": 0.2,
+      "isenção_aplicada": false
+    },
+    "mcp_matches_direct": true,
+    "mismatches": {},
+    "expected_ok": true,
+    "expected_mismatches": {}
+  },
+  {
+    "id": "opcao_swing",
+    "base_legal": "Mesma alíquota de ações (15% swing) aplicada ao prêmio da opção",
+    "input": {
+      "ativo": "PETRH250",
+      "tipo_ativo": "opcao",
+      "tipo_operacao": "venda",
+      "quantidade": 100,
+      "preco_unitario": 5.0,
+      "data_operacao": "2026-09-16"
+    },
+    "average_price": 3.0,
+    "direct_error": null,
+    "mcp_error": null,
+    "direct_result": {
+      "ir_devido": 30.0,
+      "aliquota_aplicada": 0.15,
+      "ganho_prejuizo_bruto": 200.0,
+      "irrf_retido": 0.025,
+      "isenção_aplicada": false
+    },
+    "mcp_result": {
+      "ganho_prejuizo_bruto": 200.0,
+      "ir_devido": 30.0,
+      "irrf_retido": 0.025,
+      "aliquota_aplicada": 0.15,
+      "isenção_aplicada": false
+    },
+    "mcp_matches_direct": true,
+    "mismatches": {},
+    "expected_ok": true,
+    "expected_mismatches": {}
+  },
+  {
+    "id": "futuro_win",
+    "base_legal": "B3 especificação WIN: 1 ponto = R$0,20/contrato; sem isenção de ações à vista",
+    "input": {
+      "ativo": "WINV26",
+      "tipo_ativo": "futuro_indice",
+      "tipo_operacao": "venda",
+      "quantidade": 1,
+      "preco_unitario": 130500.0,
+      "data_operacao": "2026-09-16",
+      "custos_operacao": 0,
+      "irrf_informado": 0
+    },
+    "average_price": 130000.0,
+    "direct_error": null,
+    "mcp_error": null,
+    "direct_result": {
+      "ganho_prejuizo_bruto": 100.0,
+      "ir_devido": 15.0,
+      "isenção_aplicada": false,
+      "irrf_retido": 0.0,
+      "aliquota_aplicada": 0.15
+    },
+    "mcp_result": {
+      "ganho_prejuizo_bruto": 100.0,
+      "ir_devido": 15.0,
+      "irrf_retido": 0.0,
+      "aliquota_aplicada": 0.15,
+      "isenção_aplicada": false
+    },
+    "mcp_matches_direct": true,
+    "mismatches": {},
+    "expected_ok": true,
+    "expected_mismatches": {}
+  },
+  {
+    "id": "futuro_wdo",
+    "base_legal": "B3 especificação WDO: 1 ponto = R$10,00/contrato",
+    "input": {
+      "ativo": "WDOU26",
+      "tipo_ativo": "futuro_dolar",
+      "tipo_operacao": "venda",
+      "quantidade": 2,
+      "preco_unitario": 5510.0,
+      "data_operacao": "2026-09-16",
+      "custos_operacao": 0,
+      "irrf_informado": 0
+    },
+    "average_price": 5500.0,
+    "direct_error": null,
+    "mcp_error": null,
+    "direct_result": {
+      "ganho_prejuizo_bruto": 200.0,
+      "ir_devido": 30.0,
+      "irrf_retido": 0.0,
+      "aliquota_aplicada": 0.15,
+      "isenção_aplicada": false
+    },
+    "mcp_result": {
+      "ganho_prejuizo_bruto": 200.0,
+      "ir_devido": 30.0,
+      "irrf_retido": 0.0,
+      "aliquota_aplicada": 0.15,
+      "isenção_aplicada": false
+    },
+    "mcp_matches_direct": true,
+    "mismatches": {},
+    "expected_ok": true,
+    "expected_mismatches": {}
+  },
+  {
+    "id": "emprestimo_300dias",
+    "base_legal": "Lei 15.265/2025 — tabela regressiva 181-360 dias = 20%, tributação exclusiva na fonte",
+    "input": {
+      "ativo": "VALE3",
+      "tipo_ativo": "emprestimo_acoes",
+      "tipo_operacao": "venda",
+      "quantidade": 200,
+      "preco_unitario": 0.6,
+      "data_operacao": "2026-09-16",
+      "prazo_dias": 300
+    },
+    "average_price": null,
+    "direct_error": null,
+    "mcp_error": null,
+    "direct_result": {
+      "ir_devido": 0.0,
+      "irrf_retido": 24.0,
+      "aliquota_aplicada": 0.2,
+      "ganho_prejuizo_bruto": 120.0,
+      "isenção_aplicada": false
+    },
+    "mcp_result": {
+      "ganho_prejuizo_bruto": 120.0,
+      "ir_devido": 0.0,
+      "irrf_retido": 24.0,
+      "aliquota_aplicada": 0.2,
+      "isenção_aplicada": false
+    },
+    "mcp_matches_direct": true,
+    "mismatches": {},
+    "expected_ok": true,
+    "expected_mismatches": {}
+  },
+  {
+    "id": "cripto_nacional_tributado",
+    "base_legal": "IN SRF 84/2001 art.3 IX — isenção R$35.000/mês; acima disso, Lei 13.259/2016 tabela progressiva",
+    "input": {
+      "ativo": "BTC",
+      "tipo_ativo": "cripto",
+      "tipo_operacao": "venda",
+      "quantidade": 0.1,
+      "preco_unitario": 350000.0,
+      "data_operacao": "2026-09-16",
+      "total_vendas_mes": 40000.0
+    },
+    "average_price": 300000.0,
+    "direct_error": null,
+    "mcp_error": null,
+    "direct_result": {
+      "isenção_aplicada": false,
+      "ir_devido": 750.0,
+      "aliquota_aplicada": 0.15,
+      "ganho_prejuizo_bruto": 5000.0,
+      "irrf_retido": 0.0
+    },
+    "mcp_result": {
+      "ganho_prejuizo_bruto": 5000.0,
+      "ir_devido": 750.0,
+      "irrf_retido": 0.0,
+      "aliquota_aplicada": 0.15,
+      "isenção_aplicada": false
+    },
+    "mcp_matches_direct": true,
+    "mismatches": {},
+    "expected_ok": true,
+    "expected_mismatches": {}
+  },
+  {
+    "id": "cripto_nacional_isento",
+    "base_legal": "IN SRF 84/2001 art.3 IX — isenção até R$35.000/mês inclusive",
+    "input": {
+      "ativo": "BTC",
+      "tipo_ativo": "cripto",
+      "tipo_operacao": "venda",
+      "quantidade": 0.1,
+      "preco_unitario": 350000.0,
+      "data_operacao": "2026-09-16",
+      "total_vendas_mes": 35000.0
+    },
+    "average_price": 300000.0,
+    "direct_error": null,
+    "mcp_error": null,
+    "direct_result": {
+      "isenção_aplicada": true,
+      "ir_devido": 0.0,
+      "ganho_prejuizo_bruto": 5000.0,
+      "irrf_retido": 0.0,
+      "aliquota_aplicada": 0.0
+    },
+    "mcp_result": {
+      "ganho_prejuizo_bruto": 5000.0,
+      "ir_devido": 0.0,
+      "irrf_retido": 0.0,
+      "aliquota_aplicada": 0.0,
+      "isenção_aplicada": true
+    },
+    "mcp_matches_direct": true,
+    "mismatches": {},
+    "expected_ok": true,
+    "expected_mismatches": {}
+  }
+]

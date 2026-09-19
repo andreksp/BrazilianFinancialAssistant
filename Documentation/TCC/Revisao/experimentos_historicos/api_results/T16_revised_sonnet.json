@@ -1,0 +1,27 @@
+{
+  "key": "T16_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. A isenção do rendimento distribuído por FII a pessoa física não é automática nem se aplica a \"qualquer\" fundo.\n\nConforme evidência **fii_rendimento** (Lei 11.033, art. 3º), a isenção depende do cumprimento cumulativo de condições, como: negociação das cotas em bolsa ou balcão organizado, o fundo ter no mínimo 100 cotistas, além de restrições quanto à participação e concentração de cotas por cotista. Não se presume isenção para todo fundo ou todo cotista — é preciso verificar se o FII específico atende a esses requisitos.\n\nAlém disso, é importante distinguir dois fatos geradores diferentes (evidência **fii_venda**):\n- **Rendimento distribuído** pelo fundo: pode ser isento se atendidas as condições acima.\n- **Venda de cotas** do FII: sujeita a 20% sobre o ganho líquido, sem isenção por valor de venda (diferente da regra de ações). Aqui não há isenção de minoria de valor.\n\nPortanto, isenção e tributação dependem do enquadramento do fundo e do tipo de evento (distribuição vs. alienação). Se puder informar o FII específico e o tipo de rendimento, posso orientar melhor. Isto não é apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1027,
+    "output_tokens": 453,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006584,
+  "seconds": 5.859520199999679,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "2f4f4993e1633e638f53090ff8808dc0e9c7e959568f11c549cd71fabe9e1e0e"
+}

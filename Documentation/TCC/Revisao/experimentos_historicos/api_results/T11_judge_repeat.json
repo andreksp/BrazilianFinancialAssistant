@@ -1,0 +1,27 @@
+{
+  "key": "T11_judge_repeat",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"e64833ee00978eec\",\"relevancia\":2,\"motivo\":\"Trata BDR distinguindo ganho na venda e rendimentos/dividendos, respondendo ao núcleo\"},{\"id\":\"4e69fb3f132e9ec3\",\"relevancia\":1,\"motivo\":\"Regras de ações aplicáveis por extensão, mas não trata rendimento vs venda de BDR\"},{\"id\":\"290b3fbba3faa9f8\",\"relevancia\":0,\"motivo\":\"Opções; sem relação com a pergunta\"},{\"id\":\"fii_rendimento\",\"relevancia\":1,\"motivo\":\"Mostra por analogia que rendimento e venda são eventos distintos, mas é sobre FII\"},{\"id\":\"b3_papel\",\"relevancia\":0,\"motivo\":\"Papel da B3 em empréstimo de ativos; irrelevante\"},{\"id\":\"emprestimo_proventos\",\"relevancia\":0,\"motivo\":\"Empréstimo de ativos e reembolso de proventos; não trata BDR\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":1,\"abstencao_adequada\":true,\"erro_critico\":false,\"motivo\":\"Acerta a separação dos eventos; apoio apenas analógico em FII e reconhece ausência de norma sobre BDR\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":1,\"abstencao_adequada\":true,\"erro_critico\":false,\"motivo\":\"Núcleo correto e limite explícito; fundamentação indireta via FII, sem regras específicas de BDR\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Separa corretamente os fatos geradores com alíquotas, isenção e retenção no exterior conforme o trecho de BDR\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5560,
+    "output_tokens": 1294,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 649
+    }
+  },
+  "usd": 0.06015,
+  "seconds": 15.884820799983572,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c306235d0564798a24e0fc8e6e5249a61457f599e53370e51a0289b92630d389"
+}

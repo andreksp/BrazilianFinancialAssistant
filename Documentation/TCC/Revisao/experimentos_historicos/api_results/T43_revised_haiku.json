@@ -1,0 +1,24 @@
+{
+  "key": "T43_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Esclarecimento necessário\n\nSua pergunta menciona **\"imposto de imobiliário\"**, mas as evidências disponíveis tratam de:\n- Ações à vista (ganho de capital)\n- Criptoativos\n- Empréstimos de valores mobiliários\n\n**Não há evidência sobre tributação de imóvel** (ITBI, IPTU ou ganho de capital imobiliário) no contexto fornecido.\n\n## Preciso que você especifique:\n\n1. **Você quer tributação sobre:**\n   - Venda de imóvel (ganho de capital)?\n   - ITBI (imposto de transferência)?\n   - IPTU (imposto predial)?\n   - Aluguel recebido (rendimento)?\n\n2. **Qual é o evento:**\n   - Compra/venda de imóvel?\n   - Locação?\n   - Outro?\n\n3. **Período:** Refere-se à apuração 2026 ou outro ano?\n\n## Limite da resposta\n\nSem dados específicos sobre imóvel e sem legislação fornecida, não posso afirmar alíquotas, isenções ou prazos. Solicite informações precisas à Receita Federal ou consulte legislação estadual/municipal conforme o tributo.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 799,
+    "output_tokens": 324,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002419,
+  "seconds": 3.6744717999827117,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "378e9c010d4380d8424c4c14eaab610b1651a452cec0d101ab187b5a65dae864"
+}

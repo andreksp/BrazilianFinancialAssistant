@@ -11,7 +11,8 @@ export type AssetType =
   | 'opcao'
   | 'futuro_dolar'
   | 'futuro_indice'
-  | 'emprestimo_acoes';
+  | 'emprestimo_acoes'
+  | 'cripto';
 export type OperationType = 'compra' | 'venda';
 export type TradeOperationType = 'swing' | 'day_trade';
 
@@ -35,6 +36,7 @@ export interface TradeInput {
   corretagem_fixa?: number;
   nota?: string;
   prazo_dias?: number;
+  exchange_estrangeira?: boolean;
 }
 
 /**

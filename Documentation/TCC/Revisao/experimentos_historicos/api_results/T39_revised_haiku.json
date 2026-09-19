@@ -1,0 +1,24 @@
+{
+  "key": "T39_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Permuta de Criptoativos e Alienação Fiscal\n\n**Sim, é alienação tributável.**\n\nConforme evidência **cripto_isencao** (fonte: Receita Federal, 12/09/2026):\n\n> \"Permuta entre criptomoedas também configura alienação mesmo sem conversão em reais.\"\n\n**Regime aplicável (nacional):**\n- Ganhos de capital em criptoativos são apurados **mensalmente**\n- Soma todas as alienações (vendas + permutas) no mês\n- **Isenção**: até R$ 35.000/mês (não por operação ou moeda)\n- Acima disso: IR sobre o ganho\n\n**Seu caso (BTC → ETH):**\n1. É alienação (permuta)\n2. Faz parte da base mensal, junto com outras operações\n3. Se total alienado ≤ R$ 35.000/mês → potencial isenção\n4. Se > R$ 35.000/mês → IR sobre ganho na parte excedente\n\n**Limitação:** A evidência refere-se apenas a criptoativos **nacionais**. Se a operação ocorre em exchange no exterior, precisa verificar enquadramento específico (Lei 14.754/2023), com regime anual a 15%, sem isenção mensal.\n\n**Dúvida necessária:** Em qual exchange ocorre a permuta?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 812,
+    "output_tokens": 357,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002597,
+  "seconds": 4.524841099977493,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "6616511ef764af792b6104d0922f9692e273d281f1af1065a412a35c6773e3ed"
+}

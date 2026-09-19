@@ -1,0 +1,27 @@
+{
+  "key": "T48_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não há evidência fornecida sobre custódia própria de criptoativos (self-custody/carteira própria) ou sobre critérios de localização de bens no exterior para fins fiscais. As evidências disponíveis tratam apenas de FII (id: fii_rendimento), empréstimo de ativos (id: emprestimo) e ações em bolsa (id: acoes_taxa) — nenhuma se aplica à sua pergunta.\n\nNão posso confirmar ou negar essa afirmação com base no material disponível. Em geral, \"onde\" um ativo está localizado para fins tributários (residência da exchange, servidor da blockchain, domicílio do titular etc.) é uma questão distinta de \"quem\" controla as chaves privadas — mas essa distinção normativa específica não está nas evidências fornecidas, então não vou afirmar regra alguma sobre isso.\n\nRecomendo: (1) verificar a legislação específica sobre criptoativos e declaração de bens no exterior (ex: obrigações do Banco Central, IN da Receita Federal sobre criptoativos), e (2) consultar um contador especializado em criptoativos para seu caso concreto, informando volume, exchanges usadas e finalidade (declaração anual, ganho de capital etc.).\n\nIsso é orientação educacional geral, não apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1001,
+    "output_tokens": 453,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006532,
+  "seconds": 6.404683800006751,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "99bf18a28281e813600b5405e22febb8ee6f81a47260176902cd5e94171dcc43"
+}

@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "FII, sem relação com futuro de dólar"
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 0,
+      "motivo": "DARF genérico, não trata do multiplicador do WDO"
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 1,
+      "motivo": "trata de WDO e fórmula de ganho, mas não informa valor do ponto (R$10)"
+    },
+    {
+      "id": "win",
+      "relevancia": 1,
+      "motivo": "explica ponto×valor, porém do WIN (R$0,20), não do WDO"
+    },
+    {
+      "id": "cripto_faixas",
+      "relevancia": 0,
+      "motivo": "cripto, irrelevante"
+    },
+    {
+      "id": "wdo",
+      "relevancia": 2,
+      "motivo": "informa 1 ponto = R$10 por contrato e fórmula da posição comprada"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "R$200 correto, cálculo apoiado no trecho wdo",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 1,
+      "fundamentacao": 1,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "não entrega o valor; abstenção coerente com contexto sem multiplicador, mas resposta truncada e incompleta",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "R$200 correto com base na fonte; ressalvas tributárias adequadas",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T26",
+  "repeat": false
+}

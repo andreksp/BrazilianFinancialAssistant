@@ -1,0 +1,24 @@
+{
+    "ativo": "PETR4",
+    "tipo_ativo": "acao",
+    "quantidade": 100.0,
+    "preco_unitario": 30.0,
+    "data_operacao": "2026-09-10",
+    "valor_financeiro": 3000.0,
+    "ganho_prejuizo_bruto": 500.0,
+    "taxas_totais": {
+        "taxa_liquidacao": 0.8250000000000001,
+        "taxa_registro": 0.102,
+        "emolumentos": 0.09,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+    },
+    "aliquota_aplicada": 0.15,
+    "ir_devido": 74.85,
+    "irrf_retido": 0.0,
+    "isen\u00c3\u00a7\u00c3\u00a3o_aplicada": false,
+    "ganho_prejuizo_liquido": 498.983,
+    "valor_liquido": 2924.1330000000003,
+    "tipo_operacao_classificacao": "swing",
+    "mensagem": "Opera\u00c3\u00a7\u00c3\u00a3o swing trade de PETR4: R$ 500,00 - IR devido: R$ 74,85"
+}

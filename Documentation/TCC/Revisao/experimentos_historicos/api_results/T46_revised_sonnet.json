@@ -1,0 +1,27 @@
+{
+  "key": "T46_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não tenho dados suficientes para calcular seu imposto. Preciso saber: qual foi a operação (venda de ações, cotas de FII, empréstimo de ativos, outro rendimento?), o tipo de ativo, valores envolvidos (custo de aquisição, valor de venda ou rendimento bruto), datas das operações e, se for empréstimo, o prazo do contrato.\n\nCom base apenas nas evidências fornecidas, note as distinções:\n\n- **Venda de cotas de FII com prejuízo**: só compensa com ganhos de venda de cotas de fundos da mesma espécie, não com lucro em ações (fonte: normas.receita.fazenda.gov.br, ID fii_perda).\n- **Empréstimo de ativos (doador/emprestador PF residente)**: a remuneração é tributada exclusivamente na fonte, com alíquotas regressivas conforme prazo (22,5% até 180 dias; 20% de 181–360; 17,5% de 361–720; 15% acima de 720), conforme Lei 15.265/2025, arts. 18–19 (ID emprestimo). Isso não se confunde com venda de ação nem gera DARF mensal adicional sobre essa remuneração.\n- **Reembolso de proventos em empréstimo** é evento distinto da remuneração contratual, disciplinado pelos arts. 20 e seguintes da mesma lei (ID emprestimo_proventos).\n\nSem os dados concretos da sua operação, não posso apurar valor devido. Isto é orientação educacional, não apuração fiscal definitiva — recomendo confirmar com contador antes de declarar.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 957,
+    "output_tokens": 557,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.007484,
+  "seconds": 6.0169095999444835,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "fdc3c0ea08dccc4ab7b409be054e6fbb7736fefcb5d2993d19e705b21f5c67f1"
+}

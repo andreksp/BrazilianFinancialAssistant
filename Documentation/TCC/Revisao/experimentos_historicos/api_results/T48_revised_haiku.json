@@ -1,0 +1,24 @@
+{
+  "key": "T48_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta\n\n**Ter carteira própria de Bitcoin NÃO prova, por si só, que a aplicação está no exterior.**\n\n## Por quê:\n\nA localização física da carteira (dispositivo, servidor) é distinta da caracterização fiscal do residente PF. Uma carteira própria pode estar:\n- Em dispositivo nacional (computador, hardware wallet no Brasil)\n- Em plataforma brasileira registrada na Receita Federal\n- Em plataforma estrangeira\n\n## O que falta na pergunta:\n\nPara caracterizar aplicação **no exterior**, seria necessário evidenciar:\n- **Remessa de valores** ao exterior (comprovar saída de moeda/câmbio)\n- **Custódia em instituição estrangeira** (intermediário não residente)\n- **Não-declaração** na DIRPF (omissão agrava, mas não constitui prova)\n\n## Evidência fornecida:\n\nOs documentos referenciados tratam de FII, empréstimo de ativos e ações — não abordam criptoativos ou aplicações no exterior. **Não há marco legal específico na base fornecida sobre Bitcoin ou prova de localização exterior.**\n\n**Limite:** Você precisa esclarecer se a carteira está declarada, em que plataforma e se houve remessa. Sem isso, não há conclusão segura.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 805,
+    "output_tokens": 332,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002465,
+  "seconds": 4.52012050000485,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "99bf18a28281e813600b5405e22febb8ee6f81a47260176902cd5e94171dcc43"
+}

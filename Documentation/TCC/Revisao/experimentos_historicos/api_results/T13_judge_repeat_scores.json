@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 2,
+      "motivo": "Regra de FII: 20% sobre ganho e ausência de isenção de R$20 mil; responde diretamente."
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 1,
+      "motivo": "Trata de futuros, mas esclarece que a isenção de R$20 mil é só para ações à vista."
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 1,
+      "motivo": "Guia de DARF; útil para recolhimento, não responde à isenção em FII."
+    },
+    {
+      "id": "futuros",
+      "relevancia": 0,
+      "motivo": "Específico de mercado futuro; não trata de FII."
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 0,
+      "motivo": "Trata de opções; fora do escopo da pergunta."
+    },
+    {
+      "id": "fii_venda",
+      "relevancia": 2,
+      "motivo": "Afirma explicitamente 20% sobre ganho líquido e inexistência da isenção de R$20 mil para FII."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Núcleo correto (sem isenção, 20%), sem inventar valor de ganho e com ressalva adequada sobre IRRF.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Acerta a regra, mas assume hipoteticamente lucro de R$5.000 confundindo com o valor da venda; hedge condicional atenua.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 1,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Regra correta, porém afirma categoricamente ganho de R$5 mil e IR de R$1.000 (valor da venda ≠ lucro); ainda sugere checagem de day trade irrelevante para FII.",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T13",
+  "repeat": true
+}

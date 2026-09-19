@@ -1,0 +1,32 @@
+[
+  {
+    "case": "preco_medio_nan_direto",
+    "ok": true,
+    "detail": "Rejeitado na validação do modelo TradeInput (Field ge=0), antes do gateway MCP: ValidationError: 1 validation error for TradeInput\npreco_medio_informado\n  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=nan, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.13/v/greater_than_equal"
+  },
+  {
+    "case": "preco_medio_inf_direto",
+    "ok": true,
+    "detail": "Informe o custo médio positivo antes de calcular."
+  },
+  {
+    "case": "ferramenta_ausente",
+    "ok": true,
+    "detail": "isError=True content=[TextContent(type='text', text='Unknown tool: ferramenta_que_nao_existe', annotations=None, meta=None)]"
+  },
+  {
+    "case": "cancelamento",
+    "ok": true,
+    "detail": "CancelledError propagada corretamente; sem exceção não tratada"
+  },
+  {
+    "case": "resposta_invalida_servidor",
+    "ok": true,
+    "detail": "14 validation errors for TaxCalculationResult\nativo\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntipo_ativo\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nquantidade\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\npreco_unitario\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ndata_operacao\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nvalor_financeiro\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nganho_prejuizo_bruto\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntaxas_totais\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naliquota_aplicada\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nir_devido\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nirrf_retido\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nganho_prejuizo_liquido\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nvalor_liquido\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntipo_operacao_classificacao\n  Field required [type=missing, input_value={'campo_incompleto': 'nao...lculationresult_valido'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing"
+  },
+  {
+    "case": "timeout_servidor_lento",
+    "ok": true,
+    "detail": "asyncio.TimeoutError levantado no limite externo de 5s (gateway usa 30s internamente; aqui forçamos um teto externo menor para o teste)"
+  }
+]

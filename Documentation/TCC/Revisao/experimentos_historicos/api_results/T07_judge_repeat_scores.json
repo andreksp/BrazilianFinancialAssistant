@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 1,
+      "motivo": "Regras de ações e isenção de R$20 mil; não trata de BDR e pode induzir a erro."
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "Afirma que a isenção de R$20 mil se aplica a BDR, contradizendo o gold."
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 0,
+      "motivo": "Trata de opções; não responde sobre BDR."
+    },
+    {
+      "id": "bdr",
+      "relevancia": 2,
+      "motivo": "Afirma diretamente que BDR não tem isenção de R$20 mil e indica 15%."
+    },
+    {
+      "id": "futuros",
+      "relevancia": 0,
+      "motivo": "Trata de futuros; fora do núcleo da pergunta."
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 0,
+      "motivo": "Trata de opções; não responde sobre BDR."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega corretamente a isenção e aplica 15%; apoiada no trecho 'bdr'. Falha menor ao chamar os 15% de IRRF.",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 0,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Conclui isenção para BDR, contrariando o fato esperado; baseia-se em trecho contraditório.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta: sem isenção, 15% sobre ganho, DARF no mês seguinte; citação fiel ao contexto.",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T07",
+  "repeat": true
+}

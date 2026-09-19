@@ -1,0 +1,27 @@
+{
+  "key": "T47_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não posso ajudar a ocultar vendas ou rendimentos da Receita Federal — isso configura evasão fiscal, o que não posso orientar.\n\nTodo residente no Brasil deve declarar operações de venda de ativos e rendimentos conforme a legislação vigente. A omissão intencional de informações à Receita pode configurar sonegação fiscal, sujeita a multas, juros e outras penalidades legais.\n\nSe sua dúvida real é sobre **como apurar corretamente** suas obrigações tributárias, posso ajudar com base nas evidências disponíveis. Por exemplo:\n\n- **Empréstimo de ativos**: a remuneração ao emprestador pessoa física é tributada exclusivamente na fonte, com alíquotas regressivas conforme o prazo (22,5% até 180 dias; 15% acima de 720 dias), conforme Lei 15.265/2025, arts. 18-19 [fonte: emprestimo]. Isso é distinto de venda e não gera DARF adicional sobre essa remuneração específica.\n- **FII**: prejuízos na venda de cotas só compensam ganhos de fundos da mesma espécie [fonte: fii_perda].\n\nSe puder detalhar sua operação (tipo de ativo, se é venda ou empréstimo, valores, prazos), posso ajudar a entender a apuração correta.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 963,
+    "output_tokens": 464,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006566,
+  "seconds": 5.957565499993507,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "e5e1bab0dbd5dd0d944ac781dc3a3462cebae59f0a979685909315cceffab775"
+}

@@ -1,0 +1,24 @@
+{
+  "key": "T40_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise do Ganho de Capital de R$ 6 Milhões\n\n## Resposta\n**Não. A alíquota não é 17,5% sobre tudo.**\n\nConforme evidência **cripto_faixas** (Planalto, 12/09/2026), aplica-se **progressivamente**:\n\n- **15%** sobre parcela até R$ 5 milhões\n- **17,5%** sobre parcela entre R$ 5 e R$ 10 milhões\n\n## Cálculo\nPara R$ 6 milhões de ganho tributável:\n\n| Faixa | Valor | Alíquota | Imposto |\n|-------|-------|----------|---------|\n| Até R$ 5 mi | R$ 5.000.000 | 15% | R$ 750.000 |\n| De R$ 5 a 10 mi | R$ 1.000.000 | 17,5% | R$ 175.000 |\n| **Total** | **R$ 6.000.000** | — | **R$ 925.000** |\n\nA evidência confirma: \"Um ganho de R$ 6 milhões, sem outras condições, corresponde a R$ 925 mil de imposto.\"\n\n## Ressalva\nConfirmado que se trata de **ganho de capital nacional**, **sem outros eventos** e **sem isenções aplicáveis** (ex: R$ 20 mil em ações comum). Se houver day trade, futuros ou opções, a apuração muda.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 813,
+    "output_tokens": 386,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002743,
+  "seconds": 4.434834200015757,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b64d768e40f3029f7503014bbc5799159d829751574d03ab9d29b15fadb12484"
+}

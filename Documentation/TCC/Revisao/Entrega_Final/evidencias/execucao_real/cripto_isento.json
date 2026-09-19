@@ -1,0 +1,24 @@
+{
+    "ativo": "BTC",
+    "tipo_ativo": "cripto",
+    "quantidade": 0.1,
+    "preco_unitario": 350000.0,
+    "data_operacao": "2026-09-10",
+    "valor_financeiro": 35000.0,
+    "ganho_prejuizo_bruto": 5000.0,
+    "taxas_totais": {
+        "taxa_liquidacao": 0.0,
+        "taxa_registro": 0.0,
+        "emolumentos": 0.0,
+        "corretagem": 0.0,
+        "iss_sobre_corretagem": 0.0
+    },
+    "aliquota_aplicada": 0.0,
+    "ir_devido": 0.0,
+    "irrf_retido": 0.0,
+    "isen\u00c3\u00a7\u00c3\u00a3o_aplicada": true,
+    "ganho_prejuizo_liquido": 5000.0,
+    "valor_liquido": 35000.0,
+    "tipo_operacao_classificacao": "swing",
+    "mensagem": "Venda de BTC (exchange nacional): R$ 5.000,00 (isen\u00c3\u00a7\u00c3\u00a3o de R$ 35.000/m\u00c3\u00aas aplicada \u00e2\u20ac\u201d sem IR)"
+}

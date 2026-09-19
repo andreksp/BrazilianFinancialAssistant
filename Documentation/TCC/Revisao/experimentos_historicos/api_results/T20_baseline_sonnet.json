@@ -1,0 +1,27 @@
+{
+  "key": "T20_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base na evidência [ID 290b3fbba3faa9f8] (Regras de IR — Opções de Ações):\n\n**Premissa**: você especificou \"encerrando opções comuns\" — presumo **swing trade** (não day trade), já que não foi indicado compra e venda no mesmo dia. Se for day trade, a alíquota é diferente (20%).\n\n**Cálculo (swing trade)**:\n- Ganho líquido: R$ 1.000,00\n- Alíquota: 15%\n- **IR devido (antes de IRRF): R$ 150,00**\n\n**Observações importantes**:\n1. Opções **não têm isenção** de R$ 20.000/mês (diferente de ações e BDRs) — todo ganho é tributável, independente do valor negociado.\n2. O IRRF (0,005% sobre valor da venda, no swing trade) será **dedutível** desse IR de R$ 150,00 — não é imposto adicional, mas antecipação.\n3. Este cálculo pressupõe que R$ 1.000 já é o ganho líquido apurado corretamente (após compensar eventuais prejuízos do mês em opções/ações, conforme regras de compensação) e que não há outras operações no período que alterem a base.\n\n**Limite desta resposta**: não tenho dados sobre se há prejuízos anteriores a compensar, se é day ou swing trade, nem o IRRF retido — não posso calcular o IR final líquido sem essas informações. Isso é uma simulação educacional, não apuração fiscal definitiva. Consulte um contador para sua declaração.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2891,
+    "output_tokens": 531,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.011092,
+  "seconds": 8.10520390002057,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "e94a8d58ef55875438b063f3b7a4b43cb264cf4ee26534bf8d0e9378bb77838b"
+}

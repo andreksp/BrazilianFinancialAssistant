@@ -1,0 +1,24 @@
+{
+  "key": "T17_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Resposta\n\n**Não**, não é permitido abater prejuízo em cotas de FII contra lucro em ações.\n\n## Regra de Segregação (ID: fii_perda)\n\nConforme a evidência fornecida, **prejuízos na alienação de cotas de FII compensam-se exclusivamente com ganhos de alienação de cotas de fundos da mesma espécie**. Não é permitida compensação indiscriminada com lucro em ações.\n\n## Regime Separado por Ativo\n\n- **Cotas de FII**: ganhos/perdas calculados isoladamente\n- **Ações**: ganhos/perdas calculadas isoladamente\n\nCada categoria exige apuração própria de custos, ganhos e perdas.\n\n## Observação Importante\n\nA isenção de rendimentos distribuídos por FII (Lei 11.033, art. 3º) **não se estende ao lucro na venda de cotas**, que segue tributação normal.\n\n**Fonte**: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494\n\nConfirme se há outras operações ou regimes (day trade) envolvidos para análise completa.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 741,
+    "output_tokens": 306,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002271,
+  "seconds": 3.915841099980753,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c1d51163ee4690d2b922981ec596f60b94728ee9607ef26edd2b0c3a5b65e2d5"
+}

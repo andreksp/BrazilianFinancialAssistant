@@ -22,6 +22,7 @@ class AssetType(str, Enum):
     FUTURO_DOLAR = "futuro_dolar"  # Dollar futures (WDO)
     FUTURO_INDICE = "futuro_indice"  # Ibovespa index futures (WIN)
     EMPRESTIMO_ACOES = "emprestimo_acoes"  # Securities lending (BTC/CBLC)
+    CRIPTO = "cripto"  # Cryptocurrencies (Bitcoin, altcoins, stablecoins)
     # Phase 2 (remaining): FUTURO_CRIPTO
 
 
@@ -74,10 +75,22 @@ class TradeInput(BaseModel):
 
     # Optional metadata
     nota: Optional[str] = Field(None, description="User notes about the trade")
+    total_vendas_mes: Optional[float] = Field(None, ge=0, description="Total mensal completo da categoria, incluindo esta venda; não apenas histórico local")
+    classificacao: TradeOperationType = Field(default=TradeOperationType.SWING, description="Classificação declarada; não detectada automaticamente")
+    preco_medio_informado: Optional[float] = Field(None, ge=0, description="Custo médio com custos de aquisição, quando informado pelo usuário")
+    custos_operacao: Optional[float] = Field(None, ge=0, description="Custos reais totais da operação conforme nota; substitui estimativa de tarifas")
+    irrf_informado: Optional[float] = Field(None, ge=0, description="Retenção efetiva conforme documento da instituição")
 
     # Empréstimo de Ações only: contract duration, drives the regressive-rate bracket
     prazo_dias: Optional[int] = Field(
         None, gt=0, description="Lending contract duration in days (Empréstimo de Ações only)"
+    )
+
+    # Cripto only: foreign exchange (Binance, Coinbase, self-custody abroad, etc.) is taxed
+    # under Lei 14.754/2023 as "aplicação financeira no exterior" — flat 15%, no R$35.000 exemption.
+    exchange_estrangeira: bool = Field(
+        default=False,
+        description="Cripto only: True if traded on a foreign exchange/held abroad (changes tax regime)",
     )
 
 

@@ -1,0 +1,27 @@
+{
+  "key": "T42_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"183017f281e698ea\",\"relevancia\":2,\"motivo\":\"Afirma explicitamente DARF 4600 para cripto e distingue do 6015.\"},{\"id\":\"c4a28d9b57b540e1\",\"relevancia\":1,\"motivo\":\"Explica que 6015 é de bolsa, mas não trata de cripto diretamente.\"},{\"id\":\"06a4e857780aec7b\",\"relevancia\":0,\"motivo\":\"Empréstimo de ações, tema alheio.\"},{\"id\":\"cripto_darf\",\"relevancia\":2,\"motivo\":\"Responde diretamente: DARF 4600, não 6015.\"},{\"id\":\"cripto_isencao\",\"relevancia\":1,\"motivo\":\"Contexto de isenção mensal; não trata do código DARF.\"},{\"id\":\"emprestimo\",\"relevancia\":0,\"motivo\":\"Regra de empréstimo de ativos, irrelevante.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Indica 4600 corretamente, distingue 6015 e regime exterior, apoiado nos trechos.\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Resposta correta (4600), prazo e isenção coerentes com as evidências citadas.\"},{\"id\":\"C\",\"correcao\":1,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Acerta o 4600, mas aplica o limite de R$35.000 ao ganho e afirma tributação apenas do excedente, contrariando a regra (limite de alienações e tributação integral do ganho).\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 7692,
+    "output_tokens": 1026,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 416
+    }
+  },
+  "usd": 0.06411,
+  "seconds": 15.936872399994172,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c6a6724fdd2aa1d475f05775a1bd12752337dbb67bba3d0f8531419fec54be4b"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T35_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, com base na evidência [ID 06a4e857780aec7b]: a remuneração recebida pelo doador no empréstimo de ações (BTC/CBLC) é tributada pela **tabela regressiva de renda fixa** (22,5% a 15%, conforme prazo do contrato), com **retenção exclusiva/definitiva na fonte** pela B3/CBLC no momento do pagamento.\n\nSegundo essa evidência, essa retenção **não compõe a apuração mensal de renda variável** e **não gera DARF adicional** — ou seja, é diferente do regime de ações/FIIs (código 6015), onde o próprio contribuinte apura e recolhe mensalmente.\n\nNa declaração anual (DIRPF), esse rendimento entra em \"Rendimentos Sujeitos a Tributação Exclusiva/Definitiva\", com base no informe de rendimentos da B3 (Empréstimos).\n\n**Limite importante**: a evidência indica que, sem o prazo real do contrato, o sistema assume a faixa mais conservadora (até 180 dias, 22,5%) — recomendo confirmar o prazo efetivo no informe da B3 para validar a alíquota aplicada.\n\nIsso não substitui apuração fiscal definitiva; para seu caso concreto, consulte contador ou o informe oficial da B3.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3309,
+    "output_tokens": 456,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.011178,
+  "seconds": 5.703007699979935,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "4259321ec261a0c2e5e06c0beb358f7b8bd828efafe8d041dc2f844996f148b4"
+}

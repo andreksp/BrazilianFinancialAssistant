@@ -1,0 +1,27 @@
+{
+  "key": "T41_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, não mantém.\n\nDe acordo com a evidência [183017f281e698ea]: a isenção mensal de R$35.000 (IN SRF 84/2001, art. 3º, IX) aplica-se apenas ao **Regime 1 — exchange nacional**.\n\nPara criptoativos mantidos ou negociados em **exchange estrangeira ou autocustódia fora do Brasil** (Regime 2), a Lei 14.754/2023 os enquadra como \"aplicação financeira no exterior\", com:\n\n- Alíquota **fixa de 15%** sobre o ganho líquido (ganhos menos perdas) do ano — sem faixa de isenção;\n- Apuração e recolhimento na **Declaração de Ajuste Anual (DAA)** do ano seguinte, não por DARF mensal.\n\nDistinções importantes:\n- **Regime** (nacional vs. estrangeiro) determina se há ou não isenção — é por localização da custódia/negociação, não por tipo de moeda.\n- **Período**: regime nacional é apurado mês a mês; regime exterior é apurado anualmente.\n- A MP 1.303/2025, que tentaria unificar tudo em 17,5% e acabar com a isenção nacional, foi rejeitada e perdeu validade em 08/10/2025 — não afeta as regras de 2026.\n\nSe sua situação envolver combinação de exchanges nacionais e estrangeiras no mesmo período, recomendo detalhar os valores para orientação mais precisa; isso não substitui apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 4738,
+    "output_tokens": 529,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.014766,
+  "seconds": 7.24186530004954,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b047d492d2ec68008bfbabf355fec2d4692e20c74bbab5c3b49f9239ed023fa4"
+}

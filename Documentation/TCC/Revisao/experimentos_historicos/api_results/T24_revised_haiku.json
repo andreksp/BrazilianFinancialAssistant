@@ -1,0 +1,24 @@
+{
+  "key": "T24_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Titular e Lançador: Apurações Diferem Conforme a Operação\n\n**Não há regra única.** A apuração depende de quem é titular (propriedade) e quem é lançador (beneficiário econômico) em cada evento.\n\n## Exemplos das evidências:\n\n**Empréstimo de ativos** (Lei 15.265/2025, arts. 18–19):\n- O *emprestador* (titular transferido) apura remuneração com IR na fonte (22,5%–15% conforme prazo)\n- O *tomador* apura custos e ganhos próprios separadamente\n- Evento único, mas tributação distinta por pessoa\n\n**FII** (Lei 11.033/2004, art. 3º):\n- Rendimentos: isentos *se* cotista pessoa física + fundo atende requisitos (bolsa, 100+ cotistas, concentração controlada)\n- Ganho na venda: sempre tributável, independente do status do rendimento\n- Novo evento = novo cálculo\n\n## Limite\n\nAs evidências não cobrem todos os cenários (pessoa jurídica, não-residentes, regime de apuração compartilhada). Para caso específico, **indique:**\n- Tipo de ativo\n- Posição de cada parte (titular/tomador, cotista/gestor)\n- Período e regime de apuração vigente\n\nSem esses dados, não é possível afirmar se apurações convergem.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 832,
+    "output_tokens": 369,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002677,
+  "seconds": 5.165930099959951,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "f748b027ef8797c01f46a2adb980a8ce3a3a6b6570b674df93f0410e655c27a4"
+}

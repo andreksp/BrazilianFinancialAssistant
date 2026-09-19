@@ -1,0 +1,1918 @@
+{
+  "backup_previous_project_files": "C:\\Users\\andre\\tcc_revisao\\backups\\antes_consolidacao_D_20260916_213250",
+  "canonical_project": "D:\\Projects\\BrazilianFinancialAssistant",
+  "documentation": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao",
+  "copied": [
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\agents\\base_agent.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\agents\\base_agent.py",
+      "sha256": "64c1ec7bab70bfe03ba18d32939ca71b9ef3fe91ffc2388ca4a7a9042eb0020e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\api\\trades.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\api\\trades.py",
+      "sha256": "84036e694cefc6460a089bdf1efa085f3a8908f2e54d9fc939f7caf4c5212a89"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\calculations\\crypto\\criptomoedas.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\calculations\\crypto\\criptomoedas.py",
+      "sha256": "f066627b1f68d1ca1f5540f6d9aceacb50a729a3b47114882148924009cbc011"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\calculations\\derivatives\\futuros.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\calculations\\derivatives\\futuros.py",
+      "sha256": "43c21ff26a23d4bea55454f1babbaec9edcf9b3314420c283caffcfad748ac73"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\calculations\\equity\\acoes.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\calculations\\equity\\acoes.py",
+      "sha256": "e1ec3bd1ed1bed369f30e02d0b996f29a5cec0a1fec4402beb70b325e4deadff"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\calculations\\equity\\bdrs.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\calculations\\equity\\bdrs.py",
+      "sha256": "649c56d59cdffafabdaeae2618303c04873f4098561ceb70ce088d20b4054c72"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\calculations\\fees\\b3_fees.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\calculations\\fees\\b3_fees.py",
+      "sha256": "df1de94c0259ce6adb9c4b25740ec70774d79437352fc77a05981712fdb90746"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\calculations\\lending\\emprestimo.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\calculations\\lending\\emprestimo.py",
+      "sha256": "ff40f9a5d2272811d01a4e0d9d501adeca47a7b49aec87e4492cff41b2896a7e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\llm\\claude_client.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\llm\\claude_client.py",
+      "sha256": "1691da3266e0485cb229938a05bf66d416b0bb7910b7c65e967ac760bcad8b81"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\models\\trade.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\models\\trade.py",
+      "sha256": "4eb0a7cd29761614b0dfebbe3fed658f34805e877119b0cbf55960ec290365b7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\vector_db\\chroma_client.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\vector_db\\chroma_client.py",
+      "sha256": "15456dbb422881c11fab3def667650c3c7552c4152a95d637cd30ace977723a9"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\vector_db\\curated.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\vector_db\\curated.py",
+      "sha256": "969ece298850f98c3ba8d6d77a5831f0713d7874a10cb71ec64b4140c1362216"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\app\\vector_db\\revised_client.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\app\\vector_db\\revised_client.py",
+      "sha256": "401091c356d0aa8ce4a562d214c707b67f3778df242a50370625ecd4d2bf6224"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\data\\regulations\\ir_emprestimo_acoes.txt",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\data\\regulations\\ir_emprestimo_acoes.txt",
+      "sha256": "a134af7fdca66c729c53e7fd5ac4308bc890c7d3f59cc8cedf8ed78a06f38655"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\data\\regulations\\ir_fiis.txt",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\data\\regulations\\ir_fiis.txt",
+      "sha256": "35e1ab2149fd48c12f804654de79f81c5ccd7e77493074ab3b53665b70399429"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\tests\\test_acoes.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\tests\\test_acoes.py",
+      "sha256": "ddb32987d83d5b92b8b589d8cc8466ff46b9bce9b109c2fbd1b0b3b00d99f842"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\tests\\test_api.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\tests\\test_api.py",
+      "sha256": "0c6e5bf3d48da8721e77d188dcf34018a28fa9658b8fbfbe90a74f57844d3a4b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\tests\\test_bdrs.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\tests\\test_bdrs.py",
+      "sha256": "673a256598db5513671dbd4494db67297a0c30fe3bcac5a25e26877424a7ab99"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\tests\\test_emprestimo.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\tests\\test_emprestimo.py",
+      "sha256": "a0c4ff54ee40e183a817f74213ac0762925985eeef8a2d76e9c6936f6639c759"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\tests\\test_futuros.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\tests\\test_futuros.py",
+      "sha256": "49a6c3cc6176fc86747ed334bd2798ff9e8004977e1ec202973b88751b169727"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised\\backend\\tests\\test_revision_safety.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\backend\\tests\\test_revision_safety.py",
+      "sha256": "4f1cbf1982a9a679170400a2dad912f56105ea1268626591ef755b9eb522115c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\LEIA-ME.md",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\LEIA-ME.md",
+      "sha256": "8d231be80934b8fe59532430552c5c8a207afcc5939e74aec2422545bab8772c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\matriz_comentarios.csv",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\matriz_comentarios.csv",
+      "sha256": "866cac01beae22f5d0e71bde0df0c9a50e728b02197b621d18dc4597f4b9a548"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\Monografia_Revisada_para_Orientador.docx",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\Monografia_Revisada_para_Orientador.docx",
+      "sha256": "38774fba85e439bea6e028b971e060e9436ee4627a7346bbeeea87c7ba87e5be"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\Monografia_Revisada_para_Orientador.pdf",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\Monografia_Revisada_para_Orientador.pdf",
+      "sha256": "bd7665b6163fabc31a8eccb3566380ed7163ced1281df8568e5a7fe56bb3e28d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\Reproducao_TCC_2026.zip",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\Reproducao_TCC_2026.zip",
+      "sha256": "c20b8ff0a7db1d6f611704e9bfe43d085f60b87a28e0e4fb16fb4ed7140867b1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\document_structure_audit.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\document_structure_audit.json",
+      "sha256": "3a3303b3613d5a7a5aa2e85047e9e2a4718587a68517d3dd143ded415edaaedf"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\final_document_audit.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\final_document_audit.json",
+      "sha256": "423a4bf825eb974753ef8aad53dfe95a0e08ab6261c37b506250bf5b2c5e8f97"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\manuscrito_fonte.md",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\manuscrito_fonte.md",
+      "sha256": "f8b04af3f7d1971d4ee4a3166048b9c752165bb419eb8ef6f60b4676b7985e1b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\results_summary.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\results_summary.json",
+      "sha256": "add8f003ed45d9365c1c1f0f26c07f924c780196b24a47226462d0da34d62a5c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\execucao_real\\acoes_isento.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\execucao_real\\acoes_isento.json",
+      "sha256": "fa60318b4dd5eda351ab832117056abf9821b31cb28f0aac89e0c673fbc8ea27"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\execucao_real\\acoes_tributado.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\execucao_real\\acoes_tributado.json",
+      "sha256": "54e4bcd5a2b7ad213ce2b9f90883e19b99c24fc329c05d878351f491bfa7fad7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\execucao_real\\cripto_isento.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\execucao_real\\cripto_isento.json",
+      "sha256": "ff496acd06b7e5d4501bd80ca92eded2c57c9a63fee4ee917f6b2177a2adcd68"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\execucao_real\\cripto_nacional.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\execucao_real\\cripto_nacional.json",
+      "sha256": "aa977ed725b647731c6c9839a62c6b39a2144edc7a61fad2e80ae7a3e992c9ed"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\execucao_real\\emprestimo_doador.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\execucao_real\\emprestimo_doador.json",
+      "sha256": "fc16b7cbe14bbb3c83d6b510616d95db941b102e59d88146956bfc88baefc992"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\execucao_real\\fii_venda.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\execucao_real\\fii_venda.json",
+      "sha256": "7cf671e847781666c9d4215373bf323ba275b6587a2c3fdf4ba951b05f0baca7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\execucao_real\\futuro_wdo.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\execucao_real\\futuro_wdo.json",
+      "sha256": "08ae69104f7188e7649f46aeb901e64e8e766e557f9656bc9a6f444044f3eedf"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\execucao_real\\futuro_win.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\execucao_real\\futuro_win.json",
+      "sha256": "fbbd1e8a62b64bdfcb646ecd431c505f5a7e6062de3e0d37d61f0bed1637f671"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\execucao_real\\server_real.log",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\execucao_real\\server_real.log",
+      "sha256": "7e240eae1187a1bdbe637957fa78122fe6e80ccf3db2e2d289eead4a3038bccb"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\01_fii_venda_topo.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\01_fii_venda_topo.jpg",
+      "sha256": "33deab4dad3ad2a2574e1b7b96f59ba8ceaa63243537de16825828dea2b5c4a0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\02_fii_venda_completo.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\02_fii_venda_completo.jpg",
+      "sha256": "144f50f9c164f0dfacdb69465ea60bf576a88ae8d093e2932f4a33e67546ca09"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\03_futuro_WIN_falha_sem_custo_medio.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\03_futuro_WIN_falha_sem_custo_medio.jpg",
+      "sha256": "16e56212b0b12aac4549f4fb6300178e88727bd12d7552ed51c701adec850eb8"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\04_acao_falha_sem_custo_medio.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\04_acao_falha_sem_custo_medio.jpg",
+      "sha256": "caaefccca7436f1e81f0ecb8eb9b240b76a7e15880b1e68c41c2f69aa6e06fb5"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\05_emprestimo_doador_topo.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\05_emprestimo_doador_topo.jpg",
+      "sha256": "8253c7c093b9ad2e135119d3621ef5d3de0455ff332deed61d611bbe56e3dfc6"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\06_emprestimo_doador_completo.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\06_emprestimo_doador_completo.jpg",
+      "sha256": "7102a439949b2312ac011a8a74870199f6b07dc2d6465a62ffcdfeacf7b82c9d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\07_chat_FII_resposta_real.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\screenshots_interface_real\\07_chat_FII_resposta_real.jpg",
+      "sha256": "b90f653ac34f377c095f26b06046ce2a064195810e8ae9e2e746dfe536ecdaac"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\testes_e_calculadoras\\baseline_calculator_checks.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\testes_e_calculadoras\\baseline_calculator_checks.json",
+      "sha256": "5011b0f190474a083780b0ac468c1c9e4eb7e17f83dc83953a37afb9c09d41c4"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\testes_e_calculadoras\\baseline_pytest.txt",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\testes_e_calculadoras\\baseline_pytest.txt",
+      "sha256": "fd7024908aab0f4ba9c598fdb76974b43a42407f99fc2c9f839615a53aa90c18"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\testes_e_calculadoras\\revised_calculator_checks.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\testes_e_calculadoras\\revised_calculator_checks.json",
+      "sha256": "f9e076311368b3de25c274799c8719e47374eb23e575966819bb0c712656cbb9"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\testes_e_calculadoras\\revised_pytest_ANTES_da_migracao_23_falhas.txt",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\testes_e_calculadoras\\revised_pytest_ANTES_da_migracao_23_falhas.txt",
+      "sha256": "53c82ccd69a37e06403937e63cfe1a0e1a8e422a604c9b25bf3dc170484b844e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\testes_e_calculadoras\\revised_pytest_DEPOIS_88_aprovados.txt",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\testes_e_calculadoras\\revised_pytest_DEPOIS_88_aprovados.txt",
+      "sha256": "91b0aead44f57c46257c54e67235be0efe194630a0d797d4e1c8ada59ad6f2c1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\intro_body_10.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\intro_body_10.png",
+      "sha256": "b973f4cceedd88b869163cd6d9ea939d69a61369f581b3756b37e3701f9b4a66"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\intro_body_11.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\intro_body_11.png",
+      "sha256": "0c9bc51d37b087ce054b35b23f071805c11935f6c928d53a53ee9a8fdf9486ca"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_01.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_01.png",
+      "sha256": "760c53ef4c97f8f469f84abc22c3ba5ef5037ca3b5f34308c19c54995d62544f"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_02.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_02.png",
+      "sha256": "fdc73d217f0db2b3fb2f49f4a96cd81cf5d6ce2b4a3e3e65c5e7d35e138c7aae"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_23.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_23.png",
+      "sha256": "44993918ec8d240f2c86c394f1da4862871cff48b7abdfd43f4dcd5d98dd9949"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_31.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_31.png",
+      "sha256": "1006ea7bf3c2e8b1087fbdc50ca8c5892fba193bbbe4dce33137a28a410e206d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_32.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_32.png",
+      "sha256": "82c3e7d05a64d83e02ba718c97c4c41acfa7bf599c89f60f45acf1e67687af47"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_34.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_34.png",
+      "sha256": "c296c714a8ca5a4255495665054dcb4957a310b1809f827b6cb98861017b1b13"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_51.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\page_51.png",
+      "sha256": "82c6353b0eb9cdf406a54055dbe9b82d66b61d4f496b31633e521b1843530981"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\screenshots_page_37.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\screenshots_page_37.png",
+      "sha256": "a5c151a277e07d9d0f81c95fb20d842c6dfdf5a8a18556a19a2cd6ec8e8dc9ed"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\screenshots_page_38.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\screenshots_page_38.png",
+      "sha256": "073a17f83f7f7f48227609b825f4e0823238360ac3451d05d5c87e19fa604740"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\screenshots_page_39.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\screenshots_page_39.png",
+      "sha256": "f6d9ea6bef70a4a744ae4010f87991065649aab94e66dd214e7f5f3cbb5db393"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\Entrega_Final\\evidencias\\verificacao_visual\\theory_page_12.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\Entrega_Final\\evidencias\\verificacao_visual\\theory_page_12.png",
+      "sha256": "76c5a511ac6c32f4ae3bcc9146e35a0edbe80280cb2fcd0768c519f63258a7e6"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\figures\\answers.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\figures\\answers.png",
+      "sha256": "16d827a520808d4b3b05da2fed960f451a5b0de192a1a7512f4d0439baeca34c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\figures\\architecture.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\figures\\architecture.png",
+      "sha256": "1fd86ebc6c42a1ef0eb024d4ad8fa2dbcc7b2597e4ab8a8b1a78d1200a660492"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\figures\\calculators.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\figures\\calculators.png",
+      "sha256": "3f272aeab05f7e918daf968d343f6e0f5f7cdb80e812ce0dee1f1de4cc3780a3"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\figures\\rag_fluxo_revisado.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\figures\\rag_fluxo_revisado.png",
+      "sha256": "fc18fb5be8d8ce6c505d27547efbc8f047479d37d3daec1f0a314e3bc18afce7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\figures\\retrieval.png",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\figures\\retrieval.png",
+      "sha256": "9f7b52e6ca0cf348770a284f495099115fefa4e1dd90eed4c7d6c5042a03e2b7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\figures\\screenshots\\screenshot_acao_falha.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\figures\\screenshots\\screenshot_acao_falha.jpg",
+      "sha256": "caaefccca7436f1e81f0ecb8eb9b240b76a7e15880b1e68c41c2f69aa6e06fb5"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\figures\\screenshots\\screenshot_chat_fii.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\figures\\screenshots\\screenshot_chat_fii.jpg",
+      "sha256": "b90f653ac34f377c095f26b06046ce2a064195810e8ae9e2e746dfe536ecdaac"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\figures\\screenshots\\screenshot_doador.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\figures\\screenshots\\screenshot_doador.jpg",
+      "sha256": "7102a439949b2312ac011a8a74870199f6b07dc2d6465a62ffcdfeacf7b82c9d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\figures\\screenshots\\screenshot_fii.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\figures\\screenshots\\screenshot_fii.jpg",
+      "sha256": "144f50f9c164f0dfacdb69465ea60bf576a88ae8d093e2932f4a33e67546ca09"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\figures\\screenshots\\screenshot_win_falha.jpg",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\figures\\screenshots\\screenshot_win_falha.jpg",
+      "sha256": "16e56212b0b12aac4549f4fb6300178e88727bd12d7552ed51c701adec850eb8"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\manuscrito.md",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\manuscrito.md",
+      "sha256": "edcc860fe984e8d17ec9bef21cec946005d7ed3ddce3059d2d70254373854394"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\build_revision.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\build_revision.py",
+      "sha256": "9fa53793982e1dcb93ecae6d0817bbe0cf1dc07a9a888219fd68b840f5d7ac9c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\comments.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\comments.json",
+      "sha256": "048eed7068696da9b50a73c810f8a127a0f7ca0d91045eb9026e7d56b6e29ad9"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\matriz_comentarios.csv",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\matriz_comentarios.csv",
+      "sha256": "866cac01beae22f5d0e71bde0df0c9a50e728b02197b621d18dc4597f4b9a548"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\original_comentado.docx",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\original_comentado.docx",
+      "sha256": "7a2f18b8d35c5f5d05b73a290de6abd1220d4e72632f7f62bb2547b507386fc0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\backups\\pagina2_modelo_20260913_235419\\modelo_sincronizado.docx",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\modelo\\modelo_sincronizado.docx",
+      "sha256": "ab28d2781b3c5c7dc17ee0c2f7ca589b0b358e0f42542852c36c42300c8f606d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\correcao_20260913\\export_synced.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\correcao_20260913\\export_synced.py",
+      "sha256": "ecb9398d7d1203082ef3117adfc226710221d039ce9e024dbad5960c3509025c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\correcao_20260913\\check_synced.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\correcao_20260913\\check_synced.py",
+      "sha256": "9429ed6b15cda06c766513f7cb8019085a92a30f7dc4a8995c37f5bb3ebb2aa0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_ledger.jsonl",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_ledger.jsonl",
+      "sha256": "8af446bad6f6870cd22aee65c5274ad26c1d904b65dbe603612b820b32bd0da2"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\available_models.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\available_models.json",
+      "sha256": "cd47f018f65b477a956b7e43a57f143e971418e620f5011c9ebbdbef6c7d7a11"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\baseline_calculator_checks.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\baseline_calculator_checks.json",
+      "sha256": "5011b0f190474a083780b0ac468c1c9e4eb7e17f83dc83953a37afb9c09d41c4"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\baseline_pytest.txt",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\baseline_pytest.txt",
+      "sha256": "fd7024908aab0f4ba9c598fdb76974b43a42407f99fc2c9f839615a53aa90c18"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\baseline_retrieval.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\baseline_retrieval.json",
+      "sha256": "f2060a33184f9a4fbadf776ac5f793d8d00b4039d1ad92f30f94a4a8e9b2b070"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\benchmark.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\benchmark.json",
+      "sha256": "2e90539b91ba55181c9da286c000da0b5875e34cb65a1453a0c9759022a60ce7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\benchmark.sha256",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\benchmark.sha256",
+      "sha256": "1bacdf917134e83d88732bb0172e220d067287d82f7143d8b2ab6251acc6c715"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\document_structure_audit.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\document_structure_audit.json",
+      "sha256": "3a3303b3613d5a7a5aa2e85047e9e2a4718587a68517d3dd143ded415edaaedf"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\experiment_freeze.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\experiment_freeze.json",
+      "sha256": "6a68e60c02d57d994ed0c872d36cbdcd7ee5b63ed615524f0ca6d3377ee54ce7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\final_document_audit.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\final_document_audit.json",
+      "sha256": "423a4bf825eb974753ef8aad53dfe95a0e08ab6261c37b506250bf5b2c5e8f97"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\results_per_case.csv",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\results_per_case.csv",
+      "sha256": "77a394d30de5f4fa0bb1d6f7dfdd0089f363f1ad3601eed4798a57223a548b7c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\results_summary.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\results_summary.json",
+      "sha256": "add8f003ed45d9365c1c1f0f26c07f924c780196b24a47226462d0da34d62a5c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised_calculator_checks.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\revised_calculator_checks.json",
+      "sha256": "f9e076311368b3de25c274799c8719e47374eb23e575966819bb0c712656cbb9"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised_pytest.txt",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\revised_pytest.txt",
+      "sha256": "53c82ccd69a37e06403937e63cfe1a0e1a8e422a604c9b25bf3dc170484b844e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\revised_retrieval.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\revised_retrieval.json",
+      "sha256": "2769181c771cddd5bd61a188b3cbd166b668b881c54b71be0c9593a4dfe09a3e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\snapshot.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\snapshot.json",
+      "sha256": "0ab32d974c88f8448f23a997b184bc2fb90de1554da2ab0286b7e0828c57f60c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D01_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D01_dev.json",
+      "sha256": "cd11b1feda08a70776f6eb17f123766c995f0cd34a2dbe9e1f614987c01052b4"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D02_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D02_dev.json",
+      "sha256": "2cf07cae30c92d499db859aee6d97b26905af218d1e7e6055f95dd706cb6d4b2"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D03_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D03_dev.json",
+      "sha256": "60ff1529f4228acd7b4e9efb2e1d192d9d68a8b95c7232e660dd504d72c81d8c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D04_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D04_dev.json",
+      "sha256": "f99453dd0016446f1a3b8510321de52744136a96616b1004677d9a69153a846c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D05_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D05_dev.json",
+      "sha256": "d4d8c6bc292c802c14d3a013f63b1a2fb94e3990ea348d69128d19442e2efaf0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D06_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D06_dev.json",
+      "sha256": "2f7c0f3ae55af2d322a8381b0de66647d5d9f2ade036dc955d6c898e34aaaaa6"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D07_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D07_dev.json",
+      "sha256": "93e0ce5fe27b11b69ac8aa32b1afa54775b8d4475b73455847cac3129aa9c901"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D08_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D08_dev.json",
+      "sha256": "6b324a61da4f7d41152debad2bf95ec7df6e7a0eb9b24e18a677d00edaf57d12"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D09_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D09_dev.json",
+      "sha256": "71aa68cfb658de8382ac00a0963c5747d582c048a52e73328554c9769a1a070e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D10_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D10_dev.json",
+      "sha256": "acf9f895b82031cf3c46a57c50a7b184f1a793c2722f6a36ed51c4bbb5b08975"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D11_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D11_dev.json",
+      "sha256": "115e931cc46b03840395ed1722a870a80dfbad43a76b5b7d81dd9acab90bbfbe"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\D12_dev.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\D12_dev.json",
+      "sha256": "fd07401c503f62d04540f3d6b86053791e9b78bc26db9c483cffc24b1e94a1de"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T01_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T01_baseline_sonnet.json",
+      "sha256": "ab39fd7817a193586f54b3a149e94415154652608c1e776e332aaf33e5cc7269"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T01_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T01_judge.json",
+      "sha256": "6ea40fa16d1af1f953c5a07703e97ce2b5cb5a7386643d6b7b53b2054c2ad5ef"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T01_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T01_judge_repeat.json",
+      "sha256": "e4ea9e0c90b818001147355c659564604e8889212ccc3a53c8e8c01ae19bcbca"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T01_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T01_judge_repeat_scores.json",
+      "sha256": "b94c4c2e15859d25474f822d68336b226b2534e90ccf87f7b409a70dcc92f51e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T01_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T01_judge_scores.json",
+      "sha256": "7c24b46a3b8976fb42d6ebfd92b5053bad18cb93c3da463162ae5b97e3f70e10"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T01_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T01_revised_haiku.json",
+      "sha256": "f87304c8331d7be9b08668afa0bed478771e357833f371b0be7e2697b9f54ab0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T01_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T01_revised_sonnet.json",
+      "sha256": "8bb99d93bf08e16764ef3709cf7963c5937498af2cbb9fa7794457b65797debb"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T02_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T02_baseline_sonnet.json",
+      "sha256": "e9668bd45d29499f32842615aa7ea902fe4256cec2a2fd187097e913e9e2943d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T02_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T02_judge.json",
+      "sha256": "d4e6ac01af7679883b389294b4e87ba769ca57f3ca08939b74e2a2b4009f1c08"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T02_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T02_judge_scores.json",
+      "sha256": "05ff5d2d77a489f5ae8f5f1d5a2ae51fade51e501d0dfa82105a676303ec4667"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T02_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T02_revised_haiku.json",
+      "sha256": "afe690e251128138c21a35f6260b605aab36a4291c841e0f1d8f6d5838ff6db1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T02_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T02_revised_sonnet.json",
+      "sha256": "077393741eef5f2b4b74eab7d6d4206124cd94e407c332811af4329ef8a2d04e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T03_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T03_baseline_sonnet.json",
+      "sha256": "d6f546fb7f8b58ed3716de710b2a649b8f53250a4c6734c81214159f4d9845b2"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T03_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T03_judge.json",
+      "sha256": "eb10ee16fa67d808047adeb600ce12c3472d25acc1d4bbd86c63c8e397b0757b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T03_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T03_judge_scores.json",
+      "sha256": "4c383d933dbb41a618fb83f4eca1ed32e94a3e3b2b7ea513f1ada1888a5bf247"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T03_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T03_revised_haiku.json",
+      "sha256": "5a17e4658622670bd7f0ade233a2e2daf993077aa20243082008b1a57668d258"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T03_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T03_revised_sonnet.json",
+      "sha256": "69bc8cb08bbf9641a0998a0a9d03267563863a4eceaba8899ac1438c19f6f3e6"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T04_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T04_baseline_sonnet.json",
+      "sha256": "1d6a30b6a79d3471b49aa80119f3f0ddfaac7154f30905c3e9daad6a117a6868"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T04_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T04_judge.json",
+      "sha256": "f829d0e5c54b4e44c1973220633655d3390ba2e0b5f76486e8efe539d01e2894"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T04_judge_format_retry1.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T04_judge_format_retry1.json",
+      "sha256": "2d71cbff3ad856772eaa12af23b508ba13c0e3c5b7254db1e9cb97d63fe16a1b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T04_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T04_judge_scores.json",
+      "sha256": "e28117138e74a3dd7054b878d1658d17f3e08431f1d889395026ce8e33445e55"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T04_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T04_revised_haiku.json",
+      "sha256": "47945c692a9b25f07707976e09d83df59c6161abc956d6f4880e7c0523aadd53"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T04_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T04_revised_sonnet.json",
+      "sha256": "c1151df703fd3f77c545d45396a4d4896ba0b1701bb3f48a7d64552991bf1c4d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T05_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T05_baseline_sonnet.json",
+      "sha256": "2591e6074fe314b4b0a7d95c159a148312cb4200855281bf6de0a70c9738b429"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T05_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T05_judge.json",
+      "sha256": "72258f90762f5d12a37d196b9b37187c2031e5ae77867a08bd24328bbe7ce9cd"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T05_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T05_judge_repeat.json",
+      "sha256": "989e52d99f39399362fc90a88cc0c6854e86b7fb4a8a767615f07ca9a0feabea"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T05_judge_repeat_format_retry1.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T05_judge_repeat_format_retry1.json",
+      "sha256": "2af3910b29fb2d800ceda280ec1cf97c24737f90e5be017f4771e060567ea23e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T05_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T05_judge_repeat_scores.json",
+      "sha256": "2551a1d0206e93a19b9d2b8e006bedf57c6242780fbc198c1eba679c709e675e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T05_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T05_judge_scores.json",
+      "sha256": "40e022dfc5b6db717a441e5826c4515598c690acd5d0dd2664440a9bb7db09b7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T05_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T05_revised_haiku.json",
+      "sha256": "9bb543d624a8e651d8e57855c88b32963a47f7104e877a94258727822b68633f"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T05_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T05_revised_sonnet.json",
+      "sha256": "2e012c37a31bb25061c31bbcafc98efcaa375943d3af27c3310a70059e4aca57"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T06_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T06_baseline_sonnet.json",
+      "sha256": "ab720e9bf30d3a42ae3482f17f769e9f814e4ed0abffc5db8f4b134f02ae0821"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T06_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T06_judge.json",
+      "sha256": "e66e8616122e38a89395525768068282af344284c508785937f538ec59aa9900"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T06_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T06_judge_scores.json",
+      "sha256": "18287bbf7c797643a4f6d04ba08e26732aa8f2481d81d5d7ff36f0d975dd0d8b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T06_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T06_revised_haiku.json",
+      "sha256": "ba5a151ba11229b046f8f4612fd8a651c1273195fb6924e5d6f04f4f6a4a6931"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T06_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T06_revised_sonnet.json",
+      "sha256": "0fc0291573f60e821ea5aa67b1bdc93209090902743c3c1b8ee6a91a2ec5892e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T07_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T07_baseline_sonnet.json",
+      "sha256": "6497db306a2b2f87328e378d4a9a3ffde9e9ad89ac4b0d5c2da3af1d13c802ad"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T07_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T07_judge.json",
+      "sha256": "2d70db876703b57f68e19d0e230644eb3696b0cdb81679cb5e0bd1d46ce57102"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T07_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T07_judge_repeat.json",
+      "sha256": "025b2f60b7357c549db3da5cb5cc7c47afe11d432b0b122da1976524e43c982c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T07_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T07_judge_repeat_scores.json",
+      "sha256": "556c7f692d2db4580a126dfe971e5cb32b5e740c9b5ee0eca54cb9404cd491f6"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T07_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T07_judge_scores.json",
+      "sha256": "335dd5e682bf50c86897d70be8c7316fcd8074ef777b8309bbb4f5dc88a9df52"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T07_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T07_revised_haiku.json",
+      "sha256": "8cb3a448e85416f4c13f135c5f5249b7cb0510c64204ddf26029087ae462633d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T07_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T07_revised_sonnet.json",
+      "sha256": "57acb9dd0f7f8fd12ce5a46077f362a613aac7407f75ca8fda6ac1d51c77e400"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T08_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T08_baseline_sonnet.json",
+      "sha256": "cd169bf66a6530f83411fbde66a5db65b9d2b9586f2694a2f0c0634aa0e8a139"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T08_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T08_judge.json",
+      "sha256": "8a4878a2b7a183c44f8c26d35147ba2da6f5db5e07acacda7c09e6134b7e5fbf"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T08_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T08_judge_scores.json",
+      "sha256": "37eb9376929bc36727000333c331474234ff1d0bf71f1193d8f49badf20119c0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T08_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T08_revised_haiku.json",
+      "sha256": "4ebd0d771644b173204bc6bfc45f7d05ca11c0a40b3f66a4073c126d993e7fa9"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T08_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T08_revised_sonnet.json",
+      "sha256": "ef9959fd34afa933e330376d19b9aec71107066f9ffe6e10d571e0d2acc1b1a2"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T09_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T09_baseline_sonnet.json",
+      "sha256": "0892b9625b302cd644dde382dc297a806bec6226332e0180ead8348cfb7c08fb"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T09_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T09_judge.json",
+      "sha256": "f9f41231d4ffb3e0e0bae68420cad779ee3a14bd987bd930f3ad6ad5197c1709"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T09_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T09_judge_scores.json",
+      "sha256": "9e35effd59fed0553f935b980f17060a1692ebec3315b125075a4fe815b1c9ed"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T09_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T09_revised_haiku.json",
+      "sha256": "0fcf8c6ebfe8f8f883962024ce406b4d6a03f11a8152b1481ef23a537b6082b3"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T09_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T09_revised_sonnet.json",
+      "sha256": "1614f5b33e856090d2d53832c56b07d7597f1554f88f35b89683952ad2bfe7ed"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T10_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T10_baseline_sonnet.json",
+      "sha256": "7b688c95241ddb585afb7031841a0699c85370566be6328e8fcd45a7a021b1fd"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T10_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T10_judge.json",
+      "sha256": "576b2946a5a3896e232bda5b98f17752a641f2befe818816e9ead84342817db8"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T10_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T10_judge_scores.json",
+      "sha256": "1c74695f8fdc5f60c1654ea04af2d1eca64a516e43c49ee6b2a8a574012d5116"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T10_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T10_revised_haiku.json",
+      "sha256": "d3282bea87ea5bff21525f08ee6855d985d84af9e81e0c578f62da1e65861a87"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T10_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T10_revised_sonnet.json",
+      "sha256": "b7373e1592327bddab6a5cd110cfae47fe8a650f7a088f28ec2b6d8bffca4156"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T11_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T11_baseline_sonnet.json",
+      "sha256": "b7a97517d9a32b8ae4ee1e00651a0957d1fd273064387f526f62aa4eb93ed101"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T11_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T11_judge.json",
+      "sha256": "79b19c5cc1a1071906c3e9a7693ce05ca2d7ca1d6729089b86d1eabba58413d9"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T11_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T11_judge_repeat.json",
+      "sha256": "227772daec5fd43f53066cf743f92ca88bf8b83b96d9fa0edeeac4f7a1a929c5"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T11_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T11_judge_repeat_scores.json",
+      "sha256": "84710b2b06460c8e7c32901478a10065fd014547cd44106d812529c32a87bd8c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T11_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T11_judge_scores.json",
+      "sha256": "4177964eb45e5f58ac49cd851c235b6ed65d7f4ef6879e00f65c8072f22e6221"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T11_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T11_revised_haiku.json",
+      "sha256": "26da83bec7893518b3c21e8cc4a1d3b3b0774c1c7b2d14f901571258dfb40a3a"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T11_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T11_revised_sonnet.json",
+      "sha256": "899b84a8eabd30026bacaddeb3384e4d6971136d735ee1e2a5cf5f346b0bea75"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T12_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T12_baseline_sonnet.json",
+      "sha256": "4fb37b73bcdfb3c1dd0a9cd8d3bf1acd7e604f793213d8071f33fb68ee2d744e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T12_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T12_judge.json",
+      "sha256": "f8efb8e731a9ee9d3dba0fb4aeff4f991b9dd584023f66ccfb5a6db609657626"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T12_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T12_judge_scores.json",
+      "sha256": "b37f1212ab9f82f9507f579c55ad337dad851bc04a0b711c7a292f5f8ac029cd"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T12_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T12_revised_haiku.json",
+      "sha256": "ee5e0e621be1f6f1927eef0cfdcb67d0848f14be8aae58ad0cd60ca73b4d7048"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T12_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T12_revised_sonnet.json",
+      "sha256": "593b78de5a34474c75b2e39f9d28027f87606bebd63a3bfce327e21e22a22b64"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T13_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T13_baseline_sonnet.json",
+      "sha256": "de21136c89737eb0a0b9153590258e969a7ba16e53d0c341fd8e41c44f0e5539"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T13_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T13_judge.json",
+      "sha256": "1946c61f1d0f9916362ceb4186c9c3d955845aafc39d8a69cd3c0d881c80c352"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T13_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T13_judge_repeat.json",
+      "sha256": "57965fa0a4c5096778c18dd794c57f451f1635e42fe178d955c621dfa436ff13"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T13_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T13_judge_repeat_scores.json",
+      "sha256": "2f17fb9a9ca94852edf8d3ac8dd87559733c174e1894907e1d5109630366117a"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T13_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T13_judge_scores.json",
+      "sha256": "8364718376556b18c01f1ddfe02c23be936153f5abd7b193554a15aaa43088c5"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T13_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T13_revised_haiku.json",
+      "sha256": "c08815fbb2553df83ca3e01785791e1f1795258618ce2e05f45d54595a958a60"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T13_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T13_revised_sonnet.json",
+      "sha256": "d253f195ec6953f2004cccf96610b41506f10bab277d0588e38f0a7160bb66a7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T14_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T14_baseline_sonnet.json",
+      "sha256": "d1ec886da018a9e7d01f03be4bdc2a817d9e0a6b7637aaf5ba05356a0b565000"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T14_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T14_judge.json",
+      "sha256": "215beb50e2f062d0374b01f2ff868619bd48482be6f4eaa052178d90ac490ae9"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T14_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T14_judge_scores.json",
+      "sha256": "7370e3a676e86c150938aca22665e4c373d94e905520b93707c6ddd5b1ccb960"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T14_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T14_revised_haiku.json",
+      "sha256": "b32edd52e9b37281f5cf196f32f57a5df45139f0e2f223c0c18dbe9da30111cd"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T14_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T14_revised_sonnet.json",
+      "sha256": "daf2ffdfbaef288adb096fd60e5981e856770e814136bdcdd5436868a5379c9b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T15_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T15_baseline_sonnet.json",
+      "sha256": "41d7cf0813e5aa36374448a92d9e9ffdbad957bdbd80cb790fa2a9f4c2234d12"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T15_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T15_judge.json",
+      "sha256": "412d4566fcd7ba518e04a04d32ade3c84c57ed1477a0fa4d7c451b058f265f2a"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T15_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T15_judge_scores.json",
+      "sha256": "c99a0c30151fca556c20d4b5a9b96f690754586f9067795c4b583995ced642dd"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T15_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T15_revised_haiku.json",
+      "sha256": "a3c588511dbcea48963045b7da3ccd393211687e367d580e843016aa922f3431"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T15_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T15_revised_sonnet.json",
+      "sha256": "e6d82f33e4c6215132bd4107e18487a4deba37b8a4fe68adcd55206a1b0ebac6"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T16_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T16_baseline_sonnet.json",
+      "sha256": "b2ee706cb32b7e89f7db275339ceb2a3f6e97e5c0863b308502379592e17b51d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T16_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T16_judge.json",
+      "sha256": "e38b263257cd233cd7cbafa0cfbbdf8b702cf3c125afbb48560405fdca072175"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T16_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T16_judge_scores.json",
+      "sha256": "c58d574919c949eca50b56ef96e658fc0935bbbc41590d698c35d48294b87bad"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T16_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T16_revised_haiku.json",
+      "sha256": "24b17feabbc7fdaa810deb18a61dba72f6491469cb140eae549d2dd3b7208fa8"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T16_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T16_revised_sonnet.json",
+      "sha256": "9f871c98a5d42382b97f460e19c72f3b70a88b0056fb23254655b5d2c7e91a02"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T17_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T17_baseline_sonnet.json",
+      "sha256": "0c7fb20f5dcc977b1cb40dce9e3d87617819440e86f6e7dda9839199a472c316"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T17_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T17_judge.json",
+      "sha256": "0312badc983d97cc2326ff861e9887887163f2e040e7208c778de939ae9d6503"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T17_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T17_judge_scores.json",
+      "sha256": "c733afff73b6dbc263653c1b9c1d35e082f6cdb914a1655b654409939d235a39"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T17_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T17_revised_haiku.json",
+      "sha256": "dcc66158e8bef40eedadf004d5283c738ae7a48580810bfe2cc5db1151cdb246"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T17_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T17_revised_sonnet.json",
+      "sha256": "85f949ef18c9d4662be0784e0857efc6770279678a8e4fb0df39c81e73e354bf"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T18_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T18_baseline_sonnet.json",
+      "sha256": "d520aa4809fa949e9081c622d5553fd9c5e1c818e3260edf4c3ec467c84a8616"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T18_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T18_judge.json",
+      "sha256": "22d55e6dece0c0639393bd229d99d061413f0d320c52f3b4fb4ab84840c735b1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T18_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T18_judge_repeat.json",
+      "sha256": "8b651d0c7de5d8a5f2854b98a915e8508f8935915f3d44788d42a3e000015e88"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T18_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T18_judge_repeat_scores.json",
+      "sha256": "803e2c44f6116a930ebd61011a680cec952928100ebeb7a040bcb9bbbe8ecd7e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T18_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T18_judge_scores.json",
+      "sha256": "6dc80a728102f3ad8b71d52fa6a5f6bcc81f5d2a46df6d7be65073525dbc1bbb"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T18_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T18_revised_haiku.json",
+      "sha256": "2120c00d486422dc1e32448c7e3132988183a48d25f93f84da7e21abab0057ea"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T18_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T18_revised_sonnet.json",
+      "sha256": "04643d5292af3680718f625741f4b4d4e600d881110897b40ac33e13aa75060f"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T19_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T19_baseline_sonnet.json",
+      "sha256": "62fa00c85f0eb11d96fda9833f7024647b1444d4ef7c43dda25c64d157b223ef"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T19_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T19_judge.json",
+      "sha256": "b7255c9e46fdec7b29165da09d779070f33ea91a239cb76a01cd3434a8f915be"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T19_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T19_judge_repeat.json",
+      "sha256": "0e3ba0b2eb7c0416fe059f94287a3d3d270699dffee0b3fb09ab15ac670b95a0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T19_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T19_judge_repeat_scores.json",
+      "sha256": "02fdfae9594324e470075680445255d8b740a372906a7d8cb276069ed8920bd0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T19_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T19_judge_scores.json",
+      "sha256": "55ea4bacc975d3e1a4e42d9429b5764107e033a6d3349b372232ca543eabcb10"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T19_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T19_revised_haiku.json",
+      "sha256": "be3f4aa0217c39161cdfc1836c52b4da7a0ae84ca3ac964594aa121b866a6498"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T19_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T19_revised_sonnet.json",
+      "sha256": "29d0c8f7ad95abd490b9d149fd42ca0a473b0563a306fb4987ad4f03992c4a9e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T20_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T20_baseline_sonnet.json",
+      "sha256": "087e90d713d4556576cc3defa3ea47bb437828ad27a729fc74d0fbeb756d4d98"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T20_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T20_judge.json",
+      "sha256": "f55b3040f1d3d04a0678960ce65a1ebfc76f9cadba747608bff7426c966fb14c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T20_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T20_judge_scores.json",
+      "sha256": "2672e3d4dadeed7421a2e1ad0a3c6fc12cabb8f7fdaa11df6aa6cf68a0590d51"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T20_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T20_revised_haiku.json",
+      "sha256": "2f62f4507967274e971bd506a069a2b4ca6d41788e533edf262fd837c3686b23"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T20_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T20_revised_sonnet.json",
+      "sha256": "e973df3c8e7865271580aa58075429ba382ec8f8468dbfc4538382f80f8c16aa"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T21_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T21_baseline_sonnet.json",
+      "sha256": "484184c0d90784843d0fb2287b2368459a9d4a0c458e12a56ddafc055f43af3d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T21_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T21_judge.json",
+      "sha256": "f2a2821d781136d926cde83bc0f3653b5aee4e7a726d343bc8201acb6a0bb4d7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T21_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T21_judge_scores.json",
+      "sha256": "d12ff5b36145bea4d59eb0dcd75192ead4825705fdc8e0bcaed000c161a45fa1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T21_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T21_revised_haiku.json",
+      "sha256": "946d5c3df27b699d506fd2ad89d3987d385c6a201973e9161a26b5136bf25cf3"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T21_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T21_revised_sonnet.json",
+      "sha256": "a95184655ed8ad87d5d525904e2554e61a3900d58acac56b20608d738575b9f0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T22_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T22_baseline_sonnet.json",
+      "sha256": "20ac78d07d87413e45319d8ffee73647cda77773b1b85bded6db39375f139907"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T22_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T22_judge.json",
+      "sha256": "4c2c28e333c8fbd2004c29544868c53ba04f9afeffb5c3f5cbbac1fb967e2465"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T22_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T22_judge_scores.json",
+      "sha256": "769d301a07546ea35f0b0bd46fdc88cc2532466f78dadf085c9596b6f71035a1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T22_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T22_revised_haiku.json",
+      "sha256": "b73b7bbf002be00b4ff8c025ed32e9bb3424d2a0fb8ccba76bb3212205e8f68d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T22_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T22_revised_sonnet.json",
+      "sha256": "fdd90b02d33f0d5cfd5d3b9e55a4a50a8435914bb46711b5e8a5aaf2c2f57b7c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T23_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T23_baseline_sonnet.json",
+      "sha256": "ee8e3e7b48029b29ffe663d9589f8d60bc55d0c5189cbfc73abeb87be10044f8"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T23_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T23_judge.json",
+      "sha256": "1c4195c402accdd1a38328d57a72f93636777895a238b312d854643c829e9998"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T23_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T23_judge_scores.json",
+      "sha256": "9b845c6983c5321d72284299341c24bf1677d3fd893b39abc4bc10c349295adf"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T23_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T23_revised_haiku.json",
+      "sha256": "bc3f73d8b87ff9fba2413183045cf58de0855e556332e9cf7ea3dec23508bf4c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T23_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T23_revised_sonnet.json",
+      "sha256": "401c6bde2e751c94bc2cdb23f3cefdc6bfff7612a65e979090bbab964db441ec"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T24_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T24_baseline_sonnet.json",
+      "sha256": "a5d83bf985dfee8cabfaff11e04794916854e0de765b89d403e1c9db5209d3d8"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T24_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T24_judge.json",
+      "sha256": "bc79121c3b4044182ff93754d05a3e76586245990a1d99c72489086bc0d2c207"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T24_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T24_judge_scores.json",
+      "sha256": "eba21b5266ee90c68936df8cdf36d0bd1b2349b81a90a9862a8d84e7e0917d35"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T24_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T24_revised_haiku.json",
+      "sha256": "013ee98baaf7d6b87f18a53a3a781d0ea1aece5a2ac4afbaea329601beab999b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T24_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T24_revised_sonnet.json",
+      "sha256": "58c73af00a1c9148d4f410ab5c2f0e4b6f5ec429291d4c749fb3c13edb5eb55b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T25_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T25_baseline_sonnet.json",
+      "sha256": "308abf40062822a3c41d448b84759ebe3ae67121bb7181ac3931b7ba721fc1b9"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T25_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T25_judge.json",
+      "sha256": "914fcdfbda9c6104176a5750303cf34952afe339e98761f353be1bde4222e092"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T25_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T25_judge_repeat.json",
+      "sha256": "343c45f1da6518337dfd2f56339a781b119ef44e7fbbf21728de79c60f77d445"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T25_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T25_judge_repeat_scores.json",
+      "sha256": "adaaa894e2264f20350c81ac50800c81860e077522e76d523a348d3f696efa3c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T25_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T25_judge_scores.json",
+      "sha256": "bc49ca5a02501f9b449c9dc25584161dcf5c908e6417a452cc2bd381c361a2a3"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T25_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T25_revised_haiku.json",
+      "sha256": "f45221d8d00870c359f26e46c598880c2184a312e3e5acd2f7b169b9e04922ca"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T25_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T25_revised_sonnet.json",
+      "sha256": "d5051b33049616b6892145b7cc1429c81bcbd9840f523779edacce7692e7053a"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T26_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T26_baseline_sonnet.json",
+      "sha256": "a39580e4cc79bf1ed0c8edeb2d78f7f10cb69dd514e6b06ffd0821317ddd1e10"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T26_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T26_judge.json",
+      "sha256": "4ff669739f914c6ae5d749657aac0fb838c7c95d3e7f0c478e3a0f8887111c93"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T26_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T26_judge_scores.json",
+      "sha256": "c29e5defe4fa6a65e7ced8a9fbe9ca2a384181e80071646ea86591315e672c80"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T26_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T26_revised_haiku.json",
+      "sha256": "6d71dd561564c94e76047d2ab1af1c610a145f8d832bf968fd4b79d0cbb6952e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T26_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T26_revised_sonnet.json",
+      "sha256": "2d8d88ef72148bfdcedfadbd3a0aa032d313e337b8cf2baa6664ce4239c7e51f"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T27_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T27_baseline_sonnet.json",
+      "sha256": "a3087ca2c0e345416db0e6fc8c40a5659b1c0f4ef345c8c1c1020ede59c16d2e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T27_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T27_judge.json",
+      "sha256": "bf593f8b585a1b8009b089d2d601dd37fd339d0f1bfdb2d8147cf4a90c71d7cd"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T27_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T27_judge_scores.json",
+      "sha256": "e408c928eaa01cdd91c54098902709644424f0c248fc0516ab7ebf470fc7401a"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T27_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T27_revised_haiku.json",
+      "sha256": "fe7215bc638a159b544918e32a06c7f0cf13fb31ed0d16994ffbfc2a425f1e29"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T27_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T27_revised_sonnet.json",
+      "sha256": "17b8f86e6431d11c061766d1be60b4751d3bee370881e24fef4d93132ff81c6f"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T28_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T28_baseline_sonnet.json",
+      "sha256": "eadec6b17e084065252a44369e38abfc0f0c18c9c424a32ce844383903f51b80"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T28_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T28_judge.json",
+      "sha256": "b152a690194c895d27f756b4cb66be870b21bfbfca240d137b4732b9ba2fba20"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T28_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T28_judge_scores.json",
+      "sha256": "0469f7e5a2c3a26324ad4dfbd943a084a9a92e392669933e911ec2ffc0ba3afd"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T28_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T28_revised_haiku.json",
+      "sha256": "5837daaa799287f0f9cfa801d79ebf40c1ac3ef3303c12d51d2db50768e5f3a0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T28_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T28_revised_sonnet.json",
+      "sha256": "0e95995823c46df740d4752d50de90b686066bcfc89c4fd82e906f5e5cefbb73"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T29_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T29_baseline_sonnet.json",
+      "sha256": "797e9d34b2959dc74380027826d0921024984de8b94b7e8a8754bb822cc2d332"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T29_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T29_judge.json",
+      "sha256": "86c2bacce3cdaf02d3db12d5378ce9752e7a221650a718e6adfb4117d94e5e56"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T29_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T29_judge_scores.json",
+      "sha256": "e0bdf4a6ede6ba3761fa1efcdade15129d2028abae36e307f7679eda43490cbd"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T29_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T29_revised_haiku.json",
+      "sha256": "e034707ef87a03742b9e8b2377fd6afbf342b9f8b523303acea083dc4cb43229"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T29_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T29_revised_sonnet.json",
+      "sha256": "49d4d115d6912f457a29122ac32d91fd01bd140b6843a2e3184a14f69a370386"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T30_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T30_baseline_sonnet.json",
+      "sha256": "acbbe24337dd56aa8922c396eb833da917b0e85fcc4131dd9562e9552f04692b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T30_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T30_judge.json",
+      "sha256": "f4ea92c48cedc23220a23ec6f3b6874973a46a3db85ae8979b8e381c45dd7b4c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T30_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T30_judge_scores.json",
+      "sha256": "b4e305b5041c4dfc897ffc200921d88b087479da60c4cd1a7fc5793f6ee1f645"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T30_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T30_revised_haiku.json",
+      "sha256": "4b6c5b3ec3186f820a0437d8cc7b91c39c2cbac5b51c1c2b6ad479e6a6430029"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T30_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T30_revised_sonnet.json",
+      "sha256": "c12f61926f5854c8bcb992e6bbe1b733c9d61587f1b967de3193580fbcb14c3a"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T31_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T31_baseline_sonnet.json",
+      "sha256": "c0f1b0b25bc5559cde68549a6db5ef1338e3fd6d455c934638a94cde10f93f30"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T31_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T31_judge.json",
+      "sha256": "5e20daad22fbf3c9cfa81d63a3d35a798b3a4da7ab19f84a970501a0c38bc979"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T31_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T31_judge_repeat.json",
+      "sha256": "00959d870be0cbd2117260f9cabe62146c56170a84ea5e3a6895bcaa1bf2651e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T31_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T31_judge_repeat_scores.json",
+      "sha256": "c6bf9f1117dea6fa519eaa3be4433a399b5ea9bec902ca093e7c31c255a6871b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T31_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T31_judge_scores.json",
+      "sha256": "ae6c1c830eeb03721c0e91735dea53b574b16dd02e1d74a579a6d3cb9248cf06"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T31_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T31_revised_haiku.json",
+      "sha256": "0d6008f0a605947ec383e0b140ec7b3f85e5d0985629a9025a8eb4fc54912770"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T31_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T31_revised_sonnet.json",
+      "sha256": "789f2c9e5926b482a50441a80361bfbb48faa2c30cbb961d45e2bf1b7279a798"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T32_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T32_baseline_sonnet.json",
+      "sha256": "d686e6ab7baf2eaccfac6243245bedaa1cc74fd2fdcf0af1a3af83541c4e6b4b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T32_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T32_judge.json",
+      "sha256": "7e8bf372c593a93ffa53b0ae3f8a9f11af16fba8b58a0fa41643b2f533ef6abd"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T32_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T32_judge_scores.json",
+      "sha256": "670e643b29d2f9892a4735c66ce183c8faf55b9954df87dedb2f6a7623fbd384"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T32_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T32_revised_haiku.json",
+      "sha256": "7d0f9d623b6cb4cf42efd2acad0051f11c553a8830cee352646ef8b328761890"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T32_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T32_revised_sonnet.json",
+      "sha256": "764eaba3e2e8ada44c671fe6ff096997a469866100bdad78ac7a090cf8552b98"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T33_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T33_baseline_sonnet.json",
+      "sha256": "fe685227a2060365bcea857245668f9f0903bbc6bfcdf625992b9957bb44abdd"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T33_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T33_judge.json",
+      "sha256": "3cacd8cd722cf08caa97e84352c04e00f8950a46bd89917ba03d7fd51af9fda0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T33_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T33_judge_scores.json",
+      "sha256": "58e8ec422d7d111ed892465e534a9e2012c6e65d03dc4626c5988fa1fd868e3f"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T33_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T33_revised_haiku.json",
+      "sha256": "74ad3376c364d6c4034007957ae8a294e07973d0983df0bc4b0cab54ad296f17"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T33_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T33_revised_sonnet.json",
+      "sha256": "85a6ee2702a9ae22a7c59cccecc99b0f186b88c0e87f881e81df53e5cff3b0bc"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T34_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T34_baseline_sonnet.json",
+      "sha256": "408e6dfb972b29b5ca14bec2528aecfa6654f58c437f4f1fb011643628a5ba6f"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T34_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T34_judge.json",
+      "sha256": "14e02c0684d44345be4b846a212687aff4e04076d29d4a9d7ffb5a7e71f1a64c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T34_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T34_judge_scores.json",
+      "sha256": "043aea436c90816c6941f6d01ed1ef1d52e6d55560943c80d0c3f131c1199680"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T34_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T34_revised_haiku.json",
+      "sha256": "744f0299a6e19d862b1d2c54a4c0fbf22c4b7809eb219812895ae51dc86338b2"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T34_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T34_revised_sonnet.json",
+      "sha256": "bd74c9092ec9f7f19d45411a8cb082f42256f5055841d735fef39ec013c36693"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T35_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T35_baseline_sonnet.json",
+      "sha256": "181186e838ba6c2f278fcbcff2859497572f2f42bec5d2ecf7209c00dae69d90"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T35_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T35_judge.json",
+      "sha256": "6bf733882287608660a48ef71d53525a610469afdbbcfa3a25c64e71e632bfe1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T35_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T35_judge_scores.json",
+      "sha256": "cdb21e58deb044ed9d099337260908361ab3a3f02f0d30f98570c6f85dfeecb9"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T35_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T35_revised_haiku.json",
+      "sha256": "397ba6072d8522d37d8e21f08080832dca34bf464424165d8a4db4347817cc42"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T35_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T35_revised_sonnet.json",
+      "sha256": "e28c9a2fb1969b19a7dbd1431979cd8ec5a074245918b4b4e4748c6c9773b946"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T36_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T36_baseline_sonnet.json",
+      "sha256": "474341b589a275876363a152b3eda220f4e122e76fdf03ba302682837c959703"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T36_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T36_judge.json",
+      "sha256": "0a8065ad9b2deb9eaa98e72d2f2906ebe6c0b649169634aa3c64805148b4a0c1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T36_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T36_judge_scores.json",
+      "sha256": "662277f041ec202cbbfecba7fb3d58fcd998d94d0df85e652e62dcdcd22f466c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T36_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T36_revised_haiku.json",
+      "sha256": "330fe7c94abd2e49387fdd22c4d2c43e5e07ab9f2d8cf66c3ae974e8d1bcf1a0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T36_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T36_revised_sonnet.json",
+      "sha256": "7c24cb936456a4aa4c5abd2688cacd25c48935a3bee99d4e4c3f1752c1664b81"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T37_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T37_baseline_sonnet.json",
+      "sha256": "2cf49e43363004ba8b02d8b96a0dca9256d4ffe9f854e6418d4152a537d8fe1b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T37_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T37_judge.json",
+      "sha256": "9e284d2287cb38e17d0c3e8dfa010baaa05af79e3d7426e510031c93ace6ee16"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T37_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T37_judge_repeat.json",
+      "sha256": "c47559aafe9171a6e71383f296a4348c1242d5e9fd229481f0dd703690fde03a"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T37_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T37_judge_repeat_scores.json",
+      "sha256": "c649060ec4cea7c412332894e853e518c932b03c702ef24a0a92bab58f7f452e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T37_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T37_judge_scores.json",
+      "sha256": "713df0272692d2631903e6051a59ac429ea95df712e1deff927ae98132bbe7df"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T37_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T37_revised_haiku.json",
+      "sha256": "8cf3dc879f835e0cc04782d3fcd0681e115ed090e20e78d7d10cdb0a73f1718c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T37_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T37_revised_sonnet.json",
+      "sha256": "446c27e22741b802dfde6ad50eaabf8a921de40a532bc2a658b5a5f63ecf39e1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T38_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T38_baseline_sonnet.json",
+      "sha256": "fb922875420266b675d34df63474aef4674bf27ac93304174c78cdab404df58e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T38_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T38_judge.json",
+      "sha256": "1798f5851f508816f26ed16b3b14d4a72d7aaf74a4745d68af9b35185c6baa7c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T38_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T38_judge_scores.json",
+      "sha256": "d2495b0ee5821c8b743c6c38ff3d2b5aa85e11e56a724d112b51183fbec6f562"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T38_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T38_revised_haiku.json",
+      "sha256": "3105f250cb094126c541aa22e8109f0c820038c50f440375ab2583e83b1aa782"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T38_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T38_revised_sonnet.json",
+      "sha256": "63a92843a2b110e445af72b4d3d256ff2b57f5d1b7a78c2a1ad7ce4eda946d65"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T39_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T39_baseline_sonnet.json",
+      "sha256": "8179469774474ad04246463284b455e27bf89b71242f8c299134c93c7a61745f"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T39_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T39_judge.json",
+      "sha256": "9721f153ab0b5eedefe316d17d228ca64b68ad7e1bfdf84d359aa2e49caffc18"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T39_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T39_judge_scores.json",
+      "sha256": "d7e9d6f31452ac2c47eb498688e2fed8f81dd51e16af773db2a9f20c0cfe0695"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T39_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T39_revised_haiku.json",
+      "sha256": "b11885fff6429f512c86df87fec2f8703bafb340c49f8e2f489efe49c1f028eb"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T39_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T39_revised_sonnet.json",
+      "sha256": "4f97e81af71b7913707752f12de639223c27651cc87ed270ffd3e25ed4f3be6a"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T40_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T40_baseline_sonnet.json",
+      "sha256": "7bb84851ac1aa7e9fc7e1c1834222e30e6716e195b9f668665a6a277b2615623"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T40_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T40_judge.json",
+      "sha256": "2756239a1ce492e6d49b7123dfb45663f6a5d64f9cc4eac7bcb4c6941ddbd4a1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T40_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T40_judge_scores.json",
+      "sha256": "dcf6eaec4e79e14e48d64a251704045f9e97dc10df581e470840a00074831388"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T40_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T40_revised_haiku.json",
+      "sha256": "d65c8eab6238b8210ccc7f8afaa616d24727e8d6f0140c8dc18519a1264b6949"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T40_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T40_revised_sonnet.json",
+      "sha256": "cd918cbf75c796790bf4980a2693ead47fb6f316ad82b7d5d944f91a8454f360"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T41_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T41_baseline_sonnet.json",
+      "sha256": "4160b8eae5f898dfe8b809def37fd39a39819251012e616d9ebd28df86a8f1cd"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T41_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T41_judge.json",
+      "sha256": "05c458dc3f9dbcd64c596ff575d65d3a3184a95272c9892b49198e454414863e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T41_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T41_judge_scores.json",
+      "sha256": "dd1876ef0ae5fd77d0b10cc1e4fd2bc1ce2c72f61677f1a2708aa780ca2ca118"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T41_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T41_revised_haiku.json",
+      "sha256": "84359f35dc823f2c54d945a8705cfd4e25250254a59f5123cd0763965d1600dc"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T41_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T41_revised_sonnet.json",
+      "sha256": "27ffbdfe85d00c16062b76a81946c7cea8dd25b4e4cbe1dd4ce9c62e085160e1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T42_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T42_baseline_sonnet.json",
+      "sha256": "d76011c7e64aa9939ec77eea3c61e96ef618092dcb9ab77c291e0aa9d1a8c344"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T42_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T42_judge.json",
+      "sha256": "4a1c9546acd505730f847cb30556d2aa862914d3bd8beda6e042254b092a3b93"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T42_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T42_judge_scores.json",
+      "sha256": "5d8dddc3228d19a3db0b581b049df0f55fb21f72b5be4556108db5054193861f"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T42_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T42_revised_haiku.json",
+      "sha256": "a60fab1bccd4d14cdd722c9619877f544d08734c978c5f5009f43cccff353d84"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T42_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T42_revised_sonnet.json",
+      "sha256": "8dab30cef9697a51a5eaa4789d488a457d7a5e4c6ee2dc4fbb85fa281f441dc0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T43_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T43_baseline_sonnet.json",
+      "sha256": "c05182e2a781c15a3b9d20027b4b164303d59af0a014cdad9b26385b34d1cd9f"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T43_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T43_judge.json",
+      "sha256": "cad56fd8b0275ba41b9793272251f127742054cef8bfaf521412df919b0d570e"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T43_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T43_judge_repeat.json",
+      "sha256": "da16c726c8fa2227482b67cb4e8a895734017e73dfbb669b39a14a78b4d1a54d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T43_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T43_judge_repeat_scores.json",
+      "sha256": "3bf3c279dd266962527d99f343e06cef6d518d5a5af0427a68ff0861697434b2"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T43_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T43_judge_scores.json",
+      "sha256": "f67493632660ef2f675c79acc62be737d1ad5ff9bdcd22d1656f720789b4fc03"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T43_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T43_revised_haiku.json",
+      "sha256": "3a2c8133e6bebf8f1058ab9d7993af40fbe087f2abafece830ec0a4029526d53"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T43_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T43_revised_sonnet.json",
+      "sha256": "8f43e29850e9aca7dbb19bd1477094778c32cdc21546846867c39973fed7c577"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T44_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T44_baseline_sonnet.json",
+      "sha256": "43350554a59fce4a949c104215c9e8a6037ed2e88be92c80317fbd4adc0de4df"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T44_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T44_judge.json",
+      "sha256": "6f0c29ab4ba25d7527420ba9cef0e994d63c28df7005d161570ee61245f0e741"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T44_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T44_judge_scores.json",
+      "sha256": "100546812aec63a38f1ebc696353e8258dc922a7a619fb2fdcfbfe5cd313b3a1"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T44_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T44_revised_haiku.json",
+      "sha256": "e396bf45175571a170680ed7580f7fb53599c3a1dc7a4b58bda5680b957d9575"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T44_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T44_revised_sonnet.json",
+      "sha256": "652c6792d0257fcdf1b1fce01748701b547d0f908f2da8dcba681023c0a4bf49"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T45_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T45_baseline_sonnet.json",
+      "sha256": "29ad7eaae12c1cba02e31aa6a28795f3f4878ba0f002a400fe9f0e5528ca5639"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T45_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T45_judge.json",
+      "sha256": "4f332bc8e334be880e4c9c7528bc4099b852fcd512d4129b98a43a878f50efc4"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T45_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T45_judge_scores.json",
+      "sha256": "18a67901d5b7da8547904398b1451771af13e7bba9c0c3711711d5b20647adaf"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T45_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T45_revised_haiku.json",
+      "sha256": "4b10d17dcb07492e1dea24662f279b7b0ddfa5f4d7877126bfe97e6e6a618ade"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T45_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T45_revised_sonnet.json",
+      "sha256": "12524d72d7ee20783458d18a93906edcc7c8f9fa5d0dab6d1c6c0206187f547c"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T46_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T46_baseline_sonnet.json",
+      "sha256": "69150ed7e7ffb8a5da719ae2c01d292f04123ef3fb0450714db429423ddc2ed5"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T46_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T46_judge.json",
+      "sha256": "bb96d94ad74c6a21d38b8cb1db98882897bbbab6925456a451dc18f766bb08d0"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T46_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T46_judge_scores.json",
+      "sha256": "11787f02c88eacb3a9bcd4688d816689b57dd45707adcf20633cbffda6c31e78"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T46_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T46_revised_haiku.json",
+      "sha256": "260c8b89a7a3f5021a21a5523ee47fffe2ae7968c88c6c8026d3dedd7c2d0da2"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T46_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T46_revised_sonnet.json",
+      "sha256": "5705d05b19e6c68102f517be312e3af8e9a786bab0ecbe211faaa68b8050abe9"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T47_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T47_baseline_sonnet.json",
+      "sha256": "df0270f9081e2a1ac8ba03214be29239d4a8c2b4bb43edf1079a763a81bc9ccb"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T47_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T47_judge.json",
+      "sha256": "86e9781da88d2a69303a54eb7228b3ddea5686a1a7e0276873a006d205f401c7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T47_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T47_judge_scores.json",
+      "sha256": "6d1969b7db7bdb22670c1e7ce3f56e12085877581254ec341b5d7dd563578eea"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T47_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T47_revised_haiku.json",
+      "sha256": "d20d0215fb2af1ea3de878edc2075e3192eeb85e696bd6d53ced4b51225e2149"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T47_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T47_revised_sonnet.json",
+      "sha256": "954aab93492eea92dc8ac3da67a356f5edcb1686b71f9bca19f05f29461e019b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T48_baseline_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T48_baseline_sonnet.json",
+      "sha256": "559bf29074d3151bb6aeaf726090bf2312bbaa6a18847728210553e6c578976a"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T48_judge.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T48_judge.json",
+      "sha256": "743250694abb46296c6e3f6da031ac5d3cf11eb28a185877d745f4321d90be8d"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T48_judge_repeat.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T48_judge_repeat.json",
+      "sha256": "72c2c66dfa5041ddcbc1b21d0f7359d86fa67d8050b720f037d335a7e1ef2fa6"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T48_judge_repeat_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T48_judge_repeat_scores.json",
+      "sha256": "ceab429b90656f03cfe9056efeaa515e77e048a50b30f4e6c3c0475e53b125b5"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T48_judge_scores.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T48_judge_scores.json",
+      "sha256": "1a0b92d021271cf5b954d6f575836dc0aae722108af10088e90c48ae5e3f053b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T48_revised_haiku.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T48_revised_haiku.json",
+      "sha256": "c0150550e58498fb06e26f91f90859b21d97f889f8085f238fdb9d67754ef6b8"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\api_results\\T48_revised_sonnet.json",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\api_results\\T48_revised_sonnet.json",
+      "sha256": "2796aaa8ec44e232cf1b4d1288ca556e4e08ba96a27cd6677014d6ee5f4ee935"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\aggregate.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\aggregate.py",
+      "sha256": "e91d30fa8a332c99515217af3bc523e94a8f8042039c56bd242789a6b1c44ce7"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\calculator_checks.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\calculator_checks.py",
+      "sha256": "6f0a46f356e38f4f7ecd327a6c92f9de7908f9a35a1ba21489a1f78bce8d3dfb"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\experiment.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\experiment.py",
+      "sha256": "001e1112846a11e17b68a8119d6d9e6f7d7c56b27aa7e0b980b7195d65ed9bd6"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\judge.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\judge.py",
+      "sha256": "ad76c3ea7dc4bbcb52e0bd7720e5437bc33795cf513ffefd84ddb37d352ec426"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\make_benchmark.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\make_benchmark.py",
+      "sha256": "40c049492cecbea68d46b4a5f31b8e51367c58f7b81e8890c40c119f5fa2182b"
+    },
+    {
+      "source": "C:\\Users\\andre\\tcc_revisao\\retrieve.py",
+      "target": "D:\\Projects\\BrazilianFinancialAssistant\\Documentation\\TCC\\Revisao\\experimentos_historicos\\retrieve.py",
+      "sha256": "fc906e2070b06ee13dac581cec1a9d0af033e1d2345f59c4464daaa51f243458"
+    }
+  ],
+  "deleted": []
+}

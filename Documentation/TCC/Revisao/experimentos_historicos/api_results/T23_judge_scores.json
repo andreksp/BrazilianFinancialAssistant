@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 2,
+      "motivo": "Detalha eventos de opções, inclusive expiração (prêmio como prejuízo), prêmio e quantidade no cálculo."
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "Trata de BDRs, sem relação com opção expirada."
+    },
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 1,
+      "motivo": "Regras gerais de ações; contexto tangencial, não responde ao caso de opção."
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ativos, tema diverso."
+    },
+    {
+      "id": "b3_papel",
+      "relevancia": 0,
+      "motivo": "Infraestrutura B3, irrelevante para a apuração da opção."
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 2,
+      "motivo": "Afirma que apuração depende do evento, posição e prêmio, respondendo ao núcleo."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Aponta insuficiência do ticker e lista prêmio, quantidade, evento e posição, com apoio no trecho de opções.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Correta nos fatos essenciais (posição, prêmio, evento, regime); omite quantidade explicitamente.",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Pede prêmio, datas, histórico do mês e regime; cautela sobre limite da evidência, sem inventar regra; não cita quantidade.",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T23",
+  "repeat": false
+}

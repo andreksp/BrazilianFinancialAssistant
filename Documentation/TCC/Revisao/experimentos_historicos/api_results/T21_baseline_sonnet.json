@@ -1,0 +1,27 @@
+{
+  "key": "T21_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base na evidência [290b3fbba3faa9f8] (Regras de IR — Opções de Ações):\n\n**Regime:** Day Trade em opções — alíquota **20% sobre o ganho líquido** (não há isenção de R$ 20.000, que é exclusiva de swing trade em ações/BDRs, e mesmo esta não valeria pois day trade nunca tem isenção).\n\n**Cálculo:**\n- IR devido = 20% × R$ 1.000 = **R$ 200,00**\n- IRRF (antecipação, \"dedo-duro\") = 1% sobre o ganho = **R$ 10,00**, dedutível do IR devido\n- Saldo a pagar via DARF = R$ 200 − R$ 10 = **R$ 190,00**\n\n**Importante:**\n- Isso é IR sobre **rendimento (ganho de capital em renda variável)**, apurado mensalmente por regime (day trade), não confundir com venda simples ou outro período.\n- O recolhimento deve ser feito por DARF até o último dia útil do mês subsequente ao da operação.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2881,
+    "output_tokens": 650,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 284
+    }
+  },
+  "usd": 0.012262,
+  "seconds": 8.127781299990602,
+  "stop_reason": "max_tokens",
+  "prompt_sha256": "c0c037c773c1e2652e8430ee58d5475ebe5f878652ea9fbb27187dd6c989c372"
+}

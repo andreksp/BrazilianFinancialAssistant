@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 1,
+      "motivo": "Traz 15%/20% para BDR, mas afirma isenção de R$20 mil aplicável a BDR, contradizendo a referência"
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 0,
+      "motivo": "Trata de opções, não de BDR"
+    },
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 1,
+      "motivo": "Regra geral de ações (15%), apoio indireto sem tratar de BDR"
+    },
+    {
+      "id": "bdr",
+      "relevancia": 2,
+      "motivo": "Responde diretamente: 15% em operação comum, 20% day trade"
+    },
+    {
+      "id": "acoes_taxa",
+      "relevancia": 1,
+      "motivo": "Alíquota de ações, correlata mas não específica de BDR"
+    },
+    {
+      "id": "cripto_darf",
+      "relevancia": 0,
+      "motivo": "DARF de criptoativos, fora do tema"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "15% correto, day trade 20%, ausência de isenção conforme contexto; limites declarados adequadamente",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 1,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Alíquota certa, mas repassa isenção de R$20 mil para BDR (regra incorreta) apoiando-se em trecho contraditório",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "15% correto e alinhado à fonte; menção a JCP é acréscimo menor não suportado",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T08",
+  "repeat": false
+}

@@ -1,0 +1,24 @@
+{
+  "key": "T31_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Esclarecimento Necessário\n\nSua pergunta menciona **\"doador PF, remuneração R$ 1.000 por 180 dias\"**, mas não especifica:\n\n1. **Tipo de operação/ativo**: é renda fixa, ação, futuro, cripto, aplicação no exterior?\n2. **Regime**: qual produto ou modalidade (conta corrente, investimento, empréstimo)?\n3. **\"Doador\"**: refere-se a doação recebida ou a rendimento de investimento?\n\n## Limite das evidências\n\nAs evidências fornecidas cobrem:\n- **Futuros** (15% comum, 20% day trade)\n- **Cripto exterior** (Lei 14.754/2023 - 15% anual)\n- **Ações à vista** (isenção R$ 20 mil/mês em vendas)\n\n**Nenhuma** aborda rendimento mensal genérico de R$ 1.000.\n\n## Orientação\n\nPara calcular **IRRF e líquido** corretamente, forneça:\n- Produto específico (caderneta, CDB, LCI, ação, BDR etc.)\n- Se há alíquota contratual diferenciada\n- Se é resgate no período ou rendimento acumulado\n\nSem isso, qualquer resposta seria especulação, não orientação fiscal.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 817,
+    "output_tokens": 344,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002537,
+  "seconds": 4.915847199968994,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "ee0dee9ba47f296091ebd51501cbdfed712cd6ae08dc2f4ea2c31aa917484eb3"
+}

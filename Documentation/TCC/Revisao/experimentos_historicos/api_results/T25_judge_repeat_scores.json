@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 0,
+      "motivo": "FII, irrelevante para WIN"
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 1,
+      "motivo": "trata IR de futuros, mas não dá valor do ponto"
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 0,
+      "motivo": "guia DARF genérico, não responde"
+    },
+    {
+      "id": "win",
+      "relevancia": 2,
+      "motivo": "dá ponto=R$0,20 e R$100 para 500 pontos"
+    },
+    {
+      "id": "cripto_faixas",
+      "relevancia": 0,
+      "motivo": "ganho de capital cripto, fora do escopo"
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 0,
+      "motivo": "empréstimo de ativos, irrelevante"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "R$100 correto, apoiado na evidência do multiplicador; ressalvas fiscais adequadas",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "valor correto, mas menciona 'taxa de renda fixa' e regime profissional sem suporte",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "C",
+      "correcao": 0,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "abstém-se indevidamente; ignora 1 contrato e o multiplicador disponível, não entrega os R$100",
+      "configuration": "baseline_sonnet"
+    }
+  ],
+  "case_id": "T25",
+  "repeat": true
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T04_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, **day trade não tem isenção**, independentemente do valor vendido no mês.\n\nConforme evidência ID `4e69fb3f132e9ec3`:\n- A isenção de R$ 20.000,00 mensais aplica-se **apenas ao swing trade** (operações com prazo superior a 1 dia)\n- Está explicitamente afirmado: \"A isenção NÃO se aplica a Day Trade\"\n\nPara day trade, todo ganho líquido é tributado a **20%**, e há ainda IRRF de 1% sobre o ganho auferido, retido na fonte e dedutível do imposto devido no mês.\n\nPortanto, mesmo com vendas de apenas R$ 8 mil no mês, se a operação foi day trade (compra e venda no mesmo dia), o lucro está sujeito ao IR de 20%, sem qualquer isenção pelo valor negociado.\n\n**Importante**: isso se refere à tributação sobre o ganho de capital dessa operação específica (regime de renda variável). Não há indicação, nas evidências fornecidas, de tratamento diferenciado por período de apuração além do mensal já descrito.\n\nSe precisar de detalhes sobre cálculo do ganho líquido, apuração de DARF ou compensação de prejuízos, posso ajudar com mais especificidade — mas não posso simular apuração fiscal definitiva sem dados completos da operação.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 2878,
+    "output_tokens": 475,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.010506,
+  "seconds": 7.0899533000192605,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b65b1033ab4ac7074b48e4a5b4ec5dbe81bad970f4ee59f27b39a2fcfa73648e"
+}

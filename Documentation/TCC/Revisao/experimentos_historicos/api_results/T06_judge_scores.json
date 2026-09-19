@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 2,
+      "motivo": "Explicita vedação de compensação cruzada day trade x swing trade"
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 1,
+      "motivo": "Trata compensação em opções, tangencial à pergunta"
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "BDRs, não aborda compensação entre categorias"
+    },
+    {
+      "id": "perdas",
+      "relevancia": 2,
+      "motivo": "Responde diretamente: não se misturam com ganhos comuns"
+    },
+    {
+      "id": "acoes_taxa",
+      "relevancia": 1,
+      "motivo": "Alíquotas e regimes distintos, sem tratar compensação"
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 0,
+      "motivo": "Não trata de compensação de perdas"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Nega corretamente a compensação cruzada, citando trechos pertinentes",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e ancorada; tabela consistente com o contexto",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta, apoiada no chunk que veda compensação cruzada",
+      "configuration": "baseline_sonnet"
+    }
+  ],
+  "case_id": "T06",
+  "repeat": false
+}

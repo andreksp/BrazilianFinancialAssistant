@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 0,
+      "motivo": "Mercado futuro, sem relação com tributação imobiliária ou FII"
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 1,
+      "motivo": "Cita FII apenas de passagem no código DARF 6015; não distingue imóvel/cota/rendimento"
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ações, irrelevante ao tema"
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 1,
+      "motivo": "Menciona que isenção não se aplica a FII, contribuição marginal ao núcleo"
+    },
+    {
+      "id": "emprestimo_proventos",
+      "relevancia": 0,
+      "motivo": "Tema de empréstimo/proventos, irrelevante"
+    },
+    {
+      "id": "cripto_isencao",
+      "relevancia": 0,
+      "motivo": "Criptoativos, irrelevante"
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Pede esclarecimento corretamente, mas omite a distinção central entre imóvel, cota de FII e rendimento de FII",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Abstém-se e solicita detalhamento; cita FII apenas ao descrever evidências, sem propor a distinção cota vs rendimento",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Clarificação adequada e sem afirmar regras, mas não contempla hipótese de fundo imobiliário (cota/rendimento)",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T43",
+  "repeat": true
+}

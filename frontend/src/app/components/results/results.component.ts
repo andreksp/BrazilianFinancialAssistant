@@ -66,6 +66,14 @@ export class ResultsComponent {
   }
 
   /**
+   * Exemption limit label depends on asset type (R$20.000 ações, R$35.000 cripto).
+   */
+  getIsencaoLabel(): string {
+    if (!this.result) return '';
+    return this.result.tipo_ativo === 'cripto' ? 'R$35.000' : 'R$20.000';
+  }
+
+  /**
    * Calculate total fees from breakdown.
    */
   getTotalFees(): number {

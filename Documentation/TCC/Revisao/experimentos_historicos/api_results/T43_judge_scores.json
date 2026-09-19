@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 0,
+      "motivo": "Mercado futuro, nada sobre imóvel/FII."
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 1,
+      "motivo": "Menciona FII no código 6015, mas não trata de tributação imobiliária."
+    },
+    {
+      "id": "06a4e857780aec7b",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ações, fora do tema."
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 1,
+      "motivo": "Só informa que isenção não alcança FII; não responde ao núcleo."
+    },
+    {
+      "id": "emprestimo_proventos",
+      "relevancia": 0,
+      "motivo": "Tema alheio a imóveis/FII."
+    },
+    {
+      "id": "cripto_isencao",
+      "relevancia": 0,
+      "motivo": "Criptoativos, irrelevante."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Abstém e pede esclarecimento, mas não oferece a distinção de cota de FII/rendimento esperada.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Pede esclarecimento coerente com o contexto, porém omite a hipótese de fundo imobiliário/rendimento.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Abstenção correta e sem invenção de regra, mas não contempla cota de FII na desambiguação.",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T43",
+  "repeat": false
+}

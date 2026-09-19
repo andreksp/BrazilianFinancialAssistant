@@ -1,0 +1,27 @@
+{
+  "key": "T43_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não encontrei, nas evidências fornecidas, nenhum conteúdo sobre IPTU/imposto predial e territorial urbano ou tributação sobre imóveis. Os materiais disponíveis tratam apenas de: mercado futuro (WDO/WIN), regras gerais de DARF para renda variável (ações/BDRs/FIIs/opções) e empréstimo de ações (BTC/CBLC).\n\nPara eu poder ajudar de forma precisa, preciso que você esclareça o que deseja saber, por exemplo:\n\n- **IPTU** (imposto municipal sobre a propriedade do imóvel) — regras variam por município, e eu não tenho base normativa municipal aqui;\n- **Ganho de capital na venda de imóvel** (Imposto de Renda sobre a diferença entre valor de venda e custo de aquisição) — regime diferente de renda variável, com possíveis isenções (ex.: único imóvel, reinvestimento em 180 dias);\n- **Rendimentos de aluguel recebidos** (tributação mensal via carnê-leão ou na fonte, conforme o caso).\n\nSem essa evidência específica, não posso afirmar alíquotas, prazos ou base legal aplicável ao seu caso. Poderia especificar qual situação (venda, aluguel ou IPTU) você precisa entender?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3506,
+    "output_tokens": 460,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.011612,
+  "seconds": 6.096928299986757,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "522c538dde2c08eeec507157e78a756be5f4f658a93c25be48702e2ca64529b5"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T22_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, não pode ignorar o prêmio. Conforme evidência **opcoes** (fonte: normas.receita.fazenda.gov.br, verificada em 12/09/2026), \"o prêmio integra a apuração conforme o evento\" — negociação, exercício ou expiração.\n\nAlguns pontos importantes:\n\n- **Regime tributário**: alíquota de 15% para operações comuns e 20% para day trade; não há isenção de R$ 20 mil para ganhos com opções, diferentemente do que ocorre com ações à vista.\n- **Posição**: a apuração depende se você é titular (comprador) ou lançador (vendedor) da opção — o tratamento do prêmio muda conforme sua posição.\n- **Evento**: exercício, expiração ou negociação (revenda antes do vencimento) geram apurações distintas; não se trata simplesmente de \"venda de ação\".\n\nPara calcular corretamente seu caso específico, preciso de mais dados: você é titular ou lançador? A opção foi exercida, expirou ou foi negociada (encerrada) antes do vencimento? Qual o valor do prêmio pago/recebido e o preço de exercício?\n\nSem esses detalhes, não posso fornecer um cálculo específico. Esta orientação é educacional e não substitui apuração fiscal definitiva nem consultoria contábil personalizada.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1011,
+    "output_tokens": 462,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006642,
+  "seconds": 5.763136799971107,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b5e36fba79b43292fb1a7df9870e2608951f30bdbd5c8d443434f874b03a7373"
+}

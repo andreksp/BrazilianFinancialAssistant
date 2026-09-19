@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 1,
+      "motivo": "Regras de ações: 15% em operação comum, alíquota análoga, mas não trata de opções."
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 2,
+      "motivo": "Trata diretamente de opções: swing trade 15% sobre ganho líquido, sem isenção."
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "BDRs; não responde sobre opções."
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 1,
+      "motivo": "Confirma que isenção não abrange opções, mas não fornece alíquota."
+    },
+    {
+      "id": "fii_venda",
+      "relevancia": 0,
+      "motivo": "FII; irrelevante para opções."
+    },
+    {
+      "id": "bdr",
+      "relevancia": 0,
+      "motivo": "Regras de BDR; não trata de opções."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 0,
+      "fundamentacao": 2,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Não fornece o valor (R$150); abstenção coerente com o contexto limitado que recuperou, sem inventar dados.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Calcula 15% de R$1.000 = R$150, apoiado no trecho específico de opções; ressalvas corretas sobre IRRF dedutível e ausência de isenção.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 1,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Indica 15% e afasta a isenção, mas não apura o valor devido e apoia a alíquota apenas em analogia genérica.",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T20",
+  "repeat": false
+}

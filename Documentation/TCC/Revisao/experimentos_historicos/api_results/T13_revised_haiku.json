@@ -1,0 +1,24 @@
+{
+  "key": "T13_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "## Resposta\n\n**Não.** A isenção de R$ 20 mil **não se aplica** à venda de cotas de FII.\n\n### Distinção clara:\n\n| Aspecto | Sua situação |\n|--------|--------------|\n| **Ativo** | Cota de FII |\n| **Operação** | Venda |\n| **Alíquota** | 20% sobre ganho líquido |\n| **Isenção de R$ 20 mil** | ❌ Não existe para FII |\n\n### O que a evidência diz:\n\nSegundo a fonte oficial (Gov.br/Receita Federal):\n> *\"Venda de cotas de fundo imobiliário (FII): ganho líquido sujeito a 20%. **Não há isenção pela venda abaixo de R$ 20 mil.**\"*\n\nA isenção de R$ 20 mil aplica-se a **vendas de ações em bolsa**, não a FII.\n\n### Sua obrigação:\n\n- **Ganho:** R$ 5 mil\n- **IR devido:** R$ 5 mil × 20% = **R$ 1 mil**\n- **Reporte:** Declarar na IRPF ou recolher DARF se houver retenção incompleta\n\nConfirme se a operação foi comum (não day trade) para validar a alíquota de 20%.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 785,
+    "output_tokens": 356,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002565,
+  "seconds": 3.9226870999555103,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "9cdce272f2b55b7d58820fd7dfda56166d61cccf8f272b6995e9bdc486ff1c8a"
+}

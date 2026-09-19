@@ -24,6 +24,7 @@
           <option value="futuro_dolar">Futuro de Dólar (WDO)</option>
           <option value="futuro_indice">Futuro de Índice (WIN)</option>
           <option value="emprestimo_acoes">Empréstimo de Ações (aluguel)</option>
+          <option value="cripto">Criptomoeda</option>
         </select>
       </div>
 
@@ -33,6 +34,16 @@
           <option value="compra">🟢 Compra</option>
           <option value="venda">🔴 Venda</option>
         </select>
+      </div>
+    </div>
+
+    <div class="form-row" *ngIf="isCripto">
+      <div class="form-group">
+        <label>
+          <input type="checkbox" formControlName="exchange_estrangeira" />
+          Exchange estrangeira / autocustódia fora do Brasil
+        </label>
+        <small>Muda o regime tributário: 15% fixo sem isenção de R$35.000 (Lei 14.754/2023)</small>
       </div>
     </div>
 

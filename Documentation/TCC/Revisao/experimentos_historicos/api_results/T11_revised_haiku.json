@@ -1,0 +1,24 @@
+{
+  "key": "T11_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Rendimento de BDR vs. Venda do Certificado\n\n**Não são o mesmo fato tributário.**\n\nSão eventos distintos:\n\n1. **Rendimento distribuído** (dividendo, juros, etc.): Fato gerador próprio. Tributação depende da classificação do ativo subjacente e regime aplicável.\n\n2. **Venda do certificado BDR**: Ganho ou perda de capital. Fato gerador independente.\n\n**Analogia com FII:**\nA evidência (ID: *fii_rendimento*) esclarece que isenção de rendimentos **não isenta o lucro na venda de cotas**—são operações tributárias autônomas.\n\n**Limitações:**\n- Não localizei norma específica sobre tributação de rendimentos de BDR na base fornecida\n- A classificação do rendimento (isento, tributável, alíquota) depende:\n  - Tipo de BDR (patrocinado/não patrocinado)\n  - Natureza do provento (dividendo, juros, etc.)\n  - Mercado e legislação específica\n\n**Recomendação:** Consulte a Receita Federal ou seu consultor para classificação do ativo específico e regime do período da operação.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 773,
+    "output_tokens": 316,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002353,
+  "seconds": 3.905323200044222,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b83d952f7b700c79d3f7005297a384975a73b7713ddace4608c47773c9277fd7"
+}

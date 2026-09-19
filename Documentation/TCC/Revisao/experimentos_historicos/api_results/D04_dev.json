@@ -1,0 +1,24 @@
+{
+  "key": "D04_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Propriedade Direta de Imóvel\n\nA base de evidências fornecidas **não contém definição normativa sobre propriedade direta de imóvel**.\n\n## O que as evidências indicam:\n\nAs fontes mencionam **\"venda direta de imóvel\"** como fato tributário **distinto de**:\n- Venda de cotas de FII (fundo imobiliário)\n- Rendimentos distribuídos por FII\n- Empréstimo de ativos\n\nIsso sugere que propriedade direta refere-se à **titularidade do bem imóvel em si** (não mediada por fundos), mas a documentação não explicita critérios legais.\n\n## Limite da resposta:\n\nPara orientação precisa sobre:\n- Conceito legal de propriedade direta\n- Distinção de regimes tributários (ganho de capital, isenção conforme valor/permanência)\n- Obrigações declaratórias\n\n**Peço**: qual contexto específico? (ex.: issenção de ganho, ITBI, IPTU, sucessão)\n\nConsulte normativo completo ou Receita Federal conforme situação concreta.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 824,
+    "output_tokens": 290,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002274,
+  "seconds": 3.850010800000746,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "4004aea15407730d08e585d75228e1b299553e912944d7400b17c4204db1f701"
+}

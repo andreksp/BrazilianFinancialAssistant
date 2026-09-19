@@ -1,0 +1,27 @@
+{
+  "key": "T29_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"975ab3cfe6fdb742\",\"relevancia\":1,\"motivo\":\"Explica ajuste diário e cálculo do ganho no futuro, mas não define nocional nem responde diretamente.\"},{\"id\":\"06a4e857780aec7b\",\"relevancia\":0,\"motivo\":\"Trata de empréstimo de ações (BTC), sem relação com nocional de futuros.\"},{\"id\":\"c4a28d9b57b540e1\",\"relevancia\":0,\"motivo\":\"Guia de DARF; não aborda o conceito de nocional.\"},{\"id\":\"wdo\",\"relevancia\":2,\"motivo\":\"Define tamanho contratual (nocional), fórmula do resultado e ressalva sobre ajustes diários; responde o núcleo.\"},{\"id\":\"emprestimo_proventos\",\"relevancia\":0,\"motivo\":\"Empréstimo de ativos e reembolso de proventos; fora do tema.\"},{\"id\":\"fii_rendimento\",\"relevancia\":0,\"motivo\":\"Isenção de rendimentos de FII; irrelevante.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Nega corretamente e distingue nocional, resultado e ajuste diário, apoiado no trecho wdo.\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Distinção correta entre valor de referência e resultado financeiro, com citação fiel ao contexto.\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Resposta correta e alíquotas coerentes, mas a definição de nocional não está nos trechos citados.\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 6294,
+    "output_tokens": 1544,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 911
+    }
+  },
+  "usd": 0.07007,
+  "seconds": 18.51853599998867,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "747eacbc8101afffdb8a1055dee76d8430b24892d9b2432560238f4b0ee73b9a"
+}

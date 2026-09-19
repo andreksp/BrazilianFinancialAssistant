@@ -1,0 +1,27 @@
+{
+  "key": "T17_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"7bb8b88a77231872\",\"relevancia\":2,\"motivo\":\"Afirma diretamente que prejuízo de FII só compensa ganho de FII; pequeno deslize sobre nº de cotistas não afeta o núcleo.\"},{\"id\":\"c4a28d9b57b540e1\",\"relevancia\":0,\"motivo\":\"Guia de DARF, não trata de compensação entre FII e ações.\"},{\"id\":\"975ab3cfe6fdb742\",\"relevancia\":0,\"motivo\":\"Trata de mercado futuro, não responde à segregação FII/ações.\"},{\"id\":\"fii_perda\",\"relevancia\":2,\"motivo\":\"Responde exatamente: compensação só com fundos da mesma espécie.\"},{\"id\":\"fii_rendimento\",\"relevancia\":1,\"motivo\":\"Contextualiza isenção de rendimentos e tributação da venda, sem tratar da compensação.\"},{\"id\":\"perdas\",\"relevancia\":1,\"motivo\":\"Mostra princípio de segregação de categorias (day trade), mas não FII vs ações.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Nega a compensação cruzada, coerente com fii_perda e fii_rendimento.\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Resposta correta e sustentada no trecho de regras de FII; detalhes de alíquota e isenção consistentes.\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Correta e bem ancorada nos trechos citados, com ressalvas adequadas.\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5909,
+    "output_tokens": 1272,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 644
+    }
+  },
+  "usd": 0.061345,
+  "seconds": 16.75381159997778,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "e537f415bbbbb3a2a3729d1459d1e2f8e0edd5f9cff6e6da7c17bb92a636393b"
+}

@@ -1,0 +1,27 @@
+{
+  "key": "T06_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não. Segundo a evidência **[perdas]** (fonte: gov.br/Receita Federal), prejuízos em **day trade** só podem ser compensados com ganhos **também em day trade**, no mesmo mês ou em períodos posteriores — \"não se misturam com ganhos de operações comuns\".\n\nSão regimes de apuração distintos: operações comuns tributam-se a 15%, e day trade a 20%, conforme **[acoes_taxa]** (fonte: planalto.gov.br). Cada categoria tem apuração mensal própria, e a compensação exige controle e registro corretos na sua declaração/DARF — não é automática nem gera restituição automática.\n\nImportante: essas alíquotas e regras aplicam-se a ações; se sua operação envolver opções, a apuração muda conforme o evento (negociação, exercício, expiração) e posição (titular/lançador), conforme **[opcoes]**.\n\nIsso é orientação geral, não substitui apuração fiscal definitiva do seu caso concreto. Se puder detalhar os ativos, datas e valores das operações, posso ajudar a entender melhor a mecânica aplicável — mas a apuração final deve ser feita com base na sua escrituração completa, idealmente com apoio de contador.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 903,
+    "output_tokens": 427,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006076,
+  "seconds": 5.558814499992877,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "cde46225b75a05db850e4d6221d4d56c53d12dd9b1b5bbfa441e823a483b73b0"
+}

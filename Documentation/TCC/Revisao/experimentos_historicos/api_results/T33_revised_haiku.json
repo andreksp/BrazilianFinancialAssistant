@@ -1,0 +1,24 @@
+{
+  "key": "T33_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise: Retenção em Empréstimo de Ativos\n\n## Dados Fornecidos\n- **Doador (PF residente)**\n- **Remuneração:** R$ 1.000\n- **Prazo:** 361 dias\n- **Data:** 12/09/2026\n\n## Resposta\n\nSim, há retenção na fonte.\n\n**Base Legal:** Lei 15.265/2025, arts. 18 e 19 (empréstimo de ativos no País).\n\n**Alíquota aplicável:** **17,5%** (prazo de 361 a 720 dias)\n\n**Cálculo:**\n- Retenção = R$ 1.000 × 17,5% = **R$ 175,00**\n- Valor líquido ao doador = **R$ 825,00**\n\n## Observações Críticas\n\n1. **Confirmação necessária:** Você mencionou \"doador\" — verifique se se refere a empréstimo de ativos (ações, valores mobiliários) no mercado doméstico ou se é operação diversa.\n\n2. **Regime:** Tributação exclusivamente na fonte (sem DARF adicional mensal).\n\n3. **Limite de 361 dias:** Está no intervalo 181–360? Nesse caso, seria 20%. A descrição \"361 dias\" indica **início** ou **duração total**? Esclareça para precisão.\n\n**Fonte:** https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 850,
+    "output_tokens": 404,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.00287,
+  "seconds": 4.555538800021168,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "1fe1df28d57ac1321be4b360b62c1b598f39efc291334a6669f7ab3f80db728b"
+}

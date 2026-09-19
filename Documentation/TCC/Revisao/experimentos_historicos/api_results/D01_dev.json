@@ -1,0 +1,24 @@
+{
+  "key": "D01_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Custo Médio de Duas Compras\n\n## Método Básico\n\nO custo médio pondera os valores totais de aquisição:\n\n**Custo Médio = (Valor Compra 1 + Valor Compra 2) ÷ (Quantidade Total)**\n\nExemplo:\n- Compra 1: 10 cotas × R$ 100 = R$ 1.000\n- Compra 2: 5 cotas × R$ 120 = R$ 600\n- **Custo Médio = R$ 1.600 ÷ 15 = R$ 106,67 por cota**\n\n## Aplicação Tributária\n\nPara **apuração de ganho/perda em alienação**, use este custo médio como base de custo na venda.\n\n**Limitação importante:** A evidência fornecida trata compensação de perdas em FII (apenas com ganhos em FII) e rendimentos de fundos, **não aborda especificamente o cálculo de custo médio**.\n\n## O que Falta\n\n- Qual ativo? (ações, FII, criptomoedas?)\n- Há mais compras ou vendas parciais?\n- Regime de apuração (lucro real, presumido, simplificado)?\n\n**Peço esclarecimento do tipo de ativo e contexto para orientação precisa conforme legislação vigente.**",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 793,
+    "output_tokens": 351,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002548,
+  "seconds": 4.056145299982745,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "07e335dee4e0f71ff6ff20f44f389edfaad4314bba72beef43fe292a9c90eba6"
+}

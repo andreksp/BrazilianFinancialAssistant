@@ -1,0 +1,27 @@
+{
+  "key": "T44_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não tenho evidência suficiente para responder com precisão. As fontes fornecidas tratam de empréstimo de ativos, compensação de perdas em day trade e perdas em cotas de FII — nenhuma trata especificamente de tributação sobre venda de criptomoedas/moedas.\n\nPara calcular o imposto devido sobre venda de moedas, preciso de esclarecimentos:\n\n1. **Que tipo de \"moedas\"?** Criptoativos (bitcoin, etc.), moedas estrangeiras físicas, ou outro ativo?\n2. **Valor total de vendas no mês**, para verificar eventual faixa de isenção;\n3. **Preço de custo/aquisição** de cada operação, para apurar ganho ou perda;\n4. **Datas das operações** (mês/ano), pois a legislação e alíquotas podem variar por período de apuração;\n5. Se houve **prejuízos anteriores** a compensar.\n\nImportante: venda de ativo é fato gerador diferente de rendimento (como juros ou aluguel de ativos). Sem a legislação específica sobre ganho de capital em criptoativos, não posso afirmar alíquotas, limites de isenção ou prazo de recolhimento (DARF) sem risco de erro.\n\nRecomendo consultar a Instrução Normativa vigente da Receita Federal sobre criptoativos e ganho de capital, ou fornecer mais dados para simulação orientativa — que não substitui apuração fiscal definitiva.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 951,
+    "output_tokens": 507,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006972,
+  "seconds": 6.6385828999918886,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "fa492507dc441fad685f5776f68bb9d366815a4d0bb3af9333c912a65b984907"
+}

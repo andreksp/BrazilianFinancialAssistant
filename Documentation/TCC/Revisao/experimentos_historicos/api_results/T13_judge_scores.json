@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "7bb8b88a77231872",
+      "relevancia": 2,
+      "motivo": "Afirma diretamente que não há isenção de R$20 mil para FII e que o ganho é tributado a 20%."
+    },
+    {
+      "id": "975ab3cfe6fdb742",
+      "relevancia": 1,
+      "motivo": "Trata de futuros, mas registra que a isenção de R$20 mil vale só para ações à vista."
+    },
+    {
+      "id": "c4a28d9b57b540e1",
+      "relevancia": 1,
+      "motivo": "Guia de DARF; útil para recolhimento, não responde ao núcleo sobre isenção em FII."
+    },
+    {
+      "id": "futuros",
+      "relevancia": 0,
+      "motivo": "Regras de mercado futuro, não trata de FII."
+    },
+    {
+      "id": "opcoes",
+      "relevancia": 0,
+      "motivo": "Regras de opções, não trata de FII."
+    },
+    {
+      "id": "fii_venda",
+      "relevancia": 2,
+      "motivo": "Responde exatamente: 20% sobre ganho líquido, sem isenção abaixo de R$20 mil."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 1,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Acerta a inexistência de isenção e a alíquota de 20%, mas assume sem base que o ganho é R$5 mil (valor da venda) e afirma IR devido de R$1.000.",
+      "configuration": "revised_haiku"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Núcleo correto (sem isenção, 20%, DARF 6015); o cálculo é apresentado de forma condicional ao lucro, sem afirmar valor como certo.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correto e ancorado no contexto; evita inventar base de cálculo e reconhece limite quanto ao IRRF.",
+      "configuration": "revised_sonnet"
+    }
+  ],
+  "case_id": "T13",
+  "repeat": false
+}

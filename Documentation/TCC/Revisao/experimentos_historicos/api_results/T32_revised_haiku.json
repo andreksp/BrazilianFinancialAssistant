@@ -1,0 +1,24 @@
+{
+  "key": "T32_revised_haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Análise: Remuneração de Doador (181 dias)\n\n## Enquadramento\nA questão refere \"doador PF, remuneração R$ 1.000 por 181 dias\". **Preciso esclarecer:**\n\n1. **Tipo de ativo emprestado?** (ações, títulos, criptoativos, outro)\n2. **Contexto é empréstimo de ativos?** (inferência pela remuneração estruturada)\n\n## Retenção na Fonte – Base Legal\nSe for **empréstimo de ativos** (Lei 15.265/2025, arts. 18–19):\n\n- **Período: 181 dias** → alíquota **20%** (faixa \"de 181 a 360\")\n- **Rendimento bruto:** R$ 1.000\n- **Retenção:** R$ 1.000 × 20% = **R$ 200,00**\n\nEssa retenção é **exclusiva na fonte**, sem DARF mensal adicional.\n\n## Limitações\nA evidência não cobre outras operações (doações, liberalidades, compensações). Se não for empréstimo de ativos regulado pela Lei 15.265/2025, a tributação segue regime diferente.\n\n**Solicito confirmação:** qual é o ativo e a natureza jurídica dessa remuneração?",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 851,
+    "output_tokens": 346,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.002581,
+  "seconds": 4.6644292999990284,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "b59624f1620c6f1f6c44bd56c451f96180fb964b79e09163a79d3d291be292ee"
+}

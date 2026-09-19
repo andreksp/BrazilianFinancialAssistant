@@ -1,0 +1,27 @@
+{
+  "key": "T24_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não encontrei nas evidências fornecidas nenhuma referência a \"titular e lançador\" (termos típicos de operações com opções). Os documentos tratam de empréstimo de ativos (doador/tomador) [emprestimo, emprestimo_proventos] e de FII [fii_rendimento], que são situações distintas.\n\nPara responder com segurança, preciso esclarecer:\n1. Você se refere a titular e lançador de opções (mercado de derivativos)? Ou a doador e tomador em empréstimo de ativos?\n2. Qual o período de apuração e tipo de operação (day trade, comum)?\n\nSem essa evidência específica, não posso afirmar se a apuração é sempre idêntica entre as duas pontas — cada parte tem fato gerador, base de cálculo e momento de tributação próprios, conforme já se observa no empréstimo de ativos: a remuneração do doador segue tabela regressiva de renda fixa (22,5% a 15% conforme prazo), enquanto o tomador tem tributação distinta não coberta pela evidência [emprestimo, emprestimo_proventos].\n\nIsto é orientação educacional, não apuração fiscal definitiva. Consulte um contador para seu caso concreto.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1023,
+    "output_tokens": 619,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 201
+    }
+  },
+  "usd": 0.008236,
+  "seconds": 7.882088400016073,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "f748b027ef8797c01f46a2adb980a8ce3a3a6b6570b674df93f0410e655c27a4"
+}

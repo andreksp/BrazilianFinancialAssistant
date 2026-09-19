@@ -11,13 +11,16 @@ Business Logic Reference: backend/data/regulations/ir_emprestimo_acoes.txt
     acima de 720 dias .. 15,0%
 - O IR é retido na fonte pela B3/CBLC e é definitivo (tributação exclusiva) —
   não gera DARF mensal adicional para o investidor.
-- Base legal: Lei 13.043/2014; Instrução Normativa RFB 1.585/2015.
+- Base legal: Lei nº 15.265/2025 (dispõe especificamente sobre a tributação do
+  empréstimo de títulos e valores mobiliários no País); Lei 13.043/2014 (base
+  histórica); Instrução Normativa RFB 1.585/2015.
 
 Modeling note: este é um evento de renda (remuneração recebida), não uma compra/venda
 de ativo com preço médio. `quantidade` = nº de ações emprestadas, `preco_unitario` =
 remuneração por ação (R$), e `prazo_dias` (campo opcional em TradeInput) define a faixa
-da tabela regressiva. Sem `prazo_dias` informado, assume-se a faixa mais conservadora
-(até 180 dias / 22,5%) e o usuário é avisado na mensagem de resultado.
+da tabela regressiva. `prazo_dias` é OBRIGATÓRIO nesta versão: presumir uma faixa sem
+confirmação do usuário poderia subestimar ou superestimar o IR retido, então o cálculo
+recusa a operação (ValueError) em vez de adivinhar.
 """
 
 from typing import Optional
@@ -80,6 +83,8 @@ class EmprestimoCalculator(BaseCalculator):
     ) -> TaxCalculationResult:
         assert trade.tipo_ativo == AssetType.EMPRESTIMO_ACOES, "This calculator is for Empréstimo de Ações only"
 
+        if trade.prazo_dias is None:
+            raise ValueError("Informe o prazo do contrato para determinar a faixa de IRRF.")
         valor_financeiro = trade.quantidade * trade.preco_unitario
         aliquota = self.get_regressive_rate(trade.prazo_dias)
 
@@ -115,14 +120,10 @@ class EmprestimoCalculator(BaseCalculator):
         def fmt(v: float) -> str:
             return f"R$ {v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
-        prazo_msg = (
-            f"{trade.prazo_dias} dias"
-            if trade.prazo_dias
-            else f"não informado — assumindo faixa mais conservadora ({DEFAULT_PRAZO_DIAS} dias)"
-        )
+        # trade.prazo_dias é garantido não-nulo por calculate_result antes de chegar aqui.
         return (
             f"Aluguel de {int(trade.quantidade)} {trade.ativo}: remuneração bruta {fmt(valor_financeiro)}. "
-            f"Prazo do contrato: {prazo_msg}. "
+            f"Prazo do contrato: {trade.prazo_dias} dias. "
             f"IR retido na fonte (definitivo, tabela regressiva {aliquota * 100:.1f}%): {fmt(irrf_retido)}. "
             "Tributação exclusiva — não gera DARF mensal."
         )

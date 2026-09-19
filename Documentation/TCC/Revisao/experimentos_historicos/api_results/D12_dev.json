@@ -1,0 +1,24 @@
+{
+  "key": "D12_dev",
+  "model": "claude-haiku-4-5-20251001",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "response_model": "claude-haiku-4-5-20251001",
+  "text": "# Quando não há fonte suficiente\n\n## Procedimento recomendado:\n\n**1. Explicite o limite**\nIndique qual informação falta (legislação, norma RFB, dados do contribuinte, datas exatas, valores).\n\n**2. Peça esclarecimento**\nSolicite ao usuário:\n- Documentação específica (contrato, nota de corretagem, comprovante)\n- Datas precisas (compra, venda, rendimento)\n- Valores brutos e líquidos\n- Regime tributário da operação\n\n**3. Não presuma ou invente**\nExemplos desta base:\n- Art. 3º Lei 11.033: **não presume** isenção FII automática\n- Lei 15.265/2025: exige **prazo e rendimento bruto** para cálculo correto\n- WDO: necessita **cotações e quantidade** para apuração\n\n**4. Oriente conforme evidência**\nUse apenas o que consta em fontes verificadas (Planalto, B3, RFB).\n\n## Sua situação agora:\n\nSe tiver **dúvida tributária específica** (venda, rendimento, regime, período), forneça:\n- Qual ativo/operação?\n- Quando (data)?\n- Quanto (valor bruto)?\n\nAssim poderei responder com precisão.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 840,
+    "output_tokens": 342,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "usd": 0.00255,
+  "seconds": 4.600180099951103,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "bd33a1ea39846b84c983a1330a0ab7be7c5529d6b76739d6eeec2287247382f4"
+}

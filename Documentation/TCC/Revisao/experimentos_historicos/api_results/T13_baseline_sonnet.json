@@ -1,0 +1,27 @@
+{
+  "key": "T13_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, a isenção de R$ 20.000/mês **não se aplica a FIIs** — essa regra vale apenas para venda de ações no mercado à vista (conforme evidência sobre mercado futuro, id 975ab3cfe6fdb742, por analogia à regra geral, e confirmado explicitamente para FIIs no id 7bb8b88a77231872).\n\nSegundo a evidência (id 7bb8b88a77231872):\n- Ganho de capital na venda de cotas de FII é tributado a **20% sempre**, independente do valor da venda ou do lucro.\n- Não há isenção de R$ 20 mil para FIIs — essa regra é exclusiva de ações.\n- É importante distinguir: **rendimentos mensais distribuídos** (dividendos) pelo FII são isentos de IR para PF (sob certas condições), mas **ganho na venda das cotas** é sempre tributado a 20%.\n\nNo seu caso: se você teve lucro de R$ 5.000 na venda das cotas, o IR devido seria R$ 5.000 × 20% = **R$ 1.000**, recolhido via DARF (código 6015), com IRRF retido na fonte a título de \"dedo-duro\" dedutível.\n\nIsso é uma simulação educacional, não uma apuração fiscal definitiva. Para confirmação, consulte um contador ou a Receita Federal.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3397,
+    "output_tokens": 467,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.011464,
+  "seconds": 6.54966570000397,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "279935d6e3d07b95fc75462fb5f9f9d8dff4da293fccc02637169365186aeebd"
+}

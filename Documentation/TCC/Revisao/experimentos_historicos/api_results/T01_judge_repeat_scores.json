@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 2,
+      "motivo": "Afirma isenção para vendas à vista até R$20.000/mês, respondendo ao núcleo."
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 1,
+      "motivo": "Trata de BDR; menciona limite mensal de R$20.000 mas não responde ao caso de ações e divergе sobre BDR."
+    },
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 0,
+      "motivo": "Opções, sem isenção; não trata de ações à vista."
+    },
+    {
+      "id": "acoes_isencao",
+      "relevancia": 2,
+      "motivo": "Responde diretamente: isenção para PF residente com vendas mensais até R$20.000."
+    },
+    {
+      "id": "cripto_isencao",
+      "relevancia": 0,
+      "motivo": "Criptoativos e limite de R$35.000, irrelevante."
+    },
+    {
+      "id": "cripto_exterior",
+      "relevancia": 0,
+      "motivo": "Aplicações no exterior, irrelevante."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Conclui isenção com limite correto sobre vendas, apoiada no trecho de ações.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Correta e sustentada no trecho de regras de ações, inclusive base legal citada no contexto.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 2,
+      "fundamentacao": 1,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Conclusão correta, mas afirmação sobre ausência de IRRF não tem suporte no contexto citado.",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T01",
+  "repeat": true
+}

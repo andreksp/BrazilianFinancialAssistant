@@ -1,0 +1,27 @@
+{
+  "key": "T09_judge",
+  "model": "claude-opus-5",
+  "requested_model": "claude-opus-5",
+  "response_model": "claude-opus-5",
+  "text": "{\"trechos\":[{\"id\":\"e64833ee00978eec\",\"relevancia\":1,\"motivo\":\"Traz a alíquota de 20% em day trade de BDR, mas contém afirmação contraditória à fonte oficial ao dizer que a isenção de R$ 20 mil se aplica a BDRs.\"},{\"id\":\"4e69fb3f132e9ec3\",\"relevancia\":1,\"motivo\":\"Regra geral de ações (day trade 20%), sem tratar de BDR especificamente.\"},{\"id\":\"290b3fbba3faa9f8\",\"relevancia\":1,\"motivo\":\"Trata de opções; alíquota análoga, mas não responde sobre BDR.\"},{\"id\":\"acoes_taxa\",\"relevancia\":1,\"motivo\":\"Confirma 20% em day trade de ações; apoio indireto ao caso de BDR.\"},{\"id\":\"bdr\",\"relevancia\":2,\"motivo\":\"Responde diretamente: day trade de BDR a 20% e ausência da isenção de R$ 20 mil.\"},{\"id\":\"perdas\",\"relevancia\":0,\"motivo\":\"Trata de compensação de prejuízos, não da alíquota.\"}],\"respostas\":[{\"id\":\"A\",\"correcao\":2,\"fundamentacao\":1,\"abstencao_adequada\":false,\"erro_critico\":true,\"motivo\":\"Acerta os 20%, mas apoia-se em trecho distrator e sugere que a isenção de R$ 20 mil valeria para BDR em swing trade, contrariando a fonte oficial.\"},{\"id\":\"B\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"20% correto e ausência de isenção para BDR conforme fonte; menção a GCAP/carnê-leão é imprecisa, porém acessória.\"},{\"id\":\"C\",\"correcao\":2,\"fundamentacao\":2,\"abstencao_adequada\":false,\"erro_critico\":false,\"motivo\":\"Responde 20% com base nos trechos corretos e delimita limitações sem inventar dados.\"}]}",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5483,
+    "output_tokens": 1893,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 1194
+    }
+  },
+  "usd": 0.07474,
+  "seconds": 23.933179999992717,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "f9725d6ed536cb158c8eda6e23594bae2db2185dc1134c932b7aaed1795fc781"
+}

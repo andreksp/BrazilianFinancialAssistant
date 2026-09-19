@@ -1,0 +1,27 @@
+{
+  "key": "T37_revised_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Não, o limite de **R$ 20.000** é específico para **ações à vista** (evidência `acoes_isencao`) — não se aplica a criptoativos.\n\nPara **criptoativos nacionais**, a evidência `cripto_isencao` indica um regime próprio: soma-se o total das **alienações** (vendas e também permutas entre criptomoedas, mesmo sem conversão em reais) no mês, em todas as exchanges/carteiras. Se esse total não ultrapassar **R$ 35.000**, pode haver isenção do ganho de capital.\n\nNo seu caso, com vendas mensais de R$ 30.000, o total está **abaixo de R$ 35.000**, o que pode indicar isenção — mas isso depende de:\n- confirmação de que R$ 30.000 é a soma de **todas** as alienações do mês (incluindo eventuais permutas cripto-cripto, que também contam);\n- ausência de outras operações que somem ao total mensal;\n- verificação de regras de apuração de custo e lucro tributável nos meses em que o limite for ultrapassado.\n\n**Limite desta resposta**: não tenho evidência sobre alíquotas aplicáveis quando o limite é excedido, nem sobre regras específicas de criptoativos no exterior. Recomendo conferir a fonte oficial (Instrução Normativa citada) e, se necessário, orientação de contador para seu caso concreto.",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1023,
+    "output_tokens": 480,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "usd": 0.006846,
+  "seconds": 6.143098400032613,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "d831c616bc12619121f3adf4f8fc9f845b01e999638314859143bc68fb70030d"
+}

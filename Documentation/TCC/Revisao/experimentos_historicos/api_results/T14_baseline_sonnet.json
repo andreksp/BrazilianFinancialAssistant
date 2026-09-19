@@ -1,0 +1,27 @@
+{
+  "key": "T14_baseline_sonnet",
+  "model": "claude-sonnet-5",
+  "requested_model": "claude-sonnet-5",
+  "response_model": "claude-sonnet-5",
+  "text": "Com base nas evidências (ID 7bb8b88a77231872), a venda de cotas de FII é tributada em **20% sobre o ganho líquido**, sem qualquer isenção (a isenção de R$ 20.000/mês vale só para ações à vista).\n\n**Cálculo:**\n- Ganho líquido: R$ 800,00\n- IR devido: 800 × 20% = **R$ 160,00**\n- Sem IRRF a deduzir (conforme informado) → DARF integral de R$ 160,00\n\nComo o valor é superior ao mínimo de R$ 10,00 (ID c4a28d9b57b540e1), há obrigação de recolhimento via **DARF código 6015**, com vencimento no último dia útil do mês seguinte ao da venda.\n\n**Importante — distinções:**\n- Isso se refere ao **ganho de capital na venda das cotas**, não aos rendimentos mensais distribuídos (aluguéis), que são isentos para PF em condições normais (ID 7bb8b88a77231872).\n- Prejuízos em FII só compensam ganhos futuros de FII, não de ações.\n- Essa é uma simulação educacional baseada nos dados informados; não constitui apuração fiscal definitiva. Confirme se há outras operações no mês (podem afetar a base) e consulte um contador para a declaração anual (DIRPF).",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3399,
+    "output_tokens": 568,
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "output_tokens_details": {
+      "thinking_tokens": 106
+    }
+  },
+  "usd": 0.012478,
+  "seconds": 9.187501300009899,
+  "stop_reason": "end_turn",
+  "prompt_sha256": "c4bd7068444cc28e10d27e8ad75023e07a27acfba02db70bfbd100e111956d16"
+}

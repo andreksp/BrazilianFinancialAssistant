@@ -1,0 +1,65 @@
+{
+  "trechos": [
+    {
+      "id": "290b3fbba3faa9f8",
+      "relevancia": 2,
+      "motivo": "Detalha cálculo distinto para titular e lançador no exercício, respondendo ao núcleo."
+    },
+    {
+      "id": "4e69fb3f132e9ec3",
+      "relevancia": 1,
+      "motivo": "Regras gerais de ações e preço médio; suporte indireto, não trata das posições."
+    },
+    {
+      "id": "e64833ee00978eec",
+      "relevancia": 0,
+      "motivo": "BDRs; não trata de opções nem das posições."
+    },
+    {
+      "id": "emprestimo",
+      "relevancia": 0,
+      "motivo": "Empréstimo de ativos; tema diverso da pergunta."
+    },
+    {
+      "id": "emprestimo_proventos",
+      "relevancia": 0,
+      "motivo": "Reembolso de proventos em empréstimo; não responde."
+    },
+    {
+      "id": "fii_rendimento",
+      "relevancia": 0,
+      "motivo": "Isenção de FII; irrelevante."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "A",
+      "correcao": 1,
+      "fundamentacao": 1,
+      "abstencao_adequada": true,
+      "erro_critico": false,
+      "motivo": "Reconhece ausência da evidência sobre opções e sinaliza corretamente que cada ponta tem fato gerador próprio, mas não conclui o ponto central.",
+      "configuration": "revised_sonnet"
+    },
+    {
+      "id": "B",
+      "correcao": 2,
+      "fundamentacao": 2,
+      "abstencao_adequada": false,
+      "erro_critico": false,
+      "motivo": "Responde que as apurações são distintas e reproduz fielmente as fórmulas do trecho sobre opções.",
+      "configuration": "baseline_sonnet"
+    },
+    {
+      "id": "C",
+      "correcao": 1,
+      "fundamentacao": 0,
+      "abstencao_adequada": false,
+      "erro_critico": true,
+      "motivo": "Conclusão genérica correta, mas define lançador como 'beneficiário econômico' (invenção) e apoia-se em trechos alheios (empréstimo/FII).",
+      "configuration": "revised_haiku"
+    }
+  ],
+  "case_id": "T24",
+  "repeat": false
+}

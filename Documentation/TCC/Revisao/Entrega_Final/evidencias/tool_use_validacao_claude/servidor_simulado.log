@@ -1,0 +1,54 @@
+INFO:app.main:Starting Brazilian Financial Assistant backend...
+INFO:app.main:Database tables ready.
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+ERROR:chromadb.telemetry.product.posthog:Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+ERROR:chromadb.telemetry.product.posthog:Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+INFO:app.api.chat:Chat message from 'default': Vendi as 10 cotas do HGLG11 a 110 reais hoje
+INFO:app.agents.orchestrator:Orchestrator: 'Vendi as 10 cotas do HGLG11 a 110 reais hoje' \u2192 'fii' (confianca=0.98)
+ERROR:chromadb.telemetry.product.posthog:Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+D:\Projects\BrazilianFinancialAssistant\backend\venv_tooluse\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+[09/20/26 15:13:11] INFO     Processing request of type           server.py:733
+                             ListToolsRequest                                  
+[09/20/26 15:13:12] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.agents.tool_chat:chat_tool name=fee_policy origin=llm status=ok
+[09/20/26 15:13:13] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.agents.tool_chat:chat_tool name=calculate_trade origin=llm status=ok
+INFO:app.api.chat:Chat message from 'default': Vendi as 10 cotas do HGLG11 a 110 reais hoje
+INFO:app.api.chat:Chat message from 'default': Vendi as 10 cotas do HGLG11 a 110 reais hoje
+INFO:app.api.chat:Chat message from 'default': Vendi as 10 cotas do HGLG11 a 110 reais hoje
+INFO:app.agents.orchestrator:Orchestrator: 'Vendi as 10 cotas do HGLG11 a 110 reais hoje' \u2192 'fii' (confianca=0.98)
+INFO:app.agents.orchestrator:Orchestrator: 'Vendi as 10 cotas do HGLG11 a 110 reais hoje' \u2192 'fii' (confianca=0.98)
+INFO:app.agents.orchestrator:Orchestrator: 'Vendi as 10 cotas do HGLG11 a 110 reais hoje' \u2192 'fii' (confianca=0.98)
+D:\Projects\BrazilianFinancialAssistant\backend\venv_tooluse\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+D:\Projects\BrazilianFinancialAssistant\backend\venv_tooluse\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+D:\Projects\BrazilianFinancialAssistant\backend\venv_tooluse\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+[09/20/26 15:13:16][09/20/26 15:13:16][09/20/26 15:13:16]   INFO    INFO     INFO     Processing request of type            Processing request of type          server.pyProcessing request of type           :server.py733: 733
+
+server.py                             ListToolsRequest                    :                    733          
+                                 
+         ListToolsRequest                     ListToolsRequest                                  
+             
+[09/20/26 15:13:17] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+[09/20/26 15:13:17] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+[09/20/26 15:13:17] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.agents.tool_chat:chat_tool name=fee_policy origin=llm status=ok
+INFO:app.agents.tool_chat:chat_tool name=fee_policy origin=llm status=ok
+INFO:app.agents.tool_chat:chat_tool name=fee_policy origin=llm status=ok
+[09/20/26 15:13:18] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+[09/20/26 15:13:18] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+[09/20/26 15:13:18] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+INFO:app.agents.tool_chat:chat_tool name=calculate_trade origin=llm status=ok
+INFO:app.agents.tool_chat:chat_tool name=calculate_trade origin=llm status=ok
+INFO:app.agents.tool_chat:chat_tool name=calculate_trade origin=llm status=ok

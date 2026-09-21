@@ -1,0 +1,45 @@
+{
+  "ocioso_referencia": {
+    "batimentos": 13,
+    "batimentos_falhos": 0,
+    "maior_intervalo_s": 0.075,
+    "intervalo_mediano_s": 0.063,
+    "maior_latencia_health_s": 0.025,
+    "duracao_acao_s": null,
+    "resposta_acao": null
+  },
+  "durante_um_chat": {
+    "batimentos": 86,
+    "batimentos_falhos": 0,
+    "maior_intervalo_s": 0.076,
+    "intervalo_mediano_s": 0.062,
+    "maior_latencia_health_s": 0.026,
+    "duracao_acao_s": 4.43,
+    "resposta_acao": {
+      "agent_name": "Agente Especialista em Fundos Imobiliários",
+      "tem_calculo": true,
+      "ir_devido": 20.0
+    }
+  },
+  "durante_tres_chats_concorrentes": {
+    "batimentos": 87,
+    "batimentos_falhos": 0,
+    "maior_intervalo_s": 0.076,
+    "intervalo_mediano_s": 0.062,
+    "maior_latencia_health_s": 0.026,
+    "duracao_acao_s": 4.492,
+    "resposta_acao": {
+      "n": 3,
+      "ok": 3,
+      "erros": [],
+      "tempo_total_s": 4.492,
+      "amostra": [
+        {
+          "agent_name": "Agente Especialista em Fundos Imobiliários",
+          "tem_calculo": true,
+          "ir_devido": 20.0
+        }
+      ]
+    }
+  }
+}

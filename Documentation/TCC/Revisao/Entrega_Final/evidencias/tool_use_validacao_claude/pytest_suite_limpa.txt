@@ -1,0 +1,19 @@
+# Suíte completa em ambiente limpo (venv_tooluse), banco/Chroma temporários
+Data UTC: 2026-09-20T18:09:47Z
+DATABASE_URL=sqlite:///C:/Users/andre/AppData/Local/Temp/tooluse_val_1619/test.db  CHROMA_DB_PATH=C:/Users/andre/AppData/Local/Temp/tooluse_val_1619/chroma  ANTHROPIC_API_KEY=(vazia)
+Comando: python -m pytest tests -q -p no:cacheprovider
+--- saída ---
+........................................................................ [ 60%]
+................................................                         [100%]
+============================== warnings summary ===============================
+venv_tooluse\Lib\site-packages\starlette\testclient.py:53
+  D:\Projects\BrazilianFinancialAssistant\backend\venv_tooluse\Lib\site-packages\starlette\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+app\core\config.py:11
+  D:\Projects\BrazilianFinancialAssistant\backend\app\core\config.py:11: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class Settings(BaseSettings):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+120 passed, 2 warnings in 18.56s
+EXIT=0 duracao_segundos=19

@@ -1,0 +1,67 @@
+[
+  {
+    "caso": "injecao_documento_recuperado",
+    "status": "OK",
+    "detalhe": "average_price enviado ao MCP=[100] (esperado [100]); user_id presente=False. O texto malicioso chegou ao prompt mas não alterou os fatos financeiros."
+  },
+  {
+    "caso": "documento_chega_ao_prompt",
+    "status": "ATENCAO",
+    "detalhe": "Conteúdo recuperado presente no prompt. Presença é esperada (é o contexto RAG); a mitigação é a vinculação dos argumentos no host, não a ausência do texto. Instrução de defesa existe no prompt de sistema."
+  },
+  {
+    "caso": "esquemas_vazios_e_ferramenta_local",
+    "status": "OK",
+    "detalhe": "Ferramentas oferecidas=['fee_policy', 'calculate_trade', 'consultar_preco_medio']; todos os esquemas vazios e fechados=True. consultar_preco_medio é apresentada ao modelo mas não é publicada pelo servidor MCP."
+  },
+  {
+    "caso": "local_nao_vai_ao_mcp",
+    "status": "OK",
+    "detalhe": "Chamadas MCP=['fee_policy', 'calculate_trade']. consultar_preco_medio resolvida no host, sem ir ao servidor MCP."
+  },
+  {
+    "caso": "input_none_recusado",
+    "status": "OK",
+    "detalhe": "input=None gerou is_error=True."
+  },
+  {
+    "caso": "argumento_aninhado_recusado",
+    "status": "OK",
+    "detalhe": "is_error=True; ativo efetivamente calculado=['HGLG11'] (esperado ['HGLG11'], nunca PETR4)."
+  },
+  {
+    "caso": "servidor_catalogo_incompleto",
+    "status": "OK",
+    "detalhe": "Recusado antes de qualquer chamada: Servidor MCP não oferece as ferramentas necessárias."
+  },
+  {
+    "caso": "texto_vazio_recusado",
+    "status": "OK",
+    "detalhe": "Recusado: O modelo não produziu explicação final."
+  },
+  {
+    "caso": "stop_reason_anormal_recusado",
+    "status": "OK",
+    "detalhe": "Recusado mesmo com cálculo já validado: Resposta incompleta do modelo; tente novamente."
+  },
+  {
+    "caso": "sem_memoria_entre_requisicoes",
+    "status": "OK",
+    "detalhe": "Segunda execução começou com 1 mensagem(ns), papel=user. tool_result da execução anterior não é reaproveitado."
+  },
+  {
+    "caso": "tool_result_dentro_da_requisicao",
+    "status": "OK",
+    "detalhe": "tool_result presente no histórico da requisição corrente=True (esperado True, pois o protocolo exige devolver o resultado na mesma conversa)."
+  },
+  {
+    "caso": "servidor_mcp_ausente",
+    "status": "OK",
+    "detalhe": "ValueError propagado sem fallback direto: Falha na comunicação com o modelo ou com as ferramentas; cálculo não concluído."
+  },
+  {
+    "caso": "chamada_dentro_de_loop",
+    "status": "OK",
+    "detalhe": "Convertido em ValueError tratável: Falha na comunicação com o modelo ou com as ferramentas; cálculo não concluído."
+  }
+]

@@ -1,7 +1,7 @@
 """Abstract base class for all specialist agents."""
 
 from abc import ABC, abstractmethod
-from app.mcp_gateway import calculate_via_mcp
+from app.agents.tool_chat import run_tool_chat
 from typing import Optional
 
 from sqlalchemy.orm import Session
@@ -60,22 +60,17 @@ class BaseAgent(ABC):
                 save_trade(db, trade, result=None, user_id=user_id)
                 explanation = self._buy_confirmation(trade)
             else:
-                avg_price = get_average_price(db, user_id=user_id, ativo=trade.ativo)
-                result = calculate_via_mcp(
-                    trade, average_price=trade.preco_medio_informado if trade.preco_medio_informado is not None else avg_price
-                )
-                save_trade(db, trade, result=result, user_id=user_id)
-
                 context_docs = []
                 if chroma:
                     context_docs = chroma.search_regulations(
                         message, asset_type=self.chroma_scope, top_k=2
                     )
                 context = "\n\n---\n\n".join(context_docs) if context_docs else ""
-                explanation = claude.chat(
-                    self.get_explain_system_prompt(),
-                    self._format_result_prompt(result, context),
+                explanation, result = run_tool_chat(
+                    claude, self.get_explain_system_prompt(), message, trade, context,
+                    lambda: get_average_price(db, user_id=user_id, ativo=trade.ativo),
                 )
+                save_trade(db, trade, result=result, user_id=user_id)
         else:
             context_docs = []
             if chroma:

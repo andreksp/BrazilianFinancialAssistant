@@ -7,7 +7,7 @@ Flow:
         ↓
     Specialist Agent (AcoesAgent | FIIAgent | OpcoesAgent | General)
         ↓
-    parse_trade → calculate → ChromaDB RAG → specialist explain  ← Sonnet
+    parse_trade → ChromaDB RAG → bounded LLM tool selection → MCP → explanation
         ↓
     ChatResponse (includes agent_name to show which specialist handled it)
 
@@ -29,7 +29,7 @@ router = APIRouter()
 
 
 @router.post("/", response_model=ChatResponse)
-async def send_message(
+def send_message(
     request: ChatRequest,
     db: Session = Depends(get_db),
 ) -> ChatResponse:

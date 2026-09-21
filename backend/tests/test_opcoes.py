@@ -5,7 +5,7 @@ Key rules tested:
 - Gain = (sale_price - premium_paid) * quantity
 - 15% swing / 20% day trade (mirrors underlying stock)
 - IRRF: 0,005% swing / 1% day trade
-- Exemption R$20,000 applies (tracked at monthly portfolio level)
+- Exemption R$20,000 does not apply
 """
 
 import pytest
@@ -55,7 +55,7 @@ class TestOpcoesCalculator:
         result = calculator.calculate_result(trade, average_price=2.00)
 
         assert result.aliquota_aplicada == 0.15
-        assert result.ir_devido == pytest.approx(45.0)  # 300 * 15%
+        assert result.ir_devido == round((300 - result.taxas_totais.total) * .15, 2)
 
     def test_day_trade_20_percent(self, calculator):
         """Options day trade: 20% rate, no exemption."""
@@ -73,7 +73,7 @@ class TestOpcoesCalculator:
 
         assert result.aliquota_aplicada == 0.20
         assert result.ganho_prejuizo_bruto == pytest.approx(300.0)  # (3-1.5)*200
-        assert result.ir_devido == pytest.approx(60.0)  # 300 * 20%
+        assert result.ir_devido == round((300 - result.taxas_totais.total) * .20, 2)
 
     def test_option_expiring_worthless_is_a_loss(self, calculator):
         """

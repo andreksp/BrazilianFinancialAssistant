@@ -14,6 +14,14 @@ def test_real_stdio_calculation():
     assert result.ir_devido==20
     assert result.taxas_totais.total==0
 
+def test_single_server_entrypoint():
+    import json
+    root=Path(__file__).resolve().parents[2]
+    config=json.loads((root/'.mcp.json').read_text(encoding='utf8'))
+    assert gateway.SERVER.resolve()==(root/'mcp_server/server.py').resolve()
+    assert Path(config['mcpServers']['brazilian-financial']['args'][0]).resolve()==gateway.SERVER.resolve()
+    assert not (root/'mcp_server/runtime_server.py').exists()
+
 def test_real_stdio_rejects_missing_cost():
     with pytest.raises(ValueError,match='custo médio'):gateway.calculate_via_mcp(trade())
 

@@ -74,3 +74,8 @@ htmlcov/
 # Temporary
 *.tmp
 *.temp
+
+# Locks temporários do Word
+~$*
+# Backups locais do TCC (157 MB; cópias de segurança, não versionar)
+Documentation/TCC/Revisao/backups/

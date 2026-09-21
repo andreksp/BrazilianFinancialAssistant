@@ -32,7 +32,7 @@
   {
     "page": 7,
     "text_start": "5.4 Orquestração e modelos de linguagem ............................................................... 25 \n5.5 Base vetorial e recuperação documental .........",
-    "text_length": 2683
+    "text_length": 2788
   },
   {
     "page": 8,
@@ -112,7 +112,7 @@
   {
     "page": 23,
     "text_start": "23 \n \n5 ARQUITETURA E IMPLEMENTAÇÃO \nNeste capítulo são consolidados os módulos e seus fluxos, as interfaces HTTP, a \nrecuperação documental e as alterações loc",
-    "text_length": 1858
+    "text_length": 1906
   },
   {
     "page": 24,
@@ -122,32 +122,32 @@
   {
     "page": 25,
     "text_start": "25 \n \n5.3 Backend e interfaces HTTP \nAs rotas de chat recebem mensagens e devolvem resposta, identificação do agente e, \nquando existentes, operação extraída e ",
-    "text_length": 2459
+    "text_length": 2458
   },
   {
     "page": 26,
-    "text_start": "26 \n \nao gateway MCP; após o retorno, o resultado numérico e o contexto documental são enviados \nao modelo para explicação. \nNa configuração do backend, claude-",
-    "text_length": 2490
+    "text_start": "26 \n \ndisponíveis, com tool_choice configurado como auto. Solicitações tool_use são respondidas \ncom blocos tool_result, até a explicação final ou um limite de ",
+    "text_length": 2413
   },
   {
     "page": 27,
-    "text_start": "27 \n \nexperimental permite comparar duas configurações completas de recuperação e contexto; não \npermite separar o efeito de remover uma regra errada do efeito ",
-    "text_length": 2568
+    "text_start": "27 \n \nO recorte em unidades de regra foi feito editorialmente. Trata-se de curadoria manual \nassistida por IA, não de um algoritmo geral de segmentação por toke",
+    "text_length": 2567
   },
   {
     "page": 28,
-    "text_start": "28 \n \nterceiros. Fontes internacionais são reservadas principalmente aos métodos de inteligência \nartificial. Essa escolha procura aproximar a referência da aut",
-    "text_length": 2417
+    "text_start": "28 \n \nA preferência por fontes brasileiras segue uma hierarquia prática: textos legais, \norientações da Receita Federal e especificações oficiais da B3 antecede",
+    "text_length": 2545
   },
   {
     "page": 29,
     "text_start": "29 \n \nchaves de API não foram copiadas para a documentação ou para o corpus, e somente perguntas \nsintéticas e informações públicas foram encaminhadas aos model",
-    "text_length": 2439
+    "text_length": 2412
   },
   {
     "page": 30,
-    "text_start": "30 \n \n5.8 Servidor MCP e instruções de geração \nDois servidores têm papéis distintos. O arquivo mcp_server/server.py preserva as \nferramentas legadas get_tax_ru",
-    "text_length": 2203
+    "text_start": "30 \n \n5.8 Servidor MCP e instruções de geração \nO servidor MCP, implementado em mcp_server/server.py, expõe as ferramentas \nfee_policy e calculate_trade para ex",
+    "text_length": 2410
   },
   {
     "page": 31,
@@ -227,7 +227,7 @@
   {
     "page": 46,
     "text_start": "46 \n \nA inspeção do formulário indica uma possível lacuna entre os dados expostos na \ninterface e os campos aceitos pelo backend. Entretanto, diagnosticar a cau",
-    "text_length": 2598
+    "text_length": 2607
   },
   {
     "page": 47,
@@ -237,91 +237,111 @@
   {
     "page": 48,
     "text_start": "48 \n \nhá novas capturas de tela: chamadas HTTP não validam a interação ou a apresentação no \nnavegador. \nA inspeção de chat_real/03_venda_fii.json, entretanto, ",
-    "text_length": 1654
+    "text_length": 2234
   },
   {
     "page": 49,
-    "text_start": "49 \n \n8 CONCLUSÃO \n8.1 Síntese das contribuições \nA dispersão e a complexidade das informações tributárias motivaram o \ndesenvolvimento de um assistente em port",
-    "text_length": 2282
+    "text_start": "49 \n \n7.6 Validação do ciclo de ferramentas e da interface \nA rodada de 20 de setembro de 2026 avaliou a arquitetura com seleção de ferramentas \npelo LLM. Foram",
+    "text_length": 2612
   },
   {
     "page": 50,
-    "text_start": "50 \n \nfoi usada como substituta da correção: ela poderia premiar uma frase lexicalmente próxima com \npercentual ou negação incorretos. \nA cobertura operacional ",
-    "text_length": 2509
+    "text_start": "50 \n \nseleção no ciclo. Após as correções numéricas, o JSON registrou uma compra e duas vendas, \ncom IR de R$ 99,63 para HGLG11 e R$ 19,93 para KNRI11. As recus",
+    "text_length": 1900
   },
   {
     "page": 51,
-    "text_start": "51 \n \nde linguagem pela API, mas não substitui testes com navegador, avaliações de usuários ou \nestudo de carga. Permanecem necessários o teste do timeout inter",
-    "text_length": 363
+    "text_start": "51 \n \nFigura 11 – Venda de FII no chat após a correção da base de cálculo \n \nFonte: captura da interface Angular, sessão de 20 set. 2026, dados sintéticos. A te",
+    "text_length": 634
   },
   {
     "page": 52,
-    "text_start": "52 \n \nREFERÊNCIAS \nANTHROPIC. Introducing the next generation of Claude. 2024. Disponível em: \nhttps://www.anthropic.com/news/claude-3-family. Acesso em: 13 set",
-    "text_length": 2481
+    "text_start": "52 \n \nFigura 13 – Histórico vazio e DARF zerado apesar da venda registrada \n \nFonte: captura da interface Angular, sessão de 20 set. 2026, dados sintéticos. A t",
+    "text_length": 727
   },
   {
     "page": 53,
-    "text_start": "53 \n \nBRASIL. Lei nº 15.265, de 21 de novembro de 2025. Disponível em: \nhttps://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm. Acesso em: 12 s",
-    "text_length": 2530
+    "text_start": "53 \n \n8 CONCLUSÃO \n8.1 Síntese das contribuições \nA dispersão e a complexidade das informações tributárias motivaram o \ndesenvolvimento de um assistente em port",
+    "text_length": 2282
   },
   {
     "page": 54,
-    "text_start": "54 \n \nMODEL CONTEXT PROTOCOL. 2025a. Tools. Specification 2025-06-18. Disponível em: \nhttps://modelcontextprotocol.io/specification/2025-06-18/server/tools. Ace",
-    "text_length": 2449
+    "text_start": "54 \n \nfoi usada como substituta da correção: ela poderia premiar uma frase lexicalmente próxima com \npercentual ou negação incorretos. \nA cobertura de derivativ",
+    "text_length": 2580
   },
   {
     "page": 55,
-    "text_start": "55 \n \nAPÊNDICE A – BENCHMARK E FATOS ESPERADOS \nAs perguntas seguintes são sintéticas. Os gabaritos são fatos esperados preparados com \nassistência de IA, não p",
-    "text_length": 1412
+    "text_start": "55 \n \nimplementação de cálculos específicos e testes com cenários representativos, preferencialmente \nvalidados por especialistas. \nNo plano de integração, prop",
+    "text_length": 1137
   },
   {
     "page": 56,
-    "text_start": "56 \n \nT05 | acoes | Teste \nPerdi em day trade em agosto. Posso compensar com lucro de day trade em setembro? \nFatos esperados: Sim, observadas condições declara",
-    "text_length": 1783
+    "text_start": "56 \n \nREFERÊNCIAS \nANTHROPIC. Introducing the next generation of Claude. 2024. Disponível em: \nhttps://www.anthropic.com/news/claude-3-family. Acesso em: 13 set",
+    "text_length": 2481
   },
   {
     "page": 57,
-    "text_start": "57 \n \nT11 | bdr | Teste \nRendimento distribuído por BDR é o mesmo fato tributário da venda do certificado? \nFatos esperados: Não; separar eventos. \nReferência: ",
-    "text_length": 1688
+    "text_start": "57 \n \nBRASIL. Lei nº 15.265, de 21 de novembro de 2025. Disponível em: \nhttps://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm. Acesso em: 12 s",
+    "text_length": 2530
   },
   {
     "page": 58,
-    "text_start": "58 \n \nT17 | fii | Teste \nPosso abater prejuízo em cotas de FII do lucro em ações? \nFatos esperados: Não; FII mesma espécie. \nReferência: https://normas.receita.",
-    "text_length": 1356
+    "text_start": "58 \n \nMODEL CONTEXT PROTOCOL. 2025a. Tools. Specification 2025-06-18. Disponível em: \nhttps://modelcontextprotocol.io/specification/2025-06-18/server/tools. Ace",
+    "text_length": 2449
   },
   {
     "page": 59,
-    "text_start": "59 \n \nT23 | opcoes | Teste \nSou titular de opção que expirou. Basta ticker para calcular imposto? \nFatos esperados: Não, faltam prêmio quantidade evento históri",
-    "text_length": 1488
+    "text_start": "59 \n \nAPÊNDICE A – BENCHMARK E FATOS ESPERADOS \nAs perguntas seguintes são sintéticas. Os gabaritos são fatos esperados preparados com \nassistência de IA, não p",
+    "text_length": 1412
   },
   {
     "page": 60,
-    "text_start": "60 \n \nT29 | futuros | Teste \nNocional de contrato futuro é o dinheiro recebido no encerramento? \nFatos esperados: Não; distinguir nocional, ganho e ajustes. \nRe",
-    "text_length": 1313
+    "text_start": "60 \n \nT05 | acoes | Teste \nPerdi em day trade em agosto. Posso compensar com lucro de day trade em setembro? \nFatos esperados: Sim, observadas condições declara",
+    "text_length": 1783
   },
   {
     "page": 61,
-    "text_start": "61 \n \nT35 | emprestimo | Teste \nRemuneração do doador PF já retida exige outro DARF mensal? \nFatos esperados: Não sobre essa remuneração, retenção definitiva. \n",
-    "text_length": 1474
+    "text_start": "61 \n \nT11 | bdr | Teste \nRendimento distribuído por BDR é o mesmo fato tributário da venda do certificado? \nFatos esperados: Não; separar eventos. \nReferência: ",
+    "text_length": 1688
   },
   {
     "page": 62,
-    "text_start": "62 \n \nT41 | cripto | Teste \nCripto enquadrada como aplicação financeira exterior Lei14.754 mantém isenção \nmensal35mil? \nFatos esperados: Não; anual15%, verific",
-    "text_length": 1096
+    "text_start": "62 \n \nT17 | fii | Teste \nPosso abater prejuízo em cotas de FII do lucro em ações? \nFatos esperados: Não; FII mesma espécie. \nReferência: https://normas.receita.",
+    "text_length": 1356
   },
   {
     "page": 63,
-    "text_start": "63 \n \nT48 | abstencao | Teste \nTer carteira própria de bitcoin prova que a aplicação está no exterior? \nFatos esperados: Não, autocustódia não determina regime ",
-    "text_length": 1167
+    "text_start": "63 \n \nT23 | opcoes | Teste \nSou titular de opção que expirou. Basta ticker para calcular imposto? \nFatos esperados: Não, faltam prêmio quantidade evento históri",
+    "text_length": 1488
   },
   {
     "page": 64,
-    "text_start": "64 \n \nD07 | desenvolvimento | Desenvolvimento \nO que é margem de garantia? \nFatos esperados: Inspeção exploratória de cobertura, fora dos escores finais. \nD08 |",
-    "text_length": 943
+    "text_start": "64 \n \nT29 | futuros | Teste \nNocional de contrato futuro é o dinheiro recebido no encerramento? \nFatos esperados: Não; distinguir nocional, ganho e ajustes. \nRe",
+    "text_length": 1313
   },
   {
     "page": 65,
-    "text_start": "65 \n \nAPÊNDICE B – REPRODUÇÃO E USO DE IA \nO código inicial foi desenvolvido com assistência do Claude, conforme informação do \nautor. A revisão documental, a p",
-    "text_length": 1970
+    "text_start": "65 \n \nT35 | emprestimo | Teste \nRemuneração do doador PF já retida exige outro DARF mensal? \nFatos esperados: Não sobre essa remuneração, retenção definitiva. \n",
+    "text_length": 1474
+  },
+  {
+    "page": 66,
+    "text_start": "66 \n \nT41 | cripto | Teste \nCripto enquadrada como aplicação financeira exterior Lei14.754 mantém isenção \nmensal35mil? \nFatos esperados: Não; anual15%, verific",
+    "text_length": 1096
+  },
+  {
+    "page": 67,
+    "text_start": "67 \n \nT48 | abstencao | Teste \nTer carteira própria de bitcoin prova que a aplicação está no exterior? \nFatos esperados: Não, autocustódia não determina regime ",
+    "text_length": 1167
+  },
+  {
+    "page": 68,
+    "text_start": "68 \n \nD07 | desenvolvimento | Desenvolvimento \nO que é margem de garantia? \nFatos esperados: Inspeção exploratória de cobertura, fora dos escores finais. \nD08 |",
+    "text_length": 943
+  },
+  {
+    "page": 69,
+    "text_start": "69 \n \nAPÊNDICE B – REPRODUÇÃO E USO DE IA \nO código inicial foi desenvolvido com assistência do Claude, conforme informação do \nautor. A revisão documental, a p",
+    "text_length": 2007
   }
 ]

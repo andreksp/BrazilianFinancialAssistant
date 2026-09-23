@@ -23,7 +23,6 @@ export class ChatComponent implements OnInit {
   messages: ChatMessage[] = [];
   inputMessage: string = '';
   loading: boolean = false;
-  userId: string = 'user123'; // TODO: Get from auth service
 
   constructor(private apiService: ApiService) {}
 
@@ -81,7 +80,6 @@ export class ChatComponent implements OnInit {
     // Send to API
     const request: ChatRequest = {
       message: this.inputMessage,
-      user_id: this.userId,
     };
 
     this.apiService.sendChat(request).subscribe({

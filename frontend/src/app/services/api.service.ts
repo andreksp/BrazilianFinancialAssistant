@@ -24,6 +24,8 @@ import {
 })
 export class ApiService {
   private apiUrl = '/api';
+  // Prototype identity, shared by every operation; this is not authentication.
+  readonly userId = 'user123';
 
   constructor(private http: HttpClient) {}
 
@@ -35,7 +37,8 @@ export class ApiService {
   processTrade(trade: TradeInput): Observable<TaxCalculationResult> {
     return this.http.post<TaxCalculationResult>(
       `${this.apiUrl}/trades/process`,
-      trade
+      trade,
+      { params: new HttpParams().set('user_id', this.userId) }
     );
   }
 
@@ -47,12 +50,12 @@ export class ApiService {
   sendChat(request: ChatRequest): Observable<ChatResponse> {
     return this.http.post<ChatResponse>(
       `${this.apiUrl}/chat/`,
-      request
+      { ...request, user_id: this.userId }
     );
   }
 
   getTradeHistory(month?: number, year?: number): Observable<any[]> {
-    let params = new HttpParams();
+    let params = new HttpParams().set('user_id', this.userId);
     if (month) params = params.set('month', month.toString());
     if (year) params = params.set('year', year.toString());
     return this.http.get<any[]>(`${this.apiUrl}/trades/history`, { params });
@@ -65,6 +68,7 @@ export class ApiService {
    */
   getMonthlySummary(month: number, year: number): Observable<MonthlyTaxSummary> {
     const params = new HttpParams()
+      .set('user_id', this.userId)
       .set('month', month.toString())
       .set('year', year.toString());
 
@@ -88,6 +92,7 @@ export class ApiService {
    */
   getDarfInfo(month: number, year: number): Observable<any> {
     const params = new HttpParams()
+      .set('user_id', this.userId)
       .set('month', month.toString())
       .set('year', year.toString());
 

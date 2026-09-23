@@ -52,8 +52,9 @@
     </div>
   </div>
 
-  <div *ngIf="!summary && !loading" class="no-data">
-    Nenhuma operação de venda encontrada em {{ mes }}/{{ ano }}. Carregue um período com operações.
+  <div *ngIf="loaded && !summary && !error" class="no-data">
+    Nenhuma venda registrada em {{ mes }}/{{ ano }} para este usuário.
+    As compras aparecem no histórico abaixo e não geram apuração de venda.
   </div>
 
   <!-- DARF -->
@@ -87,13 +88,14 @@
 
   <!-- Trade Table -->
   <div *ngIf="trades.length > 0" class="section">
-    <h3>Operações de Venda ({{ trades.length }})</h3>
+    <h3>Histórico de compras e vendas ({{ trades.length }})</h3>
     <div class="table-wrapper">
       <table class="trades-table">
         <thead>
           <tr>
             <th>Data</th>
             <th>Ativo</th>
+            <th>Operação</th>
             <th>Qtd</th>
             <th>Preço</th>
             <th>G/P Bruto</th>
@@ -105,13 +107,14 @@
           <tr *ngFor="let t of trades" [class.row-loss]="t.ganho_prejuizo_bruto < 0">
             <td>{{ formatDate(t.data_operacao) }}</td>
             <td><strong>{{ t.ativo }}</strong></td>
+            <td>{{ t.tipo_operacao === 'compra' ? 'Compra' : 'Venda' }}</td>
             <td>{{ t.quantidade }}</td>
             <td>{{ formatCurrency(t.preco_unitario) }}</td>
             <td [class.text-gain]="t.ganho_prejuizo_bruto >= 0" [class.text-loss]="t.ganho_prejuizo_bruto < 0">
-              {{ formatCurrency(t.ganho_prejuizo_bruto) }}
+              {{ t.ganho_prejuizo_bruto == null ? '—' : formatCurrency(t.ganho_prejuizo_bruto) }}
             </td>
-            <td>{{ formatCurrency(t.ir_devido) }}</td>
-            <td>{{ formatCurrency(t.valor_liquido) }}</td>
+            <td>{{ t.ir_devido == null ? '—' : formatCurrency(t.ir_devido) }}</td>
+            <td>{{ t.valor_liquido == null ? '—' : formatCurrency(t.valor_liquido) }}</td>
           </tr>
         </tbody>
       </table>

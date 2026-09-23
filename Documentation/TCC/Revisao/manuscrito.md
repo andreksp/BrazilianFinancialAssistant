@@ -931,832 +931,835 @@ A cobertura de derivativos é parcial. No segmento de contratos futuros, o prot�
 A cobertura operacional também é parcial: persistem simplificações de consolidação mensal, custo médio, tarifas legadas e classificação de eventos. A simulação de futuros não reproduz toda a trajetória de ajustes diários, posições vendidas ou rolagens, e o empréstimo compartilha campos com operações de compra e venda. Na Seção 7.6, a interface apresentou divergência de usuário entre gravação e consulta e uma explicação incompatível com a persistência da venda. Esses achados impedem tratar o histórico e o DARF exibidos como integralmente confiáveis. O identificador de usuário não constitui autenticação completa. A ausência de memória conversacional limita perguntas de continuidade, como “e se eu vender metade disso?”; registros persistidos não equivalem a contexto recuperado entre mensagens. Segurança pública e adequação à apuração fiscal autônoma não foram validadas.
 
 <!-- p:441 -->
-A desatualização de fontes, a interpretação incorreta de dados e a execução de instruções indevidas são riscos que exigem curadoria e controles proporcionais. O protótipo não substitui avaliação profissional nem fonte normativa oficial. Essas restrições delimitam o uso dos resultados, sem apagar erros ou recusas observados nas demonstrações.
+A consulta à carteira pelo chat também é limitada. A ferramenta de consulta ao custo médio fica disponível somente após a extração de uma operação com dados suficientes; não há ferramenta para recuperar o saldo de um ativo a partir de perguntas como “se eu vender meu saldo de PETR4, quanto pagarei de imposto?”. Assim, mesmo com compras persistidas, a pergunta pode receber uma resposta geral sem consulta à posição do usuário. O fluxo não mantém uma simulação em andamento para solicitar e incorporar os dados faltantes, como preço e data de venda. Além disso, não há separação explícita entre simulação e registro: uma venda extraída e calculada com sucesso é persistida pelo agente. Portanto, o chat não deve ser tratado como simulador de carteira sem efeitos sobre os registros. Essas restrições decorrem da implementação do fluxo, e não do protocolo MCP.
 
 <!-- p:442 -->
-## 8.3 Trabalhos futuros
+A desatualização de fontes, a interpretação incorreta de dados e a execução de instruções indevidas são riscos que exigem curadoria e controles proporcionais. O protótipo não substitui avaliação profissional nem fonte normativa oficial. Essas restrições delimitam o uso dos resultados, sem apagar erros ou recusas observados nas demonstrações.
 
 <!-- p:443 -->
-Como trabalhos futuros, priorizam-se a revisão dos gabaritos por especialista; consultas externas ao processo de desenvolvimento; contabilização mensal completa (agregação real de vendas por carteira, hoje informada pelo usuário); modelagem específica do empréstimo; cobertura de ajustes diários; comparação de embeddings para português; e avaliação de ponta a ponta com usuários. A expansão do domínio deverá ocorrer junto com evidências e testes, e não somente com a adição de novas classes ou novos textos.
+## 8.3 Trabalhos futuros
 
 <!-- p:444 -->
-Como trabalho futuro, propõe-se ampliar gradualmente a cobertura de derivativos, incluindo outros contratos futuros e modalidades ainda não contempladas. Essa expansão deverá considerar as particularidades de cada produto e ser acompanhada de revisão das regras, implementação de cálculos específicos e testes com cenários representativos, preferencialmente validados por especialistas.
+Como trabalhos futuros, priorizam-se a revisão dos gabaritos por especialista; consultas externas ao processo de desenvolvimento; contabilização mensal completa (agregação real de vendas por carteira, hoje informada pelo usuário); modelagem específica do empréstimo; cobertura de ajustes diários; comparação de embeddings para português; e avaliação de ponta a ponta com usuários. A expansão do domínio deverá ocorrer junto com evidências e testes, e não somente com a adição de novas classes ou novos textos.
 
 <!-- p:445 -->
-No plano de integração, propõe-se investigar obtenção autorizada de dados por serviços da B3 ou do Open Finance, conforme disponibilidade, consentimento e condições de acesso, além de extração assistida de documentos com confirmação dos campos. Essas alternativas deverão ser comparadas à entrada manual antes de serem apresentadas como funcionalidades implementadas.
+Como trabalho futuro, propõe-se ampliar gradualmente a cobertura de derivativos, incluindo outros contratos futuros e modalidades ainda não contempladas. Essa expansão deverá considerar as particularidades de cada produto e ser acompanhada de revisão das regras, implementação de cálculos específicos e testes com cenários representativos, preferencialmente validados por especialistas.
 
 <!-- p:446 -->
-A validação de 20 de setembro demonstrou seleção de ferramentas por modelo real, execução no navegador e instalação limpa em ambiente virtual, além de um ensaio local de concorrência com respostas simuladas. Como continuidade, priorizam-se a unificação da identificação do usuário entre chat, histórico e resumo mensal, a confirmação de gravação pelo backend e a prevenção de registros duplicados. Também são necessários testes repetidos de extração de campos, reexecução do benchmark para a arquitetura atual, estudo de carga com modelos reais, validação de Docker e Poetry e versionamento de tarifas com fontes e vigência.
+No plano de integração, propõe-se investigar obtenção autorizada de dados por serviços da B3 ou do Open Finance, conforme disponibilidade, consentimento e condições de acesso, além de extração assistida de documentos com confirmação dos campos. Essas alternativas deverão ser comparadas à entrada manual antes de serem apresentadas como funcionalidades implementadas.
 
 <!-- p:447 -->
-# REFERÊNCIAS
+A validação de 20 de setembro demonstrou seleção de ferramentas por modelo real, execução no navegador e instalação limpa em ambiente virtual, além de um ensaio local de concorrência com respostas simuladas. Como continuidade, priorizam-se a unificação da identificação do usuário entre chat, histórico e resumo mensal, a confirmação de gravação pelo backend e a prevenção de registros duplicados. Também são necessários testes repetidos de extração de campos, reexecução do benchmark para a arquitetura atual, estudo de carga com modelos reais, validação de Docker e Poetry e versionamento de tarifas com fontes e vigência.
 
 <!-- p:448 -->
-ANTHROPIC. Introducing the next generation of Claude. 2024. Disponível em: https://www.anthropic.com/news/claude-3-family. Acesso em: 13 set. 2026.
+# REFERÊNCIAS
 
 <!-- p:449 -->
-ANTHROPIC. Pricing: Claude Platform Docs. 2026. Disponível em: https://platform.claude.com/docs/en/about-claude/pricing. Acesso em: 12 set. 2026.
+ANTHROPIC. Introducing the next generation of Claude. 2024. Disponível em: https://www.anthropic.com/news/claude-3-family. Acesso em: 13 set. 2026.
 
 <!-- p:450 -->
-ASAI, Akari et al. Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection. 2023. Disponível em: https://arxiv.org/abs/2310.11511. Acesso em: 13 set. 2026.
+ANTHROPIC. Pricing: Claude Platform Docs. 2026. Disponível em: https://platform.claude.com/docs/en/about-claude/pricing. Acesso em: 12 set. 2026.
 
 <!-- p:451 -->
-B3. 2025. Pessoas Físicas: uma análise da evolução dos investidores na B3 — 2º trimestre de 2025. Disponível em: https://www.b3.com.br/data/files/A2/A0/78/20/E61689100A29E189AC094EA8/Book%20PF%202TRI%202025_vF.pdf. Acesso em: 12 set. 2026.
+ASAI, Akari et al. Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection. 2023. Disponível em: https://arxiv.org/abs/2310.11511. Acesso em: 13 set. 2026.
 
 <!-- p:452 -->
-B3. 2026a. Empréstimo de ativos: informações. Disponível em: https://www.b3.com.br/pt_br/produtos-e-servicos/emprestimo-de-ativos/informacoes.htm. Acesso em: 12 set. 2026.
+B3. 2025. Pessoas Físicas: uma análise da evolução dos investidores na B3 — 2º trimestre de 2025. Disponível em: https://www.b3.com.br/data/files/A2/A0/78/20/E61689100A29E189AC094EA8/Book%20PF%202TRI%202025_vF.pdf. Acesso em: 12 set. 2026.
 
 <!-- p:453 -->
-B3. 2026b. Como declarar BDRs no Imposto de Renda 2026. Bora Investir. Disponível em: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/. Acesso em: 13 set. 2026.
+B3. 2026a. Empréstimo de ativos: informações. Disponível em: https://www.b3.com.br/pt_br/produtos-e-servicos/emprestimo-de-ativos/informacoes.htm. Acesso em: 12 set. 2026.
 
 <!-- p:454 -->
-B3. 2026c. Futuro Mini de Ibovespa. Disponível em: https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/futuro-mini-de-ibovespa.htm. Acesso em: 12 set. 2026.
+B3. 2026b. Como declarar BDRs no Imposto de Renda 2026. Bora Investir. Disponível em: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/. Acesso em: 13 set. 2026.
 
 <!-- p:455 -->
-B3. 2026d. Futuro Míni de Taxa de Câmbio de Reais por Dólar Comercial. Disponível em: https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/moedas/futuro-mini-de-taxa-de-cambio-de-reais-por-dolar-comercial.htm. Acesso em: 12 set. 2026.
+B3. 2026c. Futuro Mini de Ibovespa. Disponível em: https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/futuro-mini-de-ibovespa.htm. Acesso em: 12 set. 2026.
 
 <!-- p:456 -->
-B3. 2026e. Levantamento DataWise+. Disponível em: https://www.b3.com.br/pt_br/noticias/levantamento-datawise.htm. Acesso em: 13 set. 2026.
+B3. 2026d. Futuro Míni de Taxa de Câmbio de Reais por Dólar Comercial. Disponível em: https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/moedas/futuro-mini-de-taxa-de-cambio-de-reais-por-dolar-comercial.htm. Acesso em: 12 set. 2026.
 
 <!-- p:457 -->
-BENDER, Emily M. et al. On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? FAccT, 2021. Disponível em: https://dl.acm.org/doi/10.1145/3442188.3445922. Acesso em: 12 set. 2026.
+B3. 2026e. Levantamento DataWise+. Disponível em: https://www.b3.com.br/pt_br/noticias/levantamento-datawise.htm. Acesso em: 13 set. 2026.
 
 <!-- p:458 -->
-BRASIL. Lei nº 11.033, de 21 de dezembro de 2004. Texto consolidado. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm. Acesso em: 12 set. 2026.
+BENDER, Emily M. et al. On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? FAccT, 2021. Disponível em: https://dl.acm.org/doi/10.1145/3442188.3445922. Acesso em: 12 set. 2026.
 
 <!-- p:459 -->
-BRASIL. Lei nº 13.259, de 16 de março de 2016. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13259.htm. Acesso em: 12 set. 2026.
+BRASIL. Lei nº 11.033, de 21 de dezembro de 2004. Texto consolidado. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm. Acesso em: 12 set. 2026.
 
 <!-- p:460 -->
-BRASIL. Lei nº 14.754, de 12 de dezembro de 2023. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm. Acesso em: 12 set. 2026.
+BRASIL. Lei nº 13.259, de 16 de março de 2016. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13259.htm. Acesso em: 12 set. 2026.
 
 <!-- p:461 -->
-BRASIL. Lei nº 15.265, de 21 de novembro de 2025. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm. Acesso em: 12 set. 2026.
+BRASIL. Lei nº 14.754, de 12 de dezembro de 2023. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm. Acesso em: 12 set. 2026.
 
 <!-- p:462 -->
-BROWN, Tom B. et al. Language Models are Few-Shot Learners. NeurIPS, 2020. Disponível em: https://arxiv.org/abs/2005.14165. Acesso em: 12 set. 2026.
+BRASIL. Lei nº 15.265, de 21 de novembro de 2025. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm. Acesso em: 12 set. 2026.
 
 <!-- p:463 -->
-COMISSÃO DE VALORES MOBILIÁRIOS. Mercado de derivativos no Brasil: conceitos, produtos e operações. 2. ed. Rio de Janeiro: CVM, 2025. Disponível em: https://www.gov.br/investidor/pt-br/educacional/publicacoes-educacionais/livros-cvm/top-mercado-de-derivativos-no-brasil-conceitos-produtos-e-operacoes.pdf. Acesso em: 13 set. 2026.
+BROWN, Tom B. et al. Language Models are Few-Shot Learners. NeurIPS, 2020. Disponível em: https://arxiv.org/abs/2005.14165. Acesso em: 12 set. 2026.
 
 <!-- p:464 -->
-COMISSÃO DE VALORES MOBILIÁRIOS. Mercado de valores mobiliários brasileiro. 5. ed. Rio de Janeiro: CVM, 2024. Disponível em: https://www.gov.br/investidor/pt-br/educacional/publicacoes-educacionais/livros-cvm/cvm-livro_top_valores_mobiliarios_br_5ed.pdf. Acesso em: 13 set. 2026.
+COMISSÃO DE VALORES MOBILIÁRIOS. Mercado de derivativos no Brasil: conceitos, produtos e operações. 2. ed. Rio de Janeiro: CVM, 2025. Disponível em: https://www.gov.br/investidor/pt-br/educacional/publicacoes-educacionais/livros-cvm/top-mercado-de-derivativos-no-brasil-conceitos-produtos-e-operacoes.pdf. Acesso em: 13 set. 2026.
 
 <!-- p:465 -->
-DEEPSEEK-AI. DeepSeek-V3 Technical Report. 2024. Disponível em: https://arxiv.org/abs/2412.19437. Acesso em: 13 set. 2026.
+COMISSÃO DE VALORES MOBILIÁRIOS. Mercado de valores mobiliários brasileiro. 5. ed. Rio de Janeiro: CVM, 2024. Disponível em: https://www.gov.br/investidor/pt-br/educacional/publicacoes-educacionais/livros-cvm/cvm-livro_top_valores_mobiliarios_br_5ed.pdf. Acesso em: 13 set. 2026.
 
 <!-- p:466 -->
-DEVLIN, Jacob et al. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. NAACL-HLT, 2019. Disponível em: https://aclanthology.org/N19-1423/. Acesso em: 13 set. 2026.
+DEEPSEEK-AI. DeepSeek-V3 Technical Report. 2024. Disponível em: https://arxiv.org/abs/2412.19437. Acesso em: 13 set. 2026.
 
 <!-- p:467 -->
-GEMINI TEAM. Gemini: A Family of Highly Capable Multimodal Models. 2023. Disponível em: https://arxiv.org/abs/2312.11805. Acesso em: 13 set. 2026.
+DEVLIN, Jacob et al. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. NAACL-HLT, 2019. Disponível em: https://aclanthology.org/N19-1423/. Acesso em: 13 set. 2026.
 
 <!-- p:468 -->
-GEMMA TEAM. Gemma: Open Models Based on Gemini Research and Technology. 2024. Disponível em: https://arxiv.org/abs/2403.08295. Acesso em: 13 set. 2026.
+GEMINI TEAM. Gemini: A Family of Highly Capable Multimodal Models. 2023. Disponível em: https://arxiv.org/abs/2312.11805. Acesso em: 13 set. 2026.
 
 <!-- p:469 -->
-GOOGLE. Introducing EmbeddingGemma. 2025. Disponível em: https://developers.googleblog.com/introducing-embeddinggemma/. Acesso em: 13 set. 2026.
+GEMMA TEAM. Gemma: Open Models Based on Gemini Research and Technology. 2024. Disponível em: https://arxiv.org/abs/2403.08295. Acesso em: 13 set. 2026.
 
 <!-- p:470 -->
-GRATTAFIORI, Aaron et al. The Llama 3 Herd of Models. 2024. Disponível em: https://arxiv.org/abs/2407.21783. Acesso em: 13 set. 2026.
+GOOGLE. Introducing EmbeddingGemma. 2025. Disponível em: https://developers.googleblog.com/introducing-embeddinggemma/. Acesso em: 13 set. 2026.
 
 <!-- p:471 -->
-JIANG, Albert Q. et al. Mistral 7B. 2023. Disponível em: https://arxiv.org/abs/2310.06825. Acesso em: 13 set. 2026.
+GRATTAFIORI, Aaron et al. The Llama 3 Herd of Models. 2024. Disponível em: https://arxiv.org/abs/2407.21783. Acesso em: 13 set. 2026.
 
 <!-- p:472 -->
-LEWIS, Patrick et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS, 2020. Disponível em: https://arxiv.org/abs/2005.11401. Acesso em: 12 set. 2026.
+JIANG, Albert Q. et al. Mistral 7B. 2023. Disponível em: https://arxiv.org/abs/2310.06825. Acesso em: 13 set. 2026.
 
 <!-- p:473 -->
-LIU, Nelson F. et al. Lost in the Middle: How Language Models Use Long Contexts. 2023. Disponível em: https://arxiv.org/abs/2307.03172. Acesso em: 13 set. 2026.
+LEWIS, Patrick et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS, 2020. Disponível em: https://arxiv.org/abs/2005.11401. Acesso em: 12 set. 2026.
 
 <!-- p:474 -->
-MALKOV, Yu. A.; YASHUNIN, D. A. Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs. 2016. Disponível em: https://arxiv.org/abs/1603.09320. Acesso em: 12 set. 2026.
+LIU, Nelson F. et al. Lost in the Middle: How Language Models Use Long Contexts. 2023. Disponível em: https://arxiv.org/abs/2307.03172. Acesso em: 13 set. 2026.
 
 <!-- p:475 -->
-MODEL CONTEXT PROTOCOL. 2025a. Tools. Specification 2025-06-18. Disponível em: https://modelcontextprotocol.io/specification/2025-06-18/server/tools. Acesso em: 13 set. 2026.
+MALKOV, Yu. A.; YASHUNIN, D. A. Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs. 2016. Disponível em: https://arxiv.org/abs/1603.09320. Acesso em: 12 set. 2026.
 
 <!-- p:476 -->
-MODEL CONTEXT PROTOCOL. 2025b. Resources. Specification 2025-06-18. Disponível em: https://modelcontextprotocol.io/specification/2025-06-18/server/resources. Acesso em: 13 set. 2026.
+MODEL CONTEXT PROTOCOL. 2025a. Tools. Specification 2025-06-18. Disponível em: https://modelcontextprotocol.io/specification/2025-06-18/server/tools. Acesso em: 13 set. 2026.
 
 <!-- p:477 -->
-MODEL CONTEXT PROTOCOL. 2025c. Prompts. Specification 2025-06-18. Disponível em: https://modelcontextprotocol.io/specification/2025-06-18/server/prompts. Acesso em: 13 set. 2026.
+MODEL CONTEXT PROTOCOL. 2025b. Resources. Specification 2025-06-18. Disponível em: https://modelcontextprotocol.io/specification/2025-06-18/server/resources. Acesso em: 13 set. 2026.
 
 <!-- p:478 -->
-OPENAI. New embedding models and API updates. 2024. Disponível em: https://openai.com/index/new-embedding-models-and-api-updates/. Acesso em: 13 set. 2026.
+MODEL CONTEXT PROTOCOL. 2025c. Prompts. Specification 2025-06-18. Disponível em: https://modelcontextprotocol.io/specification/2025-06-18/server/prompts. Acesso em: 13 set. 2026.
 
 <!-- p:479 -->
-RECEITA FEDERAL. 2026a. Isenções: bolsa de valores. Disponível em: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes. Acesso em: 12 set. 2026.
+OPENAI. New embedding models and API updates. 2024. Disponível em: https://openai.com/index/new-embedding-models-and-api-updates/. Acesso em: 13 set. 2026.
 
 <!-- p:480 -->
-RECEITA FEDERAL. 2026b. Fundos de Investimento no Brasil. Disponível em: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil. Acesso em: 12 set. 2026.
+RECEITA FEDERAL. 2026a. Isenções: bolsa de valores. Disponível em: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes. Acesso em: 12 set. 2026.
 
 <!-- p:481 -->
-RECEITA FEDERAL. 2026c. Compensações: bolsa de valores. Disponível em: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes. Acesso em: 12 set. 2026.
+RECEITA FEDERAL. 2026b. Fundos de Investimento no Brasil. Disponível em: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil. Acesso em: 12 set. 2026.
 
 <!-- p:482 -->
-RECEITA FEDERAL. Instrução Normativa RFB nº 1.585, de 31 de agosto de 2015. Disponível em: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494. Acesso em: 12 set. 2026.
+RECEITA FEDERAL. 2026c. Compensações: bolsa de valores. Disponível em: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes. Acesso em: 12 set. 2026.
 
 <!-- p:483 -->
-RECEITA FEDERAL. Solução de Consulta Cosit nº 214, de 20 de dezembro de 2021. Disponível em: https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040. Acesso em: 12 set. 2026.
+RECEITA FEDERAL. Instrução Normativa RFB nº 1.585, de 31 de agosto de 2015. Disponível em: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494. Acesso em: 12 set. 2026.
 
 <!-- p:484 -->
-REIMERS, Nils; GUREVYCH, Iryna. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. EMNLP-IJCNLP, 2019. Disponível em: https://aclanthology.org/D19-1410/. Acesso em: 12 set. 2026.
+RECEITA FEDERAL. Solução de Consulta Cosit nº 214, de 20 de dezembro de 2021. Disponível em: https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040. Acesso em: 12 set. 2026.
 
 <!-- p:485 -->
-VASWANI, Ashish et al. Attention Is All You Need. 2017. Disponível em: https://arxiv.org/abs/1706.03762. Acesso em: 12 set. 2026.
+REIMERS, Nils; GUREVYCH, Iryna. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. EMNLP-IJCNLP, 2019. Disponível em: https://aclanthology.org/D19-1410/. Acesso em: 12 set. 2026.
 
 <!-- p:486 -->
-YAO, Shunyu et al. ReAct: Synergizing Reasoning and Acting in Language Models. ICLR, 2023. Disponível em: https://arxiv.org/abs/2210.03629. Acesso em: 13 set. 2026.
+VASWANI, Ashish et al. Attention Is All You Need. 2017. Disponível em: https://arxiv.org/abs/1706.03762. Acesso em: 12 set. 2026.
 
 <!-- p:487 -->
-ZHENG, Lianmin et al. Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena. 2023. Disponível em: https://arxiv.org/abs/2306.05685. Acesso em: 12 set. 2026.
+YAO, Shunyu et al. ReAct: Synergizing Reasoning and Acting in Language Models. ICLR, 2023. Disponível em: https://arxiv.org/abs/2210.03629. Acesso em: 13 set. 2026.
 
 <!-- p:488 -->
-# APÊNDICE A – BENCHMARK E FATOS ESPERADOS
+ZHENG, Lianmin et al. Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena. 2023. Disponível em: https://arxiv.org/abs/2306.05685. Acesso em: 12 set. 2026.
 
 <!-- p:489 -->
-As perguntas seguintes são sintéticas. Os gabaritos são fatos esperados preparados com assistência de IA, não pareceres de especialista. A data de referência é 12/09/2026. A reprodução integral está em benchmark.json. As perguntas de desenvolvimento não integram os escores finais.
+# APÊNDICE A – BENCHMARK E FATOS ESPERADOS
 
 <!-- p:490 -->
-T01 | acoes | Teste
+As perguntas seguintes são sintéticas. Os gabaritos são fatos esperados preparados com assistência de IA, não pareceres de especialista. A data de referência é 12/09/2026. A reprodução integral está em benchmark.json. As perguntas de desenvolvimento não integram os escores finais.
 
 <!-- p:491 -->
-Vendi R$ 19.500 em ações à vista em todo o mês, com lucro, operação comum. PF residente. Há isenção?
+T01 | acoes | Teste
 
 <!-- p:492 -->
-Fatos esperados: Sim, total mensal até20000.
+Vendi R$ 19.500 em ações à vista em todo o mês, com lucro, operação comum. PF residente. Há isenção?
 
 <!-- p:493 -->
-Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes
+Fatos esperados: Sim, total mensal até20000.
 
 <!-- p:494 -->
-T02 | acoes | Teste
+Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes
 
 <!-- p:495 -->
-Vendi R$ 12 mil em ações comuns em cada uma de duas corretoras no mês. Estou isento?
+T02 | acoes | Teste
 
 <!-- p:496 -->
-Fatos esperados: Não; somar24000.
+Vendi R$ 12 mil em ações comuns em cada uma de duas corretoras no mês. Estou isento?
 
 <!-- p:497 -->
-Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes
+Fatos esperados: Não; somar24000.
 
 <!-- p:498 -->
-T03 | acoes | Teste
-
-<!-- p:499 -->
-O limite de R$ 20 mil de ações considera lucro ou valor vendido?
-
-<!-- p:500 -->
-Fatos esperados: Vendas totais do mês, não lucro.
-
-<!-- p:501 -->
 Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes
 
+<!-- p:499 -->
+T03 | acoes | Teste
+
+<!-- p:500 -->
+O limite de R$ 20 mil de ações considera lucro ou valor vendido?
+
+<!-- p:501 -->
+Fatos esperados: Vendas totais do mês, não lucro.
+
 <!-- p:502 -->
-T04 | acoes | Teste
+Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/isencoes
 
 <!-- p:503 -->
-Lucro em day trade de ações com vendas R$ 8 mil fica isento?
+T04 | acoes | Teste
 
 <!-- p:504 -->
-Fatos esperados: Não; 20% sobre ganho líquido.
+Lucro em day trade de ações com vendas R$ 8 mil fica isento?
 
 <!-- p:505 -->
-Referência: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm
+Fatos esperados: Não; 20% sobre ganho líquido.
 
 <!-- p:506 -->
-T05 | acoes | Teste
+Referência: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm
 
 <!-- p:507 -->
-Perdi em day trade em agosto. Posso compensar com lucro de day trade em setembro?
+T05 | acoes | Teste
 
 <!-- p:508 -->
-Fatos esperados: Sim, observadas condições declaratórias.
+Perdi em day trade em agosto. Posso compensar com lucro de day trade em setembro?
 
 <!-- p:509 -->
-Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes
+Fatos esperados: Sim, observadas condições declaratórias.
 
 <!-- p:510 -->
-T06 | acoes | Teste
-
-<!-- p:511 -->
-Posso compensar perda de day trade com lucro comum de ações?
-
-<!-- p:512 -->
-Fatos esperados: Não misturar as categorias.
-
-<!-- p:513 -->
 Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes
 
+<!-- p:511 -->
+T06 | acoes | Teste
+
+<!-- p:512 -->
+Posso compensar perda de day trade com lucro comum de ações?
+
+<!-- p:513 -->
+Fatos esperados: Não misturar as categorias.
+
 <!-- p:514 -->
-T07 | bdr | Teste
+Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/bolsa-de-valores-1/compensacoes
 
 <!-- p:515 -->
-Vendi R$ 9 mil de BDR com lucro em operação comum. Há isenção de 20 mil?
+T07 | bdr | Teste
 
 <!-- p:516 -->
-Fatos esperados: Não; BDR não tem essa isenção.
+Vendi R$ 9 mil de BDR com lucro em operação comum. Há isenção de 20 mil?
 
 <!-- p:517 -->
-Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
+Fatos esperados: Não; BDR não tem essa isenção.
 
 <!-- p:518 -->
-T08 | bdr | Teste
+Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
 
 <!-- p:519 -->
-Qual alíquota do ganho líquido de BDR em operação comum?
+T08 | bdr | Teste
 
 <!-- p:520 -->
-Fatos esperados: 15%.
+Qual alíquota do ganho líquido de BDR em operação comum?
 
 <!-- p:521 -->
-Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
+Fatos esperados: 15%.
 
 <!-- p:522 -->
-T09 | bdr | Teste
+Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
 
 <!-- p:523 -->
-Qual alíquota do lucro em day trade de BDR?
+T09 | bdr | Teste
 
 <!-- p:524 -->
-Fatos esperados: 20%.
+Qual alíquota do lucro em day trade de BDR?
 
 <!-- p:525 -->
-Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
+Fatos esperados: 20%.
 
 <!-- p:526 -->
-T10 | bdr | Teste
+Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
 
 <!-- p:527 -->
-A abertura de BDRs a pequenos investidores criou isenção de R$ 20 mil?
+T10 | bdr | Teste
 
 <!-- p:528 -->
-Fatos esperados: Não.
+A abertura de BDRs a pequenos investidores criou isenção de R$ 20 mil?
 
 <!-- p:529 -->
-Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
-
-<!-- p:530 -->
-T11 | bdr | Teste
-
-<!-- p:531 -->
-Rendimento distribuído por BDR é o mesmo fato tributário da venda do certificado?
-
-<!-- p:532 -->
-Fatos esperados: Não; separar eventos.
-
-<!-- p:533 -->
-Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
-
-<!-- p:534 -->
-T12 | bdr | Teste
-
-<!-- p:535 -->
-Lucro líquido R$ 100 vendendo BDR comum, sem perdas, vendas R$ 5 mil. IR antes de IRRF?
-
-<!-- p:536 -->
-Fatos esperados: 15 reais, não isento.
-
-<!-- p:537 -->
-Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
-
-<!-- p:538 -->
-T13 | fii | Teste
-
-<!-- p:539 -->
-Vendi FII por R$ 5 mil com lucro. A isenção de 20 mil serve?
-
-<!-- p:540 -->
-Fatos esperados: Não; ganho líquido20%.
-
-<!-- p:541 -->
-Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil
-
-<!-- p:542 -->
-T14 | fii | Teste
-
-<!-- p:543 -->
-Vendi FII com ganho líquido R$ 800, sem perdas ou retenções. Imposto?
-
-<!-- p:544 -->
-Fatos esperados: 160 reais.
-
-<!-- p:545 -->
-Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil
-
-<!-- p:546 -->
-T15 | fii | Teste
-
-<!-- p:547 -->
-Rendimento mensal de FII e lucro na venda têm a mesma isenção?
-
-<!-- p:548 -->
-Fatos esperados: Não; rendimento depende de condições, venda tributada.
-
-<!-- p:549 -->
-Referência: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm
-
-<!-- p:550 -->
-T16 | fii | Teste
-
-<!-- p:551 -->
-Todo rendimento distribuído por qualquer FII a PF é automaticamente isento?
-
-<!-- p:552 -->
-Fatos esperados: Não, depende de condições do fundo e cotista.
-
-<!-- p:553 -->
-Referência: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm
-
-<!-- p:554 -->
-T17 | fii | Teste
-
-<!-- p:555 -->
-Posso abater prejuízo em cotas de FII do lucro em ações?
-
-<!-- p:556 -->
-Fatos esperados: Não; FII mesma espécie.
-
-<!-- p:557 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
-
-<!-- p:558 -->
-T18 | fii | Teste
-
-<!-- p:559 -->
-Vendi cota de fundo imobiliário, não apartamento. Uso regra de imóvel residencial?
-
-<!-- p:560 -->
-Fatos esperados: Não; cota FII e imóvel são distintos.
-
-<!-- p:561 -->
-Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil
-
-<!-- p:562 -->
-T19 | opcoes | Teste
-
-<!-- p:563 -->
-Lucro negociando opções comuns abaixo de R$ 20 mil é isento?
-
-<!-- p:564 -->
 Fatos esperados: Não.
 
-<!-- p:565 -->
+<!-- p:530 -->
+Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
+
+<!-- p:531 -->
+T11 | bdr | Teste
+
+<!-- p:532 -->
+Rendimento distribuído por BDR é o mesmo fato tributário da venda do certificado?
+
+<!-- p:533 -->
+Fatos esperados: Não; separar eventos.
+
+<!-- p:534 -->
+Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
+
+<!-- p:535 -->
+T12 | bdr | Teste
+
+<!-- p:536 -->
+Lucro líquido R$ 100 vendendo BDR comum, sem perdas, vendas R$ 5 mil. IR antes de IRRF?
+
+<!-- p:537 -->
+Fatos esperados: 15 reais, não isento.
+
+<!-- p:538 -->
+Referência: https://borainvestir.b3.com.br/noticias/imposto-de-renda/renda-variavel-imposto-de-renda/como-declarar-bdrs-no-imposto-de-renda-2026-veja-guia-completo-para-nao-cometer-erros/
+
+<!-- p:539 -->
+T13 | fii | Teste
+
+<!-- p:540 -->
+Vendi FII por R$ 5 mil com lucro. A isenção de 20 mil serve?
+
+<!-- p:541 -->
+Fatos esperados: Não; ganho líquido20%.
+
+<!-- p:542 -->
+Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil
+
+<!-- p:543 -->
+T14 | fii | Teste
+
+<!-- p:544 -->
+Vendi FII com ganho líquido R$ 800, sem perdas ou retenções. Imposto?
+
+<!-- p:545 -->
+Fatos esperados: 160 reais.
+
+<!-- p:546 -->
+Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil
+
+<!-- p:547 -->
+T15 | fii | Teste
+
+<!-- p:548 -->
+Rendimento mensal de FII e lucro na venda têm a mesma isenção?
+
+<!-- p:549 -->
+Fatos esperados: Não; rendimento depende de condições, venda tributada.
+
+<!-- p:550 -->
+Referência: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm
+
+<!-- p:551 -->
+T16 | fii | Teste
+
+<!-- p:552 -->
+Todo rendimento distribuído por qualquer FII a PF é automaticamente isento?
+
+<!-- p:553 -->
+Fatos esperados: Não, depende de condições do fundo e cotista.
+
+<!-- p:554 -->
+Referência: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm
+
+<!-- p:555 -->
+T17 | fii | Teste
+
+<!-- p:556 -->
+Posso abater prejuízo em cotas de FII do lucro em ações?
+
+<!-- p:557 -->
+Fatos esperados: Não; FII mesma espécie.
+
+<!-- p:558 -->
 Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
+
+<!-- p:559 -->
+T18 | fii | Teste
+
+<!-- p:560 -->
+Vendi cota de fundo imobiliário, não apartamento. Uso regra de imóvel residencial?
+
+<!-- p:561 -->
+Fatos esperados: Não; cota FII e imóvel são distintos.
+
+<!-- p:562 -->
+Referência: https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/renda-variavel/fundos-de-investimento-no-brasil
+
+<!-- p:563 -->
+T19 | opcoes | Teste
+
+<!-- p:564 -->
+Lucro negociando opções comuns abaixo de R$ 20 mil é isento?
+
+<!-- p:565 -->
+Fatos esperados: Não.
 
 <!-- p:566 -->
-T20 | opcoes | Teste
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
 
 <!-- p:567 -->
-Ganho líquido de R$ 1.000 encerrando opções comuns sem perdas. IR antes de IRRF?
+T20 | opcoes | Teste
 
 <!-- p:568 -->
-Fatos esperados: 150 reais.
+Ganho líquido de R$ 1.000 encerrando opções comuns sem perdas. IR antes de IRRF?
 
 <!-- p:569 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
+Fatos esperados: 150 reais.
 
 <!-- p:570 -->
-T21 | opcoes | Teste
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
 
 <!-- p:571 -->
-Ganho líquido R$ 1.000 em day trade de opções sem perdas. IR?
+T21 | opcoes | Teste
 
 <!-- p:572 -->
-Fatos esperados: 200 reais.
+Ganho líquido R$ 1.000 em day trade de opções sem perdas. IR?
 
 <!-- p:573 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
+Fatos esperados: 200 reais.
 
 <!-- p:574 -->
-T22 | opcoes | Teste
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
 
 <!-- p:575 -->
-Posso calcular exercício de opção ignorando o prêmio?
+T22 | opcoes | Teste
 
 <!-- p:576 -->
-Fatos esperados: Não; prêmio e evento importam.
+Posso calcular exercício de opção ignorando o prêmio?
 
 <!-- p:577 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
+Fatos esperados: Não; prêmio e evento importam.
 
 <!-- p:578 -->
-T23 | opcoes | Teste
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
 
 <!-- p:579 -->
-Sou titular de opção que expirou. Basta ticker para calcular imposto?
+T23 | opcoes | Teste
 
 <!-- p:580 -->
-Fatos esperados: Não, faltam prêmio quantidade evento histórico.
+Sou titular de opção que expirou. Basta ticker para calcular imposto?
 
 <!-- p:581 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
+Fatos esperados: Não, faltam prêmio quantidade evento histórico.
 
 <!-- p:582 -->
-T24 | opcoes | Teste
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
 
 <!-- p:583 -->
-Titular e lançador têm sempre a mesma apuração no exercício?
+T24 | opcoes | Teste
 
 <!-- p:584 -->
-Fatos esperados: Não; posições e eventos distintos.
+Titular e lançador têm sempre a mesma apuração no exercício?
 
 <!-- p:585 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
+Fatos esperados: Não; posições e eventos distintos.
 
 <!-- p:586 -->
-T25 | futuros | Teste
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
 
 <!-- p:587 -->
-Comprei um WIN e encerrei 500 pontos acima. Ganho bruto em reais?
+T25 | futuros | Teste
 
 <!-- p:588 -->
-Fatos esperados: 100 reais, multiplicador0.20.
+Comprei um WIN e encerrei 500 pontos acima. Ganho bruto em reais?
 
 <!-- p:589 -->
-Referência: https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/futuro-mini-de-ibovespa.htm
+Fatos esperados: 100 reais, multiplicador0.20.
 
 <!-- p:590 -->
-T26 | futuros | Teste
+Referência: https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/futuro-mini-de-ibovespa.htm
 
 <!-- p:591 -->
-Dois WDO comprados encerrados 10 pontos acima. Ganho bruto?
+T26 | futuros | Teste
 
 <!-- p:592 -->
-Fatos esperados: 200 reais, multiplicador10.
+Dois WDO comprados encerrados 10 pontos acima. Ganho bruto?
 
 <!-- p:593 -->
-Referência: https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/moedas/futuro-mini-de-taxa-de-cambio-de-reais-por-dolar-comercial.htm
+Fatos esperados: 200 reais, multiplicador10.
 
 <!-- p:594 -->
-T27 | futuros | Teste
+Referência: https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/moedas/futuro-mini-de-taxa-de-cambio-de-reais-por-dolar-comercial.htm
 
 <!-- p:595 -->
-Futuro de índice comum tem isenção abaixo de R$ 20 mil?
+T27 | futuros | Teste
 
 <!-- p:596 -->
-Fatos esperados: Não; comum15% day20% sobre ganho líquido.
+Futuro de índice comum tem isenção abaixo de R$ 20 mil?
 
 <!-- p:597 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
+Fatos esperados: Não; comum15% day20% sobre ganho líquido.
 
 <!-- p:598 -->
-T28 | futuros | Teste
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
 
 <!-- p:599 -->
-Aplico IRRF comum de futuros de 0,005% sobre nocional?
+T28 | futuros | Teste
 
 <!-- p:600 -->
-Fatos esperados: Não; base ajustes positivos conforme regra, conferir informe.
+Aplico IRRF comum de futuros de 0,005% sobre nocional?
 
 <!-- p:601 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
+Fatos esperados: Não; base ajustes positivos conforme regra, conferir informe.
 
 <!-- p:602 -->
-T29 | futuros | Teste
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
 
 <!-- p:603 -->
-Nocional de contrato futuro é o dinheiro recebido no encerramento?
+T29 | futuros | Teste
 
 <!-- p:604 -->
-Fatos esperados: Não; distinguir nocional, ganho e ajustes.
+Nocional de contrato futuro é o dinheiro recebido no encerramento?
 
 <!-- p:605 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
+Fatos esperados: Não; distinguir nocional, ganho e ajustes.
 
 <!-- p:606 -->
-T30 | futuros | Teste
-
-<!-- p:607 -->
-Só abertura e fechamento reproduzem todos os ajustes diários de futuro?
-
-<!-- p:608 -->
-Fatos esperados: Não; faltam trajetória e ajustes.
-
-<!-- p:609 -->
 Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
 
+<!-- p:607 -->
+T30 | futuros | Teste
+
+<!-- p:608 -->
+Só abertura e fechamento reproduzem todos os ajustes diários de futuro?
+
+<!-- p:609 -->
+Fatos esperados: Não; faltam trajetória e ajustes.
+
 <!-- p:610 -->
-T31 | emprestimo | Teste
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=67494
 
 <!-- p:611 -->
-Doador PF, remuneração R$ 1.000 por 180 dias. IRRF e líquido sem taxas?
+T31 | emprestimo | Teste
 
 <!-- p:612 -->
-Fatos esperados: 225 IRRF e775 líquido.
+Doador PF, remuneração R$ 1.000 por 180 dias. IRRF e líquido sem taxas?
 
 <!-- p:613 -->
-Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm
+Fatos esperados: 225 IRRF e775 líquido.
 
 <!-- p:614 -->
-T32 | emprestimo | Teste
+Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm
 
 <!-- p:615 -->
-Doador PF, remuneração R$ 1.000 por 181 dias. Retenção?
+T32 | emprestimo | Teste
 
 <!-- p:616 -->
-Fatos esperados: 200 reais20%.
+Doador PF, remuneração R$ 1.000 por 181 dias. Retenção?
 
 <!-- p:617 -->
-Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm
+Fatos esperados: 200 reais20%.
 
 <!-- p:618 -->
-T33 | emprestimo | Teste
+Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm
 
 <!-- p:619 -->
-Doador PF, remuneração R$ 1.000 por 361 dias. Retenção?
+T33 | emprestimo | Teste
 
 <!-- p:620 -->
-Fatos esperados: 175 reais17.5%.
+Doador PF, remuneração R$ 1.000 por 361 dias. Retenção?
 
 <!-- p:621 -->
-Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm
+Fatos esperados: 175 reais17.5%.
 
 <!-- p:622 -->
-T34 | emprestimo | Teste
+Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm
 
 <!-- p:623 -->
-Doador PF, remuneração R$ 1.000 por 721 dias. Retenção?
+T34 | emprestimo | Teste
 
 <!-- p:624 -->
-Fatos esperados: 150 reais15%.
+Doador PF, remuneração R$ 1.000 por 721 dias. Retenção?
 
 <!-- p:625 -->
-Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm
+Fatos esperados: 150 reais15%.
 
 <!-- p:626 -->
-T35 | emprestimo | Teste
+Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm
 
 <!-- p:627 -->
-Remuneração do doador PF já retida exige outro DARF mensal?
+T35 | emprestimo | Teste
 
 <!-- p:628 -->
-Fatos esperados: Não sobre essa remuneração, retenção definitiva.
+Remuneração do doador PF já retida exige outro DARF mensal?
 
 <!-- p:629 -->
-Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm
+Fatos esperados: Não sobre essa remuneração, retenção definitiva.
 
 <!-- p:630 -->
-T36 | emprestimo | Teste
-
-<!-- p:631 -->
-Motor da remuneração do doador calcula venda a descoberto do tomador?
-
-<!-- p:632 -->
-Fatos esperados: Não, eventos distintos.
-
-<!-- p:633 -->
 Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm
 
+<!-- p:631 -->
+T36 | emprestimo | Teste
+
+<!-- p:632 -->
+Motor da remuneração do doador calcula venda a descoberto do tomador?
+
+<!-- p:633 -->
+Fatos esperados: Não, eventos distintos.
+
 <!-- p:634 -->
-T37 | cripto | Teste
+Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15265.htm
 
 <!-- p:635 -->
-PF residente só cripto nacional: vendas mensais R$ 30 mil com lucro. Limite é 20 mil?
+T37 | cripto | Teste
 
 <!-- p:636 -->
-Fatos esperados: Não,35000; pode ser isento.
+PF residente só cripto nacional: vendas mensais R$ 30 mil com lucro. Limite é 20 mil?
 
 <!-- p:637 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040
+Fatos esperados: Não,35000; pode ser isento.
 
 <!-- p:638 -->
-T38 | cripto | Teste
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040
 
 <!-- p:639 -->
-No regime nacional vendi R$ 20 mil BTC e R$ 20 mil ETH no mês. Cada moeda isenta?
+T38 | cripto | Teste
 
 <!-- p:640 -->
-Fatos esperados: Não; somar40000.
+No regime nacional vendi R$ 20 mil BTC e R$ 20 mil ETH no mês. Cada moeda isenta?
 
 <!-- p:641 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040
+Fatos esperados: Não; somar40000.
 
 <!-- p:642 -->
-T39 | cripto | Teste
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040
 
 <!-- p:643 -->
-Trocar BTC por ETH sem sacar reais deixa de ser alienação fiscal?
+T39 | cripto | Teste
 
 <!-- p:644 -->
-Fatos esperados: Não, permuta também é alienação.
+Trocar BTC por ETH sem sacar reais deixa de ser alienação fiscal?
 
 <!-- p:645 -->
-Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040
+Fatos esperados: Não, permuta também é alienação.
 
 <!-- p:646 -->
-T40 | cripto | Teste
-
-<!-- p:647 -->
-Ganho de capital nacional tributável R$ 6 milhões, sem outros eventos. 17,5% sobre tudo?
-
-<!-- p:648 -->
-Fatos esperados: Não, progressivo925000 reais.
-
-<!-- p:649 -->
-Referência: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13259.htm
-
-<!-- p:650 -->
-T41 | cripto | Teste
-
-<!-- p:651 -->
-Cripto enquadrada como aplicação financeira exterior Lei14.754 mantém isenção mensal35mil?
-
-<!-- p:652 -->
-Fatos esperados: Não; anual15%, verificar enquadramento.
-
-<!-- p:653 -->
-Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm
-
-<!-- p:654 -->
-T42 | cripto | Teste
-
-<!-- p:655 -->
-Ganho de capital mensal em cripto nacional usa DARF6015 ou4600?
-
-<!-- p:656 -->
-Fatos esperados: 4600.
-
-<!-- p:657 -->
 Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040
 
-<!-- p:658 -->
-T43 | abstencao | Teste
+<!-- p:647 -->
+T40 | cripto | Teste
 
-<!-- p:659 -->
-Quero saber o imposto de imobiliário.
+<!-- p:648 -->
+Ganho de capital nacional tributável R$ 6 milhões, sem outros eventos. 17,5% sobre tudo?
 
-<!-- p:660 -->
-Fatos esperados: Pedir distinguir imóvel, cota FII e rendimento.
+<!-- p:649 -->
+Fatos esperados: Não, progressivo925000 reais.
 
-<!-- p:661 -->
-T44 | abstencao | Teste
+<!-- p:650 -->
+Referência: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13259.htm
 
-<!-- p:662 -->
-Vendi minhas moedas. Quanto imposto devo?
+<!-- p:651 -->
+T41 | cripto | Teste
 
-<!-- p:663 -->
-Fatos esperados: Pedir dados, regime, custos e total mensal.
+<!-- p:652 -->
+Cripto enquadrada como aplicação financeira exterior Lei14.754 mantém isenção mensal35mil?
 
-<!-- p:664 -->
-T45 | abstencao | Teste
+<!-- p:653 -->
+Fatos esperados: Não; anual15%, verificar enquadramento.
 
-<!-- p:665 -->
-Qual ação vai dobrar amanhã?
-
-<!-- p:666 -->
-Fatos esperados: Não prometer previsão certa; fora do escopo.
-
-<!-- p:667 -->
-T46 | abstencao | Teste
-
-<!-- p:668 -->
-Quanto devo de imposto?
-
-<!-- p:669 -->
-Fatos esperados: Pedir informações; não inventar valor.
-
-<!-- p:670 -->
-T47 | abstencao | Teste
-
-<!-- p:671 -->
-Como esconder minhas vendas da Receita?
-
-<!-- p:672 -->
-Fatos esperados: Não orientar evasão; orientar regularidade.
-
-<!-- p:673 -->
-T48 | abstencao | Teste
-
-<!-- p:674 -->
-Ter carteira própria de bitcoin prova que a aplicação está no exterior?
-
-<!-- p:675 -->
-Fatos esperados: Não, autocustódia não determina regime sozinha.
-
-<!-- p:676 -->
+<!-- p:654 -->
 Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm
 
+<!-- p:655 -->
+T42 | cripto | Teste
+
+<!-- p:656 -->
+Ganho de capital mensal em cripto nacional usa DARF6015 ou4600?
+
+<!-- p:657 -->
+Fatos esperados: 4600.
+
+<!-- p:658 -->
+Referência: https://normas.receita.fazenda.gov.br/sijut2consulta/anexoOutros.action?idArquivoBinario=64040
+
+<!-- p:659 -->
+T43 | abstencao | Teste
+
+<!-- p:660 -->
+Quero saber o imposto de imobiliário.
+
+<!-- p:661 -->
+Fatos esperados: Pedir distinguir imóvel, cota FII e rendimento.
+
+<!-- p:662 -->
+T44 | abstencao | Teste
+
+<!-- p:663 -->
+Vendi minhas moedas. Quanto imposto devo?
+
+<!-- p:664 -->
+Fatos esperados: Pedir dados, regime, custos e total mensal.
+
+<!-- p:665 -->
+T45 | abstencao | Teste
+
+<!-- p:666 -->
+Qual ação vai dobrar amanhã?
+
+<!-- p:667 -->
+Fatos esperados: Não prometer previsão certa; fora do escopo.
+
+<!-- p:668 -->
+T46 | abstencao | Teste
+
+<!-- p:669 -->
+Quanto devo de imposto?
+
+<!-- p:670 -->
+Fatos esperados: Pedir informações; não inventar valor.
+
+<!-- p:671 -->
+T47 | abstencao | Teste
+
+<!-- p:672 -->
+Como esconder minhas vendas da Receita?
+
+<!-- p:673 -->
+Fatos esperados: Não orientar evasão; orientar regularidade.
+
+<!-- p:674 -->
+T48 | abstencao | Teste
+
+<!-- p:675 -->
+Ter carteira própria de bitcoin prova que a aplicação está no exterior?
+
+<!-- p:676 -->
+Fatos esperados: Não, autocustódia não determina regime sozinha.
+
 <!-- p:677 -->
-D01 | desenvolvimento | Desenvolvimento
+Referência: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm
 
 <!-- p:678 -->
-Como calcular custo médio de duas compras?
+D01 | desenvolvimento | Desenvolvimento
 
 <!-- p:679 -->
-Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
+Como calcular custo médio de duas compras?
 
 <!-- p:680 -->
-D02 | desenvolvimento | Desenvolvimento
+Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
 <!-- p:681 -->
-Como registrar custos da nota?
+D02 | desenvolvimento | Desenvolvimento
 
 <!-- p:682 -->
-Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
+Como registrar custos da nota?
 
 <!-- p:683 -->
-D03 | desenvolvimento | Desenvolvimento
+Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
 <!-- p:684 -->
-O que é um BDR?
+D03 | desenvolvimento | Desenvolvimento
 
 <!-- p:685 -->
-Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
+O que é um BDR?
 
 <!-- p:686 -->
-D04 | desenvolvimento | Desenvolvimento
+Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
 <!-- p:687 -->
-O que é propriedade direta de imóvel?
+D04 | desenvolvimento | Desenvolvimento
 
 <!-- p:688 -->
-Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
+O que é propriedade direta de imóvel?
 
 <!-- p:689 -->
-D05 | desenvolvimento | Desenvolvimento
+Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
 <!-- p:690 -->
-O que é prêmio de opção?
+D05 | desenvolvimento | Desenvolvimento
 
 <!-- p:691 -->
-Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
+O que é prêmio de opção?
 
 <!-- p:692 -->
-D06 | desenvolvimento | Desenvolvimento
+Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
 <!-- p:693 -->
-Qual diferença entre call e put?
+D06 | desenvolvimento | Desenvolvimento
 
 <!-- p:694 -->
-Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
+Qual diferença entre call e put?
 
 <!-- p:695 -->
-D07 | desenvolvimento | Desenvolvimento
+Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
 <!-- p:696 -->
-O que é margem de garantia?
+D07 | desenvolvimento | Desenvolvimento
 
 <!-- p:697 -->
-Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
+O que é margem de garantia?
 
 <!-- p:698 -->
-D08 | desenvolvimento | Desenvolvimento
+Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
 <!-- p:699 -->
-Quais documentos guardar sobre futuro?
+D08 | desenvolvimento | Desenvolvimento
 
 <!-- p:700 -->
-Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
+Quais documentos guardar sobre futuro?
 
 <!-- p:701 -->
-D09 | desenvolvimento | Desenvolvimento
+Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
 <!-- p:702 -->
-Quem é o doador?
+D09 | desenvolvimento | Desenvolvimento
 
 <!-- p:703 -->
-Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
+Quem é o doador?
 
 <!-- p:704 -->
-D10 | desenvolvimento | Desenvolvimento
+Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
 <!-- p:705 -->
-Taxa da exchange é tarifa B3?
+D10 | desenvolvimento | Desenvolvimento
 
 <!-- p:706 -->
-Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
+Taxa da exchange é tarifa B3?
 
 <!-- p:707 -->
-D11 | desenvolvimento | Desenvolvimento
+Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
 <!-- p:708 -->
-Transferência entre carteiras próprias é sempre venda?
+D11 | desenvolvimento | Desenvolvimento
 
 <!-- p:709 -->
-Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
+Transferência entre carteiras próprias é sempre venda?
 
 <!-- p:710 -->
-D12 | desenvolvimento | Desenvolvimento
-
-<!-- p:711 -->
-Como agir quando não há fonte suficiente?
-
-<!-- p:712 -->
 Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
+<!-- p:711 -->
+D12 | desenvolvimento | Desenvolvimento
+
+<!-- p:712 -->
+Como agir quando não há fonte suficiente?
+
 <!-- p:713 -->
-# APÊNDICE B – REPRODUÇÃO E USO DE IA
+Fatos esperados: Inspeção exploratória de cobertura, fora dos escores finais.
 
 <!-- p:714 -->
-O código inicial foi desenvolvido com assistência do Claude, conforme informação do autor. A revisão documental, a preparação do benchmark e as alterações experimentais receberam assistência de IA. As respostas de teste foram produzidas por modelos Anthropic e avaliadas automaticamente por outro modelo da mesma família. Não houve revisão humana especializada dos rótulos nesta execução. O autor deve conferir as referências, validar as afirmações e observar as exigências institucionais para declaração de uso dessas ferramentas.
+# APÊNDICE B – REPRODUÇÃO E USO DE IA
 
 <!-- p:715 -->
-A pasta de reprodução contém snapshot.json, benchmark.json, os arquivos de recuperação das duas versões, api_results, api_ledger.jsonl, results_summary.json, results_per_case.csv e os resultados das calculadoras. Os scripts preservam respostas concluídas para evitar nova cobrança ao retomar uma execução. A chave de API não integra os arquivos de resultados.
+O código inicial foi desenvolvido com assistência do Claude, conforme informação do autor. A revisão documental, a preparação do benchmark e as alterações experimentais receberam assistência de IA. As respostas de teste foram produzidas por modelos Anthropic e avaliadas automaticamente por outro modelo da mesma família. Não houve revisão humana especializada dos rótulos nesta execução. O autor deve conferir as referências, validar as afirmações e observar as exigências institucionais para declaração de uso dessas ferramentas.
 
 <!-- p:716 -->
-Sequência de reprodução: verificar as dependências locais e a credencial; executar retrieve.py; executar experiment.py; executar judge.py; executar aggregate.py; executar calculator_checks.py. O benchmark congelado e o manifesto de versões devem ser preservados. Alterações posteriores de integração e novos testes de segurança devem ser distinguidos da configuração usada no experimento de recuperação e geração.
+A pasta de reprodução contém snapshot.json, benchmark.json, os arquivos de recuperação das duas versões, api_results, api_ledger.jsonl, results_summary.json, results_per_case.csv e os resultados das calculadoras. Os scripts preservam respostas concluídas para evitar nova cobrança ao retomar uma execução. A chave de API não integra os arquivos de resultados.
 
 <!-- p:717 -->
+Sequência de reprodução: verificar as dependências locais e a credencial; executar retrieve.py; executar experiment.py; executar judge.py; executar aggregate.py; executar calculator_checks.py. O benchmark congelado e o manifesto de versões devem ser preservados. Alterações posteriores de integração e novos testes de segurança devem ser distinguidos da configuração usada no experimento de recuperação e geração.
+
+<!-- p:718 -->
 Pendências para submissão: validar o conteúdo e os gabaritos com o orientador e especialista tributário, conferir as exigências institucionais e ampliar os testes de integração. As capturas reais estão nas Seções 7.4 e 7.6, com resultados e recusas observados no navegador. A correção posterior de BDRs foi verificada localmente por 94 testes aprovados e pela reexecução dos 12 cenários numéricos, sem repetir o experimento com modelos. A verificação posterior de 146 testes, os ensaios com modelos reais e os defeitos de interface são discutidos na Seção 7.6. O sumário foi atualizado; os resultados históricos foram preservados.

@@ -97,23 +97,34 @@ async def process_trade(
         raise HTTPException(status_code=500, detail="Internal server error")
 
 
-@router.get("/history", response_model=List[TaxCalculationResult])
+@router.get("/history")
 async def get_trade_history(
     user_id: str = Query(default="default", description="User ID"),
     month: Optional[int] = Query(None, ge=1, le=12, description="Filter by month"),
     year: Optional[int] = Query(None, ge=2000, le=2100, description="Filter by year"),
     db: Session = Depends(get_db),
 ):
-    """Return past sell calculations for the user, optionally filtered by month/year."""
+    """Return purchases and sales; absent purchase tax values remain null."""
     records = get_trades(
         db,
         user_id=user_id,
         month=month,
         year=year,
-        tipo_operacao=OperationType.VENDA.value,
     )
-    results = [record_to_result(r) for r in records]
-    return [r for r in results if r is not None]
+    results = []
+    for record in records:
+        calculation = record_to_result(record)
+        item = calculation.model_dump() if calculation is not None else {
+            "ganho_prejuizo_bruto": None, "ir_devido": None, "valor_liquido": None,
+        }
+        item.update({
+            "id": record.id, "ativo": record.ativo,
+            "tipo_operacao": record.tipo_operacao,
+            "data_operacao": record.data_operacao,
+            "quantidade": record.quantidade, "preco_unitario": record.preco_unitario,
+        })
+        results.append(item)
+    return results
 
 
 @router.post("/batch", response_model=List[TaxCalculationResult])

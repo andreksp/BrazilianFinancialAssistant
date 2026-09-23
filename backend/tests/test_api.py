@@ -225,8 +225,8 @@ class TestTradeHistory:
         assert len(history) == 1
         assert history[0]["ativo"] == "PETR4"
 
-    def test_buy_does_not_appear_in_history(self, client):
-        """Buy trades (no tax calc) are not returned in history."""
+    def test_buy_appears_in_history_without_tax(self, client):
+        """Purchases are visible without fabricated tax calculations."""
         buy = {
             "ativo": "VALE3",
             "tipo_ativo": "acao",
@@ -239,7 +239,26 @@ class TestTradeHistory:
 
         resp = client.get("/api/trades/history")
         assert resp.status_code == 200
-        assert resp.json() == []
+        assert len(resp.json()) == 1
+        assert resp.json()[0]["tipo_operacao"] == "compra"
+        assert resp.json()[0]["ir_devido"] is None
+        assert resp.json()[0]["ativo"] == "VALE3"
+
+    def test_history_keeps_user_and_month_isolation(self, client):
+        buy = {
+            "ativo": "PETR4", "tipo_ativo": "acao", "tipo_operacao": "compra",
+            "quantidade": 30, "preco_unitario": 25, "data_operacao": "2026-09-21",
+        }
+        assert client.post('/api/trades/process?user_id=user123', json=buy).status_code == 200
+        query = '?month=9&year=2026&user_id=user123'
+        history = client.get('/api/trades/history' + query)
+        assert history.status_code == 200
+        assert len(history.json()) == 1
+        assert history.json()[0]['tipo_operacao'] == 'compra'
+        assert client.get('/api/trades/history?user_id=default').json() == []
+        assert client.get('/api/trades/history?user_id=user123&month=8&year=2026').json() == []
+        # Purchase-only months are not a sale tax assessment.
+        assert client.get('/api/calculations/summary' + query).status_code == 404
 
     def test_history_filtered_by_month(self, client):
         """Month filter returns only trades from that month."""

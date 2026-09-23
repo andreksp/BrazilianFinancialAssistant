@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../../services/api.service';
+import { forkJoin, of, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 @Component({
   selector: 'app-historico',
@@ -10,6 +12,7 @@ export class HistoricoComponent {
   mes: number = new Date().getMonth() + 1;
   ano: number = new Date().getFullYear();
   loading = false;
+  loaded = false;
   summary: any = null;
   darf: any = null;
   trades: any[] = [];
@@ -26,28 +29,30 @@ export class HistoricoComponent {
 
   load(): void {
     this.loading = true;
+    this.loaded = false;
     this.error = null;
     this.summary = null;
     this.darf = null;
     this.trades = [];
 
-    this.api.getMonthlySummary(this.mes, this.ano).subscribe({
-      next: (data) => { this.summary = data; },
-      error: (e) => {
-        if (e.status !== 404) {
-          this.error = 'Erro ao carregar resumo mensal.';
-        }
+    forkJoin({
+      summary: this.api.getMonthlySummary(this.mes, this.ano).pipe(
+        catchError(e => e.status === 404 ? of(null) : throwError(() => e))
+      ),
+      darf: this.api.getDarfInfo(this.mes, this.ano),
+      trades: this.api.getTradeHistory(this.mes, this.ano),
+    }).subscribe({
+      next: ({ summary, darf, trades }) => {
+        this.summary = summary;
+        this.darf = summary ? darf : null;
+        this.trades = trades;
+        this.loading = false;
+        this.loaded = true;
       },
-    });
-
-    this.api.getDarfInfo(this.mes, this.ano).subscribe({
-      next: (data) => { this.darf = data; },
-      error: () => {},
-    });
-
-    this.api.getTradeHistory(this.mes, this.ano).subscribe({
-      next: (data) => { this.trades = data; this.loading = false; },
-      error: () => { this.loading = false; },
+      error: () => {
+        this.error = 'Erro ao carregar o período. Tente novamente.';
+        this.loading = false;
+      },
     });
   }
 

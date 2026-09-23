@@ -1,0 +1,42 @@
+[
+  {
+    "tipo": "acao",
+    "aliquota": 0.15,
+    "ganho_bruto": 500.0,
+    "custos": 22.017,
+    "ir_devido": 71.7,
+    "ir_se_base_bruta": 75.0,
+    "ir_se_base_liquida": 71.7,
+    "base_usada": "liquido"
+  },
+  {
+    "tipo": "bdr",
+    "aliquota": 0.15,
+    "ganho_bruto": 500.0,
+    "custos": 22.017,
+    "ir_devido": 71.7,
+    "ir_se_base_bruta": 75.0,
+    "ir_se_base_liquida": 71.7,
+    "base_usada": "liquido"
+  },
+  {
+    "tipo": "fii",
+    "aliquota": 0.2,
+    "ganho_bruto": 500.0,
+    "custos": 22.017,
+    "ir_devido": 100.0,
+    "ir_se_base_bruta": 100.0,
+    "ir_se_base_liquida": 95.6,
+    "base_usada": "bruto"
+  },
+  {
+    "tipo": "opcao",
+    "aliquota": 0.15,
+    "ganho_bruto": 500.0,
+    "custos": 22.017,
+    "ir_devido": 75.0,
+    "ir_se_base_bruta": 75.0,
+    "ir_se_base_liquida": 71.7,
+    "base_usada": "bruto"
+  }
+]

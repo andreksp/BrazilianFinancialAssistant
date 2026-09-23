@@ -40,7 +40,7 @@ class TestFIICalculator:
 
         assert result.aliquota_aplicada == 0.20  # Always 20%, not 15%
         assert result.ganho_prejuizo_bruto == 2000.0  # (150 - 130) * 100
-        assert result.ir_devido == pytest.approx(400.0)  # 2000 * 20%
+        assert result.ir_devido == round((2000 - result.taxas_totais.total) * .20, 2)
 
     def test_day_trade_also_20_percent(self, calculator):
         """Day trade rate is 20% — same as swing trade for FIIs."""
@@ -57,7 +57,7 @@ class TestFIICalculator:
         result = calculator.calculate_result(trade, average_price=100.00)
 
         assert result.aliquota_aplicada == 0.20
-        assert result.ir_devido == pytest.approx(100.0)  # (110-100)*50 * 20%
+        assert result.ir_devido == round((500 - result.taxas_totais.total) * .20, 2)
 
     def test_no_exemption_applied(self, calculator):
         """

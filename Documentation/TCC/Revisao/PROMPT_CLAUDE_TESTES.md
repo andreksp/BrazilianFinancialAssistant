@@ -6,7 +6,7 @@ Objetivo: testar e documentar a integração MCP de execução, sem confundir re
 
 Implementação a verificar:
 - backend/app/mcp_gateway.py abre sessão MCP real via stdio, inicializa e chama fee_policy e calculate_trade.
-- mcp_server/runtime_server.py reutiliza as calculadoras Python; não duplica fórmulas nem persiste operações.
+- mcp_server/server.py reutiliza as calculadoras Python; não duplica fórmulas nem persiste operações.
 - base_agent.py e rotas /api/trades/process e /api/trades/batch usam o gateway. Compras continuam no backend; perguntas sem operação usam RAG/LLM sem cálculo MCP.
 - mcp_server/server.py é o servidor legado de apoio ao desenvolvimento, não o servidor runtime.
 - Dependência: mcp==1.28.0, API v1. Não atualizar silenciosamente para v2.

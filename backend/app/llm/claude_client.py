@@ -157,6 +157,14 @@ class ClaudeClient:
             logger.warning(f"Intent classification failed: {e}")
             return {"tipo": "pergunta", "ativo": None, "confianca": 0.5}
 
+    def tool_turn(self, system_prompt: str, messages: list, tools: list):
+        """One bounded client-tool turn; retain tool_use blocks and stop reason."""
+        return self.client.with_options(timeout=30.0, max_retries=0).messages.create(
+            model=self.model_explainer, max_tokens=2048,
+            system=system_prompt, messages=messages, tools=tools,
+            tool_choice={"type": "auto"},
+        )
+
     def _call_model(self, model: str, system_prompt: str, user_message: str) -> str:
         message = self.client.messages.create(
             model=model,

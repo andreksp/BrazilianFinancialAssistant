@@ -9,7 +9,7 @@ assert '94 testes aprovados' in text
 assert 'apenas FII e a remuneração do doador em empréstimo de ações são hoje operáveis' not in text
 assert 'inserir capturas de tela reais da interface Angular após conexão' not in text
 assert 'bilhões de documentos' not in text
-assert len(doc.tables)==4 and len(doc.inline_shapes)==10
+assert len(doc.tables)==4 and len(doc.inline_shapes)==14
 md=(R/'manuscrito.md').read_text(encoding='utf8')
 chunks=re.split(r'<!-- p:(\d+) -->\s*\n',md)
 template=Document(R/json.loads((R/'correcao_20260913/sync_config.json').read_text(encoding='utf8'))['template'])

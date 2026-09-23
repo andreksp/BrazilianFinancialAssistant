@@ -268,18 +268,16 @@ docker-compose down
   - Store ChromaDB data in a persistent volume (docker volume)
   - Include sample regulations in `/backend/data/` directory for initial seeding
 
-- **Internal MCP Server (Development Tool)**:
-  - Implement as separate Python service using MCP SDK
-  - Does NOT ship with the application (local development only)
-  - Register in `claude.ai/code` settings via MCP configuration
-  - Tools return structured data: rules, examples, validation results, documentation
-  - Example: `get_tax_rules("acao")` returns IR rules specific to stock trades
+- **Application MCP Server**:
+  - Single entry point: `mcp_server/server.py`, using the MCP SDK and stdio
+  - Backend gateway and `.mcp.json` point to the same server
+  - Tools: `fee_policy` and `calculate_trade`
+  - Calculations reuse the Python calculators; tariffs are not fetched live
   
 - **MCP Integration with Claude Code**:
-  - Configure MCP in `.claude/settings.json` or via claude.ai/code UI
-  - Claude automatically calls MCP tools when developing tax/fee calculation modules
-  - Useful for: verifying calculation logic, researching rules, getting worked examples, validating against regulations
-  - MCP data comes from `/backend/data/` directory (regulations, rules, examples)
+  - Project configuration is in `.mcp.json`
+  - Tool calls validate structured inputs and return calculator results
+  - Tool success is not independent legal validation
 
 ## Implementation Roadmap
 
@@ -336,34 +334,22 @@ Ações  Derivativos   BDR/FII
 
 ## Custom MCP (Internal Development Tool)
 
-A custom MCP server will be created as an **internal development tool** to assist Claude Code while building this project:
+The application uses one MCP server, `mcp_server/server.py`.
 
-**Purpose**: Provide Claude with context and tools during implementation:
-- Brazilian financial market regulations and tax rules (Receita Federal, B3)
-- Reference implementations and validation logic
-- Trade calculation algorithms and examples
-- Documentation on financial products (Ações, Derivativos, etc.)
-
-**Implementation**:
-- MCP server (stdio transport) with tools for:
-  - `get_tax_rules(asset_type)` - Retrieve applicable IR rules for a specific asset type
-  - `get_fee_structure()` - Return current B3 and brokerage fee structures
-  - `validate_calculation(type, params, result)` - Validate calculation logic against rules
-  - `get_regulation(keyword)` - Search relevant Brazilian financial regulations
-  - `example_calculation(asset_type)` - Return worked example calculations
-- Runs locally during development (not part of the deployed application)
-
-**Use Cases**:
-- While implementing tax calculations: Claude queries `get_tax_rules()` to verify logic
-- When coding fee calculations: Claude validates against `validate_calculation()`
-- Debugging trade processing: Claude references `example_calculation()` to ensure correctness
-- Researching regulations: Claude uses `get_regulation()` for documentation
-
-**Benefits**:
-- Reduces context window needed (Claude doesn't need to remember all tax rules)
-- Ensures implementation aligns with actual Brazilian regulations
-- Speeds up development through guided examples
-- Acts as a "domain expert consultant" during coding
+- `fee_policy(asset_type)` discloses cost policy, without claiming current live tariffs.
+- `calculate_trade(trade, average_price)` validates inputs and reuses existing calculators.
+- Structured forms use `backend/app/mcp_gateway.py` with a fixed call sequence.
+- Extracted chat sales use `backend/app/agents/tool_chat.py`: the LLM selects
+  bound tools with `tool_choice=auto`, and the host validates and dispatches MCP calls.
+- `consultar_preco_medio` is a local read-only tool bound to the request user/asset,
+  not an additional MCP server tool. The model cannot replace financial arguments.
+- The chat cycle is limited to six model turns/eight tool calls. A sale is persisted
+  only after a validated calculation and a normal final explanation. No direct fallback.
+- Chat POST is synchronous so FastAPI runs blocking processing in its worker pool.
+- No previous chat messages are replayed; tool exchanges live only for the current request.
+- `.mcp.json` exposes the same entry point to development clients.
+- Historical evidence is immutable; scripts within old evidence folders may reference previous file paths.
+- Docker/Poetry packaging and known calculation/chat limitations still need separate validation.
 
 ## Cloud Deployment (TCC Presentation)
 

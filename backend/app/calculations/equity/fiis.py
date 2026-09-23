@@ -4,12 +4,13 @@ Calculation module for FIIs (Fundos Imobiliários) - Phase 1.
 Key differences from Ações:
 - Alíquota: 20% flat (swing AND day trade — no 15% rate)
 - Sem isenção: R$20,000 exemption does NOT apply to FIIs
-- Sem compensação: losses cannot be carried to next month
+- Compensação mensal de perdas: fora do escopo deste cálculo por operação
 
 Reference: Documentation/research.md
 """
 
 from typing import Optional
+from math import isfinite
 
 from app.models.trade import (
     TradeInput,
@@ -28,7 +29,7 @@ class FIICalculator(BaseCalculator):
     Tax Rules:
     - Alíquota: 20% (both swing and day trade)
     - Isenção: NONE (R$20,000 exemption does not apply)
-    - Loss compensation: NOT allowed between months
+    - Monthly loss compensation: not implemented by this per-trade calculator
     - IRRF: 0,005% (swing) or 1% (day trade) — same as stocks
     """
 
@@ -58,7 +59,9 @@ class FIICalculator(BaseCalculator):
         assert trade.tipo_operacao.value == "venda", "This calculator only handles sales"
 
         valor_financeiro = trade.quantidade * trade.preco_unitario
-        pm = average_price or trade.preco_unitario
+        pm = trade.preco_medio_informado if trade.preco_medio_informado is not None else average_price
+        if pm is None or not isfinite(pm) or pm <= 0:
+            raise ValueError("Informe o custo médio de aquisição positivo e finito; não é seguro presumir ganho zero.")
         ganho_bruto = self.calculate_gain_loss(trade.quantidade, pm, trade.preco_unitario)
 
         is_day_trade = self.is_day_trade(trade)
@@ -70,7 +73,7 @@ class FIICalculator(BaseCalculator):
 
         # FIIs never get the R$20,000 exemption
         isenção_aplicada = False
-        ir_devido = max(0, ganho_bruto) * aliquota
+        ir_devido = round(max(0, ganho_bruto - fees.total) * aliquota, 2)
         irrf_retido = valor_financeiro * self.get_irrf_rate(is_day_trade)
 
         ganho_liquido = ganho_bruto - fees.total

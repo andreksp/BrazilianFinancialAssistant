@@ -39,7 +39,7 @@ if target.exists():
     backup=ROOT/'backups'/('antes_gerar_'+datetime.now().strftime('%Y%m%d_%H%M%S'))
     backup.mkdir()
     shutil.copy2(target,backup/target.name)
-assert len(doc.inline_shapes)==10 and len(doc.tables)==4
+assert len(doc.inline_shapes)==14 and len(doc.tables)==4
 doc.save(target)
-print(f'Atualizado: {target}; {len(seen)} paragrafos; 10 imagens; 4 tabelas.')
+print(f'Atualizado: {target}; {len(seen)} paragrafos; 14 imagens; 4 tabelas.')
 print('Atualize o sumario e o PDF no Word apos alterar o texto.')

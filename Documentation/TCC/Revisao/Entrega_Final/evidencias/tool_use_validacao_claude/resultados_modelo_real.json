@@ -1,0 +1,653 @@
+{
+  "rodadas": [
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 1,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": null,
+      "blocos_do_modelo": [
+        {
+          "tipo": "tool_use",
+          "id": "toolu_019V8uZBbbu1YUxczjw9VTWj",
+          "nome": "fee_policy",
+          "input": {}
+        },
+        {
+          "tipo": "tool_use",
+          "id": "toolu_015CMwtGXqsTPMjVEuWMEB3h",
+          "nome": "consultar_preco_medio",
+          "input": {}
+        }
+      ],
+      "stop_reason": "tool_use",
+      "tokens_entrada": 2015,
+      "tokens_saida": 141,
+      "duracao_s": 2.74
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 3,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": [
+        {
+          "tool_use_id": "toolu_019V8uZBbbu1YUxczjw9VTWj",
+          "is_error": false,
+          "content": "{\"asset_type\": \"fii\", \"source\": \"existing Python calculators; user supplied transaction costs\", \"effective_date\": null, \"live_tariffs\": false, \"warning\": \"Custos informados são preferidos. Eventuais tarifas parametrizadas são estimativas legadas, sem vigência validada; não constituem tabela atual da B3.\"}"
+        },
+        {
+          "tool_use_id": "toolu_015CMwtGXqsTPMjVEuWMEB3h",
+          "is_error": false,
+          "content": "{\"preco_medio\": 100.0, \"origem\": \"banco\", \"ativo\": \"HGLG11\"}"
+        }
+      ],
+      "blocos_do_modelo": [
+        {
+          "tipo": "tool_use",
+          "id": "toolu_014ikmoF67MaETS3aDddQ1RG",
+          "nome": "calculate_trade",
+          "input": {}
+        }
+      ],
+      "stop_reason": "tool_use",
+      "tokens_entrada": 2367,
+      "tokens_saida": 29,
+      "duracao_s": 1.26
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 5,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": [
+        {
+          "tool_use_id": "toolu_014ikmoF67MaETS3aDddQ1RG",
+          "is_error": false,
+          "content": "{\"ativo\": \"HGLG11\", \"tipo_ativo\": \"fii\", \"quantidade\": 50.0, \"preco_unitario\": 110.0, \"data_operacao\": \"2026-09-20\", \"valor_financeiro\": 5500.0, \"ganho_prejuizo_bruto\": 500.0, \"taxas_totais\": {\"taxa_liquidacao\": 1.5125000000000002, \"taxa_registro\": 0.187, \"emolumentos\": 0.165, \"corretagem\": 0.0, \"iss_sobre_corretagem\": 0.0}, \"aliquota_aplicada\": 0.2, \"ir_devido\": 99.63, \"irrf_retido\": 0.275, \"isenção_aplicada\": false, \"ganho_prejuizo_liquido\": 498.1355, \"valor_liquido\": 5398.230500000001, \"tipo_operacao_classificacao\": \"swing\", \"mensagem\": \"FII swing trade de HGLG11: R$ 500,00 - IR devido: R$ 99,63 (sem isenção) Custos informados são preferidos. Eventuais tarifas parametrizadas são estimativas legadas, sem vigência validada; não constituem tabela atual da B3.\", \"observacao_semantica\": \"gan"
+        }
+      ],
+      "blocos_do_modelo": [
+        {
+          "tipo": "text",
+          "texto": "## Resultado da venda de HGLG11\n\n**Dados da operação:**\n- Quantidade: 50 cotas\n- Preço de venda: R$ 110,00/cota → Total: R$ 5.500,00\n- Preço médio de compra: R$ 100,00/cota → Custo: R$ 5.000,00\n\n**Apuração do ganho de capital:**\n- Ganho bruto: R$ 500,00\n- Custos operacionais (taxa de liquidação, registro e emolumentos): R$ 1,86\n- **Ganho líquido (após custos, antes de IR): R$ 498,14**\n\n⚠️ Atenção: esses custos são estimativas legadas de tarifas, sem vigência validada — não representam necessariamente a tabela atual da B3.\n\n**Tributação (regras específicas de FII):**\n- 📌 **Alíquota: 20%** — diferente das ações, que podem ter 15% e contam com isenção de R$ 20.000/mês em vendas\n- 📌 **Sem isenção de R$ 20.000** — em FIIs, **todo** ganho de capital na venda de cotas é tributado, independentemente do valor total vendido no mês\n- **IR devido: R$ 99,63** (20% sobre o ganho líquido de R$ 498,14)\n- IRRF retido na fonte (dedo-duro, 0,005%): R$ 0,28 — apenas informativo, deve ser abatido do DARF\n\n**DARF a recolher:**\n- Código: **6015**\n- Valor: **R$ 99,63** (IR devido) menos o IRRF já retido de R$ 0,28 = **R$ 99,35** a pagar\n- Vencimento: último dia útil do mês seguinte à venda (outubro/2026)\n\n**Importante sobre rendimentos mensais:**\nSe você recebeu rendimentos distribuídos mensalmente pelo HGLG11 (aluguéis, JCP do fundo etc.), esses valores são **isentos de IR** para pessoa física — desde que atendidos os requisitos legais (fundo negociado em bolsa, mínimo de 100 cotistas, e restrições de concentração por cotista, conforme art. 3º da Lei 11.033/2004). \n\n⚠️ Essa isenção **não se aplica ao ganho de capital na venda das cotas** — são tributações distintas: rendimento mensal (isento) x lucro na venda (sempre tributado a 20%, sem exceção)."
+        }
+      ],
+      "stop_reason": "end_turn",
+      "tokens_entrada": 2849,
+      "tokens_saida": 832,
+      "duracao_s": 10.0
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 1,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": null,
+      "blocos_do_modelo": [
+        {
+          "tipo": "tool_use",
+          "id": "toolu_017GTcVTaqQEWBujEFV2gLb9",
+          "nome": "fee_policy",
+          "input": {}
+        }
+      ],
+      "stop_reason": "tool_use",
+      "tokens_entrada": 2000,
+      "tokens_saida": 77,
+      "duracao_s": 1.74
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 3,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": [
+        {
+          "tool_use_id": "toolu_017GTcVTaqQEWBujEFV2gLb9",
+          "is_error": false,
+          "content": "{\"asset_type\": \"fii\", \"source\": \"existing Python calculators; user supplied transaction costs\", \"effective_date\": null, \"live_tariffs\": false, \"warning\": \"Custos informados são preferidos. Eventuais tarifas parametrizadas são estimativas legadas, sem vigência validada; não constituem tabela atual da B3.\"}"
+        }
+      ],
+      "blocos_do_modelo": [
+        {
+          "tipo": "tool_use",
+          "id": "toolu_014axFWGhus15kPMUAyCD65o",
+          "nome": "calculate_trade",
+          "input": {}
+        }
+      ],
+      "stop_reason": "tool_use",
+      "tokens_entrada": 2196,
+      "tokens_saida": 29,
+      "duracao_s": 1.2
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 5,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": [
+        {
+          "tool_use_id": "toolu_014axFWGhus15kPMUAyCD65o",
+          "is_error": false,
+          "content": "{\"ativo\": \"KNRI11\", \"tipo_ativo\": \"fii\", \"quantidade\": 10.0, \"preco_unitario\": 110.0, \"data_operacao\": \"2026-09-20\", \"valor_financeiro\": 1100.0, \"ganho_prejuizo_bruto\": 100.0, \"taxas_totais\": {\"taxa_liquidacao\": 0.3025, \"taxa_registro\": 0.0374, \"emolumentos\": 0.033, \"corretagem\": 0.0, \"iss_sobre_corretagem\": 0.0}, \"aliquota_aplicada\": 0.2, \"ir_devido\": 19.93, \"irrf_retido\": 0.055, \"isenção_aplicada\": false, \"ganho_prejuizo_liquido\": 99.6271, \"valor_liquido\": 1079.6420999999998, \"tipo_operacao_classificacao\": \"swing\", \"mensagem\": \"FII swing trade de KNRI11: R$ 100,00 - IR devido: R$ 19,93 (sem isenção) Custos informados são preferidos. Eventuais tarifas parametrizadas são estimativas legadas, sem vigência validada; não constituem tabela atual da B3.\", \"observacao_semantica\": \"ganho_prejuizo"
+        }
+      ],
+      "blocos_do_modelo": [
+        {
+          "tipo": "text",
+          "texto": "## Resultado da venda de KNRI11\n\n**Operação:** Venda de 10 cotas a R$ 110,00 (custo médio informado: R$ 100,00)\n\n| Item | Valor |\n|---|---|\n| Valor financeiro da venda | R$ 1.100,00 |\n| Ganho de capital bruto | R$ 100,00 |\n| Taxas (liquidação, registro, emolumentos) | R$ 0,3729 |\n| **Ganho líquido (após custos, antes de IR)** | R$ 99,6271 |\n| Alíquota de IR | **20%** |\n| **IR devido (DARF)** | **R$ 19,93** |\n| Valor líquido da operação | R$ 1.079,64 |\n\n### Pontos importantes sobre a tributação de FIIs:\n\n1. **Alíquota única de 20%** — diferente das ações, que têm alíquota de 15% (swing trade) e podem contar com isenção. Em FIIs não há essa variação: é sempre 20% sobre o ganho de capital.\n\n2. **Sem isenção de R$ 20.000** — mesmo que o total de vendas no mês seja pequeno, **todo ganho de capital em FII é tributável**. Não existe o limite de isenção mensal que se aplica às ações.\n\n3. **Ganho de capital ≠ rendimentos mensais** — o resultado acima refere-se exclusivamente ao **lucro na venda das cotas**. Rendimentos distribuídos mensalmente pelo FII (ex: aluguéis) são **isentos de IR** para pessoa física, desde que atendidos os requisitos da Lei 11.033/2004 (fundo negociado em bolsa, mínimo de 100 cotistas etc.) — conforme o documento consultado. Essa isenção **não se estende ao lucro na venda de cotas**, que segue sempre tributado a 20%.\n\n4. **DARF a recolher:**\n - **Código:** 6015\n - **Valor:** R$ 19,93\n - **Vencimento:** até o último dia útil do mês seguinte à venda (ou seja, até 31/10/2026)\n\n⚠️ *Observação:* os valores de taxas de liquidação/registro/emolumentos usados no cálculo são estimativas legadas do sistema, sem confirmação de vigência atual na B3 — não representam necessariamente a tabela tarifária vigente."
+        }
+      ],
+      "stop_reason": "end_turn",
+      "tokens_entrada": 2676,
+      "tokens_saida": 811,
+      "duracao_s": 10.76
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 1,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": null,
+      "blocos_do_modelo": [
+        {
+          "tipo": "tool_use",
+          "id": "toolu_01MoveHbnC8gMPcNssW6ohmJ",
+          "nome": "consultar_preco_medio",
+          "input": {}
+        },
+        {
+          "tipo": "tool_use",
+          "id": "toolu_01NovvdUm3ePrrfkd9hM4ZAF",
+          "nome": "fee_policy",
+          "input": {}
+        }
+      ],
+      "stop_reason": "tool_use",
+      "tokens_entrada": 2012,
+      "tokens_saida": 104,
+      "duracao_s": 2.09
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 3,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": [
+        {
+          "tool_use_id": "toolu_01MoveHbnC8gMPcNssW6ohmJ",
+          "is_error": false,
+          "content": "{\"preco_medio\": null, \"origem\": \"banco\", \"ativo\": \"XPML11\"}"
+        },
+        {
+          "tool_use_id": "toolu_01NovvdUm3ePrrfkd9hM4ZAF",
+          "is_error": false,
+          "content": "{\"asset_type\": \"fii\", \"source\": \"existing Python calculators; user supplied transaction costs\", \"effective_date\": null, \"live_tariffs\": false, \"warning\": \"Custos informados são preferidos. Eventuais tarifas parametrizadas são estimativas legadas, sem vigência validada; não constituem tabela atual da B3.\"}"
+        }
+      ],
+      "blocos_do_modelo": [
+        {
+          "tipo": "text",
+          "texto": "Não consegui obter o preço médio de aquisição das suas cotas de XPML11 — a consulta retornou vazio. Sem esse dado, não é possível calcular o ganho de capital da venda.\n\nPoderia me informar:\n- **Preço médio de compra** das cotas de XPML11 (ou o valor total pago na aquisição)?\n\nSó com esse dado poderei calcular corretamente o ganho de capital, aplicar a alíquota de 20% e apurar o DARF devido.\n\n**Enquanto isso, alguns pontos importantes sobre a tributação de FIIs:**\n\n1. **Alíquota única de 20%** sobre o ganho de capital na venda de cotas — diferente das ações, que podem ter 15% (comum) ou 20% (day trade).\n2. **Não há isenção de R$ 20.000,00** em vendas mensais para FIIs, ao contrário das ações. **Todo ganho de capital em FII é tributável**, independentemente do valor total vendido no mês.\n3. **Rendimentos mensais distribuídos** pelo fundo (aluguéis, etc.) são **isentos de IR** para pessoa física — mas isso **não se aplica ao lucro na venda das cotas**, que é tributado normalmente como ganho de capital.\n4. Caso haja imposto devido, ele deve ser recolhido via **DARF código 6015**, com vencimento até o **último dia útil do mês seguinte** ao da venda.\n\nAssim que você informar o preço médio de aquisição, calculo o ganho, o IR de 20% e o valor exato do DARF."
+        }
+      ],
+      "stop_reason": "end_turn",
+      "tokens_entrada": 2323,
+      "tokens_saida": 538,
+      "duracao_s": 6.93
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 1,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": null,
+      "blocos_do_modelo": [
+        {
+          "tipo": "tool_use",
+          "id": "toolu_01WaKsLHDgg89N42q6BPuosr",
+          "nome": "fee_policy",
+          "input": {}
+        },
+        {
+          "tipo": "tool_use",
+          "id": "toolu_01KppJuEu9Yj6syrnv8C9GuD",
+          "nome": "consultar_preco_medio",
+          "input": {}
+        }
+      ],
+      "stop_reason": "tool_use",
+      "tokens_entrada": 2042,
+      "tokens_saida": 275,
+      "duracao_s": 4.06
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 3,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": [
+        {
+          "tool_use_id": "toolu_01WaKsLHDgg89N42q6BPuosr",
+          "is_error": false,
+          "content": "{\"asset_type\": \"acao\", \"source\": \"existing Python calculators; user supplied transaction costs\", \"effective_date\": null, \"live_tariffs\": false, \"warning\": \"Custos informados são preferidos. Eventuais tarifas parametrizadas são estimativas legadas, sem vigência validada; não constituem tabela atual da B3.\"}"
+        },
+        {
+          "tool_use_id": "toolu_01KppJuEu9Yj6syrnv8C9GuD",
+          "is_error": false,
+          "content": "{\"preco_medio\": null, \"origem\": \"banco\", \"ativo\": \"PETR4\"}"
+        }
+      ],
+      "blocos_do_modelo": [
+        {
+          "tipo": "text",
+          "texto": "Não consegui confirmar o preço médio de PETR4 para calcular a operação com segurança:\n\n- No texto da sua mensagem você mencionou custo médio de R$ 25,00, mas esse valor não veio preenchido no campo estruturado da operação (`preco_medio_informado` está nulo).\n- A consulta ao banco de dados também não retornou nenhum preço médio cadastrado para PETR4.\n\nPara eu prosseguir com o cálculo do ganho/prejuízo e do IR devido, por favor confirme:\n\n**O preço médio de aquisição de PETR4 é R$ 25,00 por ação?**\n\nAssim que confirmar, calculo:\n- Ganho bruto = (preço de venda − preço médio) × quantidade\n- Verificação da isenção de R$ 20.000/mês (válida apenas para swing trade)\n- IR devido (15% se swing e sem isenção, ou 20% se day trade)\n- IRRF (antecipação)\n- Valor líquido final\n\nSó não posso registrar esse valor \"de cabeça\" a partir do texto, pois preciso de confirmação explícita para garantir que o cálculo esteja correto."
+        }
+      ],
+      "stop_reason": "end_turn",
+      "tokens_entrada": 2524,
+      "tokens_saida": 483,
+      "duracao_s": 6.87
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 1,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": null,
+      "blocos_do_modelo": [
+        {
+          "tipo": "tool_use",
+          "id": "toolu_01Ty2dD2WxyotAVhtKu6zyRV",
+          "nome": "fee_policy",
+          "input": {}
+        }
+      ],
+      "stop_reason": "tool_use",
+      "tokens_entrada": 2060,
+      "tokens_saida": 160,
+      "duracao_s": 2.79
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 3,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": [
+        {
+          "tool_use_id": "toolu_01Ty2dD2WxyotAVhtKu6zyRV",
+          "is_error": false,
+          "content": "{\"asset_type\": \"emprestimo_acoes\", \"source\": \"existing Python calculators; user supplied transaction costs\", \"effective_date\": null, \"live_tariffs\": false, \"warning\": \"Custos informados são preferidos. Eventuais tarifas parametrizadas são estimativas legadas, sem vigência validada; não constituem tabela atual da B3.\"}"
+        }
+      ],
+      "blocos_do_modelo": [
+        {
+          "tipo": "tool_use",
+          "id": "toolu_0139gWEdj6UheyqiaLK2G4w5",
+          "nome": "calculate_trade",
+          "input": {}
+        }
+      ],
+      "stop_reason": "tool_use",
+      "tokens_entrada": 2346,
+      "tokens_saida": 29,
+      "duracao_s": 1.09
+    },
+    {
+      "modelo": "claude-sonnet-5",
+      "n_mensagens_enviadas": 5,
+      "ferramentas_oferecidas": [
+        "fee_policy",
+        "calculate_trade",
+        "consultar_preco_medio"
+      ],
+      "tool_result_recebido_do_host": [
+        {
+          "tool_use_id": "toolu_0139gWEdj6UheyqiaLK2G4w5",
+          "is_error": true,
+          "content": "{\"erro\": \"Informe o prazo do contrato para determinar a faixa de IRRF.\"}"
+        }
+      ],
+      "blocos_do_modelo": [
+        {
+          "tipo": "text",
+          "texto": "Consultei a política de custos e tentei calcular a retenção, mas a ferramenta de cálculo exige o **prazo do contrato de empréstimo** para determinar a alíquota correta da tabela regressiva — e esse dado não veio na sua operação (`prazo_dias: null`).\n\n**O que já sei:**\n- Ativo: VALE3\n- Quantidade emprestada: 200 ações\n- Remuneração bruta recebida: R$ 120,00 (200 × R$ 0,60)\n\n**O que falta:**\nPara aplicar corretamente a tributação de renda fixa sobre o aluguel de ações, preciso saber o **prazo do contrato** (em dias), pois a alíquota de IRRF varia:\n\n| Prazo do contrato | Alíquota |\n|---|---|\n| até 180 dias | 22,5% |\n| 181 a 360 dias | 20% |\n| 361 a 720 dias | 17,5% |\n| acima de 720 dias | 15% |\n\nVocê pode consultar esse prazo no seu **informe de rendimentos da B3/corretora** (contrato de BTC).\n\nPoderia me informar o prazo do contrato em dias? Caso você não tenha essa informação disponível, posso calcular usando a faixa mais conservadora (até 180 dias, 22,5%), mas alerto que você deve confirmar o prazo real no informe da B3, pois isso pode resultar em retenção maior do que a devida."
+        }
+      ],
+      "stop_reason": "end_turn",
+      "tokens_entrada": 2418,
+      "tokens_saida": 784,
+      "duracao_s": 9.81
+    }
+  ],
+  "uso": [
+    [
+      "haiku",
+      978,
+      26
+    ],
+    [
+      "sonnet",
+      859,
+      1024
+    ],
+    [
+      "haiku",
+      976,
+      31
+    ],
+    [
+      "haiku",
+      1702,
+      60
+    ],
+    [
+      "haiku",
+      977,
+      31
+    ],
+    [
+      "haiku",
+      1703,
+      86
+    ],
+    [
+      "sonnet",
+      2015,
+      141
+    ],
+    [
+      "sonnet",
+      2367,
+      29
+    ],
+    [
+      "sonnet",
+      2849,
+      832
+    ],
+    [
+      "haiku",
+      985,
+      30
+    ],
+    [
+      "haiku",
+      1711,
+      71
+    ],
+    [
+      "sonnet",
+      2000,
+      77
+    ],
+    [
+      "sonnet",
+      2196,
+      29
+    ],
+    [
+      "sonnet",
+      2676,
+      811
+    ],
+    [
+      "haiku",
+      976,
+      36
+    ],
+    [
+      "haiku",
+      1702,
+      60
+    ],
+    [
+      "sonnet",
+      2012,
+      104
+    ],
+    [
+      "sonnet",
+      2323,
+      538
+    ],
+    [
+      "haiku",
+      984,
+      35
+    ],
+    [
+      "haiku",
+      1710,
+      85
+    ],
+    [
+      "sonnet",
+      2042,
+      275
+    ],
+    [
+      "sonnet",
+      2524,
+      483
+    ],
+    [
+      "haiku",
+      978,
+      38
+    ],
+    [
+      "haiku",
+      1704,
+      62
+    ],
+    [
+      "sonnet",
+      2060,
+      160
+    ],
+    [
+      "sonnet",
+      2346,
+      29
+    ],
+    [
+      "sonnet",
+      2418,
+      784
+    ]
+  ],
+  "cenarios": [
+    {
+      "nome": "1_pergunta_geral",
+      "mensagem": "Qual a diferenca de tributacao entre venda de acoes e venda de cotas de FII?",
+      "esperado": "Resposta consultiva, sem ferramentas de cálculo",
+      "duracao_s": 13.36,
+      "ferramentas_escolhidas_pelo_modelo": [],
+      "n_rodadas": 0,
+      "saida": {
+        "agente": "Agente Consultivo",
+        "tem_calculo": false,
+        "resposta": "# Diferenças entre tributação de venda de ações e venda de cotas de FII\n\n## 1. Alíquota do Imposto de Renda\n\n| | **Ações** | **Cotas de FII** |\n|---|---|---|\n| Operações comuns | 15% sobre ganho líquido | **20%** sobre ganho líquido |\n| Day trade | 20% sobre ganho líquido | 20% sobre ganho líquido |\n\n## 2. Isenção para vendas de baixo valor\n\n- **Ações**: há isenção do IR quando o total de vendas no mês for **igual ou inferior a R$ 20.000,00** (regra prevista na Lei 11.033/2004, art. 3º, inciso I).\n- **Cotas de FII**: **não existe essa isenção**. Segundo o contexto fornecido, \"não há isenção pela venda abaixo de R$ 20 mil\" para FIIs. Toda venda com ganho é tributada em 20%, independentemente do valor.\n\n## 3. Compensação de prejuízos\n\n- **Ações**: prejuízos apurados na venda de ações podem ser compensados com ganhos futuros na venda de ações (mesma categoria de renda variável, respeitando regras específicas do mercado de bolsa).\n- **Cotas de FII**: conforme o contexto, prejuízos na alienação de cotas de FII **só podem ser compensados com ganhos de alienação de cotas de fundos da mesma espécie** — ou seja, **não podem ser compensados com lucros obtidos na venda de ações**. São categorias tributárias distintas e segregadas.\n\n## 4. Recolhimento (DARF)\n\nEm ambos os casos, o próprio investidor é responsável por apurar o ganho, preencher e pagar o DARF até o último dia útil do mês subsequente à operação (não há retenção automática pela B3 nesse ponto, exceto o \"dedo-duro\" — IR retido"
+      },
+      "erro": null
+    },
+    {
+      "nome": "2_compra",
+      "mensagem": "Comprei 50 cotas do HGLG11 a 100 reais hoje",
+      "esperado": "Registro de compra, sem ciclo de ferramentas",
+      "duracao_s": 1.51,
+      "ferramentas_escolhidas_pelo_modelo": [],
+      "n_rodadas": 0,
+      "saida": {
+        "agente": "Agente Especialista em Fundos Imobiliários",
+        "tem_calculo": false,
+        "resposta": "[Agente Especialista em Fundos Imobiliários] Registrei a compra de 50 HGLG11 a R$ 100,00 em 20/09/2026. Preço médio atualizado. Quando você vender, calcularei o IR automaticamente."
+      },
+      "erro": null
+    },
+    {
+      "nome": "3_fii_com_compra_previa",
+      "mensagem": "Vendi as 50 cotas do HGLG11 a 110 reais hoje",
+      "esperado": "Modelo deve consultar preco medio (banco) + fee_policy + calculate_trade; IR=R$100",
+      "duracao_s": 16.62,
+      "ferramentas_escolhidas_pelo_modelo": [
+        "fee_policy",
+        "consultar_preco_medio",
+        "calculate_trade"
+      ],
+      "n_rodadas": 3,
+      "saida": {
+        "agente": "Agente Especialista em Fundos Imobiliários",
+        "tem_calculo": true,
+        "resposta": "## Resultado da venda de HGLG11\n\n**Dados da operação:**\n- Quantidade: 50 cotas\n- Preço de venda: R$ 110,00/cota → Total: R$ 5.500,00\n- Preço médio de compra: R$ 100,00/cota → Custo: R$ 5.000,00\n\n**Apuração do ganho de capital:**\n- Ganho bruto: R$ 500,00\n- Custos operacionais (taxa de liquidação, registro e emolumentos): R$ 1,86\n- **Ganho líquido (após custos, antes de IR): R$ 498,14**\n\n⚠️ Atenção: esses custos são estimativas legadas de tarifas, sem vigência validada — não representam necessariamente a tabela atual da B3.\n\n**Tributação (regras específicas de FII):**\n- 📌 **Alíquota: 20%** — diferente das ações, que podem ter 15% e contam com isenção de R$ 20.000/mês em vendas\n- 📌 **Sem isenção de R$ 20.000** — em FIIs, **todo** ganho de capital na venda de cotas é tributado, independentemente do valor total vendido no mês\n- **IR devido: R$ 99,63** (20% sobre o ganho líquido de R$ 498,14)\n- IRRF retido na fonte (dedo-duro, 0,005%): R$ 0,28 — apenas informativo, deve ser abatido do DARF\n\n**DARF a recolher:**\n- Código: **6015**\n- Valor: **R$ 99,63** (IR devido) menos o IRRF já retido de R$ 0,28 = **R$ 99,35** a pagar\n- Vencimento: último dia útil do mês seguinte à venda (outubro/2026)\n\n**Importante sobre rendimentos mensais:**\nSe você recebeu rendimentos distribuídos mensalmente pelo HGLG11 (aluguéis, JCP do fundo etc.), esses valores são **isentos de IR** para pessoa física — desde que atendidos os requisitos legais (fundo negociado em bolsa, mínimo de 100 cotistas, e restrições",
+        "numeros": {
+          "ganho_bruto": 500.0,
+          "ir_devido": 99.63,
+          "custos": 1.8645000000000003,
+          "ganho_liquido_campo": 498.1355,
+          "aliquota": 0.2,
+          "isencao": false
+        }
+      },
+      "erro": null
+    },
+    {
+      "nome": "4_fii_custo_informado",
+      "mensagem": "Vendi 10 cotas do KNRI11 a 110 reais hoje, custo medio de 100 reais",
+      "esperado": "Custo informado: nao precisa consultar banco; IR=R$20",
+      "duracao_s": 15.7,
+      "ferramentas_escolhidas_pelo_modelo": [
+        "fee_policy",
+        "calculate_trade"
+      ],
+      "n_rodadas": 3,
+      "saida": {
+        "agente": "Agente Especialista em Fundos Imobiliários",
+        "tem_calculo": true,
+        "resposta": "## Resultado da venda de KNRI11\n\n**Operação:** Venda de 10 cotas a R$ 110,00 (custo médio informado: R$ 100,00)\n\n| Item | Valor |\n|---|---|\n| Valor financeiro da venda | R$ 1.100,00 |\n| Ganho de capital bruto | R$ 100,00 |\n| Taxas (liquidação, registro, emolumentos) | R$ 0,3729 |\n| **Ganho líquido (após custos, antes de IR)** | R$ 99,6271 |\n| Alíquota de IR | **20%** |\n| **IR devido (DARF)** | **R$ 19,93** |\n| Valor líquido da operação | R$ 1.079,64 |\n\n### Pontos importantes sobre a tributação de FIIs:\n\n1. **Alíquota única de 20%** — diferente das ações, que têm alíquota de 15% (swing trade) e podem contar com isenção. Em FIIs não há essa variação: é sempre 20% sobre o ganho de capital.\n\n2. **Sem isenção de R$ 20.000** — mesmo que o total de vendas no mês seja pequeno, **todo ganho de capital em FII é tributável**. Não existe o limite de isenção mensal que se aplica às ações.\n\n3. **Ganho de capital ≠ rendimentos mensais** — o resultado acima refere-se exclusivamente ao **lucro na venda das cotas**. Rendimentos distribuídos mensalmente pelo FII (ex: aluguéis) são **isentos de IR** para pessoa física, desde que atendidos os requisitos da Lei 11.033/2004 (fundo negociado em bolsa, mínimo de 100 cotistas etc.) — conforme o documento consultado. Essa isenção **não se estende ao lucro na venda de cotas**, que segue sempre tributado a 20%.\n\n4. **DARF a recolher:**\n - **Código:** 6015\n - **Valor:** R$ 19,93\n - **Vencimento:** até o último dia útil do mês seguinte à venda (ou seja, at",
+        "numeros": {
+          "ganho_bruto": 100.0,
+          "ir_devido": 19.93,
+          "custos": 0.3729,
+          "ganho_liquido_campo": 99.6271,
+          "aliquota": 0.2,
+          "isencao": false
+        }
+      },
+      "erro": null
+    },
+    {
+      "nome": "5_fii_sem_custo",
+      "mensagem": "Vendi 10 cotas do XPML11 a 110 reais hoje",
+      "esperado": "Sem custo e sem compra previa: deve recusar, sem gravar venda",
+      "duracao_s": 11.04,
+      "ferramentas_escolhidas_pelo_modelo": [
+        "consultar_preco_medio",
+        "fee_policy"
+      ],
+      "n_rodadas": 2,
+      "saida": {
+        "agente": "Agente Especialista em Fundos Imobiliários",
+        "tem_calculo": false,
+        "resposta": "Não foi possível calcular com segurança: O modelo não concluiu um cálculo validado. Informe os dados completos da operação. Nenhuma venda foi registrada."
+      },
+      "erro": null
+    },
+    {
+      "nome": "6_acoes_sem_total_mensal",
+      "mensagem": "Vendi 100 acoes da PETR4 a 30 reais hoje, custo medio 25 reais",
+      "esperado": "Sem total mensal: calculate_trade deve recusar",
+      "duracao_s": 12.95,
+      "ferramentas_escolhidas_pelo_modelo": [
+        "fee_policy",
+        "consultar_preco_medio"
+      ],
+      "n_rodadas": 2,
+      "saida": {
+        "agente": "Agente Especialista em Ações e BDRs",
+        "tem_calculo": false,
+        "resposta": "Não foi possível calcular com segurança: O modelo não concluiu um cálculo validado. Informe os dados completos da operação. Nenhuma venda foi registrada."
+      },
+      "erro": null
+    },
+    {
+      "nome": "7_emprestimo_sem_prazo",
+      "mensagem": "Recebi 120 reais de aluguel das minhas 200 acoes da VALE3",
+      "esperado": "Sem prazo do contrato: deve recusar",
+      "duracao_s": 15.73,
+      "ferramentas_escolhidas_pelo_modelo": [
+        "fee_policy",
+        "calculate_trade"
+      ],
+      "n_rodadas": 3,
+      "saida": {
+        "agente": "Agente Especialista em Empréstimo de Ações",
+        "tem_calculo": false,
+        "resposta": "Não foi possível calcular com segurança: Informe o prazo do contrato para determinar a faixa de IRRF. Nenhuma venda foi registrada."
+      },
+      "erro": null
+    }
+  ],
+  "custo_estimado_usd": 0.1349,
+  "tokens_totais": {
+    "entrada": 47773,
+    "saida": 5967,
+    "chamadas": 27
+  },
+  "vendas_gravadas": [
+    [
+      "HGLG11",
+      "compra",
+      null
+    ],
+    [
+      "HGLG11",
+      "venda",
+      99.63
+    ],
+    [
+      "KNRI11",
+      "venda",
+      19.93
+    ]
+  ]
+}

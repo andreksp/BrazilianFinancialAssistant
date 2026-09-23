@@ -1,0 +1,22 @@
+[
+  {
+    "caso": "ferramenta_desconhecida",
+    "status": "OK",
+    "detalhe": "Ferramentas oferecidas=['fee_policy', 'calculate_trade', 'consultar_preco_medio']; ferramenta inventada nunca executada. tool_result devolvido ao modelo={\"erro\": \"Ferramenta não autorizada.\"}"
+  },
+  {
+    "caso": "repeticao_id_duplicado",
+    "status": "OK",
+    "detalhe": "Reuso do mesmo tool_use_id recusado. Erro='Identificador de chamada inválido ou repetido.'"
+  },
+  {
+    "caso": "limite_de_chamadas",
+    "status": "OK",
+    "detalhe": "MAX_CALLS=8 aplicado antes de executar a rodada. Erro='Limite de chamadas de ferramentas atingido.'"
+  },
+  {
+    "caso": "limite_de_rodadas",
+    "status": "OK",
+    "detalhe": "Ciclo encerrado após 6 rodadas (MAX_ROUNDS=6). Erro='Limite de rodadas de ferramentas atingido.'"
+  }
+]

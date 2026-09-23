@@ -7,7 +7,7 @@ from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from app.models.trade import TaxCalculationResult
 log=logging.getLogger(__name__)
-SERVER=Path(__file__).resolve().parents[2]/'mcp_server'/'runtime_server.py'
+SERVER=Path(__file__).resolve().parents[2]/'mcp_server'/'server.py'
 
 def unpack(response):
     if response.isError:raise ValueError('Falha na ferramenta MCP; cálculo não executado com segurança.')

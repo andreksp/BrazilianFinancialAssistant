@@ -6,13 +6,13 @@ Business rules:
   where `average_price` parameter = premium paid per option
 - Tax: 15% swing trade, 20% day trade (same as underlying stock)
 - IRRF: 0,005% swing, 1% day trade
-- Exemption R$20,000: applies (options count toward monthly total)
-  — tracked at monthly portfolio level, same as Ações
+- Exemption R$20,000: does not apply to options
 
 Reference: Documentation/research.md
 """
 
 from typing import Optional
+from math import isfinite
 
 from app.models.trade import (
     TradeInput,
@@ -30,7 +30,7 @@ class OpcoesCalculator(BaseCalculator):
 
     Tax Rules:
     - Alíquota: 15% swing / 20% day trade (mirrors underlying stock rules)
-    - Isenção: R$20,000/month applies (tracked at portfolio level)
+    - Isenção: R$20,000/month does not apply
     - Gain = (exercise/sale price - premium paid) * quantity
     - IRRF: 0,005% swing / 1% day trade
     """
@@ -70,14 +70,16 @@ class OpcoesCalculator(BaseCalculator):
 
         Args:
             trade: The trade input (preco_unitario = current sale/exercise price)
-            average_price: Premium paid per option (cost basis). Defaults to preco_unitario
-                           if not provided (zero gain scenario).
+            average_price: Positive, finite premium paid per option (cost basis).
+                           Missing cost is rejected, never inferred from the sale price.
         """
         assert trade.tipo_ativo == AssetType.OPCAO, "This calculator is for Opções only"
         assert trade.tipo_operacao.value == "venda", "This calculator only handles sales/exercise"
 
         valor_financeiro = trade.quantidade * trade.preco_unitario
-        premium_pago = average_price or trade.preco_unitario
+        premium_pago = trade.preco_medio_informado if trade.preco_medio_informado is not None else average_price
+        if premium_pago is None or not isfinite(premium_pago) or premium_pago <= 0:
+            raise ValueError("Informe o custo médio de aquisição positivo e finito; não é seguro presumir ganho zero.")
         ganho_bruto = self.calculate_gain_loss(trade.quantidade, premium_pago, trade.preco_unitario)
 
         is_day_trade = self.is_day_trade(trade)
@@ -88,8 +90,8 @@ class OpcoesCalculator(BaseCalculator):
         aliquota = self.get_tax_rate(is_day_trade)
         isenção_aplicada = False
 
-        # Exemption R$20,000 tracked at monthly portfolio level
-        ir_devido = max(0, ganho_bruto) * aliquota
+        # Deduct sale costs; the stock-market R$20,000 exemption does not apply.
+        ir_devido = round(max(0, ganho_bruto - fees.total) * aliquota, 2)
         irrf_retido = valor_financeiro * self.get_irrf_rate(is_day_trade)
 
         ganho_liquido = ganho_bruto - fees.total

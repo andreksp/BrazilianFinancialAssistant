@@ -3,7 +3,7 @@
 # For development: poetry install (from pyproject.toml)
 
 fastapi>=0.111.0
-uvicorn[standard]==0.24.0
+uvicorn[standard]>=0.31.1
 pydantic>=2.5.0
 pydantic-settings>=2.1.0
 sqlalchemy==2.0.23

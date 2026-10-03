@@ -153,6 +153,7 @@ class TaxCalculationResult(BaseModel):
     aliquota_aplicada: float = Field(..., ge=0, le=1, description="Tax rate (15% or 20%)")
     ir_devido: float = Field(..., ge=0, description="Income tax due (imposto de renda)")
     irrf_retido: float = Field(..., ge=0, description="Withholding tax (retido na fonte)")
+    irrf_nao_informado: bool = Field(default=False, description="Retenção desconhecida: zero numérico não confirma ausência de IRRF")
     isenção_aplicada: bool = Field(
         False, description="Whether R$20,000 exemption applied (swing trade only)"
     )

@@ -8,6 +8,7 @@ Models:
 
 import json
 import logging
+import re
 from datetime import date
 from typing import Optional
 
@@ -23,6 +24,18 @@ from app.llm.prompts import (
 )
 
 logger = logging.getLogger(__name__)
+
+
+def explicit_entry_points(message):
+    """Read only unambiguous, explicitly labelled Portuguese point quotations."""
+    matches = re.findall(
+        r'\b(?:preço\s+médio\s+de\s+entrada|cotação\s+de\s+abertura|entrada(?:\s+média)?)'
+        r'\s+(?:(?:de|em|a)\s+)?(\d{1,3}(?:\.\d{3})+(?:,\d+)?|\d+(?:,\d+)?)\s+pontos\b',
+        message, flags=re.IGNORECASE)
+    values = {float(v.replace('.', '').replace(',', '.')) for v in matches}
+    if len(values) > 1:
+        raise ValueError('Cotações de entrada conflitantes; confirme o preço médio em pontos.')
+    return next(iter(values)) if values else None
 
 
 class ClaudeClient:
@@ -65,6 +78,14 @@ class ClaudeClient:
             if "erro" in data:
                 logger.info(f"No trade extracted: {data['erro']}")
                 return None
+
+            if data.get('tipo_ativo') in ('futuro_indice', 'futuro_dolar'):
+                entry = explicit_entry_points(user_message)
+                if entry is not None:
+                    parsed_entry = data.get('preco_medio_informado')
+                    if parsed_entry is not None and float(parsed_entry) != entry:
+                        raise ValueError('Preço de entrada extraído diverge dos pontos informados.')
+                    data['preco_medio_informado'] = entry
 
             if (data.get('tipo_operacao') == 'venda'
                     and data.get('tipo_ativo') not in ('emprestimo_acoes', 'cripto')

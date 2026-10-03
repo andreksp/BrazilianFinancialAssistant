@@ -76,6 +76,7 @@ export interface TaxCalculationResult {
   aliquota_aplicada: number;
   ir_devido: number;
   irrf_retido: number;
+  irrf_nao_informado?: boolean;
   isenção_aplicada: boolean;
   ganho_prejuizo_liquido: number;
   valor_liquido: number;

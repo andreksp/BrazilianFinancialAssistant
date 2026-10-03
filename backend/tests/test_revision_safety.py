@@ -26,7 +26,7 @@ def test_missing_lending_term():
     with pytest.raises(ValueError,match='prazo'):EmprestimoCalculator().calculate_result(trade('emprestimo_acoes'))
 
 def test_futures_requires_actual_cost_and_withholding():
-    with pytest.raises(ValueError,match='custos e IRRF'):FuturosCalculator().calculate_result(trade('futuro_indice'),average_price=90)
+    with pytest.raises(ValueError,match='custos'):FuturosCalculator().calculate_result(trade('futuro_indice'),average_price=90)
 
 def test_progressive_slices():
     assert CriptomoedaCalculator().progressive_tax(6000000)==925000

@@ -29,6 +29,13 @@ Para ações em operação comum, uma venda isolada acima de R$ 20.000 já afast
 a isenção por volume: chame calculate_trade mesmo sem total_vendas_mes nesse caso.
 Não invente o total mensal. Explique o resultado como estimativa da operação,
 não como DARF mensal definitivo; preserve a ressalva sobre compensações e créditos.
+Em WIN/WDO, IRRF ausente não impede simulação se os custos foram informados.
+Se o resultado tiver irrf_nao_informado=true, diga "IRRF não informado",
+nunca "IRRF zero", "não houve retenção" ou "IRRF não aplicável".
+Não interprete o zero numérico de compatibilidade como retenção efetiva.
+Quando irrf_nao_informado=true, não acrescente alíquota, fórmula, base de incidência
+ou valor estimado de IRRF. Use somente: "IRRF não informado; retenção desconhecida,
+sem crédito considerado. Confira a nota de corretagem antes da apuração mensal."
 """
 
 

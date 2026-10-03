@@ -82,8 +82,8 @@ class FuturosCalculator(BaseCalculator):
             raise ValueError("Somente minicontratos WIN e WDO são suportados nesta simulação.")
         if average_price is None:
             raise ValueError("Informe a cotação de abertura da posição comprada.")
-        if trade.custos_operacao is None or trade.irrf_informado is None:
-            raise ValueError("Informe custos e IRRF efetivos da nota, inclusive zero quando aplicável.")
+        if trade.custos_operacao is None:
+            raise ValueError("Informe custos da operação, inclusive zero quando aplicável.")
         multiplier = 10.0 if prefix == 'WDO' else 0.20
         valor_financeiro = trade.quantidade * trade.preco_unitario * multiplier
         pm = average_price
@@ -97,7 +97,14 @@ class FuturosCalculator(BaseCalculator):
         aliquota = self.get_tax_rate(is_day_trade)
         # Futuros não têm isenção de R$20.000 — sempre tributado
         ir_devido = round(max(0, ganho_bruto - fees.total) * aliquota, 2)
-        irrf_retido = trade.irrf_informado
+        irrf_nao_informado = trade.irrf_informado is None
+        # Zero is only the numeric placeholder: expose unknown status explicitly.
+        irrf_retido = trade.irrf_informado if not irrf_nao_informado else 0.0
+        warning = (
+            " IRRF não informado: retenção desconhecida, sem crédito de IRRF considerado."
+            " O zero no campo numérico não confirma ausência de retenção."
+            " Resultado estimado antes da conciliação do IRRF, não é DARF mensal definitivo."
+        ) if irrf_nao_informado else ""
 
         ganho_liquido = ganho_bruto - fees.total
         valor_liquido = ganho_liquido - max(ir_devido, irrf_retido)
@@ -114,11 +121,12 @@ class FuturosCalculator(BaseCalculator):
             aliquota_aplicada=aliquota,
             ir_devido=ir_devido,
             irrf_retido=irrf_retido,
+            irrf_nao_informado=irrf_nao_informado,
             isenção_aplicada=False,
             ganho_prejuizo_liquido=ganho_liquido,
             valor_liquido=valor_liquido,
             tipo_operacao_classificacao=tipo_operacao,
-            mensagem=self._generate_message(trade, ganho_bruto, ir_devido, is_day_trade) + " Simulação de posição comprada encerrada, sem ajustes diários intermediários ou compensação mensal; valor financeiro é nocional, não recebimento.",
+            mensagem=self._generate_message(trade, ganho_bruto, ir_devido, is_day_trade) + " Simulação de posição comprada encerrada, sem ajustes diários intermediários ou compensação mensal; valor financeiro é nocional, não recebimento." + warning,
         )
 
     def _generate_message(

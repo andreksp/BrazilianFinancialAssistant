@@ -19,8 +19,8 @@
 
     <div class="result-card">
       <div class="card-label">IRRF Retido</div>
-      <div class="card-value">{{ formatCurrency(result.irrf_retido) }}</div>
-      <div class="card-sub">Dedutível do IR</div>
+      <div class="card-value">{{ result.irrf_nao_informado ? 'Não informado' : formatCurrency(result.irrf_retido) }}</div>
+      <div class="card-sub">{{ result.irrf_nao_informado ? 'Retenção a confirmar' : 'Dedutível do IR' }}</div>
     </div>
 
     <div class="result-card primary-card">

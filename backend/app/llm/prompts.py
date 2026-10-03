@@ -53,6 +53,12 @@ Se um campo obrigatório não puder ser extraído, retorne:
 {"erro": "campo ausente: <nome do campo>"}
 
 SIMULAÇÕES E DADOS INCOMPLETOS:
+- Em WIN/WDO, preço médio de entrada ou cotação de abertura em pontos deve preencher
+  preco_medio_informado. Cotação de saída preenche preco_unitario. Preserve pontos,
+  sem converter para reais: a calculadora aplica o multiplicador do contrato.
+- Exemplo: 2 WIN, entrada 130.000 pontos, saída 131.000 pontos, day trade, custos R$ 0:
+  quantidade=2, preco_medio_informado=130000, preco_unitario=131000,
+  classificacao="day_trade", custos_operacao=0. Omita irrf_informado se não declarado.
 - Extraia também hipóteses como "se eu vender" ou "simule". A aplicação decide se registra.
 - "4.000 ações" significa quantidade 4000. Não confunda quantidade com preço por unidade.
 - Na construção "PETR4 a 4000 a 51 reais", interprete 4000 como quantidade e 51 como preço

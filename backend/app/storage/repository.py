@@ -59,7 +59,11 @@ def save_trade(
         record.valor_liquido = result.valor_liquido
         record.tipo_operacao_classificacao = result.tipo_operacao_classificacao.value
         record.mensagem = result.mensagem
-        record.taxas_totais_json = result.taxas_totais.model_dump_json()
+        # Backward-compatible metadata in the existing JSON, no DB migration.
+        record.taxas_totais_json = json.dumps({
+            **result.taxas_totais.model_dump(),
+            '_irrf_nao_informado': result.irrf_nao_informado,
+        })
 
     db.add(record)
     db.commit()
@@ -133,6 +137,7 @@ def record_to_result(record: TradeRecord) -> Optional[TaxCalculationResult]:
         return None
 
     fees_data = json.loads(record.taxas_totais_json)
+    irrf_nao_informado = fees_data.pop('_irrf_nao_informado', False)
     fees = FeesBreakdown(**fees_data)
 
     from app.models.trade import TradeOperationType
@@ -148,6 +153,7 @@ def record_to_result(record: TradeRecord) -> Optional[TaxCalculationResult]:
         aliquota_aplicada=record.aliquota_aplicada,
         ir_devido=record.ir_devido,
         irrf_retido=record.irrf_retido,
+        irrf_nao_informado=irrf_nao_informado,
         isenção_aplicada=record.isencao_aplicada or False,
         ganho_prejuizo_liquido=record.ganho_prejuizo_liquido,
         valor_liquido=record.valor_liquido,

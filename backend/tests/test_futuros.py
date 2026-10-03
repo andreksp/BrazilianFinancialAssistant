@@ -137,8 +137,8 @@ class TestFuturosCalculator:
 
         assert result.irrf_retido == pytest.approx(10.00, rel=1e-5)
 
-    def test_missing_custos_or_irrf_raises(self, calculator):
-        """Both fields are required — the system won't silently assume zero."""
+    def test_missing_custos_raises(self, calculator):
+        """Costs remain required; missing withholding is explicitly unknown."""
         trade = TradeInput(
             ativo="WDO",
             tipo_ativo=AssetType.FUTURO_DOLAR,
@@ -148,7 +148,7 @@ class TestFuturosCalculator:
             data_operacao=date(2025, 3, 15),
         )
 
-        with pytest.raises(ValueError, match="custos e IRRF"):
+        with pytest.raises(ValueError, match="custos"):
             calculator.calculate_result(trade, average_price=90.00)
 
     def test_custos_operacao_replaces_fee_estimate(self, calculator):

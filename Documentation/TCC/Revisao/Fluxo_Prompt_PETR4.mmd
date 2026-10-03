@@ -1,42 +1,71 @@
+%% Chat: exemplo de simulação de venda com custo médio no histórico.
+%% Atualizado em 03/10/2026. Fontes: orchestrator.py, base_agent.py,
+%% tool_chat.py, chat_policy.py, repository.py e mcp_server/server.py.
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'Arial','primaryColor':'#e0f2fe','primaryTextColor':'#17324d','primaryBorderColor':'#0284c7','actorBkg':'#e0f2fe','actorBorder':'#0284c7','actorTextColor':'#17324d','noteBkgColor':'#ffffff','noteTextColor':'#17324d','noteBorderColor':'#94a3b8','signalColor':'#334155','signalTextColor':'#17324d'},'sequence':{'mirrorActors':false,'useMaxWidth':false,'wrap':true,'messageMargin':35,'noteMargin':16}}}%%
 sequenceDiagram
+    autonumber
     actor U as Você
-    participant B as Backend
+    participant B as Backend / agentes
     participant L as LLM
-    participant R as ChromaDB
-    participant D as Banco SQLite
+    participant R as ChromaDB / documentos
+    participant D as SQLite / histórico
     participant M as Servidor MCP
 
-    U->>B: Envia a venda de 100 PETR4 a R$ 45
+    rect rgb(237, 233, 254)
+        Note over U,M: 1. ENTENDER A SOLICITAÇÃO
+        U->>B: Simule 4.000 PETR4 a R$ 51 em 02/10/2026, operação comum. Consulte meu preço médio
+        B->>L: Classifique o assunto
+        L-->>B: Ações
+        B->>L: Extraia os dados da operação
+        L-->>B: Venda, PETR4, quantidade 4.000, preço R$ 51, data e modalidade
+        B->>B: Valida dados e intenção. Simulação não autoriza registro da venda
+        Note over B,L: Se a operação estiver incompleta, o backend pode consultar o preço médio e pedir dados, sem calcular.<br/>O exemplo abaixo segue com uma venda válida.
+    end
 
-    Note over B,L: 1. Entender a solicitação
-    B->>L: Classifique a mensagem
-    L-->>B: Operação com ações
-    B->>L: Extraia os dados da operação
-    L-->>B: Venda, PETR4, quantidade, preço e demais dados
-    Note over B,L: O custo médio não veio no prompt
+    rect rgb(204, 251, 241)
+        Note over U,M: 2. RECUPERAR DOCUMENTOS — RAG
+        B->>R: Busca trechos sobre ações
+        R-->>B: Contexto documental, se disponível
+        B->>L: Envia operação, contexto e ferramentas disponíveis
+    end
 
-    Note over B,R: 2. Buscar informações documentais
-    B->>R: Busca trechos sobre ações
-    R-->>B: Contexto documental recuperado
+    rect rgb(255, 237, 213)
+        Note over U,M: 3. ESCOLHER FERRAMENTAS E CALCULAR
+        L-->>B: Solicita fee_policy
+        B->>M: Cliente MCP chama fee_policy via stdio
+        M-->>B: Política de custos e ressalvas
+        B->>L: Devolve o resultado da ferramenta
+        alt Custo médio não informado e necessário
+            L-->>B: Solicita consultar_preco_medio
+            B->>D: Consulta local por usuário e ativo
+            D-->>B: Preço médio de PETR4: R$ 40 neste exemplo
+            B->>L: Devolve custo médio e origem no banco
+        else Custo já informado
+            Note over B,L: Usa o valor do prompt.<br/>WIN/WDO preservam a cotação de entrada em pontos.
+        end
+        Note over B,M: consultar_preco_medio é local ao backend, não é ferramenta do servidor MCP.<br/>A ordem das consultas pode variar. Política e custo podem vir na mesma rodada.
+        L-->>B: Solicita calculate_trade
+        B->>B: Valida pré-requisitos e fixa os argumentos financeiros
+        B->>M: Cliente MCP envia operação e custo médio
+        M->>M: Executa a calculadora Python do produto
+        M-->>B: Resultado numérico estruturado ou erro de validação
+        B->>L: Devolve o resultado da ferramenta
+        Note over B,M: PETR4: venda isolada de R$ 204 mil afasta a isenção por volume, sem presumir total mensal.<br/>WIN/WDO: IRRF ausente fica identificado como não informado.
+    end
 
-    Note over B,M: 3. Executar as ferramentas escolhidas pelo LLM
-    B->>L: Envia operação, contexto e ferramentas disponíveis
-    L-->>B: Solicita fee_policy e consultar_preco_medio
-
-    B->>M: fee_policy
-    M-->>B: Política de custos e ressalvas
-
-    B->>D: Consulta custo médio de PETR4 para user123
-    D-->>B: Custo médio de R$ 40
-
-    B->>L: Devolve os resultados das ferramentas
-    L-->>B: Solicita calculate_trade
-    B->>M: Envia operação e custo médio de R$ 40
-    M->>M: Executa a calculadora Python
-    M-->>B: Resultado estruturado do cálculo
-
-    Note over B,L: 4. Explicar e concluir
-    B->>L: Envia o resultado calculado
-    L-->>B: Produz a explicação em português
-    B->>D: Registra a venda, o resultado e a conversa
-    B-->>U: Exibe a explicação e o resultado
+    rect rgb(220, 252, 231)
+        Note over U,M: 4. EXPLICAR E CONCLUIR
+        L-->>B: Explicação do resultado ou pedido de esclarecimento
+        alt Cálculo validado e explicação concluídos
+            alt Simulação ou intenção de registro incerta
+                Note over B,D: Não grava a operação e não altera a carteira
+            else Operação efetiva permitida pela regra do backend
+                B->>D: Registra a venda e o cálculo
+            end
+        else Falha ou dados insuficientes
+            Note over B,D: Apresenta a falha e não registra a venda
+        end
+        B->>D: Salva a conversa, inclusive quando é simulação
+        B-->>U: Exibe resposta, resultado disponível e ressalvas
+        Note over B,D: Conversa salva não equivale a memória entre mensagens.<br/>O histórico completo não é reenviado ao LLM.
+    end

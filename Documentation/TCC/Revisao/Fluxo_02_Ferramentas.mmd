@@ -1,0 +1,25 @@
+%% Fontes: base_agent.py, tool_chat.py, mcp_server/server.py, repository.py.
+%% Ordem ilustrativa: política e custo podem ser consultados na mesma rodada.
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'Arial','fontSize':'17px','lineColor':'#64748b'},'flowchart':{'curve':'basis','htmlLabels':false}}}%%
+flowchart TD
+    A["Backend busca documentos no ChromaDB<br/>Prepara operação + contexto + ferramentas"]:::data
+    B["LLM escolhe as chamadas<br/>Backend fixa usuário e dados financeiros"]:::ai
+    P["fee_policy<br/>Cliente do backend chama o servidor MCP"]:::mcp
+    Q["MCP devolve política de custos<br/>e ressalvas sobre estimativas"]:::mcp
+    D{"Preço de aquisição já informado?"}:::decision
+    E["Usa o preço fornecido<br/>WIN/WDO: cotação de entrada em pontos"]:::backend
+    F["LLM solicita consultar_preco_medio<br/>Backend consulta SQLite localmente"]:::data
+    G["Backend devolve resultados ao LLM"]:::backend
+    H["LLM solicita calculate_trade<br/>Backend valida pré-requisitos"]:::ai
+    I["Cliente MCP envia operação via stdio<br/>Servidor executa calculadora Python"]:::mcp
+    J["Resultado numérico ou erro de validação<br/>Backend devolve ao LLM · Parte 3"]:::mcp
+    A --> B --> P --> Q --> G
+    B --> D
+    D -->|Sim| E --> G
+    D -->|Não, quando necessário| F --> G
+    G --> H --> I --> J
+    classDef ai fill:#ede9fe,stroke:#7c3aed,color:#3b0764
+    classDef data fill:#ccfbf1,stroke:#0f766e,color:#134e4a
+    classDef mcp fill:#ffedd5,stroke:#ea580c,color:#7c2d12
+    classDef backend fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+    classDef decision fill:#fef3c7,stroke:#d97706,color:#78350f

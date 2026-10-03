@@ -1,0 +1,30 @@
+%% Fontes: orchestrator.py, claude_client.py, chat_policy.py, base_agent.py.
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'Arial','fontSize':'17px','lineColor':'#64748b'},'flowchart':{'curve':'basis','htmlLabels':false}}}%%
+flowchart TD
+    A["Mensagem + identidade do usuário"]:::backend
+    B["LLM classifica o assunto<br/>Backend escolhe o agente"]:::ai
+    C{"Há agente especialista?"}:::decision
+    D["LLM extrai a operação<br/>Backend valida campos e pontos de WIN/WDO"]:::ai
+    E{"Operação válida?"}:::decision
+    F{"Consulta pessoal ou operação incompleta<br/>com um único ativo identificado?"}:::decision
+    G["Backend consulta SQLite em modo de leitura<br/>Preço médio por usuário e ativo"]:::data
+    H["Mostra preço médio ou indisponibilidade<br/>Pede dados se a operação estiver incompleta"]:::safe
+    I["Backend busca documentos no ChromaDB<br/>LLM responde à pergunta geral"]:::data
+    J{"Compra ou venda?"}:::decision
+    K["Compra: confirmação ou simulação<br/>Sem chamar a calculadora MCP"]:::backend
+    L["Venda: contexto + ferramentas<br/>Continuar na Parte 2"]:::mcp
+    A --> B --> C
+    C -->|Sim| D --> E
+    C -->|Não| F
+    E -->|Não| F
+    F -->|Sim| G --> H
+    F -->|Não| I
+    E -->|Sim| J
+    J -->|Compra| K
+    J -->|Venda ou remuneração| L
+    classDef ai fill:#ede9fe,stroke:#7c3aed,color:#3b0764
+    classDef data fill:#ccfbf1,stroke:#0f766e,color:#134e4a
+    classDef mcp fill:#ffedd5,stroke:#ea580c,color:#7c2d12
+    classDef backend fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+    classDef safe fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef decision fill:#fef3c7,stroke:#d97706,color:#78350f

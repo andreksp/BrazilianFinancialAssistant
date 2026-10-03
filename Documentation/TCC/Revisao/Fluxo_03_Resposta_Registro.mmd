@@ -1,0 +1,23 @@
+%% Fontes: tool_chat.py, base_agent.py, chat_policy.py.
+%% Permissão calculada antes das ferramentas; escrita somente após sucesso.
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'Arial','fontSize':'17px','lineColor':'#64748b'},'flowchart':{'curve':'basis','htmlLabels':false}}}%%
+flowchart TD
+    A{"Cálculo validado e<br/>explicação final concluídos?"}:::decision
+    B["Backend apresenta a falha ou pede dados<br/>Não registra a venda"]:::error
+    C["LLM explica números e ressalvas<br/>IRRF desconhecido não significa zero"]:::ai
+    D{"Backend permite registrar?<br/>may_register: regra conservadora"}:::decision
+    E["Simulação ou intenção incerta<br/>Não salva a venda na carteira"]:::safe
+    F["Operação efetiva reconhecida<br/>Salva operação e cálculo no SQLite"]:::data
+    G["Backend salva a conversa<br/>Inclusive simulações e esclarecimentos"]:::backend
+    H["Interface mostra resposta e resultado<br/>Simulação identificada e IRRF a confirmar"]:::backend
+    A -->|Não| B --> G
+    A -->|Sim| C --> D
+    D -->|Não| E --> G
+    D -->|Sim| F --> G
+    G --> H
+    classDef ai fill:#ede9fe,stroke:#7c3aed,color:#3b0764
+    classDef data fill:#ccfbf1,stroke:#0f766e,color:#134e4a
+    classDef backend fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+    classDef safe fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef decision fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef error fill:#fee2e2,stroke:#dc2626,color:#7f1d1d

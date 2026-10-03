@@ -28,7 +28,8 @@ from app.agents.derivativos_agent import DerivativosAgent
 from app.agents.emprestimo_agent import EmprestimoAgent
 from app.agents.cripto_agent import CriptoAgent
 from app.vector_db.chroma_client import get_chroma_client
-from app.storage.repository import save_chat
+from app.storage.repository import save_chat, get_average_price
+from app.agents.chat_policy import history_clarification
 
 logger = logging.getLogger(__name__)
 
@@ -96,6 +97,13 @@ class Orchestrator:
             )
 
         # ── Step 3: General question — search all regulation collections ───────
+        clarification = history_clarification(
+            message, lambda asset: get_average_price(db, user_id=user_id, ativo=asset))
+        if clarification is not None:
+            save_chat(db, user_id=user_id, message=message, response=clarification,
+                      trade_extracted=None, calculation=None)
+            return ChatResponse(response=clarification, confidence=confidence,
+                                agent_name=_GENERAL_AGENT_NAME)
         chroma = get_chroma_client()
         context_docs: list = []
         if chroma:

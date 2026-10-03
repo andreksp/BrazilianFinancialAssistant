@@ -270,6 +270,6 @@ def test_agent_binds_user_and_persists_once(monkeypatch):
     save=Mock();monkeypatch.setattr(base_agent,'save_trade',save)
     monkeypatch.setattr(base_agent,'save_chat',Mock())
     db=Mock()
-    FIIAgent().process('Venda',trade(),db,'trusted-user',Mock())
+    FIIAgent().process('Vendi 10 cotas de HGLG11',trade(),db,'trusted-user',Mock())
     lookup.assert_called_once_with(db,user_id='trusted-user',ativo='HGLG11')
     assert save.call_count==1

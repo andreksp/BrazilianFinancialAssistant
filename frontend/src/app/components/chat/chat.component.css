@@ -194,6 +194,29 @@
   cursor: not-allowed;
 }
 
+.clear-button {
+  padding: 10px 16px;
+  background: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.clear-button:hover:not(:disabled) {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.clear-button:disabled {
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
 .input-hint {
   margin-top: 8px;
   text-align: right;

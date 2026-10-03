@@ -2,6 +2,7 @@
 
 from abc import ABC, abstractmethod
 from app.agents.tool_chat import run_tool_chat
+from app.agents.chat_policy import may_register, history_clarification
 from typing import Optional
 
 from sqlalchemy.orm import Session
@@ -56,9 +57,15 @@ class BaseAgent(ABC):
         result: Optional[TaxCalculationResult] = None
 
         if trade is not None:
+            register = may_register(message, trade)
             if trade.tipo_operacao == OperationType.COMPRA:
-                save_trade(db, trade, result=None, user_id=user_id)
-                explanation = self._buy_confirmation(trade)
+                if register:
+                    save_trade(db, trade, result=None, user_id=user_id)
+                    explanation = self._buy_confirmation(trade)
+                else:
+                    explanation = (f'Simulação de compra de {trade.quantidade:g} unidades de '
+                                   f'{trade.ativo} por R$ {trade.preco_unitario:.2f} cada. '
+                                   'Nenhuma operação foi registrada.')
             else:
                 context_docs = []
                 if chroma:
@@ -70,8 +77,22 @@ class BaseAgent(ABC):
                     claude, self.get_explain_system_prompt(), message, trade, context,
                     lambda: get_average_price(db, user_id=user_id, ativo=trade.ativo),
                 )
-                save_trade(db, trade, result=result, user_id=user_id)
+                if register:
+                    save_trade(db, trade, result=result, user_id=user_id)
+                    explanation = 'Venda registrada no histórico.\n\n' + explanation
+                else:
+                    status = 'Simulação: nenhuma operação foi registrada.'
+                    explanation = status + '\n\n' + explanation
+                    result = result.model_copy(update={
+                        'mensagem': status + ' ' + (result.mensagem or '')})
         else:
+            clarification = history_clarification(
+                message, lambda asset: get_average_price(db, user_id=user_id, ativo=asset))
+            if clarification is not None:
+                save_chat(db, user_id=user_id, message=message, response=clarification,
+                          trade_extracted=None, calculation=None)
+                return dict(response=clarification, trade_extracted=None,
+                            calculation_result=None, agent_name=self.name)
             context_docs = []
             if chroma:
                 context_docs = chroma.search_regulations(

@@ -114,13 +114,16 @@ class AcoesCalculator(BaseCalculator):
 
         # Determine tax rate
         aliquota = self.get_tax_rate(is_day_trade)
-        if not is_day_trade and (trade.total_vendas_mes is None or trade.total_vendas_mes < valor_financeiro):
-            raise ValueError("Informe o total completo das vendas de ações à vista no mês, incluindo esta operação.")
-        isenção_aplicada = not is_day_trade and trade.total_vendas_mes <= self.EXEMPTION_LIMIT
-
-        # TODO: Exemption R$20,000 applies to TOTAL monthly sales (swing only).
-        # This requires monthly context at a higher level. For now, always apply tax.
-        # Exemption logic will be implemented in a portfolio/monthly summary calculator.
+        total_mes = trade.total_vendas_mes
+        if not is_day_trade:
+            if total_mes is not None and total_mes < valor_financeiro:
+                raise ValueError("Informe o total completo das vendas de ações à vista no mês, incluindo esta operação.")
+            # A single sale over the threshold rules out this exemption without
+            # inventing a complete monthly total from incomplete local history.
+            if total_mes is None and valor_financeiro <= self.EXEMPTION_LIMIT:
+                raise ValueError("Informe o total completo das vendas de ações à vista no mês, incluindo esta operação.")
+        isenção_aplicada = (not is_day_trade and total_mes is not None
+                            and total_mes <= self.EXEMPTION_LIMIT)
 
         # Calculate IR
         ir_devido = 0.0 if isenção_aplicada else round(max(0, ganho_bruto - fees.total) * aliquota, 2)
@@ -154,6 +157,13 @@ class AcoesCalculator(BaseCalculator):
             ),
         )
 
+        if not is_day_trade and total_mes is None:
+            result.mensagem += (
+                " Esta venda isolada supera R$ 20.000 e afasta a isenção por volume mensal."
+                " O total completo do mês não foi informado nem presumido."
+                " Estimativa desta operação antes de eventuais compensações de prejuízos"
+                " e créditos de IRRF; não representa a apuração completa do DARF mensal."
+            )
         return result
 
     def _generate_message(

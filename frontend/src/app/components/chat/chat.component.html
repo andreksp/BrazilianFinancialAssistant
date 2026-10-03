@@ -45,6 +45,14 @@
       <button (click)="sendMessage()" [disabled]="loading || !inputMessage.trim()" class="send-button">
         Enviar
       </button>
+      <button
+        (click)="clearChat()"
+        [disabled]="loading || (messages.length === 0 && !inputMessage.trim())"
+        class="clear-button"
+        title="Limpar a conversa e começar de novo"
+      >
+        Limpar
+      </button>
     </div>
     <div class="input-hint">
       <button (click)="testHello()" class="link-btn">Testar conexão com backend</button>

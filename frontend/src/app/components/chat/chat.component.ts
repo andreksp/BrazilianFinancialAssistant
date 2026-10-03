@@ -107,6 +107,18 @@ export class ChatComponent implements OnInit {
   }
 
   /**
+   * Clear the conversation and start over.
+   *
+   * Only the on-screen messages are discarded: the backend keeps no
+   * conversational memory between requests, and trades already recorded
+   * stay in the history.
+   */
+  clearChat(): void {
+    this.messages = [];
+    this.inputMessage = '';
+  }
+
+  /**
    * Format number as Brazilian currency.
    */
   formatCurrency(value: number): string {

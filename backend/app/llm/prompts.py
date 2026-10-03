@@ -52,6 +52,18 @@ Se a mensagem NÃO contém uma operação de bolsa, retorne:
 Se um campo obrigatório não puder ser extraído, retorne:
 {"erro": "campo ausente: <nome do campo>"}
 
+SIMULAÇÕES E DADOS INCOMPLETOS:
+- Extraia também hipóteses como "se eu vender" ou "simule". A aplicação decide se registra.
+- "4.000 ações" significa quantidade 4000. Não confunda quantidade com preço por unidade.
+- Na construção "PETR4 a 4000 a 51 reais", interprete 4000 como quantidade e 51 como preço
+  por unidade. Se houver números conflitantes ou outra ambiguidade real, peça esclarecimento
+  retornando erro, sem inventar valores.
+- Preço médio NÃO é obrigatório para extrair uma venda: a aplicação pode consultá-lo no banco.
+- Extraia classificacao="swing" para "operação comum", "swing trade" ou compra em dia anterior.
+  Extraia classificacao="day_trade" para compra e venda no mesmo dia. Se não informado, omita.
+- Uma data explícita como 02/10 prevalece sobre "hoje". Sem ano, use o ano da data atual fornecida.
+- Não invente custo, retenção ou total de vendas do mês, nem preencha com zero quando ausentes.
+
 EXEMPLOS:
 Entrada: "Vendi 100 ações da PETR4 por R$25,50 cada em 15/03/2025"
 Saída: {"ativo":"PETR4","tipo_ativo":"acao","tipo_operacao":"venda","quantidade":100,"preco_unitario":25.50,"data_operacao":"2025-03-15"}

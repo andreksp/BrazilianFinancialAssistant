@@ -43,20 +43,33 @@ class ClaudeClient:
 
         try:
             extra_schema = "\nCampos opcionais, somente quando explicitamente informados: total_vendas_mes, preco_medio_informado, custos_operacao, irrf_informado, prazo_dias, exchange_estrangeira, classificacao (swing ou day_trade). Não invente valores ausentes."
-            raw = self._call_model(self.model_parser, PARSE_TRADE_SYSTEM + extra_schema, prompt)
-            raw = raw.strip()
-
-            # Strip markdown fences if the model wraps the JSON
-            if raw.startswith("```"):
-                raw = raw.split("```")[1]
-                if raw.startswith("json"):
-                    raw = raw[4:]
-                raw = raw.strip()
-
-            data = json.loads(raw)
+            # One bounded retry for an incomplete extraction, never an invented fallback.
+            for attempt in range(2):
+                raw = self._call_model(self.model_parser, PARSE_TRADE_SYSTEM + extra_schema, prompt).strip()
+                if raw.startswith("```"):
+                    raw = raw.split("```")[1]
+                    if raw.startswith("json"):
+                        raw = raw[4:]
+                    raw = raw.strip()
+                data = json.loads(raw)
+                if not isinstance(data, dict):
+                    raise ValueError('Resposta do extrator deve ser um objeto JSON')
+                if attempt == 0 and str(data.get('erro', '')).startswith('campo ausente'):
+                    prompt += ('\n\nConfira novamente os dados explícitos da mensagem. '
+                               'Diferencie quantidade e preço por unidade. Preço médio pode ser '
+                               'consultado no histórico e não impede a extração. Não invente dados '
+                               'nem modalidade; se ainda faltar informação, retorne o erro.')
+                    continue
+                break
 
             if "erro" in data:
                 logger.info(f"No trade extracted: {data['erro']}")
+                return None
+
+            if (data.get('tipo_operacao') == 'venda'
+                    and data.get('tipo_ativo') not in ('emprestimo_acoes', 'cripto')
+                    and not data.get('classificacao')):
+                logger.info('No trade extracted: confirme operação comum ou day trade')
                 return None
 
             return TradeInput(

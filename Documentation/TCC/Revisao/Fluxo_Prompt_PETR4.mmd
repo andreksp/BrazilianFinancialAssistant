@@ -1,0 +1,42 @@
+sequenceDiagram
+    actor U as Você
+    participant B as Backend
+    participant L as LLM
+    participant R as ChromaDB
+    participant D as Banco SQLite
+    participant M as Servidor MCP
+
+    U->>B: Envia a venda de 100 PETR4 a R$ 45
+
+    Note over B,L: 1. Entender a solicitação
+    B->>L: Classifique a mensagem
+    L-->>B: Operação com ações
+    B->>L: Extraia os dados da operação
+    L-->>B: Venda, PETR4, quantidade, preço e demais dados
+    Note over B,L: O custo médio não veio no prompt
+
+    Note over B,R: 2. Buscar informações documentais
+    B->>R: Busca trechos sobre ações
+    R-->>B: Contexto documental recuperado
+
+    Note over B,M: 3. Executar as ferramentas escolhidas pelo LLM
+    B->>L: Envia operação, contexto e ferramentas disponíveis
+    L-->>B: Solicita fee_policy e consultar_preco_medio
+
+    B->>M: fee_policy
+    M-->>B: Política de custos e ressalvas
+
+    B->>D: Consulta custo médio de PETR4 para user123
+    D-->>B: Custo médio de R$ 40
+
+    B->>L: Devolve os resultados das ferramentas
+    L-->>B: Solicita calculate_trade
+    B->>M: Envia operação e custo médio de R$ 40
+    M->>M: Executa a calculadora Python
+    M-->>B: Resultado estruturado do cálculo
+
+    Note over B,L: 4. Explicar e concluir
+    B->>L: Envia o resultado calculado
+    L-->>B: Produz a explicação em português
+    B->>D: Registra a venda, o resultado e a conversa
+    B-->>U: Exibe a explicação e o resultado

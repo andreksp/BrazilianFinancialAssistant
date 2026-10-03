@@ -32,7 +32,7 @@
   {
     "page": 7,
     "text_start": "5.4 Orquestração e modelos de linguagem ............................................................... 25 \n5.5 Base vetorial e recuperação documental .........",
-    "text_length": 2788
+    "text_length": 2885
   },
   {
     "page": 8,
@@ -343,5 +343,20 @@
     "page": 69,
     "text_start": "69 \n \nAPÊNDICE B – REPRODUÇÃO E USO DE IA \nO código inicial foi desenvolvido com assistência do Claude, conforme informação do \nautor. A revisão documental, a p",
     "text_length": 2007
+  },
+  {
+    "page": 70,
+    "text_start": "70 \n \nANEXO A – DECLARAÇÃO DE USO DE IA \nDeclaração de uso de INTELIGÊNCIA ARTIFICIAL, cuidados éticos e \nadequação à LGPD no TCC \nMBA em Inteligência Artificia",
+    "text_length": 1445
+  },
+  {
+    "page": 71,
+    "text_start": "71 \n \n2. Nível de utilização \nMarque a opção que melhor representa o uso de IA na elaboração do TCC: \n☐ Nível 1 – Apoio pontual \nUso em atividades específicas, ",
+    "text_length": 1247
+  },
+  {
+    "page": 72,
+    "text_start": "72 \n \n4. Declaração de responsabilidade \nDeclaro que revisei, validei criticamente e assumo a responsabilidade pelos conteúdos produzidos com \no auxílio de ferr",
+    "text_length": 514
   }
 ]

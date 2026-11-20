@@ -3,6 +3,9 @@
 .env.local
 .env*.local
 
+# Local credentials and certificates
+/key/
+
 # Python
 __pycache__/
 *.py[cod]

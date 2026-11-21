@@ -1,0 +1,116 @@
+{
+  "before": {
+    "count": 3,
+    "sha256": "0623446c3023c97ef873a8cfd7444fa99816e0f826c70059c89bb0b631eb3774"
+  },
+  "results": [
+    {
+      "case": "historico",
+      "prompt": "Simule a venda de 4.000 ações de PETR4 por R$ 51,00 cada, em 02/10/2026, em operação comum. Consulte meu preço médio no histórico.",
+      "seconds": 18.6,
+      "response": {
+        "error": "HTTP Error 500: Internal Server Error"
+      },
+      "trades_after": {
+        "count": 3,
+        "sha256": "0623446c3023c97ef873a8cfd7444fa99816e0f826c70059c89bb0b631eb3774"
+      }
+    },
+    {
+      "case": "acoes",
+      "prompt": "Simule a venda de 1.000 ações de PETR4 por R$ 45 cada em 02/10/2026, em operação comum. Meu preço médio de aquisição é R$ 40 por ação.",
+      "seconds": 16.7,
+      "response": {
+        "error": "HTTP Error 500: Internal Server Error"
+      },
+      "trades_after": {
+        "count": 3,
+        "sha256": "0623446c3023c97ef873a8cfd7444fa99816e0f826c70059c89bb0b631eb3774"
+      }
+    },
+    {
+      "case": "bdr",
+      "prompt": "Simule a venda de 100 BDRs AAPL34 por R$ 80 cada em 02/10/2026, em operação comum. Meu preço médio de aquisição é R$ 70 por BDR.",
+      "seconds": 19.3,
+      "response": {
+        "error": "HTTP Error 500: Internal Server Error"
+      },
+      "trades_after": {
+        "count": 3,
+        "sha256": "0623446c3023c97ef873a8cfd7444fa99816e0f826c70059c89bb0b631eb3774"
+      }
+    },
+    {
+      "case": "fii",
+      "prompt": "Simule a venda de 100 cotas de HGLG11 por R$ 170 cada em 02/10/2026, em operação comum. Meu preço médio de aquisição é R$ 160 por cota.",
+      "seconds": 20.7,
+      "response": {
+        "error": "HTTP Error 500: Internal Server Error"
+      },
+      "trades_after": {
+        "count": 3,
+        "sha256": "0623446c3023c97ef873a8cfd7444fa99816e0f826c70059c89bb0b631eb3774"
+      }
+    },
+    {
+      "case": "opcoes",
+      "prompt": "Simule a venda de 1.000 opções de compra PETRJ450 por R$ 2 cada em 02/10/2026, em operação comum. Meu preço médio de aquisição é R$ 1 por opção. Foi encerramento pela venda das opções, sem exercício. Custos da operação: R$ 0.",
+      "seconds": 17.9,
+      "response": {
+        "error": "HTTP Error 500: Internal Server Error"
+      },
+      "trades_after": {
+        "count": 3,
+        "sha256": "0623446c3023c97ef873a8cfd7444fa99816e0f826c70059c89bb0b631eb3774"
+      }
+    },
+    {
+      "case": "win",
+      "prompt": "Simule a venda para encerrar uma posição comprada de 2 contratos de mini-índice WIN, com preço médio de entrada de 130.000 pontos e saída em 131.000 pontos, em 02/10/2026. Foi day trade. Custos da operação: R$ 0.",
+      "seconds": 18.1,
+      "response": {
+        "error": "HTTP Error 500: Internal Server Error"
+      },
+      "trades_after": {
+        "count": 3,
+        "sha256": "0623446c3023c97ef873a8cfd7444fa99816e0f826c70059c89bb0b631eb3774"
+      }
+    },
+    {
+      "case": "wdo",
+      "prompt": "Simule a venda para encerrar uma posição comprada de 2 contratos de minidólar WDO, com preço médio de entrada de 5.000 pontos e saída em 5.010 pontos, em 02/10/2026. Foi day trade. Custos da operação: R$ 0.",
+      "seconds": 17.6,
+      "response": {
+        "error": "HTTP Error 500: Internal Server Error"
+      },
+      "trades_after": {
+        "count": 3,
+        "sha256": "0623446c3023c97ef873a8cfd7444fa99816e0f826c70059c89bb0b631eb3774"
+      }
+    },
+    {
+      "case": "emprestimo",
+      "prompt": "Simule o recebimento da remuneração de um empréstimo de 1.000 ações de PETR4, no qual sou o doador. A remuneração bruta total é R$ 500, equivalente a R$ 0,50 por ação, por um contrato de 30 dias, encerrado em 02/10/2026. Custos: R$ 0. Calcule o imposto sobre a remuneração, não sobre uma venda das ações.",
+      "seconds": 20.4,
+      "response": {
+        "error": "HTTP Error 500: Internal Server Error"
+      },
+      "trades_after": {
+        "count": 3,
+        "sha256": "0623446c3023c97ef873a8cfd7444fa99816e0f826c70059c89bb0b631eb3774"
+      }
+    },
+    {
+      "case": "cripto",
+      "prompt": "Simule a venda de 0,1 BTC por R$ 400.000 por bitcoin em 02/10/2026, em exchange nacional brasileira. Meu preço médio de aquisição é R$ 300.000 por bitcoin. O total completo de vendas de criptoativos no mês, incluindo esta operação, é R$ 40.000.",
+      "seconds": 21.0,
+      "response": {
+        "error": "HTTP Error 500: Internal Server Error"
+      },
+      "trades_after": {
+        "count": 3,
+        "sha256": "0623446c3023c97ef873a8cfd7444fa99816e0f826c70059c89bb0b631eb3774"
+      }
+    }
+  ]
+}
